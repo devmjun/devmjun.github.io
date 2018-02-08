@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift. OpenWeather API 사용하기"
-subtitle:   "OpenWeather API 사용해서 작은 날씨 APP 을 만들어보자!"
+subtitle:   "OpenWeather API 사용해서 작은 날씨 APP 을 만들어보자!!"
 date:       2017-11-19 18:12:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
