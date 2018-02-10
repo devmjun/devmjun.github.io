@@ -93,6 +93,8 @@ iPad 별 개발자 지침 은 [iPad에서 멀티 태스킹 기능 향상](https:
 
 ![screen](/img/posts/Notification-2.png)
 
+<center><img src="/img/posts/Notification-2.png"></center>
+
 > 참고
 > 
 > 사람들은 지원하는 모든 앱에서 알림을 수신하도록 명시 적으로 선택해야합니다. 처음 앱을 사용할 때 알림이 표시됩니다. 누군가가 탈퇴 한 경우 언제든지 설정을 방문하여 재설정 할 수 있습니다.
