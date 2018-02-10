@@ -39,7 +39,7 @@ port: 8888
 permalink: /blog/:title
 
 # jekyll-paginate. for paginating blog posts.
-paginate: 7
+paginate: 14
 paginate_path: blog/page:num
 
 
