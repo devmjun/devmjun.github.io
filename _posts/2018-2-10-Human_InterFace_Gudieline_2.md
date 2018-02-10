@@ -98,19 +98,19 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 목적지에 도달 할 때까지 화면 당 하나의 선택을하십시오. 다른 목적지로 이동하려면 단계를 되돌아 가거나 처음부터 다시 시작해야하고 다른 선택을해야합니다. 설정 및 메일에서는이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation.png) {.center-image}
+![screen](/img/posts/Navigation.png){.center-image}
 
 #### - 평면 적 탐색
 
 여러 콘텐츠 범주간에 전환하십시오. 음악과 App Store는이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation-1.png) {.center-image}
+![screen](/img/posts/Navigation-1.png){.center-image}
 
 #### - 콘텐츠 기반 또는 경험 중심의 탐색 
 
 콘텐츠를 자유롭게 이동하거나 콘텐츠 자체가 탐색을 정의합니다. 게임, 책 및 기타 몰입 형 앱은 일반적으로이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation-2.png) {.center-image}
+![screen](/img/posts/Navigation-2.png){.center-image}
 
 일부 앱은 여러 탐색 스타일을 결합합니다. 예를 들어 평면 탐색을 사용하는 앱은 각 카테고리 내에서 계층 적 탐색을 구현할 수 있습니다.
 
