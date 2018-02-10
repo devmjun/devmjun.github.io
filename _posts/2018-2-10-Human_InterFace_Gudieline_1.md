@@ -22,7 +22,7 @@ tags: [Swift]
 
 ---
 
-![screen](/img/posts/Overview.png)
+![screen](/img/posts/Overview.jpg)
 
 ## - 테마
 
@@ -68,7 +68,7 @@ iPhone X는 과거 어느 때보 다 풍부하고 풍부한 컨텐츠를 제공�
 
 | 4.7 Display | iPhoneX | 
 | :--: | :--: |
-|![screen](/img/posts/iPhoneX.png) |![screen](/img/posts/iPhoneX-1.png) | <br>
+|![screen](/img/posts/iPhoneX.jpg) |![screen](/img/posts/iPhoneX-1.jpg) | <br>
 
 #### - 배치 
 
@@ -80,7 +80,7 @@ iPhone X를 디자인 할 때 레이아웃이 화면을 채우고 장치의 둥�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/iPhoneX-2.png) |![screen](/img/posts/iPhoneX-3.png) | <br>
+|![screen](/img/posts/iPhoneX-2.jpg) |![screen](/img/posts/iPhoneX-3.jpg) | <br>
 
 #### - 추가 고려 사항 
 
