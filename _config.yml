@@ -1,6 +1,6 @@
 # Site settings
-title: Dev-Minjun
-default_author: MinJun-Ju
+title: MJ`s Blog
+default_author: Dev_MinJun
 description: "Hello World"  # used in site head
 
 # register on google analytics and replace this token
@@ -16,12 +16,12 @@ feedburner_url: #https://feedburner.google.com/fb/a/mailverify?uri=programmer-wa
 # footer details. Deleting the value would remove it from footer.
 github_username:  devminjun
 facebook_username: devminjun
-email: devminjunju
+email: devminjunju@gmail.com
 stackoverflow_username: 8601335/minjunju?tab=profile
 #twitter_username : shikherverma42
 #linkedin_username : shikherverma42
 #keybase_username : shikherverma
-copyright_name: Dev-MinJun
+copyright_name: Dev_MinJun
 rss : false
 
 # used for portfolio on home page
@@ -47,6 +47,5 @@ paginate_path: blog/page:num
 plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
 
 # search_google
-
 google-site-verification: google30d60d2ddca001f1.html
 
