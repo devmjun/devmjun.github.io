@@ -378,7 +378,7 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 
 모든 콘텐츠가 똑같이 중요하지는 않습니다. 누군가가 더 큰 크기를 선택하면 관심있는 내용을 읽기 쉽게 만들어야합니다. 항상 화면의 모든 단어가 커지는 것을 원하지는 않습니다.
 
-| Sizes|
+|Sizes|
 |:--:|
 |![screen](/img/posts/typography-1.png)|
 |![screen](/img/posts/typography-2.png)|
@@ -387,6 +387,32 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 |![screen](/img/posts/typography-5.png)|
 |![screen](/img/posts/typography-6.png)|
 |![screen](/img/posts/typography-7.png)|
+
+#### - 더큰 접근성 유형 사이즈들 
+
+표준 동적 유형 크기 외에도 시스템은 접근성 요구 사항이있는 사용자를 위해 더 많은 더 큰 유형 크기를 제공합니다.
+
+|Sizes|
+|:--:|
+|![screen](/img/posts/typography-8.png)|
+|![screen](/img/posts/typography-9.png)|
+|![screen](/img/posts/typography-10.png)|
+|![screen](/img/posts/typography-11.png)|
+|![screen](/img/posts/typography-12.png)|
+
+### 글꼴 사용 및 추적 
+
+#### - 인터페이스 모형에서 올바른 글꼴 변형을 사용하십시오
+
+버튼 및 라벨과 같은 표준 컨트롤에서 텍스트에 샌프란시스코를 사용하면 iOS는 포인트 크기 및 사용자의 접근성 설정에 따라 가장 적합한 변형을 자동으로 적용합니다. 인터페이스 모형에서는 SF Pro 텍스트를 텍스트 19 포인트 이하로 사용하고 SF 프로 디스플레이를 텍스트 20 포인트 이상으로 사용하고 문자 사이의 간격을 적절하게 조정하십시오.
+
+|SF Pro Text|
+|:--:|
+|![screen](/img/posts/typography-13.png)|
+|SF Pro Display|
+|![screen](/img/posts/typography-14.png)|
+
+---
 
 
 
