@@ -323,7 +323,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 개발자 지침은 [실행 취소 아키텍처(Undo Architecture)](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UndoArchitecture/UndoArchitecture.html) 를 참조하십시오 .
 
-
+---
 
 
 
