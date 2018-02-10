@@ -44,7 +44,7 @@ tags: [Swift]
 
 경험을 개인화하고, 추가 기능에 액세스하고, 콘텐츠를 구입하거나, 데이터를 동기화하는 등의 목적으로 가치가있는 대가로만 인증하도록 사용자에게 요청하십시오. 앱에 인증이 필요한 경우 로그인 과정을 빠르고 쉽고 눈에 거슬리지 않게 유지하여 앱을 즐겁게하는 데 방해가되지 않도록하십시오.
 
-![screen](/img/posts/Authentication.png)
+<center><img scr="/img/posts/Authentication.png"></center>
 
 #### - 로그인을 가능한 한 오랫동안 지연하십시오. 
 
@@ -93,7 +93,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 #### - 아이콘을 사용하여 시스템 인증 기능을 식별하지 마십시오
 
-![screen](/img/posts/Authentication-3.png) <br>
+<center><img scr="/img/posts/Authentication-3.png"></center>
 
 사람들이 시스템의 터치 ID (지문) 및 얼굴 ID 아이콘처럼 보이는 아이콘을 볼 때 그들은 인증을 받아야한다고 생각합니다. 아이콘을 사용하여 인증 기능을 식별하면 불일치가 생겨 혼란이 생길 ​​수 있습니다. 특히 아이콘이 색상으로 표시되고 큰 크기로 표시되며 문맥 밖으로 표시 될 때 혼란이 야기됩니다
 
@@ -149,8 +149,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 피드백은 사람들이 앱이하는 일을 파악하고, 다음에 할 수있는 것을 발견하고, 행동 결과를 이해하는 데 도움이됩니다
 
-
-![screen](/img/posts/feedback.png) <br>
+<center><img scr="/img/posts/feedback.png"></center>
 
 #### - 인터페이스에 다른 유형의 피드백과 상태를 눈에 띄지 않게 통합하십시오
 
@@ -164,7 +163,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 지원되는 장치에서 햅틱은주의를 끌고 행동을 강화하는 촉감 피드백을 통해 사용자를 육체적으로 참여시키는 방법을 제공합니다. 선택기, 스위치 및 슬라이더와 같은 일부 시스템 제공 인터페이스 요소는 사용자가 상호 작용할 때 햅틱 피드백을 자동으로 제공합니다. 앱에서 다른 유형의 햅틱 피드백을 생성하도록 시스템에 요청할 수도 있습니다. iOS는이 피드백의 강점과 행동을 관리합니다.
 
-![screen](/img/posts/feedback-1.png) <br>
+<center><img scr="/img/posts/feedback-1.png"></center>
 
 #### - 현명하게 햅틱을 사용하십시오
 
@@ -206,7 +205,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 사람들은 파일을 만들고,보고, 조작하는 동안 파일 시스템에 관해 생각할 필요가 없습니다. 앱이 파일과 작동하는 경우 가능한 한 파일 처리를 줄입니다.
 
-![screen](/img/posts/file_handler.png) <br>
+<center><img scr="/img/posts/file_handler.png"></center>
 
 #### - 작업을 취소하거나 삭제하지 않는 한 항상 보존한다는 확신을 심어 둡니다
 
@@ -296,7 +295,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 근거리 통신 (Near Field Communication, NFC)은 몇 센티미터 이내의 매우 근접한 장치로 정보를 무선으로 교환 할 수있게합니다. 지원되는 기기에서 실행되는 iOS 앱은 NFC 검색을 사용하여 실제 개체에 첨부 된 전자 태그의 데이터를 읽을 수 있습니다. 예를 들어, 사용자가 장난감을 스캔하여 비디오 게임에 연결하거나, 구매자가 상점 로그인을 스캔하여 쿠폰에 액세스하거나, 소매 직원이 제품을 스캔하여 재고를 추적 할 수 있습니다. 응용 프로그램은 단일 또는 다중 객체 검색을 활성화 할 수 있으며 사용자가 무언가를 스캔해야 할 때마다 시스템이 스캔 시트를 가져옵니다.
 
-![screen](/img/posts/near_field_communication.png) <br>
+<center><img scr="/img/posts/near_field_communication.png"></center>
 
 ---
 
@@ -304,7 +303,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 많은 앱을 통해 사람들은 장치를 흔들어 타이핑이나 삭제와 같은 특정 작업을 실행 취소하고 다시 실행할 수 있습니다. 이 방법으로 시작되면 사용자에게 실행 취소 또는 다시 실행 작업을 확인 또는 취소하라는 경고가 표시됩니다.
 
-![screen](/img/posts/undo_and_redo.png) <br>
+<center><img scr="/img/posts/undo_and_redo.png"></center>
 
 #### - 취소하거나 다시 수행 할 작업을 간단하고 정확하게 설명하십시오
 

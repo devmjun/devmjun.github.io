@@ -100,19 +100,19 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 목적지에 도달 할 때까지 화면 당 하나의 선택을하십시오. 다른 목적지로 이동하려면 단계를 되돌아 가거나 처음부터 다시 시작해야하고 다른 선택을해야합니다. 설정 및 메일에서는이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation.png)
+<center><img src="/img/posts/Navigation.png"></center>
 
 #### - 평면 적 탐색
 
 여러 콘텐츠 범주간에 전환하십시오. 음악과 App Store는이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation-1.png)
+<center><img src="/img/posts/Navigation-1.png)"></center>
 
 #### - 콘텐츠 기반 또는 경험 중심의 탐색 
 
 콘텐츠를 자유롭게 이동하거나 콘텐츠 자체가 탐색을 정의합니다. 게임, 책 및 기타 몰입 형 앱은 일반적으로이 탐색 스타일을 사용합니다.
 
-![screen](/img/posts/Navigation-2.png)
+<center><img src="/img/posts/Navigation-2.png"></center>
 
 일부 앱은 여러 탐색 스타일을 결합합니다. 예를 들어 평면 탐색을 사용하는 앱은 각 카테고리 내에서 계층 적 탐색을 구현할 수 있습니다.
 
@@ -191,7 +191,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 사용자는 앱이 현재 위치, 캘린더, 연락처 정보, 알림 및 사진 등의 개인 정보에 액세스 할 수있는 권한을 부여해야합니다. 사람들은이 정보에 액세스 할 수있는 앱을 사용하는 편리 성을 잘 알고 있지만 개인 데이터를 제어 할 수 있기를 기대합니다. 예를 들어 사람들은 사진을 실제 위치에 자동으로 태그하거나 가까운 친구를 찾을 수있는 것을 좋아하지만 그러한 기능을 사용하지 않도록 설정할 수도 있습니다.
 
 
-![screen](/img/posts/Requesting_Permission1.png)
+<center><img src="/img/posts/Requesting_Permission1.png"></center>
 
 #### - 앱이 명확하게 필요할 때만 개인 데이터를 요청하십시오
 
@@ -233,22 +233,4 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 | :--: | :--: |
 |![screen](/img/posts/Setting.png) |![screen](/img/posts/Setting-1.png) | <br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---

@@ -22,7 +22,7 @@ tags: [Swift]
 
 ---
 
-![screen](/img/posts/Overview1.jpg)
+<center><img src="/img/posts/Overview1.jpg"></center>
 
 ## - 테마
 
@@ -121,6 +121,4 @@ iPhone X를 디자인 할 때 레이아웃이 화면을 채우고 장치의 둥�
 
 > iOS는 Apple Pay, HealthKit & ResearchKit과 같은 다른 프레임워크 및 기술과도 긴밀하게 통합이 가능합니다. 
 
-
-
-
+---
