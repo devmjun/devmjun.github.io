@@ -59,7 +59,7 @@ Modality는 사람들이 작업을 완료하거나 메시지 또는보기를 닫
 
 모달 보기를 닫을 때 사람들이 항산 자신의 행동 결과를 알도록 하는게 좋습니다.
 
-####- 모달 작업을 간단하고 짧으며 집중적을 유지 하십시오. 
+#### - 모달 작업을 간단하고 짧으며 집중적을 유지 하십시오. 
 
 앱 내에 앱을 만들지 마세요. 모달 작업이 너무 복잡하면 사람들은 모달 컨텍스트에 들어갈 때 일시 중단 된 작업을 놓칠 수 있습니다. 특히 사용자가 길을 잃고 단계를 추적하는 방법을 잊어 버릴 수 있기 때문에 뷰 계층을 포함하는 모달 작업을 만드는 데주의하십시오. 모달 작업에 하위보기가 포함되어야하는 경우 계층 구조를 통과하는 단일 경로와 완료까지 명확한 경로를 제공하십시오. 작업 완료 이외의 작업에는 완료 버튼을 사용하지 마십시오.
 
@@ -104,9 +104,9 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 #### - 평면 적 탐색
 
-여러 콘텐츠 범주간에 전환하십시오. 음악과 App Store는이 탐색 스타일을 사용합니다.
+여러 콘텐츠 범주간에 전환하십시오. 음악과 App Store는이 탐색 스타일을 사용합니다. <br>
 
-<center><img src="/img/posts/Navigation-1.png)"></center>
+<center><img src="/img/posts/Navigation-1.png)"></center> <br> 
 
 #### - 콘텐츠 기반 또는 경험 중심의 탐색 
 
@@ -229,7 +229,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 필요한 경우 설정에 대한 바로 가기를 제공하십시오. 앱에 "설정> MyApp> 개인 정보> 위치 서비스로 이동"과 같이 사용자에게 설정을 안내하는 텍스트가 포함되어 있으면 해당 위치를 자동으로 여는 버튼을 제공하십시오. 이 동작을 구현하는 방법을 보려면 [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication) 에서 [설정 시작 URL](https://developer.apple.com/documentation/uikit/uiapplication/settings_launch_url) 을 참조하십시오 .
 
-| * | * | 
+| Setting | Setting | 
 | :--: | :--: |
 |![screen](/img/posts/Setting.png) |![screen](/img/posts/Setting-1.png) | <br>
 

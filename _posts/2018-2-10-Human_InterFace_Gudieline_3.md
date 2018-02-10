@@ -68,7 +68,7 @@ tags: [Swift]
 
 생체 인증이 가능하면 지원해주십시오
 
-| * | * | 
+| Face ID | Touch ID | 
 | :--: | :--: |
 |![screen](/img/posts/Authentication-1.png) |![screen](/img/posts/Authentication-2.png) | <br>
 
