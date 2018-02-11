@@ -283,7 +283,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 > 팁
 >
-> 아이콘 대신 텍스트를 사용하여 탐색 막대 또는 도구 모음의 항목을 나타낼 수  있습니다. 예를 들어 캘린더는 툴바에서 "오늘", "달력"및 "받은 편지함"을 사용합니다. 고정 된 공간 요소를 사용하여 탐색 및 도구 모음 아이콘 사이에 패딩값을 제공 할 수도 있습니다.
+> 아이콘 대신 텍스트를 사용하여 탐색 막대 또는 도구 모음의 항목을 나타낼 수  있습니다. 예를 들어 캘린더는 툴바에서 "오늘", "달력" 및 "받은 편지함"을 사용합니다. 고정 된 공간 요소를 사용하여 탐색 및 도구 모음 아이콘 사이에 패딩값을 제공 할 수도 있습니다. <br> 
 
 | * |
 | :--: |
@@ -300,9 +300,11 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 #### - 홈 화면 빠른 액션 아이콘
 
-[home screen quick action](https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/) 메뉴 에서 다음 아이콘을 사용하십시오. 개발자 지침은 [UIApplicationShortcutIconType](https://developer.apple.com/documentation/uikit/uiapplicationshortcuticontype)을 참조하십시오
+[home screen quick action](https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/) 메뉴 에서 다음 아이콘을 사용하십시오. 개발자 지침은 [UIApplicationShortcutIconType](https://developer.apple.com/documentation/uikit/uiapplicationshortcuticontype)을 참조하십시오. <br>
 
-<center><img src="/img/posts/SystemiCon-3.png"></center> <br>
-<center><img src="/img/posts/SystemiCon-4.png"></center> <br>
+| * |
+| :--: |
+|![screen](/img/posts/SystemiCon-3.png) | 
+|![screen](/img/posts/SystemiCon-4.png)| <br>
 
 ---
