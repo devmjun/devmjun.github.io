@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (7)"
-subtitle:   ""
+subtitle:   "Navigation Bars, Search Bars, Status Bars, Tab Bars, toolbars"
 date:       2018-02-11 20:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
