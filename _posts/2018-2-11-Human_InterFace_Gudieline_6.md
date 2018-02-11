@@ -284,10 +284,11 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 > 팁
 >
 > 아이콘 대신 텍스트를 사용하여 탐색 막대 또는 도구 모음의 항목을 나타낼 수  있습니다. 예를 들어 캘린더는 툴바에서 "오늘", "달력"및 "받은 편지함"을 사용합니다. 고정 된 공간 요소를 사용하여 탐색 및 도구 모음 아이콘 사이에 패딩값을 제공 할 수도 있습니다.
+
 | * |
 | :--: |
-|<center><img src="/img/posts/SystemiCon.png"></center>|
-|<center><img src="/img/posts/SystemiCon-1.png"></center>|
+|![screen](/img/posts/SystemiCon.png) | 
+|![screen](/img/posts/SystemiCon-1.png)| <br>
 
 
 
