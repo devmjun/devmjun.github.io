@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (8)"
-subtitle:   ""
+subtitle:   "Action Sheets, Activity Views, Alerts, Collections, Image Views, Map, Pages, Popovers, Scroll Views, Split Views, Tables, Text Views, Web Views"
 date:       2018-02-11 21:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
@@ -421,17 +421,38 @@ iOS는 평범하고 그룹화 된 두 가지 스타일의 표를 구현합니다
 
 ---
 
+## Text Views 
 
+텍스트뷰는 여러 줄의 스타일이 지정된 텍스트 내용을 표시합니다. 텍스트뷰는 높이가 될 수 있으며 컨텐츠뷰와 외부로 확장되면 스크롤 할 수 있습니다. 기본적으로 텍스트뷰의 내용은 왼쪽으로 정렬되고 시스템 글꼴은 검정색으로 사용됩니다. 텍스트뷰를 편집 할 수있는 경우 텍스트뷰의 내부를 탭하면를 키보드가 나타납니다.
 
+<center><img src="/img/posts/TextView.png" width="382" height="700"></center> <br> 
 
+#### - 텍스트를 읽기 쉬운 상태로 유지하십시오
 
+독창적인 방식으로 여러 글꼴, 색상 및 맞춤을 사용할 수 있지만 콘텐츠의 가독성을 유지하는 것이 중요합니다. 동적 유형을 채택하는 것이 좋습니다. 그래야 사람들이 기기에서 텍스트 크기를 변경하면 텍스트가 잘 보입니다. 또한 굵은 텍스트와 같이 내게 필요한 옵션을 사용하도록 설정하여 콘텐츠를 테스트해야합니다.
 
+#### - 해당 키보드 유형을 표시하십시오
 
+iOS는 여러 유형의 키보드를 제공하며 각 유형은 서로 다른 유형의 입력을 용이하게합니다. 데이터 입력을 간소화하려면 텍스트뷰를 편집하는 동안 표시되는 키보드가 필드의 내용 유형에 적합해야합니다. 가능한 키보드 유형의 전체 목록은 참조 [UIKeyboardType](https://developer.apple.com/documentation/uikit/uikeyboardtype), [UITextInputTraits](https://developer.apple.com/documentation/uikit/uitextinputtraits)을 참조하세요
 
+개발자 안내는 [UITextView](https://developer.apple.com/documentation/uikit/uitextview)를 참조하십시오.
 
+---
 
+## Web Views 
 
+웹뷰는 삽입 된 HTML 및 웹 사이트와 같은 풍부한 웹 콘텐츠를 앱 내에 직접로드하고 표시합니다. Mail은 웹뷰를 사용하여 메시지에 HTML 컨텐트를 표시합니다.
 
+<center><img src="/img/posts/WebView.png" width="382" height="700"></center> <br> 
 
+#### - 적절한 경우 앞으로 및 뒤로 탐색을 사용합니다
 
+`웹뷰는 앞으로 및 뒤로 탐색을 지원 하지만 이 동작은 기본적으로 비활성화되어 있습니다.` 사용자가 웹뷰를 사용하여 여러 페이지를 방문하는 경우 앞으로 및 뒤로 탐색을 활성화하고 해당 기능을 시작하는 컨트롤을 제공하십시오.
 
+#### - 웹뷰를 사용하여 웹 브라우저를 작성하지 마십시오
+
+웹뷰를 사용하여 사람들이 앱의 컨텍스트를 벗어나지 않고 간단히 웹 사이트에 액세스 할 수있게하는 것은 좋지만 Safari가 사람들이 iOS에서 웹을 탐색하는 주요 방법입니다. 앱에서 Safari의 기능을 복제하려는 시도는 불필요하고 권장하지 않습니다.
+
+개발자 안내는 [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview)를 참조하십시오.
+
+---
