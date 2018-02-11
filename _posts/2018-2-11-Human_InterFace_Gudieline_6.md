@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (6)"
-subtitle:   ""
-date:       2018-02-11 07:00:00
+subtitle:   "Image Size and Resolution, App Icon, Custom Icons, Launch Screen, System Icons"
+date:       2018-02-11 18:06:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
