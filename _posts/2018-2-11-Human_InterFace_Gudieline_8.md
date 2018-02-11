@@ -35,7 +35,7 @@ tags: [Swift]
 
 액션 시트는 컨트롤이나 작업에 대한 응답으로 나타나는 특정 스타일의 경고이며 현재 컨텍스트와 관련된 두 가지 이상의 선택 사항 집합을 제공합니다. 액션 시트를 사용하여 잠재적인, 부주의한 작업을 수행하기 전에 사람들이 작업을 시작하거나 확인을 요청하십시오. 현재 화면에서는 액션 시트가 화면 하단에서 위로 슬라이드됩니다. 큰 화면에서는 한 번에 액션 시트가 팝업으로 표시됩니다.
 
-<center><img src="/img/posts/ActionSheet.png" height="700"></center> <br> 
+<center><img src="/img/posts/ActionSheet.png" width="382" height="700"></center> <br> 
 
 #### - 선명도가 추가되면 취소 버튼을 제공하십시오
 
@@ -57,7 +57,7 @@ tags: [Swift]
 
 활동은 복사, 즐겨 찾기 또는 찾기와 같은 작업으로 현재 상황에서 유용합니다. 일단 시작되면 활동은 즉시 작업을 수행하거나 진행하기 전에 더 많은 정보를 요구할 수 있습니다. 활동은 장치 및 방향에 따라 시트 또는 팝업으로 나타나는 활동뷰로 관리됩니다. 사용자가 앱에서 수행 할 수 있는 맞춤 서비스 또는 작업에 대한 액세스 권한을 부여하기 위해 활동을 사용합니다.
 
-<center><img src="/img/posts/activity_views.png" height="700"></center> <br> 
+<center><img src="/img/posts/activity_views.png" width="382" height="700"></center> <br> 
 
 이 시스템은 인쇄, 메시지 및 AirPlay를 포함하여 여러 가지 기본 제공 활동을 제공합니다. 이러한 테스크는 활동보기에서 항상 맨 처음에 나타나며 다시 정렬 할 수 없습니다. 이러한 기본 제공 작업을 수행하는 사용자 지정 활동을 만들 필요가 없습니다. 활동보기는 다른 앱의 공유 및 작업 확장을 표시합니다. [공유 및 작업을](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions) 참조하십시오.
 
@@ -79,7 +79,21 @@ tags: [Swift]
 
 <center><img src="/img/posts/activity_views-1.png" width="500"></center> <br> 
 
-개발자 지침은 [UIActivityViewContoller](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) 및 [UIActivity](https://developer.apple.com/documentation/uikit/uiactivity)를 참조하십시오 .
+개발자 지침은 [UIActivityViewContoller](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) 및 [UIActivity](https://developer.apple.com/documentation/uikit/uiactivity)를 참조하십시오.
+
+---
+
+## Alerts 
+
+알림은 앱 또는 기기의 상태와 관련된 중요한 정보를 전달하며 종종 피드백을 요청합니다. 경고는 제목, 선택적 메시지, 하나 이상의 단추 및 입력을 수집하기위한 선택적 텍스트 필드로 구성됩니다. 이러한 구성 가능한 요소 외에도 경고의 시각적 모양은 정적이며 사용자 정의 할 수 없습니다.
+
+<center><img src="/img/posts/Alert.png" height="700"></center> <br> 
+
+
+
+
+
+
 
 
 
