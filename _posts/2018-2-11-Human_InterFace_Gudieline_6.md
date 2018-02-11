@@ -134,7 +134,7 @@ Apple 제품은 저작권이 있으며 귀하의 아이콘이나 이미지로 �
 
 모든 앱은 앱 이름이 스포트라이트 검색의 용어와 일치 할 때 iOS가 표시 할 수있는 작은 아이콘을 제공해야 합니다. 또한 설정 이 있는 앱은 기본 제공 설정 앱에 표시 할 작은 아이콘을 제공해야하며 알림을 지원하는 앱은 알림에 표시 할 작은 아이콘을 제공해야 합니다. 모든 아이콘은 앱을 명확하게 식별해야합니다. 이상적으로 앱 아이콘과 일치해야합니다. 이 아이콘을 제공하지 않으면 iOS가 기본 앱 아이콘을 축소하여이 위치에 표시되도록 할 수 있습니다.
 
-| * | * | 
+| Setting | PushNotification | 
 | :--: | :--: |
 |![screen](/img/posts/appiCon-4.png) | ![screen](/img/posts/appiCon-5.png)| <br>
 
@@ -284,9 +284,12 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 > 팁
 >
 > 아이콘 대신 텍스트를 사용하여 탐색 막대 또는 도구 모음의 항목을 나타낼 수  있습니다. 예를 들어 캘린더는 툴바에서 "오늘", "달력"및 "받은 편지함"을 사용합니다. 고정 된 공간 요소를 사용하여 탐색 및 도구 모음 아이콘 사이에 패딩값을 제공 할 수도 있습니다.
+| * |
+| :--: |
+|<center><img src="/img/posts/SystemiCon.png"></center>|
+|<center><img src="/img/posts/SystemiCon-1.png"></center>|
 
-<center><img src="/img/posts/SystemiCon.png"></center> <br>
-<center><img src="/img/posts/SystemiCon-1.png"></center> <br>
+
 
 #### - 탭 바 아이콘들 
 
