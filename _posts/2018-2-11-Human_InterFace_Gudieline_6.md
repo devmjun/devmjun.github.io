@@ -255,22 +255,50 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 ---
 
-## 시스템 아이콘 
+## 시스템 아이콘들
 
+이 시스템은 다양한 케이스에서 일반적인 작업 및 유형의 콘텐츠를 나타내는 내장 아이콘을 제공합니다.<br>
 
+- 탐색 모음 및 도구 모음 아이콘
+- 탭 표시 줄 아이콘
+- 홈 화면 빠른 액션 아이콘 <br>
 
+사람들에게 친숙하기 때문에 이러한 기본 제공 아이콘을 최대한 많이 사용하는 것이 좋습니다.
 
+#### - 시스템이 아이콘을 의도한 대로 사용하십시오
 
+모든 시스템 제공 이미지에는 특정의 잘 알려진 의미가 있습니다. 혼란을주지 않으려면 각 이미지를 의미와 권장 용도에 따라 사용해야합니다.
 
+#### - 아이콘에 대한 대체 텍스트 레이블을 제공하십시오
 
+다른 텍스트 레이블은 화면 상에 보이지 않지만, VoiceOver는 화면 상에 무엇이 들리는지를 소리로 설명하여 시각 장애가있는 사람들이 쉽게 탐색 할 수 있게합니다.
 
+#### - 사용자 요구에 맞는 시스템 제공 아이콘을 찾을 수 없는 경우 사용자 정의 아이콘을 디자인하십시오. 
 
+시스템 제공 이미지를 오용하는 것보다 자신의 디자인을 만드는 것이 좋습니다. [사용자 정의 아이콘을](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/custom-icons/) 참조하십시오.
 
-  
+#### - 탐색 모음 및 도구 모음 아이콘
 
+[navigation bars](https://developer.apple.com/ios/human-interface-guidelines/bars/navigation-bars/) 과 [toolbars](https://developer.apple.com/ios/human-interface-guidelines/bars/toolbars/) 에서 다음 아이콘을 사용하십시오 . 개발자 가이드는 [UIBarButtonSystemItem](https://developer.apple.com/documentation/uikit/uibarbuttonsystemitem)을 참조하십시오.
 
+> 팁
+>
+> 아이콘 대신 텍스트를 사용하여 탐색 막대 또는 도구 모음의 항목을 나타낼 수  있습니다. 예를 들어 캘린더는 툴바에서 "오늘", "달력"및 "받은 편지함"을 사용합니다. 고정 된 공간 요소를 사용하여 탐색 및 도구 모음 아이콘 사이에 패딩값을 제공 할 수도 있습니다.
 
+<center><img src="/img/posts/SystemiCon.png"></center> <br>
+<center><img src="/img/posts/SystemiCon-1.png"></center> <br>
 
+#### - 탭 바 아이콘들 
 
+[Tar Bars](https://developer.apple.com/ios/human-interface-guidelines/bars/tab-bars/) 에서 다음 아이콘을 사용하십시오 . 개발자 가이드는 [UITabBarSystemItem](https://developer.apple.com/documentation/uikit/uitabbarsystemitem)을 참조하십시오.
 
+<center><img src="/img/posts/SystemiCon-2.png"></center> <br>
 
+#### - 홈 화면 빠른 액션 아이콘
+
+[home screen quick action](https://developer.apple.com/ios/human-interface-guidelines/extensions/home-screen-actions/) 메뉴 에서 다음 아이콘을 사용하십시오. 개발자 지침은 [UIApplicationShortcutIconType](https://developer.apple.com/documentation/uikit/uiapplicationshortcuticontype)을 참조하십시오
+
+<center><img src="/img/posts/SystemiCon-3.png"></center> <br>
+<center><img src="/img/posts/SystemiCon-4.png"></center> <br>
+
+---
