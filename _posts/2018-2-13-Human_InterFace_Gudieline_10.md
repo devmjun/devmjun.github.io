@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (10)"
-subtitle:   ""
+subtitle:   "Custom Keyboards, Document Providers, Home Screen Actions, Messageing, Photo Editing, Sharing and Action, Widgets"
 date:       2018-02-13 03:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
@@ -328,7 +328,7 @@ iMessage 앱과 스티커 팩 아이콘 Photoshop 템플릿을 다운로드하�
 
 | Search screen widgets | Home screen quick action widet | 
 | :--: | :--: |
-|![screen](/img/posts/Keyboard.png) | ![screen](/img/posts/Keyboard-1.png)| <br>
+|![screen](/img/posts/Widtget.png) | ![screen](/img/posts/Widtget-1.png)| <br>
 
 
 #### - 쩌는(?) 멋진 경험을 디자인하십시오
