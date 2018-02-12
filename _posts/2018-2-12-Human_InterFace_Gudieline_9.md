@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (9)"
-subtitle:   ""
+subtitle:   "Button, Edit Menus, Labels, Page Controls, Pickers, Progress Indicators, Refresh Content Controls, Segemented Controls, Sliders, Steppers, Switches, Text Fields"
 date:       2018-02-12 00:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
@@ -350,5 +350,92 @@ Segmented Control 배경 모양을 변경하는 경우 내용이 여전히보기
 
 ---
 
+## Steppers
 
+스테퍼는 값을 늘리거나 줄이기 위해 사용되는 2세그먼트 컨트롤입니다. 기본적으로 스테퍼의 한 세그먼트는 더하기 기호를 표시하고 다른 세그먼트는 빼기 기호를 표시합니다. 원하는 경우 이러한 기호를 사용자 지정 이미지로 바꿀 수 있습니다.
+
+<center><img src="/img/posts/Steeper.png" width="382" height="700"></center> <br> 
+
+#### - 스테퍼에 의해 영향을받은 값을 분명히하십시오
+
+스테퍼 자체에는 값이 표시되지 않으므로 사람들이 스테퍼를 사용할 때 어떤 값을 변경하는지 알도록하십시오.
+
+#### - 큰 값의 변경 가능성이있는 경우 스테퍼를 사용하지 마십시오
+
+Steppers는 약간의 탭이 필요한 작은 변경 작업에 적합합니다. 예를 들어, 인쇄 화면에서 스테퍼를 사용하면 사람들이 이 설정별로 변경하지 않기 때문에 인쇄 매수를 설정할 수 있습니다. 반면에 적당한 페이지 범위조차도 많은 탭이 필요하기 때문에 스테퍼를 사용하여 페이지 범위를 선택하는 것은 의미가 없습니다.
+
+개발자 안내는 [UIStepper](https://developer.apple.com/documentation/uikit/uistepper)를 참조하십시오.
+
+---
+
+## Switches 
+
+스위치는 두 개의 양립할수 없는 상태의 켜기와 끄기 사이의 시각적 단추(장치)입니다. <br>
+
+| Default appearance | Custom appearance | 
+| :--: | :--: |
+|![screen](/img/posts/Switch.png) | ![screen](/img/posts/Switch-1.png)| <br>
+
+
+#### - 앱의 스타일과 일치하도록 스위치의 모양을 조정하는 것이 좋습니다
+
+앱에서 정상적으로 작동하는 경우 스위치의 색상을 켜고 끌거나 맞춤형 이미지를 사용하여 스위치를 나타냅니다.
+
+#### - 테이블뷰 행에서만 스위치를 사용하십시오
+
+스위치는 켜기/끄기로 전환 할 수 있는 설정목록과 같이 테이블뷰에서 사용하기위한 것입니다. toolbars이나 Navigation bar 비슷한 기능이 필요한 경우 대신 단추를 사용하고 상태를 알리는 두 개의 별개 아이콘을 제공하십시오.
+
+#### -레이블 값을 사용하여 스위치 값을 설명하지 마십시오
+
+스위치가 켜져 있거나 꺼져 있습니다. 이러한 상태를 설명하는 레이블을 제공하면 중복되어 인터페이스가 혼란 스럽습니다.
+
+#### - 스위치를 사용하여 관련 인터페이스 요소의 가용성을 관리하는 것을 고려하십시오
+
+스위치는 종종 화면상의 다른 콘텐츠에 영향을 미칩니다. 예를 들어 설정에서 비행기 모드 스위치를 사용하면 셀룰러 및 개인 핫스팟과 같은 특정 설정이 비활성화됩니다. 설정 > Wi-Fi에서 Wi-Fi 스위치를 비활성화하면 사용 가능한 네트워크 및 기타 옵션이 사라집니다.
+
+개발자 지침은 [UISwitch](https://developer.apple.com/documentation/uikit/uiswitch)를 참조하십시오.
+
+---
+
+#### Text Fields
+
+텍스트 필드는 둥근 모서리가있는 고정 길이의 `한 줄짜리 필드로`, 사용자가 텍스트 필드를 누를때 자동으로 키보드를 가져옵니다. 텍스트 필드를 사용하여 이메일 주소와 같은 소량의 정보를 요청하십시오.
+
+<center><img src="/img/posts/TextField.png" width="500"></center> <br> 
+
+#### - 텍스트 필드에 힌트를 표시하여 의사 소통을 돕습니다
+
+텍스트 필드에는 필드에 다른 텍스트가 없을 때 "이메일" 또는 "비밀번호"와 같은 PlaceHolder Text가 포함될 수 있습니다. PlacHolder Text가 충분한 경우 별도의 레이블을 사용하여 텍스트 필드를 설명하지 마십시오.
+
+#### - 텍스트 필드의 오른쪽 끝 부분에 지우기 버튼을 표시하십시오
+
+이 요소가있는 경우 탭을 두드리면 텍스트 필드의 내용이 지워 지므로 Delete 키를 계속 누를 필요가 없습니다.
+
+#### - 적절한 경우 보안 텍스트 필드를 사용하십시오
+
+앱이 비밀번호와 같은 중요한 데이터를 요청할 때는 항상 보안 텍스트 필드를 사용하십시오.
+
+#### - 이미지와 버튼을 사용하여 텍스트 필드에 선명도와 기능성을 제공하십시오
+
+텍스트 필드의 왼쪽 또는 오른쪽에 사용자 정의 이미지를 표시하거나 책갈피 단추와 같은 시스템 제공 단추를 추가 할 수 있습니다. 일반적으로 필드의 목적을 나타 내기 위해 텍스트 필드의 왼쪽 끝을 사용하고 북마킹과 같은 추가 기능이 있음을 나타 내기 위해 오른쪽 끝을 사용하십시오.
+
+개발자 안내는 [UITextField](https://developer.apple.com/documentation/uikit/uitextfield)를 참조하십시오 .
+
+> 팁
+> 
+> `다중 행 또는 다중 스타일 텍스트 입력의 경우 TextViews를 대신 사용하십시오.` [Text Views를](https://developer.apple.com/ios/human-interface-guidelines/views/text-views) 참조하십시오.
+
+#### - Keybboards
+
+| Email Keyboard | Phone Keyboard | 
+| :--: | :--: |
+|![screen](/img/posts/Keyboard.png) | ![screen](/img/posts/Keyboard-1.png)| <br>
+
+#### - 해당 키보드 유형을 표시하십시오
+
+iOS는 여러 유형의 키보드를 제공하며 각 유형은 서로 다른 유형의 입력을 용이하게 합니다. 데이터 입력을 간소화하려면 텍스트 필드를 편집 할 때 표시되는 키보드가 필드의 내용 유형에 적합해야합니다. 예를 들어 앱에서 이메일 주소를 묻는 경우 이메일 주소 키보드가 표시되어야합니다. 가능한 키보드 유형의 전체 목록은 [UIKeyboardType](https://developer.apple.com/documentation/uikit/uikeyboardtype), [UITextInputTraits](https://developer.apple.com/documentation/uikit/uitextinputtraits)을 참조하세요.
+
+관련 지침은 [Custom Keyboards](https://developer.apple.com/ios/human-interface-guidelines/extensions/custom-keyboards/) 를 참조하십시오.
+
+---
 
