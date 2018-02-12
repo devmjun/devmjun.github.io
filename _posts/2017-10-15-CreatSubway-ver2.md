@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "지하철 노선도 만들기(초보편) part 2"
+title:      "Swift. 지하철 노선도 만들기(초보편) part 2"
 subtitle:   "Alert, ScrollView 이용해서 만들기"
 date:       2017-10-15 16:26:00
 author:     "MinJun"

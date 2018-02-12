@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Selenium 으로 Crawling 하기 "
+title:      "Python. Selenium 으로 Crawling 하기 "
 subtitle:   "Selenium 으로 슈퍼 크롤러 되기."
 date:       2017-10-03 02:03:00
 author:     "MinJun"
