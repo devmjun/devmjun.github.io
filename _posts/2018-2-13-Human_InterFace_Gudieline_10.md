@@ -116,7 +116,7 @@ Custom Input Views의 컨트롤은 앱 컨텍스트에서 의미가 있어야합
 
 동적 미리보기 액션은 작업을 관련성있게 유지하는 가장 좋은 방법입니다. 예를 들어 앱의 현재위치나 최근 활동, 시간대 또는 설정변경을 기반으로 빠른 작업을 업데이트하는 것이 좋습니다. 그러나 작업을 예측할 수 없거나 혼란스러운 방식으로 변경하면 안됩니다.
 
-###3 - 각 미리보기 액션 대해 간결한 제목을 제공하십시오
+#### - 각 미리보기 액션 대해 간결한 제목을 제공하십시오
 
 행동 제목은 행동 결과를 즉시 전달해야합니다. 예를 들어, "Directions Home", "Create New Contact"및 "New message"와 같이 더 많은 컨텍스트를 제공해야하는 경우 자막을 제공하십시오. Mail은 받은편지함 및 VIP 폴더에 읽지 않은 메시지가 있는지 여부를 나타 내기 위해 자막을 사용합니다. 앱 이름이나 관련없는 정보를 제목이나 부제목에 포함시키지 말고 자르지 않도록 텍스트를 짧게 유지하고 텍스트를 작성할 때 현지화를 고려하십시오.
 
@@ -144,7 +144,7 @@ iMessage앱은 메시지 대화의 컨텍스트 내에서 대화식 경험을 �
 
 | Compact | Expanded | 
 | :--: | :--: |
-|![screen](/img/posts/Keyboard.png) | ![screen](/img/posts/Keyboard-1.png)| <br>
+|![screen](/img/posts/iMessage.png) | ![screen](/img/posts/iMessage-1.png)| <br>
 
 #### - 직관적인 인터페이스를 설계하십시오
 
@@ -181,7 +181,7 @@ iMessage 응용 프로그램은 일반적으로 두 명 이상의 사람들 사�
 
 | Compact | Expanded | 
 | :--: | :--: |
-|![screen](/img/posts/Keyboard-2.png) | ![screen](/img/posts/Keyboard-3.png)| <br>
+|![screen](/img/posts/iMessage-2.png) | ![screen](/img/posts/iMessage-3.png)| <br>
 
 #### - 표현력을위한 디자인
 
@@ -213,7 +213,7 @@ Messaging은 보편적인 의사 소통 형식입니다. 광범위하고 국제�
 
 | Small size | Regular size | Large size |
 | :--: | :--: | :--: |
-|![screen](/img/posts/Keyboard-4.png) | ![screen](/img/posts/Keyboard-5.png)| ![screen](/img/posts/Keyboard-6.png) |<br>
+|![screen](/img/posts/iMessage-4.png) | ![screen](/img/posts/iMessage-5.png)| ![screen](/img/posts/iMessage-6.png) |<br>
 
 #### - 적절하게 스티커의 크기를 조정하십시오
 
@@ -227,7 +227,7 @@ Messaging은 보편적인 의사 소통 형식입니다. 광범위하고 국제�
 
 메시지는 다음 파일 형식의 스티커를 지원합니다.
 
-<center><img src="/img/posts/iMessage-7.png" width="500"></center> <br> 
+<center><img src="/img/posts/iMessage-7.png" width="700" height="700"></center> <br> 
 
 #### - iMessage 앱 및 스티커 팩 아이콘
 
@@ -245,7 +245,7 @@ iOS 응용 프로그램과 마찬가지로 iMessage 응용 프로그램과 스�
 
 아이콘이 App Store, 메시지, 알림 및 설정에 나타납니다. 모든 컨텍스트 및 장치에서 아이콘이 잘 보이게하려면 다음 크기의 아이콘 변형을 제공 할 수 있습니다.
 
-<center><img src="/img/posts/iMessage-8.png" width="500"></center> <br> 
+<center><img src="/img/posts/iMessage-8.png" width="700" height="700"></center> <br> 
 
 iMessage 앱 및 스티커 팩 아이콘에 적용 할 수있는 훌륭한 앱 아이콘 디자인에 대한 추가 지침은 [App Icon](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/)을 참조하십시오 .
 
@@ -259,7 +259,7 @@ iMessage 앱과 스티커 팩 아이콘 Photoshop 템플릿을 다운로드하�
 
 사진 수정 프로그램 확장 기능을 사용하면 필터를 적용하거나 다른 변경 사항을 적용하여 사진 앱에서 사진 및 동영상을 수정할 수 있습니다. 편집은 항상 Photos 앱에 새 파일로 저장되어 안전하게 원본 버전을 유지합니다.
 
-<center><img src="/img/posts/PhotoEdit.png" width="500"></center> <br> 
+<center><img src="/img/posts/PhotoEdit.png" width="382" height="700"></center> <br> 
 
 사진 편집 확장 프로그램에 액세스하려면 사진이 편집 모드에 있어야합니다. 편집 모드에서 toolbar의 확장 아이콘을 누르면 사용 가능한 편집 확장 기능의 작업 메뉴가 표시됩니다. 하나를 선택하면 navigation bar가 포함 된 Modal view에서 확장 인터페이스가 표시됩니다. 해당뷰를 닫으면 편집 내용을 확인하고 저장하거나 취소하고 사진 응용 프로그램으로 돌아갑니다.
 
