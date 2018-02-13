@@ -18,13 +18,11 @@ tags: [Idea]
 | | |
 | :--: | :--: |
 | spoqa / 도도포인트 |[https://spoqa.github.io/](https://spoqa.github.io/) |  <br>
-
 > 매장 포인트 적립 / 마케팅 서비스, `개발, 디자인` <br>
 
 | | |
 | :--: | :--: |
 | VCNC / 비트윈 |[http://engineering.vcnc.co.kr/](http://engineering.vcnc.co.kr/) |  <br>
-
 > 커플 SNS  `개발` <br>
 
 | Toss Lab / 잔디 |[https://tosslab.github.io/](https://tosslab.github.io/) |  <br>
