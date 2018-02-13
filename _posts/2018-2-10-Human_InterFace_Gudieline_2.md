@@ -13,7 +13,7 @@ tags: [Swift]
 
 ---
 
-# 앱 아키텍처 
+# App Architecture
 
 - Accessibility
 - Loading
@@ -25,7 +25,7 @@ tags: [Swift]
 
 ---
 
-## 접근성 
+## Accessibility 
 
 iOS는 시력 손실, 난청 및 기타 장애가있는 사용자를 위해 광범위한 접근 기능을 제공합니다. 대부분의 UIKit 기반 앱은 거의 아무런 노력없이 액세스 할 수 있으므로 더 많은 사람들이 앱을 사용하면서 동시에 모든 사람들에게 똑같이 매력적인 경험을 제공 할 수 있습니다 <br>
 

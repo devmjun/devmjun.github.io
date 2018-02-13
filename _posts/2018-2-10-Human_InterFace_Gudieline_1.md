@@ -13,18 +13,18 @@ tags: [Swift]
 
 ---
 
-# 개요 <br>
+# Overview <br>
 
-- 테마
-- 아이폰X
-- iOS 11의 새로운 사항
-- 인터페이스 필수 사항 
+- Themes
+- iPhone X 
+- Whay`s New in iOS 11
+- Interface Essentials
 
 ---
 
 <center><img src="/img/posts/Overview1.jpg"></center>
 
-## - 테마
+## Themes
 
 세 가지 iOS 테마는 다른 플렛폼과 차별함을 차별화합니다
 
