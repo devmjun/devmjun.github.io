@@ -338,7 +338,7 @@ PlaceHolder는 콘텐츠 전송이 완료된 후 일시적으로 콘텐츠가 �
 
 지원되는 장치에서 햅틱은주의를 끌고 행동을 강화하는 촉감 피드백을 통해 사용자를 육체적으로 참여시키는 방법을 제공합니다. 선택기, 스위치 및 슬라이더와 같은 일부 시스템 제공 인터페이스 요소는 사용자가 상호 작용할 때 햅틱 피드백을 자동으로 제공합니다. 앱에서 다른 유형의 햅틱 피드백을 생성하도록 시스템에 요청할 수도 있습니다. iOS는이 피드백의 강점과 행동을 관리합니다. <br>
 
-<center><img scr="/img/posts/feedback-1.png" width="500" height="590"></center> <br>
+<center><img src="/img/posts/feedback1.png" width="508" height="582"></center> <br> 
 
 #### - 현명하게 햅틱을 사용하십시오
 
@@ -380,7 +380,7 @@ PlaceHolder는 콘텐츠 전송이 완료된 후 일시적으로 콘텐츠가 �
 
 사람들은 파일을 만들고,보고, 조작하는 동안 파일 시스템에 관해 생각할 필요가 없습니다. 앱이 파일과 작동하는 경우 가능한 한 파일 처리를 줄입니다. <br>
 
-<center><img scr="/img/posts/file_handler.png" width="500" height="590"></center> <br> 
+<center><img src="/img/posts/Filehandler.png" width="508" height="582"></center> <br> 
 
 #### - 작업을 취소하거나 삭제하지 않는 한 항상 보존한다는 확신을 심어 둡니다
 
@@ -470,7 +470,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 근거리 통신 (Near Field Communication, NFC)은 몇 센티미터 이내의 매우 근접한 장치로 정보를 무선으로 교환 할 수있게합니다. 지원되는 기기에서 실행되는 iOS 앱은 NFC 검색을 사용하여 실제 개체에 첨부 된 전자 태그의 데이터를 읽을 수 있습니다. 예를 들어, 사용자가 장난감을 스캔하여 비디오 게임에 연결하거나, 구매자가 상점 로그인을 스캔하여 쿠폰에 액세스하거나, 소매 직원이 제품을 스캔하여 재고를 추적 할 수 있습니다. 응용 프로그램은 단일 또는 다중 객체 검색을 활성화 할 수 있으며 사용자가 무언가를 스캔해야 할 때마다 시스템이 스캔 시트를 가져옵니다. <br> 
 
-<center><img scr="/img/posts/near_field_communication.png" width="500" height="590"></center> <br>
+<center><img src="/img/posts/NearFieldCommunication.png" width="508" height="582"></center> <br> 
 
 ---
 
@@ -478,7 +478,8 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 많은 앱을 통해 사람들은 장치를 흔들어 타이핑이나 삭제와 같은 특정 작업을 실행 취소하고 다시 실행할 수 있습니다. 이 방법으로 시작되면 사용자에게 실행 취소 또는 다시 실행 작업을 확인 또는 취소하라는 경고가 표시됩니다. <br>
 
-<center><img scr="/img/posts/undo_and_redo.png" width="500" height="590"></center> <br> 
+<center><img src="/img/posts/UndoAndRedo.png" width="508" height="582"></center> <br> 
+
 
 #### - 취소하거나 다시 수행 할 작업을 간단하고 정확하게 설명하십시오
 
