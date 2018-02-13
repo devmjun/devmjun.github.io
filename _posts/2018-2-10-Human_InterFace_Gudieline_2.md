@@ -208,6 +208,9 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 시작 시간은 새로운 사용자와 연결되는 첫번째 기회입니다. 
 
+
+<center><img src="/img/posts/onBoarding.png" width="382" height="700"></center> <br>  
+
 #### - 시작 화면을 제공하십시오 
 
 앱 시작 순간에 시작 화면이 표시되어 초기 콘텐츠로드를 허용하면서 앱이 빠르고 반응이 좋다는 인상을줍니다. 이 화면은 앱의 첫 번째 화면으로 빠르게 대체되므로 지역화 할 수있는 텍스트 및 상호 작용 요소를 제외하고는이 화면과 매우 유사해야합니다. 
@@ -276,6 +279,10 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 #### - 불필요하게 위치 정보를 요청하지 마십시오
 
 위치 정보에 액세스하기 전에 시스템을 점검하여 위치 서비스가 사용되는지 확인하십시오. 이 지식을 통해 기능에서 진정으로 필요로 할 때까지 경고를 지연하거나 경고를 피할 수 있습니다.
+
+위치 기능을 구현하는 방법을 배우려면 [Location and Maps Programming Guide](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html) 참조하십시오.
+
+
 
 ---
 
