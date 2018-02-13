@@ -10,8 +10,15 @@ tags: [Idea]
 ---
 
 
-| 회사명  | 서비스 간략 소개 | 블로그 주소 | 키워드 | 
-| :--: | :--: |:--: | :--: |
-| 투블루 |카드 뉴스 자동제작 툴/ 디자인 자동화 툴 | [https://tyle.io/blog](https://tyle.io/blog) | 개발, 마케팅, 디자인, 카드뉴스 | 
-| spoqa / 도도포인트 | 매장 포인트 적립, 마케팅 서비스 |[https://spoqa.github.io/](https://spoqa.github.io/) | 개발, 디자인 | 
+| 회사명  | 블로그 주소 | 
+| :--: | :--: |
+| 투블루 |[https://tyle.io/blog](https://tyle.io/blog) |  <br>
+
+> 카드뉴스 자동 제작 툴 / 디자인 자동화 툴, `개발, 마케팅, 디자인, 카드뉴스` <br>
+
+
+| spoqa / 도도포인트 |[https://spoqa.github.io/](https://spoqa.github.io/) |  <br>
+
+> 매장 포인트 적립 / 마케팅 서비스, `개발, 디자인` <br>
+
 
