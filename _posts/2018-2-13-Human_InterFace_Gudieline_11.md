@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "iOS 휴먼 인터페이스 가이드라인 요약 (11)"
-subtitle:   ""
+subtitle:   "Apple Pay, Augmented Reality, GameKit, HealthKit, HomeKit, icloud, In-App Purchase, Live Photos, ResearchKit, Social Media, Wallet, Resources"
 date:       2018-02-13 18:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
@@ -26,8 +26,8 @@ tags: [Swift]
 - ResearchKit
 - Social Media
 - Wallet
-- Resources
-	- [https://developer.apple.com/design/resources/#ios-apps](https://developer.apple.com/design/resources/#ios-apps)
+- Resources <br>
+	- [https://developer.apple.com/design/resources/#ios-apps](https://developer.apple.com/design/resources/#ios-apps) <br>
 
 ---
 
@@ -798,53 +798,145 @@ HomeKit 응용 프로그램은 연결된 HomeKit IP 카메라에서 스틸 이�
 
 ## iCloud
 
+iCloud는 사람들이 명시적인 동기화를 수행하지 않고 모든 장치에서 사진, 비디오, 문서 등 관심있는 콘텐츠에 원활하게 액세스 할 수 있게 해주는 서비스입니다. iCloud의 기본 요소는 투명성입니다. 사람들은 콘텐츠가 어디에 있는지 알 필요가 없습니다. 그들은 항상 최신 버전에 액세스하고 있다고 가정 할 수 있습니다.
 
+<center><img src="/img/posts/iClould.png" width="500" height="700"></center> <br> 
 
+#### - iCloud로 앱을 쉽게 사용할 수 있습니다
 
+사람들은 설정에서 iCloud를 사용하고 앱이 자동으로 함께 작동 할 것으로 기대합니다. 사람들이 iCloud를 앱과 함께 사용할지 여부를 선택하려는 경우, 처음으로 앱을 열 때 모든 데이터에 대해 iCloud를 사용할지 또는 전혀 사용하지 않을지 선택할 수 있는 간단한 옵션을 표시하십시오.
 
+#### - iCloud에 보관할 문서를 묻지 마십시오
 
+대부분의 사람들은 모든 콘텐츠를 iCloud에서 사용할 수 있으며 개별 문서의 저장을 관리하고 싶지는 않습니다. 앱이 콘텐츠를 처리하고 노출하는 방법을 고려하고 더 많은 파일 관리 작업을 자동으로 수행하려고합니다.
 
+#### - 가능한 경우 최신 내용을 유지하십시오
 
+iCloud 지원 앱의 경우 사람들이 항상 최신 콘텐츠에 항상 액세스 할 수 있는 가장 좋습니다. 그러나 장치 저장 및 대역폭 제약과 관련하여이 경험의 균형을 유지해야합니다. 앱이 매우 큰 문서에서 작동하는 경우 업데이트된 콘텐츠를 다운로드 할 때 사람들이 제어 할 수 있도록하는 것이 좋습니다. 앱이 이 카테고리에 해당하는 경우 iCloud에서 최신 버전의 문서를 사용할 수 있음을 나타내는 방법을 설계하십시오. 문서가 업데이트될때 다운로드가 몇 초 이상 걸릴 경우 미묘한 피드백을 제공하십시오.
 
+#### - iCloud 저장 공간을 존중하십시오
 
+iCloud는 사람들이 값을 지불하는 유한 리소스입니다. 사람들이 만들고 이해할 수있는 정보를 저장하려면 iCloud를 사용하고 재생성 할 수 있는 앱리소스나 콘텐츠에는 이 정보를 사용하지 마십시오. 앱이 iCloud 지원을 구현하지 않더라도 iCloud 백업에는 모든 앱의 Documents 폴더 내용이 포함됩니다. 너무 많은 공간을 사용하지 않으려면 Documents 폴더에 넣은 내용을 까다롭게 만드십시오.
 
+#### - iCloud를 사용할 수 없을 때 앱이 제대로 작동하는지 확인하십시오
 
+다른 사람이 iCloud를 수동으로 비활성화하거나 비행기 모드를 켜면 iCloud를 사용할 수 없음을 알리는 경고를 표시 할 필요가 없습니다. 그들은 이미 이것을 알고 있습니다. 그러나 iCloud 액세스가 복원될때까지 변경 사항을 다른 장치에서 사용할 수 없다는 것을 눈에 띄지 않게 알려주는것이 유용 할 수 있습니다.
 
+#### - iCloud에서 앱 상태 정보를 유지합니다
 
+문서 및 기타 파일을 저장하는 것 외에도 iCloud를 사용하여 환경 설정 및 응용 프로그램 상태에 대한 정보를 저장할 수 있습니다. 예를 들어, 잡지 앱에 마지막으로 본 페이지가 저장되어 앱이 다른 기기에서 열리면 다른 사용자가 중단 한 부분부터 계속 읽을 수 있습니다. 환경 설정을 저장하기 위해 iCloud를 사용하는 경우, 사람들이 모든 기기에 적용하기를 원하는 환경인지 확인하십시오. 예를 들어 일부 설정은 집에서보다 직장에서 더 유용 할 수 있습니다.
 
+#### - 문서 삭제의 결과에 대해 경고합니다
 
+누군가 iCloud 지원 응용 프로그램에서 문서를 삭제하면 문서가 iCloud 및 다른 모든 장치에서도 삭제됩니다. 삭제를 수행하기 전에 경고를 표시하고 확인을 요청하십시오.
 
+#### - 충돌을 신속하고 쉽게 해결할 수 있습니다
 
+가능한 한 범위 충돌을 자동으로 감지하고 해결하십시오. 이 작업을 수행 할 수 없으면 차별화하고 충돌하는 버전을 쉽게 선택할 수 있도록 눈에 잘 띄지 않는 알림을 표시하십시오. 충돌 해결은 가능한 한 빨리 처리해야 하므로 잘못된 버전에서는 시간이 낭비되지 않습니다.
 
+#### - 검색 결과에 iCloud 콘텐츠 포함
 
+iCloud 계정을 가진 사람들은 자신의 콘텐츠를 보편적으로 사용할 수 있다고 가정하고 검색 결과에 이 관점을 반영 할 것으로 기대합니다.
 
+개발자 가이드는 [iCloud Design Guide](https://developer.apple.com/library/content/documentation/General/Conceptual/iCloudDesignGuide/Chapters/Introduction.html) 및 [CloudKit Quick Start](https://developer.apple.com/library/content/documentation/DataManagement/Conceptual/CloudKitQuickStart/Introduction/Introduction.html) 참조 하십시오.
 
+---
 
+## In-App Purchase 
 
+인앱 구매를 통해 사용자는 앱 내에서 프리미엄 콘텐츠, 디지털 상품 및 구독과 같은 가상 상품을 안전하게 구매할 수 있습니다. App Store를 통해 직접 인앱 구매를 홍보하고 제공 할 수도 있습니다. 식료품 및 체육관 멤버십과 같은 실제 상품 및 서비스를 판매 하려면 Apple Pay 또는 기타 지불 방법을 사용하십시오.
 
+<center><img src="/img/posts/In-app_purchase.png" width="382" height="700"></center> <br> 
 
+#### - 구매하기 전에 사람들이 앱을 경험하게하십시오
 
+사용자는 앱을 즐기고 그 가치를 발견 한 후에 유료 기능에 더 많은 투자를 할 수 있습니다.
 
+#### - 통합 쇼핑 경험을 디자인하십시오
 
+사람들이 디지털 제품을 탐색하고 구매할때 다른 앱을 입력했다고 생각해서는 안됩니다. 앱을 집에서 느끼는 방식으로 제품을 제시하고 거래를 처리하십시오.
 
+#### - 간단하고 간결한 제품 이름과 설명을 사용하십시오
 
+사람들이 신속하게 일련의 제품을 스캔하여 관심있는 제품을 신속하게 찾을 수 있을 때 가장 좋습니다. 명백하고, 집적적인 언어를 사용하고, 줄임말을 사용하지 않습니다.
 
+#### - 기본 확인 시트를 사용하십시오
 
+누군가가 인앱 구매를 시작하면 실수로 구매하는 것을 방지하기 위해 확인 시트가 표시됩니다. 이 시트를 수정하거나 복제하지 마십시오.
 
+### Subscriptions
 
+구독을 통해 사람들은 지속적으로 또는 제한된 기간 동안 앱 내의 가상 컨텐트 및 서비스에 액세스 할 수 있습니다.
 
+#### - 다양한 콘텐츠 선택, 서비스 수준 및 기간 제공을 고려하십시오
 
+사람들은 자신의 필요에 가장 잘 맞는 구독을 선택할 수 있는 유연성을 높이 평가합니다.
 
+#### - 구독 옵션이 명확하고 구별 가능한지 확인하십시오
 
+구독 옵션을 서로 구분하는 짧고 자명 한 이름을 사용하고 각 옵션의 기간을 나타냅니다. 소개 가격을 제시 할 때 소개 가격, 제안 기간 및 제안이 끝난 후 사용자가 지불하는 표준 가격을 나타냅니다.
 
+#### - 사용자가 아직 구독자가 아닌 경우에만 새 구독을 권장하십시오
 
+그렇지 않으면 사용자가 기존 구독이 만료되었다고 잘못 생각할 수 있습니다. 여러 앱 또는 웹 사이트에서 동일한 구독 옵션을 제공하는 경우 사용자가 동일한 서비스에 대해 여러 번 지불 할 필요가 없도록 로그인 옵션을 제공하십시오.
 
+#### - 적절한 경우 만료 된 구독의 콘텐츠에 대한 액세스 권한을 제공하십시오
 
+예를 들어 잡지 구독을 취소 한 사용자는 구독이 활성화된 동안 게시된 문제에 대한 액세스 권한을 보유 할 것으로 예상 할 수 있습니다.
 
+#### - 사용자가 앱 내에서 구독을 업그레이드, 다운 그레이드 및 크로스 그레이드 할 수 있도록 허용하는 것이 좋습니다
 
+구독은 설정 앱에서 항상 관리 할 수 ​​있지만 앱에 구독 관리를 구축하면 브랜드 경험이 풍부한 상황을 조성 할 수 있습니다. 기존 고객에게 업그레이드 옵션을 제공 할 수 있습니다.
 
+### 더 알아보기
 
+마케팅 및 비즈니스 지침 은 개발자 [In-App Purchase for Devlopers](https://developer.apple.com/in-app-purchase/) , [Offering Subscriptions](https://developer.apple.com/app-store/subscriptions/) 및 [Promoting Your In-App Purchases](https://developer.apple.com/app-store/promoting-in-app-purchases/) 참조하십시오 . 개발자 가이드는 [StoreKit > In-App Purchase](https://developer.apple.com/documentation/storekit/in_app_purchase) 및 [In-App Purchase Programming Guide](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html)를 참조하십시오. 인앱 구매 사용 요건 및 제한 사항을 포함하여 앱에서 판매 할 수 있거나 판매 할 수없는 것에 대한 정보는 [App Store Reivew Guideline](https://developer.apple.com/app-store/review/guidelines/)을 참조하십시오.
 
+---
+
+## Live Photos 
+
+라이브 사진은 사운드가 풍부하고 모션이 풍부한 인터랙티브 경험에서 좋아하는 추억을 캡처하여 기존 스틸 사진에 활력을 더합니다. 이 기능을 사용하면 카메라 앱이 사진을 찍기 전후에 오디오 및 추가 프레임을 포함한 추가 콘텐트를 캡처합니다. 삶의 모습을 보려면 라이브 사진을 누르기만 하면됩니다.
+
+<center><img src="/img/posts/LivePhoto.png" width="382" height="700"></center> <br> 
+
+#### - 모든 프레임에 조정을 적용하십시오
+
+앱을 사용하여 라이브 사진에 효과 또는 조정을 적용 할 수 있는 경우 변경 사항이 전체 사진에 적용되는지 확인하십시오. 이 기능을 지원하지 않으면 사람들에게 사진을 스틸 사진으로 변환할수있는 옵션을 제공하십시오.
+
+#### - 라이브 사진 컨텐츠는 그대로 유지하십시오
+
+모든 앱에서 동일한 시각적 처리 및 상호 작용 모델을 사용하는 일관된 방식으로 라이브 사진을 경험하는 것이 중요합니다. 라이브 사진을 분해하여 프레임이나 오디오를 별도로 제시하지 마십시오.
+
+#### - 멋진 사진 공유 경험을 구현하십시오
+
+앱에서 사진 공유를 지원하는 경우 공유를 결정하기 전에 사용자가 Live Photo의 전체 내용을 미리 볼 수 있습니다. 항상 라이브 사진을 전통적인 사진으로 공유 할 수있는 옵션을 제공하십시오.
+
+#### - Live Photo가 언제 다운로드되고 사진을 재생할 수 있는지 명확하게 표시하십시오
+
+다운로드 프로세스 중에 진행률 표시기를 표시하고 다운로드가 완료되면 표시합니다.
+
+####  - Live Photo를 지원하지 않는 환경에서 Live Photo을 전통적인 사진으로 표시하십시오
+
+지원되는 환경에서 제공되는 Live Photo 환경을 복제하려고 시도하지 마십시오. 대신 사진의 전통적인 표현을 보여줍니다.
+
+#### - Live Photo을 스틸 사진과 쉽게 구분할 수 있습니다
+
+Live Photo을 식별하는 가장 좋은 방법은 움직임의 힌트를 찾는 것입니다. 사진 앱의 전체 화면 브라우저에서 사진을 스와이프할때 발생하는 것과 같은 내장된 Live Photo 동작 효과는 없습니다. 이와 같은 모션 효과는 맞춤 설계되고 구현되어야합니다. 운동이 불가능한 경우 사진 위에 시스템에서 제공한 뱃지를 보여주십시오. 이 뱃지는 그림자가있는 오버레이 또는 그림자가없는 단색으로 표시 될 수 있습니다. 뱃지 변형은 Live Photo가 전통적인 사진으로 나타나는 상황에서도 사용할 수 있습니다. 비디오 재생 버튼으로 해석될수있는 재생 버튼을 포함시키지 마십시오. <br>
+
+| * | * | 
+| :--: | :--: |
+|![screen](/img/posts/LivePhoto-1.png) | ![screen](/img/posts/LivePhoto-2.png)| <br>
+
+#### - 뱃지 게재 위치를 일관되게 유지합니다
+
+뱃지를 표시하는 경우 뱃지를 모든 사진의 동일한 위치에 놓습니다. 일반적으로 뱃지는 사진 모서리에서 가장 잘 보입니다.
+
+`라이브 사진 지원은 iOS 9.1 이상에서 사용할 수 있습니다.`
+
+---
+
+## ResearchKit
 
 
 
