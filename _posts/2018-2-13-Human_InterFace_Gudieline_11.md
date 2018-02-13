@@ -122,7 +122,7 @@ Apple Pay 버튼을 장바구니에 추가 버튼의 오른쪽 또는 위에 놓
 
 Apple Paymark 그래픽을 사용하여 비슷한 방법으로 다른 지불 옵션을 표시 할 때 Apple Pay가 사용 가능한 지불 옵션임을 알리십시오. Apple Paymark 그래픽 및 사용 지침을 [여기](http://images.apple.com/apple-pay/downloads/Apple_Pay_Payment_Mark.zip)에서 다운로드 하십시오.
 
-<center><img src="/img/posts/applePay-10.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/applePay-10.png" width="700" height="700"></center> <br> 
 
 #### - 텍스트로 Apple Pay 참조하기
 
@@ -136,7 +136,7 @@ Apple Paymark 그래픽을 사용하여 비슷한 방법으로 다른 지불 옵
 
 미국에서는 Apple Pay가 본문에 처음 나타날 때 등록 된 상표 기호 (®)를 사용하십시오. Apple Pay가 체크 아웃 중에 선택 옵션으로 나타나면 등록 상표 기호를 포함하지 마십시오.
 
-<center><img src="/img/posts/applePay-11.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/applePay-11.png" width="700" height="700"></center> <br> 
 
 #### - font-face와 크기를 앱으로 조정하십시오
 
@@ -633,7 +633,7 @@ Activity Ring 요소는 링 사이의 거리보다 작은 최소 외부 여백�
 
 HomeKit을 사용하면 iPhone, iPad 및 Apple Watch에서 Siri 또는 Home 앱을 사용하여 사람들이 가정에서 연결된 액세서리를 안전하게 제어 할 수 있습니다. iOS에서 홈 앱을 사용하면 사용자가 액세서리를 관리하고 구성 할 수 있습니다. iOS, tvOS 또는 watchOS 앱은 HomeKit과 통합되어 맞춤 또는 브랜드 홈 오토메이션 환경을 제공 할 수도 있습니다.
 
-<center><img src="/img/posts/homeKit.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/homeKit.png" width="700" height="700"></center> <br> 
 
 #### - HomeKit 용어
 
@@ -776,7 +776,7 @@ Siri는 home, room, zone, service 및 scene 이름이 고유해야한다고 요�
 
 HomeKit 응용 프로그램을 디자인 할 때 특정 액세서리의 사용자 경험을 고려하십시오
 
-<center><img src="/img/posts/homeKit-18.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/homeKit-18.png" width="382" height="600"></center> <br> 
 
 ### - 홈 키트 카메라
 
@@ -948,7 +948,7 @@ Live Photo을 식별하는 가장 좋은 방법은 움직임의 힌트를 찾는
 
 #### - Onboarding 화면을 항상 올바른 순서로 표시하십시오. <br> 
 
-<center><img src="/img/posts/ResearchKit.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/ResearchKit.png" width="700" height="700"></center> <br> 
 
 ### - 1. Introduction
 
