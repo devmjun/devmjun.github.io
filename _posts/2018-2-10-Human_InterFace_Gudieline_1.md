@@ -90,7 +90,7 @@ Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표�
 
 | 4.7 iPhone | iPhoneX | 
 | :--: | :--: |
-|![screen](/img/posts/iPhoneX-5.png) |![screen](/img/posts/iPhoneX-6.png) | <br>
+|![screen](/img/posts/iPhone_X-5.png) |![screen](/img/posts/iPhone_X-6.png) | <br>
 
 맞춤 레이아웃이있는 앱의 경우, 특히 앱이 자동 레이아웃을 사용하고 안전 영역 및 여백 레이아웃 가이드를 준수하는 경우 iPhone X를 지원하는 것이 상대적으로 쉽습니다.
 
@@ -108,11 +108,11 @@ Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표�
 
 | 세로 | 가로 | 
 | :--: | :--: |
-|![screen](/img/posts/iPhoneX-7.png) |![screen](/img/posts/iPhoneX-8.png) | <br>
+|![screen](/img/posts/iPhone_X-7.png) |![screen](/img/posts/iPhone_X-8.png) | <br>
 
 장치가 가로 방향인 경우 일부 게임(예 : 게임)의 경우 화면 하단 (안전 영역 아래까지 확장 가능)에 내용을 저장할 수있는 적절한 컨트롤을 배치하는 것이 적절할수있습니다. 화면 상단과 하단에 컨트롤을 배치할때 일치하는 인셋을 사용하고 홈 표시기 주위에 충분한 공간을 남겨 두어 사람들이 실수로 컨트롤과 상호 작용하려고 시도하지 않도록합니다. <br>
 
-<center><img src="/img/posts/iPhoneX-9.png" width="600" height="700"></center> <br> 
+<center><img src="/img/posts/iPhone_X-9.png" width="600" height="700"></center> <br> 
 
 #### - Status Bar 높이에 주의하십시오
 
@@ -124,9 +124,9 @@ iPhone 의 표시 높이는 4.7 "iPhone보다 더 많은 수직 공간을 제공
 
 | Full-screen 4.7" device image | Cropping on iPhone X | Letterboxing on iPhoneX | 
 | :--: | :--: | :--: |
-|![screen](/img/posts/iPhoneX-10.png) | ![screen](/img/posts/iPhoneX-11.png)| ![screen](/img/posts/iPhoneX-12.png) | 
+|![screen](/img/posts/iPhone_X-10.png) | ![screen](/img/posts/iPhone_X-11.png)| ![screen](/img/posts/iPhone_X-12.png) | 
 | full-screen iPhone X image | cropping opn a 4.7" device | pillarboxing on a 4.7" device| 
-|![screen](/img/posts/iPhoneX-13.png) | ![screen](/img/posts/iPhoneX-14.png)| ![screen](/img/posts/iPhoneX-15.png) | <br>
+|![screen](/img/posts/iPhone_X-13.png) | ![screen](/img/posts/iPhone_X-14.png)| ![screen](/img/posts/iPhone_X-15.png) | <br>
 
 #### - 기존 아트웍을 재사용할때 종횡비 차이에 유의하십시오
 
