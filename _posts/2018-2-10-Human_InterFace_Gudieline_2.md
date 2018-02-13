@@ -166,15 +166,15 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 #### - 계층 적 탐색 
 
-목적지에 도달 할 때까지 화면 당 하나의 선택을하십시오. 다른 목적지로 이동하려면 단계를 되돌아 가거나 처음부터 다시 시작해야하고 다른 선택을해야합니다. 설정 및 메일에서는이 탐색 스타일을 사용합니다.
+목적지에 도달 할 때까지 화면 당 하나의 선택을하십시오. 다른 목적지로 이동하려면 단계를 되돌아 가거나 처음부터 다시 시작해야하고 다른 선택을해야합니다. 설정 및 메일에서는이 탐색 스타일을 사용합니다. <br>
 
-<center><img src="/img/posts/Navigation.png"></center>
+<center><img src="/img/posts/Navigation.png"></center> <br>
 
-#### - 평면 적 탐색
+#### - 평면 적 탐색 <br>
 
 여러 콘텐츠 범주간에 전환하십시오. 음악과 App Store는이 탐색 스타일을 사용합니다. <br>
 
-<center><img src="/img/posts/Navigation-1.png)"></center> <br> 
+<center><img src="/img/posts/Navigation_1.png"></center>  <br>
 
 #### - 콘텐츠 기반 또는 경험 중심의 탐색 
 
@@ -288,11 +288,13 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 ## Settings 
 
-일부 앱은 설정 또는 구성 선택을 할 수있는 방법을 제공해야하지만 대부분의 앱은이를 피하거나 지연시킬 수 있습니다. 성공적인 앱은 대부분의 사람들에게 즉시 잘 작동하는 동시에 경험을 조정할 수있는 편리한 방법을 제공합니다. 대부분의 사람들이 기대하는대로 기능하도록 앱을 디자인하면 설정의 필요성이 줄어 듭니다
+일부 앱은 설정 또는 구성 선택을 할 수있는 방법을 제공해야하지만 대부분의 앱은이를 피하거나 지연시킬 수 있습니다. 성공적인 앱은 대부분의 사람들에게 즉시 잘 작동하는 동시에 경험을 조정할 수있는 편리한 방법을 제공합니다. 대부분의 사람들이 기대하는대로 기능하도록 앱을 디자인하면 설정의 필요성이 줄어 듭니다 <br>
+
+<center><img src="/img/posts/Setting.png" width="382" height="700"></center> <br>  
 
 #### - 당신이 할 수있는 것을 시스템에서 추론하십시오
 
-사용자, 장치 또는 환경에 대한 정보가 필요하면 사용자에게 묻는 대신 가능할 때마다 시스템에 대해 쿼리하십시오. 예를 들어, 우편 옵션을 제시 할 수 있도록 우편 번호를 입력하도록 요청하는 대신 현재 위치 사용 권한을 요청하십시오.
+사용자, 장치 또는 환경에 대한 정보가 필요하면 사용자에게 묻는 대신 가능할 때마다 시스템에 대해 쿼리하십시오. 예를 들어, 우편 옵션을 제시할수있도록 우편 번호를 입력하도록 요청하는 대신 현재 위치 사용 권한을 요청하십시오.
 
 #### - 앱 내 구성 옵션에 우선 순위를 부여합니다
 
@@ -300,12 +302,13 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 #### - 드물게 설정에서 변경된 구성 옵션을 드러냅니다
 
-설정 앱은 시스템 전체에서 구성을 변경하기위한 중심 위치이지만 사용자가 앱을 떠나야 만 액세스 할 수 있습니다. 앱에서 직접 설정을 조정하는 것이 훨씬 편리합니다. 거의 변경하지 않아도되는 설정을 제공해야하는 경우 개발자 [가이드의 기본 설정 및 설정 프로그래밍 가이드](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html) 에서 [iOS 설정 번들 구현을](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/AboutPreferenceDomains/AboutPreferenceDomains.html#//apple_ref/doc/uid/10000059i-CH2-SW2) 참조하십시오.
+설정 앱은 시스템 전체에서 구성을 변경하기위한 중심 위치이지만 사용자가 앱을 떠나야 만 액세스 할 수 있습니다. 앱에서 직접 설정을 조정하는 것이 훨씬 편리합니다. 거의 변경하지 않아도되는 설정을 제공해야하는 경우 개발자 [가이드의 기본 설정 및 설정 프로그래밍 가이드](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html) 에서 [iOS 설정 번들 구현을](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/AboutPreferenceDomains/AboutPreferenceDomains.html#//apple_ref/doc/uid/10000059i-CH2-SW2) 참조하십시오. <br> 
 
-필요한 경우 설정에 대한 바로 가기를 제공하십시오. 앱에 "설정> MyApp> 개인 정보> 위치 서비스로 이동"과 같이 사용자에게 설정을 안내하는 텍스트가 포함되어 있으면 해당 위치를 자동으로 여는 버튼을 제공하십시오. 이 동작을 구현하는 방법을 보려면 [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication) 에서 [설정 시작 URL](https://developer.apple.com/documentation/uikit/uiapplication/settings_launch_url) 을 참조하십시오 .
+<center><img src="/img/posts/Setting-1.png" width="382" height="700"></center> <br>  
 
-| Setting | Setting | 
-| :--: | :--: |
-|![screen](/img/posts/Setting.png) |![screen](/img/posts/Setting-1.png) | <br>
+#### - 필요한 경우 설정에 대한 바로 가기를 제공하십시오
+
+앱에 "설정> MyApp> 개인 정보> 위치 서비스로 이동"과 같이 사용자에게 설정을 안내하는 텍스트가 포함되어 있으면 해당 위치를 자동으로 여는 버튼을 제공하십시오.  이 동작을 구현하는 방법을 보려면 [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication)의 [Settings Launch URL](https://developer.apple.com/documentation/uikit/uiapplication/settings_launch_url)을  참조하십시오.
+
 
 ---
