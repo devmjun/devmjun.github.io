@@ -243,24 +243,52 @@ iPhone X에서는 Emoji/Globe 키와 Dictation 키가 사용자 정의 키보드
 
 ---
 
-## iOS 11의 새로운 기능 
+## What`s New in iOS 11
 
-- Augmented reality(증강현실)
-- Bolder navigation(굵은 제목이 포함된 탐색 모음 추가)
-- Clearer icons(더 선명한 아이콘)
-- Drag and drop(사진, 텍스트 및 기타 콘텐츠를 한 위치에서 다른 위치로 이동가능, 심지어 ipad의 경우에도 이동할수 있음)
-- Face ID and Touch ID(페이스 ID, 터치 ID)
-- Near Field Communicatio(근거리 무선 통신)
-- Safe area layout guides.(안전한 영역 레이아웃 가이드)
-- Typographic changes(활자의 표현및 배치 변경)
+iOS 11을 사용하면 이전보다 더 강력하고 사용자 친화적인 앱을 제공 할 수 있습니다. <br>
+
+<center><img src="/img/posts/What_is_New_iOS11.png" width="700" height="700"></center> <br> 
+
+#### - Augmented reality
+
+증강 현실을 통해 앱은 현실감있는 가상 객체를 현실 세계와 자연스럽게 섞어주는 몰입형, 매력적인 경험을 제공 할 수 있습니다.
+
+#### - Bolder navigation
+
+탐색 및 검색시 명확성과 컨텍스트를 향상시키기 위해 크고 굵은 제목이 포함 된 Navigation bar를 구현할 수 있습니다.
+
+#### - Clearer icons
+
+채워진 모양과 더두터운 획 두께는 아이콘을 최소화하고 대비를 향상시킵니다.[Custom Icons](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/custom-icons/) 및 [System Icons](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/system-icons/) 참조하십시오.
+
+#### - Drag and drop
+
+끌어서 놓기 기능을 사용하면 한 손가락을 사용하여 선택한 사진, 텍스트 및 기타 콘텐츠를 한 위치에서 다른 위치로 이동할 수 있으며 심지어 iPad의 경우에도 이동할 수 있습니다.
+
+#### - FAce ID and Touch ID
+
+앱은 시스템의 생체 인식 보안 기능과 통합되어 사람들이 신뢰하는 안전하고 친숙한 인증을 제공 할 수 있습니다.
+
+#### - Near Filed Communication
+
+지원되는 기기에서 실행되는 앱은 실제 개체에 첨부된 전자 태그에서 데이터를 무선으로 읽을 수 있습니다.
+
+#### - Safe area layout guides
+
+시스템의 안전 영역을 준수하면 레이아웃 내에서 컨텐트를 적절하게 삽입 할 수 있으며 Status bar, Navigation bar, Toolbar 및 Tab bar에 아래에서 부분적으로 겹치는(underlapping) 내용을 방지 할 수 있습니다.
+
+#### - Typographic changes
+
+텍스트 크기와 가중치가 증가하면 시스템 전반에서 가독성이 향상됩니다. 이 시스템은 접근성 요구 사항이있는 사용자를 위해 표준 동적 유형 외에도 다양한 유형의 크기를 제공합니다.
+
 
 ---
 
-## 인터페이스 필수 사항 
+## Interface Essentials 
 
-대부분의 iOS 앱은 공통 인터페이스 요소를 정의하는 프로그래밍 프레임 워크 인 UIKit의 구성 요소를 사용하여 작성됩니다. 이 프레임 워크를 통해 앱은 시스템 전반에서 일관된 모양을 유지하면서 동시에 높은 수준의 맞춤 설정을 제공 할 수 있습니다. UIKit 요소는 유연하고 익숙합니다. 적응력이 뛰어나므로 iOS 기기에서 멋지게 보이는 단일 앱을 디자인 할 수 있으며 시스템에서 모양이 변경되면 자동으로 업데이트됩니다. UIKit에서 제공하는 인터페이스 요소는 크게 세 가지 범주로 나뉩니다.
+대부분의 iOS 앱은 공통 인터페이스 요소를 정의하는 프로그래밍 프레임 워크 인 [UIKit](https://developer.apple.com/documentation/uikit)의 구성 요소를 사용하여 작성됩니다. 이 프레임 워크를 통해 앱은 시스템 전반에서 일관된 모양을 유지하면서 동시에 높은 수준의 맞춤 설정을 제공 할 수 있습니다. UIKit 요소는 유연하고 익숙합니다. 적응력이 뛰어나므로 iOS 기기에서 멋지게 보이는 단일 앱을 디자인 할 수 있으며 시스템에서 모양이 변경되면 자동으로 업데이트됩니다. UIKit에서 제공하는 인터페이스 요소는 크게 세 가지 범주로 나뉩니다.
 
-#### - bar 
+#### - Bars
 
 사람들에게 앱의 어느 위치에 있는지 알려주고 탐색 기능을 제공하며 작업을 시작하고 정보를 전달하기위한 버튼 또는 기타 요소가 포함될 수 있습니다.
 
@@ -270,9 +298,9 @@ iPhone X에서는 Emoji/Globe 키와 Dictation 키가 사용자 정의 키보드
 
 #### - Controls 
 
-행동을 시작하고, 정보를 전달합니다. 버튼, 스위치, 텍스트 필드, 진행률표시기는 컨트롤의 예이다
+행동을 시작하고 정보를 전달하십시오. Button, Switches, Text fields 및 Progress indicators는 컨트롤의 예입니다. <br>
 
+추가로 iOS의 인터페이스를 정의하는 것 외에도 UIKit은 앱이 채택할수있는 기능을 정의합니다. 예를 들어, 이 프레임 워크를 통해 앱은 터치 스크린의 제스처에 응답하고 drawing, accessibility 및 printing 같은 기능을 사용할 수 있습니다.
 
-> iOS는 Apple Pay, HealthKit & ResearchKit과 같은 다른 프레임워크 및 기술과도 긴밀하게 통합이 가능합니다. 
-
+iOS 는 Apple Pay, HealthKit 및 ResearchKit과 같은 다른 프로그래밍 프레임 워크 및 기술 과도 긴밀하게 통합 되므로 놀랍도록 강력한 응용 프로그램을 설계 할 수 있습니다.
 ---
