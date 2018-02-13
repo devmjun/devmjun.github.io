@@ -84,7 +84,7 @@ iPhone X를 디자인 할 때 레이아웃이 화면을 채우고 장치의 둥�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/iPhoneX-3.png) |![screen](/img/posts/iPhoneX-4.png) | <br>
+|![screen](/img/posts/iPhone_X-3.png) |![screen](/img/posts/iPhone_X-4.png) | <br>
 
 Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표준 UI 요소를 사용하는 대부분의 응용 프로그램은 장치의 새로운모양에 자동으로 적응합니다. 배경 자료는 디스플레이의 가장자리까지 확장되며 UI 요소는 적절하게 삽입되고 배치됩니다. <br>
 
@@ -142,7 +142,7 @@ iPhone X는 4.7 "iPhone과는 다른 종횡비를 가지므로 아이폰 X에서
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-16.png) |![screen](/img/posts/iPhone_X-17.png) | <br>
+|![screen](/img/posts/iPhone_X-16.jpg) |![screen](/img/posts/iPhone_X-17.jpg) | <br>
 
 #### - 주요 디스플레이 기능에 가면이나 특별한주의를 기울이지 마십시오
 
@@ -203,7 +203,7 @@ iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 �
 | 21:9 vidieo in fit-to-screen viewing mode| 21:9 video with embedded padding, in fit-to-screen viewing mode | 
 |![screen](/img/posts/iPhone_X-30.png) |![screen](/img/posts/iPhone_X-31.png) |  <br>
 
-<center><img src="/img/posts/iPhone_X-32.jpg" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/iPhone_X-32.png" width="700" height="500"></center> <br> 
 
 ### Gestures 
 
@@ -300,7 +300,8 @@ iOS 11을 사용하면 이전보다 더 강력하고 사용자 친화적인 앱�
 
 행동을 시작하고 정보를 전달하십시오. Button, Switches, Text fields 및 Progress indicators는 컨트롤의 예입니다. <br>
 
-추가로 iOS의 인터페이스를 정의하는 것 외에도 UIKit은 앱이 채택할수있는 기능을 정의합니다. 예를 들어, 이 프레임 워크를 통해 앱은 터치 스크린의 제스처에 응답하고 drawing, accessibility 및 printing 같은 기능을 사용할 수 있습니다.
+추가로 iOS의 인터페이스를 정의하는 것 외에도 UIKit은 앱이 채택할수있는 기능을 정의합니다. 예를 들어, 이 프레임 워크를 통해 앱은 터치 스크린의 제스처에 응답하고 drawing, accessibility 및 printing 같은 기능을 사용할 수 있습니다. <br>
 
 iOS 는 Apple Pay, HealthKit 및 ResearchKit과 같은 다른 프로그래밍 프레임 워크 및 기술 과도 긴밀하게 통합 되므로 놀랍도록 강력한 응용 프로그램을 설계 할 수 있습니다.
+
 ---
