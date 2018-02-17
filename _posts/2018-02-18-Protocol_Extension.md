@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift. Protocol, Extension 정리"
-subtitle:   ""
+subtitle:   "Protocol, Extension, POP(Protocol Oriented Programming)"
 date:       2018-02-18 02:23:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
