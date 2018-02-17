@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. Error 처리 정리 "
+title:      "Swift. Error 처리 정리"
 subtitle:   "throws, defer, NSError"
 date:       2018-02-18 05:00:00
 author:     "MinJun"
