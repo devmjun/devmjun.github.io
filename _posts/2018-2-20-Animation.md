@@ -124,6 +124,7 @@ View의 이동이 끝나고, View의 background color 변경 되는것을 예상
 - 뷰의 트랜지션
 - 뷰의 전환
 - 기존 뷰는 사라지고(removeFormSuperview)새로운 뷰가 나타나는(addSubView) 동작 
+- 뷰 추가/삭제 코드 불필요
 
 ```swift
 import UIKit
