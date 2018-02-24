@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "StoryBoard 참조 블로그"
+title:      "Swift. StoryBoard 참조 블로그"
 subtitle:   ""
 date:       2018-02-20 08:00:00
 author:     "MinJun"
-header-img: "img/tags/Idea-bg.jpg"
+header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Idea]
+tags: [Swift]
 ---
 
 [iOS 개발에서 스토리보드란 무엇인가?](http://hamait.tistory.com/708) <br>

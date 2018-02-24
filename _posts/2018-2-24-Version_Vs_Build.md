@@ -4,9 +4,9 @@ title:      "Swift. App의 버전 정보 가져오기"
 subtitle:   "Version, Build..."
 date:       2018-02-24 18:49:00
 author:     "MinJun"
-header-img: "img/tags/Idea-bg.jpg"
+header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Idea]
+tags: [Swift]
 ---
 
 ```swift
