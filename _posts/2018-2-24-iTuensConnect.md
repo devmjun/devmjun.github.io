@@ -6,7 +6,7 @@ date:       2018-02-24 21:00:00
 author:     "MinJun"
 header-img: "img/tags/itunesConnect-bg.jpg"
 comments: true 
-tags: [ituensConnect]
+tags: [itunesConnect]
 ---
 
 
