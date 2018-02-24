@@ -16,8 +16,8 @@ iMessage에서 사용할 수 있는 메신저용 이모티콘 입니다. 귀여�
 
 | * | * | 
 | :--: | :--: |
-| ![screen](/img/posts/imessage_Sticker.PNG) | ![screen](/img/posts/branding-1.png)| 
-| ![screen](/img/posts/imessage_Sticker-2.PNG) | ![screen](/img/posts/branding-3.png)|  <br>
+| ![screen](/img/posts/imessage_Sticker.PNG) | ![screen](/img/posts/imessage_Sticker-1.PNG) | 
+| ![screen](/img/posts/imessage_Sticker-2.PNG) | ![screen](/img/posts/imessage_Sticker-3.PNG) |  <br>
 
 ---
 
