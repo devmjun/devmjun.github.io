@@ -4,7 +4,7 @@ title:      "Swift. ituens connect 레퍼런스 모음"
 subtitle:   "나에게 필요한 주소를 모아놓자!"
 date:       2018-02-24 21:00:00
 author:     "MinJun"
-header-img: "img/tags/Idea-bg.jpg"
+header-img: "img/tags/itunesConnect-bg.jpg"
 comments: true 
 tags: [ituensConnect]
 ---
