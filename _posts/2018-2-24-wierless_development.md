@@ -37,7 +37,7 @@ Xcode 9을 실행한 후 `Windows > Devices and Simulators`로 이동합니다.
 
 프로젝트를 열고 Run Destination을 확장합니다. 그러면 페어링된 디바이스 목록이 표시됩니다. Run 버튼을 누르면 다바이스에 앱이 설치되고 원격으로 디버깅 할 수 있습니다.
 
-<center><img src="/img/posts/Wireless_development-1.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Wireless_development-1.png" width="500" height="400"></center> <br> 
 
 
 페어링을 완료해 두면 Xcode 뿐만 아니라 `Instruments, Configurator, Accessibility Inspector`와 같은 다양한 개발 도구에서도 디바이스와 원격으로 연결할 수 있습니다.
