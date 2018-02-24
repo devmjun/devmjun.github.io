@@ -17,8 +17,8 @@ Pama Stickers/$0.99: [App Store Preview](https://itunes.apple.com/us/app/pama-st
 
 | * | * | 
 | :--: | :--: |
-| ![screen](/img/posts/imessage_Sticker.PNG) | ![screen](/img/posts/imessage_Sticker-1.PNG) | 
-| ![screen](/img/posts/imessage_Sticker-2.PNG) | ![screen](/img/posts/imessage_Sticker-3.PNG) |  <br>
+| ![screen](/img/posts/imessage_Sticker.PNG) | ![screen](/img/posts/imessage_Sticker-1.png) | 
+| ![screen](/img/posts/imessage_Sticker-2.png) | ![screen](/img/posts/imessage_Sticker-3.png) |  <br>
 
 ---
 
