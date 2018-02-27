@@ -19,7 +19,7 @@ tags: [Swift]
 
 ---
 
-## 예제 코드
+## 예제 코드 <br> 
 
 ```swift
 class MJViwe: UIView {
@@ -40,7 +40,8 @@ class MJViwe: UIView {
 protocol MJViewDelegate {
     func changeBackGroundColor(_ target: MJViwe) -> UIColor
 }
-``` <br>
+``` 
+
 
 MJViewDelegate라는 프로토콜을 체택해서, 해당 객체가 해야하는일을 MJviewDelegate 프로토콜에 정의한 함수를 호출해서 대신 일을 시켜줍니다.(?) 그리고 상황에 따라서 다르겠지만, 델리게이트 패턴에서 `delegate`라는 프로퍼티가 `weak`가 되어야 할 때도 있습니다. 잘못하면 Retain Cycles가 발생 할 수도 있기 때문입니다. 상황에 따라서 이지, 필수는 아닙니다. <br>
 
@@ -65,7 +66,7 @@ class ViewController: UIViewController, MJViewDelegate {
         someView.delegate = self
     }
 }
-``` <br> 
+``` 
 
 someView의 배경색을 변경하는 코드를 someView자체가 실행하지 않고, Protocol을 통해서 변경 해주었습니다. `someView.delegate = self`에 왜 self 넣고 실행하는지 궁금 하다면 [http://seorenn.blogspot.kr/2014/06/swift-protocols.html](http://seorenn.blogspot.kr/2014/06/swift-protocols.html)를 참조하면 좋을것 같습니다. <br>
 
