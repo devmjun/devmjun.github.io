@@ -1,6 +1,12 @@
-Delegate 란?
-Delegate 생긴이유 
-예제 코드
+---
+layout:     post
+title:      "Swift. Delegate를 간단하게 알아보자"
+subtitle:   "Delegate"
+date:       2018-02-14 16:00:00
+author:     "MinJun"
+header-img: "img/tags/Swift-bg.jpg"
+comments: true 
+tags: [Swift]
 ---
 
 ### - 델리게이트란?
