@@ -2,7 +2,7 @@
 layout:     post
 title:      "Functional, Reactive, Programming, Paradigm"
 subtitle:   "각 용어들을 명확하게 이해하고 정리해보자"
-date:       2018-03-11 14:11:00
+date:       2018-03-11 19:04:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
