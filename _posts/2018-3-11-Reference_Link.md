@@ -247,7 +247,6 @@ tags: [Swift]
 
 ---
 
-
 ## Platforms / Open API
 
 - [Firebase](https://firebase.google.com)
@@ -260,9 +259,10 @@ tags: [Swift]
 - [Fabric](https://fabric.io)
 - [Kakao](https://developers.kakao.com)
 - [Naver](https://developers.naver.com)
-- [SKT](https://developers.sktelecom.com)<br>
-- [공공 데이터 포털](https://www.data.go.kr)<br>
+- [SKT](https://developers.sktelecom.com)
+- [공공 데이터 포털](https://www.data.go.kr)
 - [관광공사](http://api.visitkorea.or.kr)
+
 ---
 
 ## ReactiveX / RxSwift
