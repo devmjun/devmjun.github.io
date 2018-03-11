@@ -11,10 +11,10 @@ tags: [Swift]
 
 ### Basic
 
-- [Swift Language](https://swift.org)
-- [Swift Open Source](https://github.com/apple/swift)\
-- [Swift Evolution](https://github.com/apple/swift-evolution)
-- [Swift Doc](http://swiftdoc.org/)
+- *[Swift Language](https://swift.org)*
+- *[Swift Open Source](https://github.com/apple/swift)*
+- *[Swift Evolution](https://github.com/apple/swift-evolution)*
+- *[Swift Doc](http://swiftdoc.org/)*
 
 ---
 
@@ -61,12 +61,12 @@ tags: [Swift]
 
 ### Conferences
 
-- Domestic Conference 	
+- **Domestic Conference** 	
 	- [Swift Korea Meetup](https://swiftkorea.github.io/meetup/)
 	- [let us: Go!](https://iosdevkor.github.io/let_us_go_2017_summer_review/)
 	- [Let’Swift](http://letswift.kr/)
 
-- Overseas Conference
+- **Overseas Conference**
 	- [AltConf](http://altconf.com)
 	- [try! Swift](https://www.tryswift.co)
 	- [RWDevCon](https://www.rwdevcon.com)
@@ -125,20 +125,20 @@ tags: [Swift]
 
 ### Design
 
-- Design Guideline
+- **Design Guideline**
 	- [iOS Design Guideline](https://ivomynttinen.com/blog/ios-design-guidelines)
 
-- Material Design
+- **Material Design**
 	- [Material Design](https://material.io/)
 	- [Material Design Color](https://material.io/color/)
 	- [Material Design Components](https://material.io/components/ios/)
 
-- Facebook Design
+- **Facebook Design**
 	- [Facebook Design](http://facebook.design)
 	- [Facebook Design Color](http://facebook.design/devices)
 	- [Facebook Design iOS11 GUI](http://facebook.design/ios11)
 
-- Image Reference
+- **Image Reference**
 	- [Uplabs](https://www.uplabs.com/ios)
 	- [pttrns](https://pttrns.com/iphone-patterns)
 	- [pinterest](https://www.pinterest.co.kr/search/pins/?q=ios)
@@ -148,7 +148,7 @@ tags: [Swift]
 
 ### Resources
 
-- Icons
+- **Icons**
 	- [icons8](https://icons8.com)
 	- [thenounproject](https://thenounproject.com)
 	- [iconfinder](https://www.iconfinder.com)
@@ -156,7 +156,7 @@ tags: [Swift]
 	- [flaticon](https://www.flaticon.com)
 	- [material icons](https://material.io/icons/)
 
-- Photos
+- **Photos**
 	- [lorempixel](http://lorempixel.com)
 	- [unsplash](https://unsplash.com)
 	- [pixabay](https://pixabay.com)
@@ -170,12 +170,12 @@ tags: [Swift]
 
 ### OpenSources
 
-- Dependency Manager
+- **Dependency Manager**
 	- [CocoaPods](https://cocoapods.org)
 	- [Carthage](https://github.com/Carthage/Carthage)
 	- [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
-- OpenSource Collection
+- **OpenSource Collection**
 	- [Awesome-Swift](https://github.com/matteocrippa/awesome-swift)
 	- [Awesome-Swift](https://github.com/Wolg/awesome-swift)
 	- [Awesome-iOS](https://github.com/vsouza/awesome-ios)
@@ -190,7 +190,7 @@ tags: [Swift]
 
 ### Learning
 
-- Video- Korean
+- **Video- Korean**
 	- [렘 아카데미](https://academy.realm.io/kr/section/apple/)
 	- [KOCW](http://www.kocw.net)
 	- [K-MOOC](http://www.kmooc.kr)
@@ -201,14 +201,14 @@ tags: [Swift]
 	- [인프런](https://www.inflearn.com)
 	- [KHANACADEMY](https://ko.khanacademy.org/computing/computer-science)
 
-- Video- English
+- **Video- English**
 	- [edX](https://www.edx.org)
 	- [Coursera](https://www.coursera.org/)
 	- [UDACITY](https://www.udacity.com)
 	- [UDemy](https://www.udemy.com)
 	- [objc.io](https://www.objc.io/)
 
-- Presentation Slides
+- **Presentation Slides**
 	- [SlideShare](https://www.slideshare.net)
 	- [Speaker Deck](https://speakerdeck.com)
 
@@ -216,14 +216,14 @@ tags: [Swift]
 
 ### Algorithm
 
-- Domestic
+- **Domestic**
 	- [백준 온라인](https://www.acmicpc.net)
 	- [코딩도장](http://codingdojang.com)
 	- [알고스팟](https://algospot.com)
 	- [프로젝트 오일러(한글)](http://euler.synap.co.kr)
 	- [프로그래머스](https://programmers.co.kr/learn/challenges)
 
-- Overseas
+- **Overseas**
 	- [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)
 	- [Codility](https://codility.com)
 	- [Hacker Rank](https://www.hackerrank.com)
@@ -236,16 +236,16 @@ tags: [Swift]
 
 ### Tools
 
-- Automation
+- **Automation**
 	- [FastLane](https://fastlane.tools)
 
-- Measure & Analytics
+- **Measure & Analytics**
 	- [Google Analytics](https://www.google.com/analytics/)
 	- [Crashlytics](https://try.crashlytics.com)
 	- [Flurry](https://developer.yahoo.com/analytics/)
 	- [Adjust](https://www.adjust.com)
 
-- Ads
+- **Ads**
 	- [Google Admob](https://developers.google.com/admob/ios/quick-start)
 	- [Facebook Audience-Network](https://developers.facebook.com/docs/audience-network/ios)
 
