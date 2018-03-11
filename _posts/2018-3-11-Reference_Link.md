@@ -9,21 +9,17 @@ comments: true
 tags: [Swift]
 ---
 
-### Basic
+## Basic
 
-- *[Swift Language](https://swift.org)*
-- *[Swift Open Source](https://github.com/apple/swift)*
-- *[Swift Evolution](https://github.com/apple/swift-evolution)*
-- *[Swift Doc](http://swiftdoc.org/)*
-
----
+- [Swift Language](https://swift.org)
+- [Swift Open Source](https://github.com/apple/swift)
+- [Swift Evolution](https://github.com/apple/swift-evolution)
+- [Swift Doc](http://swiftdoc.org/)
 
 - [Apple Developer Site](https://developer.apple.com/develop/)
 - [Apple Documents](https://developer.apple.com/documentation/)
 - [WWDC](https://developer.apple.com/videos/)
 - [Xcode Guide](http://help.apple.com/xcode/)
-
----
 
 - [HIG](https://developer.apple.com/ios/human-interface-guidelines/)
 - [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
@@ -39,7 +35,7 @@ tags: [Swift]
 
 ---
 
-### Basic Guide Documents
+## Basic Guide Documents
 
 - [The Swift Programming Language](https://goo.gl/KlY2hV)
 - [App Programming Guide for iOS](https://goo.gl/mu57YK)
@@ -59,7 +55,7 @@ tags: [Swift]
 
 ---
 
-### Conferences
+## Conferences
 
 - **Domestic Conference** 	
 	- [Swift Korea Meetup](https://swiftkorea.github.io/meetup/)
@@ -78,7 +74,7 @@ tags: [Swift]
 
 ---
 
-### Communities
+## Communities
 
 - [Swift Korea Facebook Group](https://www.facebook.com/groups/swiftkor/)
 - [카카오톡 iOS 오픈 채팅방](https://open.kakao.com/o/gyLape)
@@ -90,7 +86,7 @@ tags: [Swift]
 
 ---
 
-### Blogs
+## Blogs
 
 - [Ray Wenderich](https://www.raywenderlich.com)
 - [APPCODA](https://www.appcoda.com)
@@ -103,7 +99,7 @@ tags: [Swift]
 
 ---
 
-### Mailing List
+## Mailing List
 
 - [Swift Public Mailing List](https://lists.swift.org/mailman/listinfo)
 - [iOS Goodies](http://ios-goodies.com)
@@ -113,7 +109,7 @@ tags: [Swift]
 
 ---
 
-### Device Specifications
+## Device Specifications
 
 - [Support Matrix](http://iossupportmatrix.com)
 - [iPhone Specs](https://support.apple.com/ko_KR/specs/iphone)
@@ -123,7 +119,7 @@ tags: [Swift]
 
 ---
 
-### Design
+## Design
 
 - **Design Guideline**
 	- [iOS Design Guideline](https://ivomynttinen.com/blog/ios-design-guidelines)
@@ -146,7 +142,7 @@ tags: [Swift]
 
 ---
 
-### Resources
+## Resources
 
 - **Icons**
 	- [icons8](https://icons8.com)
@@ -168,7 +164,7 @@ tags: [Swift]
 
 ---
 
-### OpenSources
+## OpenSources
 
 - **Dependency Manager**
 	- [CocoaPods](https://cocoapods.org)
@@ -188,7 +184,7 @@ tags: [Swift]
 
 ---
 
-### Learning
+## Learning
 
 - **Video- Korean**
 	- [렘 아카데미](https://academy.realm.io/kr/section/apple/)
@@ -214,7 +210,7 @@ tags: [Swift]
 
 ---
 
-### Algorithm
+## Algorithm
 
 - **Domestic**
 	- [백준 온라인](https://www.acmicpc.net)
@@ -234,7 +230,7 @@ tags: [Swift]
 
 ---
 
-### Tools
+## Tools
 
 - **Automation**
 	- [FastLane](https://fastlane.tools)
@@ -252,7 +248,7 @@ tags: [Swift]
 ---
 
 
-### Platforms / Open API
+## Platforms / Open API
 
 - [Firebase](https://firebase.google.com)
 - [GitHub](https://developer.github.com)
@@ -264,12 +260,12 @@ tags: [Swift]
 - [Fabric](https://fabric.io)
 - [Kakao](https://developers.kakao.com)
 - [Naver](https://developers.naver.com)
-- [SKT](https://developers.sktelecom.com)
-- [공공 데이터 포털](https://www.data.go.kr)
+- [SKT](https://developers.sktelecom.com)<br>
+- [공공 데이터 포털](https://www.data.go.kr)<br>
 - [관광공사](http://api.visitkorea.or.kr)
 ---
 
-### ReactiveX / RxSwift
+## ReactiveX / RxSwift
 
 - [ReactiveX](http://reactivex.io)
 - [Rx Marbles](http://rxmarbles.com)
