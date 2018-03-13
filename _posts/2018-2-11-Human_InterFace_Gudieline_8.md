@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (8)"
 subtitle:   "Action Sheets, Activity Views, Alerts, Collections, Image Views, Map, Pages, Popovers, Scroll Views, Split Views, Tables, Text Views, Web Views"
 date:       2018-02-11 21:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 ---

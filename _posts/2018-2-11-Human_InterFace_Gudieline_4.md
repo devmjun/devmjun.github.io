@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (4)"
 subtitle:   "Multitasking, Notifications, Printing, Quick Look, Ratings and Reviews, Screenshots, Siri, TV Providers"
 date:       2018-02-11 01:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 ---

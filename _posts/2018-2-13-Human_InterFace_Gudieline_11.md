@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (11)"
 subtitle:   "Apple Pay, Augmented Reality, GameKit, HealthKit, HomeKit, icloud, In-App Purchase, Live Photos, ResearchKit, Social Media, Wallet, Resources"
 date:       2018-02-13 20:43:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true 
 tags: [HIG]
 ---

@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (5)"
 subtitle:   "adaptivity and Layout, Animation, Branding, Color, Terminology, Typography"
 date:       2018-02-11 02:11:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 ---

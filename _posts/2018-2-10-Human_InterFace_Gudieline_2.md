@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (2)"
 subtitle:   "App Architecture, Accessibility, Loading, Modality, Navigation, Onboarding, Requesting Premission, Settings"
 date:       2018-02-10 20:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 ---

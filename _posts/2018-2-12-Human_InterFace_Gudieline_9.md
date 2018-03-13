@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (9)"
 subtitle:   "Button, Edit Menus, Labels, Page Controls, Pickers, Progress Indicators, Refresh Content Controls, Segmented Controls, Sliders, Steppers, Switches, Text Fields"
 date:       2018-02-12 00:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true 
 tags: [HIG]
 ---

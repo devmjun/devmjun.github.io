@@ -4,7 +4,7 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (1)"
 subtitle:   "Overview, Themes, iPhoneX, iOS 11의 새로운 사항, 인터페이스 필수 사항"
 date:       2018-02-10 19:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 ---
