@@ -2,7 +2,7 @@
 layout:     post
 title:      "RxSwift/RxCocoa. 기초 정리하기 (10)"
 subtitle:   "Error Handling, Catch, Retry, retryWhen, Creating Custom error"
-date:       2018-03-13 12:13:00
+date:       2018-03-12 12:13:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
