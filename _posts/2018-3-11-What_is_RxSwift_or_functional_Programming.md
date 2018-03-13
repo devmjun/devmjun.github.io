@@ -6,7 +6,7 @@ date:       2018-03-11 19:04:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [Swift, RxSwift, RxCocoa]
 ---
 
 곰튀김님 영상보고 중요한 부분만 정리했습니다. 링크는 아래에 있습니다. 

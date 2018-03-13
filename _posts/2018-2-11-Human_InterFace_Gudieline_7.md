@@ -6,7 +6,7 @@ date:       2018-02-11 20:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
-tags: [Swift]
+tags: [HIG]
 ---
 
 개인적인 공부의 목적으로 작성 되었습니다. 오역이나 잘못된 부분이 있을수 있으니, 댓글 남겨 주시면 감사하겠습니다!

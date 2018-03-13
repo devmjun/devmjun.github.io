@@ -6,7 +6,7 @@ date:       2018-03-12 12:13:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [RxSwift, RxCocoa]
 ---
 
 Raywenderlich-Ebook의 RxSwift를 읽고 정리한 내용입니다.
