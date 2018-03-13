@@ -504,7 +504,7 @@ dispatch를 main thread로 설정하지 않으면 UIKit은 background thread에 
 
 빌드를 실행하고 임의의 문자열을 검색하려고 하면 오류가 표시됩니다.
 
-<center><img src="/img/posts/RxSwift_Error_Manager-7.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/RxSwift_Error_Manager-7.png" width="300" height="500"></center> <br> 
 
 오류는 오히려 일반적입니다. 하지만 거기에 더 많은 정보를 쉽게 주입할수 있습니다. 
 
@@ -611,11 +611,11 @@ let apiKey = BehaviorSubject(value: "")
 
 위의 메세지를 확인후. <br>
 
-<center><img src="/img/posts/RxSwift_Error_Manager-9.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/RxSwift_Error_Manager-9.png" width="300" height="150"></center> <br> 
 
 위의 버튼을 누른후, <br>
 
-<center><img src="/img/posts/RxSwift_Error_Manager-10.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/RxSwift_Error_Manager-10.png" width="300" height="500"></center> <br> 
 
 에 API를 입력하면 유요한 key값이면 원하는 값을 반환하고 그렇지않으면 observable sequence가 오류를 반환하고 종료합니다.
 
