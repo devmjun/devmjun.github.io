@@ -4,9 +4,9 @@ title:      "IT 기업 기술 블로그 모음"
 subtitle:   "Flitto, Toss Lab, 이음, 우아한형제들, 스타일쉐어, 조이코퍼레이션..."
 date:       2018-02-21 08:00:00
 author:     "MinJun"
-header-img: "img/tags/Idea-bg.jpg"
+header-img: "img/tags/Link-bg.jpg"
 comments: true 
-tags: [Idea]
+tags: [Link]
 ---
 
 

@@ -4,9 +4,9 @@ title:      "Vingle TechTalk 후기"
 subtitle:   "Rxswift를 이용한 MVVM, Texture를 이용한 Feed 적용 사례"
 date:       2018-02-07 23:59:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/Idea-bg.jpg"
 comments: true
-tags: [Swift]
+tags: [Swift, Idea]
 ---
 
 ## Vingle TechTalk Texture in Startup
