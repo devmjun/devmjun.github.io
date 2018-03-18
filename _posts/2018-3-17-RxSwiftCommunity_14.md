@@ -189,7 +189,11 @@ table reactive exteions은 "올바른 일"을 수행하고 개체가 올바르�
 
 **`RxCocoa`로 바인딩한 후 개체를 TableView, CollectionView delegate로 직접 설정하지 마십시오.**
 
-위처럼 tableView를 직접 delegate하면 일부 또는 모든 바인딩이 올바르게 작동하지 않을수 있습니다.
+위처럼 tableView를 직접 delegate하면 일부 또는 모든 바인딩이 올바르게 작동하지 않을수 있습니다. <br>
+
+<center><img src="/img/posts/CustomRxDatasource.png" width="500" height="300"></center> <br> 
+
+> TableView Cell이 각각 다르고, 이미지도 모두 같은 이미지 이지만, 사실은 다른 이미지의 이름이 다른것.. -> Multiple Cell Type 성공
 
 ---
 
