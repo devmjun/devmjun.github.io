@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "RxSwift. 기초 정리하기 (13)"
+title:      "RxSwift. RxExtension 기초 정리하기 (13)"
 subtitle:   "Creating Custom Reactive Extension"
-date:       2018-03-18 20:01:00
+date:       2018-03-16 20:01:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
 comments: true 
