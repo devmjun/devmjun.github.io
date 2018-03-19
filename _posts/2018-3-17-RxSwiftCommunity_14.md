@@ -2,7 +2,7 @@
 layout:     post
 title:      "RxSwift. RxCommunity 정리하기 (14)"
 subtitle:   "Community Cookbook, TableView and CollectionView, Action, RxGesture, RxRealm, RxAlamofire"
-date:       2018-03-17 20:01:00
+date:       2018-03-17 18:01:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
 comments: true 
@@ -13,7 +13,7 @@ Raywenderlich-Ebook의 RxSwift를 읽고 정리한 내용입니다.
 
 ---
 
-## RxCocoa 정리 (14) 
+## RxCommunity 기초 정리 (14) 
 
 - RxSwift Community Cookbook
 - Table and collection Views 
