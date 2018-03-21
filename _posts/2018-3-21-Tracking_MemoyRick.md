@@ -2,7 +2,7 @@
 layout:     post
 title:      "RxSwift. Memory Rick 추적하기 "
 subtitle:   "간단하게 Observerable들 개수 추적하기!"
-date:       2018-02-28 01:00:00
+date:       2018-03-21 01:00:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
 comments: true 

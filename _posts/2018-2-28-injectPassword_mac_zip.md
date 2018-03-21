@@ -2,7 +2,7 @@
 layout:     post
 title:      "Mac. zip파일에 암호 거는 방법"
 subtitle:   "터미널에서 하는 방법!"
-date:       2018-03-13 14:44:00
+date:       2018-02-28 14:44:00
 author:     "MinJun"
 header-img: "img/tags/Mac-bg.jpg"
 comments: true 

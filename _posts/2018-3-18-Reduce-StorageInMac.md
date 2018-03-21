@@ -2,7 +2,7 @@
 layout:     post
 title:      "Xcode. Xcode 깨끗이 삭제하는 방법"
 subtitle:   "Xcode 깨끗하게 삭제하는 방법, Mac 용량 줄이는 방법"
-date:       2018-03-17 22:04:00
+date:       2018-03-18 22:04:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 

@@ -2,7 +2,7 @@
 layout:     post
 title:      "iMessage sticker. Rough Sticker를 출시 했습니다!"
 subtitle:   "!!"
-date:       2018-03-04 13:12:00
+date:       2018-03-03 13:12:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 

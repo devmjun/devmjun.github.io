@@ -2,7 +2,7 @@
 layout:     post
 title:      "RxSwift.로 Todo App 만들기!(16)"
 subtitle:   "Building a Complete RxSwift App"
-date:       2018-03-21 18:01:00
+date:       2018-03-19 18:01:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
 comments: true 
