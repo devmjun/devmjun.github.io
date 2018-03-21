@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "RxSwift. RxCommunity 정리하기 (15)"
-subtitle:   "MVVM with RxSwift, view model"
+title:      "RxSwift. MVVM with RxSwift (15)"
+subtitle:   "MVVM, view model"
 date:       2018-03-20 18:01:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
@@ -26,9 +26,9 @@ Raywenderlich-Ebook의 RxSwift를 읽고 정리한 내용입니다.
 	- Project structure 
 	- Finishing up the network layer 
 	- Adding a view model 
-	- ~Adding a view Model test~
+	- ~~Adding a view Model test~~
 	- adding an iOS View Controller
-	- ~Adding a macOS View Controller~
+	- ~~Adding a macOS View Controller~~
 - Challenge 1: Toggle "Loading..."in members list 
 	- Über challenge: Complete View Model and View Controller for the user’s timeline
 - Reference
