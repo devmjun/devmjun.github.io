@@ -2,7 +2,7 @@
 layout:     post
 title:      "RxSwift. MVVM with RxSwift (15)"
 subtitle:   "MVVM, view model"
-date:       2018-03-20 18:01:00
+date:       2018-03-18 18:01:00
 author:     "MinJun"
 header-img: "img/tags/RxSwift-bg.jpg"
 comments: true 
