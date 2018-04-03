@@ -6,7 +6,7 @@ date:       2017-10-07 22:52:00
 author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true
-tags: [Github]
+tags: [GitHub]
 ---
 
 github blog 도 만들고, 댓글 기능도 구현 했다면, 이제는 google, naver, daum 검색에 노출되어 봅시다! 저도 이번에 각 검색 엔진에 노출 되는 방법을 검색 하면서 알게 되었는데, 각 검색 엔진 마다 그 검색엔진에 어떤 등록 절차를 거치면, robot이 등록 절차를 거친 홈페이지에 접근해서, 포스트 되는 정보들을 긁어(?) 가면, 검색엔진에 노출이 된다고 합니다.(자세하게 들어가면 복잡하지만, 대강의 이해만 하고 건너갑니다.)

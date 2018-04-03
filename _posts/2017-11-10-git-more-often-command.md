@@ -6,7 +6,7 @@ date:       2017-11-12 14:44:00
 author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true
-tags: [Github]
+tags: [Git]
 ---
 
 
