@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Mac. High sierra에서 caps lock으로 한영 전환이 잘 먹지 않을경우"
+title:      "Mac. High sierra에서 caps lock으로 한영 전환이 잘 되지 않을경우"
 subtitle:   "karabiner 설치하여 해결"
 date:       2018-04-04 01:18:00
 author:     "MinJun"
