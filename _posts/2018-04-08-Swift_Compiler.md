@@ -91,7 +91,7 @@ defaults delete com.apple.dt.Xcode BuildSystemScheduleInherentlyParallelCommands
 
 ## 유용한 기능 
 
-build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 에 
+build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 으로 갑니다
 
 - `Xfrontend -warn-long-function-bodies=200`
 - `Xfrontend -warn-long-expression-type-checking=200`
