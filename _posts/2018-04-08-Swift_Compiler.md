@@ -129,7 +129,7 @@ build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 으로 �
 [https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)<br>
 [개인적으로 가장 유용하다고 생각하는 곳입니다](https://medium.com/rocket-fuel/optimizing-build-times-in-swift-4-dc493b1cc5f5)
 
-[Swift 컴파일러 문서](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)<br>
+[Swift OptimizationTips.rst](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)<br>
 
 ---
 
