@@ -104,9 +104,13 @@ build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 에
 
 위의 방법들을 적용하고 프로젝트의 컴파일 시간을 비교해보니까 확실히 컴파일 시간이 단축되는걸 확인할수 있었습니다! 큰 프로젝트 파일이 아니라서 큰 시간의 감소는 없지만 큰 프로젝트에서 개발환경에서 사용하면 유용할것 같습니다.
 
-| 컴파일 최적화 전 | 컴파일 최적화 후 | 
-| :--: | :--: |
-|![screen](/img/posts/SwiftCompiler-5.png) |![screen](/img/posts/SwiftCompiler-6.png) | <br>
+컴파일 최적화 전 
+
+<center><img src="/img/posts/SwiftCompiler-5.png" width="700" height="300"></center> <br> 
+
+컴파일 최적화 후 
+
+<center><img src="/img/posts/SwiftCompiler-6.png" width="700" height="300"></center> <br> 
 
 
 ---
