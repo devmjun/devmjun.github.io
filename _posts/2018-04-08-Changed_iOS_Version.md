@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "개발자 입장에서본 iOS 변화 7~11 "
+title:      "개발자 입장에서본 iOS 7~11 변화 내용"
 subtitle:   "유용한 링크"
 date:       2018-04-08 23:58:00
 author:     "MinJun"
