@@ -22,7 +22,7 @@ stackoverflow_username: 8601335/minjunju?tab=profile
 #linkedin_username : shikherverma42
 #keybase_username : shikherverma
 copyright_name: minjun
-rss : false
+rss : true
 
 # used for portfolio on home page
 collections:
