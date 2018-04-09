@@ -35,7 +35,7 @@ RxSwift를 사용하다보면 자주사용하는 method들은 그냥 작성해�
 3. Swift Optimization tips in Documentation 
 	- [https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)
 4. Optimizing Build Times in Swift 4
-	[개인적으로 가장 유용하다고 생각하는 곳입니다](https://medium.com/rocket-fuel/optimizing-build-times-in-swift-4-dc493b1cc5f5)
+	- [개인적으로 가장 유용하다고 생각하는 곳입니다](https://medium.com/rocket-fuel/optimizing-build-times-in-swift-4-dc493b1cc5f5)
 
 ---
 
