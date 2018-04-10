@@ -9,7 +9,7 @@ comments: true
 tags: [Swift]
 ---
 
-[https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)
+[type method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)
 
 ---
 
@@ -111,10 +111,8 @@ if player.tracker.advance(to: 6) {
 
 ## 여담 
 
-
 1. class method는 상속, 오버라이딩이 가능합니다.
 	- struct, enumeration에서 선언 불가능
-
 2. static 타입 선언은 class의 final 선언과 같다고 생각할수 있습니다
 
 ---
@@ -122,4 +120,10 @@ if player.tracker.advance(to: 6) {
 ## Reference 
 
 [http://kka7.tistory.com/16](http://kka7.tistory.com/16)<br>
-[https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)<br>
+[type method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)
+
+- 연관된 포스트
+	- [Swift. Meta Type](https://devminjun.github.io/blog/Meta_Type_Swift)
+	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [Compile-Time vs Run Type Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)

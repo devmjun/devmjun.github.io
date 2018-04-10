@@ -13,10 +13,7 @@ compil-time 과 Run-time의 차이가 무엇인지에 대한 아티클입니다.
 
 ---
 
-
 ## Whats the difference between Run-time and compile-time 
-
-
 
 컴파일 타임과 런타임의 차이점은 이론가들이 단계 구별(`phase distinction`) 이라고 부르는 것의 예입니다. 특히 프로그래밍 언어에 대한 지식이 부족한 사람들에게 가장 어려운 개념중 하나 입니다. 
 
@@ -65,3 +62,11 @@ compil-time 과 Run-time의 차이가 무엇인지에 대한 아티클입니다.
 
 [https://stackoverflow.com/questions/846103/runtime-vs-compile-time](https://stackoverflow.com/questions/846103/runtime-vs-compile-time)<br>
 [https://www.youtube.com/watch?v=pWUi1HKr0MI](https://www.youtube.com/watch?v=pWUi1HKr0MI)
+
+- 연관된 포스트
+	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
+	- [Swift. Meta Type](https://devminjun.github.io/blog/Meta_Type_Swift)
+	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [Compile-Time vs Run Type Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+
+

@@ -10,9 +10,9 @@ tags: [Swift, Idea]
 ---
 
 
-## Metatype type 
+## Metatype Type 
 
-[https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
+[MetaType](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
 
 metytype의 타입은 어떤 타입의 타입을 가르킵니다. class Types, structure types, enumeration type, protocol types 를 포함합니다. 
 
@@ -90,7 +90,10 @@ extension UIStoryboard {
 
 ## Reference 
 
-[https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
+[MetaType](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
 
-
-
+- 연관된 포스트 
+	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
+	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [Compile-Time vs Run Type Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)

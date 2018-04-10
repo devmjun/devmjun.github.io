@@ -20,8 +20,6 @@ Swift의 타입 시스템을 사용하는 방법을 배울때 Swift(다른 많�
 
 ## Compile Time Type Checking
 
-Compile time type checking (or static type checking) operates on the Swift source code. The Swift compiler looks at explicitly stated and inferred types and ensures correctness of our type constraints.
-
 컴파일 타임의 타입 검사(또는 정적 타입 검사(static type)의 검사)는 Swift `소스코드`에서 작동합니다. Swift 컴파일러는 명시적으로 유추 된 타입을 보고 타입조건의 정확성을 보장합니다.
 
 다음은 정적(static) 검사의 간단한 예입니다. 
@@ -113,8 +111,6 @@ if let unknownData = unknownData as? HumanType & HasName {
 
 컴파일러는 `HumanType` 및 `HasName`을 준수하는 구체적인 타입(컴파일 타임에 완전히 지정된 타입이 있는 타입)을 예상합니다. 우리가 제공할 수 있는 것은 `동적(dynamic)`으로 검증된 타입입니다.  
 
-As of Swift 2.2, there is no way to get this to compile. At the end of this post I will briefly touch on which changes to Swift would likely be necessary to make this approach work.
-
 Swift 2.2(지금도 안됨ㅠㅠ. 2018.4.10일기준) 부터는 이것을 컴파일 할 방법이 없습니다. 포스트의 끝에서 나는 스위프트에 대한 어떤 변화가 이 접근법을 작동시키는 데 필요할 것인가에 대해 간략히 언급할 것입니다. 
 
 지금은 해결방법이 필요합니다.
@@ -178,17 +174,11 @@ if let <T: HumanType, HasName> value = unknownData as? T {
 }
 ```
 
-I know too little about the Swift compiler to know if this is feasible at all. I would assume that the relative cost of implementing this is huge, compared to the benefits it would provide to a very small part of the average Swift codebase.
-
 나는 Swift 컴파일러에 대해서 거의 알지 못합니다. 스위프트 코드베이스의 아주 작은 부분에 제공할수 있는 이점과 비비교하면 위의 구현의 상대적 비용은 높다고 생각합니다.
-
-However, according to this Stack Overflow answer by David Smith, Swift currently checks generic constraints at run time (unless the compiler generates specialized copies of a function for performance optimizations). This means the information about generic constraints is still available at run time and, at least in theory, the idea of dynamically created constrained metatypes might be possible.
 
 그러나 `David Smith`의 [stack Ovserflow 대답](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)에 따르면 Swift는 현재 런타임에 제네릭 제약 조건을 확인합니다.(컴파일러가 성능 최적화를 위해 함수의 특수 복사본을 생성하지 않는 한)
 
 즉 `generic`제약 조건에 대한 정보가 런타임에 여전히 사용가능하다는것을 의미하고, 적어도 이론적으로는 동적으로 생성된 제한된 메타 타입의 아이디어가 가능할 수 있습니다. 
-
-For now it is helpful to understand the limitations of mixing static and dynamic type checking and to be aware of the possible workarounds.
 
 지금 당장은 정적 및 동적 타입 검사를 혼합할 때의 한계를 이해하고 가능한 해결 방법을 알고 있으면 도움이 됩니다. 
 
@@ -200,5 +190,12 @@ For now it is helpful to understand the limitations of mixing static and dynamic
 
 [http://blog.benjamin-encz.de/post/compile-time-vs-runtime-type-checking-swift/](http://blog.benjamin-encz.de/post/compile-time-vs-runtime-type-checking-swift/) <br>
 [https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)
+
+- 연관된 포스트
+	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
+	- [Swift. Meta Type](https://devminjun.github.io/blog/Meta_Type_Swift)
+	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
+
 
 ---
