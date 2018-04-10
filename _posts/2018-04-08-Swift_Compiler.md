@@ -9,7 +9,10 @@ comments: true
 tags: [Xcode, Swift]
 ---
 
-참조한 [원문 링크 1](https://medium.com/@RobertGummesson/regarding-swift-build-time-optimizations-fc92cdd91e31), [원문 링크는 2](https://medium.com/swift-programming/swift-build-time-optimizations-part-2-37b0a7514cbe) 
+참조한 원문 링크 
+
+1. [원문 링크 1](https://medium.com/@RobertGummesson/regarding-swift-build-time-optimizations-fc92cdd91e31)
+2. [원문 링크는 2](https://medium.com/swift-programming/swift-build-time-optimizations-part-2-37b0a7514cbe) 
 
 ---
 
@@ -25,7 +28,7 @@ tags: [Xcode, Swift]
 
 ## 컴파일 시간 향상 방법 
 
-1. [Optimizing Build Times in Swift 4](https://medium.com/rocket-fuel/optimizing-build-times-in-swift-4-dc493b1cc5f5)
+1. <U>[Optimizing Build Times in Swift 4](https://medium.com/rocket-fuel/optimizing-build-times-in-swift-4-dc493b1cc5f5)</U>
 2. [Speed up Swift compile time](https://hackernoon.com/speed-up-swift-compile-time-6f62d86f85e6)
 3. [Writing High-Performance Swift Code](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)
 4. [Swift 컴파일 속도를 향상시키자](https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35) 
