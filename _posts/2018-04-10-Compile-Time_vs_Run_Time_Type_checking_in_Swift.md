@@ -192,10 +192,10 @@ if let <T: HumanType, HasName> value = unknownData as? T {
 [https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)
 
 - 연관된 포스트
-	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
-	- [Swift. Meta Type](https://devminjun.github.io/blog/Meta_Type_Swift)
-	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
-	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
-
+	- [<U>Swift. Type method</U>](https://devminjun.github.io/blog/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devminjun.github.io/blog/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devminjun.github.io/blog/Identity-Operators)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
 
 ---

@@ -122,8 +122,9 @@ extension UIStoryboard {
 
 [MetaType](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
 
-- 연관된 포스트 
-	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
-	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
-	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
-	- [Compile-Time vs Run-Time Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+- 연관된 포스트
+	- [<U>Swift. Type method</U>](https://devminjun.github.io/blog/Type_Methods)
+	- [<U>Protocol Composition Type</U>](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devminjun.github.io/blog/Identity-Operators)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)

@@ -43,8 +43,6 @@ if tenEighty === alsoTenEighty {
 
 ## Checking Type 
 
-[Checking Type](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-ID338)
-
 타입 점검 연산자 `is`를 사용하여 인스턴스가 특정 서브클래스 유형인지 여부를 점검합니다. 타입검사 연산자는 서브 클래스 타입의 인스턴스이면 `true`를 그렇지 않으면 `false`를 반환합니다. 
 
 아래의 예제에서는 라이브러리 배열의 Movie 및 Song 인스턴스 수를 계산하는 두개의 변수인 movieCount 및 songCount를 정의합니다. 
@@ -144,4 +142,13 @@ print(meta is String.Type.Type)  // true, String 메타타입은 String.Type.Typ
 
 ## Reference
 
-[Identity Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-ID82) 
+[Identity Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-ID82) <br>
+[Equivalence Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID45)<br>
+[Checking Type](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-ID338)
+
+- 연관된 포스트
+	- [<U>Swift. Type method</U>](https://devminjun.github.io/blog/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devminjun.github.io/blog/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devminjun.github.io/blog/Protocol_Composition_Type)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
