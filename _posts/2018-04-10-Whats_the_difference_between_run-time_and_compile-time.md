@@ -9,6 +9,8 @@ comments: true
 tags: [ComputerScience]
 ---
 
+[https://stackoverflow.com/questions/846103/runtime-vs-compile-time](https://stackoverflow.com/questions/846103/runtime-vs-compile-time) <br>
+
 compil-time 과 Run-time의 차이가 무엇인지에 대한 아티클입니다. 
 
 ---

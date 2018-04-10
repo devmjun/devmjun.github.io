@@ -22,7 +22,12 @@ tags: [Swift]
 타입 메소드는 인스턴스 메소드처럼 `점(dot .)` 문법으로 호출됩니다. 하지만, 타입의 인스턴스가 아닌 타입의 타입 메소드를 호출합니다. 다음은 `SomeClass` 클래스에서 타입 메소드를 호출하는 방법입니다.
 
 ```swift
-class SomeClass { class func someTypeMethod() { // type method implementation goes here } } SomeClass.someTypeMethod()
+class SomeClass { 
+	class func someTypeMethod() { 
+	// type method implementation goes here 
+	} 
+} 
+SomeClass.someTypeMethod()
 ```
 
 타입 메소드 본문에서, 암시적으로 `self`프로퍼티는 타입의 인스턴스 대신에 타입 스스로와 관련있습니다. 이것은 타입 프로퍼티와 타입 메소드 매개변수간의 모호함을 없애기 위해 `self`를 사용할수 있는 것을 의미하며, 인스턴스 프로퍼티와 인스턴스 메소드도 마찬가지입니다.

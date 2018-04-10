@@ -9,10 +9,7 @@ comments: true
 tags: [Swift, Idea]
 ---
 
-
 ## Metatype Type 
-
-[MetaType](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457)
 
 metytype의 타입은 어떤 타입의 타입을 가르킵니다. class Types, structure types, enumeration type, protocol types 를 포함합니다. 
 
