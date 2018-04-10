@@ -4,7 +4,7 @@ title:      "Swift. Class Diagram 생성방법"
 subtitle:   "swift-auto-diagram을 사용합니다"
 date:       2018-04-08 18:52:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
+header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Idea]
 ---
