@@ -93,4 +93,4 @@ extension UIStoryboard {
 	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
 	- [ComputerScience. Compile-time vs Run-Time](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
 	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
-	- [Compile-Time vs Run Type Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [Compile-Time vs Run-Time Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)

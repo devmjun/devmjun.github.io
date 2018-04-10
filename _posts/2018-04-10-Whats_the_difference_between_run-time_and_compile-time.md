@@ -69,6 +69,6 @@ compil-time 과 Run-time의 차이가 무엇인지에 대한 아티클입니다.
 	- [Swift. Type method](https://devminjun.github.io/blog/Type_Methods)
 	- [Swift. Meta Type](https://devminjun.github.io/blog/Meta_Type_Swift)
 	- [Protocol Composition Type](https://devminjun.github.io/blog/Protocol_Composition_Type)
-	- [Compile-Time vs Run Type Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [Compile-Time vs Run-Time Type Checking in Swift](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
 
 

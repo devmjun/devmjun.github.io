@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Compile-Time vs Run Type Type Checking in Swift"
+title:      "Compile-Time vs Run-Time Type Checking in Swift"
 subtitle:   "static type checking, dynaminc type checking"
 date:       2018-04-10 20:00:00
 author:     "MinJun"
