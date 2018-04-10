@@ -131,6 +131,8 @@ build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 으로 �
 
 [Swift OptimizationTips.rst](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)<br>
 
+[https://brunch.co.kr/@joonwonlee/14](https://brunch.co.kr/@joonwonlee/14)
+
 ---
 
 
