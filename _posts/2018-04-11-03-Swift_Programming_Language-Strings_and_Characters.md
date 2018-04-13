@@ -9,10 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[Strings and Characters](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html#//apple_ref/doc/uid/TP40014097-CH7-ID285)
-
----
-
 ## String and Characters 
 
 `string`는 characters의 연속입니다. 예를들어 "hello, world" or "albatross" 은 Swift의 `String` 타입에 의해서 표시됩니다. String을 포함하는것은 다양한 방법으로 접근할수 있고, `Character` 값의 컬렉션을 포함합니다. 
@@ -235,3 +231,6 @@ print("\(mansionCount) mansion scenes; \(cellCount) cell scenes")
 
 ---
 
+## Reference 
+
+[Strings and Characters](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html#//apple_ref/doc/uid/TP40014097-CH7-ID285)

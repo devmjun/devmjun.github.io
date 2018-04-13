@@ -9,10 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[Control Flow](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)
-
----
-
 ## Switch 
 
 문법 
@@ -131,7 +127,7 @@ case let (x, y):
 // Prints "on the x-axis with an x value of 2"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-5" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-5.png" width="500" height="500"></center> <br> 
 
 ### - Where 
 
@@ -148,7 +144,7 @@ case let (x, y):
 // Prints "(1, -1) is on the line x == -y"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-6" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-6.png" width="500" height="500"></center> <br> 
 
 ### - Compound Cases 
 
@@ -290,3 +286,6 @@ if #available(platform name version, ..., *) {
 
 ---
 
+## Reference 
+
+[Control Flow](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)

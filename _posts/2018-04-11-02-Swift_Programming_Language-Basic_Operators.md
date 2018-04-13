@@ -9,10 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[Basic Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60)
-
----
-
 ## Ternary Conditional Operator
 
 문법 
@@ -114,3 +110,7 @@ range.contains(-1)  // true
 ```
 
 ---
+
+## Reference 
+
+[Basic Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60)

@@ -9,8 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[The Basics](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309)
-
 ## Type Annotations
 
 상수 또는 변수를 선언할때 `Type Annotation`을 제공하고 상수 또는 변수에 저장하는 값의 종류를 명확하게 설명할수 있습니다. 
@@ -32,9 +30,10 @@ var red, green, blue: Double
 
 ## Optionals 
 
-`optionals`은 값이 있거나 없는 상황을 나타냅니다. 
+`옵셔널(optionals)`은 값이 없을 수 있는 상황에서 사용합니다. 옵셔널은 두가지 가능성을 표현합니다. 값이 있고 그 값을 사용하기 위해 언래핑(unwrap)할수 있거나, 값이 전혀 없다
 
-> The concept of optionals doesn’t exist in C or Objective-C. The nearest thing in Objective-C is the ability to return nil from a method that would otherwise return an object, with nil meaning “the absence of a valid object.” However, this only works for objects—it doesn’t work for structures, basic C types, or enumeration values. For these types, Objective-C methods typically return a special value (such as NSNotFound) to indicate the absence of a value. This approach assumes that the method’s caller knows there’s a special value to test against and remembers to check for it. Swift’s optionals let you indicate the absence of a value for any type at all, without the need for special constants.
+
+> 옵셔널의 개념은 C나 Objective-C에서는 존재하지 않습니다. Objective-C에서 가장 가까운것으로는 메소드로 부터 `nil`을 반환하거나 객체를 반환하는 것이며, `nil`은 유효한 객체가 없다를 의미합니다. 하지만 이것은 객체에서만 동작합니다-구조체, 기본 C 타입, 열거형 값에서는 동작하지 않습니다. 이러한 타입들의 경우에, Objective-C 메소드는 일반적으로 값이 없음을 나타내기 위해 (`NSNotFound`)를 반환합니다. 이 접근법은 메소드의 호출자가 테스트할 특정 값을 알고 있으며, 이를 확인해야하는 것을 기억하고 있다는 것을 가정합니다. Swift의 옵셔널은 특별한 상수가 필요 없으며, 모든 타입에 대해서 값이 없다는 것을 나타냅니다.
 
 #### nil 
 
@@ -145,3 +144,7 @@ do {
 ```
 
 ---
+
+## Reference 
+
+[The Basics](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309)
