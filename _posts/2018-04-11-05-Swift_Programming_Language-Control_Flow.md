@@ -109,7 +109,7 @@ default:
 // Prints "(1, 1) is inside the box"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-4" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-4.png" width="500" height="500"></center> <br> 
 
 
 ### - Value Bindings
