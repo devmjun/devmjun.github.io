@@ -9,13 +9,7 @@ comments: true
 tags: [Swift]
 ---
 
-[Enumerations](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html#//apple_ref/doc/uid/TP40014097-CH12-ID145)
-
----
-
 ## Enumerations
-
-An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code.
 
 열거형(`enumeration`)은 관련된 값의 그룹에 대해 공통 타입을 정의하고 코드 내에서 타입에 `안전한(type-safe)` 방법으로 값을 작업할 수 있습니다.
 
@@ -249,4 +243,5 @@ print(evaluate(product))
 
 ## Reference 
 
+[Enumerations](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html#//apple_ref/doc/uid/TP40014097-CH12-ID145)<br>
 [까질 코더님 블로그](http://kka7.tistory.com/10?category=919617)

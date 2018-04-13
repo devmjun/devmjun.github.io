@@ -9,10 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[Classes and Structures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-ID82)
-
----
-
 ## Classes and Structures
 
 `클래스(classes)`와 `구조체(structures)`는 범용적`(general-purpose)`이며, 프로그램의 코드 블록(blocks)을 만드는데 유연한 구조입니다. 클래스와 구조체에 기능을 추가하기 위해 상수, 변수, 함수와 완저히 같은 문법을 사용해서 프로퍼티와 메소드를 정의합니다.
@@ -250,8 +246,8 @@ Swift에서 `String`, `Array`, `Dictionary`와 같은 기본 `데이터 타입�
 > 내부적으론 참조형태도 동작할수 있으나 알아서 최적화 해주니, 우리는 그냥 값 타입으로 생각하고 사용하면 된다는 의미로 해석되네요.
 
 ---
-
-[까질코더님 블로그](http://kka7.tistory.com/11?category=919617)
+[Classes and Structures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-ID82)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/11?category=919617)
 
 
 
