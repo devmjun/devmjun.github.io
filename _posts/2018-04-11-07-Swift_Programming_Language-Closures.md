@@ -9,36 +9,19 @@ comments: true
 tags: [Swift]
 ---
 
-[Closures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94)
-
----
-
 ## Closures
-
-Closures are self-contained blocks of functionality that can be passed around and used in your code. Closures in Swift are similar to blocks in C and Objective-C and to lambdas in other programming languages.
 
 `Closures`는 독립적인(self.-contained) 기능의 코드 블럭(blocks)이며, 코드에서 젇날되고 사용 할수 있습니다. Swift에서 클로저는 C, Objective-C의 블럭(blocks)와 다른 프로그래밍 언어세너는 람다(lambda)와 비슷합니다.
 
-Closures can capture and store references to any constants and variables from the context in which they are defined. This is known as closing over those constants and variables. Swift handles all of the memory management of capturing for you.
-
 `클로저`는 Context에 정의된 모든 상수와 변수를 캡쳐(capture)와 참조 저장(store references) 할수 있습니다. 이것은 이러한 상수와 변수를 클로징(closing over)하는 것으로 알려져 있습니다. Swift는 캡쳐(capturing)하는 모든 메모리를 관리를 처리합니다. 
-
-Don’t worry if you are not familiar with the concept of capturing. It is explained in detail below in Capturing Values.
 
 > NOTE: capturing 개념에 익숙하지 않아도 걱정하지마세요. [Capturing Values](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID103) 에서 자세하게 설명합니다. 
 
-Global and nested functions, as introduced in Functions, are actually special cases of closures. Closures take one of three forms:
-
 함수에서 소개된 `Global`, `nested functions`은 closures의 특별한 케이스 입니다. `Closures`는 다음의 세개중 하나를 취합니다.
-
-
-Global functions are closures that have a name and do not capture any values.
 
 - 전역(Global) 함수는 이름이 있고 값을 캡처하지 않는 클로저 입니다. 
 - 중첩(Nested) 함수는 이름을 가지고 있는 클로저 이고, 내부함수(encolsing function)의 값을 캡쳐합니다. 
 - 클로저의 표현식은 context주변의 값을 캡쳐할수 있는 간단한 구문으로 작성된 이름없는 클로저 입니다. 
-
-Swift’s closure expressions have a clean, clear style, with optimizations that encourage brief, clutter-free syntax in common scenarios. These optimizations include:
 
 Swift의 클로저 표현식은 혼란없는 구문을 권장하는 최적화를 통해 깨긋하고 명확한 스타일을 유지합니다. 이러한 최적화에는 다음이 포함됩니다. 
 
@@ -123,8 +106,6 @@ reversedNames = names.sorted(by: { $0 > $1 } )
 
 ### - Operators method 
 
-There’s actually an even shorter way to write the closure expression above. Swift’s String type defines its string-specific implementation of the greater-than operator (>) as a method that has two parameters of type String, and returns a value of type Bool. This exactly matches the method type needed by the sorted(by:) method. Therefore, you can simply pass in the greater-than operator, and Swift will infer that you want to use its string-specific implementation:
-
 실제로 클로저 표현식을 저장하는 더 짧은 방법이 있습니다. 2개의 파라미터로 String 타입을 받아서 Boll 값을 반환하는 특별한 하게 구현된 매서드가 있습니다. `greater-than operator (>)` 이것은 `sorted(by:)`와 정확하게 타입이 일치합니다. 그래서 Swift는 string-spectific implementation을 추론하여 사용할수 있습니다.
 
 ```swift
@@ -134,8 +115,6 @@ reversedNames = names.sorted(by: >)
 operator method에 대해서 더 알고 싶다면 [Operator Method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID42)
 
 ### - Trailing closures 
-
-If you need to pass a closure expression to a function as the function’s final argument and the closure expression is long, it can be useful to write it as a trailing closure instead. A trailing closure is written after the function call’s parentheses, even though it is still an argument to the function. When you use the trailing closure syntax, you don’t write the argument label for the closure as part of the function call.
 
 함수의 클로저 표현식을 함수의 최종 인수로 전달해야하고 클로저 표현식이 길다면 후행 클로저로 작성하는것이 유용할수 있습니다. 후행 클로저는 함수 호출의 괄호 뒤에 쓰여지는데, 여전히 함수의 인수입니다. 후행 클로저 구문을 사용하면 함수 호출의 일부로 클로저의 인수 레이블을 쓰지 않습니다.
 
@@ -214,15 +193,9 @@ let strings = numbers.map { (number) -> String in
 
 ## Capturing Values 
 
-A closure can capture constants and variables from the surrounding context in which it is defined. The closure can then refer to and modify the values of those constants and variables from within its body, even if the original scope that defined the constants and variables no longer exists.
-
 클로저는 컨텍스트(context) 근처의 정의된 상수 및 변수를 캡처할수 있습니다. 그런 다음 클로저는 상수와 변수를 정의한 원래 범위가 더 이상 존재하지 않더라도 해당 본문 내에서 해당 상수와 변수의 값을 참조하고 수정 할수 있습니다.
 
-In Swift, the simplest form of a closure that can capture values is a nested function, written within the body of another function. A nested function can capture any of its outer function’s arguments and can also capture any constants and variables defined within the outer function.
-
 Swift에서 값을 캡처 할 수 있는 가장 간단한 클로저 형태는 다른 함수의 본문에 작성된 중첩함수 입니다. 중첩된 함수는 외부 함수의 인수를 캡처 할 수 있으며 외부 함수 내에 정의 된 모든 상수 및 변수도 캡처할수 있습니다.
-
-Here’s an example of a function called makeIncrementer, which contains a nested function called incrementer. The nested incrementer() function captures two values, runningTotal and amount, from its surrounding context. After capturing these values, incrementer is returned by makeIncrementer as a closure that increments runningTotal by amount each time it is called.
 
 다음 예제는 `incrementer`라는 중첩된 함수를 포함하는 `makeIncrementer`라는 함수의 예입니다. 중첩된 `incrementer()`함수는 주변 컨텍스트에서 `running Total`과 `amount`의 두 값을 캡처합니다. 값을 캡처후 `incrementer`는 `makeIncrementer`에 의해 호출 될 때마다 `running Total`을 값만큼 증가시키는 클로저로서 반환됩니다.
 
@@ -237,16 +210,9 @@ func makeIncrementer(forIncrement amount: Int) -> () -> Int {
 }
 ```
 
-The return type of makeIncrementer is () -> Int. This means that it returns a function, rather than a simple value. The function it returns has no parameters, and returns an Int value each time it is called. To learn how functions can return other functions, see Function Types as Return Types.
-
 `makeIncrementer`은 () -> Int 타입을 반환합니다. 이것은 단순한 값보다는 `함수(function)`를 반환한다는 의미입니다. 이 함수는 매개 변수 없이 반환하고, 호출될때마다 `Int` 값을 반환합니다. 함수가 다른 함수를 반환하는 방법을 배우려면 [반환 타입으로 사용하는 함수 타입(Function Types as Return Types)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID177) 을 참조하세요. 
 
-
-The makeIncrementer(forIncrement:) function defines an integer variable called runningTotal, to store the current running total of the incrementer that will be returned. This variable is initialized with a value of 0.
-
 `makeIncrementer(forIncrement:)`함수를 현재 실행중에 증가하는(incrementer) 값의 합계를 저장하고 반환하기 위해 정수형 변수 `runningTotal`을 정의합니다. 이 변수는 `0`의 값으로 초기화 됩니다.
-
-The makeIncrementer(forIncrement:) function has a single Int parameter with an argument label of forIncrement, and a parameter name of amount. The argument value passed to this parameter specifies how much runningTotal should be incremented by each time the returned incrementer function is called. The makeIncrementer function defines a nested function called incrementer, which performs the actual incrementing. This function simply adds amount to runningTotal, and returns the result.
 
 `makeIncrementer(forIncrement:)` 함수는 `forIncrement`인자 라벨과 이름이 `amount`인 하나의 Int 매개변수를 가집니다. 그 인자값은 반환된 `incrementer` 함수가 호출될때마다 얼마만큼 `runningTotal`을 증가시킬지 지정하기 위해 매개변수로 전달됩니다. `makeIncrementer`함수는 실제로 증가를 수행하는 `incrementer` 중첩함수를 정의합니다. 이 함수는 단순히 `amount`를 `runningTotal`에 대해주고, 그 결과를 반환합니다.
 
@@ -256,7 +222,6 @@ The makeIncrementer(forIncrement:) function has a single Int parameter with an a
 > 
 > 외부에 들어오는 값을 어떤 함수로 인해서 실행 -> 저장 함..
 
-When considered in isolation, the nested incrementer() function might seem unusual
 
 중첩 함수인 `incrementer()`함수를 분리해보면, 비정상적으로 보일수 있습니다.
 
@@ -267,31 +232,19 @@ func incrementer() -> Int {
 }
 ```
 
-The incrementer() function doesn’t have any parameters, and yet it refers to runningTotal and amount from within its function body. 
-
 `incrementer()`함수는 아무런 매개변수를 없이, 함수 본문에서 `runningTotal`과 `amount`를 참조합니다.
 
-It does this by capturing a reference to runningTotal and amount from the surrounding function and using them within its own function body. Capturing by reference ensures that runningTotal and amount do not disappear when the call to makeIncrementer ends, and also ensures that runningTotal is available the next time the incrementer function is called.
 
 주변 함수의 컨텍스트로부터 `runningTotal`과 `amount`에 대한 참조를 캡처하고 자체 함수 본문에서 사용합니다. 참조로 캡쳐한 `runningTotal`과 `amount`는 `makeIncrementer` 호출이 종료할때까지 사라지지 않는 것을 보증하고, `runningTotal`이 다음번에 `incrementer`함수가 호출될때에도 사용할수 있는 것을 보증합니다.
 
-
-As an optimization, Swift may instead capture and store a copy of a value if that value is not mutated by a closure, and if the value is not mutated after the closure is created.
-
-Swift also handles all memory management involved in disposing of variables when they are no longer needed.
-
 > Note: 최적화에서, Swift는 클로저에 의해 값이 변경되지 않으면 값을 복사(copy)해서 대신 캡처하고 저장합니다. 클로저가 생성된 이후에 그 값은 변경될수 없습니다.
 Swift는 더이상 필요하지 않을때 변수를 폐기하는 복잡한 모든 메모리 관리를 해줍니다
-
-Here’s an example of makeIncrementer in action:
 
 다음은 `makeIncrementer` 동작 예시입니다
 
 ```swift
 let incrementByTen = makeIncrementer(forIncrement: 10)
 ```
-
-This example sets a constant called incrementByTen to refer to an incrementer function that adds 10 to its runningTotal variable each time it is called. Calling the function multiple times shows this behavior in action:
 
 위 예제는 호출될때마다 `incrementer` 함수를 참조해서 `runningTotal`변수에 10을 더해주는 `incrementByTen` 상수를 설정합니다. 함수를 여러번 호출해서 이 동작이 실행되는 것을 보여줍니다.
 
@@ -303,8 +256,6 @@ incrementByTen()
 incrementByTen()
 // returns a value of 30
 ```
-
-If you create a second incrementer, it will have its own stored reference to a new, separate runningTotal variable:
 
 두번째 `incrementer`를 생성하면, 자신의 저장된 참조를 새로 가질것이며, `runningTotal`변수와 구분됩니다.
 
@@ -319,27 +270,15 @@ incrementByTen()
 // returns a value of 40
 ```
 
-NOTE
-
-If you assign a closure to a property of a class instance, and the closure captures that instance by referring to the instance or its members, you will create a strong reference cycle between the closure and the instance. Swift uses capture lists to break these strong reference cycles. For more information, see Strong Reference Cycles for Closures.
-
-
 > Note: 클래스 인스턴스의 프로퍼티에 클로저를 할당하고, 클로저는 인스턴스나 멤버를 참조해서 캡쳐하면, 클로저와 인스턴스 사이에 `강한 참조`를 만들것입니다. Swift는 강한 순환참조를 깨기 위해서 캡쳐 목록(`capture lists`)을 사용합니다. 더 자세한 정보는, [클로저에 대한 강한 순환참조(Strong Reference Cycles for Closures)를 보세요.](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56)
 
 ---
 
 ## Closure Are Reference Types 
 
-In the example above, incrementBySeven and incrementByTen are constants, but the closures these constants refer to are still able to increment the runningTotal variables that they have captured. This is because functions and closures are reference types.
-
 위의 예제에서, `incrementBySeven`과 `incrementByTen`은 상수이지만, 이러한 상수가 참조하는 클로저는 여전히 캡처한 `runningTotal`변수를 증가시킬수 있습니다. 이것은 함수와 클로저가 참조 타입(`reference types`)이기 때문입니다.
 
-Whenever you assign a function or a closure to a constant or a variable, you are actually setting that constant or variable to be a reference to the function or closure. In the example above, it is the choice of closure that incrementByTen refers to that is constant, and not the contents of the closure itself.
-
 함수나 클로저를 상수나 변수에 할당 할 때마다, 실제로 상수와 변수는 함수나 클로저의 참조(`reference`)를 설정합니다. 위의 예제에서, `incrementByTen`은 클로저 자체의 내용이 아닌, 클로저를 참조하는 상수를 선택합니다.
-
-This also means that if you assign a closure to two different constants or variables, both of those constants or variables will refer to the same closure:
-
 
 이것은 
 클로저에 두개의 다른 상수나 변수를 할당 할 경우에, 이러한 상수나 변수 모두 같은 클로저를 참조할 것을 의미합니다.
@@ -387,11 +326,7 @@ s.letValue = 20 // 컴파일 에러발
 
 ## Escaping Closures 
 
-A closure is said to escape a function when the closure is passed as an argument to the function, but is called after the function returns. When you declare a function that takes a closure as one of its parameters, you can write @escaping before the parameter’s type to indicate that the closure is allowed to escape.
-
 클로저는 클로저가 함수에 인자로 전달될때 함수를 탈출한다(escape)고 말하지만, 함수가 반환된 뒤에 호출 됩니다. 클로저를 매개 변수중 하나로 사용하는 함수를 선언할때, 클로저가 탈출(escape)을 허용한다는 것을 가리키기 위해 매개변수의 앞에 `@escaping`을 작성할수 있습니다.
-
-One way that a closure can escape is by being stored in a variable that is defined outside the function. As an example, many functions that start an asynchronous operation take a closure argument as a completion handler. The function returns after it starts the operation, but the closure isn’t called until the operation is completed—the closure needs to escape, to be called later. For example:
 
 클로저가 탈출할수 있는 한가지 방법은 함수의 외부에 정의된 변수에 저장하는 것입니다. 한가지 예로, 클로저를 인자로 가지고 비동기 동작을 시작하는 많은 함수들의 완료를 조절합니다. `함수`는 그동작이 시작된 후에 반환하지만 `클로저`는 동작이 완료될때가지 호출되지 않습니다. 클로저가 나중에 호출 되도록 탈출(escape)이 필요합니다. 예를들어 
 
@@ -402,12 +337,7 @@ func someFunctionWithEscapingClosure(completionHandler: @escaping () -> Void) {
 }
 ```
 
-The someFunctionWithEscapingClosure(_:) function takes a closure as its argument and adds it to an array that’s declared outside the function. If you didn’t mark the parameter of this function with @escaping, you would get a compile-time error.
-
 `someFunctionWithEscapingClosure(_:)`함수는 인자로 클로저를 가지고 함수 외부에 선언된 배열에 추가합니다. 함수의 매개 변수에 `@escaping`표시하지 않으면 컴파일 오류가 발생합니다.
-
-
-Marking a closure with @escaping means you have to refer to self explicitly within the closure. For example, in the code below, the closure passed to someFunctionWithEscapingClosure(_:) is an escaping closure, which means it needs to refer to self explicitly. In contrast, the closure passed to someFunctionWithNonescapingClosure(_:) is a nonescaping closure, which means it can refer to self implicitly.
 
 클로저를 `@escaping`표시하는 것은 클로저에서 `self`를 명시적으로 참조하고 있다는 것을 의미합니다. 아래 코드에서, 클로저는 `someFunctionWithEscapingClsoure(_:)`에 전달된 클로저는 `self`를 명시적으로 참조해야하는것을 의미하는 탈출(escaping)클로저 입니다. 반면(contrast), `someFunctionWithNonescapingClosure(_:)`에 전달된 클로저는 암시적으로 `self`를 참조할수 있다는것을 의미하는 탈출하지 않는(nonescaping)클로저 입니다. 
 
@@ -438,15 +368,9 @@ print(instance.x)
 
 ## Autoclosures
 
-An autoclosure is a closure that is automatically created to wrap an expression that’s being passed as an argument to a function. It doesn’t take any arguments, and when it’s called, it returns the value of the expression that’s wrapped inside of it. This syntactic convenience lets you omit braces around a function’s parameter by writing a normal expression instead of an explicit closure.
-
 자동클로저(autoclosure)는 함수에 인자로 전달되는 표현식을 래핑하기 위해 자동적으로 생성되는 클로저입니다. 그것은 아무런 인자도 가지지 않고, 호출될때 내부에서 래핑된(wrapped)표현식의 값을 반환합니다. 이 구문(syntactic)은 명시적인 클로저 대신 일반 표현식으로 작성해서 함수의 매개변수 주변에 중괄호(braces)를 생략할때 편리합니다. 
 
-It’s common to call functions that take autoclosures, but it’s not common to implement that kind of function. For example, the assert(condition:message:file:line:) function takes an autoclosure for its condition and message parameters; its condition parameter is evaluated only in debug builds and its message parameter is evaluated only if condition is false.
-
 일반적으로 함수 호출(call)은 자동클로저(`autoclosure`)이지만, 이러한 종류의 함수를 구현(implement)하는 것은 일반적이지 않습니다. 예를들어, assert(condition:message:file:line:)함수는 condition과 message 매개변수에 대한 자동클로저(autoclosure)를 가집니다. condition매개변수는 디버그 빌드 할때에만 평가되고 message 매개변수는 condition이 false일때만 평가됩니다.
-
-An autoclosure lets you delay evaluation, because the code inside isn’t run until you call the closure. Delaying evaluation is useful for code that has side effects or is computationally expensive, because it lets you control when that code is evaluated. The code below shows how a closure delays evaluation.
 
 자동클로저(`autoclosure`)는 클로저를 호출할때까지 안쪽 코드가 실행되지 않기 때문에, 평가가 지연될 수 있습니다. 지연되는 평가(delaying evaluation)는 그 코드가 평가 될때 제어 할수 있기 때문에, 부작용이 있거나 계산이 오래 걸리는 코드에서 유용합니다. 아래 코드는 클로저가 어떻게 평가를 지연하는지 보여줍니다.
 
@@ -465,12 +389,7 @@ print(customersInLine.count)
 // Prints "4"
 ```
 
-Even though the first element of the customersInLine array is removed by the code inside the closure, the array element isn’t removed until the closure is actually called. If the closure is never called, the expression inside the closure is never evaluated, which means the array element is never removed. Note that the type of customerProvider is not String but () -> String—a function with no parameters that returns a string.
-
 `customersInLine`배열의 첫번째 요소가 클로저 코드 내부에 의해 제거하지만, 배열 요소는 클로저가 실제로 호출될때까지 제거되지 않습니다. 그 클로저가 호출되지 않으면, 배열 요소가 결코 제거되지 않는다는 것을 의미하며, 클로저 안쪽의 표현식은 평가되지 않습니다. `customerProvider`의 타입은 `String`이 아니고 `() -> String`인 것을 주의합니다. - 매개변수 없이 문자열을 반환하는 함수
-
-
-You get the same behavior of delayed evaluation when you pass a closure as an argument to a function.
 
 함수에 인자로 클로저를 전달할때 지연된 평가와 동일한 동작을 합니다.
 
@@ -529,4 +448,5 @@ serve(customer: { () -> String  in
 
 ## Reference 
 
+[Closures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94)<br>
 [까칠코더님 블로그](http://kka7.tistory.com/9?category=919617)

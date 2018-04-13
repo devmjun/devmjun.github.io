@@ -9,10 +9,6 @@ comments: true
 tags: [Swift]
 ---
 
-[Functions](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID158)
-
----
-
 ## Functions 
 
 `functions`은 특정 작업을 수행하는 코드가 포함된 자체의 덩어리 입니다. 함수가하는 일을 식별하는 이름을 함수에 부여하고 해당 이름을 함수가 `호출(call)`하여 해당 작업을 수행하는 데 사용 됩니다. 
@@ -362,6 +358,9 @@ print("zero!")
 
 ---
 
+## Reference 
+
+[Functions](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID158)
 
 
 
