@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Generics](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-ID179)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/28?category=919617)
+
+---
+
 ## Generics
 
 `제네릭 코드(Generic code)`는 정의한 요구사항에 따라 모든 타입에서 작업 할수 있는 유연하고 재사용 가능한 함수나 타입을 작성할 수 있습니다. 중복을 피하고 의도가 명확하게 표현하는 코드를 작성할 수 있으며 추상적으로 관리합니다.
@@ -732,9 +741,3 @@ extension Container {
 
 ---
 
-## Reference 
-
-[Generics](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-ID179)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/28?category=919617)
-
----

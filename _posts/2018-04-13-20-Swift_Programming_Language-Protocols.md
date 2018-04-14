@@ -9,6 +9,16 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+
+[Protocols](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/27?category=919617)
+
+---
+
 ## Protocols
 
 `프로토콜(protocol)`은 메소드, 프로퍼티, 특정 작업이나 기능에 적합한(suit) 다른 요구사항을 상세하게(blueprint) 정의합니다. 프로토콜은 이러한 요구사항의 실제 구현을 제공하기 위해 `클래스, 구조체, 열거형`에 채택될(adopted)수 있습니다. 프로토콜의 요구사항을 만족하는 모든 타입은 `프로토콜을 준수(conform)` 한다고 말합니다.
@@ -925,10 +935,3 @@ print(hamsters.textualDescription)
 
 ---
 
-
-## Reference 
-
-[Protocols](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/27?category=919617)
-
----

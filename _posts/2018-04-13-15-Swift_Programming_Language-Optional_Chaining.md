@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Optional Chaining](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/OptionalChaining.html#//apple_ref/doc/uid/TP40014097-CH21-ID245)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/22?category=919617)
+
+---
+
 ## Optional Chaining
 
 옵셔널 체이닝(Optional chaining)은 현재 옵셔널이 nil이 될 수 있는 프로퍼티, 메소드, 서브스크립트를 조회하고 호출하는 과정입니다. 옵셔널 체이닝에 값이 있으면, 프로퍼티, 메소드, 스크립트 호출은 성공합니다. 옵셔널이 nil이면, 프로퍼티, 메소드, 스크립트 호출은 nil을 반환합니다. 여러개를 함께 연결 할 수 있고, 연결된 어떤 링크가 nil이면, 전체 체인(chain)은 실패하게 됩니다.
@@ -91,7 +100,3 @@ if let roomCount = john.residence?.numberOfRooms {
 
 ---
 
-## Reference 
-
-[Optional Chaining](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/OptionalChaining.html#//apple_ref/doc/uid/TP40014097-CH21-ID245)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/22?category=919617)

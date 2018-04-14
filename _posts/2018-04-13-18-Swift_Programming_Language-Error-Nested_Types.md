@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Nested Types](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/NestedTypes.html#//apple_ref/doc/uid/TP40014097-CH23-ID242)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/25?category=919617)
+
+---
+
 ## Nested Types
 
 열거형은 종종 특정 클래스나 구조체의 기능을 지원하기 위해 만들어집니다. 비슷하게, 보다 복잡한 컨텍스트(context)에서 사용하기 위해 유틸리티 클래스와 구조체를 정의하는것이 편리 할 수 있습니다. 이를 위해서, Swift는 중첩된 타입(nested types)으로 정의하는게 가능하며, 그것들이 지원하는 열거형, 클래스, 구조체 타입의 정의에서 중첩 할 수 있습니다.
@@ -85,7 +94,5 @@ let heartsSymbol = BlackjackCard.Suit.hearts.rawValue
 
 ---
 
-## Reference 
 
-[Nested Types](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/NestedTypes.html#//apple_ref/doc/uid/TP40014097-CH23-ID242)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/25?category=919617)
+

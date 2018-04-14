@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference  
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Inheritance](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-ID193)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/18?category=919617)
+
+---
+
 ## Inheritance
 
 클래스는 다른 클래스로부터 메소드, 프로퍼티, 다른 특징들을 `상속(inherit)` 받을수 있습니다. 다른 클래스로 부터 상속받을때 상속받는 클래스를 `서브클래스(subclass)`라고 하고, 상속하는 클래스를 `슈퍼클래스(superclass)`라고 합니다. Swift에서 상속은 다른 타입으로 부터 클래스를 차별화하는 기본적인 동작입니다.
@@ -170,23 +179,7 @@ print("AutomaticCar: \(automatic.description)")
 
 클래스 전체를 final로 설정 하려면 클래스 정의에서 class키워드 앞에 final을 사용합니다(`final class`). final class의 서브클래스를 만드려고 시도하면 컴파일 오류가 발생합니다.
 
----
-
-
-
-
-
-
-
-
-
-
-
 
 
 ---
 
-## Reference 
-
-[Inheritance](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-ID193)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/18?category=919617)

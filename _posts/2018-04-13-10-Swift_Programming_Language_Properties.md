@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Properties](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID254)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/15?category=919617)
+
+---
+
 ## Properties
 
 프로퍼티(properties)는 특정 클래스, 구조체, 열거형의 연관된 값입니다. 저장 프로퍼티(stored properties)는 인스턴스의 일부로 상수와 변수 값을 저장하는 반면, 계산 프로퍼티(computed properties)는 값을 (저장하기 보다는)계산합니다. 계산 프로퍼티는 클래스, 구조체, 열거형에서 제공됩니다. 저장 프로퍼티는 클래스와 구조체에서만 제공됩니다.
@@ -313,12 +322,4 @@ print(SomeClass.computedTypeProperty)
 ```
 
 ---
-
-## Reference 
-[Properties](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID254)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/15?category=919617)
-
-
-
-
 

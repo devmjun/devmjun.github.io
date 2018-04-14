@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Methods](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/16?category=919617)
+
+---
+
 ## Methods
 
 메소드(methods)는 특정 타입과 관련된 함수입니다. 클래스, 구조체, 열거형 모두 주어진 타입의 인스턴스로 작업하기 위한 특정 작업과 기능을 캡슐화 하는 인스턴스 메소드를 정의할 수 있습니다. 클래스, 구조체, 열거형은 타입 자체와 관련된 타입 메소드 또한 정의 할수 있습니다. 타입 메소드는 Objective-C의 클래스 메소드와 비슷합니다.
@@ -249,7 +258,3 @@ if player.tracker.advance(to: 6) {
 
 ---
 
-## Reference 
-
-[Methods](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/16?category=919617)

@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Error Handling](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html#//apple_ref/doc/uid/TP40014097-CH42-ID508)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/23?category=919617)
+
+---
+
 ## Error Handling
 
 `오류 처리(Error handling)`는 프로그램에서 오류 상테에서 복구하고 응답하는 과정입니다. Swift는 실시간으로 복구 가능한 오류를 `던지고(throwing)`, `잡고(catching)`, `전달(propagating)` 및 `조작(manipulating)`하는 기능을 지원하는 일류 클래스(first-class)를 제공합니다.
@@ -248,7 +257,3 @@ func processFile(filename: String) throws {
 
 ---
 
-## Reference 
-
-[Error Handling](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html#//apple_ref/doc/uid/TP40014097-CH42-ID508)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/23?category=919617)

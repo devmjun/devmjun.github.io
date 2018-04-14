@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Deinitialization](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-ID142)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/20?category=919617)
+
+---
+
 ## Deinitialization
 
 `해제(deinitializer)`는 클래스 인스턴스의 메모리가 해제되기 전에 호출됩니다. init 키워드로 초기화를 작성하는 것과 비슷한 방법으로, 해제를 `deinit` 키워드로 작성합니다. `해제는 오직 클래스 타입`에서만 가능합니다.
@@ -114,7 +123,3 @@ print("The bank now has \(Bank.coinsInBank) coins")
 
 ---
 
-## Reference 
-
-[Deinitialization](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-ID142)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/20?category=919617)

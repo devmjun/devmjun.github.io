@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Subscripts](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//apple_ref/doc/uid/TP40014097-CH16-ID305)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/17?category=919617)
+
+---
+
 ## Subscripts
 
 클래스(classes), 구조체(structures), 열거형(enumerations)은 서브크스립트(subscripts)를 정의할 수 있으며, 컬렉션(collection), 리스트(list), 시퀀스(sequence)의 멤버요소에 접근하기 위한 바로가기(shortcuts)입니다. `서브스크립트(subscript)`를 사용해서 별도의 설정과 가져오는 별도의 메소드 없이 인덱스(index)로 값을 설정하고 가져옵니다. 예를 들어, `someArray[index]`로 Array인스턴스에 있는 요소에 접근하고, `someDictionary[key]`로 Dictionary인스턴스에 있는 요소에 접근합니다.
@@ -157,7 +166,3 @@ let someValue = matrix[2, 2]
 
 ---
 
-## Reference 
-
-[Subscripts](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//apple_ref/doc/uid/TP40014097-CH16-ID305)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/17?category=919617)

@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference  
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Extensions](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/26?category=919617)
+
+---
+
 ## Extensions
 
 `확장(Extensions)`은 기존에 있는 클래스, 구조체, 열거형, 프로토콜 타입에 새로운 기능을 추가합니다. 원래 소스코드에 접근하지 못하는 타입을 확장하는 능력도 포함합니다. 확장은 Objective-C에서의 카테고리(categories)와 유사합니다(Objective-C 카테고리와 다르게, Swift 확장은 이름을 가지지 않습니다)
@@ -287,9 +296,3 @@ printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
 
 ---
 
-## Reference 
-
-[Extensions](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/26?category=919617)
-
----

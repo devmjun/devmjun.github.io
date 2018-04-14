@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Initialization](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID203)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/19?category=919617)
+
+---
+
 ## Initialization
 
 `초기화(initialization)`는 클래스, 구조체, 열거형의 인스턴스를 사용하기 전에 준비하는 과정입니다. 이 과정은 인스턴스에서 각 저장 프로퍼티에 대한 초기값 설정과 관련(involves)이 있고 새 인스턴스가 사용할 준비가 되기 전에 필요한 다른 설정이나 초기화를 실행합니다.
@@ -892,7 +901,3 @@ print(board.squareIsBlackAt(row: 7, column: 7))
 
 ---
 
-## Reference 
-
-[Initialization](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID203)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/19?category=919617)
