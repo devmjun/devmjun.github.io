@@ -9,6 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Advanced Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID28)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/30?category=919617)
+
+---
+
 ## Advanced Operators
 
 [기본 연산자(Basic Operators)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60)에서 설명된 연산자이외에, Swift는 좀 더 복잡한 값을 다루기 위해 몇가지 고급(advanced) 연산자를 제공합니다. C 와 Objective-C에서 잘 알려진 비트(bitwise)를 다루고 비트를 이동하는 연산자 모두를 포함합니다.
@@ -271,9 +280,4 @@ let plusMinusVector = firstVector +- secondVector
 
 ---
 
-## Reference 
 
-[Advanced Operators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID28)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/30?category=919617)
-
----

@@ -9,6 +9,13 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+[Memory Safety](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/MemorySafety.html#//apple_ref/doc/uid/TP40014097-CH46-ID567)<br>
+
+---
+
+
 ## Memory Safety
 
 기본적으로 Swift는 너의 코드에서 발생하는 안전하지 않은 행동을 방지 합니다. Swift는 변수가 사용되기 이전에 초기화 되고, 메모리가 할당해제된 후 엑세스 되지 않으며, 배열 인덱스가 범위를 벗어난 오류가 있는지 확인합니다.
@@ -207,8 +214,3 @@ func someFunction() {
 ---
 
 
-## Reference 
-
-[Memory Safety](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/MemorySafety.html#//apple_ref/doc/uid/TP40014097-CH46-ID567)<br>
-
----

@@ -9,6 +9,16 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID48)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/21?category=919617)
+
+---
+
+
 ## Automatic Reference Counting
 
 Swift는 앱의 메모리 사용량을 추적하기 위해 `자동 참조 갯수(ARC: Automatic Reference Counting)`를 사용합니다. 대부분의 경우, Swift에서 메모리 관리는 그냥 사용되고, 메모리 관리에 대해서 생각 할 필요가 없습니다. ARC는 인스턴스가 더 이상 필요 없을때 클래스 인스턴스를 자동적으로 메모리에서 해제 해줍니다.
@@ -569,9 +579,3 @@ paragraph = nil
 
 ---
 
-## Reference 
-
-[Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID48)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/21?category=919617)
-
----

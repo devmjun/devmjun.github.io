@@ -9,6 +9,16 @@ comments: true
 tags: [Swift]
 ---
 
+## Reference 
+
+까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
+
+[Access Control](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-ID3)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/29?category=919617)
+
+---
+
+
 ## Access Control
 
 `접근제어(Access control)`는 다른 소스파일과 모듈에서 코드에 접근하는 것을 제한합니다. 이것은 코드의 상세 구현부를 숨길 수 있고, 인터페이스 지정하여 코드 접근과 사용 할 수 있습니다.
@@ -396,9 +406,3 @@ public struct TrackedString {
 
 ---
 
-## Reference 
-
-[Access Control](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-ID3)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/29?category=919617)
-
----
