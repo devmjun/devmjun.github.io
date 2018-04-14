@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift. 정리하기 6"
-subtitle:   "Swift Language Guide-Functions"
+subtitle:   "Swift Language Guide-Functions *"
 date:       2018-04-11 20:35:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"

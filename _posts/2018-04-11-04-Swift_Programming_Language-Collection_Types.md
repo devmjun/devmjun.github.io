@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift. 정리하기 4"
-subtitle:   "Swift Language Guide-Collection Types"
+subtitle:   "Swift Language Guide-Collection Types *"
 date:       2018-04-11 19:35:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"

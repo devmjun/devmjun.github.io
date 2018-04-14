@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift. 정리하기 13"
-subtitle:   "Swift Language Guide-Inheritance"
+subtitle:   "Swift Language Guide-Inheritance *"
 date:       2018-04-13 10:35:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
