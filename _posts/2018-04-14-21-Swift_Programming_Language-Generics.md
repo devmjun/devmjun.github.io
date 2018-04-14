@@ -454,8 +454,6 @@ extension Array: Container {}
 
 ## Adding Constraints to an Assoiated Type 
 
-You can add type constraints to an associated type in a protocol to require that conforming types satisfy those constraints. For example, the following code defines a version of Container that requires the items in the container to be equatable.
-
 프로토콜의 연관된 타입에 제약조건을 추가하여 준수타입이 해당 제약조건을 충족하도록 요구할수 있습니다. 예를들어, 다음 코드는 Container의 항목을 동일하게 해야하는 컨테이너 버전을 의미합니다. 
 
 ```swift
@@ -482,13 +480,7 @@ protocol SuffixableContainer: Container {
 }
 ```
 
-In this protocol, Suffix is an associated type, like the Item type in the Container example above. Suffix has two constraints: It must conform to the SuffixableContainer protocol (the protocol currently being defined), and its Item type must be the same as the container’s Item type. The constraint on Item is a generic where clause, which is discussed in Associated Types with a Generic Where Clause below.
-
 이 프로토콜에서 `Suffix`는 Container 예제위에 있는 item 각 아이템 타입과 같은 연관된 타입입니다. `Suffix`는 두가지 제약조건이 있습니다: `SuffixxableContainer` 프로토콜(현재 정의 된 프로토콜)을 준수해야하며 해당 아이템 타입은 컨테이너의 아이템 타입과 동일해야합니다. 
-
-Here’s an extension of the Stack type from Strong Reference Cycles for Closures above that adds conformance to the SuffixableContainer protocol:
-
-
 
 여기 확장된 `Stack`타입은 `SuffixableContainer` 프로토콜을 준수하고 [클로져를 위한 강한 참조 싸이클](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56) 로부터 확장된 `Stack` 타입 입니다. 
 
@@ -510,8 +502,6 @@ stackOfInts.append(30)
 let suffix = stackOfInts.suffix(2)
 // suffix contains 20 and 30
 ```
-
-In the example above, the Suffix associated type for Stack is also Stack, so the suffix operation on Stack returns another Stack. 
 
 위의 예제에서 Stack을 위한 Suffix 연관된 타입또한 Stack이고, `suffix`는 연산자 Stack위에서 다른 Stack을 반환합니다.
 
@@ -698,9 +688,6 @@ print([1260.0, 1200.0, 98.6, 37.0].average())
 다른 곳에서 작성하는 제네릭 `where`절 처럼, 확장(extension)의 일부로 제네릭 where절에 여러개의 요구사항을 포함할 수 있습니다. 목록의 각 요구사항은 쉼표(,)로 구분합니다.
 
 ## Associated Types with a Generic Where Clause
-
-You can include a generic where clause on an associated type. For example, suppose you want to make a version of Container that includes an iterator, like what the Sequence protocol uses in the standard library. Here’s how you write that:
-
 
 연관된 타입에 `제네릭 절(generic where clause)`을 포함할수 있습니다. 예를들어 `Sequence` 프로토콜이 표준 라이브러리에서 사용하는 것과같은 `iterator`를 포함하는 `Container`버전을 만들고 싶다고 가정하세요. 
 
