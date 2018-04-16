@@ -18,19 +18,13 @@ tags: [Swift]
 
 ## Declarations 
 
-A declaration introduces a new name or construct into your program. For example, you use declarations to introduce functions and methods, to introduce variables and constants, and to define enumeration, structure, class, and protocol types. You can also use a declaration to extend the behavior of an existing named type and to import symbols into your program that are declared elsewhere.
-
 선언(declaration)은 프로그램에서 새로운 이름 또는 구조를 발표(introduces)합니다. 예를들어 선언을 사용하여 함수 또는 메서드를 발표하고, 변수와 상수를 발표하며 열거형, 구조체, 클래스 및 프로토콜 타입을 정의(define)합니다. 또한 선언은 존재하고 있는 타입의 행동을 확장하고 프로그램에서 다른곳에서 선언된 symbols을 가져올수 있습니다. 
-
-In Swift, most declarations are also definitions in the sense that they are implemented or initialized at the same time they are declared. That said, because protocols don’t implement their members, most protocol members are declarations only. For convenience and because the distinction isn’t that important in Swift, the term declaration covers both declarations and definitions.
 
 Swift에서 대부분의 선언은 선언된 것과 동시에 구현되거나 초기화된다는 의미에서의 정의 입니다. 즉, 프로토콜은 그들의 맴버를 구현하지 않기 떄문에, 대부분의 프로토콜 구성원은 선언(declaration) 입니다. 편의상 또는 Swift에서는 그다지 중요하지 않기 때문에 용어의 선언(declaration) 은 선언과 정의(definition)모두를 포함합니다. 
 
 ---
 
 ## Rethrowing Functions and Methods 
-
-A function or method can be declared with the rethrows keyword to indicate that it throws an error only if one of its function parameters throws an error. These functions and methods are known as rethrowing functions and rethrowing methods. Rethrowing functions and methods must have at least one throwing function parameter.
 
 
 `rethrows` 키워드로 함수 또는 메소드를 선언하면 함수 매개 변수중 하나에서 오류가 발생하는 경우에만 오류가 발생함을 나타낼수 있습니다. 이 함수와 매소드는 `rethrowing`함수와 `rethrowing`메소드로 알려져 있습니다. `Rethowing`함수와 메소드는 적어도 하나의 throwing 함수가 파라미터로 가져야합니다.
@@ -40,8 +34,6 @@ func someFunction(callback: () throws -> Void) rethrows {
     try callback()
 }
 ```
-
-A rethrowing function or method can contain a throw statement only inside a catch clause. This lets you call the throwing function inside a do-catch block and handle errors in the catch clause by throwing a different error. In addition, the catch clause must handle only errors thrown by one of the rethrowing function’s throwing parameters. For example, the following is invalid because the catch clause would handle the error thrown by alwaysThrows().
 
 `rethowing`함수 또는 메소드는 catch 절 내에서만 throw문을 포함할수 있습니다. 이를 통해서 `do-catch`블록내에서 `throwing` 함수를 호출하고 catch 오류를 처리하여 `catch` 절의 오류를 처리할수 있습니다. 
 
@@ -61,21 +53,15 @@ func someFunction(callback: () throws -> Void) rethrows {
 }
 ```
 
-A throwing method can’t override a rethrowing method, and a throwing method can’t satisfy a protocol requirement for a rethrowing method. That said, a rethrowing method can override a throwing method, and a rethrowing method can satisfy a protocol requirement for a throwing method.
-
 `throwing` 매서드는 `rethowing` 매서드를 오버라이드 할수 없고, `throwing`매서드는 `rethrowing`매서드를 위한 프로토콜 요구사항을 만족할수 없습니다. 다시말하면 `rethowing`매서드는 `throwing` 메서드를 오버라이드 할수 있으며, 프로토콜 요구사항을 만족 시킬수 있습니다.  
 
 ---
 
 ## Conditional Conformance
 
-You can extend a generic type to conditionally conform to a protocol, so that instances of the type conform to the protocol only when certain requirements are met. You add conditional conformance to a protocol by including requirements in an extension declaration
-
 제네릭 타입을 프로토콜에 조건부로 확장할수 있습니다. 특정 요구 사항이 충족될 때만 타입 인스턴스가 프로토콜을 준수합니다. 확장 선언에 요구 사항을 포함시켜 프로토콜에 조건부 적합성을 추가합니다.
 
 ### - Overridden Requirements Aren’t Used in Some Generic Contexts
-
-In some generic contexts, types that get behavior from conditional conformance to a protocol don’t always use the specialized implementations of that protocol’s requirements. To illustrate this behavior, the following example defines two protocols and a generic type that conditionally conforms to both protocols.
 
 일부 제네릭 문맥에서 조건부를 준수하는것으로 부터 타입의 행동은 프로토콜은 프로토콜의 요구사항의 특수한 구현을 사용하지 않습니다. 이 동작을 설명하기 위해 다음 예제에서 두 프로토콜 과 두 프로토콜을 조건부로 따르는 제네릭 타입을 정의합니다. 
 
@@ -120,7 +106,6 @@ extension String: TitledLoggable {
 }
 ```
 
-The Pair structure conforms to Loggable and TitledLoggable whenever its generic type conforms to Loggable or TitledLoggable, respectively. In the example below, oneAndTwo is an instance of Pair<String>, which conforms to TitledLoggable because String conforms to TitledLoggable. When the log() method is called on oneAndTwo directly, the specialized version containing the title string is used.
 
 `Pair`구조체는 `Loggable` 또는 `TitledLoggable`을 따를떄 마다 `Loggable`과 `TitledLoggable`을 따릅니다. 
 
@@ -132,8 +117,6 @@ oneAndTwo.log()
 // Prints "Pair of 'String': (one, two)"
 ```
 
-However, when oneAndTwo is used in a generic context or as an instance of the Loggable protocol, the specialized version isn’t used. Swift picks which implementation of log() to call by consulting only the minimum requirements that Pair needs to conform to Loggable. For this reason, the default implementation provided by the Loggable protocol is used instead.
-
 그러나 `oneAndTwo`가 제네릭 컨텍스트 또는 `Loggable`프로토콜의 인스턴스로 사용되는경우 분리된 버전은 사용되지 않습니다. Swift는 `Pair`가 `Loggable`을 준수해야하는 최소 요구 사항만을 참조하여 호출할 `log()` 구현을 선택합니다. 이러한 이유로 기본 구현은 `Loggable`프로토콜에 의해서 제공된것이 대신 사용됩니다. 
 
 ```swift
@@ -144,13 +127,9 @@ doSomething(with: oneAndTwo)
 // Prints "(one, two)"
 ```
 
-When log() is called on the instance that’s passed to doSomething(_:), the customized title is omitted from the logged string.
-
 `doSometing(_:)`에 전달된 인스턴스에서 `log()`가 호출되면 사용자 정의 된 제목(`title`)은 `logged string` 에서 생략됩니다.("(one, two)" 출력)
 
 ### - Protocol Conformance Must Not Be Redundant
-
-A concrete type can conform to a particular protocol only once. Swift marks redundant protocol conformances as an error. You’re likely to encounter this kind of error in two kinds of situations. The first situation is when you explicitly conform to the same protocol multiple times, but with different requirements. The second situation is when you implicitly inherit from the same protocol multiple times. These situations are discussed in the sections below.
 
 특정한 타입은 특정 프로토콜을 한번만 준수 할수 있습니다. Swift는 중복 프로토콜 준수를 오류로 표시합니다. 두 종류의 상황에서 오류가 발생할 가능성이 있습니다. 
 
@@ -176,22 +155,13 @@ extension Array: Serializable where Element == String {
 // Error: redundant conformance of 'Array<Element>' to protocol 'Serializable'
 ```
 
-If you need to add conditional conformance based on multiple concrete types, create a new protocol that each type can conform to and use that protocol as the requirement when declaring conditional conformance.
-
 여러 타입을 기반으로 조건부 적합성을 추가해야하는 경우 각 타입이 준수할수 있는 새 프로토콜을 작성하고 조건 준수를 선언할때 해당 프로토콜을 요구 사항으로 사용하세요.
 
 ### - Resolving Implicit Redundancy
 
-When a concrete type conditionally conforms to a protocol, that type implicitly conforms to any parent protocols with the same requirements. 
-
 복합적인 타입이 조건부로 프로토콜을 준수할때 해당 타입은 암묵적으로 동일한 요구사항을 가진 상위 프로토콜을 준수합니다. 
 
-If you need a type to conditionally conform to two protocols that inherit from a single parent, explicitly declare conformance to the parent protocol. This avoids implicitly conforming to the parent protocol twice with different requirements.
-
 단일한 상위 프로토콜로부터 상속받은 두개의 프로토콜을 조건부로 준수하는 타입이 필요한 경우 명시적으로 상위 프로토콜에 대한 준수를 선언하세요. 이렇게하면 서로 다른 요구 사항에 따라 상위 프로토콜을 암시적으로 준수하지 않아도 됩니다. 
-
-
-The following example explicitly declares the conditional conformance of Array to Loggable to avoid a conflict when declaring its conditional conformance to both TitledLoggable and the new MarkedLoggable protocol
 
 다음 예제에서는 `Array`의 `Loggable`에 대한 조건부 준수를 명시적으로 선언하여 `TitledLoggable`및 새 `MarkedLoggable`프로토콜에 대한 조건부 준수를 선언할때 충돌을 피합니다. 
 
@@ -216,8 +186,6 @@ extension Array: TitledLoggable where Element: TitledLoggable {
 extension Array: MarkedLoggable where Element: MarkedLoggable { }
 ```
 
-Without the extension to explicitly declare conditional conformance to Loggable, the other Array extensions would implicitly create these declarations, resulting in an error:
-
 명시적으로 `Loggable`에 조건부 적합성을 선언하는 확장 기능이 없으면 다른 Array확장이 이러한 선언을 암시적으로 생성하여 오류가 발생합니다. 
 
 ```swift
@@ -230,13 +198,9 @@ extension Array: Loggable where Element: MarkedLoggable { }
 
 ## Declaration Modifiers 
 
-Declaration modifiers are keywords or context-sensitive keywords that modify the behavior or meaning of a declaration. You specify a declaration modifier by writing the appropriate keyword or context-sensitive keyword between a declaration’s attributes (if any) and the keyword that introduces the declaration.
-
 선언 수정자(Declaration modifiers) 선언의 동작 또는 의미를 수정하는 키워드 또는 상황에 맞는 키워드 합니다. 선언의 속성, 선언을 도입하는(introduces) 키워드 사이에 적절한 키워드 또는 상황에 맞는 키워드를 작성하여 선언 수정자를 지정합니다. 
 
 ### - dynamic 
-
-Apply this modifier to any member of a class that can be represented by Objective-C. When you mark a member declaration with the dynamic modifier, access to that member is always dynamically dispatched using the Objective-C runtime. Access to that member is never inlined or devirtualized by the compiler.
 
 이 수정자는 `Objective-C`로 나타낼수 있는 클래스의 모든 맴버에 적용합니다. dynamic 수정자로 맴버 선언을 표시하면 런타임에 사용하여 해당 맴버에 대한 접근이 항상 동적(dynamiclly)으로 전달됩니다. 해당 맴버에 대한 접근은 컴파일러에 의해서 즉시 처리되지 않고(never inlined), 가상화되지 않습니다 
 
