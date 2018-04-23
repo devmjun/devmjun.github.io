@@ -11,9 +11,9 @@ tags: [Swift]
 
 ## iOS Databases: SQLLite vs. Core Data vs. Realm
 
-iOS 데이터베이스의 가장 일반적인 것은 `SQLite`, `Core Data` 그리고 상대적으로 새롭다고 불리우는(`Realm`) 입니다.(포스팅이 2016.6.10일임..)
+iOS 데이터베이스의 가장 일반적인 것은 `SQLite`, `Core Data` 그리고 상대적으로 새롭다고 불리우는(`Realm`) 입니다.(포스팅 날짜가 2016.6.10일 이네요..)
 
-이 포스트는 세개(SQLite, Core Data, Realm)를 비교합니다. 
+이 포스트는 세개(SQLite, Core Data, Realm)의 iOS 데이터 베이스를 비교합니다. 
 
 ---
 
@@ -50,15 +50,10 @@ SQlite와 Core Data는 근본적으로 다르지만 `Core data`는:
 
 렘의 주요한 측면은 다음과 같습니다.
 
-It’s absolutely free of charge,
-Fast, and easy to use.
-Unlimited use.
-Work on its own persistence engine for speed and performance.
-
 - 무료입니다
 - 빠르고, 쉽게 사용합니다
 - 무제한 사용합니다
-- 스피드와 성능을 위한 자체 [persistence](http://homo-ware.tistory.com/4) 엔진에서 작업합니다. 
+- 스피드와 성능을 위한 자체 [<U>persistence</U>](http://homo-ware.tistory.com/4) 엔진에서 작업합니다. 
 
 > 개인 Note: persistence를 어떻게 번역해야 할까 고민하다가 좋은 링크를 발견하여 추가했습니다.
 

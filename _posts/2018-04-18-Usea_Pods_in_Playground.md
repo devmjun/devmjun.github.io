@@ -9,11 +9,13 @@ comments: true
 tags: [Swift]
 ---
 
-플레이 그라운드에서 바로바로 코드를 확인해보고 싶을때가 있습니다. 그런데 플레이 그라운드에 코코아팟을 주입시켜서 사용하기가 생각보다 쉽지 않았습니다. 그래서 찾다보니까 `Marathon`, `testDrive`라는 좋은 오픈 소스가 있었고 언제나 그렇듯 사용 해보았습니다. 
+플레이 그라운드에서 Pods 파일을 인스톨하여 코드를 확인해보고 싶을때가 있습니다. 그런데 플레이 그라운드에 Cocoa Pods을 설치하는게 불편합니다. 
+
+`Marathon`, `testDrive`라는 두개의 오픈 소스가 고민을 해결해 줍니다.
 
 ---
 
-목적은 [TestDrive](https://github.com/JohnSundell/TestDrive)를 사용하는 것인데, 설치 방법중 하나가 [marathon](https://github.com/johnsundell/marathon)를 이용해서 TestDrive를 설치 해야 합니다. 
+목적은 [TestDrive](https://github.com/JohnSundell/TestDrive)를 사용하는 것인데, 설치 방법중 하나가 [marathon](https://github.com/johnsundell/marathon)을 이용해서 TestDrive를 설치 해야 합니다. 
 
 ---
 
@@ -62,7 +64,8 @@ marathon install johnsundell/testdrive
 
 <center><img src="/img/posts/TestDrive1.png" width="700" height="500"></center> <br> 
 
-설치가 완료되면 플레이 그라운드가 자동으로 실행 됩니다. 사용하려고 하는 플랫폼에서 컴파일후, `import` 명령어 작성하여 확인하면 잘 작동하는 모습을 확인할수 있습니다.
+설치가 완료되면 플레이 그라운드가 자동으로 실행 됩니다. 사용하려고 하는 플랫폼에서 컴파일후(사용하려고 라이브러리를 컴파일 해야합니다), `import` 명령어 작성하여 확인하면 잘 작동하는 모습을 확인할수 있습니다.
+
 
 ---
 
