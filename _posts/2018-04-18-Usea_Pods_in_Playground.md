@@ -40,7 +40,7 @@ $ swift build -c release
 $ cp -f .build/release/Marathon /usr/local/bin/marathon
 ```
 
-> Note: 설치후, 터미널 종료후 재실행 합니다.(다른 설치 방법은 [여기](https://github.com/johnsundell/marathon)에 있습니다. 
+> Note: 설치후, 터미널 종료후 재실행 합니다.(다른 설치 방법은 [여기](https://github.com/johnsundell/marathon)에 있습니다.)
 
 ---
 
