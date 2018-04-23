@@ -4,9 +4,9 @@ title:      "쉘스크립트 실행시 Xcode is not installed 오류 해결방�
 subtitle:   "링크참조.."
 date:       2018-04-18 02:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/Link-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [Link]
 ---
 
 쉘 스크립트를 실행하려고 하는데, 아래같은 오류가 발생했을때 해결방법
