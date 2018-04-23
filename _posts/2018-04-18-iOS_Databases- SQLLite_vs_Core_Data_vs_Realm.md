@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "iOS. iOS 에서 사용할수 있는 데이터베이스 비교하기"
+title:      "iOS. 에서 사용할수 있는 데이터베이스 비교하기"
 subtitle:   "SQLLite, Core Data, Realm"
 date:       2018-04-18 12:00:00
 author:     "MinJun"
