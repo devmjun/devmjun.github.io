@@ -2,7 +2,7 @@
 layout:     post
 title:      "쉘스크립트 실행시 Xcode is not installed 오류 해결방법"
 subtitle:   "링크참조.."
-date:       2018-04-18 02:00:00
+date:       2018-04-17 02:00:00
 author:     "MinJun"
 header-img: "img/tags/Link-bg.jpg"
 comments: true 
