@@ -119,14 +119,6 @@ open class Person: RealmObject() {
 
 ---
 
-## Realm Todo 앱
-
-렘으로 CRUD(Create, Read, Update, Delete)를 간단하게 연습해보는 튜토리얼입니다. <br>
-
-[https://github.com/devminjun/RealmTodo](https://github.com/devminjun/RealmTodo) <br>
-
----
-
 ## 여담 
 
 [Realm: Building Modern Swift Apps with Realm Database](https://store.raywenderlich.com/products/realm-building-modern-swift-apps-with-realm-database) 책을 읽고 중요한 부분을 정리했습니다. 더 자세하게 알고싶다면 책을 구매해주세요! 
@@ -148,6 +140,13 @@ open class Person: RealmObject() {
 [튜토리얼: iOS 앱 처음부터 만들기](https://realm.io/kr/docs/tutorials/realmtasks/)<br>
 [Swift와 Realm으로 산타 위치 추적 앱 만들기 튜토리얼 Part1](https://academy.realm.io/kr/posts/track-santa-with-realm-swift-database-platform-part-1/)
 [Swift와 Realm으로 산타 위치 추적 앱 만들기 튜토리얼 Part2](https://academy.realm.io/kr/posts/track-santa-with-realm-swift-database-platform-part-2/)
+
+- RealmTodo App
+
+렘으로 CRUD(Create, Read, Update, Delete)를 간단하게 연습해보는 튜토리얼입니다. <br>
+
+[https://github.com/devminjun/RealmTodo](https://github.com/devminjun/RealmTodo) <br>
+
 
 ---
 
