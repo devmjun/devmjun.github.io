@@ -19,7 +19,7 @@ dispatchQueue는 제출한 작업을 관리하는 객체와 유사한 구조입�
 
 필요한만큼 직렬큐를 생성할수 있고 각 큐는 다른 모든 큐와 동시(each queue operates concurrently)에 작동합니다. 즉, 44개의 직렬큐를 작성하면 각 큐는 한번에 하나에 작업만 실행합니다. 최대 4개의 작업을 동시에 수행할수 있습니다.(각 큐에서 한개씩 이므로)
 
-### 예제 
+### 예제 1-1
 
 ```swift
 let queue = DispatchQueue(label: "kr.mjun")
@@ -58,7 +58,11 @@ queue2.async {
 3, 🔴
 3, ⚪️
 .....
+```
 
+## 예제 1-2
+
+```swift
 
 
 let queue = DispatchQueue(label: "kr.mjun")
@@ -158,7 +162,7 @@ queue.async {
 
 주 디스패치 큐(main dispatch queue)는 애플리케이션의 main thread에서 작업을 실행하는 `전역적으로 사용 가능한 직렬 큐(globally available serial queue)` 입니다. 이 큐의 작업자는 애플리케이션의 런 루프(Run Loop)와 함께 대기열에 있는 작업의 실행과 상호작용 합니다.  
 
-이 큐의 애플리케이션 실행 루프(Run Loop)와 함께 작동하여(실행 루프가 있는 경우)큐에 있는 작업을 실행 루프에 연결된 다른 이벤트 소스의 실행과 상호작용 하며 실행합니다. 왜냐하면 애플리케이션의 주 스레드에서 실행되므로 main queue는 종종 애플리케이션의 주된 동기화 포인트(key synchronization)로 사용됩니다. main dispatchqueue를 만들필요는 없지만 애플리케이션이 적절하게 배수(drains??)하는지 확인해야 합니다. 
+이 큐의 애플리케이션 실행 루프(Run Loop)와 함께 작동하여(실행 루프가 있는 경우)큐에 있는 작업을 실행 루프에 연결된 다른 이벤트 소스의 실행과 상호작용 하며 실행합니다. 왜냐하면 애플리케이션의 주 스레드에서 실행되므로 main queue는 종종 애플리케이션의 주된 동기화 포인트(key synchronization)로 사용됩니다. main dispatchqueue를 만들필요는 없지만 애플리케이션이 적절한 흐름으로 동작 확인해야 합니다. 
 
 ```swift
 DispatchQueue.main
