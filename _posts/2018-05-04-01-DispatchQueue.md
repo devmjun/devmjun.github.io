@@ -6,7 +6,7 @@ date:       2018-05-04 10:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Realm, Swift]
+tags: [Swift]
 ---
 
 ## About Dispatch Queue 

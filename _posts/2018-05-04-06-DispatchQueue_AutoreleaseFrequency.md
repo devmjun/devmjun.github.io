@@ -6,7 +6,7 @@ date:       2018-05-05 12:00:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Realm, Swift]
+tags: [Swift]
 ---
 
 ## DispatchQueue.AutoreleaseFrequency
@@ -40,6 +40,7 @@ Dispatch queues with this autorelease frequency never set up an individual autor
 ## 참조한 부분
 
 ```swift
+
 /*!
  * @typedef dispatch_autorelease_frequency_t
 
@@ -69,6 +70,7 @@ Dispatch queues with this autorelease frequency never set up an individual autor
 	DISPATCH_AUTORELEASE_FREQUENCY_NEVER DISPATCH_ENUM_API_AVAILABLE(
 			macos(10.12), ios(10.0), tvos(10.0), watchos(3.0)) = 2,
 );
+
 ```
 
 ---
