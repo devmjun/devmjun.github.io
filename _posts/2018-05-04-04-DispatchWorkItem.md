@@ -116,7 +116,7 @@ wait는 [dispatch_block_wait()](https://github.com/apple/swift-corelibs-libdispa
 
 ## DispatchWorkItemFlag
 
-`DispatchWorkItem(flags: .assignCurrentContext)`을 만들때 디스패치큐에 제출하는 시간이 아니라 실행 컥텍스트의 QoS를 가져옵니다.(좀더 세분화된 QoS를 설정할수 있다는 의미로 이해됩니다)
+`DispatchWorkItem(flags: .assignCurrentContext)`을 만들때 디스패치큐에 제출하는 시간이 아니라 실행 컨텍스트의 QoS를 가져옵니다.(좀더 세분화된 QoS를 설정할수 있다는 의미로 이해됩니다)
 
 아이템을 만들고, 나중에 저장하고, 마침내 실행할때 dispatch로 제출합니다.(그것을 생성했을때 프로퍼티들을)
 

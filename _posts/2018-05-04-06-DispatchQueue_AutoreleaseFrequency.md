@@ -42,9 +42,10 @@ Dispatch queues with this autorelease frequency never set up an individual autor
 ```swift
 /*!
  * @typedef dispatch_autorelease_frequency_t
- * Values to pass to the dispatch_queue_attr_make_with_autorelease_frequency()
+
+ * Values to pass to the 
+ * dispatch_queue_attr_make_with_autorelease_frequency()
  * function.
- *
  * @const DISPATCH_AUTORELEASE_FREQUENCY_INHERIT
  * Dispatch queues with this autorelease frequency inherit the behavior from
  * their target queue. This is the default behavior for manually created queues.
@@ -53,14 +54,14 @@ Dispatch queues with this autorelease frequency never set up an individual autor
  * Dispatch queues with this autorelease frequency push and pop an autorelease
  * pool around the execution of every block that was submitted to it
  * asynchronously.
- * @see dispatch_queue_attr_make_with_autorelease_frequency().
- *
+ * @see
+ * dispatch_queue_attr_make_with_autorelease_frequency().
  * @const DISPATCH_AUTORELEASE_FREQUENCY_NEVER
  * Dispatch queues with this autorelease frequency never set up an individual
  * autorelease pool around the execution of a block that is submitted to it
  * asynchronously. This is the behavior of the global concurrent queues.
  */
-DISPATCH_ENUM(dispatch_autorelease_frequency, unsigned long,
+ DISPATCH_ENUM(dispatch_autorelease_frequency, unsigned long,
 	DISPATCH_AUTORELEASE_FREQUENCY_INHERIT DISPATCH_ENUM_API_AVAILABLE(
 			macos(10.12), ios(10.0), tvos(10.0), watchos(3.0)) = 0,
 	DISPATCH_AUTORELEASE_FREQUENCY_WORK_ITEM DISPATCH_ENUM_API_AVAILABLE(
