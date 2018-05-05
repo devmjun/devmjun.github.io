@@ -112,7 +112,7 @@ after~
 
 `Thread sleep` 과 `wait()`의 차이에 대한 내용은 [여기에서 잘 설명합니다.](https://stackoverflow.com/questions/38105105/difference-between-dispatching-to-a-queue-with-sync-and-using-a-work-item-with)
 
-wait는 [dispatch_block_wait()](https://github.com/apple/swift-corelibs-libdispatch/blob/master/dispatch/block.h#L278)의 레퍼 입니다. <U>해당 함수는 디스패치 블록 객체가 완료되었거나 지정된 타임 아웃이 경과할때가지 동기적으로 실행을 기다립니다. 라고 설명합니다 ㅠ.ㅠ 정확하지 않습니다.(나중에 다시 수정해야겠습니다..)</U>
+wait는 [dispatch_block_wait()](https://github.com/apple/swift-corelibs-libdispatch/blob/master/dispatch/block.h#L278)의 레퍼 입니다. <Del>해당 함수는 디스패치 블록 객체가 완료되었거나 지정된 타임 아웃이 경과할때가지 동기적으로 실행을 기다립니다. 라고 설명합니다 ㅠ.ㅠ 정확하지 않습니다.(나중에 다시 수정해야겠습니다..)</Del>
 
 ## DispatchWorkItemFlag
 

@@ -169,7 +169,7 @@ DispatchQueue.main
 ....
 ```
 
-dispatch main queue에서 실행된 모든 아이템은 Main Thread에서 동작 합니다. Queue간에서도 간단한 연쇄점으로 일합니다.
+dispatch main queue에서 실행된 모든 아이템은 Main Thread에서 동작 합니다. Queue와 Queue간에서도 간단한 연쇄적으로 동작합니다.
 
 ```swift
 let queue = DispatchQueue(label: "com.example.imagetransform")
