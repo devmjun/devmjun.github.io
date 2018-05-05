@@ -113,6 +113,14 @@ queue.async {
 
 iOS 5 이상에서는 큐 타입으로서 `DISPATCH_QUEUE_CONCURRENT`를 지정하여 동시큐를 생성할수 있습니다. 추가적으로 애플리케이션이 사용하기위해 미리 정의된 4개의 전역 동시성 큐(global concurrent queues)가 있습니다. 해당 큐를 가져오는 방법은 [Getting the Global Concurrent Dispatch Queues](https://developer.apple.com/library/content/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html#//apple_ref/doc/uid/TP40008091-CH102-SW5)을 참조해주세요.
 
+#### - 기본큐 가져오기
+
+```swift
+DispatchQueue.main.async {...} 
+
+DispatchQueue.global().async {...}
+```
+
 
 ### 에제 
 
@@ -180,6 +188,9 @@ queue.async {
 	} 
 }
 ```
+
+
+
 
 ---
 
