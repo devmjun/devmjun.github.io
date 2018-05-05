@@ -42,11 +42,12 @@ Dispatch queues with this autorelease frequency never set up an individual autor
 ```swift
 
 /*!
- * @typedef dispatch_autorelease_frequency_t
+* @typedef dispatch_autorelease_frequency_t
 
- * Values to pass to the 
- * dispatch_queue_attr_make_with_autorelease_frequency()
- * function.
+* Values to pass to the 
+* dispatch_queue_attr_make_with_autorelease_frequency()
+* 
+* function.
  * @const DISPATCH_AUTORELEASE_FREQUENCY_INHERIT
  * Dispatch queues with this autorelease frequency inherit the behavior from
  * their target queue. This is the default behavior for manually created queues.
