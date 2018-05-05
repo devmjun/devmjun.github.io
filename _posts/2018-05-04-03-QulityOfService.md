@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. Quality of Service(QoS) 03"
+title:      "Swift. Quality of Service(QoS) 3"
 subtitle:   "Quality of Service(QoS)를 알아봅시다!"
 date:       2018-05-04 12:00:00
 author:     "MinJun"

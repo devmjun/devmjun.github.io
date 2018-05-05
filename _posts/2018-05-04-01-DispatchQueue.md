@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. DispatchQueue 01 "
+title:      "Swift. DispatchQueue 1 "
 subtitle:   "DispatchQueue를 알아봅시다! "
 date:       2018-05-04 10:00:00
 author:     "MinJun"

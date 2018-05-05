@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. DispatchPredicate 05"
+title:      "Swift. DispatchPredicate 5"
 subtitle:   "DispatchPredicate 를 알아봅시다!"
 date:       2018-05-04 14:00:00
 author:     "MinJun"

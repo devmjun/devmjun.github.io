@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. DispatchGroup 02 "
+title:      "Swift. DispatchGroup 2 "
 subtitle:   "DispatchGroup를 알아봅시다! "
 date:       2018-05-04 11:00:00
 author:     "MinJun"

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. DispatchWorkItem 04"
+title:      "Swift. DispatchWorkItem 4"
 subtitle:   "DispatchWorkItem를 알아봅시다!"
 date:       2018-05-04 13:00:00
 author:     "MinJun"

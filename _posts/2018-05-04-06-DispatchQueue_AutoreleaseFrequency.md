@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. DispatchQueue.AutoreleaseFrequency 06"
+title:      "Swift. DispatchQueue.AutoreleaseFrequency 6"
 subtitle:   "DispatchQueue.AutoreleaseFrequency를 알아봅시다!"
 date:       2018-05-05 12:00:00
 author:     "MinJun"
