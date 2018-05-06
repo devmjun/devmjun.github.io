@@ -74,18 +74,15 @@ final class MainViewController: UIViewController {
     // 1. DispatchSource 작성
     var timer: DispatchSourceTimer?
     let queue = DispatchQueue(label: "kr.mjun", attributes: .concurrent)
-    override func viewDidLoad() { }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
         startTimer()
-        
     }
+    
     private func startTimer() {
         // cancel previous timer if any
         timer?.cancel()
-        
+            
         // 1. DispatchSource 작성
         timer = DispatchSource.makeTimerSource(queue: queue)
         
