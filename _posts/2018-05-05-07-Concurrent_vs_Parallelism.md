@@ -53,7 +53,8 @@ dispatch_apply(DISPATCH_APPLY_AUTO, 1000, ^(size_t i){ /* iteration i */ })
 
 ## Reference 
 
-[DispatchQueue.AutoreleaseFrequency](https://developer.apple.com/documentation/dispatch/dispatchqueue.autoreleasefrequency)<br>
+[여기](http://www.jiniya.net/wp/archives/5856)<br>
+[Simultaneous multithreading](https://en.wikipedia.org/wiki/Simultaneous_multithreading)<br>
 
 
 ---
