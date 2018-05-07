@@ -96,7 +96,7 @@ final class MainViewController: UIViewController {
         timer?.resume()
     }
     
-    // 4. DispatchSource는 선택사항
+    // 4. DispatchSource의 취소 구현은 선택 사항
     private func stopTimer() {
         timer?.cancel()
         timer = nil
