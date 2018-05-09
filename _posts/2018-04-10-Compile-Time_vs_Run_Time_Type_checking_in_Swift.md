@@ -182,7 +182,7 @@ if let <T: HumanType, HasName> value = unknownData as? T {
 
 지금 당장은 정적 및 동적 타입 검사를 혼합할 때의 한계를 이해하고 가능한 해결 방법을 알고 있으면 도움이 됩니다. 
 
-> Runtime 타임 체크와 컴파일 타임 generic은 스테크와 아이스크림 같습니다. 둘은 나이스하지만 섞이면 조금 이상합니다 [해당링크에서 이유를 확인합니다.](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)
+> Runtime 타임 체크와 컴파일 타임 generic은 스테이크와 아이스크림 같습니다. 둘은 나이스하지만 섞이면 조금 이상합니다 [해당링크에서 이유를 확인합니다.](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)
 
 ---
 
