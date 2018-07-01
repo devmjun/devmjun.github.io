@@ -9,12 +9,12 @@ google_analytics: UA-108098306-1
 # disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
 # Deleting the value would remove it from footer.
 disqus_url: disqus.com/by/mmjun
-disqus_id: mjunblog
+disqus_id: mmjun
 # register on feedburner and replace this url. Deleting the value will remove it from footer.
 feedburner_url: #https://feedburner.google.com/fb/a/mailverify?uri=programmer-wannabe&amp;loc=en_US
 
 # footer details. Deleting the value would remove it from footer.
-github_username:  devminjun
+github_username: devminjun
 facebook_username: devminjun
 email: dev.mjun@gmail.com
 stackoverflow_username: 8601335/minjunju?tab=profile
