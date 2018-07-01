@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, Third Part App에서 WiFi 변경하기"
+title:      "Swift, App에서 WiFi 변경하기"
 subtitle:   "Third Part App 에서 Global Setting 접근하여 실행하기"
 date:       2018-06-09 17:45:00
 author:     "MinJun"
@@ -67,7 +67,7 @@ func someButton(ssid: String, password: String) {
 	- NEHotspotConfiguration
 	- NEHotspotConfigurationManager
 	
-<center><img src="/img/posts/title.PNG" width="700" height="700"></center> <br>
+<center><img src="/img/posts/title.PNG" width="450" height="600"></center> <br>
 
 더 자세한 코드는..! [SimplyConnectWiFi](https://github.com/devminjun/SimplyConnectWiFi)를 참조해주세요.
 	

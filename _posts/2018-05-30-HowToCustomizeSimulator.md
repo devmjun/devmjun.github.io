@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Xcode, 시뮬레이터 커스터마이징"
+title:      "Xcode, 시뮬레이터 커스텀하는 방법"
 subtitle:   "한 화면에 시뮬레이터와 Xcode 같이 놓는방법, 링크참조"
 date:       2018-05-30 17:45:00
 author:     "MinJun"

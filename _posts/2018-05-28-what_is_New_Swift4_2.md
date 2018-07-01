@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, What’s New in Swift 4.2?, 링크참조"
+title:      "Swift, What’s New in Swift 4.2"
 subtitle:   "링크참조..."
 date:       2018-05-28 17:45:00
 author:     "MinJun"
