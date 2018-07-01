@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "Algorithm, BubbleSort"
+title:      "Swift, Algorithm, BubbleSort"
 subtitle:   "물방울 팡팡.."
 date:       2018-06-11 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
-tags: [Algorithm]
+tags: [Swift, Algorithm]
 ---
 
 ## Code 

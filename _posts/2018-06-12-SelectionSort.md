@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "Algorithm, Selection Sort"
+title:      "Swift, Algorithm, Selection Sort"
 subtitle:   "제일 작은거를 골라!!"
 date:       2018-06-12 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
-tags: [Algorithm]
+tags: [Swift, Algorithm]
 ---
 
 ## Code 
