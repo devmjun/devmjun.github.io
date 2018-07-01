@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "Xcode, 시뮬레이터 커스터마이징"
+subtitle:   "한 화면에 시뮬레이터와 Xcode 같이 놓는방법, 링크참조"
+date:       2018-05-30 17:45:00
+author:     "MinJun"
+header-img: "img/tags/Swift-bg.jpg"
+comments: true 
+tags: [Swift]
+---
+
+[Xcode) Simulator Custom](http://zeddios.tistory.com/504)<br>
+[Mac OS X Operation not Permitted 발생시](http://ellordnet.tistory.com/65)<br>
+[simulator customazing](https://www.youtube.com/watch?v=4i2EBnmUMcs&index=3&list=PLukvfElDn_vM8USShaVrhD5mgOXVJhAwx&t=0s)
+
+---
