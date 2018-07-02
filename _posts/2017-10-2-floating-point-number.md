@@ -221,7 +221,8 @@ Python 에서는 0.1*0.1 프린트 찍어보시면 우리가 알고 있는 결�
 
 ## Reference
 
-[CODE: 하드웨어와 소프트웨어 숨어있는 언어 - 찰스 펫졸드](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=7781601)
+[CODE: 하드웨어와 소프트웨어 숨어있는 언어 - 찰스 펫졸드](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=7781601)<br>
+[floating point number](http://zeddios.tistory.com/481)
 
 
 
