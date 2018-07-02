@@ -122,7 +122,8 @@ example(str: "Merge Sort", isAction: false) {
 
 ## Reference 
 
-[http://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort](http://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort)
+[http://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort](http://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort)<br>
+[swift-algorithm-club](https://github.com/raywenderlich/swift-algorithm-club/tree/master/Merge%20Sort)<br>
 
 ---
 
