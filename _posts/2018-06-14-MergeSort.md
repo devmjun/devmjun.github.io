@@ -50,34 +50,34 @@ example(str: "Merge Sort", isAction: false) {
         while left.count > leftIndex && right.count > rightIndex  {
             let leftElement = left[leftIndex]
             let rightElement = right[rightIndex]
-            print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
+            print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
             // 4
             if leftElement < rightElement {
                 result.append(leftElement)
                 leftIndex += 1
-                print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
+                print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
                 
             } else if leftElement > rightElement {
                 result.append(rightElement)
                 rightIndex += 1
-                print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
+                print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
             } else {
                 result.append(leftElement)
                 leftIndex += 1
                 result.append(rightElement)
                 rightIndex += 1
-                print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
+                print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), left,leftElement: \(left):\(leftElement), right,rightElement: \(right):\(rightElement)  Result\(result)")
             }
         }
         
         // 5
         if leftIndex < left.count {
             result.append(contentsOf: left[leftIndex...])
-            print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), Result\(result)")
+            print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), Result\(result)")
         }
         if rightIndex < right.count {
             result.append(contentsOf: right[rightIndex...])
-            print("leftCout,leftIndex: \(left.count):\(leftIndex), rightCout,rightIndex: \(right.count):\(rightIndex), Result\(result)")
+            print("leftcount,leftIndex: \(left.count):\(leftIndex), rightcount,rightIndex: \(right.count):\(rightIndex), Result\(result)")
         }
         return result
     }
