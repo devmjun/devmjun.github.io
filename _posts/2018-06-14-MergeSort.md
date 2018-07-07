@@ -29,7 +29,7 @@ func createRandomArray(numberOfElements: Int = 10) -> [Int] {
     return randomIntInArray
 }
 
-example(str: "Merge Sort", isAction: false) {
+example(str: "Merge Sort", isAction: true) {
     func mergeSort<T: Comparable>(data: [T]) -> [T] {
         print(data)
         guard data.count > 1 else { return data }

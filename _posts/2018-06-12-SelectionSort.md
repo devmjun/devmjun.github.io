@@ -29,7 +29,7 @@ func createRandomArray(numberOfElements: Int = 10) -> [Int] {
     return randomIntInArray
 }
 
-example(str: "Selection Sort", isAction: false) {
+example(str: "Selection Sort", isAction: true) {
     func selectionSort<T: Comparable>(data: [T]) -> [T] {
         guard data.count > 1 else { return data }
         var targetData = data

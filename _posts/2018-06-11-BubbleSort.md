@@ -29,7 +29,7 @@ func createRandomArray(numberOfElements: Int = 10) -> [Int] {
     return randomIntInArray
 }
 
-example(str: "Bubble Sort", isAction: false) {
+example(str: "Bubble Sort", isAction: true) {
     func bubbleSort<T: Comparable>(data: [T]) -> [T] {
         guard data.count > 1 else { return data }
         var totalCounter: Int = 0
