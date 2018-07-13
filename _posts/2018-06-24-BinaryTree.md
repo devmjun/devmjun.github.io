@@ -33,6 +33,21 @@ tags: [DataStructure, Algorithm, Swift]
 
 ---
 
+## types and kinds 
+
+- Full binary tree: 트리 내의 특정 노드 N이 있을 때, N은 0개 혹은 2개의 자식 노드를 지닙니다.(1개의 자식 노드를 지니는 경우는 없습니다. 
+- Perfect binary tree: 모든 내부 노드는 두 개의 자식 노드를 지니며, 모든 잎은 동일한 깊이를 지닙니다.
+- Complete binary tree: 마지막 레벨을 제외한 모든 레벨이 노드로 완전하게 찬 상태입니다. 트리의 좌측 방향으로 뻗어나간 마지막 레벨은 완전하게 채워질 수 없습니다.
+- Balanced binary tree: 잎 노드까지 이어지기 위한 최소한의 높이만을 지닙니다. 
+
+
+<center><img src="/img/posts/TreeType.png" width="500" height="400"></center> <br>
+
+<center><img src="/img/posts/TreeType-1.png" width="500" height="400"></center> <br>
+
+
+--- 
+
 ## Implementation 
 
 ```swift
