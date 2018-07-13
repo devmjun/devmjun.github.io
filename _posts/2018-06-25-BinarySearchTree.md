@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Swift, Data Structure, Binary Search Trees"
-subtitle:   "BinarySearchTree를 만들어보자!"
+subtitle:   "이진 검색 트리를 만들어보자!"
 date:       2018-06-25 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
