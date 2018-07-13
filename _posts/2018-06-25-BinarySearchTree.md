@@ -11,7 +11,7 @@ tags: [DataStructure, Algorithm, Swift]
 
 ## Contetns 
 
-- outline of Binary Search Tree
+- Outline of Binary Search Tree
 - Case study: Array vs BST 
 	- Lookup  
 	- Insertion
@@ -28,7 +28,7 @@ tags: [DataStructure, Algorithm, Swift]
 
 ---
 
-## outline of Binary Search Tree
+## Outline of Binary Search Tree
 
 Binary Search Tree(BST)는 빠른 검색, 데이터 추가 및 제거 작업을 수월하게 해주는 자료 구조 입니다. 각 연산의 평균 시간 복잡도는 O(log n) 입니다. 이는 Array, Linked List와 같은 선형 데이터 구조보다 상당히 빠릅니다. 
 

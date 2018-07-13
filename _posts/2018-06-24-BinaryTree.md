@@ -11,7 +11,8 @@ tags: [DataStructure, Algorithm, Swift]
 
 ## Contents 
 
-- outline of Binary Tree
+- Outline of Binary Tree
+- Types and Kinds
 - Implementation 
 	- Building a diagram 
 - Traversal Algorithms
@@ -23,7 +24,7 @@ tags: [DataStructure, Algorithm, Swift]
 ---
 
 
-## outline of Binary Tree
+## Outline of Binary Tree
 
 이진 트리(Binary Tree)는 각 노드가 두개의 자식 노드를 가질수 있습니다. 그리고 그것들을 `left`, `right` 자식 처럼 참조합니다.
 

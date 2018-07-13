@@ -11,7 +11,7 @@ tags: [DataStructure, Algorithm, Swift]
 
 ## Contents 
 
-- outline of Linked List
+- Outline of Linked List
 - Node
 - LinkedList 
 - Adding values to the list 
@@ -28,7 +28,7 @@ tags: [DataStructure, Algorithm, Swift]
 ---
 
 
-## outline of Linked List 
+## Outline of Linked List 
 
 Linked List는 선형 단방향 시퀀스로 정렬된 값의 모음 입니다. Linked List는 Swift의 Array와 같은 인접한 저장 옵션보다 몇가지 이론적인 이점이 있습니다.
 
