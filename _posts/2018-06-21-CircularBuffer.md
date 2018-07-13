@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, DataStructure, Circular buffer"
+title:      "Swift, Data Structure, Circular buffer"
 subtitle:   "순환하는 자료구조를 만들자~"
 date:       2018-06-21 17:45:00
 author:     "MinJun"

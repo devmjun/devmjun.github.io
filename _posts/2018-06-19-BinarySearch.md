@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, Algorithm, linearSearch & BinarySearch"
+title:      "Swift, Algorithm, linear Search & Binary Search"
 subtitle:   "선형 탐색과, 이진 탐색"
 date:       2018-06-19 17:45:00
 author:     "MinJun"

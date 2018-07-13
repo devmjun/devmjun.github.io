@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, DataStructure, Linked List"
+title:      "Swift, Data Structure, Linked List"
 subtitle:   "노드와 참조를 이용해서 Linked List를 만들자!"
 date:       2018-06-22 17:45:00
 author:     "MinJun"
@@ -259,7 +259,7 @@ After inserting: 1 -> 2 -> -1 -> -1 -> -1 -> -1 -> 3
 
 ### Performance analysis
 
-<center><img src="/img/posts/LinkedList-3.png" width="382" height="700"></center> <br>
+<center><img src="/img/posts/LinkedList-3.png" width="500" height="700"></center> <br>
 
 ---
 
@@ -392,7 +392,7 @@ Removed value: Optional(2)
 
 ### Performance analysis
 
-<center><img src="/img/posts/LinkedList-5.png" width="382" height="700"></center> <br>
+<center><img src="/img/posts/LinkedList-5.png" width="500" height="700"></center> <br>
 
 
 ---

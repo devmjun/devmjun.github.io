@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift, DataStructure, Binary Tree"
+title:      "Swift, Data Structure, Binary Trees"
 subtitle:   "이진트리를 구현해보자"
 date:       2018-06-24 17:45:00
 author:     "MinJun"

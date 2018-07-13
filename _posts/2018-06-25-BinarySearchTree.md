@@ -1,12 +1,31 @@
 ---
 layout:     post
-title:      "Swift, DataStructure, BinarySearchTree"
+title:      "Swift, Data Structure, Binary Search Trees"
 subtitle:   "BinarySearchTree를 만들어보자!"
 date:       2018-06-25 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
+---
+
+## Contetns 
+
+- outline of Binary Search Tree
+- Case study: Array vs BST 
+	- Lookup  
+	- Insertion
+	- Removal
+	- limitation
+- Implementation
+	- Inserting elements 
+	- Finding elements 
+	- Removing elements 
+		- case1: Leaf node 
+		- case2: Nodes with one child
+		- case 3: Nodes with two children 
+- Reference 
+
 ---
 
 ## outline of Binary Search Tree
@@ -22,11 +41,13 @@ Binary Search Tree는 두가지 룰이 있습니다
 
 ---
 
+
 ## Case study: Array vs BST 
 
 이진 검색 트리의 성능을 설명하기 위해 몇 가지 일반적인 작업을 살펴보고 배열의 성능을 이진 검색 트리와 비교합니다. 
 
 <center><img src="/img/posts/BinarySearchTreeRay-1.png" width="500" height="350"></center> <br>
+
 
 ### Lookup 
 
@@ -34,7 +55,7 @@ Binary Search Tree는 두가지 룰이 있습니다
 
 이진 검색 트리는 큰값과 작은 값을 비교하며 값을 찾아갑니다. 따라서 BST에서 각 요소의 조회가 O(log n)인 이유입니다. 
 
-<center><img src="/img/posts/BinarySearchTrees-1.png.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/BinarySearchTrees-1.png" width="500" height="350"></center> <br>
 
 ### Insertion 
 
@@ -59,8 +80,8 @@ BST에 대한 규칙을 활용하면 삽입 위치를 찾기 위해 세 번의 �
 <center><img src="/img/posts/BinarySearchTreeRay-5.png" width="500" height="350"></center> <br>
 
 제거할 노드의 자식 유무에 따라서 구현의 복잡성이 다르겠지만 BST에서 요소를 제거 하는 것은 여전히 O(log n) 입니다. 이진 검색 트리를 사용하면 추가, 제거 및 검색 작업의 횟수가 크게 줄어 듭니다. 
-
-### 한계점 
+ 
+### limitation 
 
 이진 검색 트리의 한계점은 자료의 구성이 정렬된 상태로 있어야합니다. 이진 검색 트리의 장점인 추가, 제거 및 검색의 성능은 O(Log h) 입니다.
 
@@ -311,6 +332,7 @@ example(of: "removing a node") {
   print(tree)
 }
 ```
+
 
 
 ---
