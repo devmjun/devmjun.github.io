@@ -310,7 +310,7 @@ After popping list: 2 -> 3
 Popped value: Optional(1)
 ```
 
-해당 메소드가 종료되면 이전 노드르 메모리에서 제거 합니다. 
+해당 메소드가 종료되면 이전 노드를 메모리에서 제거 합니다. 
 
 ### removeLast
 
