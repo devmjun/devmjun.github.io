@@ -9,7 +9,7 @@ comments: true
 tags: [DataStructure, Algorithm, Swift]
 ---
 
-## Contetns 
+## Contents 
 
 - Outline of Binary Search Tree
 - Case study: Array vs BST 
