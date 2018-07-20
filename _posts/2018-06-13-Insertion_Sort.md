@@ -47,17 +47,20 @@ example(str: "Insertion Sort", isAction: true) {
             
         }
         return targetData
-    }    
+    }   
+    
+	/*
+     1. 정렬이 된곳과, 되지 않는 곳 2공간을 비교하며 정렬합니다.
+     2. temp에 비교할 현재 값을 넣어두고, 아래로 내려가며 현재값보다 크거나 작은 값이 나올때까지 다른값들을 변경하여
+     3. 비교대상할 값보다 작은 값이 나오면 반복문을 나온후, 해당 값을 반복할때 변경한 인덱스를 이용하여 값을 바꾸어줌.
+     */ 
+     
 	let x = createRandomArray(numberOfElements: 16)
 	print(insertionSort(data:x))
 }
 ```
 
-    /**
-     1. 정렬이 된곳과, 되지 않는 곳 2공간을 비교하며 정렬합니다.
-     2. temp에 비교할 현재 값을 넣어두고, 아래로 내려가며 현재값보다 크거나 작은 값이 나올때까지 다른값들을 변경하여
-     3. 비교대상할 값보다 작은 값이 나오면 반복문을 나온후, 해당 값을 반복할때 변경한 인덱스를 이용하여 값을 바꾸어줌.
-     */
+[전체 코드 주소](https://github.com/devminjun/DataStructure)
 
 ---
 
@@ -68,6 +71,8 @@ example(str: "Insertion Sort", isAction: true) {
 <center><img src="/img/posts/TimeComplexity_1.png" width="700" height="700"></center> <br> 
 
 <center><img src="/img/posts/TimeComplexity_2.png" width="700" height="700"></center> <br> 
+
+[전체 코드 주소](https://github.com/devminjun/DataStructure)
 
 ---
 
