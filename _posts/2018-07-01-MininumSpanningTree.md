@@ -11,9 +11,9 @@ tags: [DataStructure, Algorithm, Swift]
 
 ## Contetns 
 
-- Spanning Tree(스패닝 트리)
+- Spanning Tree
 - Minimum Spanning Tree
-- Prim 알고리즘 
+- Prim Algorithm
 	- MSTNode 
 	- MSTEdge
 	- MSTGraph
@@ -56,18 +56,18 @@ MST는 그래프에 포함된 모든 꼭지점 사이를 이동할 수 있는 �
 
 ---
 
-## Prim 알고리즘 
+## Prim Algorithm 
 
 Prim 알고리즘은 1957년, 벨 연구소의 수학자이자 컴퓨터 과학자인 로버트 프림이 창안한 것으로, 양방향 연결 그래프를 이용해서 선형 시간내에 MST를 계산하기 위해 만들어 졌습니다.
 
 MST의 계산 절차는 다음과 같습니다
 
 ```swift
-*  A ㅡ3ㅡ B ㅡ2ㅡ D
-*    \    ⎮  
-*     1   1
-*       \ ⎮
-*         C  
+  A ㅡ3ㅡ B ㅡ2ㅡ D
+    \    ⎮  
+     1   1
+       \ ⎮
+         C  
 ```
 
 1. 그래프에서 임의의 곡지점을 출발 위치로 선택합니다. 이번 예제에서는 편의상 꼭지점 A에서 출발합니다. 꼭지점 A가 트리의 초기 위치가 됩니다
