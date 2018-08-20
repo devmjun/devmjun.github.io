@@ -1,5 +1,5 @@
 # Site settings
-title: Blog
+title: Home
 default_author: minjun
 description: "Hello World"  # used in site head
 
@@ -21,7 +21,7 @@ stackoverflow_username: #8601335/minjunju?tab=profile
 #twitter_username : shikherverma42
 #linkedin_username : shikherverma42
 #keybase_username : shikherverma
-copyright_name: minjun
+copyright_name: mjun
 rss : true
 
 # used for portfolio on home page
@@ -39,7 +39,7 @@ port: 8888
 permalink: /blog/:title
 
 # jekyll-paginate. for paginating blog posts.
-paginate: 20
+paginate: 25
 paginate_path: blog/page:num
 
 

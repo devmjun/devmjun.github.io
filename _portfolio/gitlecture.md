@@ -1,9 +1,9 @@
 ---
-anchor: Example
-title: Example Git Lecture
-image: img/portfolio/testport.png
-description: I took a lecture on using git and github. Which was a part of SnT summer workshops of IIT Kanpur. This was the largest lecture I have taken till now. About 100+ people attended this lecture. <a href="https://www.facebook.com/media/set/?set=a.542618692591305.1073741854.234540613399116">Photos of the lecture.</a>
+anchor: Mjun
+title: Testing...
+image: img/portfolio/RealmToDoPortfolio.jpg
+description: Realm을 가볍게 알아가기 위한 RealmTodo... <a href="https://github.com/devminjun/RealmTodo">Photos of the lecture.</a>
 team: Single
-date: May 2018
-category: Example
+date: April 2018
+category: Realm
 ---
