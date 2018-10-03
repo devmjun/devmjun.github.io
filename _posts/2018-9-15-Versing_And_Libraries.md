@@ -30,9 +30,9 @@ iOS8은 `dynamic frameworks` 를 도입하고 코드, 이미지, 번들되어 �
 
 또 다른 중요한 차이점은 dynamic frameworks는 이름 명칭이 있는(namespace) 클레스를 가질수 있지만 static libraries는 그렇게 할수 없다는 것입니다. 따라서 하나의 프로젝트 이내에 다른 `정적 라이브러리`에(in different static libraries within a single project) MyTestClass라고 이름지어진 클레스가 있다면, Xcode는 중복된 심볼을 인용하여 올바르게 링크하지 못하기 때문에 프로젝트를 빌드 할수 없습니다. 그러나 Xcode는 `서로 다른 프레임 워크`에서 같은 이름의 두개의 클레스를 가진 프로젝트를 빌드하는것이 매우 행복합니다.
 
-왜 이것이 문제인가요? Objective-C와 달리 표준 Swift 런타임 라이브러리는 iOS에 포함되어 있지 않습니다. 즉, 프레임 워크에 필요한 Swift 런타임 라이브러리가 있어야합니다. 결과적으로 Swift에서 작성된 `pod`들은 `dynamic frameworks`로 생성되어져야 합니다. Apple이 Swift정적 라이브러리를 허용한다면, 동일한 표준 런타임 종속성을 사용하는 여러 라이브러리에서 심볼이 중복될수 있습니다.
+왜 이것이 문제인가요? Objective-C와 달리 표준 Swift 런타임 라이브러리는 iOS에 포함되어 있지 않습니다. 즉, 프레임 워크에 필요한 Swift 런타임 라이브러리가 있어야합니다. 결과적으로 Swift에서 작성된 `pod`들은 `dynamic frameworks`로 생성되어져야 합니다. Apple이 Swift정적 라이브러리를 허용한다면, 동일한 표준 런타임 의존성을 사용하는 여러 라이브러리에서 심볼이 중복될수 있습니다.
 
-다행히도 CocoaPod가 이 모든것을 처리합니다. 필요한 종속성을 한 번만 처리하는 경우도 있습니다. `use_frameworks`를 반드시 포함시켜야 합니다. 당신의 Podfile에서 Swift CocoaPods로 작업하면 될것입니다.
+다행히도 CocoaPod은 이 모든것을 처리합니다. 필요한 의존성을 한 번만 처리하는 경우도 있습니다. `use_frameworks`를 반드시 포함시켜야 합니다. 당신의 Podfile에서 Swift CocoaPods로 작업하면 될것입니다.
 
 ---
 
