@@ -3,8 +3,8 @@ layout:     post
 title:      "Swift, Container ViewController"
 subtitle:   "Container ViewController 공부하며 CaseContainer를 만들어 보았습니다."
 date:       2018-09-20 15:45:00
-author:     "MinJun"
-header-img: "img/tags/Swift-bg.png"
+author:     "MinJun Ju"
+header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
