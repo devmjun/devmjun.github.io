@@ -82,7 +82,7 @@ example(str: "BinarySearch") {
 
 이진 검색은 배열의 범위를 반으로 줄여나가면서 찾으려는 타겟값을 찾습니다. `시간복잡도는 O(log n)` 입니다. 
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 
 ---

@@ -390,7 +390,7 @@ After removing at index 1: 1 -> 3
 Removed value: Optional(2)
 ```
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 ### Performance analysis
 

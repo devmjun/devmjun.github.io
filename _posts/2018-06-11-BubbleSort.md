@@ -63,7 +63,7 @@ example(str: "Bubble Sort", isAction: true) {
 	- 데이터의 길이가 10개이면 총 순회 횟수 9+8+7...0
 	- 데이터 길이가 100개이면 총 순회 횟수 99+98+97...0
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 ---
 

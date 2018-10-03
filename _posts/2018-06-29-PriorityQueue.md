@@ -129,7 +129,7 @@ while !priorityQueue.isEmpty {
 }
 ```
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 ---
 

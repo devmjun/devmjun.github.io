@@ -40,7 +40,7 @@ example(str: "Quick Sort") {
 
 간단하게 Quick Sort 동작 이해하기 위한 코드 입니다. 다른방법의 Quick Sort의 구현 방법은 [https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort](https://github.com/raywenderlich/swift-algorithm-club/tree/master/Quicksort) 를 참조해주세요
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 
 ---

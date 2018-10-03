@@ -10,7 +10,7 @@ tags: [Algorithm]
 ---
 
 [시간 복잡도](https://namu.wiki/w/%EC%8B%9C%EA%B0%84%20%EB%B3%B5%EC%9E%A1%EB%8F%84)<br>
-[Big O](https://github.com/devminjun/Python3-Basic/blob/master/image/binary_search.pdf)<br>
+[Big O](https://github.com/devmjun/Python3-Basic/blob/master/image/binary_search.pdf)<br>
 [Logarithm](https://en.wikipedia.org/wiki/Logarithm)
 
 <center><img src="/img/posts/TimeComplexity.png" width="700" height="700"></center> <br> 

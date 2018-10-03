@@ -188,7 +188,7 @@ example(str: "Circular buffer") {
 
 순환 버퍼는 특히 FIFO 데이터 구조를 구현할때 유용합니다. 큐 데이터 구조 역시 FIFO 콘셉트를 활용하지만 순환버퍼는 헤드 인덱스와 테일 인덱스가 맞물려 있다는 점이 다릅니다. 
 
-[전체 코드 주소](https://github.com/devminjun/DataStructure)
+[전체 코드 주소](https://github.com/devmjun/DataStructure)
 
 ---
 

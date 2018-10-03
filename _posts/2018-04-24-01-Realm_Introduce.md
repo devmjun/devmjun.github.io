@@ -145,7 +145,7 @@ open class Person: RealmObject() {
 
 렘으로 CRUD(Create, Read, Update, Delete)를 간단하게 연습해보는 튜토리얼입니다. <br>
 
-[https://github.com/devminjun/RealmTodo](https://github.com/devminjun/RealmTodo) <br>
+[https://github.com/devmjun/RealmTodo](https://github.com/devmjun/RealmTodo) <br>
 
 
 ---
