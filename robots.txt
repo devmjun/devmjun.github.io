@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /search
+Sitemap: https://devmjun.github.io/sitemap.xml

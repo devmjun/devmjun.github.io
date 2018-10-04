@@ -1,6 +1,6 @@
 # Site settings
-title: MJ`s Blog
-default_author: Dev_MinJun
+title: Home
+default_author: minjun
 description: "Hello World"  # used in site head
 
 # register on google analytics and replace this token
@@ -8,21 +8,21 @@ description: "Hello World"  # used in site head
 google_analytics: UA-108098306-1
 # disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
 # Deleting the value would remove it from footer.
-disqus_url: disqus.com/by/minjunju
+disqus_url: disqus.com/by/devmjun
 disqus_id: minjujublog
 # register on feedburner and replace this url. Deleting the value will remove it from footer.
 feedburner_url: #https://feedburner.google.com/fb/a/mailverify?uri=programmer-wannabe&amp;loc=en_US
 
 # footer details. Deleting the value would remove it from footer.
-github_username:  devminjun
-facebook_username: devminjun
-email: devminjunju@gmail.com
-stackoverflow_username: 8601335/minjunju?tab=profile
-#twitter_username : shikherverma42
-#linkedin_username : shikherverma42
-#keybase_username : shikherverma
-copyright_name: Dev_MinJun
-rss : false
+github_username: devmjun
+facebook_username: devmjun
+email: dev.mjun@gmail.com
+stackoverflow_username: #8601335/minjunju?tab=profile
+#twitter_username : 
+#linkedin_username : 
+#keybase_username : 
+copyright_name: Minjun Ju
+rss : true
 
 # used for portfolio on home page
 collections:
@@ -39,7 +39,7 @@ port: 8888
 permalink: /blog/:title
 
 # jekyll-paginate. for paginating blog posts.
-paginate: 7
+paginate: 25
 paginate_path: blog/page:num
 
 
@@ -47,5 +47,5 @@ paginate_path: blog/page:num
 plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
 
 # search_google
-google-site-verification: google30d60d2ddca001f1.html
+google-site-verification: googlee83f7bf87778e4a8.html
 

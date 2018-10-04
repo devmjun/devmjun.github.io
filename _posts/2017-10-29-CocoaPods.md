@@ -4,9 +4,9 @@ title:      "Xcode. CocoaPods 사용법 "
 subtitle:   "라이브러리를 의존성 관리도구인 CocoaPods를 이용해서 라이브러리를 관리하자!"
 date:       2017-10-29 19:10:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
+header-img: "img/tags/Xcode-bg.jpg"
 comments: true
-tags: [Swift]
+tags: [Xcode]
 ---
 
 1. CocoaPods 란?

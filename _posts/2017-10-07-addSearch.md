@@ -24,7 +24,7 @@ github blog 도 만들고, 댓글 기능도 구현 했다면, 이제는 google, 
 
 ## sitemap.xml 만들기
 
-[여기 코드를 복사해서 사용합니다.](https://github.com/devminjun/devminjun.github.io/blob/master/sitemap.xml)
+[여기 코드를 복사해서 사용합니다.](https://github.com/devmjun/devminjun.github.io/blob/master/sitemap.xml)
 
 > 위의 코드를 복사할때  위의  --- 두줄도 같이 복사해서 사용하셔야 합니다.
 
@@ -38,7 +38,7 @@ github blog 도 만들고, 댓글 기능도 구현 했다면, 이제는 google, 
 
 ## feed.xml 파일 만들기 
 
-[여기의 코드를 복사해서 사용합니다.](https://github.com/devminjun/devminjun.github.io/blob/master/feed.xml)
+[여기의 코드를 복사해서 사용합니다.](https://github.com/devmjun/devminjun.github.io/blob/master/feed.xml)
 
 1. 위의 코드를 복사해서, 자신의 github blog `root 디렉토리`에  `feed.xml` 을 만들어서 복사 붙여놓기를 합니다.
 

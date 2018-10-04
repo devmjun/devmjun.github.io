@@ -1,47 +1,26 @@
 ---
 layout: page
 title : Category
-header-img: "img/category-bg.jpg"
+header-img: "img/category-bg.png"
 description: ""
 ---
 
-<!-- About Content -->
-<section id="about">
-	<div>
-		<p>
-			<h2> category </h2> 
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/Python">
-				- Python
-			</a>
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/ComputerScience">
-				- ComputerScience
-			</a>
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/Swift">
-				- Swift
-			</a>
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/Sketch">
-				- Sketch
-			</a>
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/Github">
-				- Github
-			</a>
-		</p>
-		<p>
-			<a href="https://devminjun.github.io/blog/tags/Idea">
-				- Idea
-			</a>
-		</p>
-	</div>
-</section>
-
-
+{% for post in site.tags[page.tag] %}
+<div class="post-preview">
+    <a href="{{ post.url }}">
+        <h3 class="post-subtitle">            
+            {{ post.title }}
+        </h3>
+    </a>
+    <p class="post-meta">
+      Posted by 
+      {% if post.author %}
+        {{ post.author }}
+      {% else %}
+        {{ site.title }}
+      {% endif %} 
+      on {{ post.date | date: "%A, %B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}

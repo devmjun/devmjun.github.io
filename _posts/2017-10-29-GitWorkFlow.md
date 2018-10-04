@@ -6,7 +6,7 @@ date:       2017-10-29 19:09:00
 author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true
-tags: [Github]
+tags: [Git]
 ---
 
 ## Git을 이용한 협업 Workflow 
