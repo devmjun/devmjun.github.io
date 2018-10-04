@@ -2,7 +2,7 @@
 
 [devmjun.github.io](https://devmjun.github.io)
 
-![screen](/img/mainImage.jpg) 
+![screen](/img/mainImage.png) 
 
 
 ---
@@ -19,6 +19,10 @@ Copyright ShikherVerma. the [MIT](https://github.com/ShikherVerma/shikherverma.g
 
 [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)<br>
 [지킬로 깃허브 무료 블로그 만들기](https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/)<br>
+
+```ruby
+$ bundle exec jekyll serve
+```
 
 ### troubles shooting
 
