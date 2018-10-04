@@ -32,7 +32,7 @@ tags: [Swift]
 
 Swift 3.0과 함께 공식적으로 출시된 Swift Package Manager는 `MacOS` 및 `Linux`에서 Swift 라이브러리 및 애플리케이션을 만드는 새로운 방법입니다. 의존성 관리를 도와주고 Swift 코드를 쉽게 테스트, 작성, 실행 할수있습니다.
 
-Swift Package Manger는 스위프트 생태계(Ecosystem)을 대폭 향상 시켜 Linux와 같은 Xcode가 없는 플랫폼에서 Swift를 훨씬 쉽게 사용하고 배포 할수 있도록 도와줍니다. 또한 Swift Package Manager는 많은 상호 의존하는 라이브러리를 사용할때 발생할수 있는 [종속성 문제](https://en.wikipedia.org/wiki/Dependency_hell)를 해결합니다. 
+Swift Package Manger는 스위프트 생태계(Ecosystem)을 대폭 향상 시켜 Linux와 같은 Xcode가 없는 플랫폼에서 Swift를 훨씬 쉽게 사용하고 배포 할수 있도록 도와줍니다. 또한 Swift Package Manager는 많은 상호 의존하는 라이브러리를 사용할때 발생할수 있는 [의존성 문제](https://en.wikipedia.org/wiki/Dependency_hell)를 해결합니다. 
 
 Swift3 에서 Swift Package Manager는 호스트 플랫폼용 으로만 컴파일된다는 점을 유의해야합니다. 
 
@@ -45,12 +45,12 @@ Swift3 에서 Swift Package Manager는 호스트 플랫폼용 으로만 컴파�
 터미널을 열고 `swift package`를 타이핑 합니다. 명령어들의 개요를 볼수 있습니다. 주로 사용할 명령어는 다음과 같습니다.  
 
 1. `swift package init`: 새로운 패키지들을 생성합니다
-2. `swift package update`: 패키지의 종속성들을 업데이트 합니다
+2. `swift package update`: 패키지의 의존성들을 업데이트 합니다
 3. `swift package generate-xcodproj`: 패키지의 Xcode 프로젝트를 생성합니다. 
 
 Swift Package Manger에 대해서 배우고, 작은 라이브러리를 사용하여 어떤 국가들에 대해서 emoji flag를 인쇄하는 커맨드라인 앱을 만들어 봅니다. 실행 가능한 패키지(executable package)를 생성하는것으로 시작합니다. 실행 가능한 패키지 매니저들은 커맨드 라인 앱을 위한 패키지들 입니다. Swift 웹 앱 또한 이 범주에 속합니다. 
 
-터미널에서 다음 명령을 실행하여 플래그 실행 패키지(flag executable package)를 만듭니다.
+터미널에서 다음 명령을 실행하여 깃발 실행 패키지(flag executable package)를 만듭니다.
 
 ```
 mkdir Flag
@@ -124,7 +124,7 @@ public struct Country {
 }
 ```
 
-ISO country code로 초기화할수있는 Country 구조체를 구현합니다. emojiflag 속성은 해당 코드의 플래그를 반환합니다. 지금은 테스트를 작성할수 있도록 최소한만 구현합니다. 
+ISO country code로 초기화할수있는 Country 구조체를 구현합니다. emojiflag 속성은 해당 코드의 깃발를 반환합니다. 지금은 테스트를 작성할수 있도록 최소한만 구현합니다. 
 
 또한 여기에 있는 모든 항목은 `public`으로 표시되므로 각 맴버는 Atlas 모듈을 사용하는 코드에서 볼수 있습니다. 
 
@@ -159,7 +159,7 @@ extension AtlasTests {
 }
 ```
 
-여기서 세 가지 테스트를 구현합니다. 세 가지 다른 국가를 만든다음 올바른 이모티콘 플래그가 있다고 주장합니다.
+여기서 세 가지 테스트를 구현합니다. 세 가지 다른 국가를 만든다음 올바른 이모티콘 깃발가 있다고 주장합니다.
 
 테스트를 실행합니다
 
@@ -215,7 +215,7 @@ git tag 1.0.0
 
 ## Creating the Executable
 
-이모지 플래그 라이브러리가 생겼으므로 이 라이브러리를 Flag executable package에 종속성으로 추가할수 있습니다. 
+이모지 깃발 라이브러리가 생겼으므로 이 라이브러리를 Flag executable package에 의존성으로 추가할수 있습니다. 
 
 `Flag` 디렉토리로 돌아가서 `Package.swift` 파일을 엽니다. 내용은 다음과 같습니다.
 
@@ -238,7 +238,7 @@ let package = Package(
 )
 ```
 
-위의 경우 Flag package의 상태는 `../Atlas`의 URL과 단일 종속성을 가지며 버전이 1.0.0이어야한다고 명시했ㅅ브니다.
+위의 경우 Flag package의 상태는 `../Atlas`의 URL과 단일 의존성을 가지며 버전이 1.0.0이어야한다고 명시했ㅅ브니다.
 
 버전은 의미론적인 버전(semantic versioning)을 사용해야합니다. 이것은 버전이 `MAJOR.MINOR.PATCH`처럼 보이는걸 의미합니다. MAJOR버전은 이전 버전과 호환되지 않는 변경 사항을 나타냅니다. MINOR버전은 이전 버전과 호환되는 방식으로 변경됩니다. 패치 버전은 버그 수정을 위한 것입니다. 의미 론적 버전관리에 대한 자세한 내용은 [여기](https://semver.org/)를 참조하세요. 
 
@@ -280,9 +280,7 @@ Swift Package Manger는 라이브러리를 가져와서 빌드하고 실행 파�
 
 <center><img src="/img/posts/SwiftPacageManager_3.png" width="500" height="350"></center> <br>
 
-Swift Package Manager는 종속성 요구 사항에 따라 버전 `1.0.0`을 선택하고 설치 한 것을 볼 수 있습니다. `main.swift` 파일을 열고 내용을 다음 코드로 바꿉니다.
-
-> 뭘 잘못선택한것인지 내 설정에서 되지않음 ㅠㅠ
+Swift Package Manager는 의존성 요구 사항에 따라 버전 `1.0.0`을 선택하고 설치 한 것을 볼 수 있습니다. `main.swift` 파일을 열고 내용을 다음 코드로 바꿉니다.
 
 ```swift
 import Atlas
@@ -298,7 +296,7 @@ if arguments.count != 2 {
 }
 ```
 
-여기에서 라이브러리를 가져온 다음 제공된 첫 번째 커맨드라인 파라미터에 대한 이모티콘 플래그를 인쇄합니다. 파라미터가 제공되지 않으면 도움말 메시지를 인쇄합니다. 
+여기에서 라이브러리를 가져온 다음 제공된 첫 번째 커맨드라인 파라미터에 대한 이모티콘 깃발를 출력합니다. 파라미터가 제공되지 않으면 도움말 메시지를 출력합니다. 
 
 앱을 다시 빌드하고 실행하십시오.
 
@@ -327,7 +325,7 @@ swift build --configuration release
 
 ## Generating an Xcode Project with The Swift Package Manager
 
-커맨드 라인과 텍스트 편집기로 예전 수업으로 돌아가는건 재미있지만, Xcode에 익숙한 iOS 또는 MacOS 개발자가 될 수 있습니다. 
+커맨드 라인과 텍스트 편집기로 예전 수업으로 돌아가는건 재미있지만, Xcode에 익숙한 iOS 또는 MacOS 개발자일수 있습니다.
 
 `Atlas` 패키지로 다시 전환하고 다음을 실행하여 Xcode 프로젝트를 생성합니다. 
 
@@ -367,13 +365,13 @@ package description 옵션에 대한 자세한 설명은 [https://github.com/app
 
 Swift 4용 Swift Package Manager의 업데이트 방향에 대한 개요는 Eloutuin mailing list 에서 로드맵을 확인하세요.
 
-Swift Package Manager가 호스트 이외의 플랫폼을 지원할떄까지 [Cocoapods](https://cocoapods.org/) 또는 [Carthago](https://github.com/Carthage/Carthage)를 사용하여 iOS, watch OS 및 tvOS 앱을 빌드하는것이 좋습니다.
+Swift Package Manager가 호스트 이외의 플랫폼을 지원할떄까지 [Cocoapods](https://cocoapods.org/) 또는 [Carthage](https://github.com/Carthage/Carthage)를 사용하여 iOS, watch OS 및 tvOS 앱을 빌드하는것이 좋습니다.
 
-도전과제로 방금만든 라이브러리를 GitHub으로 Push 한다음 Atlas를 원격 종속성으로 사용하는것이 어떻습니까? url 옵션을 GitHub의 URL로 변경하기만 하면 됩니다. 
+도전과제로 방금만든 라이브러리를 GitHub으로 Push 한다음 Atlas를 원격 의존성으로 사용하는것이 어떻습니까? url 옵션을 GitHub의 URL로 변경하기만 하면 됩니다. 
 
-flag가 아무런 인수 없이 실행될때 모든 국가와 플래그를 나열하는 등의 새 기능을 구현해보세요. `Locale.isoRegionCodes`를 사용해야할수 있습니다.
+flag가 아무런 인수 없이 실행될때 모든 국가와 깃발를 나열하는 등의 새 기능을 구현해보세요. `Locale.isoRegionCodes`를 사용해야할수 있습니다.
 
-`Atlas` 라이브러리에서 새 기능을 구현한 다음 1.1.0과 같은 새 버전을 만들고 마지막으로 Flag에서 새 버전을 사용하세요. Package description에 적절한 버전을 선택한 다음 `swift package update`를 사용하여 종속성을 최신 허용 버전으로 업데이트 하세요.
+`Atlas` 라이브러리에서 새 기능을 구현한 다음 1.1.0과 같은 새 버전을 만들고 마지막으로 Flag에서 새 버전을 사용하세요. Package description에 적절한 버전을 선택한 다음 `swift package update`를 사용하여 의존성을 최신 허용 버전으로 업데이트 하세요.
 
 
 
