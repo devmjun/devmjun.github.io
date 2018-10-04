@@ -1,11 +1,76 @@
 ---
 layout: page
-title : Category
+title : "Category"
 header-img: "img/category-bg.png"
-description: ""
 ---
 
-<!-- About Content -->
+<div id="archives">
+{% for category in site.tags %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+    
+    <h1 class="category-head \n">{{ category_name }}</h1>
+</h2>
+
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.tags[category_name] %}
+    <article class="archive-item">
+      &nbsp; &nbsp; 
+        <a href="{{ post.url }}" style="text-decoration: normal; font-weight: normal; color: #4F8BC7;">{{ post.title }}
+        </a> 
+        <span style="text-decoration: normal; font-weight: normal; color: #808080;">{{ post.date | date_to_string }} 
+        </span> 
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- About Content 
 <section id="about">
     <div>
         <p>
@@ -70,11 +135,5 @@ description: ""
         </p>
     </div>
 </section>
-
-
-
-
-
- 
-
+-->
 
