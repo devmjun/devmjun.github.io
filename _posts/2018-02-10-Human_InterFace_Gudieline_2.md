@@ -308,7 +308,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 #### - 필요한 경우 설정에 대한 바로 가기를 제공하십시오
 
-앱에 "설정> MyApp> 개인 정보> 위치 서비스로 이동"과 같이 사용자에게 설정을 안내하는 텍스트가 포함되어 있으면 해당 위치를 자동으로 여는 버튼을 제공하십시오.  이 동작을 구현하는 방법을 보려면 [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication)의 [Settings Launch URL](https://developer.apple.com/documentation/uikit/uiapplication/settings_launch_url)을  참조하십시오.
+앱에 "설정> MyApp> 개인 정보> 위치 서비스로 이동"과 같이 사용자에게 설정을 안내하는 텍스트가 포함되어 있으면 해당 위치를 자동으로 여는 버튼을 제공하십시오.  이 동작을 구현하는 방법을 보려면 [UIApplication](https://developer.apple.com/documentation/uikit/uiapplication)의 을  참조하십시오.
 
 
 ---

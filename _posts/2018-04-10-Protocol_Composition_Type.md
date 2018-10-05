@@ -48,5 +48,5 @@ typealias PQR = PQ & Q & R
 	- [<U>Swift. Type method</U>](https://devmjun.github.io/blog/Type_Methods)
 	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
 	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
-	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/Identity-Operators)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/00-Identity-Operators)
 	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
