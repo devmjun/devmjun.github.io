@@ -15,7 +15,7 @@ tags: [Swift]
 
 
 [Protocols](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/27?category=919617)
+[까칠코더님 블로그](http://kka7.tistory.com/127?category=919617)
 
 ---
 
