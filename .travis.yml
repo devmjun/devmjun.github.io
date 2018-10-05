@@ -7,13 +7,14 @@ branches:
   - gh-pages    
   - /pages-(.*)/
 
-script: bundle exec rake
+script: true 
 cache: bundler
 
 install:
   - gem install jekyll html-proofer
   - bundle update
   - bundle install
+  - bundle exec rake
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/ShikherVerma/Shikherverma.github.io/feed.xml"
   - bundle exec jekyll build
 
@@ -23,5 +24,5 @@ env:
   
 sudo: false
 
-exclude: [vendor]
+
 
