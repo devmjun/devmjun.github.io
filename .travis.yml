@@ -22,8 +22,7 @@ install:
   - bundle install --clean
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
-  - bundle clean --force
-  - bundle exec rake --trace
+  
 
   
   
