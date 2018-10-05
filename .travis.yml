@@ -7,8 +7,13 @@ branches:
   - gh-pages    
   - /pages-(.*)/
 
+before_script:
+  - "travis_retry bin/rake neo4j:install[$NEO4J_VERSION] --trace"
+  - "bin/rake neo4j:config[development,7474] --trace"
+
 script:
-  - "bundle exec rake neo4j:install['community-2.2.0-M02'] neo4j:start default --trace"
+  - "travis_retry bin/rake default --trace"
+  
 cache: bundler
 
 install:
