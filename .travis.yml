@@ -17,7 +17,6 @@ exclude: [vendor]
 
 
 install:
-  - gem install jekyll html-proofer
   - bundle update
   - bundle install --clean
   - bundle exec jekyll build
