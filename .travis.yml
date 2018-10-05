@@ -13,14 +13,13 @@ before_script:
 
 script:
   - "travis_retry bin/rake default --trace"
-  
+
 cache: bundler
 
 install:
   - gem install jekyll html-proofer
   - bundle update
   - bundle install
-  - bundle exec rake
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/ShikherVerma/Shikherverma.github.io/feed.xml"
   - bundle exec jekyll build
 
