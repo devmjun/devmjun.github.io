@@ -4,7 +4,8 @@ rvm:
 
 #!/usr/bin/env ruby
 script: ./script/cibuild
-  
+before_script:
+ - chmod +x ./script/cibuild  
 
 branches:
   only:
