@@ -6,13 +6,14 @@ branches:
   only:
   - gh-pages
 
-before_script:
+before_script: true 
  
 
 script:
   - bundle update 
   - bundle install 
-  - jekyll build && htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
+  - bundle exec jekyll build 
+  - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
 
 
 env:
