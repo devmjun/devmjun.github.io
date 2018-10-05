@@ -5,6 +5,7 @@ rvm:
 branches:
   only:
   - gh-pages
+  - /pages-(.*)/
 
 before_script: true 
  
@@ -27,12 +28,7 @@ addons:
 
 cache: bundler
 
-before_install:
-  - gem update --system
-  - gem install bundler
- 
-install:
-  - gem install jekyll html-proofer
+
   
   
 sudo: false
