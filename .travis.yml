@@ -19,31 +19,15 @@ exclude: [vendor]
 install:
   - gem install jekyll html-proofer
   - bundle update
-  - bundle install
+  - bundle install --clear
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
+  
   
 
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: 9b18bc5ad9ba80c8f13a60f9ef188736adf12bf2
-
   
 sudo: false
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
-
-
-
