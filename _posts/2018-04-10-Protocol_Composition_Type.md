@@ -45,8 +45,8 @@ typealias PQR = PQ & Q & R
 [type annotations](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/swift/grammar/type)
 
 - 연관된 포스트
-	- [<U>Swift. Type method</U>](https://devminjun.github.io/blog/Type_Methods)
-	- [<U>Swift. Meta Type</U>](https://devminjun.github.io/blog/Meta_Type_Swift)
-	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
-	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devminjun.github.io/blog/Identity-Operators)
-	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [<U>Swift. Type method</U>](https://devmjun.github.io/blog/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/Identity-Operators)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
