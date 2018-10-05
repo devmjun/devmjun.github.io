@@ -2,13 +2,12 @@ language: ruby
 rvm:
   - 2.4.1
 
-
-
 branches:
   only:
   - gh-pages    
   - /pages-(.*)/
 
+script: bundle exec rake
 cache: bundler
 
 install:
