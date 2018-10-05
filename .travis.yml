@@ -13,7 +13,6 @@ addons:
 branches:
   only:
   - gh-pages
-  - /pages-(.*)/
 
 script:
   - bundle update --force
@@ -36,9 +35,3 @@ before_install:
   - gem update --system
   - gem install bundler
  
-
-  
-  
-
-
-
