@@ -3,9 +3,8 @@ rvm:
   - 2.4.1
 
 #!/usr/bin/env ruby
-script: 
-  - ./script/cibuild
-  - jekyll build && htmlproofer ./_site
+script: ./script/cibuild
+  
 
 branches:
   only:
