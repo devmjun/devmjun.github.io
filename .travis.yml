@@ -5,9 +5,13 @@ rvm:
 branches:
   only:
   - gh-pages    
+  - /pages-(.*)/
+
+before_script:
+ - chmod +x ./script/cibuild
 
 script:
-  - "travis_retry bin/rake default --trace"
+  - ./script/cibuild
 
 cache: bundler
 
@@ -18,6 +22,11 @@ install:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/ShikherVerma/Shikherverma.github.io/feed.xml"
   
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
 
 env:
   global:
