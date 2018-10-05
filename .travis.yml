@@ -33,6 +33,9 @@ addons:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: 9b18bc5ad9ba80c8f13a60f9ef188736adf12bf2
+  
+
   
 sudo: false
 
