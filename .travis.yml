@@ -2,11 +2,9 @@ language: ruby
 rvm:
   - 2.2.2
 
-branches:
-  only:
-  - gh-pages    
-  - /pages-(.*)/
 
+
+script: true 
 
 install:
   - bundle update
