@@ -2,13 +2,18 @@ language: ruby
 rvm:
   - 2.4.1
 
+sudo: false
+cache: bundler
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
 branches:
   only:
   - gh-pages
   - /pages-(.*)/
-
-before_script: true 
- 
 
 script:
   - bundle update --force
@@ -16,26 +21,24 @@ script:
   - bundle exec jekyll build 
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
 
+exclude: [vendor]
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-addons:
-  apt:
-    packages:
-    - libcurl4-openssl-dev
+install:
+  - gem install jekyll html-proofer
 
-cache: bundler
-
+before_script: true 
+ 
 before_install:
   - gem update --system
   - gem install bundler
  
-install:
-  - gem install jekyll html-proofer
-  
-  
-sudo: false
 
-exclude: [vendor]
+  
+  
+
+
+
