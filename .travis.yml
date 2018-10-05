@@ -8,13 +8,11 @@ branches:
 
 before_script: true 
  
-
 script:
   - bundle update --force
   - bundle install --clean --force
   - bundle exec jekyll build 
   - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
-
 
 env:
   global:
@@ -30,9 +28,6 @@ cache: bundler
 before_install:
   - gem update --system
   - gem install bundler
- 
-install:
-  - gem install jekyll html-proofer
   
   
 sudo: false
