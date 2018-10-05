@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 1"
+title:      "Swift. 정리하기 1: Swift Language Guide-Basics"
 subtitle:   "Swift Language Guide-Basics *"
 date:       2018-04-11 16:35:00
 author:     "MinJun"
@@ -9,11 +9,13 @@ comments: true
 tags: [Swift]
 ---
 
+[최종 수정일: 2018.10.01]
+
 ## 기초(The Basics)
 
 Swift는 iOS, macOS, watchOS, tvOS 앱을 개발하는 새로운 프로그래밍 언어입니다. 그럼에도 불구하고, Swift의 많은 부분은 C와 Objective-C로 개발 경험으로 인해 익숙할 것입니다.
 
-Swift는 정수형에 대해 Int, 부동소수점 값에 대해 Double와 Float, 불린 값에 대해 Bool, 텍스트 데이터에 대해 String을 비롯한, C와 Objective-C의 모든 기본적인 타입의 자체 버젼을 제공합니다. Swift는 3가지 주요 컬렉션 타입인 Array, Set, Dictionary의 강력한 버젼을 제공하며, [Collection Types](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID105)에서 설명되어 있습니다.
+Swift는 정수형에 대해 `Int`, 부동소수점 값에 대해 `Double`와 `Float`, 불린 값에 대해 `Bool`, 텍스트 데이터에 대해 String을 비롯한, C와 Objective-C의 모든 기본적인 타입의 자체 버젼을 제공합니다. Swift는 3가지 주요 컬렉션 타입인 Array, Set, Dictionary의 강력한 버젼을 제공하며, [Collection Types](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#//apple_ref/doc/uid/TP40014097-CH8-ID105)에서 설명되어 있습니다.
 
 C 처럼, Swift는 고유한 이름으로 값을 저장하고 참조하기 위해 변수를 사용합니다. Swift는 또한 값을 변경할 수 없는 변수를 광범위하게 사용합니다. 이를 상수(constants)라하고, C에서의 상수보다 더 강력합니다. 상수는 사용됩니다. 값을 변경할 필요가 없을때 코드를 안전하고 의도를 명확하게 만들기 위해 Swift 전역에서 상수가 사용됩니다.
 
@@ -21,26 +23,146 @@ C 처럼, Swift는 고유한 이름으로 값을 저장하고 참조하기 위�
 
 Swift는 또한 값이 없는 것을 처리하는 옵셔널(optional) 타입을 도입하였습니다. 옵셔널(optional)은 값이 있고 x와 같다. 또는 값이 전혀 없다 중 하나를 의미합니다. 옵셔널(optional)을 사용하는 것은 Objective-C에서 nil을 사용하는 것과 비슷하지만, 클래스 뿐만아니라, 모든 타입에서 동작합니다. 뿐만아니라 옵셔널(optionals)은 Objective-C에서의 nil포인터보다 안전하고 쓰임새가 많으며, Swift의 가장 강력한 기능의 핵심입니다.
 
-Swift는 코드 작업시 값의 타입을 명확하게 해주는데 도움을 주는 언어를 의미하는 타입에 안전한(type-safe) 언어입니다. 코드에서 String이 필요한 경우에, type-safe는 실수로 Int가 전달되는 것을 막아줍니다. 마찬가지로 type-safe는 코드에서 옵셔널이 아닌 String이 필요한 경우에 옵셔널 String이 전달되는 것을 막아줍니다. type-safe는 개발 단계에서 가능한 빨리 오류를 잡고 수정하는데 도와줍니다.
+Swift는 코드 작업시 값의 타입을 명확하게 해주는데 도움을 주는 언어를 의미하는 `타입에 안전한(type-safe)` 언어입니다. 코드에서 String이 필요한 경우에, `type-safe`는 실수로 Int가 전달되는 것을 막아줍니다. 마찬가지로 type-safe는 코드에서 옵셔널이 아닌 String이 필요한 경우에 옵셔널 String이 전달되는 것을 막아줍니다. `type-safe`는 개발 단계에서 가능한 빨리 오류를 잡고 수정하는데 도와줍니다.
 
 ---
 
-## Type Annotations
+## Constants and Variables 
 
-상수 또는 변수를 선언할때 `Type Annotation`을 제공하고 상수 또는 변수에 저장하는 값의 종류를 명확하게 설명할수 있습니다. 
+상수(constants)와 변수(variables)는 특정 타입의 값(숫자 `10` 또는 문자열 `"Hello"`)과 연관된 이름(`maximumNumberOfLoginAttempts`또는 `welcomeMessage`)을 사용합니다. 상수(constant) 값은 한번 설정하면 변경할수 없는데 반하여(whereas), 변수(variable)는 나중에 다른 값으로 설정 할수 있습니다.
+
+### Declaring Constants and Variables
+
+`상수(constants)`와 `변수(variables)`는 사용되기 전에 반드시 선언되어야 합니다. let 키워드로 상수(constants)를 선언하고, var 키워드로 변수(variable)를 선언합니다. 다음은 사용자의 로그인 시도 횟수를 추적하기 위해 상수(constants)와 변수(variables)를 사용하는 예제 입니다.
+
+```swift
+let maximumNumberOfLoginAttempts = 10
+var currentLoginAttempt = 0
+```
+
+이 코드는 다음과 같이 읽을 수 있습니다.
+
+새로운 상수 `maxiumNumberOfLoginAttempts`를 선언하고, 값 10을 줍니다. 그리고나서, 새로운 변수 `currentLoginAttempt`를 선언하고, 초기 값으로 0을 줍니다
+
+이 예제에서, 로그인 시도를 허용하는 최대 횟수는 최대 값이 절대 변하지 않기 때문에, 상수로 선언됩니다. 현재 로그인 시도한 횟수는 로그인 시도가 실패할때마다 값을 증가해야하기 때문에, 변수로 선언됩니다.
+
+한 줄에 콤마(,)로 구분하여, 여러개의 상수나 여러개의 변수들을 선언할 수 있습니다.
+
+```swift
+var x = 0.0, y = 0.0, z = 0.0
+```
+
+> 주의 코드에서 저장된 값이 변하지 않는 경우에, 항상 let 키워드로 상수(constant)로 선언합니다. 저장한 값을 변경할 필요가 있는 경우에만 변수(variables)를 사용합니다.
+
+### Type Annotations
+
+`상수`나 `변수`가 저장할 수 있는 값의 타입을 명확히 하기 위해, 상수나 변수를 선언할때 타입을 `명시(type annotation)`할 수 있습니다. 상수나 변수 이름 뒤에 콜론(:)과 공백(space) 뒤에, 사용하고자 하는 타입의 이름을 사용하여 타입 명시(type annotation)를 작성합니다.
+
+이 예제는 변수가 String 값을 저장할 수 있는 것을 나타내기 위해, wealcomMessage 변수에 대한 타입 명시를 제공합니다.
 
 ```swift
 var welcomeMessage: String
 ```
 
-선언은 "...of type ..." 의미하고 아래 다음과 같이 읽을수 있습니다.
+이 선언에서 `콜론(:)`은 … 타입의 …을 의미하며, 위 코드는 다음과 같이 읽을 수 있습니다.
 
-"String 타입이라는 welcomeMessage을 선언합니다."
+`welcomeMessage` 변수는 `String`타입으로 선언합니다.
+
+String 타입의 구문은 어떤 String 값도 저장할 수 있다를 의미합니다. 저장할 수 있는 어떤 타입(또는 어떤 종류)으로 생각합니다.
+
+`welcomeMessage` 변수는 오류없이 어떤 문자열 값으로도 설정할 수 있습니다.
 
 ```swift
 welcomeMessage = "Hello"
+```
+
+한 줄에 같은 타입의 변수 여러개를 콤마로 구분하고, 마지막 변수 이름 뒤에 하나의 타입을 명시해서 정의할 수 있습니다.
+
+```swift
 var red, green, blue: Double
 ```
+
+> 주의: 실제로 타입 명시를 작성할 일은 거의 없습니다. 선언하는 시점에 상수나 변수에 대해 초기값을 제공하는 경우에, Swift는 사용된 상수나 변수의 거의 대부분의 타입을 추론할 수 있으며, [안전한 타입과 타입 추론(Type Safety and Type Inference)](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID322)에서 설명되어 있습니다. 위의 welcomMessage예제에서, 초기값이 제공되지 않고, welcomeMessage변수의 타입은 초기 값으로 추론되지 않고 타입 명시(type annotation)로 지정됩니다.
+
+### Naming Constants and Variables
+
+상수와 변수의 이름은 유니코드(Unicode) 문자들을 포함하여, 거의 모든 문자를 포함 할수 있습니다.
+
+```swift
+let π = 3.14159
+let 你好 = "你好世界"
+let 🐶🐮 = "dogcow"
+```
+
+상수와 변수 이름은 공백문자(whitespace characters), 수학 기호(mathematical symbols), 개인적으로 사용하는(또는 유효하지 않는) 유니코드, 선(line-)과 박스(box)를 그리는 문자들을 포함할수 없습니다. 숫자를 이름의 다른 곳에 넣을수 있지만, 숫자로 시작할 수는 없습니다.
+
+특정 타입으로 상수나 변수를 한번 선언하면, 같은 이름이나 다른 타입의 값을 저장하도록 다시 선언할 수 없습니다. 상수를 변수로 또는 변수를 상수로 변경할 수도 없습니다.
+
+> 주의: 상수나 변수가 예약된 Swift 키워드와 같은 이름이 필요한 경우에, 이름으로 사용할때 역따옴표(backticks `)로 키워드를 감싸줍니다. 그러나, 선택의 여지가 없는 경우를 제외하면 키워드를 이름으로 사용하는 것을 피합니다.
+
+기존 변수의 값을 호환되는 타입의 다른 값으로 변경할 수 있습니다. 예제에서, `frendlyWelcom`의 값은 `"Hello!"`에서 `"Bonjour!"`로 변경됩니다.
+
+```swift
+var friendlyWelcome = "Hello!" friendlyWelcome = "Bonjour!" // friendlyWelcome is now "Bonjour!"
+```
+
+변수와는 다르게, 상수의 값은 설정한 뒤에는 변경할 수 없습니다. 변경을 시도하면 코드를 컴파일할때 오류가 보고됩니다.
+
+### Printing Constants and Variables
+
+`print(_:separator:terminator:)`함수를 사용하여 상수나 변수의 현재 값을 출력할 수 있습니다
+
+`print(_:separator:terminator:)` 함수는 하나 이상의 값을 적절하게 출력하는 전역함수(global function) 입니다. 예를들어, Xcode에서 `print(_:separator:terminator:)` 함수는 Xcode의 "콘솔(console)" 영역에 출력합니다. `separator`과 `terminator` 매개변수는 기본값을 가지며, 함수 호출할때 생략할 수 있습니다. 기본적으로, 함수는 줄 바꿈(line break)을 추가하여 출력을 마칩니다. 줄 바꿈 없이 출력하려면, terminator에 빈 문자열을 입력합니다. - 예를 들어, print(someValue, terminator: ""). [기본 값이 있는 매개변수에 대한 정보는 기본 매개변수 값(Default Parameter Values)](https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID169)을 보세요.
+
+Swift는 긴 문자열에 자리표시자(placeholder) 처럼 상수나 변수의 이름을 포함시키기 위해 문자열 끼워넣기(string interpolation)을 사용하고, Swift는 상수나 변수의 현재값으로 교체합니다. 이름을 괄호(parentheses `()`)로 감싸고 열린 괄호(`()` 앞에 백슬러쉬(backslash `\`)를 붙여줍니다.
+
+```swift
+print("The current value of friendlyWelcome is \(friendlyWelcome)")
+// Prints "The current value of friendlyWelcome is Bonjour!"
+```
+
+> 중요: 문자열 끼워넣기(string interpolation)로 사용할 수 있는 모든 옵션은 [문자열 끼워넣기(String Interpolation)](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html#ID292)에 설명되어 있습니다
+
+---
+
+## Comments
+
+코드에서 스스로 주의하거나 기억해야하는 것 처럼, 실행할 수 없는 텍스트를 포함시키기 위해 주석(comments)을 사용합니다. 주석은 코드가 컴파일 될때 Swift 컴파일러에 의해 무시됩니다.
+
+Swift에서의 주석은 C에서의 주석과 매우 비슷합니다. 한 줄(Single-line) 주석은 두개의 앞 슬래쉬(//)로 시작합니다.
+
+```swift
+// This is a comment.
+```
+
+여러 줄 주석(Multinline comments)는 앞 슬래쉬와 `별표(/*)로 시작하고 별표와 앞슬러쉬(*/)`로 끝납니다.
+
+```swift
+/* This is also a comment but is written over multiple lines. */
+```
+
+C에서의 여러 줄 주석과는 다르게, Swift에서의 여러 줄 주석은 다른 여러 줄을 내부에 중첩시킬 수 있습니다. 여러 줄 주석 블럭(block)을 시작하고나서 첫번째 블럭 내에서 두번째 여러 줄 주석을 시작하여 중첩된 주석을 만듭니다. 두번재 블럭이 닫히고나서 첫번째 블럭이 닫힘니다.
+
+```swift
+/* This is the start of the first multiline comment.
+ /* This is the second, nested multiline comment. */
+This is the end of the first multiline comment. */
+```
+
+중첩된 여러 줄 주석은 코드에 이미 여러 줄 주석을 포함하고 있어도, 커다란 코드 블럭을 빠르고 쉽게 주석 처리가 가능합니다.
+
+---
+
+## Semicolons
+
+많은 다른 언어와 다르게, Swift는 코드에서 각 문장마다 세미콜론(;)을 사용하지 않아도 되며, 원하는 경우에는 사용할 수 있습니다. 하지만, 한 줄에서 여러개의 구분된 문장을 사용하는 경우에는 세미콜론(;)이 필요합니다.
+
+```swift
+let cat = "🐱"; print(cat)
+// Prints "🐱"
+```
+
+
 
 ---
 
@@ -75,11 +197,10 @@ let maxValue = UInt8.max  // maxValue is equal to 255, and is of type UInt8
 
 Swift는 또한 현재 플랫폼의 순수한 워드(Word) 크기와 같은 크기인 부호없는 정수 타입 UInt를 제공합니다.
 
-32비트 플랫폼에서, UInt는 UInt32와 같은 크기
-64비트 플랫폼에서, UInt는 UInt64와 같은 크기
+32비트 플랫폼에서, `UInt`는 `UInt32`와 같은 크기
+64비트 플랫폼에서, `UInt`는 `UInt64`와 같은 크기
 
-> 주의
-> UInt는 플랫폼의 순수한 워드(Word) 크기와 같은 크기로 부호없는 정수 타입이 필요한 경우에만 사용합니다. 그렇지 않은 경우, 음수를 저장하지 않는 경우에도 Int를 선호합니다. Int 정수 값에 일관성 있는 코드를 사용하면 상호 운용성이 좋아지고, 다른 정수 타입관의 변환을 피하게 해주고, 정수 타입 추론도 일시키켜주며, [타입 안정성과 타입 추론(Type Safety and Type Inference)](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID322)에 설명되어 있습니다.
+> 주의: UInt는 플랫폼의 순수한 워드(Word) 크기와 같은 크기로 부호없는 정수 타입이 필요한 경우에만 사용합니다. 그렇지 않은 경우, 음수를 저장하지 않는 경우에도 Int를 선호합니다. Int 정수 값에 일관성 있는 코드를 사용하면 상호 운용성이 좋아지고, 다른 정수 타입관의 변환을 피하게 해주고, 정수 타입 추론도 일시키켜주며, [타입 안정성과 타입 추론(Type Safety and Type Inference)](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID322)에 설명되어 있습니다.
 
 ---
 
@@ -132,7 +253,21 @@ let anotherPi = 3 + 0.14159
 // anotherPi is also inferred to be of type Double
 ```
 
+리터럴 값 3은 제체적으로 명시된 타입이 없고, 더하기 부분에서 부동소수점(floating-point) 리터럴로부터 적절한 타입인 Double으로 추론됩니다.
+
 ---
+
+## Numberic Literals
+
+정수형 리터럴은 다음과 같이 작성할 수 있습니다.
+
+- 10진수(decimal) 숫자는 접두사(prefix)없음
+- 2진수(binary) 숫자는 0b 접두사 사용
+- 8진수(octal) 숫자는 0o 접두사 사용
+- 16진수(hexadecimal) 숫자는 0x 접두사 사용
+
+
+
 
 ## 숫자 형 변환(Numberic Type Conversion)
 
