@@ -5,11 +5,6 @@ rvm:
 branches:
   only:
   - gh-pages    
-  - /pages-(.*)/
-
-before_script:
-  - "travis_retry bin/rake neo4j:install[$NEO4J_VERSION] --trace"
-  - "bin/rake neo4j:config[development,7474] --trace"
 
 script:
   - "travis_retry bin/rake default --trace"
@@ -20,8 +15,9 @@ install:
   - gem install jekyll html-proofer
   - bundle update
   - bundle install
-  - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/ShikherVerma/Shikherverma.github.io/feed.xml"
   - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/ShikherVerma/Shikherverma.github.io/feed.xml"
+  
 
 env:
   global:
