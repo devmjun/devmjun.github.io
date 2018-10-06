@@ -25,13 +25,11 @@ $ bundle exec jekyll serve
 ```
 
 ### troubles shooting
-
+ 
 [Can not install Cocoapods with RubyGem 2.7.1](https://stackoverflow.com/questions/47171570/can-not-install-cocoapods-with-rubygem-2-7-1/47173414)<br>
 [Getting error after upgrading to MacOS High Sierra](https://github.com/sass/sass/issues/2389)<br>
 
 ### categorize
 
 [3 Simple Steps To Setup Jekyll Categories And Tags](https://blog.webjeda.com/jekyll-categories/)
-
-
 
