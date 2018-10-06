@@ -9,9 +9,9 @@ comments: true
 tags: [Swift]
 ---
 
-# Alert, ScrollView 를 이용해서 지하철 노선도 만들기!
+## Alert, ScrollView 를 이용해서 지하철 노선도 만들기!
 
-[프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/IOS-Develop5/tree/master/Project/CreatSubWay-ver1)
+[프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Mini_Projects/Projexts_Xcode/CreatSubWay-ver1)
 
 
 ---x

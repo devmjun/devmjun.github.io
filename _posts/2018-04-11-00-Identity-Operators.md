@@ -147,8 +147,8 @@ print(meta is String.Type.Type)  // true, String 메타타입은 String.Type.Typ
 [Checking Type](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-ID338)
 
 - 연관된 포스트
-	- [<U>Swift. Type method</U>](https://devminjun.github.io/blog/Type_Methods)
-	- [<U>Swift. Meta Type</U>](https://devminjun.github.io/blog/Meta_Type_Swift)
-	- [<U>Protocol Composition Type</U>](https://devminjun.github.io/blog/Protocol_Composition_Type)
-	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devminjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
-	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devminjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [<U>Swift. Type method</U>](https://devmjun.github.io/blog/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/blog/Protocol_Composition_Type)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)

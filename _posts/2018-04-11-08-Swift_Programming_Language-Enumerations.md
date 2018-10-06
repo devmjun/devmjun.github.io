@@ -14,7 +14,7 @@ tags: [Swift]
 까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
 
 [Enumerations](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html#//apple_ref/doc/uid/TP40014097-CH12-ID145)<br>
-[까질 코더님 블로그](http://kka7.tistory.com/10?category=919617)
+[까질 코더님 블로그](http://kka7.tistory.com/114?category=919617)
 
 ---
 

@@ -97,7 +97,7 @@ tags: [Link]
 
 | | |
 | :--: | :--: |
-| 조이코퍼레이션 / zoyi |[https://medium.com/zoyi-blog/tagged/technology](https://medium.com/zoyi-blog/tagged/technology) |  <br>
+| 조이코퍼레이션 / zoyi |[https://medium.com/zoyi-blog/tagged/technology](https://blog-kr.zoyi.co/) |  <br>
 
 >  리테일 컴퓨팅 서비스, `개발` <br> 
 

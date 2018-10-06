@@ -12,6 +12,7 @@ tags: [Swift]
 ## Reference 
 
 [Memory Safety](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/MemorySafety.html#//apple_ref/doc/uid/TP40014097-CH46-ID567)<br>
+[까칠코더님 블로그](http://kka7.tistory.com/130?category=919617)
 
 ---
 

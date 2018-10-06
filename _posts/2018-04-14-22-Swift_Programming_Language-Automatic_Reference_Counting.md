@@ -14,7 +14,7 @@ tags: [Swift]
 까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
 
 [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID48)<br>
-[까칠코더님 블로그](http://kka7.tistory.com/21?category=919617)
+[까칠코더님 블로그](http://kka7.tistory.com/129?category=919617)
 
 ---
 
