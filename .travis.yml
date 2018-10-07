@@ -1,4 +1,6 @@
 language: ruby
+cache: bundler
+
 rvm:
   - 2.4.1
 
@@ -6,29 +8,17 @@ branches:
   only:
   - gh-pages
 
-before_script: true 
- 
 script:
-  - bundle update --force
-  - bundle install --clean --force
-  - bundle exec jekyll build 
-  - bundle exec htmlproofer ./_site --only-4xx --external_only --url-ignore "http://github.com/pages/devmjun/devmjun.github.io/feed.xml"
+  - bundle exec rake site:deploy --quiet
+
+install:
+  # Install Jekyll and dependencies
+  - bundle install
 
 env:
   global:
+    secure: "V2XP6B3lDRdGpQNm8xG7RMNoXPklE3Cs/Cf48r+Sbktem/D7T5WLcGTVRUaxnx8jyn9TiZoywnJC4DCjwQlrLp7skJyMyLOMgNWIa/DVuSaCfQtmx0vQfMJ9sC/Bh7pavSHGfCmTQpgBqo9wdx+HaikfONkTDaX9vKekFLr7rrgwX7LnQ5XuIy6BuxHF9MN2kJj57Ky0UkcxKxO4e0jrInS7Gch5Wk0D8dX8jY6pkC1BCHI6yYXBHu7YC+OTun/BCKA7N9K9Ub5VRnyng2/DhkB4+H7FtZsc8jqClZ7iod3RCvcqOAyU95fjvYE6Er6KVoKLZo30vATzKwhQ2Q2txeKeOJpmCIl5c3rfPqdIwz98muQjsZHUyfVI3clu25GXK8TAXeeh18Qri+oiHtCvtQHQE5om4h4zdMyY00Smjs1ZLbbEsM58c34Gv5IVVc9Uy0FASqxYPiuOcFN/IwMqvV2n6BT3dwJz8mWzFMCxI+IUhAL6UISuw+ZpX3ZMcdcqYLWqcV1b/9j+X0Rhx4LcLShllspvjJEdy+pSHiQaeU+OqKViBteBwdkkdQBMVy6wH6kS1Y4Ln9EGp/yuB4StNhWo8LhJJE7K4D6wgUBwfM8+O1MxAz2Z1q8kLSP11wK6/Tuad4qfbG2rgk3vC2pJ4VaRJ/YmxyzpbhZPx7cRi4c="
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-addons:
-  apt:
-    packages:
-    - libcurl4-openssl-dev
-
-cache: bundler
-
-before_install:
-  - gem update --system
-  - gem install bundler
-  
   
 sudo: false
 
