@@ -36,11 +36,11 @@ markdown: kramdown
 highlighter: rouge
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 port: 8888
-permalink: /blog/:title
+permalink: /archive/:title
 
 # jekyll-paginate. for paginating blog posts.
 paginate: 25
-paginate_path: blog/page:num
+paginate_path: archive/page:num
 
 
 # gem dependencies
