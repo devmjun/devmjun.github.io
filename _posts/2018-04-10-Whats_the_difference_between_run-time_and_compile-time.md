@@ -66,9 +66,9 @@ compil-time 과 Run-time의 차이가 무엇인지에 대한 아티클입니다.
 [https://www.youtube.com/watch?v=pWUi1HKr0MI](https://www.youtube.com/watch?v=pWUi1HKr0MI)
 
 - 연관된 포스트
-	- [<U>Swift. Type method</U>](https://devmjun.github.io/blog/Type_Methods)
-	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
-	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/blog/Protocol_Composition_Type)
-	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
-	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/00-Identity-Operators)
+	- [<U>Swift. Type method</U>](https://devmjun.github.io/archive/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/archive/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/archive/Protocol_Composition_Type)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/archive/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/archive/00-Identity-Operators)
 

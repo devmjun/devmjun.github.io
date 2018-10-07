@@ -192,11 +192,11 @@ if let <T: HumanType, HasName> value = unknownData as? T {
 [https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol](https://stackoverflow.com/questions/28124684/swift-check-if-generic-type-conforms-to-protocol)
 
 - 연관된 포스트
-	- [<U>Swift. Type method</U>](https://devmjun.github.io/blog/Type_Methods)
-	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
-	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/blog/Protocol_Composition_Type)
-	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/00-Identity-Operators)
-	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [<U>Swift. Type method</U>](https://devmjun.github.io/archive/Type_Methods)
+	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/archive/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/archive/Protocol_Composition_Type)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/archive/00-Identity-Operators)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/archive/Whats_the_difference_between_run-time_and_compile-time)
 
 ---
 

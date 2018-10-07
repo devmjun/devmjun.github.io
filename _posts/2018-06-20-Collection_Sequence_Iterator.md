@@ -64,3 +64,4 @@ Collection 프로토콜은 Sequence 프로토콜과 Indexable 프로토콜에도
 
 [Swift의 Sequence와 Collection에 대해 알아야 하는것들](https://academy.realm.io/kr/posts/try-swift-soroush-khanlou-sequence-collection/)<br>
 [(Swift) Array 완전정복 – 02. Sequence 프로토콜](https://soooprmx.com/archives/7047)<br>
+

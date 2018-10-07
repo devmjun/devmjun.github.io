@@ -156,3 +156,4 @@ let s4 = type(of: someValue)(data: 5)       // Error
 
 
 
+

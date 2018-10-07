@@ -12,7 +12,7 @@ tags: [Swift]
 # Alert, ScrollView 를 이용해서 지하철 노선도 만들기!
 
 
-[Part 1 의 내용은 이곳 입니다.](https://devmjun.github.io/blog/CreatSubway-ver1) <br>
+[Part 1 의 내용은 이곳 입니다.](https://devmjun.github.io/archive/CreatSubway-ver1) <br>
 [Part 1 프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Mini_Projects/Projexts_Xcode/CreatSubWay-ver1)<br>
 [Part 2 프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Projects/CreatSubWay-ver2)
 
@@ -614,7 +614,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 ## Reference 
 
-[다익스트라 관련 동영상과 코드](http://blog.daum.net/imagineer_ms/20)
+[다익스트라 관련 동영상과 코드](http://archive.daum.net/imagineer_ms/20)
 
 **패스트캠퍼스 정원님 진심으로 감사합니다🙏🙏🙏**
 

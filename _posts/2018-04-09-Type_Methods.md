@@ -128,8 +128,8 @@ if player.tracker.advance(to: 6) {
 [type method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)
 
 - 연관된 포스트
-	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/blog/Meta_Type_Swift)
-	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/blog/Protocol_Composition_Type)
-	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/blog/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
-	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/blog/00-Identity-Operators)
-	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/blog/Whats_the_difference_between_run-time_and_compile-time)
+	- [<U>Swift. Meta Type</U>](https://devmjun.github.io/archive/Meta_Type_Swift)
+	- [<U>Protocol Composition Type</U>](https://devmjun.github.io/archive/Protocol_Composition_Type)
+	- [<U>Compile-Time vs Run-Time Type Checking in Swift</U>](https://devmjun.github.io/archive/Compile-Time_vs_Run_Time_Type_checking_in_Swift)
+	- [<U>Swift, Identity Operators ==, ===, is</U>](https://devmjun.github.io/archive/00-Identity-Operators)
+	- [<U>ComputerScience. Compile-time vs Run-Time</U>](https://devmjun.github.io/archive/Whats_the_difference_between_run-time_and_compile-time)
