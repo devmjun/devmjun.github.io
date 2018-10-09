@@ -2,14 +2,14 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 2.4.1
+  - 2.2.3
 
 branches:
   only:
-  - gh-pages
+  - source
 
 script:
-  - bundle exec rake site:deploy --quiet
+  - bundle exec rake
 
 before_install: 
   - openssl aes-256-cbc -K $encrypted_db9c6e5fc25d_key -iv $encrypted_db9c6e5fc25d_iv -in deploy_key.enc -out deploy_key -d
@@ -21,9 +21,6 @@ before_install:
   - git config user.email "dev.mjun@gmail.com"
   - git remote set-url origin git@github.com:{GIT_UNAME}/{GIT_UNAME}.github.io.git
   - git remote -v
-install:
-  # Install Jekyll and dependencies
-  - bundle install
 
 env:
   secure: "hCG27xarfUBMsLusvfDhNgGXMVy4Avz0db8L66coH6S4SzV8mRMvNwF9spmQo5E6L+6MhYziCYK6Qi4q0Xfj/4CJ9nozrRtvK4l3Q5JZck07lcYLNlq5XbPxKBCRYGJ8QeQzfNRnvnCH6t0VRf/BvTKwumvG9Mr/tTAa36pE6z4kUJC/sJmZv3RPY1WAh7+RCerIYaSl1NcbA0+rOxb2+mB6eUhtwNKZpohPU8ixbm0x1XZjspFtUyMxgROhWsZi8UO79A9poJulCn0dp1jERvJ5z54XIvEa9bY7tXIF6L4NN4YDclKZp/95vroccB1457xme4gJPd8HdSxfeL9CfkHzRi90c5jHloBqIM4+nvW9RkEUpPPbN987r62Dlz/0Olv5yDRPxy2TCEYg7rN83VG5Q9wX0RC7PuskZs7/bIa6CagxhUOBeR89Np4r90O7pFlB5YLkI0dDS6nA9U52nr+gSDujX3g76MN7R9y2WVPRC3BFUYvDg8vPQOh3qCR9I8msrn13O2yc0z1eG29sPxHGzZ9qfJhsl+ufNiSxwxl9+oQQp117zKbToXdcFfFPIVDPG2sUb/VramtrzXmlC4js0XOPE3aQdvSoyS5tG8N4SxAJnlOrIxi+bvlHzOV65Vfs5YxgmUQzOJ8YFYB86OU0CDiuW8SDY8IxkCajnV0="
@@ -32,3 +29,10 @@ env:
 sudo: false
 
 exclude: [vendor]
+
+notifications:
+  email:
+    recipients:
+      - {GIT_EMAIL}
+    on_success: change
+    on_failure: always
