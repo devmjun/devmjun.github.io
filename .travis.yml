@@ -9,7 +9,7 @@ branches:
   - gh-pages
 
 script:
-  - bundle exec rake site:deploy --quiet
+  - bundle exec rake
 
 env:
   global:
