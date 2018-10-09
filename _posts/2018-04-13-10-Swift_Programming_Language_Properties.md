@@ -177,7 +177,7 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
 center프로퍼티는 사각형을 위쪽과 오른쪽으로 이동시키는 새로운 값 (15, 15)으로 설정되며, 아래 그림에서 새로운 위치의 오렌지 사각형으로 보여집니다. center 에 대한 setter를 호출해서 center 프로퍼티를 설정하며, origin 프로퍼티에 저장된 x와 y의 값을 수정하고, 새로운 위치로 사각형을 이동시키빈다.
 
-swiftProgrammingGudie_property_0.png
+![](/img/posts/swiftProgrammingGudie_property_0.png)
 
 ---
 
@@ -375,7 +375,7 @@ print(SomeClass.computedTypeProperty)
 
 아래 그림은 스테레오 오디오 레벨 미터를 모델링하기 위해 두개의 오디오 채널을 결합하는 방법을 보여줍니다. 채널의 오디오 레벨이 0일때, 그 채널에 대해 켜져있는 조명이 아무것도 없습니다. 오디오 레벨이 10일때, 그 채널에 대해 모든 조명이 켜져있습니다. 그림에서, 왼족 채널은 9레벨이고, 오른족 채널은 7레벨 입니다.
 
-swiftProgrammingGudie_property_1.png
+![](/img/posts/swiftProgrammingGudie_property_1.png)
 
 위에서 설명한 오디오 채널은 AudioChannel 구조체의 인스턴스로 표현됩니다.
 
