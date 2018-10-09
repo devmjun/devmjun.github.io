@@ -3,5 +3,5 @@ node_modules
 Gemfile.lock
 
 # secure
-deploy_key
-deploy_key.pub
+m_deploy_key
+m_deploy_key.pub
