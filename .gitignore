@@ -2,6 +2,6 @@ _site
 node_modules
 Gemfile.lock
 
-# secure
+
 deploy_keys
 deploy_keys.pub
