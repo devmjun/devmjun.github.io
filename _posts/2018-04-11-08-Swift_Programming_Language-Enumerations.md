@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 8"
+title:      "Swift. 정리하기 8: Swift Language Guide-Enumerations"
 subtitle:   "Swift Language Guide-Enumerations"
 date:       2018-04-13 07:35:00
 author:     "MinJun"
