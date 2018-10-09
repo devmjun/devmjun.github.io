@@ -2,9 +2,9 @@ anguage: ruby
 rvm:
   - 2.4.1
 
-script: jekyll build 
+script: jekyll build
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_db9c6e5fc25d_key -iv $encrypted_db9c6e5fc25d_iv -in deploy_key.enc -out deploy_key -d
+# before_install:
+#   - openssl aes-256-cbc -K $encrypted_db9c6e5fc25d_key -iv $encrypted_db9c6e5fc25d_iv -in deploy_key.enc -out deploy_key -d
 
   
