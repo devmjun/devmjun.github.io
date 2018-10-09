@@ -33,6 +33,6 @@ exclude: [vendor]
 notifications:
   email:
     recipients:
-      - {GIT_EMAIL}
+      - dev.mjun@gmail.com
     on_success: change
     on_failure: always
