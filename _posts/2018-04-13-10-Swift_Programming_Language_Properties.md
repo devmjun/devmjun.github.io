@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 10"
+title:      "Swift. 정리하기 10: Swift Language Guide-Properties"
 subtitle:   "Swift Language Guide-Properties *"
 date:       2018-04-13 09:35:00
 author:     "MinJun"
@@ -20,7 +20,7 @@ tags: [Swift]
 
 ## Properties
 
-프로퍼티(properties)는 특정 클래스, 구조체, 열거형의 연관된 값입니다. 저장 프로퍼티(stored properties)는 인스턴스의 일부로 상수와 변수 값을 저장하는 반면, 계산 프로퍼티(computed properties)는 값을 (저장하기 보다는)계산합니다. 계산 프로퍼티는 클래스, 구조체, 열거형에서 제공됩니다. 저장 프로퍼티는 클래스와 구조체에서만 제공됩니다.
+`프로퍼티(properties)`는 특정 클래스, 구조체, 열거형의 연관된 값입니다. 저장 프로퍼티(stored properties)는 인스턴스의 일부로 상수와 변수 값을 저장하는 반면, 계산 프로퍼티(computed properties)는 값을 (저장하기 보다는)계산합니다. 계산 프로퍼티는 클래스, 구조체, 열거형에서 제공됩니다. 저장 프로퍼티는 클래스와 구조체에서만 제공됩니다.
 
 저장(stored)과 계산(computed) 프로퍼티는 일반적으로 특정 타입의 인스턴스와 관련되어 있습니다. 하지만, 프로퍼티는 타입 자체(itself)와 연관되어 있을수도 있습니다. 이러한 프로퍼티를 타입 프로퍼티(type properties)라 합니다.
 
@@ -29,6 +29,12 @@ tags: [Swift]
 ---
 
 ## Stored Properties
+
+가장 간단한 형태로, 저장 프로퍼티는 특정 클래스나 구조체의 인스턴스로 저장되는 상수나 변수 입니다. 저장 프로퍼티는 변수 저장 프로퍼티(variable stored properties)(`var` 키워드) 또는 상수 저장 프로퍼티(constant stored properties)(`let` 키워드) 중 하나 일수 있습니다.
+
+[기본 프로퍼티 값(Default Property Values)](https://swift.org/documentation/#ID206)에서 설명된 것 처럼, 정의할때 저장 프로퍼티에 대한 기본 값을 제공할 수 있습니다. 초기화하는 동안 저장 프로퍼티에 대한 초기값을 설정하고 수정할 수도 있습니다. [초기화하는 동안 상수 프로퍼티 할당하기(Assigning Constant Properties During Initialization)](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html#ID212)상수 저장 프로퍼티에 대한 경우에도 가능합니다.
+
+아래 예제는 생성된 후에는 범위의 길이를 변경할수 없는 정수형 범위를 설명하는FixedLengthRange 구조체를 정의한 것입니다.
 
 ```swift
 struct FixedLengthRange {
@@ -41,7 +47,13 @@ rangeOfThreeItems.firstValue = 6
 // the range now represents integer values 6, 7, and 8
 ```
 
-### - Stored Properties of Constant Structure Instances 
+`FixedLengthRange`의 인스턴스는 변수 저장 프로퍼티 `firstValue`와 상수 저앞 프로퍼티 length를 가지고 있습니다. 위의 예제에서, `length`는 상수 프로퍼티이기 때문에, 새로운 범위가 생성될때 초기화되고 그 이후에는 변경될수 없습니다.
+
+---
+
+## Stored Properties of Constant Structure Instances 
+
+구조체의 인스턴스를 생성하고 상수에 인스턴스를 할당하는 경우에, 변수 프로퍼티로 선언되었을지라도, 인스턴스의 프로퍼티를 수정할수 없습니다.
 
 ```swift
 let rangeOfFourItems = FixedLengthRange(firstValue: 0, length: 4)
@@ -50,15 +62,23 @@ rangeOfFourItems.firstValue = 6
 // this will report an error, even though firstValue is a variable property
 ```
 
-### - Lazy Stored Properties 
+`rangeOfFourItems`가 상수(`let` 키워드)로 선언되었기 때문에, `firstValue`가 변수 프로퍼티일지라도, `firstValue` 프로퍼티를 변경하는 것은 불가능합니다.
+
+이 동작은 구조체가 값 타입(`value types`)이기 때문입니다. 값 타입의 인스턴스가 상수로 표시될때, 모든 프로퍼티가 상수가 됩니다.
+
+참조 타입(`reference types`)인 클래스에 대해서는 다릅니다. 참조 타입의 인스턴스를 상수로 할당한 경우에, 인스턴스의 변수 프로퍼티는 여전히 변경할 수 있습니다.
+
+---
+
+## Lazy Stored Properties 
 
 `느린 저장 프로퍼티(lazy stored property)`는 처음 사용 할때 까지 초기 값이 계산되지 않은 프로퍼티 입니다. 느린 저장 프로퍼티는 선언할때 앞에 `lazy`를 작성하여 나타냅니다.
 
 > Note: Lazy 프로퍼티는 인스턴스 초기화가 완료될때까지 초기 값을 가져올 수 없기 때문에, 항상 `변수(var키워드 사용)`로 선언해야 합니다. 상수 프로퍼티는 항상 초기화가 완료되기 전에 값을 가지고 있어야 하므로, lazy로 선언될 수 없습니다.
 
-Lazy 프로퍼티는 외부 요인에 의해 초기화가 완료될때까지 값을 알 수 없는 프로퍼티의 값을 초기화 할때 유용합니다. Lazy 프로퍼티는 필요한 경우가 아니면 그때까지 수행되서는 안되는 복잡하거나 계산이 오래걸리는 프로퍼티가 필요한 경우에 유용합니다.
+`Lazy` 프로퍼티는 외부 요인에 의해 초기화가 완료될때까지 값을 알 수 없는 프로퍼티의 값을 초기화 할때 유용합니다. Lazy 프로퍼티는 필요한 경우가 아니면 그때까지 수행되서는 안되는 복잡하거나 계산이 오래걸리는 프로퍼티가 필요한 경우에 유용합니다.
 
-아래 예제는 복잡한 클래스의 불필요한 초기화를 피하기 위해 Lazy 저장 프로퍼티를 사용합니다. 이 예제는 두개의 클래스 DataImporter, DataManager를 정의하며, 둘다 전부 보여주지 않습니다.
+아래 예제는 복잡한 클래스의 불필요한 초기화를 피하기 위해 `Lazy` 저장 프로퍼티를 사용합니다. 이 예제는 두개의 클래스 DataImporter, DataManager를 정의하며, 둘다 전부 보여주지 않습니다.
 
 ```swift
 class DataImporter {
@@ -82,13 +102,13 @@ manager.data.append("Some more data")
 // the DataImporter instance for the importer property has not yet been created
 ```
 
-`DataManager`클래스는 `String`값의 배열로 새로 초기화된 data저장 프로퍼티를 가지고 있습니다. 비록 나머지 기능이 보이지 않지만, DataManager클래스의 목적은 String 데이터 배열 접근을 제공하고 관리합니다.
+`DataManager`클래스는 `String`값의 배열로 새로 초기화된 `data`저장 프로퍼티를 가지고 있습니다. 비록 나머지 기능이 보이지 않지만, `DataManager`클래스의 목적은 `String` 데이터 배열 접근을 제공하고 관리합니다.
 
-DataManager클래스의 일부 기능은 파일로부터 데이터를 오는 것입니다. 이 기능은 DataImporter클래스에 의해 제공되며, 초기화하는데 적게 걸리지 않는 것을 가정합니다. DataImporter인스턴스가 초기화 될때 파일을 열고 컨텐츠를 메모리로 읽기 위해 DataImporter인스턴스가 필요하기 때문일 것입니다.
+`DataManager`클래스의 일부 기능은 파일로부터 데이터를 오는 것입니다. 이 기능은 `DataImporter`클래스에 의해 제공되며, 초기화하는데 적게 걸리지 않는 것을 가정합니다. DataImporter인스턴스가 초기화 될때 파일을 열고 컨텐츠를 메모리로 읽기 위해 `DataImporter`인스턴스가 필요하기 때문일 것입니다.
 
-파일로부터 데이터를 가져오지 않고 DataManager인스턴스가 데이터를 관리하는 것이 가능합니다. 그래서 DataManager가 생성될때, 새로운 DataImporter인스턴스 생성이 필요하지 않습니다. 대신에, 처음 사용할때DataImporter인스턴스를 만드는것이 더 의미가 있습니다.
+파일로부터 데이터를 가져오지 않고 `DataManager`인스턴스가 데이터를 관리하는 것이 가능합니다. 그래서 `DataManager`가 생성될때, 새로운 `DataImporter`인스턴스 생성이 필요하지 않습니다. 대신에, 처음 사용할때`DataImporter`인스턴스를 만드는것이 더 의미가 있습니다.
 
-`lazy 수식어(modifier)`로 표시 되었기 때문에, `importer` 프로퍼티에 대한 DataImporter인스턴스는 fileNmae 프로퍼티를 조회할때 처럼, importer프로퍼티에 처음으로 접근할때, 생성됩니다.
+`lazy 수식어(modifier)`로 표시 되었기 때문에, `importer` 프로퍼티에 대한 `DataImporter`인스턴스는 fileNmae 프로퍼티를 조회할때 처럼, importer프로퍼티에 처음으로 접근할때, 생성됩니다.
 
 ```swift
 print(manager.importer.fileName)
@@ -97,8 +117,15 @@ print(manager.importer.fileName)
 ```
 
 > Note: `lazy 수식어(modifier)`로 표시된 프로퍼티가 아직까지 초기화되지 않고 동시에 여러개의 스레드가 접근하는 경우, 프로퍼티가 한 번만 초기화 된다라는 것을 보장하지 않습니다.
-> 
-> 잘 사용하면 메모리관리에 도움이 되지만 잘못사용하면 스레드 접근때문에 문제가 생길수 있다는걸 보장할수없다는걸의미.. 
+
+
+---
+
+## Stored Properties and Instance Variables
+
+Objective-C 경험이 있는 경우에, `클래스 인스턴스로 값을 저장하고 참조하는 두가지(two)` 방법을 알고 있을 것입니다. 프로퍼티 외에도, 프로퍼티에 저장된 값에 대한 보조 저장소(backing store)처럼 인스턴스 변수(instance variables)를 사용할 수 있습니다.
+
+Swift는 이러한 개념(concepts)을 하나의 프로퍼티 선언으로 통일(unifies)하였습니다. Swift 프로퍼티는 해당(corresponding) 인스턴스 변수가 없고, 프로퍼티에 대한 보조 저장소를 직접 접근(accessed)되지 않습니다. 이러한 접근법은 다른 컨텍스트(contexts)에서 값에 접근하는 방법에 대한 혼란을 피하게 하고 프로퍼티 선언을 하나의 일정한 구문으로 단순화 합니다. 프로퍼티에 대한 모든 정보(이름, 타입, 메모리 관리 특성)는 타입의 정의처럼 한 곳에서 정의됩니다.
 
 ---
 
@@ -136,7 +163,28 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 // Prints "square.origin is now at (10.0, 10.0)"
 ```
 
-### - Shorthand Setter Declaration 
+이 예제는 기하학적인(geometric) 도형으로 작업하기 위한 구조체 3개를 정의하였습니다.
+
+- `x`와 `y`좌표를 캡슐화한 Point
+- `width`와 `height`를 캡슐화한 `Size`
+- 원점과 크기로 사각형을 정의한 `Rect`
+
+`Rect` 구조체는 계산 프로퍼티 `center`를 제공합니다. 현재 `Rect`의 중심점(center position)은 항상 `origin`과 `size`에 의해 결정되고, 명시적인 Point 값으로 중심점을 저장할 필요가 없습니다. 대신에, `Rect`는 사용자정의 계산 변수 `center`에 대한 `getter`과 `setter`를 정의하며, 실제 저장 프로퍼티 처럼 사각형의 `center`로 사용이 가능합니다.
+
+위 예제에서 새로운 `Rect`변수 `square`를 생성하였습니다. `square` 변수는 (0, 0) 원점, 넓이와 높이는 10으로 초기화되었습니다. 이 `square`는 아래 그림에서 파랑색 사각형으로 표시됩니다.
+
+`square` 변수의 `center` 프로퍼티는 현재 프로퍼티의 값을 가져오기 위해, `center`에 대한 `getter`로 호출되도록 하는 점(dot) 문법(square.center)으로 사용합니다. 기존 값을 반환하기 보다는, getter로 실제 계산하고 square의 중심을 가리키는 새로운 Point를 반환합니다. 위에서 볼수 있는 것처럼, getter은 중심점(5, 5)를 정확히 반환합니다.
+
+center프로퍼티는 사각형을 위쪽과 오른쪽으로 이동시키는 새로운 값 (15, 15)으로 설정되며, 아래 그림에서 새로운 위치의 오렌지 사각형으로 보여집니다. center 에 대한 setter를 호출해서 center 프로퍼티를 설정하며, origin 프로퍼티에 저장된 x와 y의 값을 수정하고, 새로운 위치로 사각형을 이동시키빈다.
+
+swiftProgrammingGudie_property_0.png
+
+---
+
+## Shorthand Setter Declaration 
+
+계산 프로퍼티의 setter에 설정할 새로운 값에 대한 이름을 정의하지 않은 경우에, `newValue`라는 기본 이름이 사용됩니다. 다음은 축약 표현법(shorthand notation)의 장점을 가지는`Rect` 구조체의 다른 버젼입니다
+
 
 ```swift
 struct AlternativeRect {
@@ -156,7 +204,9 @@ struct AlternativeRect {
 }
 ```
 
-### - Read-Only Computed Properties 
+---
+
+## Read-Only Computed Properties 
 
 getter는 있지만 setter가 없는 계산 프로퍼티를 읽기 전용 `계산프로퍼티(read-only computed property)`라고 합니다. 읽기 전용 계산 프로퍼티는 항상 값을 반환하고, 점(dot .) 문법을 통해서 접근할수 있지만, 다른 값을 설정할 수는 없습니다.
 
