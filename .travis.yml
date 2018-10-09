@@ -2,24 +2,24 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 2.4.1
+  - 2.2.3
 
 branches:
   only:
-  - gh-pages
+  - source
 
 script:
-  - bundle exec rake site:deploy --quiet
+  - bundle exec rake
 
-install:
-  # Install Jekyll and dependencies
-  - bundle install
+
 
 env:
-  global:
-    secure: "V2XP6B3lDRdGpQNm8xG7RMNoXPklE3Cs/Cf48r+Sbktem/D7T5WLcGTVRUaxnx8jyn9TiZoywnJC4DCjwQlrLp7skJyMyLOMgNWIa/DVuSaCfQtmx0vQfMJ9sC/Bh7pavSHGfCmTQpgBqo9wdx+HaikfONkTDaX9vKekFLr7rrgwX7LnQ5XuIy6BuxHF9MN2kJj57Ky0UkcxKxO4e0jrInS7Gch5Wk0D8dX8jY6pkC1BCHI6yYXBHu7YC+OTun/BCKA7N9K9Ub5VRnyng2/DhkB4+H7FtZsc8jqClZ7iod3RCvcqOAyU95fjvYE6Er6KVoKLZo30vATzKwhQ2Q2txeKeOJpmCIl5c3rfPqdIwz98muQjsZHUyfVI3clu25GXK8TAXeeh18Qri+oiHtCvtQHQE5om4h4zdMyY00Smjs1ZLbbEsM58c34Gv5IVVc9Uy0FASqxYPiuOcFN/IwMqvV2n6BT3dwJz8mWzFMCxI+IUhAL6UISuw+ZpX3ZMcdcqYLWqcV1b/9j+X0Rhx4LcLShllspvjJEdy+pSHiQaeU+OqKViBteBwdkkdQBMVy6wH6kS1Y4Ln9EGp/yuB4StNhWo8LhJJE7K4D6wgUBwfM8+O1MxAz2Z1q8kLSP11wK6/Tuad4qfbG2rgk3vC2pJ4VaRJ/YmxyzpbhZPx7cRi4c="
+  secure: "hCG27xarfUBMsLusvfDhNgGXMVy4Avz0db8L66coH6S4SzV8mRMvNwF9spmQo5E6L+6MhYziCYK6Qi4q0Xfj/4CJ9nozrRtvK4l3Q5JZck07lcYLNlq5XbPxKBCRYGJ8QeQzfNRnvnCH6t0VRf/BvTKwumvG9Mr/tTAa36pE6z4kUJC/sJmZv3RPY1WAh7+RCerIYaSl1NcbA0+rOxb2+mB6eUhtwNKZpohPU8ixbm0x1XZjspFtUyMxgROhWsZi8UO79A9poJulCn0dp1jERvJ5z54XIvEa9bY7tXIF6L4NN4YDclKZp/95vroccB1457xme4gJPd8HdSxfeL9CfkHzRi90c5jHloBqIM4+nvW9RkEUpPPbN987r62Dlz/0Olv5yDRPxy2TCEYg7rN83VG5Q9wX0RC7PuskZs7/bIa6CagxhUOBeR89Np4r90O7pFlB5YLkI0dDS6nA9U52nr+gSDujX3g76MN7R9y2WVPRC3BFUYvDg8vPQOh3qCR9I8msrn13O2yc0z1eG29sPxHGzZ9qfJhsl+ufNiSxwxl9+oQQp117zKbToXdcFfFPIVDPG2sUb/VramtrzXmlC4js0XOPE3aQdvSoyS5tG8N4SxAJnlOrIxi+bvlHzOV65Vfs5YxgmUQzOJ8YFYB86OU0CDiuW8SDY8IxkCajnV0="
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   
-sudo: false
-
-exclude: [vendor]
+notifications:
+  email:
+    recipients:
+      - dev.mjun@gmail.com
+    on_success: change
+    on_failure: always
