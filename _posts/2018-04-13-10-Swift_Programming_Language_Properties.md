@@ -297,7 +297,7 @@ stepCounter.totalSteps = 896
 
 하지만, 전역 또는 지역 범위에서, 계산 변수(computed variables)를 정의하고 저장 변수에 대한 옵저버를 정의할 수 있습니다. 계산 변수는 값을 저장하는 것이 아니라 계산하고, 계산 프로퍼티와 같은 방식으로 작성됩니다.
 
-> Note: 전역 상수와 변수는 lazy 저장 프로퍼티(Lazy Stored Properties)와 유사한 방식으로 항상 나중에(lazily) 계산됩니다. lazy 저장 프로퍼티와 다르게, 전역 상수와 변수는 lazy 표시할 필요가 없습니다.
+> Note: 전역 상수와 변수는 [lazy 저장 프로퍼티(Lazy Stored Properties)](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#ID257)와 유사한 방식으로 항상 나중에(lazily) 계산됩니다. lazy 저장 프로퍼티와 다르게, 전역 상수와 변수는 lazy 표시할 필요가 없습니다.
 > 
 > 지역 상수와 변수는 나중에(lazily) 계산되지 않습니다.
 
@@ -307,7 +307,7 @@ stepCounter.totalSteps = 896
 
 인스턴스 프로퍼티는 특정 타입의 인스턴스에 속해있는 프로퍼티입니다. 타입의 새로운 인스턴스를 만들때마다, 자체적인 프로퍼티 값의 `세트(set)`를 가지며, 다른 인스턴스와 구분됩니다.
 
-또한, 타입 자체에 속하는 프로퍼티를 정의할 수 있으며, 그 타입의 어떤 하나의 인스턴스가 아닙니다. 이러한 프로퍼티의 복사본은 하나일 것이며, 여러분이 만든 타입의 인스턴스가 얼마나 많던지 상관 없습니다. 이러한 프로퍼티의 종류를 타입 `프로퍼티(type properties)`라고 부릅니다.
+또한, 타입 자체에 속하는 프로퍼티를 정의할 수 있으며, 그 타입의 어떤 하나의 인스턴스가 아닙니다. 이러한 프로퍼티의 복사본은 하나일 것이며, 여러분이 만든 타입의 인스턴스가 얼마나 많던지 상관 없습니다. 이러한 프로퍼티의 종류를 `타입 프로퍼티(type properties)`라고 부릅니다.
 
 타입 프로퍼티는 모든 인스턴스가 사용할 수 있는 상수 프로퍼티(C에서 static 상수처럼) 또는 타입의 모든 인스턴스에 전역으로 값을 저장하는 변수 프로퍼티(C에서 static 변수처럼)처럼 특정타입의 모든(all) 인스턴스에 보편적인 값을 정의하는데 유용합니다.
 
@@ -323,7 +323,7 @@ stepCounter.totalSteps = 896
 
 C와 Objective-C에서는, `전역(global)` static 변수로 타입에 관련된 static 상수와 변수를 정의 합니다. 하지만, Swift에서의 타입 프로퍼티는 타입의 바깥쪽 중괄호(curly braces)안에서 타입의 정의 일부로 작성되고, 각 타입 프로퍼티는 지원하는 타입으로 명시적인 범위가 지정됩니다.
 
-static키워드로 타입 프로퍼티를 정의합니다. 클래스 타입에 대한 계산(computed) 타입 프로퍼티의 경우에, class 키워드를 대신 사용해서 상위클래스의 구현을 오버라이드하는 하위 클래스를 허용합니다. 아래 에제에서 저장(stored)과 계산(computed) 타입 프로퍼티에 대한 문법을 보여줍니다.
+`static`키워드로 타입 프로퍼티를 정의합니다. 클래스 타입에 대한 계산(computed) 타입 프로퍼티의 경우에, class 키워드를 대신 사용해서 상위클래스의 구현을 오버라이드하는 하위 클래스를 허용합니다. 아래 에제에서 저장(stored)과 계산(computed) 타입 프로퍼티에 대한 문법을 보여줍니다.
 
 ```swift
 struct SomeStructure {
@@ -369,6 +369,59 @@ print(SomeEnumeration.computedTypeProperty)
 // Prints "6"
 print(SomeClass.computedTypeProperty)
 // Prints "27"
+```
+
+다음에 오는 예제는 오디오 채널의 갯수에 대한 오디오 레벨미터(level meter)를 모델링한 구조체에서 두개의 저장 타입 프로퍼티를 사용합니다. 각 채널은 0부터 10까지 포함한(inclusive) 정수형 오디오 레벨을 가집니다.
+
+아래 그림은 스테레오 오디오 레벨 미터를 모델링하기 위해 두개의 오디오 채널을 결합하는 방법을 보여줍니다. 채널의 오디오 레벨이 0일때, 그 채널에 대해 켜져있는 조명이 아무것도 없습니다. 오디오 레벨이 10일때, 그 채널에 대해 모든 조명이 켜져있습니다. 그림에서, 왼족 채널은 9레벨이고, 오른족 채널은 7레벨 입니다.
+
+swiftProgrammingGudie_property_1.png
+
+위에서 설명한 오디오 채널은 AudioChannel 구조체의 인스턴스로 표현됩니다.
+
+```swift
+struct AudioChannel {
+    static let thresholdLevel = 10
+    static var maxInputLevelForAllChannels = 0
+    var currentLevel: Int = 0 {
+        didSet {
+            if currentLevel > AudioChannel.thresholdLevel {
+                // cap the new audio level to the threshold level
+                currentLevel = AudioChannel.thresholdLevel
+            }
+            if currentLevel > AudioChannel.maxInputLevelForAllChannels {
+                // store this as the new overall maximum input level
+                AudioChannel.maxInputLevelForAllChannels = currentLevel
+            }
+        }
+    }
+}
+```
+
+`AudioChannel` 구조체는 그 기능을 지원하기 위해 두개의 저장 타입 프로퍼티를 정의 합니다. 첫번째로, `thresholdLevel`이며, 오디오 레벨이 가질수 있는 최대 임계 값(`threshold value`)을 정의합니다. 이것은 모든 AudioChannel인스턴스에 대한 상수값 10 입니다. 오디오 신호가 10보다 높은 값이 들어오면, (아래 설명된 것처럼) 임계 값에 의해 제한(capped) 될 것입니다.
+
+두번째 타입 프로퍼티는 변수 저장 프로퍼티 `maxInputLevelForAllChannels`입니다. 이것은 모든(any) AudioChannel 인스턴스에서 받은 최대 입력 값을 유지합니다.그것은 초기 값 0으로 시작합니다.
+
+또한, `AudioChannel` 구조체는 0에서 10까지의 눈금(scale)으로 채널의 현재 오디오 레벨을 표현하는 저장 인스턴스 프로퍼티 currentLevel을 정의합니다.
+
+`currentLevel` 프로퍼티는 `currentLeve`의 값이 설정될때마다 확인하기 위한 didSet프로퍼티 옵져버를 가지고 있습니다. 이 옵져버는 두 가지를 검사(check)합니다.
+
+- `currentLevel`의 새로운 값이 `thresholdLevel`보다 더 크면, 그 프로퍼티 옵져버는 `currentLevel`을 `thresholdLevel`로 제한합니다.
+- `currentLevel`의 새로운 값이 이전에 어떤 `AudioChannae`인스턴스로 부터 받은 값보다 크면, 프로퍼티 옵져버는 새로운 `currentLevel` 값을 `maxInputLevelForAllChannels` 타입 프로퍼티에 저장합니다.
+
+> Note: 두가지 검사중 첫번째에서, `didSet`옵져버는 `currentLevel`을 다른 값으로 설정합니다. 하지만, 그 옵져버가 다시 호출되지는 않습니다.
+
+스테레오 사은드 시스템의 오디오 레벨을 표현하기 위해, `AudioChannel`구조체를 사용해서 두개의 새로운 오디오 채널 `leftChannel`과 `reightChannel`을 만들수 있습니다.
+
+```swift
+var leftChannel = AudioChannel()
+var rightChannel = AudioChannel()
+```
+
+왼쪽(left) 채널의 currentLevel을 7로 설정하는 경우, maxInputLevelForAllChannels 타입 프로퍼티가 7로 업데이트 되는 것을 볼수 있습니다.
+
+```swift
+leftChannel.currentLevel = 7 print(leftChannel.currentLevel) // Prints "7" print(AudioChannel.maxInputLevelForAllChannels) // Prints "7"
 ```
 
 ---
