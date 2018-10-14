@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 24"
+title:      "Swift. 정리하기 24: Swift Language Guide-Access Control"
 subtitle:   "Swift Language Guide-Access Control *"
 date:       2018-04-14 13:00:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018. 10. 1
 
 ## Reference 
 
@@ -95,6 +97,8 @@ Swift에서 접근 레벨은 전반적인 지침원칙은 다음과 같습니다
 프레임워크(frameworks)를 개발할때, 해당 프레임워크를 `open`또는 `public`으로 설정하여 다른 모들에서 접근 할 수 있게 공용 영역(public-facing) 인터페이스 표시합니다. 공용 영역(public-facing) 인터페이스는 프레임워크에 대한 API(application programming interface)입니다.
 
 > Note: 프레임워크의 모든 `internal` 상세 구현은 여전히 `internal`의 기본 접근 레벨을 사용 할 수 있거나, 프레임워크의 내부 코드를 다른 부분으로 부터 숨기기 위해 `private`나 `file private`를 표시 할 수 있습니다. 프레임워크의 API가 되게 하려면 `요소(entity)`를 `open`이나 `public`으로 표시하는게 필요합니다.
+
+---
 
 ## Access Levels for Unit Test Targets
 
@@ -259,6 +263,8 @@ internal class B: A {
 
 슈퍼클래스 A와 서브클래스 B는 같은 소스 파일에서 정의되기 때문에, `super.someMethod()`를 호출하는 `someMothod()`의 `B` 구현은 유효합니다.
 
+---
+
 ## Constants, Variables, Properties, and Subscripts
 
 상수, 변수, 프로퍼티는 타입보다 더 `public` 할 수 없습니다. `private`타입으로 `public`프로퍼티를 작성하는 것은 유효하지 않습니다. 예를들어, 비슷하게, 서브스크립트는 인덱스 타입이나 반환 타입보다 더 public 할 수 없습니다.
@@ -269,7 +275,7 @@ internal class B: A {
 private var privateInstance = SomePrivateClass()
 ```
 
---
+---
 
 ## Getters and Setters 
 
@@ -355,13 +361,13 @@ public struct TrackedString {
 
 프로토콜 정의에서 각각 요구된 접근 레벨은 프로토콜처럼 같은 접근 레벨로 자동으로 설정됩니다. 지원하는 프로토콜과 다른 접근 레벨로 프로토콜 요구사항을 설정 할 수 없습니다. 이렇게 하면 프로토콜의 모든 요구사항들이 프로토콜을 적용한 모든 타입에서 볼 수 있습니다.
 
-> public프로토콜을 정의하는 경우, 프로토콜의 요구사항은 구현 될때 이러한 요구사항들에 대해 `public`접근 레벨을 요구합니다. 이 동작은 `public` 타입이 정의된 곳에서 타입의 멤버들에 대해 `internal` 접근 레벨을 의미하는 다른 타입과 다릅니다.
+> `public` 프로토콜을 정의하는 경우, 프로토콜의 요구사항은 구현 될때 이러한 요구사항들에 대해 `public` 접근 레벨을 요구합니다. 이 동작은 `public` 타입이 정의된 곳에서 타입의 멤버들에 대해 `internal` 접근 레벨을 의미하는 다른 타입과 다릅니다.
 
 ---
 
 ## Protocol Inheritance
 
-기존 프로토콜로부터 새로운 프로토콜 상속을 정의하면, 새로운 프로토콜은 상속된 프로토콜과 동일한 접근 레벨을 가질 수 있습니다. 예를 들어, `internal` 프로토콜로부터 상속된 public프로토콜을 작성 할 수 없습니다.
+기존 프로토콜로부터 새로운 프로토콜 상속을 정의하면, 새로운 프로토콜은 상속된 프로토콜과 동일한 접근 레벨을 가질 수 있습니다. 예를 들어, `internal` 프로토콜로부터 상속된 `public`프로토콜을 작성 할 수 없습니다.
 
 ---
 
@@ -379,15 +385,46 @@ public struct TrackedString {
 
 ## Extensions
 
-클래스, 구조체, 열거형이 가능한 모든 접근 컨텍스트에서, 클래스, 구조체, 열거형을 확장 할 수 있습니다. 원본 타입의 확장에서 타입의 멤버로 선언으로 같은 기본 접근 레벨을 가지도록 타입 멤버를 추가합니다. `public`나 `internal`타입을 확장하면, `internal` 기본 접근 레벨을 가지는 새로운 타입 멤버를 추가 할 것입니다. `private` 타입을 확장하면, `private` 기본 접근 레벨을 가지는 새로운 타입 멤버를 추가할 것입니다.
+클래스, 구조체, 열거형을 사용할수 있는 모든 접근 상황(context)에서, 클래스, 구조체, 열거형을 확장할 수 있습니다. 확장에 추가된 모든 타입 멤버는 원래 타입에서 선언된 타입 멤버와 같은 기본 접근 수준을 가집니다. `public`이나 `internal` 타입을 확장하는 경우, 새로 추가하는 타입의 모든 멤버는 `internal` 기본 접근 레벨을 가집니다. `file-private` 타입을 확장하는 경우, 새로 추가하는 타입의 모든 멤버는 `file private` 기본 접근 레벨을 가집니다. `private` 타입을 확장하는 경우, 새로 추가하는 타입의 모든 멤버는 `private` 기본 접근 레벨을 가집니다.
 
-대신에, 확장내의 모든 멤버 정의에 새로운 기본 접근 레벨을 설정하기 위하여, 명시적으로 `접근 레벨로(private extension)` 수정하여 확장을 표현할수 있습니다. 새 기본값은 개별 타입 멤버에 대해 확장에서 오버라이드 할 수 있습니다.
+또는, 확장에서 정의된 모든 멤버에 대해 새로운 기본 접근 레벨을 설정하기 위해 명시적인 접근 레벨 수식어(예를들어 `private extension`)로 확장을 표시할 수 있습니다. 새로운 기본값은 각각 타입 멤버에 대해 확장에서 오버라이드(`overridden`) 할 수 있습니다.
 
----
+확장에서 프로토콜을 준수하도록 추가하는 경우에, 확장에 대한 명시적인 접근레벨(access-level) 수정자를 제공할 수 없습니다. 대신에, 확장에서 각 프로토콜 요구사항 구현에 대한 기본 접근레벨을 제공하기 위해서 프로토콜의 자체 접근 레벨이 사용됩니다.
 
-## Adding Protocol Conformance with an Extension
 
-프로토콜을 준수하도록 확장을 추가하면, 확장에 대한 명시적인 접근 레벨을 수정하는 것을 제공 할 수 없습니다. 대신, 프로토콜의 자체 접근 레벨은 각 프로토콜 요구사항을 구현에 대한 기본 접근 레벨을 제공하기 위해 사용됩니다.
+### Private Members in Extensions
+
+확장되는 클래스, 구조체, 열거형과 같은 파일에 있는 확장은, 확장하는 코드가 원래 타입의 선언으로 작성된 것처럼 동작합니다. 결과적으로, 다음을 할 수 있습니다.
+
+- 원래 선언에서 `private` 멤버를 선언하고, 같은 파일에 있는 확장에서 멤버를 접근할 수 있습니다.
+- 하나의 확장에서 `private` 멤버를 선언하고, 같은 파일에 있는 또다른 확장에서 멤버를 접근할 수 있습니다.
+- 확장에서 `private` 멤버를 선언하고, 같은 파일에 있는 원래 선언에 있는 멤버를 접근할 수 있습니다.
+
+
+이러한 동작은 타입에 `private` 요소들이 있는지 여부에 대한 코드를 구성하는 것과 같은 방법으로 확장을 사용할 수 있는 것을 의미합니다. 예를들어, 다음과 같이 간단한 프로토톨을 사용합니다.
+
+```swift
+protocol SomeProtocol {
+    func doSomething()
+}
+```
+
+다음과 같이 프로토콜 적합성(conformance)을 추가하기 위해, 확장을 사용할 수 있습니다.
+
+
+```swift
+struct SomeStruct {
+    private var privateVariable = 12
+}
+
+extension SomeStruct: SomeProtocol {
+    func doSomething() {
+        print(privateVariable)
+    }
+}
+```
+
+
 
 ---
 

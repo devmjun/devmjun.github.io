@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 19"
+title:      "Swift. 정리하기 19: Swift Language Guide-Extensions"
 subtitle:   "Swift Language Guide-Extensions *"
 date:       2018-04-13 17:35:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10. 1
 
 ## Reference  
 
@@ -61,8 +63,6 @@ extension SomeType: SomeProtocol, AnotherProtocol {
 
 > Note: 기존 타입에 새로운 기능을 추가하는 확장을 정의하면, 새로운 기능은 해당 타입의 모든 인스턴스에서 사용 할 수 있습니다. `심지어는 확장을 정의하기 전에 만든 인스턴스에서도 사용 할 수 있습니다`
 
-> 개인 Note: 확장을 정의하기전에 만든 인스턴스에서 사용가능하다는건 Run-Time에서 컴파일되서 실행한다는 의미로 이해됩니다!
-
 ---
 
 ## Computed Properties
@@ -87,9 +87,9 @@ print("Three feet is \(threeFeet) meters")
 
 이러한 계산 프로퍼티는 `Double`값을 길이의 특정 단위를 표현할 것입니다. 비록 그것들은 계산 프로퍼티로 구현되지만, 거리를 변환하기 위해 원래 값을 사용하는 것처럼, 이러한 프로퍼티의 이름을 .구문을 사용해서 부동소수점 원래 값에 붙입니다.
 
-이 예제에서, 1.0의 Double값은 1미터로 간주합니다. 이것이 m 계산 프로퍼티가 self를 반환하는 이유입니다 -1.m표현은 1.0의 Double값을 계산하는 것으로 간주합니다.
+이 예제에서, `1.0`의 `Double`값은 1미터로 간주합니다. 이것이 m 계산 프로퍼티가 `self`를 반환하는 이유입니다 `-1.m`표현은 `1.0`의 `Double`값을 계산하는 것으로 간주합니다.
 
-다른 단위는 미터로 측정한 값으로 표현하기 위해 변환이 조금 필요합니다. 1 킬로미터는 1,000 미터이며, km 게산 프로퍼티는 미터로 변환하기 위해 1_000.00으로 곱합니다. 비슷하게 1 미터는 3.28085 피트(feet)이며, ft 계산 프로퍼티는 피트를 미터로 변환하기 위해, 3.28084의 Double값으로 나눕니다.
+다른 단위는 미터로 측정한 값으로 표현하기 위해 변환이 조금 필요합니다. `1` 킬로미터는 `1,000` 미터이며, `km` 게산 프로퍼티는 미터로 변환하기 위해 1_000.00으로 곱합니다. 비슷하게 1 미터는 3.28085 피트(feet)이며, ft 계산 프로퍼티는 피트를 미터로 변환하기 위해, 3.28084의 Double값으로 나눕니다.
 
 이러한 프로퍼티들은 읽기전용 계산 프로퍼터이고, `get`키워드 없이 짧게 표현됩니다. 반환값은 Double타입이고, `Double`이 허용되는 곳에서 수학적인 계산으로 사용 할 수 있습니다.
 
@@ -187,7 +187,9 @@ extension Int {
 // Hello!
 ```
 
-## - Mutating Instance Methods
+---
+
+## Mutating Instance Methods
 
 확장으로 추가된 인스턴스 메소드는 인스턴스 스스로 수정(`modify or mutate`) 할 수 있습니다. 구조체와 열거형 메소드는 self나 프로퍼티를 수정하려면 인스턴스 메소드에 반드시 mutating 표시를 해줘야하며, 원래 구현으로부터 메소드를 변경(mutating)하는 것과 같습니다.
 

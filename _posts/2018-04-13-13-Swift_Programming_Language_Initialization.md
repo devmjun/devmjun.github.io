@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 13"
+title:      "Swift. 정리하기 13: Swift Language Guide-Initialization"
 subtitle:   "Swift Language Guide-Initialization *"
 date:       2018-04-13 11:35:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1 
 
 ## Reference 
 
@@ -25,13 +27,13 @@ tags: [Swift]
 
 특정 타입의 새로운 인스턴스를 만들기 위해 호출된 특별한 메소드와 같이 초기화(initializers)를 정의해서 초기화 과정을 구현합니다. Objective-C 초기화와 다르게, Swift초기화는 `값을 반환하지 않습니다`. 이러한 중요한 규칙은 타입의 새로운 인스턴스를 처음 사용하기전에 확실히 초기화 되도록 하는 것입니다.
 
-클래스 타입의 인스턴스는 클래스의 인스턴스가 메모리에서 해제되기 전에 사용자가 지정한 정리(cleanup)를 하는 해제(deinitializer)를 구현 할 수 있습니다.
+클래스 타입의 인스턴스는 클래스의 인스턴스가 메모리에서 해제되기 전에 사용자가 지정한 정리(cleanup)를 하는 [해제(deinitializer)](https://docs.swift.org/swift-book/LanguageGuide/Deinitialization.html)를 구현 할 수 있습니다.
 
 ---
 
 ## Setting Initial Values for Stored Properties
 
-클래스와 구조체는 반드시(must) 클래스나 구조체의 인스턴스가 생성될때 모든 저장 프로퍼티에 적절한 초기값을 설정해야 합니다. 저장 프로퍼티는 불확실한 상태로 남아있을수 없습니다.
+클래스와 구조체는 `반드시(must)` 클래스나 구조체의 인스턴스가 생성될때 모든 저장 프로퍼티에 적절한 초기값을 설정해야 합니다. 저장 프로퍼티는 불확실한 상태로 남아있을수 없습니다.
 
 초기화에서 저장 프로퍼티에 대한 초기값 설정을 할 수 있거나 프로퍼티 정의 일부로 기본 프로퍼티 값을 할당 할 수 있습니다. 이러한 동작은 다음 섹션(sections)에서 설명됩니다.
 
@@ -39,9 +41,9 @@ tags: [Swift]
 
 ---
 
-## Initializaers(초기화)
+## Initializaers
 
-초기화(Initializers)는 특정 타입의 새로운 인스턴스를 만들때 호출됩니다. 이것은 매우 간단한 형식이며, 초기화는 매개변수 없는 인스턴스 메소드와 같으며, `init`키워드를 사용하여 작성합니다.
+`초기화(Initializers)`는 특정 타입의 새로운 인스턴스를 만들때 호출됩니다. 이것은 매우 간단한 형식이며, 초기화는 매개변수 없는 인스턴스 메소드와 같으며, `init`키워드를 사용하여 작성합니다.
 
 
 ```swift
@@ -49,6 +51,9 @@ init() {
     // perform some initialization here
 }
 ```
+
+아래 예제는 화씨(Fahrenheit) 단위로 표시되는 온도를 저장하는 새로운 구조체 Fahrenheit를 정의합니다. Fahrenheit 구조체는 Double타입인, 저장 프로퍼티 temperature 하나를 가지고 있습니다.
+
 
 ```swift
 struct Fahrenheit {
@@ -66,7 +71,7 @@ print("The default temperature is \(f.temperature)° Fahrenheit")
 
 ## Default Property Values
 
-위에서 본것처럼, 초기화에서 저장 프로퍼티의 초기 값을 설정 할 수 있습니다. 아니면, 프로퍼티의 선언에서 `프로퍼티 기본 값(default property value)`을 지정 할 수 있습니다. 프로퍼티를 정의 할때 초기값 할당하여 프로퍼티 기본 값을 지정합니다.
+위에서 본것처럼, 초기화에서 저장 프로퍼티의 초기 값을 설정 할 수 있습니다. 아니면, 프로퍼티의 선언에서 `프로퍼티 기본 값(default property value)`을 지정 할 수 있습니다. 프로퍼티를 정의 할때 초기값을 할당하여 프로퍼티 기본 값을 지정합니다.
 
 > Note: 프로퍼티가 항상 같은 초기값을 가진다면, 초기화에서 설정하는 것보다 기본 값을 제공하는게 좋습니다. 결과는 같지만, 기본 값을 주는 것은 프로퍼티의 초기화 선언에 더 가깝습니다. 기본 값으로부터 프로퍼티의 타입 추론을 가능하게 하고, 초기화를 짧고 명확하게 만듭니다. 기본 값은 또한 기본 초기화와 초기화 상속의 쉽게 활용 할 수 있게 만들며, 이번 챕터(chapter) 뒤에 설명됩니다.
 
@@ -80,7 +85,7 @@ struct Fahrenheit {
 
 ---
 
-## cCustomizing Initialization
+## Customizing Initialization
 
 입력 매개변수와 옵셔널 프로퍼티 타입으로 초기화 과정을 사용자정의 하거나 상수 프로퍼티를 초기화 하는중에 할당 할 수 있으며, 다음 섹션(sections)에 설명됩니다.
 
@@ -89,9 +94,9 @@ struct Fahrenheit {
 
 ## Initialization Parameters
 
-사용자정의 초기화 과정에서 값의 타입과 이름 정의하기 위해 초기화 정의의 일부로 초기화 매개변수(initialization parameters)를 제공 할 수 있습니다. 초기화 매개변수는 함수와 메소드 매개변수와 같은 기능과 문법을 가지고 있습니다.
+사용자정의 초기화 과정에서 값의 타입과 이름 정의하기 위해 초기화 정의의 일부로 초기화 매개변수(`initialization parameters`)를 제공 할 수 있습니다. 초기화 매개변수는 함수와 메소드 매개변수와 같은 기능과 문법을 가지고 있습니다.
 
-다음은 섭씨 단위로 표시된 온도를 저장하는 Celsius구조체를 정의하는 예제입니다. Celsius구조체는 다른 온도계의 값으로 새로운 인스턴스를 초기화하는 두가지 사용자정의 초기화 init(fromFahrenheit:)와 init(fromKelvin:)를 구현합니다.
+다음은 섭씨 단위로 표시된 온도를 저장하는 `Celsius`구조체를 정의하는 예제입니다. `Celsius`구조체는 다른 온도계의 값으로 새로운 인스턴스를 초기화하는 두가지 사용자정의 초기화 `init(fromFahrenheit:)`와 `init(fromKelvin:)`를 구현합니다.
 
 ```swift
 struct Celsius {
@@ -116,6 +121,14 @@ let freezingPointOfWater = Celsius(fromKelvin: 273.15)
 
 ## Initializer Parameters Without Argument Labels
 
+함수와 메소드 매개변수 처럼, 초기화 매개변수도 초기화 본문에서 사용하는 매개변수 이름과 초기화를 호출할때 사용하는 인자 라벨 모두 가질수 있습니다.
+
+하지만, 초기화는 함수와 메소드와 같은 방식으로 괄호(`parentheses ()`) 앞에 식별가능한 함수 이름을 가지지 못합니다. 따라서, 초기화의 매개변수의 이름과 타입은 호출되는 초기화를 식별하는데 중요한 역할을 합니다. 이 때문에, Swift는 여러분이 초기화에서 제공하지 않으면, 모든(every) 매개변수에 대해 자동(automatic) 인자 라벨을 제공합니다.
+
+다음 예제는 3개의 상수 프로퍼티 red, green, blue를 가진 구조체 Color를 정의합니다. 이러한 프로퍼티들은 빨강, 초록, 파랑 색상의 값을 나타내기 위해 0.0에서 1.0사이의 값을 저장합니다.
+
+Color은 빨강, 초록, 파랑 요소들에 대해 Double 타입의 매개변수와 어울리는 3개의 이름을 초기화에서 제공합니다. Color는 3개의 색상 요소에 대해 동일한 값을 제공하기 위해 사용되는 하나의 white매개변수로 된 두번째 초기화를 제공합니다.
+
 
 ```swift
 struct Celsius {
@@ -133,6 +146,121 @@ struct Celsius {
 let bodyTemperature = Celsius(37.0)
 // bodyTemperature.temperatureInCelsius is 37.0
 ```
+
+두개의 초기화 모두 각 초기화 매개변수에 대해 이름 지어진 값으로 새로운 Color 인스턴스를 만드는데 사용할 수 있습니다.
+
+```swift
+let magenta = Color(red: 1.0, green: 0.0, blue: 1.0)
+let halfGray = Color(white: 0.5)
+```
+
+인자 라벨(argument labels)을 사용하지 않고서는 이러한 초기화를 호출하는 것이 불가능하다는 것을 주의합니다. 인자 라벨이 정의되어 있다면 초기화에서 반드시 사용되어야 하고, 생략하게 되면 컴파일 오류가 됩니다
+
+```swift
+let veryGreen = Color(0.0, 1.0, 0.0)
+// this reports a compile-time error - argument labels are required
+```
+
+---
+
+## Initializer Parameters Without Argument Labels
+
+초기화 매개변수에 대해 인자 라벨을 사용하는 것을 원치 않는 경우에는, 기본 동작을 오버라이드(override)하기 위한 매개변수에 대한 명시적인 인자 라벨 대신에 밑줄(underscore `_`)을 작성합니다.
+
+다음은 위의 [초기화 매개변수(Initialization Parameters)](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html#ID208)의 `Celsisus` 예제의 확장된 버젼이며, 기존 섭씨 온도인 Double 값으로부터 새로운 `Celsius` 인스턴스를 만들기 위한 초기화를 추가하였습니다.
+
+```swift
+struct Celsius {
+    var temperatureInCelsius: Double
+    init(fromFahrenheit fahrenheit: Double) {
+        temperatureInCelsius = (fahrenheit - 32.0) / 1.8
+    }
+    init(fromKelvin kelvin: Double) {
+        temperatureInCelsius = kelvin - 273.15
+    }
+    init(_ celsius: Double) {
+        temperatureInCelsius = celsius
+    }
+}
+let bodyTemperature = Celsius(37.0)
+// bodyTemperature.temperatureInCelsius is 37.0
+```
+
+`Celsius(37.0)` 초기화 호출은 인자 라벨 없이도 의도가 명확합니다. 따라서 이름 없는 `Double` 값을 제공해서 호출되도록 할수 있도록 `init(_ celsius: Double)` 초기화를 작성하는 것이 적절합니다(`appropriate`).
+
+---
+
+## Optional Property Types
+
+사용자정의 타입의 저장 프로퍼티가 논리적으로 값 없음(no-value)을 허용하는 경우, 프로퍼티를 옵셔널(optional) 타입으로 선언합니다. - 아마도 초기화하는동안 값을 설정할수 없거나, 나중에 값 없음(no value)을 허용해야 하기 때문일 것입니다. 옵셔널 타입의 프로퍼티는 자동으로 `nil` 값으로 초기화되며, 프로퍼티가 초기화하는 동안에 의도적으로 아직 값이 없음(no value yet)을 의미합니다.
+
+다음 예제는 옵셔널 `String` 프로퍼티 `response`를 가진 클래스 `SurveyQuestion`정의합니다.
+
+```swift
+class SurveyQuestion {
+    var text: String
+    var response: String?
+    init(text: String) {
+        self.text = text
+    }
+    func ask() {
+        print(text)
+    }
+}
+let cheeseQuestion = SurveyQuestion(text: "Do you like cheese?")
+cheeseQuestion.ask()
+// Prints "Do you like cheese?"
+cheeseQuestion.response = "Yes, I do like cheese."
+```
+
+설문 조사(`survey question`) 답변은 질문하기 전까지 알수가 없기에, `response` 프로퍼티는 `String?` 또는 "옵셔널 String"으로 선언됩니다. `SurveyQuestion`의 새로운 인스턴스가 초기화될때, 자동적으로 nil 기본 값이 할당되며, 아직 문자열 값 없음(no string yet)을 의미합니다.
+
+---
+
+## Assigning Constant Properties During Initialization
+
+초기화가 완료될때까지 명확한(definite) 값으로 설정하는 한, 초기화하는 어느 시점에 상수 프로퍼티에 값을 할당할 수 있습니다. 상수 프로퍼티에 값이 한번 할당되면, 나중에 수정할 수 없습니다.
+
+> 클래스 인스턴스에 대해, 클래스에서 상수 프로퍼티는 초기화 하는 동안에만 수정될 수 있습니다.
+
+
+`SurveyQuestion`의 인스턴스가 한번 생성되면 질문(question)을 바꿀수 없다는 것을 가리키기 위해, 질문(question)의 `text`프로퍼티에 대해 변수 프로퍼티 보다는 상수 프로퍼티를 사용하여 위의 `SurveyQuestion`예제를 개선(`revise`)할 수 있습니다. `text`프로퍼티는 상수로도 충분하며, 클래스의 초기화에서 여전히 설정할 수 있습니다.
+
+```swift
+class SurveyQuestion {
+    let text: String
+    var response: String?
+    init(text: String) {
+        self.text = text
+    }
+    func ask() {
+        print(text)
+    }
+}
+let beetsQuestion = SurveyQuestion(text: "How about beets?")
+beetsQuestion.ask()
+// Prints "How about beets?"
+beetsQuestion.response = "I also like beets. (But not with cheese.)"
+```
+
+---
+
+## Default Initializers
+
+`Swift`는 모든 구조체나 클래스에 대해 모든 프로퍼티에게 기본 값을 제공하고 초기화를 하나도 제공하지 않아도 기본 초기화(`default Initializer`)을 제공합니다.. 기본 초기화(`default initializer`)는 모든 프로퍼티에 기본 값을 설정해서 새로운 인스턴스를 간단하게 생성합니다.
+
+이 예제는 쇼핑 목록에서의 항목 이름, 수량, 구매상태를 캡슐화한 클래스 `ShoppingListItem`를 정의합니다.
+
+```swift
+class ShoppingListItem {
+    var name: String?
+    var quantity = 1
+    var purchased = false
+}
+var item = ShoppingListItem()
+```
+
+`ShoppingListItem`클래스의 모든 프로퍼티는 기본 값을 가지고 있고, 상위클래스가 없는 기본 클래스 이기 때문에, `ShoppingListItem`은 자동적으로 모든 프로퍼티를 기본 값으로 설정해서 새로운 인스턴스를 생성하는 기본 초기화 구현을 가집니다(`gains`). (`name` 프로퍼티는 옵셔널 `String`이고, 코드에서 작성하지 않아도, 자동으로 기본 값 `nil`이 됩니다) 위 예제는 `ShoppingListItem`클래스에 대해 초기화 문법으로 클래스의 새로운 인스턴스를 생성하기 위해 기본 초기화를 사용하며, `ShoppingListItem()`으로 작성하고, `item` 변수에 새로운 인스턴스를 할당합니다.
 
 ---
 
@@ -167,7 +295,7 @@ let twoByTwo = Size(width: 2.0, height: 2.0)
 
 > 사용자정의 값 타입을 기본 초기화, 멤버초기화, 사용자정의 초기화로 초기화가능하게 하려면, 값 타입의 원래 구현의 일부를 사용하는 것보다 `확장(extension)`에서 사용자정의 초기화를 작성하는것이 좋습니다. 더 자세한 정보는 [확장(Extensions)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)을 보세요.
 
-다음 예제는 사각형 도형을 표현하는 사용자정의 구조체 Rect를 정의합니다. 예제는 Size와 Point 구조체 두개가 필요하며, 둘다 모든 프로퍼티에 대해 기본 값 0.0을 제공합니다.
+다음 예제는 사각형 도형을 표현하는 사용자정의 구조체 Rect를 정의합니다. 예제는 `Size`와 `Point` 구조체 두개가 필요하며, 둘다 모든 프로퍼티에 대해 기본 값 `0.0`을 제공합니다.
 
 ```swift
 struct Size {
@@ -197,7 +325,7 @@ struct Rect {
 }
 ```
 
-Rect의 첫번째 초기화 init()는 그 구조체가 사용자정의 초기화를 가지지 않는 경우에 기본 초기화와 기능이 같습니다. 이 초기화는 비어있는 본문을 가지며, 중괄호(curly braces) {} 쌍으로 표현됩니다. 이 초기화 호출은 origin과 size프로퍼티가 둘다 프로퍼티에 정의된 Point(x: 0.0, y: 0.0)과 Size(width: 0.0, height: 0.0) 기본값으로 초기화된 Rect인스턴스를 반환합니다.
+`Rect`의 첫번째 초기화 `init()`는 그 구조체가 사용자정의 초기화를 가지지 않는 경우에 기본 초기화와 기능이 같습니다. 이 초기화는 비어있는 본문을 가지며, 중괄호(curly braces) `{}` 쌍으로 표현됩니다. 이 초기화 호출은 `origin`과 `size`프로퍼티가 둘다 프로퍼티에 정의된 `Point(x: 0.0, y: 0.0)`과 `Size(width: 0.0, height: 0.0)` 기본값으로 초기화된 `Rect`인스턴스를 반환합니다.
 
 ```swift
 let basicRect = Rect()
@@ -212,7 +340,7 @@ let originRect = Rect(origin: Point(x: 2.0, y: 2.0),
 // originRect's origin is (2.0, 2.0) and its size is (5.0, 5.0)
 ```
 
-Rect의 세번째 초기화 `init(center:size:)`는 약간 복잡합니다. center위치와 size 값을 기반으로 원점을 적절하게 계산하여 시작합니다. 그리고 나서 해당 프로퍼티에 새로운 원점과 크기 값을 저장하는 init(origin:size:)초기화를 호출(또는 위임)합니다.
+`Rect`의 세번째 초기화 `init(center:size:)`는 약간 복잡합니다. `center`위치와 `size` 값을 기반으로 원점을 적절하게 계산하여 시작합니다. 그리고 나서 해당 프로퍼티에 새로운 원점과 크기 값을 저장하는 `init(origin:size:)`초기화를 호출(또는 위임)합니다.
 
 ```swift
 let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
@@ -220,15 +348,23 @@ let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
 // centerRect's origin is (2.5, 2.5) and its size is (3.0, 3.0)
 ```
 
-init(center:size:)초기화는 프로퍼티에 어울리게 origin과 size의 새로운 값을 할당 할 수 있습니다. 하지만, 이미 정확한 기능을 제공하는 기본 초기화를 이용하는init(center:size:)초기화가 더 편리합니다.
+`init(center:size:)`초기화는 프로퍼티에 어울리게 `origin`과 `size`의 새로운 값을 할당 할 수 있습니다. 하지만, 이미 정확한 기능을 제공하는 기본 초기화를 이용하는`init(center:size:)`초기화가 더 편리합니다.
 
-> Note: 이 예제의 init()과 init(origin:size:)초기화를 정의하지 않고 작성하려면, [확장(Extensions)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)를 보세요.
+> Note: 이 예제의 `init()`과 `init(origin:size:)`초기화를 정의하지 않고 작성하려면, [확장(Extensions)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151)를 보세요.
+
+---
+
+## Class Inheritance and Initialization
+
+클래스의 모든 저장 프로퍼티(상위클래스로 부터 상속받은 클래의 모든 프로퍼티를 포함)는 초기화하는 동안 초기 값이 `반드시(must)` 할당되어야 합니다.
+
+Swift는 클래스 타입에 대해 모든 저장 프로퍼티가 초기 값을 가지도록 보장하는데 도움을 주는 2가지 종류의 초기화를 정의합니다. 이것들을 `지정된 초기화(designated initializer)`와 `편리한 초기화(convenience initializers)`라고 합니다.
 
 ---
 
 ## Designated Initializers and Convenience Initializers
 
-지정된 초기화(Designated initializers)는 클래스에 대해 최초(primary) 초기화입니다. 지정된 초기화(designated initializer)는 클래스에 도입된 모든 프로퍼티를 전부 초기화해주고 슈퍼클래스의 초기화 과정을 계속하기위해 적절한 슈퍼클래스 초기화를 호출해줍니다.
+`지정된 초기화(Designated initializers)`는 클래스에 대해 최초(primary) 초기화입니다. 지정된 초기화(designated initializer)는 클래스에 도입된 모든 프로퍼티를 전부 초기화해주고 슈퍼클래스의 초기화 과정을 계속하기위해 적절한 슈퍼클래스 초기화를 호출해줍니다.
 
 클래스는 몇개의 지정된 초기화를 가지는 경향(tend)이 있고, `클래스에 대해 하나만 가지는것이 매우 일반적입니다`. 지정된 초기화는 초기화가 일어나는 깔대기(funnel)지점이고, 슈퍼클래스와 연결되어 초기화를 계속 진행합니다.
 
@@ -265,14 +401,16 @@ convenience init(parameters) {
 
 지정된 초기화와 편리한 초기화간의 관계를 단순화 하기 위해, Swift는 초기화에서 위임을(delegatino) 호출하는 것에 대해 다음 3가지 규칙을 적용합니다.
 
-- 규칙 1
-	- 지정된 초기화는 반드시 바로위 슈퍼 클래스의 지정된 초기화를 호출해야 합니다.
-- 규칙 2 
-	- 편리한 초기화는 반드시 같은(same) 클래스의 다른 초기화를 호출 합니다.
-- 규칙3
-	- 편리한 초기화는 궁국적으로 반드시 지정된 초기화를 호출해야합니다.
+### 규칙 1
+지정된 초기화는 반드시 바로위 슈퍼 클래스의 지정된 초기화를 호출해야 합니다.
 
-기억하기 쉬운 방법
+### 규칙 2 
+편리한 초기화는 반드시 같은(same) 클래스의 다른 초기화를 호출 합니다.
+
+### 규칙3
+편리한 초기화는 궁극적(ultimately)으로 반드시 지정된 초기화를 호출해야합니다.
+
+### 기억하기 쉬운 방법
 
 - 지정된 초기화는 반드시 위쪽으로(up) 위임합니다. (슈퍼클래스 호출)
 - 편리한 초기화는 반드시 가로질러(across) 위임합니다. (다른 초기화 호출)
@@ -291,7 +429,9 @@ convenience init(parameters) {
 
 <center><img src="/img/posts/Swift_Programming_Language-10.png" width="700" height="700"></center>
 
-### - Two-Phase Initialization
+---
+
+## Two-Phase Initialization
 
 Swift에서 클래스 초기화는 2단계로 처리됩니다. 첫번째 단계에서, 각 저장 프로퍼티는 클래스 시작에서 초기값이 할당됩니다. 모든 저장 프로퍼티에 대한 초기화 상태가 한번 결정되면, 2단계가 시작하고, 각 클래스는 새로운 인스턴스를 사용할 준비되기 전에 저장 프로퍼티를 사용자정의 할 수 있는 기회가 주어집니다.
 
@@ -299,7 +439,7 @@ Swift에서 클래스 초기화는 2단계로 처리됩니다. 첫번째 단계�
 
 > Note: Swift의 2단계 초기화 과정은 Objective-C 에서의 초기화와 유사합니다. 주요 차이점은 1단계에서, Objective-C는 모든 프로퍼티를 `0` 또는 `nil` 값으로 할당합니다. Swift의 초기화 흐름은 사용자정의 초기값을 설정하는데 좀 더 유연하고, 0이나 nil이 유효한 기본값이 아닌 타입을 처리 할 수 있습니다.
 
-Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되도록 4개의 안전 검사를 수행합니다.
+Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되도록 4개의 안전 검사(safety-checks)를 수행합니다.
 
 **안전 검사 1** <br>
 지정된 초기화는 반드시 클래스가 초기화 되기 전에 슈퍼클래스 초기화를 위임해서 모든 프로퍼티가 초기화되는 것을 보장합니다
@@ -332,7 +472,9 @@ Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되�
 **2 단계**
 
 - 체인의 상단으로부터 다시 아래로 동작하며, 체인의 각 지정된 초기화는 인스턴스를 사용자정의 할 수 있는 옵션을 가집니다.
-- 마지막으로, 체인의 편리한 초기화는 인스턴스를 사용자 정의 할 수 있으며, self를 사용 할 수 있습니다.
+- 마지막으로, 체인의 편리한 초기화는 인스턴스를 사용자 정의 할 수 있으며, `self`를 사용 할 수 있습니다.
+
+
 여기 가상의 서브클래스와 슈퍼클래스에 대해 1단계 초기화를 호출하는 방법을 보여줍니다.
 
 <center><img src="/img/posts/Swift_Programming_Language-11.png" width="700" height="700"></center>
@@ -355,8 +497,9 @@ Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되�
 
 마지막으로, 서브클래스의 지정된 초기화가 완료되면, 원래 호출된 편리한 초기화는 추가적으로 사용자정의 할 수 있습니다.
 
-### - Initializer Inheritance and Overriding)
+---
 
+## Initializer Inheritance and Overriding
 
 Objective-C에서의 서브클래스와 다르게, Swift 서브클래스는 `기본적으로 슈퍼클래스 초기화를 상속받지 않습니다.` Swift의 접근 방식은 슈퍼클래스의 간단한 초기화가 좀 더 특별한 서브클래스에 의해 상속되고 완전하지 않거나 제대로 초기화되지 않은 서브클래스의 인스턴스를 만드는데 사용하는 상황을 막아줍니다.
 
@@ -366,13 +509,13 @@ Objective-C에서의 서브클래스와 다르게, Swift 서브클래스는 `기
 
 슈퍼클래스 지정된(designated) 초기화와 일치하는 서브클래스 초기화를 작성할때, 지정된 초기화의 `오버라이드(override)`를 효과적으로 제공하고 있습니다. 따라서, 서브클래스의 초기화 정의 앞에 `override` 수식어를 작성해야 합니다. 이것은 자동으로 제공되는 기본 `초기화를 오버라이딩(overrding)`하는 경우에도 마찬가지이며, `기본 초기화(Default Initializers)`에 설명되어 있습니다.
 
-오버라이드된 프로퍼티, 메소드나 서브스크립트 처럼, Swift는 슈퍼클래스가 지정된 초기화가 오버라이드 되었는지 확인하기 위해서 override 수식어가 있는지 확인하고, 오버라이딩한 초기화에 대한 매개변수가 의도한 대로 지정되었는지 확인합니다.
+오버라이드된 프로퍼티, 메소드나 서브스크립트 처럼, Swift는 슈퍼클래스가 지정된 초기화가 오버라이드 되었는지 확인하기 위해서 `override` 수식어가 있는지 확인하고, 오버라이딩한 초기화에 대한 매개변수가 의도한 대로 지정되었는지 확인합니다.
 
-> Note: 슈퍼클래스의 지정된 초기화를 오버라이딩 할때, 항상 override를 작성하며, 심지어는 서브클래스에서 편리한 초기화의 구현할때에도 사용합니다.
+> Note: 슈퍼클래스의 지정된 초기화를 오버라이딩 할때, 항상 `override`를 작성하며, 심지어는 서브클래스에서 편리한 초기화의 구현할때에도 사용합니다.
 
 반대로, 서브클래스 초기화를 슈퍼클래스의 편리한(convenience) 초기화와 일치하게 작성하면, 슈퍼클래스 편리한 초기화는 서브클래스에 의해 직접 호출 할 수 없으며, 위의 클래스 타입에 대한 [초기화 위임(Initializer Delegation for Class Types)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID219)에 설명된 규칙을 따릅니다. 따라서, (엄밀히 말하면) 서브클래스는 슈퍼클래스 초기화를 제공하지 않습니다. 결과적으로, 슈퍼클래스의 편리한 초기화와 일치하는 구현을 제공할때 `override` 수식어를 작성하지 않습니다.
 
-아래 예제는 Vehicle 기본 클래스를 정의합니다. 이 기본 클래스는 저장 프로퍼티 numberOfWheels를 Int타입의 기본값 0으로 선언합니다. numberOfWheels 프로퍼티는 탈것의 특성을 설명하는 String을 만들기 위한 계산된 프로퍼티 description에 의해 사용됩니다.
+아래 예제는 `Vehicle` 기본 클래스를 정의합니다. 이 기본 클래스는 저장 프로퍼티 `numberOfWheels`를 `Int`타입의 기본값 `0`으로 선언합니다. `numberOfWheels` 프로퍼티는 탈것의 특성을 설명하는 `String`을 만들기 위한 계산된 프로퍼티 `description`에 의해 사용됩니다.
 
 ```swift
 class Vehicle {
@@ -414,9 +557,11 @@ print("Bicycle: \(bicycle.description)")
 // Bicycle: 2 wheel(s)
 ```
 
-> Note: 주의 서브클래스는 초기화 하는 동안 상속된 변수 프로퍼티를 수정 할 수 있지만, 상속된 상수 프로퍼티는 수정 할 수 없다.
+> Note: 주의 서브클래스는 초기화 하는 동안 상속된 `변수` 프로퍼티를 수정 할 수 있지만, 상속된 `상수` 프로퍼티는 수정 할 수 없다.
 
-### - Automatic Initializer Inheritance
+---
+
+## Automatic Initializer Inheritance
 
 위에서 언급했던것 처럼, 서브클래스는 기본적으로 슈퍼클래스의 초기화를 상속하지 않습니다. 하지만, 특정조건을 충족하면 슈퍼클래스 초기화는 자동으로 상속됩니다. 실제로, 이것은 대부분의 경우에 초기화 `오버라이드(override)`를 작성할 필요가 없다는 의미이며, 자동으로 상속하는것이 안전한 경우, 최소한의 노력으로 슈퍼클래스 초기화를 상속 할 수 있습니다.
 
@@ -452,16 +597,19 @@ class Food {
 }
 ```
 
+아래 그림은 `Food` 클래스에 대한 초기화 체인(chain)을 보여줍니다
+
+
 <center><img src="/img/posts/Swift_Programming_Language-13.png" width="700" height="700"></center>
 
-클래스는 기본적으로 멤버(memberwise) 초기화를 하지 않고, `Food` 클래스는 하나의 인자값 name을 가진 지정된 초기화를 제공합니다. 이 초기화는 특정 이름으로 새로운 Food인스턴스를 생성하는데 사용 할 수 있습니다.
+클래스는 기본적으로 멤버(memberwise) 초기화를 하지 않고, `Food` 클래스는 하나의 인자값 `name`을 가진 지정된 초기화를 제공합니다. 이 초기화는 특정 이름으로 새로운 `Food`인스턴스를 생성하는데 사용 할 수 있습니다.
 
 ```swift
 let namedMeat = Food(name: "Bacon")
 // namedMeat's name is "Bacon"
 ```
 
-Food 클래스의 `init(name: String)` 초기화는 새 Food인스턴스의 모든 저장된 프로퍼티들이 전부 초기화되었기 때문에, 지정된(designated) 초기화로 제공됩니다. Food 클래스는 슈퍼클래스를 가지지 않고, `init(name: String)` 초기화는 초기화를 완료하기 위해 super.init() 를 호출할 필요가 없습니다.
+Food 클래스의 `init(name: String)` 초기화는 새 Food인스턴스의 모든 저장된 프로퍼티들이 전부 초기화되었기 때문에, 지정된(designated) 초기화로 제공됩니다. Food 클래스는 슈퍼클래스를 가지지 않고, `init(name: String)` 초기화는 초기화를 완료하기 위해 `super.init()` 를 호출할 필요가 없습니다.
 
 Food클래스는 또한 인자가 없는 편리한 초기화 `init()`를 제공합니다. init()초기화는 Food클래스의 `init(name: String)`에 위임하여 Food클래스의 init(name: String)에 name의 [Unnamed] 값으로 새로운 음식에 대한 기본 이름을 제공합니다.
 
@@ -485,7 +633,7 @@ class RecipeIngredient: Food {
 }
 ```
 
-아래 그림은 RecipeIngredient클래스에 대한 초기화 관계(chain)을 보여줍니다.
+아래 그림은 `RecipeIngredient`클래스에 대한 초기화 관계(chain)을 보여줍니다.
 
 <center><img src="/img/posts/Swift_Programming_Language-14.png" width="700" height="700"></center>
 
@@ -499,7 +647,7 @@ RecipeIngredient는 편리한 초기화로 init(name: String) 초기화를 제�
 
 예제에서, RecipeIngredient에 대한 슈퍼클래스는 하나의 편리한 초기화 init()를 가지는 Food입니다. 이 초기화는 RecipeIngredient에 의해 상속됩니다. 상속된 init() 함수 버전은 Food버전과 정확히 같은 방법이며, Food 버전보다는 init(name: Strig)의 RecipeIngredient버전에 위임한다는 것이 다릅니다.
 
-이러한 3개의 초기화 모두 새로운 RecipeIngredient인스턴스 생성하는데 사용 할 수 있습니다.
+이러한 3개의 초기화 모두 새로운 `RecipeIngredient`인스턴스 생성하는데 사용 할 수 있습니다.
 
 ```swift
 let oneMysteryItem = RecipeIngredient()
@@ -523,7 +671,6 @@ class ShoppingListItem: RecipeIngredient {
 ```
 
 > Note: 쇼핑 목록(여기서 모델링된것 처럼)은 항상 미구입(unpurchased)으로 시작하기 때문에, ShoppingListItem은 purchased에 대한 초기값에 대한 초기화를 정의하지 않습니다.
-
 
 모든 프로퍼티에 대한 기본값을 제공하고 어떠한 초기화 자체를 정의하지 않기 때문에, `ShoppingListItem`은 슈퍼클래스로부터 지정된 초기화와 편리한 초기화 모두 자동으로 상속받습니다.
 
@@ -597,7 +744,7 @@ struct Animal {
 }
 ```
 
-새로운 Animal인스턴스 초기화를 시도하고 초기화가 성공하는지에 확인하기 위해 실패 할 수 있는 초기화를 사용 할 수 있습니다.
+새로운 `Animal`인스턴스 초기화를 시도하고 초기화가 성공하는지에 확인하기 위해 실패 할 수 있는 초기화를 사용 할 수 있습니다.
 
 ```swift
 llet someCreature = Animal(species: "Giraffe")
@@ -609,7 +756,7 @@ if let giraffe = someCreature {
 // Prints "An animal was initialized with a species of Giraffe"
 ```
 
-실패 할 수 있는 초기화의 species 매개변수에 빈 문자열을 전달하면, 그 초기화는 실패합니다.
+실패 할 수 있는 초기화의 `species` 매개변수에 빈 문자열을 전달하면, 그 초기화는 실패합니다.
 
 ```swift
 let anonymousCreature = Animal(species: "")
@@ -621,7 +768,7 @@ if anonymousCreature == nil {
 // Prints "The anonymous creature could not be initialized"
 ```
 
-> Note: 빈 문자열 값("Giraffe"이 아닌 "")에 대한 확인은 옵셔널(optional) `String 값이 없음을 나타내기 위한 nil에 대해 확인하는 것과 같지 않습니다.` 위의 예제에서 빈 문자열("")은 유효하며, 옵셔널이 아닌 String입니다. 하지만, 동물에 대해 species프로퍼티의 값으로 비어있는 문자열을 가지는 것은 적절하지 않습니다. 이러한 제한사항을 모델링하여, 실패 할 수 있는 초기화는 빈 문자열이면 초기화가 실패합니다.
+> Note: 빈 문자열 값(`"Giraffe"`이 아닌 `""`)에 대한 확인은 옵셔널(optional) `String 값이 없음을 나타내기 위한 nil에 대해 확인하는 것과 같지 않습니다.` 위의 예제에서 빈 문자열("")은 유효하며, 옵셔널이 아닌 String입니다. 하지만, 동물에 대해 species프로퍼티의 값으로 비어있는 문자열을 가지는 것은 적절하지 않습니다. 이러한 제한사항을 모델링하여, 실패 할 수 있는 초기화는 빈 문자열이면 초기화가 실패합니다.
 
 ---
 
@@ -649,7 +796,7 @@ enum TemperatureUnit {
 }
 ```
 
-가능한 상태 3개에 대해 적절한 열거형 case를 선택하기 위해 실패 할 수 있는 초기화를 사용 할 수 있고, 매개변수가 이러한 상태들 중 하나와 일치하지 않으면 초기화는 실패합니다.
+가능한 상태 3개에 대해 적절한 열거형 `case`를 선택하기 위해 실패 할 수 있는 초기화를 사용 할 수 있고, 매개변수가 이러한 상태들 중 하나와 일치하지 않으면 초기화는 실패합니다.
 
 ```swift
 let fahrenheitUnit = TemperatureUnit(symbol: "F")
@@ -693,7 +840,7 @@ if unknownUnit == nil {
 
 ---
 
-## Propagation of Initialization Failure
+## 초기화 실패의 전달(Propagation of Initialization Failure)
 
 클래스, 구조체, 열거형의 실패 할 수 있는 초기화는 다른 클래스, 구조체, 열거형의 다른 실패 할 수 있는 초기화에 위임 할 수 있습니다. 비슷하게, 서브클래스의 실패 할 수 있는 초기화는 슈퍼클래스의 실패 할 수 있는 초기화로 위임 할 수 있습니다.
 
@@ -701,7 +848,7 @@ if unknownUnit == nil {
 
 > Note:실패 할 수 있는 초기화는 실패하지 않는 초기화에 위임 할 수 있습니다. 실패하지 않는 기존 초기화 과정에 실패할 가능성이 있는 상태를 추가해야 하는 경우에 이 방법을 사용합니다.
 
-아래 예제는 `Product`의 서브클래스 `CartItem`을 정의합니다. CartItem 클래스는 온라인 쇼핑카트에 있는 항목을 모델링한 것입니다. CartItem은 저장 상수 프로퍼티 quantity를 도입하고 프로퍼티는 항상 1의 이상의 값(최소 1)을 가지는 것을 보장합니다.
+아래 예제는 `Product`의 서브클래스 `CartItem`을 정의합니다. `CartItem` 클래스는 온라인 쇼핑카트에 있는 항목을 모델링한 것입니다. `CartItem`은 저장 상수 프로퍼티 `quantity`를 도입하고 프로퍼티는 항상 `1`의 이상의 값(최소 `1`)을 가지는 것을 보장합니다.
 
 ```swift
 class Product {
@@ -722,11 +869,12 @@ class CartItem: Product {
 }
 ```
 
-CartItem에 대한 실패 할 수 있는 초기화는 quantity값이 1이상을 가지는지 확인하는 것으로 시작합니다. quantity가 유효하지 않으면, 모든 초기화 과정은 즉시 실패하고 더 이상 초기화 코드가 실행되지 않습니다. 게다가, Product에 대한 실패 할 수 있는 초기화는 name값을 확인하고, name이 빈 문자열이면 초기화 과정은 즉시 실패합니다.
+`CartItem`에 대한 실패 할 수 있는 초기화는 `quantity`값이 `1`이상을 가지는지 확인하는 것으로 시작합니다. `quantity`가 유효하지 않으면, 모든 초기화 과정은 즉시 실패하고 더 이상 초기화 코드가 실행되지 않습니다. 게다가, `Product`에 대한 실패 할 수 있는 초기화는 `name`값을 확인하고, `name`이 빈 문자열이면 초기화 과정은 즉시 실패합니다.
 
-CartItem인스턴스를 비어있지 않는 이름과 1이상의 값으로 생성하면, 초기화는 성공합니다
+`CartItem`인스턴스를 비어있지 않는 이름과 `1`이상의 값으로 생성하면, 초기화는 성공합니다
 
-```swiftif let twoSocks = CartItem(name: "sock", quantity: 2) {
+```swift
+if let twoSocks = CartItem(name: "sock", quantity: 2) {
     print("Item: \(twoSocks.name), quantity: \(twoSocks.quantity)")
 }
 // Prints "Item: sock, quantity: 2"
@@ -800,7 +948,7 @@ class AutomaticallyNamedDocument: Document {
 }
 ```
 
-`AutomaticallyNamedDocument`는 슈퍼클래스의 실패하지 않는 init(name:) 초기화를 실패 할 수 있는 init?(name:)초기화로 오버라이드 합니다. AutomaticallyNamedDocument가 슈퍼클래스와 다른 방법으로 빈 문자열을 잘 처리하기 때문에, 초기화는 실패할 필요가 없고, 실패하지 않는 버젼의 초기화를 대신 제공합니다.
+`AutomaticallyNamedDocument`는 슈퍼클래스의 실패하지 않는 init(name:) 초기화를 실패 할 수 있는 init?(name:)초기화로 오버라이드 합니다. `AutomaticallyNamedDocument`가 슈퍼클래스와 다른 방법으로 빈 문자열을 잘 처리하기 때문에, 초기화는 실패할 필요가 없고, 실패하지 않는 버젼의 초기화를 대신 제공합니다.
 
 서브클래스의 실패하지 않는 초기화의 구현의 일부로, 슈퍼클래스로부터 실패 할 수 있는 초기화를 호출 하기 위해 초기화에서 강제 언래핑(forced unwrapping)을 사용 할 수 있습니다. 예를 들어, 아래의 `UntitledDocument` 하위클래스는 항상 `"[Untitled]"`이름을 가지고, 슈퍼클래스가 초기화 하는 동안 실패 할 수 있는 `init(named:)` 초기화를 사용합니다.
 
@@ -818,9 +966,9 @@ class UntitledDocument: Document {
 
 ## The init! Failable initializer
 
-일반적으로 init키워드 뒤에 물음표를 붙여(init?) 적절한 타입의 옵셔널 인스턴스를 만드는 실패 할 수 있는 초기화를 정의합니다. 그렇지 않으면, 적절한 타입의 암시적으로 언래핑된 옵셔널 인스턴스를 만드는 실패 할 수 있는 초기화를 정의 할 수 있습니다. 물음표(?) 대신에 init 키워드 뒤에 느낌표(!) 표시를 합니다.
+일반적으로 `init`키워드 뒤에 물음표를 붙여(`init?`) 적절한 타입의 옵셔널 인스턴스를 만드는 실패 할 수 있는 초기화를 정의합니다. 그렇지 않으면, 적절한 타입의 암시적으로 언래핑된 옵셔널 인스턴스를 만드는 실패 할 수 있는 초기화를 정의 할 수 있습니다. 물음표(`?`) 대신에 `init` 키워드 뒤에 느낌표(`!`) 표시를 합니다.
 
-init?를 init!로 위임할 수 있고 그 반대도 가능하고, init?를 init!로 오버라이드 할 수 있고 그 반대도 가능합니다. init에서 init!로 위임 할 수 있고, init!초기화가 실패하여 초기화가 실패하면 assetion이 발생 할 것입니다
+`init?`를 `init!`로 위임할 수 있고 그 반대도 가능하고, `init?`를 `init!`로 오버라이드 할 수 있고 그 반대도 가능합니다. `init`에서 `init!`로 위임 할 수 있고, `init!`초기화가 실패하여 초기화가 실패하면 `assetion`이 발생 할 것입니다
 
 ---
 
@@ -868,12 +1016,19 @@ class SomeClass {
 }
 ```
 
-클로저의 끝 중괄호(})뒤에 비어 있는 괄호(()) 한 쌍을 붙여주는 것을 주의합니다. 이는 Swift에서 `클로져가 즉시 실행한다`는 것을 말합니다. `괄호(())를 생략하면, 프로퍼티에 클로저를 할당하려 할것이고, 클로저의 반환 값이 아닙니다.`
+클로저의 끝 중괄호(`}`)뒤에 비어 있는 괄호(`()`) 한 쌍을 붙여주는 것을 주의합니다. 이는 Swift에서 `클로져가 즉시 실행한다`는 것을 말합니다. 괄호(`()`)를 생략하면, 프로퍼티에 클로저를 할당하려 할것이고, 클로저의 반환 값이 아닙니다.
 
 > Note: 프로퍼티 초기화를 위해 클로저를 사용한다면, 클로저가 실행되는 시점에 인스턴스의 나머지가 아직 초기화 되지 않았다는 것을 기억해야 합니다. 이는 클로저에서 비록 기본 값을 가지고 있더라도, 다른 모든 프로퍼티의 값에 접근 할 수 없다는 것을 의미합니다. 또한, `암시적으로 self 프로퍼티나 인스턴스의 어떤 메소드 호출도 사용 할 수 없습니다.`
 
+아래 예제는 체스 게임 보드를 모델링한 구조체 Chessboard를 정의합니다. 체스는 검정과 흰색의 사각형이 교차하는 8 x 8 보드에서 게임을 합니다.
+
+![](/img/posts/Swift-Language-Guide-Initialization-0.png)
+
+게임 보드를 표현하기 위해, `Chessboard` 구조체는 `64`개의 `Bool` 값 배열인 프로퍼티 `boardColors` 1개를 가지고 있습니다. 배열에서 `true` 값은 검정 사각형을 표현하고 값이 `false`는 흰색 사각형을 표현합니다. 배열에서 첫번째 항목은 보드의 좌측 상단 사각형이고 배열에서 마지막 항목은 보드에서 우측 아래쪽 사각형을 표현합니다.
+
+`boardColors` 배열은 색상 값을 설정하기 위해 클로져로 초기화 됩니다.
+
 ```swift
-// 1
 struct Chessboard {
     let boardColors: [Bool] = {
         var temporaryBoard = [Bool]()
@@ -891,8 +1046,12 @@ struct Chessboard {
         return boardColors[(row * 8) + column]
     }
 }
+```
 
-// 2
+새로운 Chessboard 인스턴스가 생성될때마다, 그 클로져는 실행되고, boardColors의 기본값은 계산되고 반환됩니다. 위 예제에서 클로져는 계산하고 설정합니다. 임시 배열 temporaryBoard에 보드에 있는 각 사각형에 대해 적절한 색상을 계산하고 설정하고, 일단 설정이 완료되면 클로져의 반환 값으로 임시 배열을 반환합니다. 반환된 배열 값은 boardColors에 저장되고 squareIsBlackAt(row:column:) 유틸리티 함수로 조회할 수 있습니다.
+
+
+```swift
 let board = Chessboard()
 print(board.squareIsBlackAt(row: 0, column: 1))
 // Prints "true"

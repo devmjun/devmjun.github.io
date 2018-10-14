@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 20"
+title:      "Swift. 정리하기 20: Swift Language Guide-Protocols"
 subtitle:   "Swift Language Guide-Protocols *"
 date:       2018-04-13 18:35:00
 author:     "MinJun"
@@ -9,10 +9,11 @@ comments: true
 tags: [Swift]
 ---
 
+최종 수정일: 2018.10.1
+
 ## Reference 
 
 까칠코더님 글을 그대로 가져왔습니다. 자료의 원 주소는 아래에 있습니다! 
-
 
 [Protocols](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)<br>
 [까칠코더님 블로그](http://kka7.tistory.com/127?category=919617)
@@ -244,7 +245,7 @@ class SomeClass: SomeProtocol {
 
 > Note: final 클래스는 서브클래스가 될 수 없기 때문에, final로 표시된 클래스에서 프로토콜 초기화 구현에 required 표시는 필요하지 않습니다. final에 대해 자세한 것은 [오버라이드 막기(Preventing Overrides)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID231)를 보세요.
 
-서브클래스가 슈퍼클래스의 지정된 초기화를 오버라이드 하면, 프로토콜의 초기화 요구사항과 일치하는 required와 override로 초기화 구현을 표시합니다.
+서브클래스가 슈퍼클래스의 지정된 초기화를 오버라이드 하면, 프로토콜의 초기화 요구사항과 일치하는 `required`와 `override`로 초기화 구현을 표시합니다.
 
 ```swift
 protocol SomeProtocol {
@@ -625,10 +626,11 @@ print(game.prettyTextualDescription)
 
 ## Class-Only Protocols 
 
-프로토콜의 상속 목록에 `class` 키워드를 추가하여, 프로토콜을 클래스 타입에만 적용하도록 제한 할 수 있습니다. `class`키워드는 항상 상속된 프로토콜 목록 앞에, 프로토콜 목록의 맨 처음에 나타나야 합니다.
+프로토콜의 상속 목록에 `AnyObject`프로토콜을 추가하여 클래스 타입(구조체나 열거형이 아님)에 프로토콜 채택을 제한할 수 있습니다.
+
 
 ```swift
-protocol SomeClassOnlyProtocol: class, SomeInheritedProtocol {
+protocol SomeClassOnlyProtocol: AnyObject, SomeInheritedProtocol {
     // class-only protocol definition goes here
 }
 ```
@@ -639,9 +641,9 @@ protocol SomeClassOnlyProtocol: class, SomeInheritedProtocol {
 
 ---
 
-## Protocol COmposition
+## Protocol Composition
 
-한번에 여러개의 프로토콜을 준수하도록 하는게 유용 할 수 있습니다. 여러개의 프로토콜을 프로토콜 합성(protocol composition)으로 하나의 요구사항으로 합성 할 수 있습니다. 프로토콜 합성은 `SomeProtocol & AnotherProtocol` 형식를 가집니다. 필요한 만큼 많은 프로토콜을 나열 할 수 있으며, &로 구분합니다.
+한번에 여러개의 프로토콜을 준수하도록 하는게 유용 할 수 있습니다. 여러개의 프로토콜을 `프로토콜 합성(protocol composition)`으로 하나의 요구사항으로 합성 할 수 있습니다. 프로토콜 합성은 `SomeProtocol & AnotherProtocol` 형식를 가집니다. 필요한 만큼 많은 프로토콜을 나열 할 수 있으며, `&`로 구분합니다.
 
 다음은 함수의 매개변수에 필요한 단일 프로토콜 합성으로 `Name`와 `Aged` 두개의 프로토콜을 결합한 예제입니다.
 
@@ -664,13 +666,43 @@ wishHappyBirthday(to: birthdayPerson)
 // Prints "Happy birthday, Malcolm, you're 21!"
 ```
 
-이 예제는 `gettable` String 프로퍼티인 name을 요구하는 Named 프로토콜을 정의하였습니다. 또한, gattable Int프로퍼티인 age를 요구하는 Aged 프로토콜을 정의하였습니다. 이러한 프로토콜 모두 Person 구조체에 적용됩니다.
+이 예제에서, `Named`프로토콜은 gettable `String`프로퍼티 name인 하나의 요구사항을 가집니다. Aged 프로토콜은 gettable Int프로퍼티 age에 대한 하나의 요구사항을 가집니다. 두 프로토콜은 구조체 Person에 의해 채택됩니다.
 
-또한, 이 예제는 `wishHappybirthday(to:)`함수를 정의하며, celebrator매개변수의 타입이 Name와 Aged 프로토콜을 준수하는 모든 타입을 의미하는 `Named & Aged`입니다. 요구된 프로토콜 모두를 준수하는 한, 함수에 특정 타입이 전달되는 것은 중요하지 않습니다.
+또한, 그 예제는 `wishHappyBirthday(to:)` 함수를 정의합니다. `celebrator` 매개변수의 타입은 모든 타입은 `Named`와 `Aged` 프로토콜을 준수합니다를 의미하는 `Named & Aged` 입니다. 필요한 프로토콜 모두를 준수하는 한, 특정 타입이 함수로 전달 되는 것은 중요하지 않습니다.
 
-그런다음 예제는 `birthdayPerson`이라는 새 Person인스턴스를 만들고 `wishHappyBirthday(to:)`함수에 새로운 인스턴스를 전달합니다. Person은 프로토콜을 모두 준수하기 때문에, 호출이 유효하고 `wishHappyBirthday(to:)`함수는 생일 축하 메시지 출력이 가능합니다.
+그런 다음 그 예제는 새로운 `Person`인스턴스 `birthdayPerson`을 생성하고 `withHappyBirthday(to:)` 함수에 새로운 인스턴스를 전달합니다. `Person`은 두개의 프로토콜을 모두 준수하기 때문에, 이 호출은 유효하고, `wishHappyBirthday(to:)` 함수는 생일축하를 출력할 수 있습니다.
 
-> Note: 프로토콜 합성은 새로 정의 하는게 아니며, 영구적인 프로토콜 타입입니다. 오히려, 합성에서 모든 프로토콜의 결합된 요구사항을 가진 임시 지역 프로토콜을 정의합니다.
+다음은 이전 예제의 `Location`클래스를 사용해서 `Named`프로토콜을 결합한 예제 입니다.
+
+```swift
+class Location {
+    var latitude: Double
+    var longitude: Double
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
+class City: Location, Named {
+    var name: String
+    init(name: String, latitude: Double, longitude: Double) {
+        self.name = name
+        super.init(latitude: latitude, longitude: longitude)
+    }
+}
+func beginConcert(in location: Location & Named) {
+    print("Hello, \(location.name)!")
+}
+
+let seattle = City(name: "Seattle", latitude: 47.6, longitude: -122.3)
+beginConcert(in: seattle)
+// Prints "Hello, Seattle!"
+```
+
+`beginConcert(in:)` 함수는 모든 타입은 `Location`의 하위클래스이고 `Named` 프로토콜을 준수합니다을 의미하는 `Location & Named` 타입의 매개변수를 가집니다. 이 경우에는, `City`는 모든 요구사항을 만족합니다.
+
+`Person`이 `Location`의 하위클래스가 아니기 때문에, `birthdayPerson`을 `beginConcert(in:)` 함수에 전달하는 것은 유효하지 않습니다. 마찬가지로, Named 프로토콜을 준수하지 않는 Location의 하위클래스를 만드는 경우에, 타입의 인스턴스로 beginConcert(in) 호출하는 것 또한 유효하지 않습니다.
+
 
 ---
 
@@ -682,14 +714,19 @@ wishHappyBirthday(to: birthdayPerson)
 - 다운캐스트(downcast) 연산자 `as?`버전은 프로토콜의 타입 값을 옵셔널 값으로 반환하고, 인스턴스가 프로토콜을 준수하지 않으면 `nil`이 됩니다.
 - 다운캐스트(`downcast`) 연산자 `as!`버전은 프로토콜의 타입으로 강제적으로 다운캐스트 하고 다운캐스트가 성공하지 않은 경우 실시간 오류가 발생합니다.
 
-예제는 gettable Double 프로퍼티 area 하나를 요구하는 프로토콜 HasArea를 정의합니다.
+예제는 gettable `Double` 프로퍼티 `area` 하나를 요구하는 프로토콜 HasArea를 정의합니다.
 
 ```swift
 protocol HasArea {
     var area: Double { get }
 }
 두 클래스 Circle와 Country 모두 HasArea프로토콜을 준수합니다.
+```
 
+2개의 클래스 Circle와 Country가 있으며, 둘다 HasArea프로토콜을 준수합니다.
+
+
+```swift
 class Circle: HasArea {
     let pi = 3.1415927
     var radius: Double

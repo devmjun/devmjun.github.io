@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 12"
+title:      "Swift. 정리하기 12: Swift Language Guide-Subscripts"
 subtitle:   "Swift Language Guide-Subscripts"
 date:       2018-04-13 09:35:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1
 
 ## Reference 
 

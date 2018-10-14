@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 22"
+title:      "Swift. 정리하기 22: Swift Language Guide-Automatic Reference Counting"
 subtitle:   "Swift Language Guide-Automatic Reference Counting * "
 date:       2018-04-14 11:00:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1
 
 ## Reference 
 
@@ -411,7 +413,7 @@ print("\(country.name)'s capital city is called \(country.capitalCity.name)")
 
 Swift는 이 문제에 대해 `클로저 캡쳐 목록(closure capture list)이`라는 멋진 해결책을 제공합니다. 하지만, 클로저 캡쳐 목록에서 강한 순환 참조를 깨는 법을 배우기 전에, 순환이 발생하는 이유를 이해하는 것이 유용합니다.
 
-아래 예제는 클로저에서 self참조를 사용할때, 강한 순환 참조를 만들 수 있는지 보여줍니다. 이 예제는 HTML 문서내의 각각 요소에 대한 간단한 모델링하는 HTMLElement 클래스를 정의 합니다.
+아래 예제는 클로저에서 `self`참조를 사용할때, 강한 순환 참조를 만들 수 있는지 보여줍니다. 이 예제는 HTML 문서내의 각각 요소에 대한 간단한 모델링하는 HTMLElement 클래스를 정의 합니다.
 
 ```swift
 class HTMLElement {
@@ -488,6 +490,15 @@ paragraph = nil
 ```
 
 `HTMLElement` 해제에서 `HTMLElement`인스턴스 메모리가 해제되었다는 것을 보여주는 메시지가 출력되지 않는 것을 기억하세요.
+
+---
+
+## Resolving Strong Reference Cycles for Closures
+
+클로져와 클래스 인스턴스간에 강한 순환 참조를 해결하기 위해 클로져 정의에서 캡쳐 목록(capture list)을 정의합니다. 캡쳐 목록은 클로져 본문에 하나 이상의 참조 타입을 캡쳐할때 사용하는 규칙을 정의합니다. 두 클래스 인스턴스 사이에 강한 순환 참조 처럼, 강한 참조보다는 `weak` 또는 `unowned` 참조로 캡쳐되도록 선언합니다. 코드의 다른 부분간의 관계에 따라 `weak`또는 `unowned`와 어울리는 것을 선택합니다.
+
+> Note: `Swift`는 클로져에서 `self`의 멤버를 참조할때마다 (그냥 `somePropery` 또는 `someMothod()`보다는) `self.someProperty` 또는 `self.someMethod()`를작성해야 합니다. 이것은 `self`를 캡쳐 가능하다는 것을 기억하는데 도움이 됩니다.
+
 
 ---
 

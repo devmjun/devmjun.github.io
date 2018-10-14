@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 11"
+title:      "Swift. 정리하기 11: Swift Language Guide-Methods"
 subtitle:   "Swift Language Guide-Methods"
 date:       2018-04-13 09:35:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1
 
 ## Reference 
 
@@ -26,14 +28,15 @@ tags: [Swift]
 
 --
 
-## The self Property 
+## Instance Methods
 
-타입의 인스턴스는 언제나 암시적으로 인스턴스 자신과 똑같은 self 프로퍼티를 가지고 있습니다. 자신의 인스턴스 메소드안에서 현재 인스턴스에 참조하기 위해 self프로퍼티를 사용합니다.
+인스턴스 메소드(instance methods)는 특정 클래스, 구조체, 열거형의 인스턴스에서 속해있는 함수 입니다. 해당 인스턴스 기능을 지원하며, 인스턴스 프로퍼티를 사용하고 수정하는 방법을 제공하거나 인스턴스의 목적과 관련된 함수를 제공합니다. 인스턴스 메소드는 함수와 정확히 같은 문법이며, [함수(Functions)](https://docs.swift.org/swift-book/LanguageGuide/Functions.html)에 설명되어 있습니다.
 
-위의 예제에서 increment()메소드는 다음처럼 작성 할수 있습니다.
+인스턴스 메소드는 타입의 열고 닫는 괄호(opening and closing braces `{ }`) 안쪽에 작성합니다. 인스턴스 메소드는 다른 모든 인스턴스 메소드와 타입의 프로퍼티를 암시적으로 접근할수 있습니다. 인스턴스 메소드는 타입이 속해있는 특정 인스턴스에서만 호출될수 있습니다. 기존 인스턴스 없이 따로(isolatiion) 호출될 수는 없습니다.
+
+다음은 동작할때마다 숫자를 세는데 사용할 수 있는 간단한 Counter 클래스를 정의한 예제입니다.
 
 ```swift
-// 1
 class Counter {
     var count = 0
     func increment() {
@@ -46,18 +49,51 @@ class Counter {
         count = 0
     }
 }
+```
 
-// 2
+`Counter` 클래스는 3개의 인스턴스 메소드를 정의하였습니다.
+
+- `increment()` 개수를 1만큼 증가 시킵니다.
+- `increment(by: Int)` 특정 정수 값만큼 개수를 증가 시킵니다.
+- `reset()` 개수를 0으로 재설정 합니다.
+
+
+또한, `Counter`클래스는 현재 개수 값을 유지하기 위해 변수 프로퍼티 `count`를 선언합니다.
+
+인스턴스 메소드를 프로퍼티 처럼 점 문법(dot syntax)로 호출합니다.
+
+```swift
+let counter = Counter()
+// the initial counter value is 0
+counter.increment()
+// the counter's value is now 1
+counter.increment(by: 5)
+// the counter's value is now 6
+counter.reset()
+// the counter's value is now 0
+```
+
+함수 매개변수는 이름(함수의 본문에서 사용)과 인자 라벨(함수를 호출할때 사용) 모두 가질수 있으며, [함수 인자 라벨과 매개변수 이름(Function Argument Labels and Parameter Names)](https://docs.swift.org/swift-book/LanguageGuide/Functions.html#ID166)에 설명되어 있습니다. 메소드는 타입과 관련된 함수이기 때문에, 메소드 매개변수도 마찬가지 입니다.
+
+---
+
+## The self Property 
+
+타입의 인스턴스는 언제나 암시적으로 인스턴스 자신과 똑같은 `self` 프로퍼티를 가지고 있습니다. 자신의 인스턴스 메소드안에서 현재 인스턴스에 참조하기 위해 `self`프로퍼티를 사용합니다.
+
+위의 예제에서 `increment()`메소드는 다음처럼 작성 할수 있습니다.
+
+```swift
 func increment() {
     self.count += 1
 }
 ```
 
-실제로, 코드에서 `self`를 자주 작성할 필요가 없습니다. 명시적으로 self를 작성 하지 않으면, Swift는 메소드 내에서 프로퍼티나 메소드 이름을 사용할때마다, 프로퍼티나 메소드가 현재 인스턴스를 참조한다고 가정합니다. 이 가정은 Counter의 인스턴스 메소드 안에서 count(self.count보다는)의 사용으로 증명되었습니다.
+실제로(In practice), 코드에서 `self`를 자주 작성할 필요가 없습니다. 명시적으로 `self`를 작성하지 않는 경우에, Swift는 메소드안에서 프로퍼티나 메소드 이름을 사용할때마다, 현재 인스턴스의 프로퍼티나 메소드에 참조한다고 가정합니다. 이러한 가정(assumption)은 `Counter`에 대한 3개의 인스턴스 메소드 안쪽에 (self.count 보다는)`count`로 사용하는 것으로 증명되었습니다(demonstrated).
 
-이 규칙은 인스턴스 메소드에 대한 매개변수 이름이 인스턴스의 프로퍼티 이름과 같을때만 예외로 합니다. 이러한 상황에서, 매개변수 이름이 우선순위를 가지고, 더 알맞는 방법으로 프로퍼티를 참조해야 합니다. 매개변수 이름과 프로퍼티 이름을 구별(distinguish)하기 위해 self프로퍼티를 사용합니다.
+이러한 규직은 인스턴스 메소드에 대한 매개변수 이름이 인스턴스의 프로퍼티와 같은 이름을 가질때 중요한 예외가 발생합니다. 이러한 상황에서, 매개변수 이름이 우선순위를 가지고, 더 적합한 방법으로 프로퍼티를 참조해야 합니다. 매개변수 이름과 프로퍼티 이름간에 구별(distinguish)하기 위해 `self` 프로퍼티를 사용합니다.
 
-여기에서 self는 메소드 매개변수 x와 인스턴스 프로퍼티 x간의 애매모호함(disambiguates)을 없애줍니다.
+여기에서, `self`는 메소드 매개변수 `x`와 인스턴스 프로퍼티 `x`간에 애매모호함을 없애줍니다(disambiguates).
 
 ```swift
 struct Point {
@@ -73,18 +109,18 @@ if somePoint.isToTheRightOf(x: 1.0) {
 // Prints "This point is to the right of the line where x == 1.0"
 ```
 
-`self` 접두사 없으면, Swift는 x둘다 메소드 매개변수 x를 참조하여 사용하는 것으로 가정할 것입니다.
+`self` 접두사 없으면, `Swift`는 x둘다 메소드 매개변수 x를 참조하여 사용하는 것으로 가정할 것입니다.
 
 
 ---
 
 ## Modifying Value Types from Within Instance Methods
 
-구조체와 열거형은 값 타입(value types)입니다. 기본적으로, 값 타입의 프로퍼티는 인스턴스 메소드 안에서 수정될 수 없습니다.
+구조체와 열거형은 `값 타입(value types)`입니다. 기본적으로, 값 타입의 프로퍼티는 인스턴스 메소드 안에서 수정될 수 없습니다.
 
-하지만, 특정 메소드에서 구조체나 열거형의 프로퍼티를 수정할 필요가 있다면, 메소드 동작에 대해 mutating을 선택해서 사용할 수 있습니다. 그런 다음에 메소드 내에서 해당 프로퍼티를 변경(mutate, change)할 수 있고, 메소드가 끝나면 원래 구조에 변경된 내용으로 다시 작성됩니다. 그 메소드는 암시적인 self프로퍼티에 완전히 새로운 인스턴스를 할당할 수 있고, 메소드가 끝나면 새로운 인스턴스로 기존 메소드를 교체합니다.
+하지만, 특정 메소드에서 구조체나 열거형의 프로퍼티를 수정할 필요가 있다면, 메소드 동작에 대해 `mutating`을 선택해서 사용할 수 있습니다. 그런 다음에 메소드 내에서 해당 프로퍼티를 변경(`mutate, change`)할 수 있고, 메소드가 끝나면 원래 구조에 변경된 내용으로 다시 작성됩니다. 그 메소드는 암시적인 self프로퍼티에 완전히 새로운 인스턴스를 할당할 수 있고, 메소드가 끝나면 새로운 인스턴스로 기존 메소드를 교체합니다.
 
-메소드에 대한 func키워드 앞에 mutating키워드를 위치시켜 사용할 수 있습니다.
+메소드에 대한 `func`키워드 앞에 `mutating`키워드를 위치시켜 사용할 수 있습니다.
 
 ```swift
 struct Point {
@@ -113,9 +149,9 @@ fixedPoint.moveBy(x: 2.0, y: 3.0)
 
 ---
 
-## Assigning to self Within a Mutating Method
+## Assigning to `self` Within a Mutating Method
 
-Mutating 메소드는 암시적인 `self`프로퍼티에 완전히 새로운 인스턴스를 할당할수 있습니다. 위에서 보여준 Point 예제는 다음과 같은 방법으로 작성 할 수 있습니다.
+`Mutating` 메소드는 암시적인 `self`프로퍼티에 완전히 새로운 인스턴스를 할당할수 있습니다. 위에서 보여준 Point 예제는 다음과 같은 방법으로 작성 할 수 있습니다.
 
 ```swift
 struct Point {
@@ -126,7 +162,7 @@ struct Point {
 }
 ```
 
-이 버전의 mutating moveBy(x:y:)메소드는 x와 y값을 대상(target) 위치로 설정하는 새로운 구조체를 생성합니다. 이번 버전의 메소드는 이전 버전과 똑같은 결과가 될것입니다.
+이 버전의 mutating `moveBy(x:y:)`메소드는 x와 y값을 대상(target) 위치로 설정하는 새로운 구조체를 생성합니다. 이번 버전의 메소드는 이전 버전과 똑같은 결과가 될것입니다.
 
 열거형에 대한 Mutating 메소드는 암시적으로 `self` 매개변수를 같은 열거형에서 다른 case가 되도록 설정할 수 있습니다.
 
@@ -153,7 +189,7 @@ ovenLight.next()
 // ovenLight is now equal to .off
 ```
 
-이 예제는 3가지 상태를 선택하는 열거형을 정의합니다. next()메소드가 호출될때마다 스위치는 3가지 다른 전원 상태(off, low, high)가 됩니다.
+이 예제는 3가지 상태를 선택하는 열거형을 정의합니다. next()메소드가 호출될때마다 스위치는 3가지 다른 전원 상태(`off, low, high`)가 됩니다.
 
 ---
 
@@ -161,7 +197,7 @@ ovenLight.next()
 
 인스턴스 메소드는, 위에서 설명된것처럼 특정 타입의 인스턴스에서 호출되는 메소드입니다. 타입 스스로 호출되는 메소드를 정의할 수 있습니다. 이러한 종류의 메소드를 타입 메소드(type methods)라고 합니다. 메소드의 `func`키워드 앞에 `static`키워드를 작성해서 타입 메소드를 나타냅니다. 클래스는 하위클래스가 상위클래스의 메소드 구현을 오버라이딩 하는 것을 허용하도록 `class`키워드를 사용할 것입니다
 
-> 주의: Objective-C에서는, 오직 Objective-C 클래스에 대한 타입 레벨(type-level) 메소드를 정의 할 수 있습니다. Swift에서는 모든 클래스, 구조체 열거형에 대한 타입 레벨 메소드를 정의 할 수 있습니다. 각 타입 메소드는 명시적으로 지원하는 타입의 범위를 가집니다
+> 주의: `Objective-C`에서는, 오직 Objective-C 클래스에 대한 타입 레벨(`type-level`) 메소드를 정의 할 수 있습니다. `Swift`에서는 모든 클래스, 구조체 열거형에 대한 타입 레벨 메소드를 정의 할 수 있습니다. 각 타입 메소드는 명시적으로 지원하는 타입의 범위를 가집니다
 
 타입 메소드는 인스턴스 메소드처럼 `점(dot .)` 문법으로 호출됩니다. 하지만, 타입의 인스턴스가 아닌 타입의 타입 메소드를 호출합니다. 다음은 `SomeClass` 클래스에서 타입 메소드를 호출하는 방법입니다.
 

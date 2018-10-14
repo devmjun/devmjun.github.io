@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 25"
+title:      "Swift. 정리하기 25: Language Guide-Advanced Operators"
 subtitle:   "Swift Language Guide-Advanced Operators"
 date:       2018-04-14 15:00:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1
 
 ## Reference 
 
@@ -27,6 +29,241 @@ C의 산술(arithmetic) 연산자와 다르게, Swift의 산술 연산자는 기
 구조체, 클래스, 열거형을 정의할때, 사용자정의 타입에 대해 표준 Swift 연산자의 구현을 제공하는 것이 유용할 수 있습니다. Swift는 이러한 연산자들의 맞춤형 구현을 제공하고 생성한 각 타입이 무엇을 해야 할지 정확하게 결정하는 것을 쉽게 합니다.
 
 미리 정의된 연산자에만 국한되지는 않습니다. Swift는 사용자정의 우선순위와 연관된 값과 함께 사용자정의 중위(infix), 전위(prefix), 후위(postfix), 할당 연산자를 정의하는 자유를 줍니다. 이러한 연산자들은 이전에 정의된 연산자들처럼, 코드에서 사용하고 적용할 수 있고, 사용자정의 연산자를 지원하기 위해 기존 타입을 확장할 수 있습니다.
+
+---
+
+## Bitwise Operators
+
+비트단위 연산자(Bitwise operators)는 데이터 구조에서 개별적인 원시 데이터 비트를 관리하는 것이 가능합니다. 이것들은 그래픽 프로그래밍과 디바이스 드라이버 생성과 같은, 로우 레벨(low-level) 프로그래밍에서 사용됩니다. 비트단위 연산자는 사용자정의 프로토콜을 통한 통신을 위해 데이터를 인코딩(encoding)하고 디코딩(decoding)하는 것처럼, 외부 소스의 원시 데이터로 작업할때 유용할 수 있습니다.
+
+아래 설명된 것처럼, Swift는 C에 있는 모든 비트단위 연산자를 지원합니다.
+
+---
+
+## Bitwise NOT Operator
+
+NOT 비트단위 연산자(bitwise NOT operator)(`~`)은 숫자에 있는 모든 비트들을 반전(inverts) 시킵니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-0.png)
+
+
+NOT 비트단위 연산자는 전위 연산자이고, 공백없이 연산하는 값 바로 앞에 나타납니다
+
+```swift
+let initialBits: UInt8 = 0b00001111
+let invertedBits = ~initialBits  // equals 11110000
+```
+
+`UInt8` 정수형은 `8`개의 비트를 가지고 `0`부터 `255`사이의 값을 저장할 수 있습니다. 이 예제는 `UInt8` 정수형을 처음 `4`개의 비트는 `0`으로, 두번째 `4`개의 비트에는 `1`로 설정하는 `2`진수(binary) 값 00001111으로 초기화 합니다. 이것은 10진수(decimal) 값 15와 같습니다.
+
+NOT 비트단위 연산자는 initialBits와 같지만, 모든 비트가 반전된 상수 invertedBits를 만드는데 사용됩니다. 0은 1이되고, 1은 0이 됩니다. invertedBits의 값은 부호없는 10진수(decimal) 값 240과 같은 11110000입니다.
+
+---
+
+## Bitwise AND Operator
+
+AND 비트단위 연산자(bitwise AND operator)(`&`) 는 두 숫자들의 비트를 결합합니다. 이것은 입력된 숫자 모두(both) 1인 경우에만 1로 설정하는 새로운 비트 값을 반환합니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-1.png
+)
+
+아래 예제에서, firstSixBits와 lastSixBits값 모두 중간에 있는 4개의 비트가 1입니다. AND 비트단위 연산자는 부호없는 10진수(decimal) 값 60과 같은 00111100 숫자를 만들기 위해 결합합니다.
+
+```swift
+let firstSixBits: UInt8 = 0b11111100 let lastSixBits: UInt8 = 0b00111111 let middleFourBits = firstSixBits & lastSixBits // equals 00111100
+```
+
+---
+
+## Bitwise OR Operator
+
+OR 비트 연산자(`|`)는 두 숫자의 비트들을 비교합니다. 이 연산자는 입력된 숫자들의 비트에서 하나라도 1인 경우에, 1을 설정하는 새로운 비트 값을 반환합니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-2.png)
+
+아래 예제에서, someBits와 moreBits의 값은 1로 설정된 다른 비트를 가집니다. OR 비트단위 연산자는 부호없는 10진수 254와 같은, 11111110을 만들기 위해 결합합니다.
+
+```swift
+let someBits: UInt8 = 0b10110010
+let moreBits: UInt8 = 0b01011110
+let combinedbits = someBits | moreBits  // equals 11111110
+```
+
+---
+
+## Bitwise XOR Operator
+
+XOR 비트단위 연산자(bitwise XOR operator) 또는 `"배타적인 OR 연산자(exclusive OR Operator)"` (`^`)는 두 숫자들의 비트를 비교합니다. 이 연산자는 입력된 비트들이 다르면 1을 설정하고 입력한 비트들이 같으면 0을 설정하는, 새로운 비트 값을 반환합니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-3.png)
+
+아래 예제에서, `firstBits`와 `otherBits`의 값은 서로 다른 비트에 `1`을 설정합니다. XOR 비트단위 연산자는 출력값에서 비트들 모두 1로 설정합니다. `firstBits`와 `otherBites`에 있는 모든 다른 비트들은 모두 일치하고 출력값에서 `0`으로 설정합니다.
+
+```swift
+let firstBits: UInt8 = 0b00010100
+let otherBits: UInt8 = 0b00000101
+let outputBits = firstBits ^ otherBits  // equals 00010001
+```
+
+---
+
+## Bitwise Left and Right Shift Operators
+
+비트단위 왼쪽 시프트 연산자(Bitwise left shift operators)(`<<`)와 비트단위 오른쪽 시프트 연산자(Bitwise right shift operators)(`>>`)는 숫자에 있는 모든 비트를 특정 숫자만큼, 왼쪽이나 오른쪽으로 이동시키며, 아래 정의된 규칙을 따릅니다.
+
+비트단위 왼쪽과 오른쪽 시프트(Bitwise left and right shifts)는 정수를 곱하거(multiplying)나 나누는(dividing) 효과를 가지고 있습니다. 정수의 비트를 왼쪽으로 한칸씩 밀면(shiping) 값은 두배(doubles)가 되며, 오른쪽으로 한칸씩 밀면 값은 반절(halves)이 됩니다.
+
+---
+
+## Shifting Behavior for Unsigned Integers
+
+부호 없는 정수형에 대한 비트 시프트(bit-shifting) 동작은 아래와 같습니다.
+
+기존 비트들은 요청된 숫자만큼 왼쪽이나 오른쪽으로 이동됩니다.
+정수형의 범위를 넘어서 이동된 모든 비트들은 버려집니다.
+원본 비트들을 왼쪽이나 오른쪽이나 이동시킨 후에 비어 있는 곳에 0이 삽입됩니다.
+이러한 접근법을 논리적인 시프트(logical shift)이라고 합니다.
+
+아래 그림은 `11111111 <<` 1(`11111111`이 왼쪽으로 1씩 이동)와 `11111111 >>` 1(`11111111`이 오른쪽으로 1씩 이동) 결과를 보여줍니다. 파란색 숫자는 이동되며, 회색 숫자는 버려지고, 오랜지색은 0이 삽입됩니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-4.png)
+
+다음은 Swift코드로 비트 시프트(shifting)하는 것을 보여줍니다
+
+```swift
+let shiftBits: UInt8 = 4   // 00000100 in binary
+shiftBits << 1             // 00001000
+shiftBits << 2             // 00010000
+shiftBits << 5             // 10000000
+shiftBits << 6             // 00000000
+shiftBits >> 2             // 00000001
+```
+
+다른 데이터 타입으로 인코딩하고 디코딩하기 위해 비트 시프트를 사용할 수 있습니다.
+
+
+```swift
+let pink: UInt32 = 0xCC6699
+let redComponent = (pink & 0xFF0000) >> 16    // redComponent is 0xCC, or 204
+let greenComponent = (pink & 0x00FF00) >> 8   // greenComponent is 0x66, or 102
+let blueComponent = pink & 0x0000FF           // blueComponent is 0x99, or 153
+```
+
+이 예제는 분홍색 CSS(Cascading Style Sheets) 색상 값을 저장하기 위해 `UInt32` 상수 `pink`를 사용합니다. CSS 색상 값 `#CC6699`는 Swift1 6진수(hexadecimal) 숫자 `0xCC6699`로 표현됩니다. 이 색상은 AND 비트단위 연산자(`&`)와 비트단위 왼쪽 시프트 연산자(`>>`)를 사용해서 빨강(`CC`), 녹색(`66`), 파랑(`99`) 성분으로 분해됩니다.
+
+빨강 구성요소(component)는 `0xCC6699`와 `0xFF0000` 숫자들간에 AND 비트단위 연산을 수행해서 얻어집니다. `0xFF0000`에서 0은 두번재와 세번째 바이트들에 마스크(mask) 효과로 `6699`가 무시되고 결과적으로 `0xCC0000`이 남게됩니다.
+
+이 숫자는 오른쪽으로 16자리만큼 밀리게됩니다(shifted) (`>> 16`). 16진수 숫자에서 각 문자들은 8비트를 사용하며, 오른쪽으로 16만큼 이동하면 `0xCC0000`이 `0x0000CC`로 변경될 것입니다. 이것은 10진수 값 `204`을 가지는 `0xCC`와 같습니다.
+
+비슷하게, 녹색 구성요소는 `0xCC6699`와 `0x00FF00`숫자간에 `AND` 비트단위 연산을 수행해서 결과 값 `0x6600`이 얻어집니다. 그리고나서 이러한 출력 값은 오른쪽으로 8자리만큼 밀리게 되며(shifted), 10진수 값 `102`인 `0x66`의 값이 주어집니다.
+
+마지막으로, 파랑 구성요소는 `0xCC6699`와 `0x0000FF`숫자간에 `AND` 비트단위 연산을 수행해서 결과값 `0x000099`가 얻어집니다. `0x000099`는 이미 10진수 값 153인 `0x99`와 같으므로 오른쪽으로 밀(shift) 필요가 없습니다.
+
+
+---
+
+## Shifting Behavior for Signed Integers
+
+부호 있는 정수형은 2진수로 표현되는 방식 때문에,부호가 없는(unsigned) 정수형 보다 부호가 있는(signed) 정수형의 시프트(shifting) 동작은 더 복잡합니다. (아래 예제는, 간단하게 8비트로 된 부호있는 정수형이지만, 모든 크기의 부호 있는 정수형에 적용되는 원칙은 같습니다 )
+
+부호 있는 정수형은 첫번째 비트(부호비트(sign bit))를 이 정수형이 양수(positive)인지 음수(negative)인지 가리키기 위해 사용합니다. 부호 비트 `0`은 양수를 의미하고, 부호 비트 `1`은 음수를 의미합니다.
+
+남아있는 비트들(값 비트(value bits))에 실제 값을 저장합니다. 양수는 부호 없는 정수형과 같은 방법으로 저장되며, 0부터 게산합니다.
+
+다음은 숫자 `4`에 대한 `Int8` 비트 내부를 보여줍니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-5.png)
+
+부호 비트가 `0`(양수를 의미)이고, 7개의 값 비트는 숫자 `4`이며, 2진수 표기법으로 작성되었습니다.
+
+하지만 음수는, 다르게 저장됩니다. `2`의 `n`제곱승(power) 에서 절대값을 빼서 저장되며, n은 값 비트 개수입니다. 8비트 숫자는 7개의 값 비트를 가지며, `2`의 `7` 제곱승 또는 128을 의미합니다.
+
+다음은 숫자 `-4`에 대한 `Int8` 비트 내부를 보여줍니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-6.png)
+
+이번에는, 부호 비트가 `1`(음수를 의미)이고, 7개의 값 비트는 `124`의 2진 값을 가지고 있습니다 (128 - 4)
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-7.png)
+
+음수 숫자에 대한 인코딩은 `2의 보수(two’s complement)` 표현법이라고 합니다. 음수를 표현하는 것이 이상하게 보일수 있지만, 몇가지 장점이 잇습니다.
+
+첫번째로, `-4`에 `-1`을 더할 수 있으며, 단순하게 모든 8개의 비트들(부호 비트를 포함해서)의 표준 이진 덧셈을 수행하고, 계산이 완료되면 8비트에 맞지 않는 것들을 버립니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-8.png)
+
+두번째로, 2의 보수 표현법은 음수의 비트들을 왼쪽과 오른쪽으로 밀고(shift), 왼쪽으로 밀었을때 그 값이 여전히 두배가 되거나, 오른쪽으로 밀었을때에는(shift) 반절이 됩니다. 이를 위해서, 부호있는 정수를 오른쪽으로 밀때(shifted) 추가 규칙이 사용됩니다 : 부호있는 정수를 오른쪽으로 밀때(shift), 부호 없는 정수형과 같은 규칙이 적용되지만, 왼쪽에 비어있는 비트들을 0보다는 부호 비트(sign bit)로 채웁니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-9.png)
+
+이 동작은 부호 있는 정수형이 오른쪽으로 밀린(shifted)뒤에도 같은 부호를 가지도록 보장해 주고 산술 시프트(arithmetic shift)라고 합니다.
+
+양수와 음수가 저장되는 특별한 방법때문에, 그것들 중 하나를 오른쪽으로 밀어(shifting)서 이동하면 0에 가까워 집니다. 부호 비트를 유지하는 것은 미는중(shift)에도 값이 0에 가까워짐에 따라, 음수의 정수형이 음수로 남아있는 것을 의미합니다.
+
+---
+
+## Overflow Operators
+
+정수형 상수나 변수에 가질수 없는 값을 삽입하려고 하면, Swift는 기본적으로 유효하지 않는 값을 만드는 것을 허용하기 보다는 오류를 발생시킵니다. 이 동작은 너무 크거나 작은 숫자로 작업할때 추가적인 안정성을 제공합니다.
+
+예를 들어, Int16 정수형 타입은 -32768과 32767 사이의 모든 부호있는 정수를 가질수 있습니다.범위를 벗어난 숫자로 Int16 상수나 변수를 설정하려고 하면 오류가 발생합니다.
+
+```swift
+var potentialOverflow = Int16.max
+// potentialOverflow equals 32767, which is the maximum value an Int16 can hold
+potentialOverflow += 1
+// this causes an error
+```
+
+너무 크거나 너무 작은 값을 가질때 오류 처리를 제공하는 것은 경계값 조건에 대해 코딩할때 훨씬 더 융통성이 있습니다.
+
+하지만, 사용가능한 비트를 줄이기 위해 오버플로우 조건이 필요할때, 오류를 발생시키는 대신에 이 동작을 선택할 수 있습니다. Swift는 정수형 계산에 대한 오버플로우 동작을 선택하는 3가지 산술 오버플로우 연산자(overflow operators)를 제공합니다. 이러한 연산자들은 언제나. &으로 시작합니다.
+
+- 오버플로우 더하기 `(&+)`
+- 오버플로우 빼기 `(&-)`
+- 오버플로우 곱하기 `(&*)`
+
+---
+
+## Value Overflow
+
+숫자들은 음수와 양수 방향 모두에서 오버플로우할 수 있습니다.
+
+다음은 부호없는 정수형이 양수 방향으로 오버플로우가 허용됬을때 발생하는 예제이며, 오버플로우 더하기 연산자(&+)를 사용합니다.
+
+```swift
+var unsignedOverflow = UInt8.max
+// unsignedOverflow equals 255, which is the maximum value a UInt8 can hold
+unsignedOverflow = unsignedOverflow &+ 1
+// unsignedOverflow is now equal to 0
+```
+
+변수 `unsignedOverflow`는 `UInt8`이 가질수 있는 최대 값(`255` 또는 이진수 `11111111`)으로 초기화 됩니다. 그리고나서 오버플로우 더하기 연산자(`&+`)를 사용해서 1씩 증가시킵니다. 이것은 `UInt8`이 가질수 있는 크기 이상의 이진(`binary`) 표현을 밀어넣어(`pushes`), 아래 그림에서 보는 것처럼, 범위를 넘어서 오버플로우가 발생합니다. 오버플로우 더하기 하고 난 후에 `UInt8`범위의 남은 값은 이진수 `00000000` 또는 `0`입니다
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-10.png)
+
+부호 없는 정수형이 음수 방향으로 오버플로우가 허용될때에도 비슷합니다. 다음은 오버플로우 빼기 연산자(&-)를 사용한 예제 입니다.
+
+```swift
+var unsignedOverflow = UInt8.min
+// unsignedOverflow equals 0, which is the minimum value a UInt8 can hold
+unsignedOverflow = unsignedOverflow &- 1
+// unsignedOverflow is now equal to 255
+```
+
+`UInt8`이 가질수 있는 최소 값은 `0` 또는 이진수 `00000000`입니다. 오버플로우 빼기 연산자(`&-`)를 사용해서 `00000000`에서 1을 빼는 경우에, 숫자는 오버플로우 되고 `11111111` 또는 `10`진수 `255`가 될 것입니다.
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-11.png)
+
+또한, 오버플로우는 부호 있는 정수형에서도 발생합니다. [비트단위 왼쪽과 오른쪽 시프트 연산(Bitwise Left and Right Shift Operators)](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html#ID34)에서 설명된 것 처럼, 부호 있는 정수형에 대한 모든 더하기와 빼기는 더하거나 빼는 숫자와 부호비트를 포함해서 비트단위로 수행됩니다.
+
+```swift
+var signedOverflow = Int8.min // signedOverflow equals -128, which is the minimum value an Int8 can hold signedOverflow = signedOverflow &- 1 // signedOverflow is now equal to 127
+```
+
+![](/img/posts/SwiftProgrammingGuide_Advenced-12.png)
+
+부호가 있고 부호가 없는 정수형 모두, 양수 방향으로 오버플로우가 발생하면 정수의 유효한 최대 값에서 최소 값까지 래핑(wraps)되고, 수 방향으로 오버플로우가 발생하면 최소 값에서 최대값까지 랩핑합니다.
 
 ---
 

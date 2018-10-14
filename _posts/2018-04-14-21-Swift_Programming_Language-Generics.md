@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 21"
+title:      "Swift. 정리하기 21: Swift Language Guide-Generics"
 subtitle:   "Swift Language Guide-Generics *"
 date:       2018-04-14 09:00:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일: 2018.10.1
 
 ## Reference 
 
@@ -22,7 +24,7 @@ tags: [Swift]
 
 `제네릭 코드(Generic code)`는 정의한 요구사항에 따라 모든 타입에서 작업 할수 있는 유연하고 재사용 가능한 함수나 타입을 작성할 수 있습니다. 중복을 피하고 의도가 명확하게 표현하는 코드를 작성할 수 있으며 추상적으로 관리합니다.
 
-제네릭은 Swift에서 가장 강력한 기능중 하나이고, Swift의 표준 라이브러리 대부분이 제네릭 코드로 만들어졌다. 사실상, 모른다고 하더라도, 언어 가이드(Language Guide) 전체에서 제네릭을 사용해 왔습니다. 예를들어, Swift의 `Array`와 `Dictionary`타입 모두 제네릭 컬렉션입니다. Swift에서 Int값이나 String값을 가지는 배열을 만들수 있거나 실제 Swift에서 만들수 있는 다른 타입을 가지는 배열을 만들수 있습니다. 비슷하게, 모든 특정 타입의 값을 저장하는 딕셔너리를 만들 수 있고, 타입이 무엇인지에 대한 제한은 없습니다.
+제네릭은 Swift에서 가장 강력한 기능중 하나이고, Swift의 표준 라이브러리 대부분이 제네릭 코드로 만들어졌다. 사실상, 모른다고 하더라도, 언어 가이드(Language Guide) 전체에서 제네릭을 사용해 왔습니다. 예를들어, Swift의 `Array`와 `Dictionary`타입 모두 제네릭 컬렉션입니다. Swift에서 Int값이나 `String`값을 가지는 배열을 만들수 있거나 실제 Swift에서 만들수 있는 다른 타입을 가지는 배열을 만들수 있습니다. 비슷하게, 모든 특정 타입의 값을 저장하는 딕셔너리를 만들 수 있고, 타입이 무엇인지에 대한 제한은 없습니다.
 
 ---
 
@@ -70,7 +72,7 @@ func swapTwoDoubles(_ a: inout Double, _ b: inout Double) {
 
 모든 타입의 값 두개를 바꿔줄수 있는 하나의 함수로 작성하는게 훨씬 더 유용하고, 매우 유연합니다. 제네릭 코드는 하나의 함수로 작성하는게 가능합니다. (이 함수의 제네릭 버젼은 아래에 정의됩니다)
 
-> Note: 함수 3개 모두, a와 b타입이 서로 같도록 정의 하는게 중요합니다. a 와 b가 같은 타입이 아니라면, 그 값들을 바꿔주는 것은 가능하지 않을 것입니다. Swift는 타입에 안전한(`type-safe`) 언어이고 `String`타입의 변수와 `Double`타입의 변수를 각각 서로 다른 값으로 바꿔주는 것을 허용하지 않습니다. 이를 시도하려 하면 컴파일시에 오류가 발생합니다.
+> Note: 함수 3개 모두, `a`와 `b`타입이 서로 같도록 정의 하는게 중요합니다. `a` 와 `b`가 같은 타입이 아니라면, 그 값들을 바꿔주는 것은 가능하지 않을 것입니다. Swift는 타입에 안전한(`type-safe`) 언어이고 `String`타입의 변수와 `Double`타입의 변수를 각각 서로 다른 값으로 바꿔주는 것을 허용하지 않습니다. 이를 시도하려 하면 컴파일시에 오류가 발생합니다.
 
 ---
 
@@ -463,7 +465,7 @@ extension Array: Container {}
 
 ## Adding Constraints to an Assoiated Type 
 
-프로토콜의 연관된 타입에 제약조건을 추가하여 준수타입이 해당 제약조건을 충족하도록 요구할수 있습니다. 예를들어, 다음 코드는 Container의 항목을 동일하게 해야하는 컨테이너 버전을 의미합니다. 
+프로토콜에서 연관된 타입에 타입 제약사항을 추가해서 타입이 해당 제약사항을 만족하도록 요구할 수 있습니다. 예를 들어, 다음 코드는 컨테이너에서 항목들을 `eauatable`하게 해야하는 `Container` 버젼을 정의합니다.
 
 ```swift
 protocol Container {
@@ -489,9 +491,10 @@ protocol SuffixableContainer: Container {
 }
 ```
 
-이 프로토콜에서 `Suffix`는 Container 예제위에 있는 item 각 아이템 타입과 같은 연관된 타입입니다. `Suffix`는 두가지 제약조건이 있습니다: `SuffixxableContainer` 프로토콜(현재 정의 된 프로토콜)을 준수해야하며 해당 아이템 타입은 컨테이너의 아이템 타입과 동일해야합니다. 
+프로토콜에서, `Suffix`는 연관된 타입이며, 위 예제 `Container`에서의 `Item`타입과 같습니다. `Suffix`는 두개의 제약사항을 가집니다: `SuffixableContainer`프로토콜(현재 정의된 프로토콜)을 반드시 준수해야 하고, `Item`타입은 컨테이너의 `Item`타입과 반드시 같아야 합니다. `Item`에서의 제약사항은 제네릭 `where`절이며, 아래의 [제네릭 Where 절과 연관된 타입(Associated Types with a Generic Where Clause)](https://docs.swift.org/swift-book/LanguageGuide/Generics.html#ID557)에 설명되어 있습니다.
 
-여기 확장된 `Stack`타입은 `SuffixableContainer` 프로토콜을 준수하고 [클로져를 위한 강한 참조 싸이클](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56) 로부터 확장된 `Stack` 타입 입니다. 
+다음은 위의 `SuffixableContainer`프로토콜에 대한 적합성을 추가하는 [클로져에 대한 강한 순환참조(Strong Reference Cycles for Closures)](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html#ID56)의 Stack타입의 확장입니다.
+
 
 ```swift
 extension Stack: SuffixableContainer {
@@ -512,13 +515,8 @@ let suffix = stackOfInts.suffix(2)
 // suffix contains 20 and 30
 ```
 
-위의 예제에서 Stack을 위한 Suffix 연관된 타입또한 Stack이고, `suffix`는 연산자 Stack위에서 다른 Stack을 반환합니다.
+위 예제에서, `Stack`에 대한 연관된 타입 `Suffix`은 `Stack`이며, `Stack`에서 `suffix`동작은 다른 `Stack`를 반환합니다. 또는 `SuffixableContainer`를 준수하는 타입은 그 자체와 다른 `Suffix`타입을 가질수 있습니다.- 접미사(suffix) 작업은 다른 타입을 반환할 수 있다는 것을 의미합니다. 예를들어, 다음은 제네릭이 아닌 `IntStack`타입에 `SuffixableConatiner`를 준수하도록 추가하는 확장이며, `IntStack` 대신에 `suffix`타입으로 `Stack<Int>`를 사용합니다.
 
-또는 `SuffixableContainer`를 준수하는 타입은 다른 타입을 가질수 있음을 의미합니다. 즉 suffix 연산자는 다른 타입을 반환할수 있음을 의미합니다.
-
-예를들어 여기의 확장은 제네릭이 아닌 IntStack 타입 `SuffixableContainer`를 따르고 Stack<Int>를 IntStack대신에 suffix 타입으로서 사용합니다. 
-
-> 무슨소리인지 잘 모르겠음ㅠㅠ 
 
 ```swift
 extension IntStack: SuffixableContainer {
@@ -583,7 +581,7 @@ func allItemsMatch<C1: Container, C2: Container>
 - `someContainer`는 C1타입의 컨테이너 입니다.
 - `anotherContainer`는 C2타입의 컨테이너 입니다.
 - `someContainer`와 `anotherContainer`은 같은 타입의 항목들을 포함합니다.
-- `someContainer`의 항목들이 서로 다른 경우, !=연산자로 같지 않은지 확인 할 수 있습니다.
+- `someContainer`의 항목들이 서로 다른 경우, `!=`연산자로 같지 않은지 확인 할 수 있습니다.
 
 세번째와 네번째 요구사항은 `anotherContainer`의 항목은 `someContainer`의 항목과 정확히 같은 타입이므로, !=연산자로 확인할 수 있다는 의미로 결합됩니다.
 
@@ -726,6 +724,8 @@ protocol ComparableContainer: Container where Item: Comparable { }
 
 ## Generic Subscripts
 
+서브스크립트는 제네릭이 될수 있고, 제네릭 where절을 포함할 수 있습니다. 견본(placeholder) 타입 이름을 subscript뒤에 꺽인괄호 사이(<>) 안쪽에 작성할 수 있고, 서브스크립트의 본문의 열린 중괄호 앞에 제네릭 where절을 작성합니다. 예를 들어
+
 ```swift
 extension Container {
     subscript<Indices: Sequence>(indices: Indices) -> [Item]
@@ -738,6 +738,15 @@ extension Container {
     }
 }
 ```
+
+`Container`프로토콜에 대한 확장은 시퀀스 인덱스와 주어진 인덱스마다 항목들을 포함하고 있는 배열을 반환하는 서브스크립트를 추가합니다. 제네릭 서브스크립트는 다음을 포함합니다.
+
+- 꺽인 괄호(`<>`)안에 있는 제네릭 매개변수 `Indices`는 표준 라이브러리로부터 `Sequence` 프로토콜을 준수하는 타입이어야 합니다.
+- 서브스크립트는 `indices`타입의 인스턴스인 하나의 매개변수 `indices`를 가집니다.
+- 제네릭 `where`절은 시퀀스에 대한 `iterator`가 반드시 `Int`타입의 요소여야 합니다. 이렇게 하면 시퉌스의 인덱스는 컨테이너에 사용된 인덱스와 동일한 타입입니다.
+
+종합해보면(taken together), 이러한 제약조건은 indices 매개변수에 대해 전달된 값이 정수형의 시퀀스 입니다.
+
 
 ---
 

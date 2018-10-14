@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 정리하기 16"
+title:      "Swift. 정리하기 16: Swift Language Guide-Error Handling"
 subtitle:   "Swift Language Guide-Error Handling"
 date:       2018-04-13 14:35:00
 author:     "MinJun"
@@ -8,6 +8,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 ---
+
+최종 수정일 2018.10.1
 
 ## Reference 
 
@@ -63,8 +65,9 @@ Swfit에서 오류처리하는 4가지 방법이 있습니다. 함수로부터 �
 
 > Note: Swift 에서 오류 처리는 try, catch, throw키워드를 사용하는 다른 언어에서의 예외 처리와 비슷합니다. 많은 다른 언어(Objective-C 포함)에서의 예외처리와는 다르게 Swift의 오류처리는 호출 스택(call stack)을 해제하지(unwinding) 않으며, 처리 비용이 비싼 과정입니다. 이와같이, throw문의 성능 특징은 return문에 필적합니다.
 
+---
 
-### - Propagating Errors Using Throwing Functions
+## Propagating Errors Using Throwing Functions
 
 함수, 메소드, 초기화는 오류를 던질수 있다는 것을 나타내기 위해 `throws`키워드를 함수의 매개변수 뒤에 선언합니다. `throws`로 표시된 함수는 `throwing function`이라고 합니다. 함수가 반환타입을 지정하면, `throws 키워드는 반환 화살표(->) 앞에` 사용합니다.
 
@@ -118,7 +121,7 @@ class VendingMachine {
 }
 ```
 
-`vend(itemNamed:)`메소드의 구현은 간식(snack)을 구입하기 위한 요구사항이 충족되지 않으면, 메소드를 일찍 종료하고 적절한 오류를 던지기 위해 guard문을 사용합니다. `throw`문은 프로그램 제어권을 바로 넘겨 주기 때문에, 요구사항이 만족하면 아이템은 판매 될 것입니다.
+`vend(itemNamed:)`메소드의 구현은 간식(`snack`)을 구입하기 위한 요구사항이 충족되지 않으면, 메소드를 일찍 종료하고 적절한 오류를 던지기 위해 guard문을 사용합니다. `throw`문은 프로그램 제어권을 바로 넘겨 주기 때문에, 요구사항이 만족하면 아이템은 판매 될 것입니다.
 
 `vend(itemNamed:)`메소드는 발생한 모든 오류를 전달하기 때문에, `메소드를 호출 하는 코드는 반드시 오류를 처리해야 하던지-do-catch문, try?, try!을 사용해서-계속 전달해야 합니다.` 예를들어, 아래 예제의 `buyFavoriteSnack(person:vendingMachine:)`은 `throwing function`이고, `buyFavoriteSnack(person:vendingMachine:)` 함수가 호출된 곳으로 `vend(itemNamed:)`메소드의 모든 오류를 위로 전달합니다.
 
@@ -136,7 +139,17 @@ func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
 
 예제에서, `buyFavoriteSnack(person: vendingMachine:)`함수는 `vend(itemNamed:)`메소드를 호출해서 주어진 사람이 좋아하는 간식을 찾고 구입하려고 시도합니다. `vend(itemNamed:)`메소드는 오류를 던질수 있기 때문에, 메소드를 호출하기 전에 `try`키워드를 앞에 사용합니다.
 
-`Throwing initializer`은 `throwing function`과 같은 방법으로 오류를 전달 할 수 있습니다. 예를 들어, PurchasedSnack구조체에 대한 초기화는 초기화 과정에서 아래 목록의 throwing function을 호출하고, 호출자에게 오류를 전달하여 발생한 모든 오류를 처리합니다.
+`Throwing initializer`은 `throwing function`과 같은 방법으로 오류를 전달 할 수 있습니다. 예를 들어, PurchasedSnack구조체에 대한 초기화는 초기화 과정에서 아래 목록의 `throwing function`을 호출하고, 호출자에게 오류를 전달하여 발생한 모든 오류를 처리합니다.
+
+```swift
+struct PurchasedSnack {
+    let name: String
+    init(name: String, vendingMachine: VendingMachine) throws {
+        try vendingMachine.vend(itemNamed: name)
+        self.name = name
+    }
+}
+```
 
 ---
 
@@ -157,9 +170,11 @@ do {
 }
 ```
 
-그 절(clause)이 처리 할수 있는 오류가 무엇인지 타나내기 위해 `catch`뒤에 pattern을 사용한다. catch절이 pattern을 가지지 않으면, 절은 모든 오류와 일치하고 지역 상수 이름인 error로 연결합니다. pattern 일치에 관한 더 자세한 정보는 [패턴(Patterns)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Patterns.html#//apple_ref/doc/uid/TP40014097-CH36-ID419)을 보세요.
+클로져가 오류를 처리할 수 있다는 것을 가리키기 위해 패턴 뒤에 `catch`를 작성합니다. catch절과 일치하는 패턴이 없는 경우, 그 절(clause)은 모든 오류와 일치하고 그 오류를 지역 상수 error로 연결(`binds`)됩니다. 패턴 매칭(pattern matching)에 대한 자세한 내용은 [패턴(Patterns)](https://docs.swift.org/swift-book/ReferenceManual/Patterns.html)을 보세요.
 
-`catch`절은 `do`절의 코드에서 `throw` 할 수 있는 모든 오류를 처리할 필요가 없습니다. 모든 catch절이 오류를 처리하지 않으면, `오류는 주변 영역으로 전달`됩니다. 하지만, 오류는 주변 영역에서 반드시 처리되어야 합니다 -오류를 처리하는 닫힌 do-catch절이나 throwing함수 안에서 오류를 처리합니다. 예를들어, 다음 코드는 `VendingMachineError`열거형의 3가지 모든 case에 대해 처리하지만, 다른 모든 오류들은 주변 영역에서 처리되어야 합니다.
+예를들어, 다음에 오는 코드는 `VendingMachinError` 열거형의 모든 3가지 경우(case)와 일치합니다.
+
+
 
 ```swift
 var vendingMachine = VendingMachine()
@@ -176,13 +191,36 @@ do {
 // Prints "Insufficient funds. Please insert an additional 2 coins."
 ```
 
-위의 예제에서, `buyFavoriteSnack(person:vendingMachine:)`함수는 오류가 발생할수 있기 때문에, try문법으로 호출됩니다. 오류가 발생하면, catch절로 즉시 전달되어 실행되며, 계속 전달 할 것인지 결정합니다. 오류가 발생하지 않는다면, do문법 안에 남아있는 구문이 실행됩니다.
+예제에서, `buyFavoriteSnack(person:vendingMachine:)` 함수는 오류를 던질 수 있기 때문에, `try`표현식에서 호출됩니다. 오류를 던지는 경우, 계속 전달하는 것을 허용할지 결정하는 `catch` 절로의 전환이 바로 이뤄집니다. 일치하는 패턴이 없는 경우, 오류는 마지막 `catch` 절에 의해 잡히고 지역 상수 `error`로 연결됩니다. 오류없이 던지는 경우, `do`문의 남은 구문들이 실행됩니다.
+
+`catch` 절은 `throw`할수 있는 `do`절 안의 코드는 모든 오류 가능한 것들을 처리하지 않습니다. 오류를 처리하는 catch 절이 없는 경우, 오류는 주변 영역으로 전달됩니다. 하지만, 전달된 오류는 반드시 주변 범위에서 처리 됩니다. 던지지 않는(nonthrowing) 함수에서는, do-catch절 안에서 반드시 오류를 처리합니다. 던지는(throwing) 함수에서는, do-catch절 안이나 호출한 곳에서 반드시 오류를 처리합니다. 오류를 처리하는 곳 없이 최상위 단계 범위까지 전달하는 경우, 런타임 오류가 발생할 것입니다.
+
+예를 들어, 위 예제의 모든 오류를VendingMachineError 대신 호출하는 함수에서 잡도록 작성할 수 있습니다.
+
+```swift
+func nourish(with item: String) throws {
+    do {
+        try vendingMachine.vend(itemNamed: item)
+    } catch is VendingMachineError {
+        print("Invalid selection, out of stock, or not enough money.")
+    }
+}
+
+do {
+    try nourish(with: "Beet-Flavored Chips")
+} catch {
+    print("Unexpected non-vending-machine-related error: \(error)")
+}
+// Prints "Invalid selection, out of stock, or not enough money."
+```
+
+`nourish(with:)` 함수에서, `vend(itemNamed:)`가 `VendingMachineError` 열거형의 케이스(case) 중 하나로 오류를 던지는 경우, `nourish(with:)`는 메시지를 출력하여 오류를 처리합니다. 반면에, `nourish(with:)`는 오류를 호출한 곳으로 전달합니다. 오류가 발생하면 일반적인`catch`절로 잡습니다.
 
 ---
 
 ## Converting Error to Optional Values
 
-오류 처리를 위해 옵셔널 값으로 변환하여 try?`를 사용합니다. `try?` 문법을 수행할때 오류가 발생하면, 그 문법의 값은 `nil`이 됩니다. 예를들어, 다음에 오는 코드 x와 y는 같은 값과 동작을 합니다
+오류 처리를 위해 옵셔널 값으로 변환하여 `try?`를 사용합니다. `try?` 문법을 수행할때 오류가 발생하면, 그 문법의 값은 `nil`이 됩니다. 예를들어, 다음에 오는 코드 `x`와 `y`는 같은 값과 동작을 합니다
 
 ```swift
 func someThrowingFunction() throws -> Int {
@@ -201,7 +239,7 @@ do {
 
 `someThrowingFunction()`가 오류를 발생(throws)하면, `x`와 `y` 값은 nil입니다. 그렇지 않으면, x와 y의 값은 함수가 반환한 값입니다. x와 y는 someThrowingFunction()이 반환하는 옵셔널 타입입니다. 여기서 함수는 정수형을 반환하므로, x와 y는 옵셔널 정수형입니다.
 
-동일한 방법으로 모든 오류를 처리하길 원할때, try? 사용으로 간결한 오류 코드 처리를 작성 할 수 있습니다. 예를들어, 다음 코드는 데이터를 가져오는데 사용되며, 모든 방법이 실패 할 때, nil을 반환합니다.
+동일한 방법으로 모든 오류를 처리하길 원할때, try? 사용으로 간결한 오류 코드 처리를 작성 할 수 있습니다. 예를들어, 다음 코드는 데이터를 가져오는데 사용되며, 모든 방법이 실패 할 때, `nil을 반환합니다.
 
 ```swift
 func fetchData() -> Data? {
@@ -222,8 +260,6 @@ func fetchData() -> Data? {
 ```swift
 let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
 ```
-
-> 대신 실패하면 크..러시
 
 ---
 
