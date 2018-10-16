@@ -36,7 +36,7 @@ tags: [Swift]
 
 프로젝트를 빌드하고 실행합니다. 상단에 search bar가 있고, 빈 테이블뷰를 가진 화면을 볼수 있습니다.
 
-![](https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-12-Aug-2015-11.10.57-pm.png)
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-12-Aug-2015-11.10.57-pm.png" width="400" height="200"></center> <br>
 
 search bar에서 쿼리를 타이핑하고, `Search`를 탭합니다. 뷰는 여전히 비어있지만 걱정하지마세요. 새로운 `URLSession` 호출과 함께 변경 할것입니다.
 
@@ -145,7 +145,8 @@ func getSearchResults(searchTerm: String, completion: @escaping QueryResult) {
 
 앱을 빌드하고 실행합니다. 각 노래에 대해 검색하면 다음과 같이 관련 트랙 결과가 채워진 테이블 뷰가 표시됩니다.
 
-![](https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-12-Aug-2015-11.02.34-pm.png)
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-12-Aug-2015-11.02.34-pm.png" width="400" height="500"></center> <br>
+
 
 약간의 `URLSession` 마법이 추가되어 Half Tunes는 이제 조금 기능적 입니다.
 
@@ -324,12 +325,13 @@ if let index = download?.track.index {
 
 프로젝트를 빌드하고 실행합니다. 조회한 후에 트랙(track)을 선택하고 다운로드 합니다. 다운로드가 완료될때, 콘솔에서 파일 경로 위치가 출력되는 것을 볼수 있습니다.
 
-![](https://koenig-media.raywenderlich.com/uploads/2015/08/Screen-Shot-2015-08-16-at-8.03.30-pm.png)
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2015/08/Screen-Shot-2015-08-16-at-8.03.30-pm.png" width="700" height="500"></center> <br>
 
 
 델리게이터 메소드가 트랙의 `downloaded`프로퍼티를 `true`로 설정하였기 때문에 다운로드 버튼은 사라집니다. 트랙을 탭하고 `AVPlayerViewController`에서 재생되는 것을 듣게 될 것입니다.
 
-![](https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-17-Aug-2015-1.45.28-am.png)
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-17-Aug-2015-1.45.28-am.png" width="400" height="500"></center> <br>
+
 
 ---
 
@@ -456,7 +458,8 @@ downloadButton.isHidden = downloaded || showDownloadControls
 
 > Note: 재개(Resume)를 누른 후에 다운로드가 중단되면, 일시정지(Pause)를 누른다음에, 재개(Resume)를 다시 누릅니다. 이것은 다운로드 세션 구성을 `URLSessionConfiguration.background(withIdentifier: "bgSessionConfigureation")`으로 변경할때 사리지는 신비한 버그 입니다.
 
-![](/img/posts/URLSession-0.png)
+<center><img src="/img/posts/URLSession-0.png" width="400" height="500"></center> <br>
+
 
 ---
 
@@ -623,7 +626,7 @@ extension SearchViewController: URLSessionDelegate {
 
 다운로드가 왼료되면, 새로운 상태가 앱 스냅샷에 반영됩니다. 앱을 열어 다음을 확인합니다.
 
-![](https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-19-Aug-2015-1.06.24-am.png)
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2015/08/Simulator-Screen-Shot-19-Aug-2015-1.06.24-am.png" width="400" height="500"></center> <br>
 
 이제 완벽한 기능을 갖춘 음액 스트리밍 앱을 가지고 있습니다! 이제 애플 뮤직으로 이동하세요! :]
 
