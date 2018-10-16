@@ -6,11 +6,10 @@ date:       2018-09-14 17:45:00
 author:     "MinJun"
 header-img: "img/tags/CocoaPod-bg.png"
 comments: true 
-tags: [iOS, Swift, CocoaPod]
+tags: [iOS, Swift, CocoaPod, Raywenderlich]
 ---
 
-[Creating a Framework for iOS](https://www.raywenderlich.com/5109-creating-a-framework-for-ios)을 의역했습니다. 잘못된 번역이 있을수 있습니다.
-
+[Creating a Framework for iOS](https://www.raywenderlich.com/5109-creating-a-framework-for-ios)을 의역했습니다. 오역이 있을수 있으니 참조해주세요.
 
 ---
 

@@ -6,7 +6,7 @@ date:       2018-09-16 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [Swift, Raywenderlich]
 ---
 
 [An Introduction to the Swift Package Manager](https://www.raywenderlich.com/750-an-introduction-to-the-swift-package-manager)의 내용을 의역 했습니다. 

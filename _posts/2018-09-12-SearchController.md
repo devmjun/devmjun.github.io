@@ -6,7 +6,7 @@ date:       2018-09-12 15:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [Swift, Raywenderlich]
 ---
 
 ## Refernece 

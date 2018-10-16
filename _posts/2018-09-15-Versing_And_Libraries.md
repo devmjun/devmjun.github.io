@@ -6,7 +6,7 @@ date:       2018-09-14 17:45:00
 author:     "MinJun"
 header-img: "img/tags/iOS-bg.jpg"
 comments: true 
-tags: [iOS, Swift, CocoaPod]
+tags: [iOS, Swift, CocoaPod, Raywenderlich]
 ---
 
 [CocoaPods Tutorial for Swift: Getting Started](https://www.raywenderlich.com/626-cocoapods-tutorial-for-swift-getting-started)의 일부 내용을 참조 했습니다. 

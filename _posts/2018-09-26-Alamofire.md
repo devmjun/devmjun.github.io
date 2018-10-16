@@ -6,7 +6,7 @@ date:       2018-09-26 15:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift]
+tags: [Swift, Raywenderlich, Alamofire]
 ---
 
 [Alamofire Tutorial: Getting Started](https://www.raywenderlich.com/35-alamofire-tutorial-getting-started)의 내용을 의역했습니다. 오역이 많으니 참조해주세요.
