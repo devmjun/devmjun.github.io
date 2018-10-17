@@ -9,7 +9,21 @@ comments: true
 tags: [Swift, Raywenderlich, Alamofire]
 ---
 
-[Alamofire Tutorial: Getting Started](https://www.raywenderlich.com/35-alamofire-tutorial-getting-started)의 내용을 의역했습니다. 오역이 많으니 참조해주세요.
+[Alamofire Tutorial: Getting Started](https://www.raywenderlich.com/35-alamofire-tutorial-getting-started)의 내용을 의역했습니다. 
+
+---
+
+## Contents 
+
+- Alamofire Tutorial: Getting Started 
+- Getting Started
+- The Imagga API
+- REST, HTTP, JSON - What's that?
+- What is Alamofire Good For?
+- Uploading Files
+- Retrieving Data 
+- Improving PhotoTagger
+- Where To Go From Here?
 
 ---
 

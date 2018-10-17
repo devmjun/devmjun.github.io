@@ -18,6 +18,24 @@ tags: [Swift, Raywenderlich]
 
 ---
 
+## Contents 
+
+- Alamofire Tutorial: Getting Started 
+- Getting Started 
+- Overview of URLSession 
+- Data Task 
+- Download Task 
+	- Download Class 
+- URLSessionDownloadDelegate
+- Creating a Download Task
+- Saving and Playing the Track
+- Pausing, Resuming and Cancelling Downloads
+- Showing Download Progress
+- Enabling Background Transfers
+- Where To Go From Here? 
+
+---
+
 ## Alamofire Tutorial: Getting Started 
 
 이 URLSession 튜토리얼에서 어떻게 HTTP 요청을 생성하는지 배우고, 다시 재개하고, 중단할수 있는 백그라운드 다운로드도 구현합니다

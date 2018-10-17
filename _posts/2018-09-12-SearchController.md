@@ -1,5 +1,5 @@
 ---
-layout: post
+layout:     post
 title:      "Swift, UISearchController Tutorial"
 subtitle:   "UISearchController 사용법을 알아봅니다."
 date:       2018-09-12 15:45:00
@@ -11,7 +11,23 @@ tags: [Swift, Raywenderlich]
 
 ## Refernece 
 
-[UISearchController Tutorial: Getting Started](https://www.raywenderlich.com/472-uisearchcontroller-tutorial-getting-started)<br> 을 의역했습니다.
+[UISearchController Tutorial: Getting Started](https://www.raywenderlich.com/472-uisearchcontroller-tutorial-getting-started)을 의역했습니다.
+
+---
+
+## Contentns 
+
+- Getting Started
+- Populating the Table View 
+- Introducing UISearchController
+- UISearchResultsUpdating and Filtering
+- Updating the Table View 
+- Sending Data to a Detail View
+- Creating a Scope Bar to Filter Results
+- Adding a Results Indicator
+- Where To Go From Here? 
+
+---
 
 이 UISearchController 글에서 동적 필터링, 범위 바와 함께 검색 기능을 추가하여 앱을 어떻게 개선 시키는지에 대해서 배웁니다. 
 
@@ -403,6 +419,8 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 
 
 ---
+
+## Official Documentation
 
 [UISearchController](https://developer.apple.com/documentation/uikit/uisearchcontroller)<br>
 [UISearchBar](https://developer.apple.com/documentation/uikit/uisearchbar)<br>
