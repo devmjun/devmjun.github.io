@@ -33,7 +33,37 @@ $ bundle exec jekyll serve
 
 [3 Simple Steps To Setup Jekyll Categories And Tags](https://blog.webjeda.com/jekyll-categories/)
 
-### automatically Generate Table Of Contents in MarkDown
+---
+
+## automatically Generate Table Of Contents in MarkDown
 
 [https://github.com/velthune/summarizeMD](https://github.com/velthune/summarizeMD)<br>
+
+### Usage 
+
+```
+$ls 
+.
+..
+summarizeMD
+./summarizeMD readme.md
+
+$ls 
+.
+..
+summarizeMD
+readme.md
+summarized_readme.md
+```
+
+### Options 
+
+- **-o, --output [filename]**  
+You can specify output filename.  
+- **-v, --[no-]verbose**  
+Run script verbosely printing some informations.   
+- **-h, --help**  
+Display list of available options.   
+- **--version**  
+Display script version.  
 
