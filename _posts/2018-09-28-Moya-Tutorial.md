@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Swift, Moya Tutorial for iOS getting Started"
-subtitle:   "Moya가 무엇인지, 어떻게 사용하는지 알아봅니다"
+title:      "Swift, Moya가 무엇인지, 어떻게 사용하는지 알아봅니다"
+subtitle:   "Moya Tutorial for iOS getting Started"
 date:       2018-09-28 15:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
