@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Swift, UISearchController Tutorial"
-subtitle:   "UISearchController 사용법을 알아봅니다."
+title:      "Swift, UISearchController 사용법을 알아봅니다"
+subtitle:   "UISearchController Tutorial"
 date:       2018-09-12 15:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"

@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "iOS, Semantic Versioning, A Word About Libraries"
-subtitle:   "1.0.0의 버전 의미론과, 라이브러리란?"
+title:      "iOS, 1.0.0의 버전 의미론과, 라이브러리란?"
+subtitle:   "Semantic Versioning, A Word About Libraries"
 date:       2018-09-14 17:45:00
 author:     "MinJun"
 header-img: "img/tags/iOS-bg.jpg"

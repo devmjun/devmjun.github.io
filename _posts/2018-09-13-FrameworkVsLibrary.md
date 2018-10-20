@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "iOS, Framework vs Library(Static & Shared) in Cocoa/OSX, Cocoa Touch/iOS"
-subtitle:   "iOS에서 프레임워크와 라이브러리의 차이점을 알아보자!"
+title:      "iOS, iOS에서 프레임워크와 라이브러리의 차이점을 알아보자!"
+subtitle:   "Framework vs Library(Static & Shared) in Cocoa/OSX, Cocoa Touch/iOS"
 date:       2018-09-13 17:45:00
 author:     "MinJun"
 header-img: "img/tags/iOS-bg.jpg"

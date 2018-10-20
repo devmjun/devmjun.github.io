@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "CocoaPod, Creating a Framework for iOS "
-subtitle:   "프레임 워크에서 Cocod Pod 발행까지"
+title:      "CocoaPod, 프레임 워크에서 Cocod Pod 발행까지"
+subtitle:   "Creating a Framework for iOS"
 date:       2018-09-14 17:45:00
 author:     "MinJun"
 header-img: "img/tags/CocoaPod-bg.png"
