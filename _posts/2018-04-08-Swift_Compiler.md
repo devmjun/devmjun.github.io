@@ -210,10 +210,10 @@ build setting 에서 `Swift Compiler-Custom Flags -> Other swift Flags` 으로 �
 
 ```
 1. 
-Xfrontend -warn-long-function-bodies=200
+-Xfrontend -warn-long-function-bodies=200
 
 2. 
-Xfrontend -warn-long-expression-type-checking=200
+-Xfrontend -warn-long-expression-type-checking=200
 ```
 
 위의 첫번쨰 명령어는 임계값 보다 오래 걸리는 모든 `functions`을 확인하고 리포트 합니다. 두번째 명령어는 Xcode 9에서 소개 되었고 임계값보다 오래걸리는 `expressions`을 체크하고 리포트합니다. 일반적으로 WMO 최적화 설정후 100ms임계값에서 시작하는것이 좋습니다.

@@ -41,7 +41,7 @@ tags: [Swift, Raywenderlich]
 
 ## Getting Started 
 
-[여기](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Starter.zip)에서 시작 프로젝트를 다운로드 하고 실행합니다. 앱이 이미 네비게이션 컨트롤러로 설정 되어 있습니다. Xcode 프로젝트를 선택하고 서명 색션에서 자신의 팀으로 업데잍 ㅡ합니다. 앱을 빌드하고 실행하면 빈 목록이 표시됩니다.
+[여기](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Starter.zip)에서 시작 프로젝트를 다운로드 하고 실행합니다. 앱이 이미 네비게이션 컨트롤러로 설정 되어 있습니다. Xcode 프로젝트를 선택하고 서명 색션에서 자신의 팀으로 업데이트 합니다. 앱을 빌드하고 실행하면 빈 목록이 표시됩니다.
 
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Starter.png" width="300" height="200"></center> <br>
 
@@ -58,7 +58,7 @@ Xcode로 돌아가서, Candy.swift는 화면에 표시해야하는 각 캔디 �
 
 UISearchController 자습서에서, search bar의 작동방식을 보여주기 위한 제한된 수의 값만 만들어야합니다. 프로덕션 앱에서 수천개의 검색 가능한 개체가 있을수 있습니다. 그러나 앱에 수천개의 개체를 검색 할지 또는 몇 개만 검색할지 여부에 상관없이 사용되는 방법은 동일하게 유지됩니다. 
 
-candies 배열을 채우려면, `viewDidLoad()`에 다음 코드를 추가해야합니다. `super.viewDIdLoad()`를 호출한 후에 viewDidLoad()에 다음 코드를 추가합니다.
+candies 배열을 채우려면, `viewDidLoad()`에 다음 코드를 추가해야합니다. `super.viewDidLoad()` 이후에 다음 코드를 추가합니다.
 
 ```swift
 candies = [
@@ -80,7 +80,7 @@ candies = [
 ]
 ```
 
-프로젝트를 빌드하고 실행합니다. 테이블뷰의 delegate,datasource는 이미 구현되어잇으므로, 다음과 같이 볼수 있습니다.
+프로젝트를 빌드하고 실행합니다. 테이블뷰의 Delegate, Datasource는 이미 구현되어 있고, 다음과 같은 화면을 볼수 있습니다.
 
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Data.png" width="300" height="200"></center> <br>
 
@@ -180,9 +180,9 @@ func filterContentForSearchText(_ searchText: String, scope: String = "All") {
 }
 ```
 
-`searchBarIsEmpty()`는 이유가 명확합니다. filterContentForSearchText(_:scope:)는 `searchText`를 기반으로 `candies` 배열을 필터하고 filteredCandies 배열에 방금 추가한 결과를 놓습니다. 지금은 scope 매개변수에 대해 생각하지 마세요. 이것은 뒷부분에서 사용합니다. 
+`searchBarIsEmpty()`는 이유가 명확합니다. `filterContentForSearchText(_:scope:)`는 `searchText`를 기반으로 `candies` 배열을 필터하고 filteredCandies 배열에 방금 추가한 결과를 놓습니다. 지금은 scope 매개변수에 대해 생각하지 마세요. 이것은 뒷부분에서 사용합니다. 
 
-`filter()`은 `(candy: Candy) -> Bool 클로저를 가지고 있습니다. 그 다음 배열의 모든 요소를 반복하여 searchText를 전달하여 클로저를 호출합니다. 
+`filter()`은 `(candy: Candy) -> Bool` 클로저를 가지고 있습니다. 그 다음 배열의 모든 요소를 반복하여 searchText를 전달하여 클로저를 호출합니다. 
 
 candy가 사용자에게 표시되는 검색 결과의 일부인지 여부를 결정할때 이 값을 사용할수 있습니다. 이렇게 하려면 현재 캔디가 필터링된 배열에 포함될 경우 `true`를 반환하고, 그렇지 않으면 `false`를 반환해야 합니다.
 
