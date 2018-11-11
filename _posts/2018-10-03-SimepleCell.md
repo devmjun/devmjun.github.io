@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift. 자주사용하는 Cell 코드를 줄여주는 SimpleCell을 소개합니다."
+title:      "Swift. 자주사용하는 Cell에 관련된 코드를 줄여주는 SimpleCell을 소개합니다."
 subtitle:   "Simple Library 사용법"
 date:       2018-10-04 18:45:00
 author:     "MinJun Ju"
