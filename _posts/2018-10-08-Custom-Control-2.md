@@ -6,7 +6,7 @@ date:       2018-10-08 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift, Raywenderlich]
+tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 ---
 
 [How To Make a Custom Control Tutorial: A Reusable Knob](https://www.raywenderlich.com/5294-how-to-make-a-custom-control-tutorial-a-reusable-knob)을 의역했습니다.

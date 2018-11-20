@@ -6,7 +6,7 @@ date:       2018-10-06 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift, Raywenderlich, CoreGraphics]
+tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 ---
 
 [Core Graphics Tutorial Part 3: Patterns and Playgrounds](https://www.raywenderlich.com/409-core-graphics-tutorial-part-3-patterns-and-playgrounds)을 의역 했습니다.

@@ -6,7 +6,7 @@ date:       2018-10-07 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift, Raywenderlich]
+tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 ---
 
 [How To Make a Custom Control Tutorial: A Reusable Slider](https://www.raywenderlich.com/2297-how-to-make-a-custom-control-tutorial-a-reusable-slider)을 의역 했습니다.
