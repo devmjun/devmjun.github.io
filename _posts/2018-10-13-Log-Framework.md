@@ -26,7 +26,7 @@ tags: [Swift, Raywenderlich, Log]
   - [<U>Filtering Logs By Log Level, Favorites, and Minimum Log Levels</U>](#section-id-241)
   - [<U>Filtering Logs With Minimum Log Levels</U>](#section-id-251)
   - [<U>Fixing Hard-to-Reach Bugs</U>](#section-id-289)
-  - [<U>Simulating a Bug</U>](#section-id-299)
+  - [<U>Simulating a Bug(번역X)</U>](#section-id-299)
   - [<U>Where to Go From Here?</U>](#section-id-306)
   - [<U>Reference</U>](#section-id-316)
 
@@ -36,11 +36,11 @@ tags: [Swift, Raywenderlich, Log]
 
 ## SwiftyBeaver Tutorial for iOS: A Logging Platform for Swift
 
-이 튜토리얼에서, SwifyBeaver logging을 iOS앱에 어떻게 통합하는지 배우게 됩니다.
+이 튜토리얼에서, iOS앱에 SwifyBeaver logging을  어떻게 통합하는지 배우게 됩니다.
 
-다른 버그들은 더 사납습니다. 그들은 뒤에 숨어있고, 예상치 않을때 일어납니다. 
+다른 버그들은 더 사납습니다. 뒤에 숨어 있고 예상치 않을때 발생합니다. 
 
-이 튜토리얼에서, 배후에 있는 사나운 버그들을 없앨수 있는 비밀 무기를 발견할것입니다. 이 무기가 적절하게 사용되면, 앱의 어두운 부분에 손전등을 비추는 것과 같습니다. 
+이 튜토리얼에서, 배후에 있는 사나운 버그들을 제거할수 있는 비밀 무기를 발견 할수 있습니다. 이 무기가 적절하게 사용되면, 앱의 어두운 부분에 손전등을 비추는 것과 같습니다. 
 
 그 무기는 iOS, macOS를 위한 스위프트 기반 로깅 프레임 워크인 [SwifyBeaver](https://swiftybeaver.com/) 입니다.
 
@@ -59,20 +59,20 @@ tags: [Swift, Raywenderlich, Log]
 
 ## Getting Started
 
-[여기](https://koenig-media.raywenderlich.com/uploads/2017/03/TenPM-starter-1.zip)에서 시작 프로젝트를 다운 받습니다. 여기에는 이 튜토리얼은 완성하기 위한 파일과 아트워크 들이 들어 있습니다.
+[여기](https://koenig-media.raywenderlich.com/uploads/2017/03/TenPM-starter-1.zip)에서 시작 프로젝트를 다운 받습니다. 여기에는 이 튜토리얼은 완성하기 위한 파일과 아트워크가 들어 있습니다.
 
 나의 자녀를 추적하는 앱을 만들것입니다. 자녀들이 집에서 너무 멀리 떨어져 있으면 앱이 안전 구역에 머물도록 경고합니다. 
 
-80년대에 유명한 공익 광고 발표 이후 `Ten PM`(자녀들의 위치를 알고 있나요?)이라고 불렸습니다. 
+80년대에 유명한 공익 광고 발표 이후 이것은 `Ten PM`(자녀들의 위치를 알고 있나요?)이라고 불렸습니다. 
 
-`TenPM.xcworkspace`를 열고 프로젝트를 둘러보세요. `Main.stroyboard`를 열고 네비게이션 컨트롤러 내에 두개의 뷰컨트롤러가 나타납니다.
+`TenPM.xcworkspace`를 열고 프로젝트를 둘러보세요. `Main.stroyboard`를 열고 네비게이션 컨트롤러 내에 두개의 뷰 컨트롤러가 나타납니다.
 
 
 ![](/img/posts/beaver-0.png)
 
-왼쪽의 뷰 컨트롤러는 부모가 앱에 `집`이 어디에 있는지 알려주고 자녀가 돌아다닐수 있는 최대 거리를 지정하는데 사용할수 있습니다. backing class는 TrackingSetupViewController 입니다. 이 뷰 컨트롤러는 위치 추적 인증(location tracking authorization), 공간상의 거리(geofencing)을 위해 입력 거리를 저장합니다. 
+왼쪽의 뷰 컨트롤러는 부모가 앱에게 `집`이 어디에 있는지 알려주고 자녀가 돌아다닐수 있는 최대 거리를 지정하는데 사용할수 있습니다. backing class는 `TrackingSetupViewController` 입니다. 이 뷰 컨트롤러는 위치 추적 인증(location tracking authorization), 공간상의 거리(geofencing)를 위해 입력한 거리를 저장합니다. 
 
-오른쪽의 뷰 컨트롤러는 아이들이 사용할 뷰 컨트롤러 입니다. 안전 구역을 표시하는 녹색원이 표시된 지도를 보여줍니다. 또한 아래의 텍스트받스는 현재 안전 구역이 아니라면 알려줍니다. backing class인 TrackingViewController는 헝자식들이 돌아다닐수 있는 안전 구역을 MKMapView에 겹쳐서 그립니다. 
+오른쪽의 뷰 컨트롤러는 아이들이 사용할 뷰 컨트롤러 입니다. 안전 구역을 표시하는 녹색원이 표시된 지도를 보여줍니다. 또한 아래의 텍스트는 현재 안전 구역이 아니라면 알려줍니다. backing class인 TrackingViewController는 자식들이 돌아다닐수 있는 안전 구역을 `MKMapView`에 겹쳐서 그립니다. 
 
 아래는 몇가지 다른 참고 파일들입니다.
 
@@ -85,24 +85,23 @@ tags: [Swift, Raywenderlich, Log]
 
 ## Using The Starter App 
 
-Ten PM 앱을 iOS 시뮬레이터에서 빌드하고 실행합니다. `TrackingSetupViewController`가 컨트롤하는 뷰를 볼볼수 있습니다. 
+Ten PM 앱을 iOS 시뮬레이터에서 빌드하고 실행합니다. `TrackingSetupViewController`가 컨트롤하는 뷰를 볼수 있습니다. 
 
 <center><img src="/img/posts/beaver-1.png" width="450" height="650"></center> <br> 
 
 
-추적을 설정하기 전에 시뮬레이터가 시작 위치를 제공하는지 확인해야합니다. 이것을 하려면 시뮬레이터를 선택하고 `Debug\Location\Apple`를 선택하세요
+추적을 설정하기 전에 시뮬레이터가 시작 위치를 제공하는지 확인해야합니다. 이것을 하려면 시뮬레이터를 선택하고 `Debug\Location\Apple`을 선택하세요.
 
 <center><img src="/img/posts/beaver-2.png" width="450" height="650"></center> <br> 
 
 
 `SETUP TRACKING` 버튼을 탭하면, 위치 데이터 수집을 시작하기 위한 허가를 요청합니다. 왜냐하면 이 화면은 부모를 위한 화면이고, 부모임을 확인하고 집에 있음을 확인하는 추가 얼럿이 있습니다. `예`를 선택하고 허용하세요. 앱이 위치를 결정하고 집 주소를 자녀의 안전 구역 서클의 중심점으로 사용하도록 저장합니다.
 
-집집에서 `안전 거리`를 위해 `1`을 입력 입력하세요. 시뮬레이트된 Apple 위치에서 1 킬로미터 이상 떨어지길 원하지 않는다는 의미입니다.
+집에서의 `안전 거리`를 위해 `1`을 입력 입력하세요. 실험을 위해 설정된 Apple 위치에서 1 킬로미터 이상 떨어지길 원하지 않는다는 의미입니다.
 
 <center><img src="/img/posts/beaver-3.png" width="450" height="650"></center> <br> 
 
-
-`NEXT`를 텝하면 TrackingViewController가 지원하는 뷰로 이동합니다. 녹색 안전지대 원을 따라 현재 위치와함께 주석 표시되어 있습니다(???) 나중에 다시..
+`NEXT`를 텝하면 TrackingViewController가 지원하는 뷰로 이동합니다. 
 
 <center><img src="/img/posts/beaver-4.png" width="450" height="650"></center> <br> 
 
@@ -130,7 +129,7 @@ Ten PM의 기능에 기본 설명입니다. 이것은 쉽게 확장할수 있는
 
 먼저 SwifyBeaver를 CocoaPod를 통해서 설치합니다.
 
-```swift
+```ruby
 // 1
 pod 'SwiftyBeaver'
 
@@ -144,7 +143,7 @@ SwiftyBeaver설치가 완료된 후에, `AppDelegate.swift`를 열고, import아
 import SwiftyBeaver
 ```
 
-프로젝트를 빌드하고 프로젝트가 성공적으로 컴파일되어 SwiftyBeaver를 프로젝트에서 사용할수 있습니다.
+프로젝트를 빌드하고 프로젝트가 성공적으로 컴파일되면 SwiftyBeaver를 프로젝트에서 사용할수 있습니다.
 
 > Note: 이 설치 가이드는 CocoaPods 와 Swift3에서만 작동합니다. 자세한 설치 지침은 [SwiftyBeaver Github](https://github.com/SwiftyBeaver/SwiftyBeaver) 저장소 페이지에서 확인할수 있습니다. 
 
@@ -191,13 +190,13 @@ Ten PM 을 다시 빌드하고 실행합니다. 콘솔을 확인하면 다음 �
 
 ## A Brief Explanation of Log Levels
 
-이 시점에서 SwiftyBeaver가 직관적인 log(), print() 대신에 info()메소드를 사용하게 하는지 궁금할것입니다. 
+이 시점에서 SwiftyBeaver가 직관적인 `log()`, `print()` 대신에 `info()`메소드를 사용하게 하는지 궁금할것입니다. 
 
-이것은 Log Levels과 관련이 있습니다. 
+이것은 `Log Levels`과 관련이 있습니다. 
 
 기록하는 모든것이 똑같이 중요하지는 않습니다. 어떤 로그는 추가적인 문맥정보를 프로그래머에게 주기위해 유용합니다. 다른 로그는 에러와 위험과같은 더 중요한 이슈를 전달합니다.
 
-로그파일을 읽을때, 애플리케이션과 관련된 위험 수준에 따라서 분류된 로그메시지를 갖는것이 특히 유용합니다. 중요도가 낮은 메시지를 빠르게 필터링하여 버그를 빠르게 고칠수 있게 도와줍니다. 
+로그파일을 읽을때, 애플리케이션과 관련된 위험 수준에 따라서 분류된 로그메시지를 갖는다면 특히 유용합니다. 중요도가 낮은 메시지를 빠르게 필터링하여 버그를 빠르게 고칠수 있게 도와줍니다. 
 
 SwiftyBeaver은 로그 수준 규약을 지키고 5개의 로그 수준을 체택합니다(SwiftyBeaver sticks to log lever conventions and adopts these five log levels)
 
@@ -241,7 +240,7 @@ SwifrtBeaver의 가장 멋진 기능중 하나는 바로 로그를 클라우드�
 
 ![](/img/posts/beaver-6.png)
 
-다음으로 파일을 저장하기 위해 묻는 대화상자가 나타납니다. 파일이 무엇인지 알려주지 않기 떄문에 조금 이상합니다. 
+다음으로 파일을 저장하기 위해 묻는 대화상자가 나타납니다. 파일이 무엇인지 알려주지 않기 때문에 조금 이상합니다. 
 
 이름을 `TenPMLogs`으로 지정하고 원하는 위치를 선택하고 저장을 누릅니다.
 
@@ -275,7 +274,7 @@ SwiftyBeaver mac 앱으로 돌아가서 Connect버튼을 클릭합니다. 그후
 
 SwiftyBeaver Mac 앱에 로그 메시지가 표시되는걸 확인할수 있습니다. 로그가 보이지 않는다면 절망하지마세요. 경우에 따라서 로그 메시지가 클라우드에 도달하는데 몇 분정도 걸릴수 있습니다. 결국에는 볼수 있습니다. 
 
-SwiftyBeaver또한 유료 계정으로 업그레이드 하지 않는한 생성하는 모든 로그가 자동으로 한시간 이후 만료 되어 집니다. 대부분의 디버깅 작업에서는 문제가 되지 않스니다. 그러나 이전 로그가 더이상 보이지 않는 이유에 대해 궁금해 할수 있습니다. 
+SwiftyBeaver또한 유료 계정으로 업그레이드 하지 않는한 생성하는 모든 로그가 자동으로 한시간 이후 만료 되어 집니다. 대부분의 디버깅 작업에서는 문제가 되지 않습니다. 그러나 이전 로그가 더이상 보이지 않는 이유에 대해 궁금해 할수 있습니다. 
 
 ---
 
@@ -295,7 +294,7 @@ SwiftyBeaver Mac 앱은 로그 수준으로 로그를 필터링 할수 있다는
 
 ## Filtering Logs With Minimum Log Levels
 
-당신이 좋아할 또하나의 기능이 있습니다. SwiftyBeaver를 사용하면 주어진 log destination을 위한 최소한의 로그 수준을 설정할수 있습니다. 심각한 경고와 위험을 위한 암호 클라우드 계정을 따로 남겨두길(reserve) 원한다면 할수 있습니다. 
+당신이 좋아할 또하나의 기능이 있습니다. SwiftyBeaver를 사용하면 주어진 log destination을 위한 최소한의 로그 수준을 설정할수 있습니다. 심각한 경고와 위험을 위한 보안 클라우드 계정을 따로 남겨두길(reserve) 원한다면 할수 있습니다. 
 
 먼저 `applicationDidFinishLaunching()`에 디버그 로그 조건을 다음으로 교체합니다.
 
@@ -313,9 +312,9 @@ SwiftyBeaver.error("Of course I'm going to show up in your console. You need to 
 
 모든 수준에서 메시지를 기록(logging) 했습니다. 앱을 빌드하고 실행하면, 모든 로그가 Crypto Cloud에 저장되는것을 볼수 있습니다.
 
-`setupSwiftyBeaverLogging()`에서 platform loggin destination을 추가한것 이전에 다음 코드를 추가합니다.
-
 ![](/img/posts/beaver-12.png)
+
+`setupSwiftyBeaverLogging()`에서 platform loggin destination을 추가한것 이전에 다음 코드를 추가합니다.
 
 ```swift
 platform.minLevel = .warning
@@ -325,7 +324,7 @@ platform.minLevel = .warning
 
 ![](/img/posts/beaver-13.png)
 
-최근의 타임스템프에서 경고와 위험만 봐야합니다. 다른 로그문중 어느것도 보안 클라우드 콘솔에 없었을 것입니다. Xcode 콘솔에서는 모든것을 볼수 있습니다.
+최근의 타임스템프에서 경고와 위험만 봐야합니다. 다른 경고와 위험을 제외한 보안 클라우드 콘솔에 없었을 것입니다. Xcode 콘솔에서는 모든것을 볼수 있습니다.
 
 > Note: 모든 유형의 SwiftyBeaver logging destination 에 대해 최소 로그 수준을 지정할수 있습니다. 서로 다른 로그 수준에 대해 여러개의 Crptyo Clould Destination을 만들어 상황을 훌륭하게 구분할수 있습니다. SwiftyBeaver에는 사용자 정의를 위한 많은 재량권(wiggle room)이 있습니다.
 
@@ -335,11 +334,11 @@ platform.minLevel = .warning
 
 ## Fixing Hard-to-Reach Bugs
 
-Crypto Cloud에 로깅하는것에 대해 이야기하는것은 즐겁지만, 고쳐야할 버그가 있거나, 적어도 실험한다음 수정해야 하는 버그가 있습니다. 
+Crypto Cloud에 로깅하는것에 대해 이야기하는것은 즐겁지만 고쳐야할 버그가 있거나 적어도 실험을한 다음 수정해야 하는 버그가 있습니다. 
 
-이전 로그들을 정리하는것으로 시작하세요. `application(_:didFinishLaunchingWithOptions:)`에서 모든 로그를 제거하세요. 또한 `platform.miniLevel`을 지우고 모든 로그를. 출력하는 기본값을 설정하세요.
+이전 로그들을 정리하는것으로 시작하세요. `application(_:didFinishLaunchingWithOptions:)`에서 모든 로그를 제거하세요. 또한 모든 로그들을 출력하기 위해 `platform.miniLevel` 설정을 삭제합니다.
 
-이 테스트에서는 모든 로그를 보길 원합니다.
+이 테스트에서는 모든 로그를 봐야합니다.
 
 ---
 
@@ -348,7 +347,7 @@ Crypto Cloud에 로깅하는것에 대해 이야기하는것은 즐겁지만, �
 ## Simulating a Bug
 
 
-... 로깅을 사용하여 버그추적
+... 로깅을 사용하여 버그추적(사용법만 알기위해 이곳은 번역하지 않았습니다)
 
 ---
 
@@ -358,9 +357,9 @@ Crypto Cloud에 로깅하는것에 대해 이야기하는것은 즐겁지만, �
 
 [여기]()에서 완성된 프로젝트를 다운받을수 있습니다. 
 
-또한 SwiftyBeaver로 [File Logging](https://docs.swiftybeaver.com/article/10-log-to-file)을 확인하세요. iPhone이 있고, 인터넷 연결이 없을때 로그얻는걸 100% 확신하길 원한다면, 이 기능은 유용할수 있습니다. 
+또한 SwiftyBeaver로 [File Logging](https://docs.swiftybeaver.com/article/10-log-to-file)을 확인하세요. iPhone이 있고, 인터넷이 연결되어있찌 않을때 로그얻는걸 100% 확신하길 원한다면, 이 기능은 유용할수 있습니다. 
 
-고급 사용 사례를 보려면, [custom formatiing](https://docs.swiftybeaver.com/article/20-custom-format) 을 확인하세요.
+고급 사용 사례를 보려면 [custom formatiing](https://docs.swiftybeaver.com/article/20-custom-format) 을 확인하세요.
 
 ---
 

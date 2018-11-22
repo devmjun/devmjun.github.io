@@ -42,9 +42,9 @@ tags: [Swift, Raywenderlich]
 
 ## Enum-Driven TableView Development
 
-이 튜토리얼에서 Swift의 enum을 사용하여 앱의 여러 상태를 처리하고 table view를 채우는 방법을 배웁니다. 
+이 튜토리얼에서 Swift의 enum을 사용하여 앱의 여러 상태를 처리하고 table view를 다루는 방법을 배웁니다. 
 
-iOs 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 깨끗한 컨트롤 입니다. 불행히도 많은 복잡성이 기초합니다: 올바른 순간에 loading indicators를 보여주는게 필요하고, 에러 처리, 서비스를 위해 완료 호출을 기다리고 완료 처리가 도착했을때 결과를 보여줍니다. 
+iOS 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 깨끗한 컨트롤 입니다. 불행히도 올바른 순간에 loading indicators를 보여주는게 필요하고, 에러 처리, 서비스를 위해 완료 호출을 기다리고 완료 처리가 도착했을때 결과를 보여주는건 많은 복잡성이 기초 합니다. 
 
 이 튜토리얼에서는 Enum-Driven TableView Development를 사용하여 이 복잡성들을 어떻게 관리하는지 배웁니다. 
 
@@ -54,7 +54,7 @@ iOs 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 - 유저를 위해 뷰에 상태를 반영하는 중요성
 - 잘못정의된 상태(state)의 위험
 - 뷰를 최신상태로 유지하기 위해 옵저버 속성을 어떻게 사용하는지(How to use property observers to keep your view up-to-date)
-- 끝이없는 검색결과를 실험하기 위한 페이지네이션은 어떻게 작업해야하는지에 대해서
+- 끝이없는 검색결과를 실험하기 위한 페이지네이션은 어떻게 작업해야하는지
 
 > 이 튜토리얼은 `UITableView`, `enum`이 익숙하다고 가정합니다. 만약 그렇지 않다면 여기 [iOS](https://www.raywenderlich.com/ios), [Swift tutorials](https://www.raywenderlich.com/ios)를 참조해주세요 
 
@@ -64,11 +64,11 @@ iOs 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 
 ## Getting Started
 
-이  튜토리얼에서 리펙토링할 `Chirper`앱은 [xeno-canto 공개 API](https://www.xeno-canto.org/article/153)에서 검색 가능한 새소리 목록을 보여줍니다. 
+이 튜토리얼에서 리펙토링할 `Chirper`앱은 [xeno-canto 공개 API](https://www.xeno-canto.org/article/153)에서 검색 가능한 새소리 목록을 보여줍니다. 
 
-앱앱에서 새의 종(species of bird)을 검색하면 검색어 쿼리와 일치하는 녹화 목록이 표시됩니다. 각 row의 버튼을 탭하여 녹음을 재생할수 있습니다.
+앱에서 새의 종(species of bird)을 검색하면 검색어 쿼리와 일치하는 녹화 목록이 표시됩니다. 각 row의 버튼을 탭하여 녹음을 재생할수 있습니다.
 
-[여기](https://koenig-media.raywenderlich.com/uploads/2018/06/Chirper-1.zip)에서 시작 프로젝틀르 다운로그 하고 프로젝트를 엽니다. 
+[여기](https://koenig-media.raywenderlich.com/uploads/2018/06/Chirper-1.zip)에서 시작 프로젝트를 다운로드 하고 프로젝트를 엽니다. 
 
 <center><img src="/img/posts/driven-enum-0.png" width="450" height="650"></center> <br> 
 
@@ -79,14 +79,14 @@ iOs 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 
 ## Different States
 
-자 설계된 테이블 뷰에는 네가지 상태가 있습니다.
+잘 설계된 테이블 뷰에는 네가지 상태가 있습니다.
 
 - `Loading`: 앱은 새로운 데이터를 가져오기 위해 바쁩니다.
 - `Error`: 서비스를 호출하거나 다른 연산이 실패했습니다. 
-- `Empty`: 서비스 호출이 빈 데이터를 반환합니다. 
+- `Empty`: 호출된 서비스가 빈 데이터를 반환합니다. 
 - `Populated`: 앱은 찾은 데이터를 화면에 보여줍니다. 
 
-`populated`상태는 대부부분 명확 하지만 다른것들도 중요합니다. 유저에게 앱의 상태를 알려주어야 합니다. 즉, 로드 중 상태에서는 indicator을 표시하고, 빈 데이터를일때 수행할 작업을 알려주고, 어떤것이 잘못되었을때 익숙한 오류 메시지를 표시해야 합니다. 
+`populated`상태는 대부분 명확 하지만 다른것들도 중요합니다. 유저에게 앱의 상태를 알려주어야 합니다. 즉, 로드 중 상태에서는 indicator를 표시하고, 빈 데이터일때 수행할 작업을 알려주고, 어떤것이 잘못되었을때 익숙한 오류 메시지를 표시해야 합니다. 
 
 시작하려면 `MainViewController.swift`를 열고 코드를 살펴보세요. view controller는 몇가지 상태에 따라서 중요한 매우 중요한 몇가지 작업을 수행합니다.
 
@@ -96,7 +96,8 @@ iOs 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 - 위의 이전 조건이 없다면 결과 목록들을 화면에 표시합니다.
 - `tableView.tableFooterView`는 현재 상태를 위해 올바른 뷰를 설정합니다.
 
-코드를 수정하는 동안 유의해야할 사항들이 많이 있습니다. 그리고 상황을 어떤 나쁜것을 만들고, 이 패턴은 앱을 통해 추가 기능들을 증가시킬때 더욱더 복잡해집니다. 
+코드를 수정하는 동안 유의해야할 사항들이 많이 있습니다. 그리고 
+엎친데 덮친격으로 이패턴은 앱을 통해 추가 기능들을 추가할때 더욱 복잡해집니다.
 
 ---
 
@@ -116,7 +117,7 @@ state가 있지만 명확하게 정의되지 않았습니다. 이렇게 잘못 �
 
 ## Invalid State
 
-`isLoading`이 `true`이면 앱은 loading state를 보여줘야합니다 `error`가 nil이 아니면 앱은 error state를 보여주어야합니다. 하지만 이 두개의 상태가 만난다면? 무슨일이 일어나나요? 나는 모릅니다.. 앱은 유효하지 않은(invalid state) 일것입니다. 
+`isLoading`이 `true`이면 앱은 loading state를 보여줘야합니다 `error`가 nil이 아니면 앱은 error state를 보여주어야합니다. 하지만 이 두개의 상태가 만난다면? 무슨일이 일어나나요? 나는 모릅니다.. 앱은 유효하지 않을(invalid state)것 입니다. 
 
 `MainViewController`는 명확하게 그자체 상태를 정의하지 않았고 이것은 유효하지 않거나 규정할수 없는 상태 때문에 어떤 버그를 가질수 있음을 의미합니다. 
 
@@ -165,20 +166,20 @@ var state = State.loading
 
 ## Refactoring the Loading State
 
-이 첫번째 변경은 state enum을 위하 isLoading 속성을 제거하기 위함입니다. `loadRecordings()`에서 isLoading 속성을 true로 설정되어 있습브니다. `tableView.tableFooterView`는 loading view로 설정되어있습니다. `loadRecordings()`의 시작부분에서 이 두줄을 지웁니다. 
+이 첫번째 변경은 state enum을 사용하고 isLoading 속성을 제거하기 위함입니다. `loadRecordings()`에서 isLoading 속성은 true로 설정되어 잇습니다. `tableView.tableFooterView`는 loading view로 설정되어있습니다. `loadRecordings()`의 시작부분에서 다음 두줄을 지웁니다. 
 
 ```swift
 isLoading = true
 tableView.tableFooterView = loadingView
 ```
 
-다음으로 교체합니다.
+그리고 다음으로 교체합니다.
 
 ```swift
 state = .loading
 ```
 
-그런 다음 fetchRecordings 완료 블럭내에서 `self.isLoading = false`을 제거합니다. loadRecordings()는 다음과 같아야 합니다.
+그런 다음 `fetchRecordings` 완료 블럭내에서 `self.isLoading = false`을 제거합니다. `loadRecordings()`는 다음과 같아야 합니다.
 
 ```swift
 @objc func loadRecordings() {
@@ -206,7 +207,7 @@ MainViewController의 `isLoading` 속성을 제거할수 있습니다. 더이상
 <center><img src="/img/posts/driven-enum-2.png" width="450" height="650"></center> <br> 
 
 
-state 속성은 설정되어 있지만, 아무것도 하지 않습니다. tableView.tableFooterView는 현재의 상태를 반영하는게 필요합니다. MainViewController에 `setFooterView()`라는 새로운 메소드를 만듭니다.
+`state` 속성은 설정되어 있지만, 아무것도 하지 않습니다. `tableView.tableFooterView`는 현재의 상태를 반영하는게 필요합니다. `MainViewController`에 `setFooterView()`라는 새로운 메소드를 만듭니다.
 
 ```swift
 func setFooterView() {
@@ -238,9 +239,9 @@ setFooterView()
 
 ## Refactoring the Error State
 
-`loadRecordings()`는 `NetworkingService`에서 녹음을 가져옵니다. `netwrokingService.fetchRecordings()`에서 응답을 받고 `update(response:)`를 호출하여 앱의 상태를 업데이트 합니다. 
+`loadRecordings()`는 `NetworkingService`에서 녹음들(recordings)을 가져옵니다. `netwrokingService.fetchRecordings()`에서 응답을 받고 `update(response:)`를 호출하여 앱의 상태를 업데이트 합니다. 
 
-`update(response:)`내부에서, 응답이 에러를 가졌다면, errorLabel에 error의 설명을 설정합니다. tableFooterView는 errorLabel을 포함한 errorView를 설정합니다. `update(response:)`에서 다음 두줄을 찾으세요.
+`update(response:)`내부에서 응답이 에러 라면 `errorLabel`에 `error`의 설명을 설정합니다. `tableFooterView`는 `errorLabel`을 포함한 `errorView`를 설정합니다. `update(response:)`에서 다음 두줄을 찾으세요.
 
 ```swift
 errorLabel.text = error.localizedDescription
@@ -254,7 +255,7 @@ state = .error(error)
 setFooterView()
 ```
 
-`setFooterView()`에서 error 상태를 위한 새로운 case를 추가합니다.
+`setFooterView()`에서 `error` 상태를 위한 새로운 case를 추가합니다.
 
 ```swift
 case .error(let error):
@@ -262,7 +263,7 @@ case .error(let error):
   tableView.tableFooterView = errorView
 ```
 
-이 뷰컨트롤러는 더이상 자체 `error: Error?`속성이 필요하지 않습니다. 이것을 지울수 있습니다 `update(reseponse:)`내부에서 방금 제거한 오류 속성에 대한 참조를 제거해야 합니다.
+이 뷰 컨트롤러는 더이상 자체 `error: Error?`속성이 필요하지 않습니다. 이것을 지울수 있습니다. `update(reseponse:)`내부에서 방금 제거한 오류 속성에 대한 참조를 제거해야 합니다.
 
 ```swift
 error = response.error
@@ -270,7 +271,7 @@ error = response.error
 
 위의 라인을 지우고 앱을 빌드하고 실행합니다. 
 
-로딩 상태가 여전히 잘 작동하는것을 볼수 있습니다. 하지만 오류 상태를 어떻게 테스트하나요? 가장 쉬운 방법을 인터넷을 끊는 것입니다. 맥의 시뮬레이터에서 실행중이라면 인터넷을 mac에서 분리하세요. 앱에서 데이터를 로드할때 표시되는 내용입니다. 
+로딩 상태가 여전히 잘 작동하는것을 볼수 있습니다. 하지만 오류 상태를 어떻게 테스트하나요? 가장 쉬운 방법은 인터넷을 끊는 것입니다. 맥의 시뮬레이터에서 실행중이라면 인터넷을 mac에서 분리하세요. 앱에서 데이터를 로드할때 표시되는 내용입니다. 
 
 <center><img src="/img/posts/driven-enum-4.png" width="450" height="650"></center> <br> 
 
@@ -281,7 +282,7 @@ error = response.error
 
 ## Refactoring the Empty and Populated States
 
-`update(response:)`의 시작부분에 꾀긴 `if-else` 체인이 있습니다. 이 것을 깨끗하게 하려면 `update(response:)`를 다음으로 대체합니다.
+`update(response:)`의 시작부분에 꾀 긴 `if-else` 체인이 있습니다. 이 것을 깨끗하게 하려면 `update(response:)`를 다음으로 대체합니다.
 
 ```swift
 func update(response: RecordingsResult) {
@@ -299,7 +300,7 @@ func update(response: RecordingsResult) {
 
 방금 `populated`, `empty`상태를 부셨습니다. 걱정하지마세요 우리는 이것들을 곳 고칠것입니다. 
 
-`올바른 상태를 설정합니다.`
+`올바른 상태를 설정합니다(Setting the Correct State)`
 
 `if let error = response.error`블록 아래에 다음코드를 추가합니다.
 
@@ -313,9 +314,9 @@ guard let newRecordings = response.recordings,
 }
 ```
 
-state를 업데이트 할때 `setFooterView()`, `tableView.reloadData()`를 호출하는것을 잊지마세요. 만약 잊었다면, 변경하는걸 볼수 없습니다. 
+`state`를 업데이트 할때 `setFooterView()`, `tableView.reloadData()`를 호출하는것을 잊지마세요. 만약 잊었다면, 변경된 상태를 화면에서 볼수 없습니다. 
 
-`update(response:)`내부에 당므 라인을 찾습니다.
+`update(response:)`내부에 다음 라인을 찾습니다.
 
 ```swift
 recordings = response.recordings
@@ -330,7 +331,7 @@ setFooterView()
 
 뷰 컨트롤러의 staet 속성에 영향을 주기위해 `update(response:)`를 리펙토링 했습니다. 
 
-`Footer View 설정(Setting the Footer View)`
+`Footer View를 설정합니다(Setting the Footer View)`
 
 그런 다음, 현재의 상태를 위한 올바른 footer view를 설정해야 합니다. `setFooterView()`내부에 switch 문에 다음 두가지 case를 추가합니다.
 
@@ -350,7 +351,7 @@ case .populated:
 
 `상태에서 데이터를 가져옵니다(Getting Data from the State)`
 
-앱은 더이상 데이터를 표시하지 않습니다. 뷰컨트롤러의 `recordings`속성은 테이블뷰를 채우지만, 설정되지 않았습니다. 테이블뷰는 state 속성에서 데이터를 가져와야합니다. 계산 프로퍼티를 `State` 열거형 내부에 추가합니다.
+앱은 더이상 데이터를 표시하지 않습니다. 뷰 컨트롤러의 `recordings`속성은 테이블뷰를 채우지만, 설정되지 않았습니다. 테이블뷰는 state 속성에서 데이터를 가져와야합니다. 연산 프로퍼티를 `State` 열거형 내부에 추가합니다.
 
 ```swift
 var currentRecordings: [Recording] {
@@ -363,7 +364,7 @@ var currentRecordings: [Recording] {
 }
 ```
 
-이 속성을 테이블뷰를 채우기 위해 사용할수 있습니다. state가 `.populated`라면, 채워진 recordings을 사용합니다. 그렇지않으면 빈 배열을 반환합니다. 
+이 속성을 테이블뷰에 데이터를 채우기 위해 사용할수 있습니다. `state`가 `.populated`라면, 채워진 recordings을 사용합니다. 그렇지않으면 빈 배열을 반환합니다. 
 
 `tableView(_:numberOFrowsInSection:)`에서 다음 라인을 지우고
 
@@ -413,9 +414,9 @@ cell.load(recording: state.currentRecordings[indexPath.row])
 
 ## Keeping in Sync with a Property Observer
 
-뷰 컨트롤러에서 명확하게 정의되지 않은 state들을 지웠고 쉽게 state 속성에서 뷰의 행동을 쉽게 알아차릴수 있습니다. 또한 이것은 error, loading 두개의 상태에서 중요합니다 - 이것은 유효하지 않은 상태가 없음을 의미합니다.
+뷰 컨트롤러에서 명확하게 정의되지 않은 state들을 지웠고  state 속성에서 뷰의 행동을 쉽게 알아차릴수 있습니다. 또한 이것은 error, loading 두개의 상태에서 중요합니다 - 이것은 유효하지 않은 상태가 없음을 의미합니다.
 
-여전히 한개의 문제가 있습니다. state 속성을 업데이트 할때, `setFooterView()`, `tableView.reloadData()`호출하는 것을 `반드시` 기억해야 합니다. 기억 하지 못한다면, 뷰는 상태에 따라서 적절하게 뷰를 반영하지 못합니다. 상태가 바뀔때마다 모든것이 새롭게 고쳐진다면 좋지 않나요?
+하지만 여전히 한개의 문제가 있습니다. state 속성을 업데이트 할때, `setFooterView()`, `tableView.reloadData()`호출하는 것을 `반드시` 기억해야 합니다. 기억 하지 못한다면, 뷰는 상태에 따라서 적절하게 뷰를 반영하지 못합니다. 상태가 바뀔때마다 모든것이 새롭게 고쳐진다면 좋지 않나요?
 
 이것은 `didSet`을 사용하는 `옵저버 프로퍼티(property observer)`를 사용할 좋은 기회입니다. 옵저버 프로퍼티를 사용하여 속성 값의 변경에 응답합니다. 테이블뷰를 reload 하고 footer 뷰를 매시간 `staet` 속성으로 설정하길 원한다면, `didSet` 옵저버 프로퍼티를 추가해야합니다.
 
@@ -433,7 +434,7 @@ var state = State.loading {
 
 state값이 변경 될때, `didSet` 옵저버 속성이 실행 됩니다. `setFooterView()`, `tableView.reloadData()`를 호출하여 뷰를 업데이트 합니다. 
 
-`setFooterView()`, `tableView.reloadData()`에 대한 모든 호출을 제거합니다 - 거기에는 4가지가 있습니다. `loadRecordings()`, `update(response:)`에서 찾을수 있습니다. 이들은 더이상 필요하지 않습니다.
+`setFooterView()`, `tableView.reloadData()`에 대한 모든 호출을 제거합니다 - 거기에는 4가지가 있고 `loadRecordings()`, `update(response:)`에서 찾을수 있습니다. 이들은 더이상 필요하지 않습니다.
 
 앱을 빌드하고 실행하여 모든 기능이 작동하는지 확인합니다.
 
@@ -451,7 +452,7 @@ state값이 변경 될때, `didSet` 옵저버 속성이 실행 됩니다. `setFo
 
 ![](/img/posts/driven-enum-10.gif)
  
-이것은 올바르지 않습니다, 50개의 앵무새 녹음파일밖에 없나요?
+이것은 올바르지 않습니다, 검색결과가 50개의 앵무새 녹음파일밖에 없나요?
 
 xeno-canto API는 한번에 보내는 결과를 500개로 제한합니다. 지금 사용하는 프로젝트는 `NetworkingService.swift`에서 50개로 잘라내고 예제에서 사용하기 쉽도록 만듭니다.
 
@@ -465,17 +466,17 @@ xeno-canto API는 한번에 보내는 결과를 500개로 제한합니다. 지�
 
 `NetworkingService`내에 xeno-canto API 에 쿼리(query)할때, URL은 다음과 같습니다.
 
-```swift
+```zsh
 http://www.xeno-canto.org/api/2/recordings?query=parrot
 ```
 
-이 호출의 결과는 처음 500개 항목으로 제한됩니다. 이것은 `첫 페이지(first page)`라고 하고, 1-500개의 아이템을 포합합니다. 다음 500개의 결과를 `두번째 페이지` 라고 하고 쿼리 매개변수로서 사용할 page를 명시합니다. 
+이 호출의 결과는 처음 500개 항목으로 제한됩니다. 이것은 `첫 페이지(first page)`라고 하고, 1-500개의 아이템을 포함합니다. 다음 500개의 결과를 `두번째 페이지` 라고 하고 쿼리 매개변수로서 사용할 page를 명시합니다. 
 
-```swift
+```zsh
 http://www.xeno-canto.org/api/2/recordings?query=parrot&page=2
 ```
 
-끝에 `&page=2`를 알아 차렸을것입니다; 이 코드는 API에게 두501-1000개의 아이템을 포함하고 있는 번째 페이지를 원한다고 이야기 합니다. 
+끝에 `&page=2`를 알아 차렸을것 입니다; 이 코드는 API에게 501-1000개의 아이템을 포함하고 있는 두번째 페이지를 원한다고 이야기 합니다. 
 
 ---
 
@@ -485,7 +486,7 @@ http://www.xeno-canto.org/api/2/recordings?query=parrot&page=2
 
 `MainViewController.loadRecordings()`를 보면, `networkingService.fetchrecordings()`가 호출될때, `page` 파라미터는 1로 하드코딩 되어있습니다. 이렇게하면 다음작업을 수행할수 있습니다.
 
-1. `paging`라고 불리는 새로운 상태를 추가합니다. 
+1. `paging`이라고 불리는 새로운 state를 추가합니다. 
 2. `networkingService.fetchRecordings`의 응답이 추가 페이지를 나타낸다면, state 를 `.paging`으로 설정합니다. 
 3. 테이블에 마지막 cell을 화면에 보여주려고 하기 직전에, state 가 `.paging`이라면 결과의 마지막 페이지를 로드합니다.
 4. 서비스 호출의 새 recordings을 recordings 배열에 추가합니다.
@@ -505,14 +506,14 @@ case paging([Recording], next: Int)
 
 `.populated` state와 같이 화면에 표시하기 위해 녹음 배열(array of recordings)을 추적해야 합니다. 또한 API가 가져와야하는 다음 page를 추적 해야합니다. 
 
-프로젝트를 빌드하고 실행하면 더이상 컴파일 되지 않습니다. `setFooterView`에 스위치 상태가 모든 case들을 포함하지 않기 때문입니다. switch 문에 다음을 추가합니다.
+프로젝트를 빌드하고 실행하면 더이상 컴파일 되지 않습니다. `setFooterView`에 스위치 조건문의 상태가 모든 case들을 포함하지 않기 때문입니다. switch 문에 다음을 추가합니다.
 
 ```swift
 case .paging:
   tableView.tableFooterView = loadingView
 ```
 
-앱이 paging state 라면, loading indicator를 tableView의 끝에 보여줍니다. 
+앱이 `paging state` 라면, `loading indicator`를 `tableView`의 끝에 보여줍니다. 
 
 state의 `currentRecordings` 연산 프로퍼티는 완전하지(exhaustive)하지 않습니다. 원하는 결과를 보려면 업데이트해야합니다. `currentRecordings` 내부 switch 조건문에 새로운 case를 추가합니다. 
 
@@ -543,7 +544,7 @@ if response.hasMorePages {
 
 <center><img src="/img/posts/driven-enum-11.png" width="450" height="650"></center> <br> 
 
-여러개의 페이지를 찾았다면, 앱은 하단에 loading indcator를 화면에 표시합니다. 하지만 검색 단어가 하나의 페이지만 찾았따면, loading indicator 없이 `.populated`가 표시됩니다.
+여러개의 페이지를 찾았다면, 앱은 하단에 loading indcator를 화면에 표시합니다. 하지만 검색 단어가 하나의 페이지만 찾았다면, loading indicator 없이 `.populated`가 표시됩니다.
 
 로드하기 위한 페이지가 더 있을때 볼수 있습니다. 하지만 앱은 로드할 페이지가 없습니다. 이제 이것을 고칠것입니다.
 
@@ -570,7 +571,7 @@ func loadPage(_ page: Int) {
 networkingService.fetchRecordings(matching: query, page: page)
 ```
 
-`loadRecordings()`는 조금 비어 보입니다. `loadRecordings()`를 `loadPage(_:)`를 호출하여 업데이트 하고 페이지가 로드되기 위해 1을 명시합니다.
+`loadRecordings()`는 조금 비어 보입니다. `loadRecordings()`에서 `loadPage(_:)`를 호출하여 업데이트 하고 페이지가 로드되기 위해 1을 명시합니다.
 
 ```swift
 @objc func loadRecordings() {
@@ -594,13 +595,13 @@ if case .paging(_, let nextPage) = state,
 }
 ```
 
-현재 state가 `.paging`이고 현재 row에 표시된것이 currentRecordings 배열에 마지막 결과와 같은 index인 경우, 다음 페이지를 가져와야합니다.
+현재 state가 `.paging`이고 현재 currentRecordings 배열에 마지막 값이 row에 표시 되면 다음 페이지를 가져와야합니다.
 
 앱을 빌드하고 실행합니다.
 
 ![](/img/posts/driven-enum-13.gif)
 
-loading indicator가 뷰에 나타나면, 앱은 다음 페이지릐 데이터를 가져옵니다. 하지만 현재 recordings에 데이터를 추가하지는 않습니다. 단지 현재 recordings를 새로운것으로 교체합니다. 
+loading indicator가 뷰에 나타나면, 앱은 다음 페이지의 데이터를 가져옵니다. 하지만 현재 recordings에 데이터를 추가하지는 않습니다. 단지 현재 recordings를 새로운것으로 교체합니다. 
 
 ---
 
