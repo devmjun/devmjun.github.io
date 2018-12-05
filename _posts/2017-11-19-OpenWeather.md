@@ -9,12 +9,15 @@ comments: true
 tags: [Swift]
 ---
 
-### 사용한 API [https://openweathermap.org](https://openweathermap.org) 입니다<br>
+API 주소는 [여기](https://openweathermap.org) 입니다
+
 ---
 
-![screen](/img/posts/OpenWeather.gif)
+## Overview 
 
-날씨에 대한 정보를 제공하는 API 를 가지고 간단하게, 현재 위치의 날씨를 UI에 적용 시켜보고, 위도와 경도를 가지고 해당 지역의 날씨를 검색해봅니다.
+<center><img src="/img/posts/OpenWeather.gif" width="450" height="650"></center> <br> 
+
+날씨에 대한 정보를 제공하는 API 를 가지고 간단하게, 현재 위치의 날씨를 UI에 적용 하고 위도와 경도를 가지고 해당 지역의 날씨를 검색 합니다.
 
 ---
 
@@ -22,16 +25,17 @@ tags: [Swift]
 
 ![screen](/img/posts/openWeather.jpg) <br>
 
-API 사용법은, [https://openweathermap.org](https://openweathermap.org) 가시면 확인해보실수 있습니다. 
+API 사용법은 [https://openweathermap.org](https://openweathermap.org) 에서 확인 가능합니다.
 
-> api.openweathermap.org/data/2.5/weather?`lat=35`&`lon=139`에서 위도와 경도 값을 변경 하면, 그 지역의 날씨 정보를 받을수 있습니다. 
+> **api.openweathermap.org/data/2.5/weather?`lat=35`&`lon=139`**에서 위도와 경도 값을 변경 하면 그 지역의 날씨 정보를 받을수 있습니다. 
 > 
-> 네트워크는 데이터 통신은 기본적으로 비동기 처리입니다. 데이터를 가져오는 `시점` 과 사용되어지는 시점, 그리고 UI 변경에 대한 고민을 해주어야 합니다. <br>
-> 
+> 네트워크 데이터 통신은 기본적으로 비동기로 처리되기 때문에 데이터를 가져오는 시점과 사용되어지는 시점을 고민하여 UI를 업데이트할 시점을 고민 해야 합니다. 
 
+
+### 날씨값을 반환하는 데이터 센터 
 
 ```swift
-** 날씨값을 반환 하는 데이터 센터 
+// 날씨값을 반환 하는 데이터 센터 
 class WeatherDataManager {
   static var shread: WeatherDataManager = WeatherDataManager()
   let baseURL: String = "https://api.openweathermap.org/data/2.5/weather?"
@@ -64,8 +68,11 @@ class WeatherDataManager {
     }.resume()
   }
 }
+```
 
-** MainViewController 부분 
+### MainViewController 
+
+```swift
 import UIKit
 import CoreLocation
 class MainViewController: UIViewController {
@@ -123,26 +130,25 @@ extension MainViewController: CLLocationManagerDelegate {
 }
 ```
 
-> 현재 위치를 알기 위해서 CoreLocation 을 사용 했습니다. CoreLocation 으로 현재위치를 가져올때, 해당 위치의 위도, 경도 값을 가지고 날씨값을 가져온 후, UI에 적용 시켜 주었습니다. 
-> 
+> 현재위치를 알기 위해 CoreLocation을 사용합니다. CoreLocation으로 현재 위치를 가져오고 난 이후 위도와 경로를 이용하여 날씨값을 가져 오고 그후 UI를 업데이트 합니다.
 
 ---
 
 ## City 검색 & 해당 날씨정보 적용
 
-
-| * | * | 
+|  |  | 
 | :--: | :--: |
 |![screen](/img/posts/openWeather-1.jpg) |![screen](/img/posts/openWeather-2.jpg) | <br>
 
-City검색에 대상이 되는 데이터는 Json 형태로 된 약 20만개정도 되는 데이터 입니다. 처음에는 20만개정도 되는 데이터를 찾는 시간이 오래걸리지 않을것 이라고 생각했는데, 검색을 해보니 UI 가 버벅거리는 현상이 생겼습니다. 버벅거리는 현상을 해결하기 위해서 검색 연산을 globalQueue에서 실행 했습니다. 정렬, 검색알고리즘을 사용하면 성능이 향상 될것 같습니다.(저의 한계는 Quick sort, Birnary Search 정도 인것 같습니다..)
+JSON 형태의 약 20만개의 City데이터를 Documents에서 다운받을수 있습니다. 해당 JSON 파일을 번들에서 찾아온후 검색에 적용해 보니 UI가 뚝뚝 끊겼습니다. 해당 현상을 해결하기 위해 globalQueue를 사용하였고. 검색 알고리즘을 사용하면 성능이 향상될것 같습니다.(현재 저의 한계는 Quick sort, Binary search 입니다.)
 
-
+### 초기 데이터 설정 
 
 ```swift
-** 초기 데이터 설정
 func loadJsonData() {
-    if let path = Bundle.main.path(forResource: "CityList", ofType: "json"), let contents = try? String(contentsOfFile: path), let data = contents.data(using: .utf8) {
+    if let path = Bundle.main.path(forResource: "CityList", ofType: "json"), 
+    let contents = try? String(contentsOfFile: path), 
+    let data = contents.data(using: .utf8) {
       let cityDic = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
       self.searchJsonData = []
       for city in cityDic {
@@ -150,8 +156,11 @@ func loadJsonData() {
       }
     }
   }
-** 검색 ViewController
-import UIKit
+```
+
+### SearchViewController 
+
+```swift
 class SearchViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var indicate: UIActivityIndicatorView!
@@ -186,7 +195,6 @@ class SearchViewController: UIViewController {
     self.navigationItem.searchController = searchController
     searchController?.searchResultsUpdater = self
     
-    // 즉시 상호작용?
     searchController?.obscuresBackgroundDuringPresentation = false
     searchController?.searchBar.placeholder = "Search City"
     navigationItem.searchController = searchController
@@ -254,9 +262,11 @@ extension SearchViewController: UISearchResultsUpdating {
     tableView.reloadData()
   }
 }
+```
 
-** 검색후 선택한 나라에 대한 날씨를 보여주는 ViewController
-import UIKit
+### 검색후 선택한 나라에 대한 날씨를 보여주는 ViewController 
+
+```swift
 class MyChoiceWeatherTable: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   let imaURL: String = "https://openweathermap.org/img/w/"
@@ -291,20 +301,3 @@ extension MyChoiceWeatherTable: UITableViewDelegate, UITableViewDataSource{
   }
 }
 ```
-
-> 구조를 하나의 DataCenter 에서 모든 곳에 데이터를 뿌려주고, 추가하는 형식으로 만들었습니다.
->
-> 검색의 옵션중 초성검색을 사용할때, Contains를 사용하면 초성검색이 가능하지만 조금 버벅거렸습니다. 검색 단어와, target Data를 1:1 매칭시 결과값을 반환하게 만들어 보니까, 버벅거리지는 않지만. 조금 시원하지 않은 느낌으로 마무리 지었던것 같습니다. 혹시 더 좋은 방법을 알고 계신다면, 댓글 남겨 주시면 진심으로 감사하겠습니다🙏
->
-> 
-
----
-
-## 여담 
-
-Network 통신을 하면서 데이터를 핸들링 하니까. 재미도 있고, 무언가 계속 더 해보고싶은 욕망(?) 이 피어나는 것 같습니다. 주말에 카페에서 즐겁게 만들었던것 같습니다..! 감사합니다.
----
-
-
-
-

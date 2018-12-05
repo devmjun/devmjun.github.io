@@ -9,39 +9,27 @@ comments: true
 tags: [Swift]
 ---
 
-## Alert, ScrollView 를 이용해서 지하철 노선도 만들기!
-
 [프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Mini_Projects/Projexts_Xcode/CreatSubWay-ver1)
 
 
 ---
 
+## 고려 사항 
 
-## 고려해야 할사항
-
- 1. 노선도 이미지는 확대했을때, 깨지지 않아야 합니다
- 2. 핀치 핑거 기능, 더블 탭 했을때 확대 기능
- 3. 지하철 노선도 탐색 기능.(출발 -> 도착 정했을때, 환승역 등등 고려해야 하는데, 아마 알고리즘을 사용해야 할 것 같다는 생각이 듭니다!) 
-
- 
- ---
- 
-
-## Work Log 
+- 지하철 노선도 탐색 기능.
+	- 출발 -> 도착
+	- 중간 환승역 
 
 ---
 
-## 1. 이미지와, 스크롤뷰 생성 
+## 이미지와, 스크롤뷰 생성 
 
 
 | ![screensh](/img/posts/CreatSubway.jpg) | ![screensh](/img/posts/CreatSubway1.jpg) |
 
 
-> UIImageView, UIScrollView
-
 
 ```swift
-import UIKit { 
 class ViewController: UIViewController, UIScrollViewDelegate {
     var scrollView: UIScrollView!
     var imageView: UIImageView!
@@ -57,28 +45,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         //view 에 뿌려주기
         scrollView.addSubview(imageView)
         view.addSubview(scrollView)
-       // Hierarchy 현재 구조         
-        UIView
-        |-- UiScrollview
-        |-- UIImageView 
- }
+}
 ```
-
-> 확대를 사용할때, 계층 구조를 명확히 알고있어야 합니다. 그렇지 않으면, 이미지, 버튼, 확대 되는 부분이 따로 놀아서 확대, 축소 시에 이미지와 기능이 분리 되어서 확대 될수도 있습니다. 
   
 ---
 
-## 2. Pinch, doubleTap Gesture 그리고 이미지는 벡터 이미지로 변경
+## Double tab gesture
 
 ![screensh](/img/posts/CreatSubway2.jpg) 
 
 
-
-> 확대, 축소 기능 구현 
-
-
 ```swift
-// scrollViewDelegate 체텍
 class ViewController: UIViewController, UIScrollViewDelegate {
     var pinchGesture = UIPinchGestureRecognizer()
     override func viewDidLoad() {
@@ -118,20 +95,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 ---
 
-## 3. 각 역마다 버튼 넣고, 위치 지정(버튼은 총 13개만 만들었습니다!)
+## 각 역마다 버튼 넣고, 위치 지정
 
 | ![screensh](https://user-images.githubusercontent.com/30401511/31276412-a7115014-aad6-11e7-9320-c1f64252da48.jpg) | ![screensh](https://user-images.githubusercontent.com/30401511/31275413-126a2ca0-aad2-11e7-8c45-7bd39fec8254.jpg) |
 
-> 확대, 축소후 기능 버튼 위치 그대로(검정색 원이 사실은 버튼입니다)
+> 확대, 축소후 기능 버튼 위치 그대로(검정색 원은 버튼입니다)
 
 ![screensh](https://user-images.githubusercontent.com/30401511/31275446-2be5c464-aad2-11e7-9e84-3431dbab868b.jpg) 
 
 > 버튼 숨기기
 
-
-
 ```swift
-import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
    /*==========================
           역마다 버튼 만들기
@@ -308,13 +282,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 ---
 
-## 버튼의 기능 구현(alert을 통해서, 출발역, 도착역 지정시 결과 반환)
+## 버튼의 기능 구현
 
-5. 출발역, 도착역, 결과 알럿 
+| | | |
+|:--: |:--: |:--: |
+| ![screensh](/img/posts/CreatSubWay6.jpg) | ![screen](/img/posts/CreatSubWay7.jpg) | ![screen](/img/posts/CreatSubWay8.jpg) |
 
-| ![screensh](/img/posts/CreatSubWay6.jpg) | ![screen](/img/posts/CreatSubWay7.jpg) | <br>
 
-![screen](/img/posts/CreatSubWay8.jpg) 
 
 
 ```swift
@@ -584,11 +558,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 ```
 
-기본적으로 알럿을 사용하니까, 코드가 조금씩 길어졌습니다. 알럿이 아니라, 나중에는 view를 불러오는 방식으로 반복적으로 처리하면 코드를 줄일수 있을것 같습니다. 
-
-출발역 -> 도착역 지정 되었을때, 얼만큼 걸린다라는 시간을 도출하기 위해서 예외처리 해주어야 하는데, 예외처리 순서는 이렇습니다.
-
-
 |-- 1. 도착역 OK Alert(실행시) <br>
 |-- 2. 출발역이 반월당인 경우 <br>
 |-- 3. 1호선 -> 1호선 :  환승역 이전에 출발역과 도착역이 있는경우  <br>
@@ -600,22 +569,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 |-- 5. 1호선 -> 2호선 :  일반적인 경우 <br>
 |-- 6. 2호선 -> 1호선 :  일반적인 경우 <br>
 
-예외 처리에 대한 순서가 바뀌게 되었을때, 해당하는 부분을 실행하게되면 app이 죽어버립니다..ㅠ.ㅠ
 
 ---
-
-## 여담
-
-부족한것 부분이 너무나 많습니다. 
-
-1. 지금은 환승역이 1개 이지만, 환승역이 여러개일때, 위의 자료구조를 사용하면, 엄청 복잡해질것 같습니다. 대안으로 양방향 링크드 리스트랑, tree 를 섞어서, 환승역에서는 트리구조를 띄우는 링크드 리스트로 구현하고, 서치하는 방법을 모색해봐도 좋을것 같습니다.(아직 능력부족..)
-
-2. 알럿이 아닌 다른것으로 다시 한번 구현 해야 할것 같습니다.
-
-3. MVC 모델을 적용해서, 지하철역 데이터, 이미지,버튼,스크롤뷰 와, 알럿을 띄우는 부분을 따로 나누어서 다시 만들어 보면 조금더 보기 좋을(?) 것 같습니다. 
-
-4. 위의 코드에서는 총 걸리는 시간이 반환 되지만, 지하철 마다 출발, 도착 시간 데이터가 있으면, 그것을 가지고 시간을 반환하게 만들어도 재미있을것 같습니다.
-
-5. 현재까지 알고 있는 것을 이용해서 만들어 보았습니다...! 좀더 스마트한 방법을 알고 계시면 답변 달아주시면 정말 감사하겠습니다!
-
 

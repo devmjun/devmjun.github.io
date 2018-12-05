@@ -9,23 +9,17 @@ comments: true
 tags: [Swift]
 ---
 
-## Graph_AutoLayout_Code(멋지게 그래프를 표현하는 방법과 애니메이션)
-
-![scrrn](/img/posts/graph.MOV.gif) <br>
-
---View <br>
-----view 6개 <br>
-
-View 속에, 그래프로 사용될 View 6개를 만들어 놓고, autoLayout 을 통해서, 그래프의 변경 되는 값을 조정해줍니다.<br>
-기본 superview의 autolayout 을 통해서, 위치와 사이즈를 정해줍니다. 그 속에서, 각 그래프의 bottom 을 superView에 고정 해놓고 각 View들의 height 값을 비율로 정의해서 그래프를 정의하는 방법을 사용합니다.
+## Autolayout을 이용하여 막대 그래프 표현하기
+ 
+<center><img src="/img/posts/graph.MOV.gif" width="450" height="650"></center> <br> 
 
 
-> 원리는, View의 bottom 을 고정시켜놓고, 그래프의 height값을 input값으로 받아서 변경시켜주면, 유동적은 그래프를 사용할수 있습니다.
-> 
+### View hierarchy
+
+View에 그래프 막대로 사용될 하위뷰 6개를 추가하여 autolayout을 통해서 그래프의 변경되는 값을 조정합니다. 그래프 막대로 View bottom을 고정하고 막대 그래프뷰의 height을 조정하여 그래프를 보여줍니다.
 
 
 ```swift
-import UIKit
 class ViewController: UIViewController {
 	 // autoLayout 으로 지정한 height 값을 IBOutlet을 통해서 가져옵니다. 
     @IBOutlet weak var graph1Height: NSLayoutConstraint!
@@ -88,13 +82,4 @@ extension NSLayoutConstraint {
 }
 ```
 
-> Animate 적용시 `self.view.layoutIfNeeded()` 적용 시켜 주어야, 변경된 Layer 값이 실시간으로 적용이 됩니다..!
-> 
-> 주의 사항으로는 Constraints 값을 두번 정의하게되면, 오류가 나게 됩니다. 이유는 Constraints 값이 두번 적용이 되고, Priority 값이 기본적으로 1000 이기때문에, 어떤 값을 적용 해야하는데 알수 없어서 나는 오류입니다. 
-
-
----
-
-## Reference 
-
-[IOS Autolayout 강의](https://www.inflearn.com/course/autolayout-ui_ios/)
+Animation 적용시 `view.layoutIfNeeded()`를 실행하여 명시적으로 뷰의 레이아웃을 재설정합니다. 

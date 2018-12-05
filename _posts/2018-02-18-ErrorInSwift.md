@@ -34,7 +34,7 @@ tags: [Swift]
 - 그러나 에러 발생하면 애플리케이션 크래쉬..
 
 ```swift
-`try` str.write(toFile: filePath, atomically: true, encoding: .utf8)
+try str.write(toFile: filePath, atomically: true, encoding: .utf8)
 ```
 
 - 에러 발생 -> 애플리케이션 크래쉬 방지
@@ -141,7 +141,7 @@ struct/class로 작성한 Error 타입보다, Enum을 이용하는게 훨씬 사
 
 ---
 
-## 클린업(defer)
+## defer
 
 defer 구문을 사용하여 현재 코드 블럭에서 실행흐름이 벗어날 때 수행해야 할 일을 지정할 수 있다. defer는 실행 흐름이 어떻게 벗어나는지 그 과정을 구분하지 않는다. return, break 혹은 예외로 인해 강제로 벗어나는 경우에 조차 동작한다. 따라서 열었던 파일이나 소켓을 닫거나, 수동으로 직접 할당한 메모리를 정리하는 등의 코드를 이곳에 넣을 수 있다.
 
