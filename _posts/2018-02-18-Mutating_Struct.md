@@ -20,12 +20,12 @@ struct Point {
 var x = 0 
 var y = 0 
 
-`mutating` func moveTo(x: Int, y: Int) {
+mutating func moveTo(x: Int, y: Int) {
 	self.x = x  // 컴파일 에러남.
 	self.y = y  // 컴파일 에러남. 
   }
 }
-  -> 컴파일 오류가 발생하지 않게 하기 위해서 func 키워드 앞에 `mutating`작성 해주어야함.
+  -> 컴파일 오류가 발생하지 않게 하기 위해서 func 키워드 앞에 mutating작성 해주어야함.
 ```
 
 따라서 다른 구조체 API를 보고 Mutating이 있느냐 없느냐에 따라서, 원래 구조체 내부의값을 변경 하는 API 인지, 아닌지 유추할수 있습니다.

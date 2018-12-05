@@ -9,246 +9,13 @@ comments: true
 tags: [Swift]
 ---
 
-# Alert, ScrollView 를 이용해서 지하철 노선도 만들기!
-
-
-[Part 1 의 내용은 이곳 입니다.](https://devmjun.github.io/archive/CreatSubway-ver1) <br>
-[Part 1 프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Mini_Projects/Projexts_Xcode/CreatSubWay-ver1)<br>
 [Part 2 프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Projects/CreatSubWay-ver2)
 
 ---
 
-## Part 2 에서 바뀐점
-
-1. Data 부분 분리(각 역의 정보)
-2. 반복문을 사용하여 Button 인스턴스 생성
-3. 출발역 -> 도착역 다익스트라 알고리즘 사용 
-4. 더블탭 실행시, 해당 터치 부분 확대, 축소 구현 
-
----
-
-## 1. Data 부분을 분리 하여 정리(MVC 의 M)
-
-
-- 기존(Part 1)
+## Model 변경 
 
 ```swift
-import UIKit
-class ViewController: UIViewController, UIScrollViewDelegate {
-   /*==========================
-          역마다 버튼 만들기
-    ==========================*/
-    var yeungNamHosp: UIButton!
-    var univOfEduc: UIButton!
-    var myeongDeok: UIButton!
-    
-    // 환승역
-    var banWorlDang: UIButton!
-    
-    var jungangno: UIButton!
-    var daeguStation: UIButton!
-    var chilseongMarket: UIButton!
-    
-    // 2호선
-    var neaDang: UIButton!
-    var bangogae: UIButton!
-    var sinNam: UIButton!
-    
-    var kyungDeaHosp: UIButton!
-    var daeguBank: UIButton!
-    var beomeo: UIButton!
-    
-    var btn: UIButton!
-    
-    // 버튼 클릭 횟수
-    var clickBtn = 0
-    
-    // 출발, 도착역 설정
-    var startStation = ""
-    var arrivalStation = ""
-    
-    // 스타트 역의 tag 값을 가져온다
-    var getStartStionTag = 0
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        /*==========================
-               각 역 인스턴스 생성
-         ==========================*/
-        yeungNamHosp = UIButton()
-        univOfEduc = UIButton()
-        myeongDeok = UIButton()
-
-        // 환승역
-        banWorlDang = UIButton()
-
-        jungangno = UIButton()
-        daeguStation = UIButton()
-        chilseongMarket = UIButton()
-
-        // 2호선
-        neaDang = UIButton()
-        bangogae = UIButton()
-        sinNam = UIButton()
-
-        kyungDeaHosp = UIButton()
-        daeguBank = UIButton()
-        beomeo = UIButton()
-        
-        /*=======================
-                 각 버튼 위치
-         ========================*/
-			yeungNamHosp.frame = CGRect(x: 465, y: 430, width: 20, height: 20)
-        univOfEduc.frame = CGRect(x: 486, y: 410, width: 20, height: 20)
-        myeongDeok.frame = CGRect(x: 515, y: 380, width: 20, height: 20)
-        
-        // 환승역
-        banWorlDang.frame = CGRect(x: 575, y: 320, width: 20, height: 20)
-        
-        jungangno.frame = CGRect(x: 610, y: 290, width: 20, height: 20)
-        daeguStation.frame = CGRect(x: 640, y: 265, width: 20, height: 20)
-        chilseongMarket.frame = CGRect(x: 690, y: 265, width: 20, height: 20)
-        
-        // 2호선
-        neaDang.frame = CGRect(x: 430, y: 320, width: 20, height: 20)
-        bangogae.frame = CGRect(x: 475, y: 320, width: 20, height: 20)
-        sinNam.frame = CGRect(x: 545, y: 320, width: 20, height: 20)
-        
-        kyungDeaHosp.frame = CGRect(x: 640, y: 320, width: 20, height: 20)
-        daeguBank.frame = CGRect(x: 680, y: 320, width: 20, height: 20)
-        beomeo.frame = CGRect(x: 730, y: 320, width: 20, height: 20)
-        
-        /*==========================
-               버튼 색상, 곡률 지정
-         ==========================*/
-        yeungNamHosp.backgroundColor = UIColor.clear
-        yeungNamHosp.layer.cornerRadius = 10
-
-        univOfEduc.backgroundColor = UIColor.clear
-        univOfEduc.layer.cornerRadius = 10
-
-        myeongDeok.backgroundColor = UIColor.clear
-        myeongDeok.layer.cornerRadius = 10
-
-        // 환승역
-        banWorlDang.backgroundColor = UIColor.clear
-        banWorlDang.layer.cornerRadius = 10
-        jungangno.backgroundColor = UIColor.clear
-        jungangno.layer.cornerRadius = 10
-
-        daeguStation.backgroundColor = UIColor.clear
-        daeguStation.layer.cornerRadius = 10
-
-        chilseongMarket.backgroundColor = UIColor.clear
-        chilseongMarket.layer.cornerRadius = 10
-
-        // 2호선
-        neaDang.backgroundColor = UIColor.clear
-        neaDang.layer.cornerRadius = 10
-
-        bangogae.backgroundColor = UIColor.clear
-        bangogae.layer.cornerRadius = 10
-
-        sinNam.backgroundColor = UIColor.clear
-        sinNam.layer.cornerRadius = 10
-
-        kyungDeaHosp.backgroundColor = UIColor.clear
-        kyungDeaHosp.layer.cornerRadius = 10
-
-        daeguBank.backgroundColor = UIColor.clear
-        daeguBank.layer.cornerRadius = 10
-
-        beomeo.backgroundColor = UIColor.clear
-        beomeo.layer.cornerRadius = 10
-        
-        /*=======================
-             버튼 imageView 에 추가.
-         ========================*/
-        imageView.addSubview(yeungNamHosp)
-        imageView.addSubview(univOfEduc)
-        imageView.addSubview(myeongDeok)
-        
-        imageView.addSubview(banWorlDang)
-        
-        imageView.addSubview(jungangno)
-        imageView.addSubview(daeguStation)
-        imageView.addSubview(chilseongMarket)
-        
-        imageView.addSubview(neaDang)
-        imageView.addSubview(bangogae)
-        imageView.addSubview(sinNam)
-        
-        imageView.addSubview(kyungDeaHosp)
-        imageView.addSubview(daeguBank)
-        imageView.addSubview(beomeo)
-        
-        /*=======================
-             버튼 기능 연결
-         ========================*/
-        yeungNamHosp.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        univOfEduc.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        myeongDeok.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        // 환승역
-        banWorlDang.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        jungangno.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        daeguStation.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        chilseongMarket.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        neaDang.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        bangogae.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        sinNam.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        kyungDeaHosp.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        daeguBank.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        beomeo.addTarget(self, action: #selector(btnAction(_:)) , for: .touchUpInside)
-        
-        /*=======================
-              역 이름 한글 지정
-         ========================*/
-        yeungNamHosp.titleLabel?.text = "영대병원"
-        univOfEduc.titleLabel?.text = "교대"
-        myeongDeok.titleLabel?.text = "명덕"
-        banWorlDang.titleLabel?.text = "반월당"
-        jungangno.titleLabel?.text = "중앙로"
-        daeguStation.titleLabel?.text = "대구역"
-        chilseongMarket.titleLabel?.text = "칠성시장"
-        neaDang.titleLabel?.text = "내당"
-        bangogae.titleLabel?.text = "반고개"
-        sinNam.titleLabel?.text = "신남"
-        kyungDeaHosp.titleLabel?.text = "경대병원"
-        daeguBank.titleLabel?.text = "대구은행"
-        beomeo.titleLabel?.text = "범어"
-        
-        /*=======================
-                 tag 값 설정
-         ========================*/
-        yeungNamHosp.tag = 3
-        univOfEduc.tag = 2
-        myeongDeok.tag = 1
-        // 환승역
-        banWorlDang.tag = 0
-        jungangno.tag = 1
-        daeguStation.tag = 2
-        chilseongMarket.tag = 3
-        // 2호선
-        neaDang.tag = 3
-        bangogae.tag = 2
-        sinNam.tag = 1
-        kyungDeaHosp.tag = 1
-        daeguBank.tag = 2
-        beomeo.tag = 3
-    }
-```
-
-- 변경후
-
-| 기존 | 변경후 |
-| :------------ | -----------: | 
-| ![screen](/img/posts/beforeSubway.jpg) | ![screen](/img/posts/beforeSubway-1.jpg) |
-
-- data.swift 부분 
-
-
-```swift
-import UIKit
 struct Station{
     var name: String
     var x: Int
@@ -371,16 +138,13 @@ struct Station{
 }
 ```
 
-> 구조체를 사용해서, 추가, 삭제 에 대해서 조금더 자유롭게 할수 있게 만들었습니다. 각 역 버튼 생성시, 구조체의 인덱스 번호로 tag 가 생성되고, tag 값을 통해서 각 역에 접근 할수 있습니다. 
 
 ---
 
-## 2. 반복문을 사용하여 Button 인스턴스 생성
+## 각 Button 생성 
 
-- Viewdidload 부분 
 
 ```swift
-import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
     var scrollView: UIScrollView!
     var imageView: UIImageView!
@@ -431,18 +195,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
 ```
 
-> 위의 코드를 사용해서, 버튼 생성, 버튼 색상 정의, 코너값 지정, add SubView, addTarget, titleLable, tag 값 설정을 해주었습니다.
 
 ---
 
-## 3. 출발역 -> 도착역 다익스트라 알고리즘 사용 
+## 다익스트라 알고리즘 사용 
 
-출발역 -> 도착역에 대한 시간을 연산할때, 기존의 방법으로 하게되면, 각 라인별로 환승역에 추가되면, 환승역 추가되는 위치에 따라서 경우의 수가 기하급수 적으로 많아집니다. 모든 경우의 수를 계산해서 경우의수 별로 출발점과 도착점까지의 시간을 계산하여 반환할수 있지만, 한번 경우의 수를 짜놓으면 변경하기가 힘들다는 단점이 있었습니다. 조금 유연하게 바꾸어줄수 있는 방법 찾다 보니까 `다익스트라` 라는게 있어서 적용 해보았습니다. 
+출발역 -> 도착역에 대한 최단 경로를 계산하기 위해서 사용합니다.
 
 
 ```swift
-** 버튼의 기능부 입니다 **
-** 기존에 if else -> switch 구문으로 변경 했습니다 **
 @objc func btnAction(_ sender: UIButton) {
         let station = Station.stations[sender.tag]
         switch clickBtn {
@@ -569,14 +330,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 ```
 
-> 도착역을 지정 했을때 연산하는 과정 이외의 부분은 Part 1 이랑 동일 합니다.
-> 
-> 아까 위에서 이 코드의 한계인데, 위의 코드에서는 출발역 -> 도착역을 지정 했을때, 출발역 -> 도착역 까지의 부분만 연산하지 않고, 출발역 -> 도착역 과, 현재 있는 모든역 까지의 시간을 계산합니다. 그리고 출발역 -> 도착역 까지 걸린 시간을 알럿에 띄워 주어서 연산을 합니다. 
-> 
-
 ---
 
-## 4. 더블탭 실행시, 해당 터치 부분 확대, 축소 구현 
+## 확대/축소 기능 
 
 
 ```swift
@@ -596,20 +352,3 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
     }
 ```
-
-> 엄밀하게 이야기하면 더블탭시 해당 위치로 가는것이 아니라 눈속임(?)을 합니다.. 더블 탭한 해당 위치로 확대 되는것이 아니라 해당 x,y 값을 연산후, 수십번의 삽질(?) 계산을 통해서 대강 비슷한 위치로 이동하게 만들었습니다. 그래서 디버깅모드로 보면 위치가 말끔하게 촤~악 가는게 아니라, 확대 되고 -> 약간의 움직임이 있습니다...ㅠ_ㅠ 
-
-
----
-
-
-
-## 여담 
-
-- 더 보완이 필요한 부분
-	1. 다익스트라가 익숙하지 않아서 아직 많이 부족합니다, 출발역 -> 도착역 지정 했을때, 모든 경우를 연산하지 않고, 필요한 부분만 연산해서, 결과를 반환하게 한다면 데이터가 많아 졌을때 조금더 빠른 성능을 가질것 같습니다. <br>
-	2. 더블탭 했을때, 탭 하는 부분을 확대, 축소 하게 만들고 싶은데 위의 코드는 사실 눈속임(?) 한것 같습니다. 엄밀하게 더블탭 했을때 그 부분을 확대 한다기 보다는 확대후 -> 해당 좌표를 찾아가게 만들었습니다. 조금더 좋은 의견 있으시면 댓글 남겨 주시면 정말 감사하겠습니다.
-
----
-
-## Reference 

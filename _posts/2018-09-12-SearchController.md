@@ -29,13 +29,13 @@ tags: [Swift, Raywenderlich]
 
 ---
 
-이 UISearchController 글에서 동적 필터링, 범위 바와 함께 검색 기능을 추가하여 앱을 어떻게 개선 시키는지에 대해서 배웁니다. 
+이 UISearchController 튜토리얼 에서 동적 필터링, scope bar와 함께 검색 기능을 추가하여 앱을 어떻게 개선 시키는지에 대해서 배웁니다. 
 
 > Note: 이 튜토리얼은 Xcode9, Swift 4, iOS 11로 업데이트 되었습니다. 
 
-큰 목록들을 스크롤하면 사용자는 불만스러울수 있습니다. 대규모 데이터들을 다룰때는 사용자가 특정 항목을 검색하도록 하는 것이 중요합니다. UIKit에는 `UINavigationItem`과 완벽하게 통합되는 `UISearchBar`가 포함되어 있고 빠르게 정보 필터링이 가능합니다.
+많은 아이템 목록들을 스크롤하면 사용자는 만족스럽지 못한 사용자 경험을 경험할수 있습니다. 대규모 데이터들을 다룰때는 사용자가 특정 항목들을 검색 가능하게 하는게 중요합니다. UIKit에는 `UINavigationItem`과 완벽하게 통합되는 `UISearchBar`가 포함되어 있고 정보를 빠르게 필터링이 가능합니다.
 
-이 `UISearchController` 튜토리얼 에서 기본 테이블뷰를 기반으로한 검색가능한 Candy app을 만들어봅니다. UISearchController의 이점을 활용하면서 테이블뷰 검색 기능과 동적 필터링을 추가하고 선택할수 있는 범위막대는 추가합니다. 결국, 앱을 훨씬더사용자 친화적으로 만들고 요구를 충족시키는 방법을 알게 됩니다.
+이 `UISearchController` 튜토리얼 에서 검색이 가능한 기본 테이블뷰를 기반으로하는 Candy app을 만들어봅니다. `UISearchController`의 이점을 활용하면서 테이블뷰 검색 기능과 동적 필터링을 추가하고 선택할수 있는 scope bar를 추가합니다. 결국, 앱을 훨씬 더 사용자 친화적으로 만들고 요구를 충족시키는 방법을 알게 됩니다.
 
 ---
 
@@ -46,9 +46,9 @@ tags: [Swift, Raywenderlich]
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Starter.png" width="300" height="200"></center> <br>
 
 
-Xcode로 돌아가서, Candy.swift는 화면에 표시해야하는 각 캔디 조각에 대한 정보를 저장하는 구조체를 포함하고 있습니다. 이 구조체는 두개의 속성을 가지고 있습니다: category 와 candy의 이름.
+Xcode로 돌아가면, `Candy.swift`에 화면에 표시해야하는 각 캔디 조각에 대한 정보를 저장하는 구조체를 포함하고 있습니다. 이 구조체는 두개의 속성을 가지고 있습니다: `category`, `candy`의 이름.
 
-유저가 캔디에 대해 검색할때, 사용자의 쿼리 문자열을 사용하여 name 속성을 검색하게됩니다. Scope Bar를 구현할때, 범주 문자열(category string)이 UISearchController 튜토리얼의 끝에서 어떻게 중요하게 되는지 알아봅니다. 
+유저가 캔디에 대해 검색할때, 사용자의 쿼리 문자열을 사용하여 name 속성을 검색하게됩니다. Scope Bar를 구현할때, 범주 문자열(category string)이 UISearchController 튜토리얼의 끝에서 어떤 중요한 역할을 하는지 보게 될것 입니다. 
 
 ---
 
@@ -56,7 +56,7 @@ Xcode로 돌아가서, Candy.swift는 화면에 표시해야하는 각 캔디 �
 
 `MasterViewController.swift`를 엽니다. `candies` 속성은 사용자가 검색할 수 있는 모두 각각 다른 `Candy` 객체를 관리하는 곳입니다. 
 
-UISearchController 자습서에서, search bar의 작동방식을 보여주기 위한 제한된 수의 값만 만들어야합니다. 프로덕션 앱에서 수천개의 검색 가능한 개체가 있을수 있습니다. 그러나 앱에 수천개의 개체를 검색 할지 또는 몇 개만 검색할지 여부에 상관없이 사용되는 방법은 동일하게 유지됩니다. 
+UISearchController 튜토리얼에서, search bar의 작동방식을 보여주기 위한 제한된 수의 값만 만들어야합니다. 프로덕션 앱에서 수천개의 검색 가능한 개체가 있을수 있습니다. 그러나 앱에 수천개의 개체를 검색 할지 또는 몇 개만 검색할지 여부에 상관없이 사용되는 방법은 동일하게 유지됩니다. 
 
 candies 배열을 채우려면, `viewDidLoad()`에 다음 코드를 추가해야합니다. `super.viewDidLoad()` 이후에 다음 코드를 추가합니다.
 
@@ -89,7 +89,7 @@ candies = [
 
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DarkChocolate-1.png" width="300" height="200"></center> <br>
 
-candy가 너무 많습니다. 원하는걸 찾기위한 조금의 시간이 필요합니다. `UISearchBar`가 필요합니다.
+candy가 너무 많습니다. 원하는걸 찾기위한 조금의 시간이 필요하기 떄문에. `UISearchBar`가 필요합니다.
 
 ---
 
@@ -111,7 +111,7 @@ candy가 너무 많습니다. 원하는걸 찾기위한 조금의 시간이 필�
 let searchController = UISearchController(searchResultsController: nil)
 ```
 
-`searchResultsController`를 nil값으로 UISearchController를 초기화하면, search controller에서 검색중인 동일한 뷰를 사용하여 결과를 표시하도록 지시합니다. 다른 뷰 컨트롤러를 여기에 지정하면 결과를 표시하기 위해 대신 사용되어 집니다.
+`searchResultsController`를 nil값으로 UISearchController를 초기화하면, `search controller`에게 검색중인 동일한 뷰를 사용하여 결과를 표시하도록 지시합니다. 다른 뷰 컨트롤러를 여기에 지정하면 결과를 표시하기 위해 대신 사용되어 집니다.
 
 MasterViewController가 검색창(search bar)에 응답하도록 하려면, `UISearchResultsUpdating`을 구현해야합니다. 이 프로토콜은 사용자가 검색창에 입력한 정보를 기반으로 검색 결과를 업데이트하는 방법을 정의 합니다. 
 
@@ -129,7 +129,7 @@ extension MasterViewController: UISearchResultsUpdating {
 `updateSearchResults(for)`는 `UISearchResultsUpdating`
 프로토콜을 따르는 유일하게 구현해야하는 단 하나의 매소드입니다. 곧 세부사항을 작성 할것입니다.
 
-다음으로 searchController에 대한 몇가지 매개 변수를 설정해야 합니다. `MasterViewController.swift`에서, `viewDidLoad()`에서 `super.viewDidLoad()` 이후에 다음을 추가합니다.
+다음으로 searchController에 대한 몇가지 매개 변수를 설정해야 합니다. `MasterViewController.swift`의 `viewDidLoad()`에서 `super.viewDidLoad()` 이후에 다음을 추가합니다.
 
 ```swift
 // Setup the Search Controller
@@ -142,10 +142,10 @@ definesPresentationContext = true
 
 위에 추가한것들에 대한 묘사 설명입니다.
 
-1. `searchResultupdater`는 `UISearchResultsUpdating` 프로토콜을 따르는 `UISearchController`기반의 새로운 속성 입니다. 이 프로토콜은 `UISearchBar` 이내의 텍스트가 변경되는것을 알립니다. 
-2. 기본적으로, `UISearchController`는 표시된 뷰를 흐리게(obscure) 만듭니다. 이것은 searchResultsController를 위해 다른 뷰를 사용한다면 유용합니다. 여기에서는 결과를 표시하는것을 현재뷰로 설정했기 때문에 흐려지는걸 원하지 않습니다.
-3. 자리표시자(placeholder)를 이 앱의 특정 항목으로 설정합니다. 
-4. iOS11의 새로운 기능에서, `NavigationItem`으로 `searchBar`를 추가합니다. 이것은 Interface Builder가 UIsearchController와 아직 호환되지 않기 떄문에 필요합니다. 
+1. `searchResultupdater`는 `UISearchResultsUpdating` 프로토콜을 따르는 `UISearchController`기반의 새로운 속성 입니다. 이 프로토콜은 `UISearchBar` 내의 텍스트가 변경되는것을 알립니다. 
+2. 기본적으로, `UISearchController`는 표시된 뷰를 흐리게(obscure) 만듭니다. 이것은 `searchResultsController`를 위해 다른 뷰 컨트롤러를 사용한다면 유용합니다. 여기에서는 결과를 표시하는것을 현재뷰로 설정했기 때문에 흐려지는걸 원하지 않습니다.
+3. placeholder를 이 앱의 특정 항목으로 설정합니다. 
+4. iOS11의 새로운 기능에서, `NavigationItem`으로 `searchBar`를 추가합니다. 이것은 Interface Builder가 UIsearchController와 아직 호환되지 않기 때문에 필요합니다. 
 5. 마지막으로 뷰 컨트롤러의 `definesPresentationContext`를 `true`로 설정하여 `UISearchController`가 활성화되어있는 동안 사용자가 다른 뷰 컨트롤러로 이동하면 search bar가 화면에 남아 있지 않도록 합니다.
 
 ---
@@ -203,7 +203,7 @@ filterContentForSearchText(searchController.searchBar.text!)
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchBar.png" width="300" height="200"></center> <br>
 
 
-그러나, 일부 검색 텍스트를 입력해도 필터링된 결과는 표시되지 않습니다. ㅠㅠ.. 이것은 이것의 이유는 단순합니다. 테이블 뷰가 필터링된 결과를 사용해야 하는 시점을 알 수 있도록 코드를 아직 작성하지 않았기 때문입니다.
+그러나, 일부 검색 텍스트를 입력해도 필터링된 결과는 표시되지 않습니다. 이것은 이것의 이유는 단순합니다. 테이블 뷰가 필터링된 결과를 사용해야 하는 시점을 알 수 있도록 코드를 아직 작성하지 않았기 때문입니다.
 
 ---
 
@@ -264,13 +264,13 @@ search controller는 자동으로 result 테이블을 숨기고 표시 처리하
 
 ## Sending Data to a Detail View
 
-자세히보기 컨트롤러에 정보를 보낼 때보기 컨트롤러가 사용자가 작업하고있는 컨텍스트 (전체 테이블 목록 또는 검색 결과)를 알고 있는지 확인해야합니다. 
+detail view controller로 정보를 보낼 때 뷰 컨트롤러가 사용자가 작업하고있는 컨텍스트 (전체 테이블 목록 또는 검색 결과)를 알고 있는지 확인해야합니다. 
 
 detailViewController에 정보를 보낼때 컨트롤러가 사용자가 작업학 있는 컨텍스트(전체 테이블 목록 또는 검색 결과)를 알고 있는지 확인해야합니다. 
 
 여전히 MasterViewController.swift에서 prepare (for : sender :)에 다음 코드를 찾습니다.
 
-`MasterViewController.swift`에서 `prepare(for:sender:)`에서 다음 코드를 찾습니다. 
+`MasterViewController.swift`의 `prepare(for:sender:)`에서 다음 코드를 찾습니다. 
 
 ```swift
 let candy = candies[indexPath.row]
@@ -289,7 +289,7 @@ if isFiltering() {
 
 여기서도 이전과 같은 `isFiltering()`검사를 수행했지만, 이제는 detail view conroller로 segue를 수행할때 적절한 캔디 객체를 제공해야 합니다.
 
-이 시점에서 코드를 빌드하고 실행하고, 앱이 main table 또는 search table 각각 detail view로 올바르게 탐색하는걸 확인할수 있습니다.
+이 시점에서 코드를 빌드하고 실행하고, 앱이 main table 또는 search table 각각에서 올바른 detail view로 탐색하는걸 확인할수 있습니다.
 
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DetailView.png" width="300" height="200"></center> <br>
 
@@ -297,7 +297,7 @@ if isFiltering() {
 
 ## Creating a Scope Bar to Filter Results
 
-사용자에게 검색결과를 필터링 할수 있는 다른 방법을 제공하려는 경우, 범주로 필터된 아이템 명령에서 search bar와 연결하여 `Scope Bar`를 추가할수 있습니다. 캔디 배열을 만들때 Candy 객체에 할당한 카테고리는 `Chocolate, Hard, Other` 입니다. 
+사용자에게 검색결과를 필터링 할수 있는 다른 방법을 제공하려는 경우, category로 필터된 아이템 명령에서 search bar와 연결하여 `Scope Bar`를 추가할수 있습니다. 캔디 배열을 만들때 Candy 객체에 할당한 카테고리는 `Chocolate, Hard, Other` 입니다. 
 
 먼저, MasterViewController에 scope bar를 생성해야합니다. scope bar는 특정 범위에서만 검색하여 검색 범위를 좁히는 `segmented controler` 입니다. scope는 실제로 정의한 범위 입니다. 이 경우 에서는 candy의 범주(candy's category) 이지만, scopes는 types, ranges 또는 완전히 다른 어떤것일수 있습니다.
 
@@ -316,7 +316,7 @@ extension MasterViewController: UISearchBarDelegate {
 
 이 delegate method는 scope bar에서 다른 scope로 전환할때 호출되어 집니다. 이 일이 발생했을때, 다시 필터링 하고 `filterContentForSearchText(_:scope:)`를 새로운 scope로 호출해야합니다. 
 
-이제 제공된 범위(scope)를 고려하여 filterContentForSearchText(_:scope:)를 수정합니다.
+이제 제공된 범위(scope)를 고려하여 `filterContentForSearchText(_:scope:)`를 수정합니다.
 
 ```swift
 func filterContentForSearchText(_ searchText: String, scope: String = "All") {
@@ -333,7 +333,7 @@ func filterContentForSearchText(_ searchText: String, scope: String = "All") {
 }
 ```
 
-이제 캔디의 캔디의 범주(category of the candy)가 범위 막대를 통해 전달된 범주와 일치하는지(또는 범위가 `All`로 설정되었는지) 확인합니다. 그후, search bar에 text가 있는지 확인하고, 캔디를 적절하게 필터링 합니다. 또한 scope bar가 선택되었을때 `isFiltering()`가 true를 반환하도록 업데이트 해야합니다.
+이제 캔디의 캔디의 범주(category of the candy)가 scope bar를 통해 전달된 범주와 일치하는지(또는 범위가 `All`로 설정되었는지) 확인합니다. 그후, search bar에 text가 있는지 확인하고, 캔디를 적절하게 필터링 합니다. 또한 scope bar가 선택되었을때 `isFiltering()`가 true를 반환하도록 업데이트 해야합니다.
 
 ```swift
 func isFiltering() -> Bool {
@@ -352,7 +352,7 @@ func updateSearchResults(for searchController: UISearchController) {
 }
 ```
 
-첫째 유일한 문제는, scope bar를 아직 보지 못했다는 것입니다. scope bar를 추가하려면, search controller를 설정했던곳 직후로 이동합니다. `MasterViewController.swift` 이내에 `viewDidLoad()`에서, candies를 할당하기 직전에 다음을 추가합니다.
+첫째 유일한 문제는, scope bar를 아직 보지 못했다는 것입니다. scope bar를 추가하려면, search controller를 설정했던곳 직후로 이동합니다. `MasterViewController.swift` 내에 `viewDidLoad()`에서, candies를 할당하기 직전에 다음을 추가합니다.
 
 ```swift
 // Setup the Scope Bar
@@ -360,16 +360,16 @@ searchController.searchBar.scopeButtonTitles = ["All", "Chocolate", "Hard", "Oth
 searchController.searchBar.delegate = self
 ```
 
-search bar에 사탕객체에 지정한 범주와 일치하는 제목이 있는 category 막대가 추가됩니다. 또한 검색할때 모든 사탕 범주를 모시하는데 사용될 `All`로 불리는 모든 범주를 포함하는 카테고리를 포함합니다. 
+search bar에 사탕객체에 지정한 범주와 일치하는 제목이 있는 category 막대가 추가됩니다. 또한 검색할때 모든 사탕 범주를 표시하는데 사용될 `All`이라고 불리는 모든 범주를 포함하는 카테고리를 포함합니다. 
 
 이제 입력할때 선택한 범위 버튼과(selected scope button) 검색 텍스트가 함께 사용됩니다. 
 
-앱을 빌드하고 실행합니다. 검색 텍스트르 입력하고 범위를 변경하세요.
+앱을 빌드하고 실행합니다. 검색 텍스트를 입력하고 범위를 변경하세요.
 
 <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Filter-with-Scope.png" width="300" height="200"></center> <br>
 
 
-범위가 All로 설정된 `caramel`을 입력하세요. 이것은 목록에 나타나지만 scope를 `Chocolate`로 변경하면 초콜렛이 아니기 때문에 `caramel`이 사라집니다.
+범위가 All로 설정된 `caramel`을 입력하세요. 이것은 목록에 나타나지만 scope를 `Chocolate`으로 변경하면 초콜렛이 아니기 때문에 `caramel`이 사라집니다.
 
 앱에는 아직 문제가 하나 있습니다. 사용자에게 검색 결과로 예상되는 수를 나타내지 않습니다. 반환된 결과가 없는 것과 느린 네트워크로 인해 느린 응답을 가져오는것을 사용자가 구분하기 어려울수 있으므로, 결과가 전혀 반환되지 않을때 특히 중요합니다.
 
@@ -385,7 +385,7 @@ search bar에 사탕객체에 지정한 범주와 일치하는 제목이 있는 
 tableView.tableFooterView = searchFooter
 ```
 
-그러면 사용자화한 search footer view가 table view의 footer 뷰로 설정됩니다. 그 다음, 검색 입력이 변경될때마다 검색 결과 개수를 업데이트 해야합니다. tableView(_:numberOfRowsInSection:)를 다음과같이 교체합니다.
+그러면 사용자화한 search footer view가 table view의 footer 뷰로 설정됩니다. 그 다음, 검색 입력이 변경될때마다 검색 결과 개수를 업데이트 해야합니다. `tableView(_:numberOfRowsInSection:)`를 다음과같이 교체합니다.
 
 ```swift
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -403,9 +403,11 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 
 애플리케이션을 빌드하고 몇가지 검색을 수행한다음 검색 결과가 나타낼때마다 footer의 업데이트를 봅니다. 키보드를 내리고 footer를 보기위해서는 검색버튼(return) 버튼을 눌러야합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchFooter1.png" width="300" height="200"></center> <br>
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-No-Results.png" width="300" height="200"></center> <br>
+|  |  | 
+| :--: | :--: | 
+| <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchFooter1.png" width="300" height="200"></center>|<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-No-Results.png" width="300" height="200"></center>|
+
 
 ---
 
@@ -413,7 +415,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 
 축하합니다. 이제 테이블뷰에서 직접 검색할수 있는 애플리케이션이 됬습니다. 
 
-[이것](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Finished.zip)은 이 자습서의 모든 코드가 포함된 다운로드 가능한 프로젝트 입니다.
+[여기](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Finished.zip)에서 최종 프로젝트를 다운로드 할수 있습니다.
 
 테이블뷰는 모든 종류의 앱에서 사용되고, 유용성을 위한 검색옵션을 제공하는 좋은 쓰임 입니다. UISearchBar, UISearchController와 함께 iOS는 많은 기능을 제공하므로 사용하지 않을 이유가 없습니다. 
 
