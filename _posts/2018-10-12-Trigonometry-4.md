@@ -9,7 +9,7 @@ comments: true
 tags: [Swift, Raywenderlich, Trigonometry]
 ---
 
-`Trigonometry` 시리즈 포스팅들을 바탕으로 원과 호를 이용한 그래프를 만드는 간단한 [예제](https://github.com/devmjun/RingChartView)를 만들어 보았습니다. 
+`Trigonometry` 시리즈 포스팅들을 바탕으로 원과 호를 사용하여 원 그래프를 만드는 간단한 [예제](https://github.com/devmjun/RingChartView)를 만들어 보았습니다. 
 
 <center><img src="/img/posts/ringChart.png" width="450" height="650"></center> <br> 
 
@@ -21,8 +21,3 @@ tags: [Swift, Raywenderlich, Trigonometry]
 - 삼각 함수 
 - 호의 길이, 각도 계산 
 - 2차원 좌표 평면 그리기 
-
-
-
-
-
