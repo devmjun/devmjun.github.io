@@ -167,5 +167,11 @@ override func layoutSubviews() {
 }
 ```
 
+---
+
+## Reference 
+
+[https://stackoverflow.com/questions/4754392/uiview-with-rounded-corners-and-drop-shadow/43295741](https://stackoverflow.com/questions/4754392/uiview-with-rounded-corners-and-drop-shadow/43295741)<br>
+
 
 
