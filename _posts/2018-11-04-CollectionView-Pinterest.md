@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "Swift. UICollectionView Pinterest 레이아웃 "
+title:      "Swift. UICollectionView Pinterest 레이아웃"
 subtitle:   "UICollectionView Custom Layout Tutorial: Pinterest"
-date:       2018-11-2 18:45:00
+date:       2018-11-4 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
