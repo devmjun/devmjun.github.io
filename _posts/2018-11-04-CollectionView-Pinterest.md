@@ -20,7 +20,7 @@ tags: [Swift, Raywenderlich, UICollectionViewLayout]
   
 ---
 
-[UICollectionView Custom Layout Tutorial: Pinterest](https://www.raywenderlich.com/392-uicollectionview-custom-layout-tutorial-pinterest)에서 필요한 부분을 의역 했습니다
+[UICollectionView Custom Layout Tutorial: Pinterest](https://www.raywenderlich.com/392-uicollectionview-custom-layout-tutorial-pinterest)에서 필요한 부분을 의역 했습니다. 
  
 ---
 

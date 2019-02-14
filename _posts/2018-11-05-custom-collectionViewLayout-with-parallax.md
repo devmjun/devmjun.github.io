@@ -26,7 +26,7 @@ tags: [Swift, UICollectionViewLayout, Raywenderlich]
   
 ---
 
-[Custom UICollectionViewLayout Tutorial With Parallax](https://www.raywenderlich.com/527-custom-uicollectionviewlayout-tutorial-with-parallax)의 일부분을 의역 했습니다. 
+[Custom UICollectionViewLayout Tutorial With Parallax](https://www.raywenderlich.com/527-custom-uicollectionviewlayout-tutorial-with-parallax) 에서 필요한 부분을 의역 했습니다. 
 
 ---
 
