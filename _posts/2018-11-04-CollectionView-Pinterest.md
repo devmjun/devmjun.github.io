@@ -232,7 +232,7 @@ override func prepare() {
 3. 이 단 하나의 색션만 있는 레이아웃은 첫번째 색션의 모든 아이템을 반복합니다.
 4. 여기서 `프레임` 계산을 수행합니다. `넓이`는 이전에 연산한 `CellWidth` 이고 Cell들 사이의 패딩이 제거됩니다. 사진의 높이를 위해 `delegate`에게 요청하고 이 높이를 기반으로 frame height를 연산하고 상단과 하단을 위해 `cellPadding`을 미리 정의합니다. 그후 현재 열의 x, y offset과 결합하여 속성에 의해 사용되는 `insetFrame`을 생성 합니다.
 5. `UICollectionViewLayoutAttributes` 인스턴스를 생성하고 `insetFrame`을 사용하여 자체 프레임을 설정하고 attributes를 `캐시`로 추가합니다.
-6. 새롭게 계산된 프레임으로 여기기 위해 `contentHeight`를 확장합니다. 그후 프레임 기반 현재 열에 대한 yOffsetㅇ르 진행 시킵니다. 마지막으로 다음 아이템을 다음 열로 위치시킵니다.
+6. 새롭게 계산된 프레임으로 여기기 위해 `contentHeight`를 확장합니다. 그후 프레임 기반 현재 열에 대한 yOffset를 진행 시킵니다. 마지막으로 다음 아이템을 다음 열로 위치시킵니다.
 
 > Note: `prepare()`는 collection view의 layout이 유효하지 않을때(invalidated)마다 호출되므로 속성들 재계산이 필요한 전형적인 구현에서 사용할수 있는 많은 상황이 있습니다. 예를 들면, UICollectionView의 bounds는 방향(orientation)이 변할때 호출변경될수 있습니다. 또는 아이템이 collection 에서 추가되거나 삭제될때도 변경될수 있습니다. 이 경우 이 튜토리얼의 범위를 벗어나지만 중요한 구현에서 이를 인식하는 것이 중요 합니다.
 

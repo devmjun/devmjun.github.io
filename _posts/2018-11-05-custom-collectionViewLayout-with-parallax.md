@@ -34,13 +34,13 @@ tags: [Swift, UICollectionViewLayout, Raywenderlich]
 
 ## Custom UICollectionViewLayout Tutorial With Parallax
 
-`Note`: 이 튜토리얼은 Xcode 9.0, Swift4를 사용합니다. 
+`Note`: 이 튜토리얼은 Xcode 9.0, Swift 4를 사용합니다. 
 
-UICollectionView는 iOS 6에서 소개 되었고 iOS10에서 새로운 기능으로 개선되었습니다. `UICollectionView`는 iOS application에서 data collection을 제출하여 애니메이션과 사용자화 하기 위한 `first-class choice`(이걸 뭐라고 해야하나..) 입니다.
+UICollectionView는 iOS 6에서 소개 되었고 iOS 10에서 새로운 기능으로 개선되었습니다. `UICollectionView`는 iOS application에서 data collection을 제출하여 애니메이션과 사용자화 하기 위한 `first-class choice`(이걸 뭐라고 해야하나..) 입니다.
 
-`UICollectionView`와 관련된 주요한 본질(entity)는 `UICollectionViewLayout` 입니다. `UIcollectionViewLayout` 객체는 cell, supplementary views, decoration views와 같은 collection view의 모든 요소들의 속성(attributes)들을 정의하는 동안 대표합니다.
+`UICollectionView`와 관련된 주요한 본질(entity)은`UICollectionViewLayout` 입니다. `UIcollectionViewLayout` 객체는 cell, supplementary views, decoration views와 같은 collection view의 모든 요소들의 속성(attributes)의 정의에 대해서 대표합니다.
 
-`UIKit`은 `UICollectionViewFlowLayout`이라고 불리는 `UICollectionViewLayout`의 기본 구현을 제공합니다. 이 클레스는 어떤 사용자화된 요소들으ㅏ `grid layout`을 설정할수 있게 해줍니다.
+`UIKit`은 `UICollectionViewFlowLayout`이라고 불리는 `UICollectionViewLayout`의 기본 구현을 제공합니다. 이 클레스는 어떤 사용자화된 요소를 `grid layout`으로 설정할수 있게 해줍니다.
 
 `UICollectionViewLayout`튜토리얼은 `UICollectionViewLayout`을 어떻게 하위 클레싱 하고 사용자화 하는지에 대해서 가르치고. 또한 사용자화된 supplementary views, stretchy, sticky, parallax 효과를 collectionView에 어떻게 추가하는지 보여줍니다.
 
@@ -84,7 +84,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS10에서 새로운 기능으
 
 `Reuseable Views` 폴더에서 cell에 대한 `UICollectionViewCell`의 하위클레싱이 있고, section header와 section footer에 대한 `UICollectionViewReusable`도 있습니다. 이들은 `Main.storyboard`파일에서 각각의 설계된 뷰에 연결됩니다.
 
-그 외에도, `CustomLayout`에서 요구하는 사용자화된 supplementary view가 있습니다. `HeaderView` 와 `MenuView` 클레스는 `UICollectionViewReusableView`의 하위 클레싱 입니다. 이 둘은 그 자체 `.xib`파일에 연결되어 집니다.
+그 외에도, `CustomLayout`에서 요구하는 사용자화된 supplementary view가 있습니다. `HeaderView` 와 `MenuView` 클레스는 `UICollectionViewReusableView`의 하위 클레싱 입니다. 이 둘은 `.xib`파일에 연결되어 집니다.
 
 `MockDataManager.swift` 파일은 모든 팀에 대한 데이터 구조를 가지고 있습니다. 편의상 Xcode 프로젝트는 필요한 모든 assets를 추가합니다.
 
@@ -99,7 +99,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS10에서 새로운 기능으
 - **CustomLayoutSetting.swfit**
 - **customLayoutAttributes.swift**
 
-`CustomLayoutSettings.swift`는 모든 레이아웃 설정을 가진 구조체를 구현합니다. 설정의 첫번째 그룹은 collection view읭 요소들의 사이즈를 다루고 두번째 그룹은 layout의 행동을 정의하고 세번째는 layout 간격을 설정합니다.
+`CustomLayoutSettings.swift`은 모든 레이아웃 설정을 가진 구조체를 구현합니다. 설정의 첫번째 그룹은 collection view 요소들의 사이즈를 다루고 두번째 그룹은 layout의 행동을 정의하고 세번째는 layout 간격을 설정합니다.
 
 ---
 
@@ -111,7 +111,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS10에서 새로운 기능으
 
 이것은 superclass에서 `zIndex`, `alpha`, `transform3D`, `transform`, `frame` 같은 기본 attributes를 상속받습니다.
 
-또한 어떤 새로운 사용자회된 속성을 추가합니다. 
+또한 새로운 어떤 사용자화된 속성을 추가합니다. 
 
 ```swift
 var parallax: CGAffineTransform = .identity
@@ -121,11 +121,11 @@ var headerOverlayAlpha = CGFloat(0)
 
 `parallax`, `initialOrigin`, `headerOverlayAlpha`는 나중에 늘어나는 효과와 끈적거리는 효과를 구현할때 사용할 사용자화된 속성입니다.(parallax, initialOrigin and headerOverlayAlpha are custom properties you’ll use later in the implementation of stretchy and sticky effects.)
 
-> Note: Layout attributes 객체는 collection view에 의해서 복사되어 질것 입니다. 그러므로, `UICollectionViewLayoutAttributes`를 하위 클레싱 할때, `NSCopying`를 새로운 인스턴스로 사용자화된 attributes를 복사하기 위한 적절한 메소드 구현을 하는것으로 `NSCopying` 프로토콜을 반드시 체택 해야합니다. 
+> Note: Layout attributes 객체는 collection view에 의해서 되어 집니다. 그러므로, `UICollectionViewLayoutAttributes`를 하위 클레싱 할때, `NSCopying`를 새로운 인스턴스로 사용자화된 attributes를 복사하기 위한 적절한 메소드를 구현하여 `NSCopying` 프로토콜을 반드시 체택 에 대한 조건을 만족 시켜야합니다. 
 > 
 > custom layout attributes를 구현한다면, 속성 값을 비교하기 위해 상속받은 `isEqual` 메소드를 반드시 재정의 해야합니다. iOS 7 부터 collection view는 `isEqual` attributes가 변경되지 않으면 layout attributes가 적용되지 않습니다. 
 
-현재 collection view는 모든 팀을 아직 화면에 표시할수 없습니다. 지금은 화면에 표시 할수 없지만, `Tiger`, `Parrots`, `Giraffes` 팀은 아직 기다려야 합니다. 
+현재 collection view는 모든 팀을 아직 화면에 표시할수 없습니다. `Tiger`, `Parrots`, `Giraffes` 팀은 아직 화면에 표시할수 없기 때문에 기다려야 합니다.
 
 걱정하지마세요. 이들은 곳 돌아올 것입니다! `CustomLayout`은 이 문제를 해결 할것입니다.
 
@@ -135,7 +135,7 @@ var headerOverlayAlpha = CGFloat(0)
 
 ## The Role of UICollectionViewLayout
 
-`UICollectionViewLayout` 객체의 주된 목적은 `UICollectionView`에 모든 요소의 사기성 상태와 위치에 대한 정보를 제공하는 것입니다. `UIcollectionViewLayout` 객체는 cell또는 supplementary를 생성하는 것에 대한 책임이 없다는것을 명심 해야합니다. `UIcollectionViewLayout`이 할일은 올바른 attributes와 함께 이들을 제공하는 것입니다. 
+`UICollectionViewLayout` 객체의 주된 목적은 `UICollectionView`에 모든 요소의 가기성 상태와 위치에 대한 정보를 제공하는 것입니다. `UICollectionViewLayout` 객체는 cell, supplementary view를 생성하는 것에 대한 책임이 없다는것을 명심 해야합니다. `UIcollectionViewLayout`이 할일은 올바른 attributes와 함께 이들을 제공하는 것입니다. 
 
 `UIcollectionViewLayout`을 생성하는 것은 세단계 과정 입니다. 
 
@@ -258,8 +258,8 @@ final class CustomLayout: UICollectionViewLayout {
 
 이것은 꾀 많은 코드지만 이것을 분해하면 상당히 간단합니다(그럴리 없다..)
 
-1. `enum`은 `CustomLayout`의 모든 요소를 정의하는것에 대한 좋은 선택합니다. 이것은 `strings`들을 사용하는것을 방지합니다. 황금룰 기억하나요? `No strings = no typos`
-2. 연산된 `layoutAttributesClass` 프로퍼티는 attributes instance를 사용하기위한 클레스를 제공합니다. 반드시 `CustomLayoutAttributes` 클레스 타입을 반환해야 합니다: 이 사용자회된 클레스는 시작 프로젝트에서 찾을수 있습니다.
+1. `enum`은 `CustomLayout`의 모든 요소를 정의하는것에 대한 좋은 선택합니다. 이것은 `strings`들을 사용하는것을 방지합니다. 황금룰 기억하나요? `스트링이 없으면 = 오타도 없다`
+2. 연산된 `layoutAttributesClass` 프로퍼티는 attributes instance를 사용하기위한 클레스를 제공합니다. 반드시 `CustomLayoutAttributes` 클레스 타입을 반환해야 합니다: 이 사용자화된 클레스는 시작 프로젝트에서 찾을수 있습니다.
 3. `UIcollectionViewLayout`의 하위클레스는 반드시 `collectionViewContentSize` 연산 프로퍼티를 재정의 해야합니다.
 4. `CustomLayout`은 attributes를 준비하기위한 단계에서 위의 모든 속성들이 필요합니다. 이들은 모두 `settings`를 제외하고는 모두 `fileprivate` 이기 떄문에 `settings`는 외부객체에 의해서 설정 될수 없습니다.
 5. 문법 편리를 위한 연산 프로퍼티의 사용은 나중에 장황한 반복을 피하기 위함입니다.(Computed properties used as syntactic sugar to avoid verbose repetitions later.)
@@ -278,12 +278,12 @@ collection view는 전체 레이아웃 처리를 관리하기 위해 `CustomLayo
 
 layout 처리 동안, collection view는 `CustomLayout` 객체와함께 전체 layout process를 관리하기 위해 함께 동작합니다. 선택적인 메소드들은 애니메이션 업데이트 같은 지정된 주위 환경에 따라서 호출되어 질것입니다. 이 메소드들은 아이템의 위치를 연산하기 위한 기회이고 collection view를 필요한 정보와 함께 제공합니다. 
 
-처음 재정의 해야하는 두개의 매소드는 
+처음 재정의 해야하는 두개의 메소드는 
 
 - `prepare()`
 - `shouldInvalidateLayout(forBoundsChange:)`
 
-`prepare()`는 레이아웃에서 욧들의 위치를 결정하기 위해 필요되어지는 모든 연산을 이행할 기회 입니다. `shouldInvalidateLayout(forBoundsChnage:)`는 CustomLayout 객체가 core process를 다시 수행하는것이 필요할때, 어떻게 정의해야할지 정의 하는 곳입니다.
+`prepare()`는 레이아웃에서 요소들의 위치를 결정하기 위해 필요한 모든 연산을 이행할수 있는 곳입니다. `shouldInvalidateLayout(forBoundsChnage:)`는 CustomLayout 객체가 core process를 다시 수행 해야할때, 어떻게 정의해야할지 정의 하는 곳입니다.
 
 `prepare()`구현을 시작해봅니다.
 
@@ -366,12 +366,12 @@ extension CustomLayout {
 
 1. `Prepare` 연산은 리소스 집약적인(resources-intensive) 이고 이것은 성능에 영향을 줄수 있습니다. 이러한 이유로 연산된 attributes를 생성시에  캐시할수 있습니다. 실행하기 전에 cache 사전이 비어 있거나 없는지 확인 해야합니다. 이것은 오래된 attirbutes 인스턴스와 새로운 인스턴스를 망치지 않기 때문에 중요 합니다.
 2. `cache` 사전이 비어 있으면, 이 프로퍼티를 초기화 해야 합니다. `prepareCache()`를 호출하여 이것을 실행합니다. 이 메소드는 이 설명 이후에 구현되어 집니다. 
-3. 신축성있는 header는 collection view의 첫번째 요소입니다. 이것에 대한 이유로, 이것의 attributes를 먼저 고려합니다. `CustomLayoutAttributes` 클레스 인스턴스를 생성하고 그후 `prepareElement(size:type:attributes)`에 전달합니다. 다시 한번 이야기 하지만 이 매소드를 나중에 구현할것입니다. 이 attributes들을 올바르게 캐시하려면 사용자화된 요소를 만들때마다 이 메소드를 호출 해야합니다.
+3. 신축성있는 header는 collection view의 첫번째 요소입니다. 이것에 대한 이유로, 이것의 attributes를 먼저 고려합니다. `CustomLayoutAttributes` 클레스 인스턴스를 생성하고 그후 `prepareElement(size:type:attributes)`에 전달합니다. 다시 한번 이야기 하지만 이 메소드를 나중에 구현할것입니다. 이 attributes들을 올바르게 캐시하려면 사용자화된 요소를 만들때마다 이 메소드를 호출 해야합니다.
 4. `sticky menu`는 collection view의 두번째 요소 입니다. 이전에 attributes를 연산할때와 같은 방법으로 연산합니다. 
 5. 이 반복문은 core layout process의 가장 중요한 부분 입니다. collection view의 모든 `section`의 모든 `item`에 대한것 입니다:
 	- section의 header에 대한 `attributes`를 생성하고 준비합니다
 	- `items`에 대한 `attributes`를 생성합니다. 
-	- 지정된 `indexPath`이들은 연관 지읍니다. 
+	- 지정된 `indexPath`를 연관 지읍니다. 
 	- items의 `frame`, `zIndex`를 설정하고 연산합니다. 
 	- `collectionView` 의 `contentHeight`를 업데이트 합니다.
 	- `type`(이 경우에는 cell)을 사용하는 `cache` 사전에서 방금 생성된 attributes를 저장하고 Keys값으로 요소의 indexPath를 사용합니다.
@@ -467,7 +467,7 @@ CustomLayout 클레스를 완성시키고 layout core process 작업을 올바�
 - `layoutAttributesForItem(at:)`
 - `layoutAttributesForElements(in:)`
 
-이 메소드들의 목표는 적시에 알맞은 요소로 알맞은 attributes를 제공하는것입니다. 더 명확하게 두 첫번째 매소드는 특정 supplementary view 또는 cell에 대한 attributes와 함께 collection view를 제공합니다. 세번째 요소는 지정된때에 화면에 표시되는 요소를 위한 layout attributes를 반환합니다. 
+이 메소드들의 목표는 적시에 알맞은 요소와 알맞은 attributes를 제공하는것입니다. 더 명확하게 처음 두개의 메소드는 특정 supplementary view 또는 cell에 대한 attributes를 collection view로 제공합니다. 세번째 메소드는 지정된때에 화면에 표시되는 요소를 위한 layout attributes를 반환합니다. 
 
 ```swift
 //MARK: - PROVIDING ATTRIBUTES TO THE COLLECTIONVIEW
@@ -515,7 +515,7 @@ extension CustomLayout {
 
 주석들에 대해서 설명합니다. 
 
-1. `layoutAttributesForSupplementaryView(ofKind:at:)` 내에서 `kind` 속성을 전환하고 올바른 `kind`와 `indexPath`를 일치시켜 캐시된 attributes를 반환합니다. 
+1. `layoutAttributesForSupplementaryView(ofKind:at:)` 내에서 `kind` 속성을 전환하여 올바른 `kind`와 `indexPath`를 일치시켜 캐시된 attributes를 반환합니다. 
 2. `layoutAttributesForItem(at:)` 내에서 cell의 attributes와 정확하게 동일하게 수행합니다.
 3. `layoutAttributesForElements(in:)` 내에서 `visibleLayoutAttributes` 배열(여기 보이는 attributes를 저장합니다)을 비웁니다. 그 다음, 모든 캐시된 attributes를 반복하고 보이는 요소만 배열에 추가합니다. 요소가 보이는지 아닌지 결정하기 위해, 프레임이 collection view의 프레임과 교차(intersects)하는지 테스트합니다. 마지막으로 visibleAttributes 배열을 반환합니다.
 
@@ -626,7 +626,7 @@ case CustomLayout.Element.menu.kind:
 - 상단에 Jungle Cup의 logo가 보이는 큰 header가 있습니다. 
 - 그 아래에 각 팀에 대한 4개의 버튼이 있는 menu가 있습니다. 버튼을 탭하면 collection view는 연관된 팀으로 reload 합니다. 
 
-이미 좋게 일을 완료 했지만, 더 좋게 만들수 있습니다. `UICollectionView`를 치장시키기 위한 더 멋진 비쥬얼 효과를 구현할 시간입니다.
+이미 프로젝트를 완료 했지만, 더 좋게 만들수 있습니다. `UICollectionView`를 치장시키기 위한 더 멋진 비쥬얼 효과를 구현할 시간입니다.
 
 ---
 
@@ -653,7 +653,7 @@ case CustomLayout.Element.menu.kind:
 Affine transforms은 다양한 이유로 꾀 유용합니다.
 
 1. 이들은 translation, scaling, rotation, 세가지 조합, 다양한 몇줄의 코드 같은 복잡한 비쥬얼 효과를 생성하게 해줍니다.
-2. 이들은 `UIKit`과 `AuthLayout`과 함께 나무랄곳 없이 연동됩니다. 
+2. 이들은 `UIKit`과 `AutoLayout`과 함께 나무랄곳 없이 연동됩니다. 
 3. 이들은 복잡한 시나리오에도 성능을 최적으로 유지하는데 도움이 됩니다.
 
 affine transforms의 수학은 정말 멋집니다. 하지만 CGATransform의 뒤에서 어떻게 행렬이 동작하는지 설명하는것은 이 튜토리얼의 범위를 벗어납니다. 
@@ -711,7 +711,7 @@ override public func layoutAttributesForElements(
 2. 이것은 이 메소드의 이전 버전으로의 루프와 같은 루프입니다. 모든 캐시된 attributes를 반복합니다. 
 3. `parallax` transform 기본값과 `transform` attributes 요소를 재설정 합니다.
 4. 지금은, 다른 kind of supplementary view를 업데이트 하기위해 단순하게 메소드를 호출합니다. 이 코드 블럭 이후에 구현할것입니다. 
-5. 현재 attributes가 cell에 속하는지 확인합니다. layout setting 에서 parallax 효과는 활성화되어 지면, 이 속성을 업데이트하기 위해 매소드를 호출합니다. 바로 위와 같이 이 메소드를 이 코드블럭 이후에 구현합니다.
+5. 현재 attributes가 cell에 속하는지 확인합니다. layout setting 에서 parallax 효과는 활성화되어 지면, 이 속성을 업데이트하기 위해 메소드를 호출합니다. 바로 위와 같이 이 메소드를 이 코드블럭 이후에 구현합니다.
 
 다음으로, 위의 루프에서 호출될 두 메소드를 구현할 시간입니다
 
@@ -768,14 +768,13 @@ private func updateSupplementaryViews(_ type: Element,
 
 각 코멘트에 대해서 설명합니다.
 
-1. 현재 요소가 색션의 header인지 아닌지 확인합니다. layout seeting에서 sticky 행동을 활성화 되면, 변환을 계산합니다. 마지막으로 attributes의 transform 프로퍼티로 연산된 값을 할당합니다. 
+1. 현재 요소가 색션의 header인지 아닌지 확인합니다. layout seeting에서 sticky 행동을 활성화 하면, 변환을 계산합니다. 마지막으로 attributes의 transform 프로퍼티로 연산된 값을 할당합니다. 
 2. 위와 같은 반복 이지만 여기는 요소가 최상단 헤더인지 확인합니다. stretchy 효과가 활성화 되어 있다면, transform 연산을 이행합니다. 
 3. 다시 같은 반복입니다. 여기는 sticky menu에 대한 transform 연산 입니다. 
 
 collection view의 cell을 변환할 시간입니다.
 
 ```swift
-  
 private func updateCells(_ attributes: CustomLayoutAttributes,
                          halfHeight: CGFloat,
                          halfCellHeight: CGFloat) {
