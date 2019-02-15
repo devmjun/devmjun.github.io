@@ -6,7 +6,7 @@ date:       2018-09-29 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
-tags: [Swift, Raywenderlich]
+tags: [Swift, Raywenderlich, regularExpression]
 ---
 
 [Regular Expressions Tutorial: Getting Started](https://www.raywenderlich.com/5765-regular-expressions-tutorial-getting-started)의 내용을 의역했습니다.
