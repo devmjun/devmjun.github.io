@@ -247,7 +247,7 @@ tags: [Link]
  
 | | |
 | :--: | :--: |
-| flitto/iOS 개발자 모다깃비님 개인 블로그 |[https://brunch.co.kr/@modagitbee ](https://brunch.co.kr/@modagitbee ) |  <br>
+| flitto/iOS 개발자 모다깃비님 개인 블로그 |[https://rainpour.github.io](https://rainpour.github.io) |  <br>
 
 >  집단지성 번역 플랫폼, `iOS, 이력서` <br> 
 
