@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "IT 기업 기술 블로그 모음"
-subtitle:   "Flitto, Toss Lab, 이음, 우아한형제들, 스타일쉐어, 조이코퍼레이션..."
+subtitle:   "Mathpresso, Flitto, Toss Lab, 이음, 우아한형제들, 스타일쉐어, 조이코퍼레이션..."
 date:       2018-02-21 08:00:00
 author:     "MinJun"
 header-img: "img/tags/Link-bg.jpg"
@@ -12,10 +12,13 @@ tags: [Link]
 
 | 회사명  | 블로그 주소 | 
 | :--: | :--: |
-| 메스프레소 / 콴다 |[https://medium.com/qandastudy](https://medium.com/qandastudy) |  <br>
+| 매스프레소 / 콴다 |[https://medium.com/qandastudy](https://medium.com/qandastudy) |  <br>
 
 > 교육 데이터 플랫폼, `개발, AI, 마케팅, 딥러닝, 디자인, 인사이트, 사내 문화, 자유로운 분위기`   
-
+> 개인적으로 비전이 너무 멋있는 회사. 
+> 
+> 매스프레소의 비전: `교육 기회의 평등을 위해 우리는 교육을 데이터화하고 연결하고 있습니다. 함께하는 데이터 중심의 교육 서비스를 통해 누구나 최고의 교육을 받고 제공할 수 있는 세상을 꿈꿉니다.`<br>
+> [https://mathpresso.com/](https://mathpresso.com/)
 
 | | |
 | :--: | :--: |
