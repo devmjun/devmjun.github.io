@@ -12,6 +12,13 @@ tags: [Link]
 
 | 회사명  | 블로그 주소 | 
 | :--: | :--: |
+| 메스프레소 / 콴다 |[https://medium.com/qandastudy](https://medium.com/qandastudy) |  <br>
+
+> 교육 데이터 플랫폼, `개발, AI, 마케팅, 딥러닝, 디자인, 인사이트, 사내 문화, 자유로운 분위기`   
+
+
+| | |
+| :--: | :--: |
 | 투블루 |[https://tyle.io/blog](https://tyle.io/blog) |  <br>
 
 > 카드뉴스 자동 제작 툴 / 디자인 자동화 툴, `개발, 마케팅, 디자인, 카드뉴스` <br>
