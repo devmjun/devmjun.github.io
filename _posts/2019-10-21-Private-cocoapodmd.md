@@ -2,7 +2,7 @@
 layout:     post
 title:      "iOS, Private Cocoapods 생성 방법"
 subtitle:   "링크 참조"
-date:       2019-10-20 18:45:00
+date:       2019-10-21 18:45:00
 author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
