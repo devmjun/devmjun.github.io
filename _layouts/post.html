@@ -52,40 +52,21 @@ not_active_adsense: true
                         randomElement.insertBefore(adElement, randomElement.firstChild);
                     });
                 </script>
-        </div>
-    </div>
 
-    <!-- #post display AdSense -->
-    <div class="container">
-        <div class="row">
-            <br>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- #post display AdSense -->
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
                 <!-- 디스플레이 광고_전체 하단 -->
                 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
                 <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-            </div>
-            <br>
-        </div>
-    </div>
 
-    <!-- disqus_comments -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- disqus_comments -->
                 <br> 
-                {% if page.comments %}
+                    {% if page.comments %}
                     {% include disqus_comments.html %}
-                {% endif %}
+                    {% endif %}
                 <br>
-            </div>
-        </div>
-    </div>
 
-    <!-- Pager -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Pager -->
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
