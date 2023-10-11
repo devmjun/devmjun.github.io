@@ -34,18 +34,12 @@ not_active_adsense: true
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ content }}
                 <br> 
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
-
-                <!-- 디스플레이 광고_전체 하단 -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-                <br>
             </div>
         </div>
     </div>
 </article>
 
-<!-- ad -->
+<!-- In Article AdSense -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // 무작위로 삽입할 텍스트
@@ -66,6 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
     randomElement.insertBefore(adElement, randomElement.firstChild);
 });
 </script>
+
+<!-- Display AdSense -->
+<display_adsense_container>
+    <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
+                <!-- 디스플레이 광고_전체 하단 -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
+                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </div>
+            <br>
+        </div>
+    </div>
+</display_adsense_container>
 
 <!-- disqus_comments Content -->
 <disqus_comment>
