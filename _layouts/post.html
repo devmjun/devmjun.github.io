@@ -32,11 +32,33 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ content }}
-                <b1> 으흠? </b1>
             </div>
         </div>
     </div>
 </article>
+
+<!-- ad -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 무작위로 삽입할 텍스트
+    var randomText = "여기에 무작위 텍스트를 입력합니다.";
+
+    var adCode = 
+    '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"><\/script>' + 
+    '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1101850893094860" data-ad-slot="5591535814"><\/ins>' + 
+    '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
+
+    // 중첩된 요소 중에서 무작위로 위치를 선택합니다.
+    var elements = document.querySelectorAll('div[id^="section-id-"]');
+    var randomIndex = Math.floor(Math.random() * elements.length);
+    var randomElement = elements[randomIndex];
+
+    var adElement = document.createElement("div");
+    adElement.innerHTML = adCode;
+
+    randomElement.insertBefore(adElement, randomElement.firstChild);
+});
+</script>
 
 <!-- disqus_comments Content -->
 <disqus_comment>
@@ -70,6 +92,9 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
+
+                <br>
+                <br>
             </div>
         </div>
     </div>
