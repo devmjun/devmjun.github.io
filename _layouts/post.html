@@ -32,11 +32,32 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ content }}
-                <br>
+                <b1> 으흠? </b1>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- disqus_comments Content -->
+<disqus_comment>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br> 
                 {% if page.comments %}
                     {% include disqus_comments.html %}
                 {% endif %}
                 <br>
+            </div>
+        </div>
+    </div>
+</disqus_comment>
+
+<!-- pager Content -->
+<pager>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -49,9 +70,7 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-
             </div>
         </div>
     </div>
-</article>
-<hr>
+</pager>
