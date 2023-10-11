@@ -24,17 +24,14 @@
     {{ content }}
 
     <!-- #1 Display AdSense -->    
-    {% if page.not_active_adsense != true %}   
+    {% if page.not_active_adsense != true %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>    
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 
     {% endif %}
 
     {% include footer.html %}
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-
     <!-- (Optional) 오류 방지 메시지 -->
     <script>(function(){'use strict';function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var ba="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
 function ea(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var fa=ea(this);function ha(a,b){if(b)a:{var c=fa;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&ba(c,a,{configurable:!0,writable:!0,value:b})}}
