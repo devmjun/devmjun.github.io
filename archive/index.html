@@ -4,6 +4,7 @@ title: "Archive"
 description: "!!SHOWTAGSINSTEADOFDESCRIPTION!!"
 header-img: "img/blog-bg.jpg"
 tags: [Python, ComputerScience, Swift, Sketch, Github, Git, Idea, itunesConnect, imessageSticker, RxSwift, RxCocoa, HIG, Link, Xcode, Mac, Realm, Algorithm, DataStructure, iOS, CocoaPod, Travis, Carthage, OAuth, Moya, Alamofire, Raywenderlich, Fastlane, CoreGraphics, Trigonometry, Log, Localization, NSCoding, Restoration, Charles, In-app-Purchase, Multi-media, UICollectionViewLayout,regularExpression, Architecture]  #list of tags that you want to show in description of blog
+not_active_adsense: true
 ---
 
 {% for post in paginator.posts %}
@@ -22,24 +23,24 @@ tags: [Python, ComputerScience, Swift, Sketch, Github, Git, Idea, itunesConnect,
 
 <!-- Archive infeed AdSense -->
 <script>
-var adCode = 
-'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"><\/script>' + 
-'<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1101850893094860" data-ad-slot="8477004863"><\/ins>' + 
-'<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
+    var adCode = 
+    '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"><\/script>' + 
+    '<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1101850893094860" data-ad-slot="8477004863"><\/ins>' + 
+    '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
 
-// 포스트 개수
-var postCount = {{ paginator.posts.size }};
+    // 포스트 개수
+    var postCount = {{ paginator.posts.size }};
 
-// 랜덤한 위치
-var randomPosition = Math.floor(Math.random() * postCount);
+    // 랜덤한 위치
+    var randomPosition = Math.floor(Math.random() * postCount);
 
-// 광고 코드를 삽입할 위치
-var adPosition = document.querySelector(".post-preview:nth-of-type(" + randomPosition + ")");
+    // 광고 코드를 삽입할 위치
+    var adPosition = document.querySelector(".post-preview:nth-of-type(" + randomPosition + ")");
 
-// 광고 코드 삽입
-if (adPosition) {
-    adPosition.insertAdjacentHTML('beforebegin', adCode);
-}
+    // 광고 코드 삽입
+    if (adPosition) {
+        adPosition.insertAdjacentHTML('beforebegin', adCode);
+    }
 </script>
 
 <!-- Pager -->
