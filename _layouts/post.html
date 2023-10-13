@@ -33,32 +33,30 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ content }}
                 <br> 
-                {% if page.not_active_adsense != true %}
-                    <!-- Infeed AdSense -->
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            // 무작위로 삽입할 텍스트
-                            var randomText = "여기에 무작위 텍스트를 입력합니다.";
-                            var adCode = 
-                            '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1101850893094860" data-ad-slot="5591535814"><\/ins>' + 
-                            '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
-                            // 중첩된 요소 중에서 무작위로 위치를 선택합니다.
-                            var elements = document.querySelectorAll('div[id^="section-id-"]');
-                            var randomIndex = Math.floor(Math.random() * elements.length);
-                            var randomElement = elements[randomIndex];
+                
+                <!-- Infeed AdSense --> 
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // 무작위로 삽입할 텍스트
+                        var randomText = "여기에 무작위 텍스트를 입력합니다.";
+                        var adCode = 
+                        '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1101850893094860" data-ad-slot="5591535814"><\/ins>' + 
+                        '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
+                        // 중첩된 요소 중에서 무작위로 위치를 선택합니다.
+                        var elements = document.querySelectorAll('div[id^="section-id-"]');
+                        var randomIndex = Math.floor(Math.random() * elements.length);
+                        var randomElement = elements[randomIndex];
 
-                            var adElement = document.createElement("div");
-                            adElement.innerHTML = adCode;
-                            randomElement.insertBefore(adElement, randomElement.firstChild);
-                        });
-                    </script>
-              
-                    <!-- #post display AdSense -->
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
-                    <!-- 디스플레이 광고_전체 하단 -->
-                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-                    <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-                {% endif %}
+                        var adElement = document.createElement("div");
+                        adElement.innerHTML = adCode;
+                        randomElement.insertBefore(adElement, randomElement.firstChild);
+                    });
+                </script>
+          
+                <!-- #1 POST Display AdSense  -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
+                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 
                 <!-- disqus_comments -->
                 <br> 
