@@ -33,6 +33,7 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {{ content }}
                 <br> 
+
                 {% if page.not_active_adsense != true %}
                     <!-- Infeed AdSense -->
                     <script>
@@ -52,7 +53,7 @@ layout: default
                             randomElement.insertBefore(adElement, randomElement.firstChild);
                         });
                     </script>
-
+                
                 <!-- #post display AdSense -->
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
                 <!-- 디스플레이 광고_전체 하단 -->
