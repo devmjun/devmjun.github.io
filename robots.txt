@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://devmjun.github.io/sitemap.xml
