@@ -157,8 +157,7 @@ code-col: "#c7254e"
 code-background-col: "#2b2829"
 
 page-link-background-col: "#18191A"
-
-footer-fa-inverse-col: "#00f00"
+footer-fa-inverse-col: "#272727"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
