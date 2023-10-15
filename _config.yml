@@ -26,6 +26,7 @@ navbar-links:
     - Archive: "archive"
     - iOS: "category/ios"
     - Python: "category/python"
+    - test post: "category/test"
 
 ################
 # --- Logo --- #
