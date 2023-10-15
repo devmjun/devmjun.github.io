@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [persistence를 어떻게 번역할까?에 대한 참고글](http://homo-ware.tistory.com/4)

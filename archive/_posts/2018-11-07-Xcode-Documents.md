@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Swift Documentation - 스위프트 코드 기반 문서화 예제들](http://seorenn.blogspot.com/2017/01/swift-documentation_5.html)<br>

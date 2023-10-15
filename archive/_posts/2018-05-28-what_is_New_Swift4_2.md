@@ -1,7 +1,9 @@
 ---
 layout:     post
-title:      "Swift, What’s New in Swift 4.2"
-subtitle:   "링크참조..."
+title:      Swift, What’s New in Swift 4.2
+subtitle:   링크참조
+categories: archive
+permalink: /archive/:title
 date:       2018-05-28 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"

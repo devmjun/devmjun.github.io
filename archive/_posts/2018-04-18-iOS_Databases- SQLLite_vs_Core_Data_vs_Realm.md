@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## iOS Databases: SQLLite vs. Core Data vs. Realm

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode, Mac]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Xcode 완전 삭제 하는 방법

@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UICollectionViewLayout, Raywenderlich]
+categories: archive
+permalink: /archive/:title
 ---
 
 [UICollectionView Custom Layout Tutorial: A Spinning Wheel](https://www.raywenderlich.com/1702-uicollectionview-custom-layout-tutorial-a-spinning-wheel)에서 필요한 부분을 의역 했습니다. 

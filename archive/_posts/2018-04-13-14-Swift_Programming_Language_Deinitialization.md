@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 최종 수정일 2018.10.1

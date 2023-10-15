@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Link]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## DispatchSource 

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Autolayout을 이용하여 막대 그래프 표현하기

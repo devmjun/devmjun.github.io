@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Idea-bg.jpg"
 comments: true
 tags: [Swift, Idea]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Vingle TechTalk Texture in Startup

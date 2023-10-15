@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 API 주소는 [여기](https://openweathermap.org) 입니다

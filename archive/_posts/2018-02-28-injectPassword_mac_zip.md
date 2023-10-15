@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Mac-bg.jpg"
 comments: true 
 tags: [Mac]
+categories: archive
+permalink: /archive/:title
 ---
 
 아래와 같이 zip 파일에 암호를걸어서 간단하게 보호해야할 파일에 암호를 걸수 있습니다. 일반적인 경우가 아닌 좀더 복잡한 암호 과정이 필요한 경우 `openssl`과 같은 명령어를 사용해 암호화 하는것이 적절합니다. <br>

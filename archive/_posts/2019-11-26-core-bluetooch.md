@@ -9,6 +9,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift,CoreBluetooth]
 
+categories: archive
+permalink: /archive/:title
 --- 
 
 [Core Bluetooth Tutorial for iOS: Heart Rate Monitor](https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor) 에서 필요한 부분을 의역 했습니다.

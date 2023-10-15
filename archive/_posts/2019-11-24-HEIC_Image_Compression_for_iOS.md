@@ -9,6 +9,8 @@ header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Mirror, CustomDebugStringConvertible]
 
+categories: archive
+permalink: /archive/:title
 --- 
 
 ## Table of contents

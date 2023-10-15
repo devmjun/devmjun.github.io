@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true
 tags: [Xcode]
+categories: archive
+permalink: /archive/:title
 ---
 
 1. CocoaPods 란?

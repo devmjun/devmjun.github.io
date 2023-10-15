@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode]
+categories: archive
+permalink: /archive/:title
 ---
 
 Xcode 9에 업데이트된 편한 기능인 `Wierless developemnt`을 사용하는 방법을 알아보겠습니다! 

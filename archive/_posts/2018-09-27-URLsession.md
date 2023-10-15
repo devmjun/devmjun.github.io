@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Refernece 

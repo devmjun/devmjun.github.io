@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Trigonometry]
+categories: archive
+permalink: /archive/:title
 ---
 
 `Trigonometry` 시리즈 포스팅들을 바탕으로 원과 호를 사용하여 원 그래프를 만드는 간단한 [예제](https://github.com/devmjun/RingChartView)를 만들어 보았습니다. 

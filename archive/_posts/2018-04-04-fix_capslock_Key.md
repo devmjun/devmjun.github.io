@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true 
 tags: [Mac]
+categories: archive
+permalink: /archive/:title
 ---
 
 [해당 링크 참조](https://blog.roto.codes/fix_capslock_delay/)

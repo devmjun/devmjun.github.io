@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 예전 패스트 캠퍼스에서 팀 프로젝트로 만들었던것을 다시 만들었습니다. 

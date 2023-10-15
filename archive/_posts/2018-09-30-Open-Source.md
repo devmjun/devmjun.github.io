@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Link]
+categories: archive
+permalink: /archive/:title
 ---
 
 [GPL·AGPL·MPL…한눈에 보는 오픈소스SW 라이선스](http://www.bloter.net/archives/209318)<br>

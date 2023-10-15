@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Swift. 값 타입 VS 참조 타입 
@@ -26,10 +28,18 @@ tags: [Swift]
 
 ```swift
 // class 정의
-class VideoMode {var resolution = Resolution()var interlaced = falsexvar frameRate = 0.0var name: String?}
+class VideoMode {
+var resolution = Resolution()
+var interlaced = falsex
+var frameRate = 0.0
+var name: String?
+}
 
 // Struct 정의 
-struct Resolution {}var width = 0var height = 0
+struct Resolution {
+}
+var width = 0
+var height = 0
 
 // Class 인스턴스 생성
 var value = VideoMode()
@@ -48,7 +58,10 @@ var value = Resolution()
 ## Struct VS Class
 
 - Class는 참조 타입이며, Struct는 값 타입 입니다.(사실 Class와 Struct의 차이는 이 차이때문에 나머지 차이들이 파생되어서 생기게 됩니다.)<br>
-- Class는 상속을 통해 부모클래스의 특성을 상속받을수 있습니다.- Class는 Type Casting을 사용할수 있습니다.(Struct 불가)- Struct의 프로퍼티는 instance가 `var`를 통해서 만들어야 수정 가능하다.- Class는 Reference Counting을 통해 인스턴스의 해제를 계산합니 Calss는 deinitializer를 사용할수 있습니다.
+- Class는 상속을 통해 부모클래스의 특성을 상속받을수 있습니다.
+- Class는 Type Casting을 사용할수 있습니다.(Struct 불가)
+- Struct의 프로퍼티는 instance가 `var`를 통해서 만들어야 수정 가능하다.
+- Class는 Reference Counting을 통해 인스턴스의 해제를 계산합니 Calss는 deinitializer를 사용할수 있습니다.
 
 > 여러가지 특징이 있지만, 여기에서는 값, 참조 타입에 대해서만 다루겠습니다.
 

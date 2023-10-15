@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Link-bg.jpg"
 comments: true 
 tags: [Link]
+categories: archive
+permalink: /archive/:title
 ---
 
 쉘 스크립트를 실행하려고 하는데, 아래같은 오류가 발생했을때 해결방법

@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Fastlane, Travis, Jenkins]
+categories: archive
+permalink: /archive/:title
 --- 
 
 [Continuous Integration With GitHub, Fastlane & Jenkins](https://www.raywenderlich.com/1774995-continuous-integration-with-github-fastlane-jenkins) 에서 필요한 부분을 의역 했습니다.

@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Core Graphics Tutorial Part 2: Gradients and Contexts](https://www.raywenderlich.com/410-core-graphics-tutorial-part-2-gradients-and-contexts)을 의역 했습니다.

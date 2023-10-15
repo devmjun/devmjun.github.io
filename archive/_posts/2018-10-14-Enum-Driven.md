@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Enum-Driven TableView Development](https://www.raywenderlich.com/5542-enum-driven-tableview-development)에서 필요한 부분을 의역했습니다.

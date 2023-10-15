@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 플레이 그라운드에서 Pods 파일을 인스톨하여 코드를 확인해보고 싶을때가 있습니다. 그런데 플레이 그라운드에 Cocoa Pods을 설치하는게 불편합니다. 

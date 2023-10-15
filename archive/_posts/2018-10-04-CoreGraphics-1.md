@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Core Graphics Tutorial Part 1: Getting Started](https://www.raywenderlich.com/411-core-graphics-tutorial-part-1-getting-started)을 의역 했습니다.

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/itunesConnect-bg.jpg"
 comments: true 
 tags: [itunesConnect, Link]
+categories: archive
+permalink: /archive/:title
 ---
 
 

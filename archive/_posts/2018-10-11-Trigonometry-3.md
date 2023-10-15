@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Trigonometry]
+categories: archive
+permalink: /archive/:title
 ---
 
 [삼각 함수(三角函數, Trigonometric Function)](https://ghebook.blogspot.com/2010/12/trigonometric-function.html)<br>

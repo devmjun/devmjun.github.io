@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [imessageSticker]
+categories: archive
+permalink: /archive/:title
 ---
 
 동생이랑 iMessage Sticker 2탄을 만들었습니다. <br>

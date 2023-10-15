@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [야곰의 스위프트 기본 문법 강좌](https://www.inflearn.com/course/스위프트-기본-문법/)<br>

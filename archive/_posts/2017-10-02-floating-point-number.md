@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/ComputerScience-bg.jpg"
 comments: true
 tags: [ComputerScience]
+categories: archive
+permalink: /archive/:title
 ---
 
 

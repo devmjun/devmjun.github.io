@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 Container ViewController를 쉽게 사용할수 있는 라이브러리를 만들었습니다. 코드의 위치는 [여기](https://github.com/devmjun/CaseContainer) 입니다. 

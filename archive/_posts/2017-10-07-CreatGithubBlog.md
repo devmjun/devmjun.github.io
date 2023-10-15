@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Github]
+categories: archive
+permalink: /archive/:title
 ---
 
 

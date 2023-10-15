@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Restoration]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Performing One-Time Setup for Your App](https://developer.apple.com/documentation/uikit/core_app/managing_your_app_s_life_cycle/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app)에서 필요한 부분만 의역했습니다.

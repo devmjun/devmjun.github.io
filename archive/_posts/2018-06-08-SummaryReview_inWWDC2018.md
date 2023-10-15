@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [(3차 수정) WWDC 2018 정리본](https://www.clien.net/service/board/park/12189185)<br>

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/iOS-bg.jpg"
 comments: true 
 tags: [Swift, iOS]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Framework vs Library (Static & Shared) in (Cocoa/OSX, Cocoa Touch/iOS)](http://www.knowstack.com/framework-vs-library-cocoa-ios/)의 포스팅을 의역했습니다. 오역이 있을수 있으니, 참조 해주세요

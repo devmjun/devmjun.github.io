@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Mini_Projects/Projexts_Xcode/CreatSubWay-ver1)

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Idea]
+categories: archive
+permalink: /archive/:title
 ---
 
 [tool 사용 저장소의 주소 입니다.](https://github.com/yoshimkd/swift-auto-diagram) 사용 방법은 [여기 링크에 있습니다](https://martinmitrevski.com/2016/10/12/swift-class-diagrams-and-more/)

@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Localization]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Internationalizing Your iOS App: Getting Started](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)을 의역 했습니다.

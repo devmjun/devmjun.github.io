@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Restoration]
+categories: archive
+permalink: /archive/:title
 ---
 
 [About the UI Restoration Process](https://developer.apple.com/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_restoration_process)에서 필요한 부분만 의역했습니다.

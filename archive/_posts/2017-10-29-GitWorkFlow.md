@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Git]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Git을 이용한 협업 Workflow 

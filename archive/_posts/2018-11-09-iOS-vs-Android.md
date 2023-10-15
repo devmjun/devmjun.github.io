@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 --- 
 
 [https://blog.naver.com/rkwlsnl/220361673947](https://blog.naver.com/rkwlsnl/220361673947)<br>

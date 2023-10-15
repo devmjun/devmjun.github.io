@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Moya]
+categories: archive
+permalink: /archive/:title
 ---
 
 [Moya Tutorial for iOS: Getting Started](https://www.raywenderlich.com/5121-moya-tutorial-for-ios-getting-started)의 내용을 의역했습니다.

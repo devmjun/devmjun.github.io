@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Git]
+categories: archive
+permalink: /archive/:title
 ---
 
 

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
+categories: archive
+permalink: /archive/:title
 ---
 
 개인적인 공부의 목적으로 작성 되었습니다. 오역이나 잘못된 부분이 있을수 있으니, 댓글 남겨 주시면 감사하겠습니다!

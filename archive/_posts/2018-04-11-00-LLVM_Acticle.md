@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+categories: archive
+permalink: /archive/:title
 ---
 
 [WMO 알아보기(컴파일 최적화)](https://brunch.co.kr/@joonwonlee/14)<br>

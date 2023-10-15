@@ -1,7 +1,9 @@
 ---
 layout:     post
-title:      "Algorithm, Time Complexity"
-subtitle:   "Big O, 지수, 로그, 링크참조..."
+title:      Algorithm, Time Complexity
+subtitle:   Big O, 지수, 로그, 링크참조
+categories: archive
+permalink: /archive/:title
 date:       2018-06-10 17:45:00
 author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"

@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Link]
+categories: archive
+permalink: /archive/:title
 ---
 
 [iOS 개발에서 스토리보드란 무엇인가?](http://hamait.tistory.com/708) <br>

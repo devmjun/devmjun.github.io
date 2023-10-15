@@ -7,6 +7,8 @@ author:     "MinJun"
 header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Swift, Algorithm]
+categories: archive
+permalink: /archive/:title
 ---
 
 ## Code 

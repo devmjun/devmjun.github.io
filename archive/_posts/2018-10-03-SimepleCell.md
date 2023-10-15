@@ -7,6 +7,8 @@ author:     "MinJun Ju"
 header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Framework]
+categories: archive
+permalink: /archive/:title
 ---
 
 SimpleCell의 Github 주소는 [여기](https://github.com/devmjun/SimpleCell) 입니다.
