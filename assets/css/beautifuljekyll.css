@@ -54,7 +54,7 @@ a:focus {
   color: {{ site.hover-col | default: "#0085A1" }};
 }
 blockquote {
-  color: #808080;
+  color: {{ site.blockquote-text-col | default: "#737373;" }};
   font-style: italic;
 }
 blockquote p:first-child {
@@ -913,7 +913,7 @@ pre {
   margin: 0;
 }
 .highlight pre.lineno {
- color: {{ site.highlight-lineno-text-col | default: "#FFFFFF4D" }};;
+ color: {{ site.highlight-lineno-text-col | default: "#FFFFFF4D" }};
   border-radius: 0;
   border-right: 2px solid #444;
 }
@@ -1010,9 +1010,10 @@ pre {
 
 .blog-post blockquote {
   padding: 0.625rem 1.25rem;
-  margin: 0 0 1.25rem;
+  margin: 1.25rem 0 1.25rem 0;
   font-size: 1.1rem;
   border-left: 0.3125rem solid #eee;
+  background-color: {{ site.blockquote-background-col | default: "#EEEEEE" }}; 
 }
 
 .blog-post blockquote p:last-child {
