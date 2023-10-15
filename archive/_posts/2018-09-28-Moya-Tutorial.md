@@ -66,7 +66,7 @@ Moya는 일반적으로 열거형을 사용하여 타입이 안전한 방식으�
 
 프로젝트를 열고 `Main.stroyboard`로 가서 앱의 일반적인 구조의 화면을 확인합니다. 
 
-![](/img/posts/Moya-Tutorial-1.png)
+![](/assets/post_img/posts/Moya-Tutorial-1.png)
 
 `ComicCards`앱은 두개의 다른 화면으로 구성되어 있습니다.
 
@@ -115,7 +115,7 @@ Artsy's [Eidolon](https://github.com/artsy/eidolon) app을 위해 [Ash Furrow](h
 
 Moya는 코드를 작성하기 전에 알아 두어야 할 구축 블럭과, 몇가지 고유한 개념을 소개합니다. Moya는 다음과 같은 구성 요소를 사용하여 전체 네트워킹 체인을 설명할수 있습니다.
 
-![](/img/posts/Moya-Tutorial-5.png)
+![](/assets/post_img/posts/Moya-Tutorial-5.png)
 
 > Moya's Building Blocks
 
@@ -135,7 +135,7 @@ Moya는 코드를 작성하기 전에 알아 두어야 할 구축 블럭과, 몇
 
 [계정을 만드는것](https://www.marvel.com/register)으로 시작합니다. 모든것이 준비됬다면 [나의 개발자 계정 페이지](https://developer.marvel.com/account)로 돌아가면 공개키, 비공개키를 볼수 있는 페이지를 찾을수 있습니다.
 
-![](/img/posts/Moya-Tutorial-6.jpg)
+![](/assets/post_img/posts/Moya-Tutorial-6.jpg)
 
 몇분안에 위의 두 키를 사용할 것입니다.
 
@@ -147,7 +147,7 @@ Moya는 코드를 작성하기 전에 알아 두어야 할 구축 블럭과, 몇
 
 `ComicCards` Xcode 프로젝트로 돌아갑니다. 프로젝트 탐색기에서 `ComicCards/network` 폴더에서 `Marvel.swift` 파일을 생성합니다. 
 
-![](/img/posts/Moya-Tutorial-7.png)
+![](/assets/post_img/posts/Moya-Tutorial-7.png)
 
 `import Foundation`이후에 다음 코드를 추가합니다.
 
@@ -347,7 +347,7 @@ provider.request(.comics) { [weak self] result in
 
 > Note: 결과가 디버그 콘솔에 나타나려면 몇초가 걸릴수 있습니다.
 
-![](/img/posts/Moya-Tutorial-8.jpg)
+![](/assets/post_img/posts/Moya-Tutorial-8.jpg)
 
 이 뷰 컨트롤러를 완성하는 마지막 단계는 실제로 JSON 응답을 적절한 데이터 모델로 매핑하는 것입니다. - 이 경우에는 미리 구성한 Comic 구조체를 사용합니다.
 
@@ -437,7 +437,7 @@ Marvel API와 비슷하게, [여기](https://imgur.com/register?invokedBy=regula
 
 계정을 생성한 후에, [Imgur Application](https://api.imgur.com/oauth2/addclient)을 생성 해야합니다. 콜백을 위한 가짜 URL을 사용할수 있습니다. 왜냐하면 여기서 OAuth를 사용하지 않기 때문입니다. 또한 간단하게 `OAuth 2 authorization without a callback URL`을 선택할수 있습니다.
 
-![](/img/posts/Moya-Tutorial-11.png)
+![](/assets/post_img/posts/Moya-Tutorial-11.png)
 
 > Registering a new Imgur application
 
@@ -545,7 +545,7 @@ extension Imgur: TargetType {
 
 `Imgur` target은 완성 되었습니다! `ComicCards`앱에 대한 Moya와 관계된 코드를 마무리합니다. 
 
-![](/img/posts/Moya-Tutorial-12.jpg)
+![](/assets/post_img/posts/Moya-Tutorial-12.jpg)
 
 <div id='section-id-504'/>
 

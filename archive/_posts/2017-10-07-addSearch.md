@@ -70,7 +70,7 @@ Allow:
 
 ## google 검색 엔진에 등록 하는 방법
 
-![screen](/img/posts/addSearch.jpg)
+![screen](/assets/post_img/posts/addSearch.jpg)
 
 1. [구글 웹마스터 도구](https://www.google.com/webmasters/tools/home?hl=ko)에 접속하고, `속성` 추가를 누른후, blogURL을 등록합니다. ex) https:자신의github블로그 주소
 
@@ -92,7 +92,7 @@ Allow:
 
 ## Daum 등록 
 
-![screen](/img/posts/addSearch1.jpg)
+![screen](/assets/post_img/posts/addSearch1.jpg)
 
 1. [Daum 검색등록](https://register.search.daum.net/index.daum) 에 접속해서 로그인 이후 `블로그 등록` 카테고리를 선택후, 자신의 블로그 URL을 입력합니다.
 

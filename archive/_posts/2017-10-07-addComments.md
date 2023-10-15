@@ -29,7 +29,7 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 1.
 
-![screen](/img/posts/disqus.jpg)
+![screen](/assets/post_img/posts/disqus.jpg)
 
 회원 가입후, 오른쪽 상단의 사람모양 아이콘을 클릭후 `Settings`로 갑니다
 
@@ -37,7 +37,7 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 2.
 
-![screen](/img/posts/disqus1.jpg)
+![screen](/assets/post_img/posts/disqus1.jpg)
 
 `Profile` 와 `Account` 로 가서 필요한것들을 작성해줍니다.
 
@@ -45,11 +45,11 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 3.
 
-![screen](/img/posts/disqus2.jpg)
+![screen](/assets/post_img/posts/disqus2.jpg)
 
 우측 상단의 `Add Disqus To Site` 들어가서, Site 셋팅을 해줍니다.
 
-![screen](/img/posts/disqus3.jpg)
+![screen](/assets/post_img/posts/disqus3.jpg)
 
 `I want to install Disqus on my site` 로 들어갑니다.
 
@@ -57,7 +57,7 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 4.
 
-![screen](/img/posts/disqus4.jpg)
+![screen](/assets/post_img/posts/disqus4.jpg)
 
 `install disqus` 부분으로 오게 되면, 화면을 아래로 내려서 `Universal Code` 를 선택합니다. 
 
@@ -65,9 +65,9 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 5.
 
-![screen](/img/posts/disqus5.jpg)
+![screen](/assets/post_img/posts/disqus5.jpg)
 
-![screen](/img/posts/disqus6.jpg)
+![screen](/assets/post_img/posts/disqus6.jpg)
 
 
 
@@ -80,7 +80,7 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 6.
 
-![screen](/img/posts/disqus7.jpg)
+![screen](/assets/post_img/posts/disqus7.jpg)
 
 `_config.yml` 에 들어가서 추가해줍니다. 
 
@@ -94,7 +94,7 @@ github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다
 
 ## 7. 결과 확인!
 
-![screen](/img/posts/disqus8.jpg)
+![screen](/assets/post_img/posts/disqus8.jpg)
 
 잘 작동이 되는지 확인해줍니다!
 

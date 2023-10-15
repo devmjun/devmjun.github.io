@@ -44,7 +44,7 @@ Swift의 UI Control을 소개하는 훌륭한 튜토리얼이 있습니다. [이
 
 이 커스텀 컨트롤 튜토리얼은 그 컨셉을 좀더 자세하게 설명하고, 믹서에서 찾을수 있는 컨트롤 손잡이에서 영감받은 원형 슬라이더 같은 종류의 컨트롤 생성을 다룹니다. 
 
-![](/img/posts/Custom-Control-0.png)
+![](/assets/post_img/posts/Custom-Control-0.png)
 
 `UIKit`은 `UISlider`를 제공하고, 지정된 범위내의 플로팅 포인팅 값을 설정하게 합니다. iOS 기기에서 사용했었다면, 아마 UISlider를 볼륨, 밝기, 등 다양한 목적의 어떤걸 설정하기 위해 사용했었을 것입니다. 프로젝트는 같은 기능을 갖지만, 원형 모형이 다릅니다.
 
@@ -148,7 +148,7 @@ UIview는 CALayer에 의해 뒷받침 되기 때문에, CALayer는 GPU에서 iOS
 
 아래의 가상의 knob 컨트롤 구조를 보여줍니다. 
 
-![](/img/posts/Custom-Control-1.png)
+![](/assets/post_img/posts/Custom-Control-1.png)
 
 빨강 사각형과 파란 사각형은 두개의 CALayer 객체 입니다. 파랑 레이어는 knob 컨트롤의 트렉을 포함하고 빨강 레이어는 포인터 입니다. 두레이어가 겹쳐졌을때 움직이는 knob의 모양이 생성됩니다. 색상차이는 단지 예를 들기 위한 목적입니다.
 
@@ -537,7 +537,7 @@ private(set) var touchAngle: CGFloat = 0
 
 다음의 다이어 그램처럼, `touchAngle`는 제스쳐 인식기가 부착된 뷰의 중앙에 현재 터치 지점과 연결된 선의 터치 각도를 나타냅니다. 
 
-![](/img/posts/Custom-Control-2.png)
+![](/assets/post_img/posts/Custom-Control-2.png)
 
 `UIGestureRecognizer`를 하위클레싱할때 흥미로운 세개의 매소드가 있습니다: 이들은 터치가 시작될때, 터치 하고있을때, 터치가 끝날때를 나타냅니다. 앱에서는 터치가 스크린에서 시작할때와 움직일때를 집중합니다.
 
@@ -577,7 +577,7 @@ private func angle(for point: CGPoint, in view: UIView) -> CGFloat {
 
 `updateAngle(with:)`는 터치 모음(set)을 가지고 있고 그중 첫번째를 추출합니다. `location(in:)`을 사용하여 제스쳐 인식기와 함께 연관된 뷰의 시스템 좌표계로 변환(coordinate) 합니다. 그런다음 `angle(for:in:)`을 사용하여 `touchAngle` 속성을 업데이트 합니다. 간단한 기하학을 사용하여 아래와 같이 각도를 찾습니다.
 
-![](/img/posts/Custom-Control-3.png)
+![](/assets/post_img/posts/Custom-Control-3.png)
 
 `x`와 `y`는 터치 컨트롤 내의 수평, 수직 터치 포인트 위치를 나타냅니다. 회전의 탄젠트(The tangent), 즉 - 터치 각은 `height / width` 와 같습니다. `touchAngle`를 계산하면 다음 길이를 설정해야합니다
 

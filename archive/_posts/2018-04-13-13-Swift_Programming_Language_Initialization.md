@@ -1024,7 +1024,7 @@ class SomeClass {
 
 아래 예제는 체스 게임 보드를 모델링한 구조체 Chessboard를 정의합니다. 체스는 검정과 흰색의 사각형이 교차하는 8 x 8 보드에서 게임을 합니다.
 
-![](/img/posts/Swift-Language-Guide-Initialization-0.png)
+![](/assets/post_img/posts/Swift-Language-Guide-Initialization-0.png)
 
 게임 보드를 표현하기 위해, `Chessboard` 구조체는 `64`개의 `Bool` 값 배열인 프로퍼티 `boardColors` 1개를 가지고 있습니다. 배열에서 `true` 값은 검정 사각형을 표현하고 값이 `false`는 흰색 사각형을 표현합니다. 배열에서 첫번째 항목은 보드의 좌측 상단 사각형이고 배열에서 마지막 항목은 보드에서 우측 아래쪽 사각형을 표현합니다.
 

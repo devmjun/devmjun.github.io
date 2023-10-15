@@ -50,7 +50,7 @@ permalink: /archive/:title
 
 | Standard title | Large title | 
 | :--: | :--: |
-|![screen](/img/posts/NavigationBars-1.png) | ![screen](/img/posts/NavigationBars-2.png)| <br>
+|![screen](/assets/post_img/posts/NavigationBars-1.png) | ![screen](/assets/post_img/posts/NavigationBars-2.png)| <br>
 
 #### - 문맥에 중점을 두어야 할 때 큰 제목을 사용하십시오
 
@@ -103,7 +103,7 @@ permalink: /archive/:title
 
 | Clear button | Cancel button | 
 | :--: | :--: |
-|![screen](/img/posts/SearchBar-1.png) | ![screen](/img/posts/SearchBar-2.png)| <br>
+|![screen](/assets/post_img/posts/SearchBar-1.png) | ![screen](/assets/post_img/posts/SearchBar-2.png)| <br>
 
 #### - 필요한 경우 검색 창에 힌트와 컨텍스트(플레이스 홀더)를 제공하십시오
 
@@ -143,7 +143,7 @@ extension UISearchBar{
 
 | Placeholder text | Introductory text | 
 | :--: | :--: |
-|![screen](/img/posts/SearchBar-3.png) | ![screen](/img/posts/SearchBar-4.png)| <br>
+|![screen](/assets/post_img/posts/SearchBar-3.png) | ![screen](/assets/post_img/posts/SearchBar-4.png)| <br>
 
 #### - 검색 창 아래에 유용한 바로 가기 및 기타 콘텐츠를 제공하는 것이 좋습니다
 
@@ -175,9 +175,9 @@ extension UISearchBar{
 
 | Light status bar | Light status bar | 
 | :--: | :--: |
-|![screen](/img/posts/Statusbar.png) | ![screen](/img/posts/Statusbar-1.png)| 
+|![screen](/assets/post_img/posts/Statusbar.png) | ![screen](/assets/post_img/posts/Statusbar-1.png)| 
 | Dark status bar | Dark status bar |
-|![screen](/img/posts/Statusbar-2.png) | ![screen](/img/posts/Statusbar-3.png)| 
+|![screen](/assets/post_img/posts/Statusbar-2.png) | ![screen](/assets/post_img/posts/Statusbar-3.png)| 
 
 #### - 상태 표시 줄 스타일을 앱 디자인과 조정하십시오
 
@@ -197,7 +197,7 @@ extension UISearchBar{
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/Statusbar-4.png) | ![screen](/img/posts/Statusbar-5.png)| <br>
+|![screen](/assets/post_img/posts/Statusbar-4.png) | ![screen](/assets/post_img/posts/Statusbar-5.png)| <br>
 
 #### - 상태 표시 줄을 영구적으로 숨기지 마십시오
 

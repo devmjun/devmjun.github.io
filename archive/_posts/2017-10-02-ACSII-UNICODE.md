@@ -21,7 +21,7 @@ permalink: /archive/:title
 > 정답부터 이야기 하면 ASCII 는 7 비트 입니다
 
 
-![screen](/img/posts/ACSII.png)
+![screen](/assets/post_img/posts/ACSII.png)
 
 위의 이미지처럼, 7비트에 각각 문자와, 특수문자 등을 대응 시키는 table을 만들어서 표준으로 사용하고 있습니다. 
 

@@ -147,7 +147,7 @@ while condition {
 이 예제는 뱀과 사다리(Snakes and Ladders) 게임을 합니다. (미끄럼틀과 사다리(Chutes and Ladders)라고도 합니다.)
 
 
-![](/img/posts/SwiftLanguageGuide_ControlFlow_0.png)
+![](/assets/post_img/posts/SwiftLanguageGuide_ControlFlow_0.png)
 
 게임의 규칙은 다음과 같습니다.
 
@@ -681,7 +681,7 @@ label name: while condition {
 
 게임 보드는 이전과 같습니다.
 
-![](/img/posts/SwiftLanguageGuide_ControlFlow_1.png)
+![](/assets/post_img/posts/SwiftLanguageGuide_ControlFlow_1.png)
 
 `finalSquare, board, square, diceRoll`의 값은 이전과 같은 방법으로 초기화 됩니다
 

@@ -74,13 +74,13 @@ UIKit은 복원 식별자 문자열을 사용하여 나중에 뷰 컨트롤러�
 
 > 그림 7-1 자동으로 보존처리에서 뷰 컨트롤러를 제외합니다.
 
-![](/img/posts/ViewController-Restoration-0.png)
+![](/assets/post_img/posts/ViewController-Restoration-0.png)
 
 하나 이상의 뷰 컨트롤러를 제외하는것은 차후 복원동안 그들 전체가 제거되지 않습니다. 그림 7-2와 같이 앱의 기본 설정에 포함된 모든 뷰 컨트롤러가 생성됩니다. 앱이 시작할때 기본 구성으로 다시 설정되지만 여전히 생성됩니다.
 
 > 그림 7-2 뷰 컨트롤러의 기본 설정 로드
 
-![](/img/posts/ViewController-Restoration-1.png)
+![](/assets/post_img/posts/ViewController-Restoration-1.png)
 
 자동 보존 처리에서 뷰 컨트롤러를 제외해도 수동으로 보존하지 못하는것은 아닙니다. 복원 아카이브에서 뷰 컨트롤러로 참조를 저장하는것은  뷰 컨트롤러와 해당 상태 정보가 보존 됩니다. 예를들어 그림 7-1의 앱 델리게이트가 3개의 네비게이션 컨트롤러 자식뷰를 저장한 경우, 이들 상태는 보존 되어 집니다. 복원 하는동안 App Delegate는 뷰 컨트롤러를 다시 만들고 네비게이션 컨트롤러의 스텍으로 push 할수 있습니다.
 

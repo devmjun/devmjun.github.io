@@ -70,7 +70,7 @@ permalink: /archive/:title
 `TenPM.xcworkspace`를 열고 프로젝트를 둘러보세요. `Main.stroyboard`를 열고 네비게이션 컨트롤러 내에 두개의 뷰 컨트롤러가 나타납니다.
 
 
-![](/img/posts/beaver-0.png)
+![](/assets/post_img/posts/beaver-0.png)
 
 왼쪽의 뷰 컨트롤러는 부모가 앱에게 `집`이 어디에 있는지 알려주고 자녀가 돌아다닐수 있는 최대 거리를 지정하는데 사용할수 있습니다. backing class는 `TrackingSetupViewController` 입니다. 이 뷰 컨트롤러는 위치 추적 인증(location tracking authorization), 공간상의 거리(geofencing)를 위해 입력한 거리를 저장합니다. 
 
@@ -240,23 +240,23 @@ SwifrtBeaver의 가장 멋진 기능중 하나는 바로 로그를 클라우드�
 
 [SwiftyBeaver Mac app을 다운로드](https://s3.amazonaws.com/swiftybeaver/SBMac.zip) 하세요. 앱을 열고 양식을 작성하여 계정을 만드세요. 
 
-![](/img/posts/beaver-6.png)
+![](/assets/post_img/posts/beaver-6.png)
 
 다음으로 파일을 저장하기 위해 묻는 대화상자가 나타납니다. 파일이 무엇인지 알려주지 않기 때문에 조금 이상합니다. 
 
 이름을 `TenPMLogs`으로 지정하고 원하는 위치를 선택하고 저장을 누릅니다.
 
-![](/img/posts/beaver-7.png)
+![](/assets/post_img/posts/beaver-7.png)
 
 만든 파일에 하나의 앱 로그가 저장되고 TenPMLogs라고 이름붙인 이유입니다. SwiftyBeaver mac 앱을 사용하여 이 파일을 열때 Ten PM앱과 관련된 로그들을 볼수 있습니다. 
 
 로그 파일을 저장하면 선택항목이 표시됩니다. 새 앱을 등록하거나, 이전에 등록한 앱의 로그를 볼수 있습니다. 새 앱으로 계속 진행합니다. 
 
-![](/img/posts/beaver-9.png)
+![](/assets/post_img/posts/beaver-9.png)
 
 `Generate New App Credentials`을 클릭하면 앱을 위해 생성된 ID, Keys 화면을 볼수 있습니다.
 
-![](/img/posts/beaver-10.png)
+![](/assets/post_img/posts/beaver-10.png)
 
 방금 생성된 보안 자격 증명을 사용하여 다른 로그 destination을 추가할것입니다. 이 창을 그대로 두고, `Appdelegate.swift`의 `setupSwiftyBeaverLoggin()`으로 돌아갑니다.
 
@@ -272,7 +272,7 @@ SwiftyBeaver mac 앱으로 돌아가서 Connect버튼을 클릭합니다. 그후
 
 > Note: 앱에 자격 증명을 복사하기 전에 연결버튼을 클릭한경우 SwiftyBeaver Mac App에서 설정을 클릭하여 연결한 후 볼수 있습니다.
 
-![](/img/posts/beaver-11.png)
+![](/assets/post_img/posts/beaver-11.png)
 
 SwiftyBeaver Mac 앱에 로그 메시지가 표시되는걸 확인할수 있습니다. 로그가 보이지 않는다면 절망하지마세요. 경우에 따라서 로그 메시지가 클라우드에 도달하는데 몇 분정도 걸릴수 있습니다. 결국에는 볼수 있습니다. 
 
@@ -314,7 +314,7 @@ SwiftyBeaver.error("Of course I'm going to show up in your console. You need to 
 
 모든 수준에서 메시지를 기록(logging) 했습니다. 앱을 빌드하고 실행하면, 모든 로그가 Crypto Cloud에 저장되는것을 볼수 있습니다.
 
-![](/img/posts/beaver-12.png)
+![](/assets/post_img/posts/beaver-12.png)
 
 `setupSwiftyBeaverLogging()`에서 platform loggin destination을 추가한것 이전에 다음 코드를 추가합니다.
 
@@ -324,7 +324,7 @@ platform.minLevel = .warning
 
 앱을 다시 빌드하고 시작합니다. Crypto Cloud 콘솔을 다시 한번 살펴보세요.
 
-![](/img/posts/beaver-13.png)
+![](/assets/post_img/posts/beaver-13.png)
 
 최근의 타임스템프에서 경고와 위험만 봐야합니다. 다른 경고와 위험을 제외한 보안 클라우드 콘솔에 없었을 것입니다. Xcode 콘솔에서는 모든것을 볼수 있습니다.
 

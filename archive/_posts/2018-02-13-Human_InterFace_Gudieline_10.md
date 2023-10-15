@@ -146,7 +146,7 @@ iMessage앱은 메시지 대화의 컨텍스트 내에서 대화식 경험을 �
 
 | Compact | Expanded | 
 | :--: | :--: |
-|![screen](/img/posts/iMessage.png) | ![screen](/img/posts/iMessage-1.png)| <br>
+|![screen](/assets/post_img/posts/iMessage.png) | ![screen](/assets/post_img/posts/iMessage-1.png)| <br>
 
 #### - 직관적인 인터페이스를 설계하십시오
 
@@ -183,7 +183,7 @@ iMessage 응용 프로그램은 일반적으로 두 명 이상의 사람들 사�
 
 | Compact | Expanded | 
 | :--: | :--: |
-|![screen](/img/posts/iMessage-2.png) | ![screen](/img/posts/iMessage-3.png)| <br>
+|![screen](/assets/post_img/posts/iMessage-2.png) | ![screen](/assets/post_img/posts/iMessage-3.png)| <br>
 
 #### - 표현력을위한 디자인
 
@@ -215,7 +215,7 @@ Messaging은 보편적인 의사 소통 형식입니다. 광범위하고 국제�
 
 | Small size | Regular size | Large size |
 | :--: | :--: | :--: |
-|![screen](/img/posts/iMessage-4.png) | ![screen](/img/posts/iMessage-5.png)| ![screen](/img/posts/iMessage-6.png) |<br>
+|![screen](/assets/post_img/posts/iMessage-4.png) | ![screen](/assets/post_img/posts/iMessage-5.png)| ![screen](/assets/post_img/posts/iMessage-6.png) |<br>
 
 #### - 적절하게 스티커의 크기를 조정하십시오
 
@@ -330,7 +330,7 @@ iMessage 앱과 스티커 팩 아이콘 Photoshop 템플릿을 다운로드하�
 
 | Search screen widgets | Home screen quick action widet | 
 | :--: | :--: |
-|![screen](/img/posts/Widtget.png) | ![screen](/img/posts/Widtget-1.png)| <br>
+|![screen](/assets/post_img/posts/Widtget.png) | ![screen](/assets/post_img/posts/Widtget-1.png)| <br>
 
 
 #### - 쩌는(?) 멋진 경험을 디자인하십시오

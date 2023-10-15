@@ -43,7 +43,7 @@ permalink: /archive/:title
 
 Control은 iOS의 가장 중요한 부분 입니다.(Controls are the bread-and-butter of iOS apps). UIKit에는 많은 것들이 제공되지만 이 튜토리얼에서 Swift에서 사용자화하는  control을 어떻게 만드는지에 대해서 알아갑니다.
 
-![](/img/posts/CustomControl-0.png)
+![](/assets/post_img/posts/CustomControl-0.png)
 
 > 2부분이(thumb) 있는 슬라이더 컨트롤을 어떻게 사용자화하여 만드는지 배웁니다.
 

@@ -72,7 +72,7 @@ iPhone X는 과거 어느 때보다 풍부하고 풍부한 컨텐츠를 제공�
 
 | 4.7 Display | iPhoneX | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-1.jpg) |![screen](/img/posts/iPhone_X-2.jpg) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-1.jpg) |![screen](/assets/post_img/posts/iPhone_X-2.jpg) | <br>
 | 세로 치수 | 가로 치수 |
 |1125px x 2436px(375pt x 812pt @3x) |2436px x 1125px(812pt x 375pt @3x) |
 
@@ -86,13 +86,13 @@ iPhone X를 디자인 할 때 레이아웃이 화면을 채우고 장치의 둥�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-3.png) |![screen](/img/posts/iPhone_X-4.png) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-3.png) |![screen](/assets/post_img/posts/iPhone_X-4.png) | <br>
 
 Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표준 UI 요소를 사용하는 대부분의 응용 프로그램은 장치의 새로운모양에 자동으로 적응합니다. 배경 자료는 디스플레이의 가장자리까지 확장되며 UI 요소는 적절하게 삽입되고 배치됩니다. <br>
 
 | 4.7 iPhone | iPhoneX | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-5.png) |![screen](/img/posts/iPhone_X-6.png) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-5.png) |![screen](/assets/post_img/posts/iPhone_X-6.png) | <br>
 
 맞춤 레이아웃이있는 앱의 경우, 특히 앱이 자동 레이아웃을 사용하고 안전 영역 및 여백 레이아웃 가이드를 준수하는 경우 iPhone X를 지원하는 것이 상대적으로 쉽습니다.
 
@@ -110,7 +110,7 @@ Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표�
 
 | 세로 | 가로 | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-7.png) |![screen](/img/posts/iPhone_X-8.png) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-7.png) |![screen](/assets/post_img/posts/iPhone_X-8.png) | <br>
 
 장치가 가로 방향인 경우 일부 게임(예 : 게임)의 경우 화면 하단 (안전 영역 아래까지 확장 가능)에 내용을 저장할 수있는 적절한 컨트롤을 배치하는 것이 적절할수있습니다. 화면 상단과 하단에 컨트롤을 배치할때 일치하는 인셋을 사용하고 홈 표시기 주위에 충분한 공간을 남겨 두어 사람들이 실수로 컨트롤과 상호 작용하려고 시도하지 않도록합니다. <br>
 
@@ -126,9 +126,9 @@ iPhone 의 표시 높이는 4.7 "iPhone보다 더 많은 수직 공간을 제공
 
 | Full-screen 4.7" device image | Cropping on iPhone X | Letterboxing on iPhoneX | 
 | :--: | :--: | :--: |
-|![screen](/img/posts/iPhone_X-10.png) | ![screen](/img/posts/iPhone_X-11.png)| ![screen](/img/posts/iPhone_X-12.png) | 
+|![screen](/assets/post_img/posts/iPhone_X-10.png) | ![screen](/assets/post_img/posts/iPhone_X-11.png)| ![screen](/assets/post_img/posts/iPhone_X-12.png) | 
 | full-screen iPhone X image | cropping opn a 4.7" device | pillarboxing on a 4.7" device| 
-|![screen](/img/posts/iPhone_X-13.png) | ![screen](/img/posts/iPhone_X-14.png)| ![screen](/img/posts/iPhone_X-15.png) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-13.png) | ![screen](/assets/post_img/posts/iPhone_X-14.png)| ![screen](/assets/post_img/posts/iPhone_X-15.png) | <br>
 
 #### - 기존 아트웍을 재사용할때 종횡비 차이에 유의하십시오
 
@@ -144,7 +144,7 @@ iPhone X는 4.7 "iPhone과는 다른 종횡비를 가지므로 아이폰 X에서
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-16.jpg) |![screen](/img/posts/iPhone_X-17.jpg) | <br>
+|![screen](/assets/post_img/posts/iPhone_X-16.jpg) |![screen](/assets/post_img/posts/iPhone_X-17.jpg) | <br>
 
 #### - 주요 디스플레이 기능에 가면이나 특별한주의를 기울이지 마십시오
 
@@ -180,13 +180,13 @@ iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 �
 
 | 4:3 Video in full-screen viewing mode| 4:3 Video in fit-to-screen viewing mode(default) | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-19.png) |![screen](/img/posts/iPhone_X-20.png) | 
+|![screen](/assets/post_img/posts/iPhone_X-19.png) |![screen](/assets/post_img/posts/iPhone_X-20.png) | 
 | 16:9 Video in full-screen viewing mode| 16:9 Video in fit-to-screen viewing mode(default) | 
-|![screen](/img/posts/iPhone_X-21.png) |![screen](/img/posts/iPhone_X-22.png) | 
+|![screen](/assets/post_img/posts/iPhone_X-21.png) |![screen](/assets/post_img/posts/iPhone_X-22.png) | 
 | 2:1 Video in full-screen viewing mode| 2:1 Video in fit-to-screen viewing mode(default) | 
-|![screen](/img/posts/iPhone_X-23.png) |![screen](/img/posts/iPhone_X-24.png) | 
+|![screen](/assets/post_img/posts/iPhone_X-23.png) |![screen](/assets/post_img/posts/iPhone_X-24.png) | 
 | 21:9 Video in full-screen viewing mode| 21:9 Video in fit-to-screen viewing mode(default) | 
-|![screen](/img/posts/iPhone_X-25.png) |![screen](/img/posts/iPhone_X-26.png) |  <br>
+|![screen](/assets/post_img/posts/iPhone_X-25.png) |![screen](/assets/post_img/posts/iPhone_X-26.png) |  <br>
 
 
 <center><img src="/img/posts/iPhone_X-27.png" width="700"></center> <br> 
@@ -201,9 +201,9 @@ iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 �
 
 | 4:3 Video full-screen viewing mode| 4:3 video with embedded padding, in full-screen viewing mode | 
 | :--: | :--: |
-|![screen](/img/posts/iPhone_X-28.png) |![screen](/img/posts/iPhone_X-29.png) | 
+|![screen](/assets/post_img/posts/iPhone_X-28.png) |![screen](/assets/post_img/posts/iPhone_X-29.png) | 
 | 21:9 vidieo in fit-to-screen viewing mode| 21:9 video with embedded padding, in fit-to-screen viewing mode | 
-|![screen](/img/posts/iPhone_X-30.png) |![screen](/img/posts/iPhone_X-31.png) |  <br>
+|![screen](/assets/post_img/posts/iPhone_X-30.png) |![screen](/assets/post_img/posts/iPhone_X-31.png) |  <br>
 
 <center><img src="/img/posts/iPhone_X-32.png" width="700"></center> <br> 
 

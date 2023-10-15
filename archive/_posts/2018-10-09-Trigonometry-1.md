@@ -88,7 +88,7 @@ SpriteKit, Swift를 사용하는 게임프로그래밍을 위한 삼각법을 �
 
 이들은 직각 삼각형을 구성하는 부분들입니다.
 
-![](/img/posts/Trigonometry-1.png)
+![](/assets/post_img/posts/Trigonometry-1.png)
 
 위의 이미지에서, 빗변(diagonal)은 `hypotenuse` 입니다. 빗변은 항상 직각과 맞은편(across)에 있고 3개의 변중 가장 긴변입니다. 
 
@@ -96,13 +96,13 @@ SpriteKit, Swift를 사용하는 게임프로그래밍을 위한 삼각법을 �
 
 오른쪽 상단 모서리에서 삼각형을 보면 adjacent, opposite 변의 위치가 서로 바뀌게 됩니다.
 
-![](/img/posts/Trigonometry-2.png)
+![](/assets/post_img/posts/Trigonometry-2.png)
 
 `알파(Alpha[α])`와 `베타(beta[β])`는 두개의 다른 각도 이름입니다.  이 각을 원하는대로 부를수 있습니다(그리스 어로 들리는 동안에는). 하지만 일반적으로 알파는 내가 알고싶은 모서리의 각 이고 베타는 반대쪽 모서리의 각도 입니다(usually alpha is the angle in the corner of interest and beta is the angle in the opposing corner). 이 다른 단어들은, 알파에 대해서 반대쪽(opposite), 인접한(adjacent) 변을 식별합니다(label).
 
 멋진점은 두 요소를 모두(변 과 비 직각(non-right angles)) 알고있다면, 삼각법은 `삼각함수들(sine, cosine, tangent)`를 사용하여 모든 남아있는 변과 각을 찾을수 있게 해줍니다. 예를 들어 각과 변의 하나의 길이를 알고 있다면 다른 변과 모서리의 각과 길이를 쉽게 다룰수 있게 해줍니다.
 
-![](/img/posts/Trigonometry-3.png)
+![](/assets/post_img/posts/Trigonometry-3.png)
 
 사인, 코사인, 탄젠트 함수는(짧게는 `sin`, `cos`, `tan`) 단지 비율(just ratios)일 뿐 입니다. 다시 말해 알파와 하나의 변의 길이를 알면 그후 사인, 코사인, 탄젠트는 두 변과 각과 함께 관련된 비율입니다.
 
@@ -140,7 +140,7 @@ sin(45)는 0.707도 입니다(소수 3자리로 반올림합니다), 주어진 �
 
 위의 공식은 이미 각을 알고 있을때 유용합니다. 하지만 항상 그런것은 아닙니다. 때로는 두 변을 알고 그들 사이의 각을 찾고 있습니다. 각도를 유도하려면 호 함수(`arc` functions)으로 알려진 역 삼각함수(`inverse` trig functions)을 사용할수 있습니다.
 
-![](/img/posts/Trigonometry-5.png)
+![](/assets/post_img/posts/Trigonometry-5.png)
 
 - `angle = arcsin(opposite / hypotenuse)`
 - `angle = arccos(adjacent / hypotenuse)` 
@@ -186,7 +186,7 @@ sin(45)는 0.707도 입니다(소수 3자리로 반올림합니다), 주어진 �
 
 이제 이론은 충분합니다. 연습을 시작해봅니다.
 
-![](/img/posts/Trigonometry-6.png)
+![](/assets/post_img/posts/Trigonometry-6.png)
 
 ---
 
@@ -471,7 +471,7 @@ playerAngle은 새로운 각도와 이전 각도에 블렌드 펙터(blend facto
 
 실제로 원에서 같은 위치에 해당합니다(-180도 와 +180도느 같은 위치) 하지만. 블렌딩(blending) 알고리즘은 이것을 알아 차릴만큼 충분히 똑똑하지 않습니다. - 각도는 첫번째 단계에서 전체 360도를 뛰어넘고, 반대방향으로 360도 회전시켜 되돌려야합니다.
 
-![](/img/posts/Trigonometry-9.png)
+![](/assets/post_img/posts/Trigonometry-9.png)
 
 이를 수정하려면 각도가 임계 값(threshold)을 초과할때를 인식하고 이에 따라 playerAngle을 조정해야합니다. GameScene 클레스에 새 속성을 추가합니다.
 

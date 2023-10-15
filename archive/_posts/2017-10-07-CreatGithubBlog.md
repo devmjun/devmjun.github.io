@@ -12,7 +12,7 @@ permalink: /archive/:title
 ---
 
 
-![main](/img/posts/github-pages.png)
+![main](/assets/post_img/posts/github-pages.png)
 
 
 아무것도 모르고 Github Blog 를 시작 하고 손댔다가, 약 3주 정도 시간 동안 고생하게 되었습니다. 그 경험을 바탕으로 가장 빠르게 Github Blog 를 셋팅하고, 이용 하는 방법을 알아보겠습니다.
@@ -41,7 +41,7 @@ permalink: /archive/:title
 **[여기](https://github.com/jekyll/jekyll/wiki/themes)** 에 들어 가면 내가 적용 할 blog 의 Themes을 확인 할수 있습니다.(blog의 테마를 고른다고 생각하시면 됩니다!)
 
 
-![screen](/img/posts/CreatGithubblog.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog.jpg)
 
 마음에 드는 Theme 를 선택후, demo 부분을 눌러서 확인 해봅니다(저는 여기에서 시간이 제일 많이 걸렸습니다..) 
 
@@ -54,7 +54,7 @@ permalink: /archive/:title
 
 
 
-![screen](/img/posts/CreatGithubblog1.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog1.jpg)
 
 저는 예시로 `trophy` theme 을 선택 했습니다. 
 
@@ -63,7 +63,7 @@ permalink: /archive/:title
 
 # 1.
 
-![screen](/img/posts/CreatGithubblog2.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog2.jpg)
 
 이제 theme 을 선택했으니, Github blog Page 생성 하는 방법을 알아보겠습니다.
 
@@ -73,7 +73,7 @@ permalink: /archive/:title
 
 # 2.
 
-![screen](/img/posts/CreatGithubblog3.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog3.jpg)
 
 이미지 상단의 우측 부분에 'fork' 를 클릭합니다
 
@@ -83,7 +83,7 @@ permalink: /archive/:title
 
 # 3.
 
-![screen](/img/posts/CreatGithubblog4.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog4.jpg)
 
 `fork`를 했으면, 내 github 계정으로 가서, 잘 fork 가 되었는지 확인합니다. 잘 `fork`가 되었다면 자신의 이름으로 `fork`가 된것을 확인할수 있습니다. 
 
@@ -92,7 +92,7 @@ permalink: /archive/:title
 ---
 
 # 4.
-![screen](/img/posts/CreatGithubblog5.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog5.jpg)
 
 Settings 부분을 들어가면, 아래같은 화면을 볼수 있는데, `Repository name` 을 github 계정 이름.github.io로 바꿉니다. 현재 자신의 github 계정의 이름이 궁금 하면, 아래 화면의 왼쪽 상단 부분 보시면 `나의github계정 이름/trophy-jekyll` 을 확인 하실수 있습니다.
 
@@ -103,7 +103,7 @@ Settings 부분을 들어가면, 아래같은 화면을 볼수 있는데, `Repos
 
 # 5.
  
-![screen](/img/posts/CreatGithubblog6.jpg)
+![screen](/assets/post_img/posts/CreatGithubblog6.jpg)
 
 여기까지 했으면 절반 완성했습니다. 이제는 자신의 홈페이지를 어떻게 커스텀 할것인지 정해야하는데
 github blog Theme 은 거의 비슷한 구조를 가지고 있습니다.

@@ -64,7 +64,7 @@ Alamofire 연습을 위한 이 앱의 이름은 `PhotoTagger`입니다. 프로�
 
 프로젝트를 빌드하고 실행하면 다음과같이 보입니다.
 
-![](/img/posts/Alamofire-Tutorial-1.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-1.png)
 
 `Select Photo`를 클릭하고 photo를 선택합니다. 배경이 선택된 이미지로 변경됩니다.
 
@@ -78,7 +78,7 @@ imagga는 개발자 및 기업이 확장 가능한 이미지 집약적인 클라
 
 Alamofire tutorial을 위해 Imagga로 무료 개발자 계정을 만들어야합니다. Imagga는 각 HTTP 요청에 인증 헤더가 필요하므로 계정을 가진 사람만 서비스를 사용할수 있습니다. [https://imagga.com/auth/signup/hacker](https://imagga.com/auth/signup/hacker)여기로 이동하여 양식을 작성하세요. 계정을 만든 후 대시 보드를 확인하세요. 
 
-![](/img/posts/Alamofire-Tutorial-2.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-2.png)
 
 `Authorization` 색션에 나열된 token은 나중에 사용하게 될것입니다. 이 정보를 HTTP 요청 헤더에 포함해야합니다.	
 
@@ -338,11 +338,11 @@ completion(nil, nil)
 
 프로젝트를 빌드하고 실행합니다. 이미지를 선택하고 파일이 업로드될때 progress bar가 변하는것을 보세요. 업로드가 완료되었을때 console창에 다음과같은 기록을 보아야합니다.
 
-![](/img/posts/Alamofire-Tutorial-3.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-3.png)
 
 축하합니다, interweb을 통해 성공적으로 파일을 업로드 했습니다.
 
-![](/img/posts/Alamofire-Tutorial-4.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-4.png)
 
 ---
 
@@ -397,7 +397,7 @@ self.downloadTags(contentID: firstFileID) { tags in
 
 프로젝트를 빌드하고 실행하세요. 사진을 선택하면 다음과 비슷한 내용이 나타납니다.
 
-![](/img/posts/Alamofire-Tutorial-5.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-5.png)
 
 Imagga는 하나의 똑똑한 API 입니다. 다음으로 이미지 색상을 가져옵니다. `downloadTags(contentID:completion:):` 아래의 ViewController 확장에 다음 메소드를 추가합니다.
 
@@ -451,7 +451,7 @@ self.downloadTags(contentID: firstFileID) { tags in
 
 프로젝트를 다시 빌드하고 실행하세요. 이번에는 색상 버튼을 선택할때 반환된 색상 태그가 표시되어야 합니다.
 
-![](/img/posts/Alamofire-Tutorial-6.png)
+![](/assets/post_img/posts/Alamofire-Tutorial-6.png)
 
 이것은 PhotoColor 구조체에 매핑한 RGB색상을 사용하여 뷰의 배경색을 변경합니다. 이미지를 Imagga에 성공적으로 업로드하고 두개의 다른 끝점에서 데이터를 가져왔습니다. 먼길을 갔다왔지만 Alamofire를 사용하는 개선의 여지가 있습니다.
 

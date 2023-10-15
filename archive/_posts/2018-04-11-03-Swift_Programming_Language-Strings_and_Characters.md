@@ -619,7 +619,7 @@ let dogString = "Dog!! 🐶"
 
 String의 UTF-8 표현은 utf8프로퍼티를 반복해서 사용할수 있습니다. 이 프로퍼티는 String.UTF8View타입이며, 부호가 없는 8비트(UInt8) 값의 컬렉션이며, 문자열의 UTF-8 표현에서 각각 하나의 바이트를 차지 합니다.
 
-![](/img/posts/SwiftProgrammingLanguage3_1.png)
+![](/assets/post_img/posts/SwiftProgrammingLanguage3_1.png)
 
 위의 예제에서, 처음 3개의 10진수 `codeUnit` 값(`68, 111, 103`)은 `D`, `o`, `g` 문자들을 표현하며, UTF-8 표현은 ASCII 표현과 같습니다. 다음 3개의 10진수 `codeUnit` 값(`226`, `128`, `188`)은 `느낌표 두개(DOUBLE EXCLAMATION MARK)`문자의 3 바이트 UTF-8 표현입니다. 마지막 4개의 `codeUnit` 값(`230, 159, 144, 182`)는 `개 얼굴(DOG FACE)`문자의 4 바이트 UTF-8 표현입니다.
 
@@ -627,7 +627,7 @@ String의 UTF-8 표현은 utf8프로퍼티를 반복해서 사용할수 있습�
 
 `String`의 UTF-16 표현은 `utf16`프로퍼티를 반복해서 사용할 수 있습니다. 이 프로퍼티는 `String.UTF16View`타입이며, 부호가 없는 16비트(`UInt16`) 값의 컬렉션이며, 문자열의 UTF-16 표현에서 각각 16비트 코드입니다.
 
-![](/img/posts/SwiftProgrammingLanguage3_2.png)
+![](/assets/post_img/posts/SwiftProgrammingLanguage3_2.png)
 
 ```swift
 for codeUnit in dogString.utf16 {

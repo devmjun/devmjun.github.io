@@ -126,7 +126,7 @@ Face ID 및 Touch ID는 사람이 신뢰하는 안전하고 친숙한 인증 방
 
 | Face ID | Touch ID | 
 | :--: | :--: |
-|![screen](/img/posts/Authentication-1.png) |![screen](/img/posts/Authentication-2.png) | <br>
+|![screen](/assets/post_img/posts/Authentication-1.png) |![screen](/assets/post_img/posts/Authentication-2.png) | <br>
 
 #### - 현재의 사용자의 단일 인증 방식을 사용하세요 
 
@@ -163,7 +163,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/data_entry.png) |![screen](/img/posts/data_entry-1.png) | <br>
+|![screen](/assets/post_img/posts/data_entry.png) |![screen](/assets/post_img/posts/data_entry-1.png) | <br>
 
 #### - 가능한 경우 선택 사항을 제시하십시오
 
@@ -438,7 +438,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 | Tap | Drag | 
 | :--: | :--: |
-|![screen](/img/posts/gesture.png) |![screen](/img/posts/gesture-1.png) |  <br>
+|![screen](/assets/post_img/posts/gesture.png) |![screen](/assets/post_img/posts/gesture-1.png) |  <br>
 
 - Tap: 컨트롤을 활성화하거나 항목을 선택합니다
 - Drag: 요소를 좌우로 이동하거나, 요소를 화면으로 드래그 합니다
@@ -446,21 +446,21 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 | Filck | Swipe |
 | :--: | :--: |
-|![screen](/img/posts/gesture-2.png) |![screen](/img/posts/gesture-3.png) |
+|![screen](/assets/post_img/posts/gesture-2.png) |![screen](/assets/post_img/posts/gesture-3.png) |
 
 - Filck: 스크롤하거나, 빠르게 펜합니다.
 - Swipe: 한 손가락을 사용할때, 이전의 스크린을 반환하거나, 스플릿 뷰 컨트롤러의 숨겨진 뷰를 반환하거나, 테이블뷰의 row와, 액션을 픽할때 삭제버튼을 보여주거나, 아이패드에서 4개의 손가락을 사용할때는 앱을 전환합니다
  
 | Double tap | Pinch |
 | :--: | :--: |
-|![screen](/img/posts/gesture-4.png) |![screen](/img/posts/gesture-5.png) | 
+|![screen](/assets/post_img/posts/gesture-4.png) |![screen](/assets/post_img/posts/gesture-5.png) | 
 
 - 더블 탭: 내용이나 이미지를 확대하고, 가운데에 배치하거나 이미 확대 한 경우 축소 합니다
 - 핀치: 줌인 경우 바깥쪽으 잡아 당기고, 안쪽으로 잡으면 줌합니다.
 
 | Touch and hold | shake |
 | :--: | :--: |
-|![screen](/img/posts/gesture-6.png) |![screen](/img/posts/gesture-7.png) | 
+|![screen](/assets/post_img/posts/gesture-6.png) |![screen](/assets/post_img/posts/gesture-7.png) | 
 
 - 롱터치: 편집 가능한 텍스트 또는 선택 가능한 텍스트에서 수행 될 때 커서 위치 지정을위한 확대보기를 표시합니다. 콜렉션보기와 같은 특정보기에서 수행 할 때 항목을 재배치 할 수있는 모드로 들어갑니다.
 

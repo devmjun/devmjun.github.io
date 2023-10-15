@@ -85,7 +85,7 @@ Core Graphics 는 애플의 벡터 드로잉 프레임 워크입니다. 강력�
 
 프로젝트 옵션을 작성하고, Product 이름은 Flo, 언어는 Swift 입니다.
 
-![](/img/posts/CoreGraphics-0.png)
+![](/assets/post_img/posts/CoreGraphics-0.png)
 
 ---
 
@@ -122,7 +122,7 @@ Core Graphics 는 애플의 벡터 드로잉 프레임 워크입니다. 강력�
 
 이제 오토레이아웃 제약조건을 설정합니다.(지침은 다음과 같습니다)
 
-![](/img/posts/CoreGraphics-2.gif)
+![](/assets/post_img/posts/CoreGraphics-2.gif)
 
 1. 현재 버튼 크기로 `Width`를 설정합니다
 2. 현재 버튼 크기로 `Height`를 설정합니다
@@ -231,7 +231,7 @@ PushButton.swift에서 클레스 선언 바로 앞에 다음을 추가합니다.
 
 모든것을 끝냈을때, 스크린은 다음과같이 보입니다.
 
-![](/img/posts/CoreGraphics-6.png)
+![](/assets/post_img/posts/CoreGraphics-6.png)
 
 pushButton의 `draw(_:)`에서 다음 코드를 
 
@@ -247,7 +247,7 @@ UIColor.blue.setFill()
 
 그러면 스토리 보드의 변경 사항을 즉시 볼수 있습니다. 
 
-![](/img/posts/CoreGraphics-7.png)
+![](/assets/post_img/posts/CoreGraphics-7.png)
 
 이제 플러스 표시를 위한 줄을 그릴것입니다.
 
@@ -517,7 +517,7 @@ class PushButton: UIButton {
 
 `Fill Color`을 `RGB(87, 218, 213)`으로 변경하고, `Is Add Button`을 `off`로 변경하세요. 
 
-![](/img/posts/CoreGraphics-8.png)
+![](/assets/post_img/posts/CoreGraphics-8.png)
 
 그러면 스토리보드에서 즉각적인 변경을 볼수 있습니다. 
 

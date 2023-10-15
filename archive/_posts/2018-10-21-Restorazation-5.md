@@ -27,7 +27,7 @@ UIKit 상태 복원 처리를 어떻게 사용자화 하는지에 대해서 배�
 
 > 그림 1: 복원 순서 순서 인터페이스 
 
-![](/img/posts/Restorazation-document-0.png)
+![](/assets/post_img/posts/Restorazation-document-0.png)
 
 복원 처리의 첫번째 단계는 인터페이스를 위한 뷰 컨트롤러 객체(명시적 또는 암시적으로)를 생성하는것입니다. 두번째 단계는 객체들의 상태를 해독(decode)하고 복원(restore) 하는것 입니다. 두 단계는 뷰 컨트롤러 계층을 재현(recreate)하기 위해 필요합니다. 예를들어 네비게이션 컨트롤러와 그의 자식 뷰 컨트롤러들이 생성된 이후 해당 객체들은 즉각적으로 연결되지 않습니다. 실제로 네비게이션 컨트롤러의 `deodedRestorableState(with:)`메소드를 사용하여 자식 뷰 컨트롤러의 관계를 복구(reestablishe) 합니다.
 

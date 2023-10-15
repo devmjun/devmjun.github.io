@@ -111,7 +111,7 @@ Swift 산술 연산자는 C와 Objective-C에서의 산술(arithmetic) 연산자
 
 다음은 나머지 연산자 사용법입니다. 9 % 4를 계산하기 위해서, 9에서 4를 얼마나 많이 가지고 있는지 계산합니다.
 
-![](/img/posts/SwiftProgrammingLanguage2_0.png)
+![](/assets/post_img/posts/SwiftProgrammingLanguage2_0.png)
 
 9에는 두개의 4가 들어갈 수 있고, 나머지는 1입니다. (오렌지 색으로 표시)
 

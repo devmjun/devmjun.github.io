@@ -178,7 +178,7 @@ Xcode는 프로젝트에서 현지화 가능한 파일 목록을 보여주고 �
 
 이 시점에서 Xcode는 뒤에서 선택한 각 언어를 현지화된 파일에 포함한 디렉토리를 설정했습니다. 이것을 직접 보려면, Finder를 사용하여 프로젝트 폴더를 열면 다음과 비슷한것을 봐야합니다.
 
-![](/img/posts/Localization-0.png)
+![](/assets/post_img/posts/Localization-0.png)
 
 `en.lproj`, `es.lproj`를 봣나요? 여기는 파일의 지정된 언어 버전이 포함되어 있습니다. `en`은 영어에 대한 현지화 코드 이고 `es`는 스페인어에 대한 현지화 코드 입니다. 다른 언어를 보려면 [여기(full list of language)](http://www.loc.gov/standards/iso639-2/php/English_list.php)를 참조하세요.
 
@@ -191,11 +191,11 @@ Xcode는 프로젝트에서 현지화 가능한 파일 목록을 보여주고 �
 
 Xcode는 파일의 언어를 확인하기 위한 얼럿을 보여줍니다. 기본값은 개발언어인 `English` 입니다. `Localize`를 클릭합니다.
 
-![](/img/posts/Localization-1.png)
+![](/assets/post_img/posts/Localization-1.png)
 
 파일 인스펙터는 선택 가능한 언어를 보여주기위해 업데이트 합니다. 파일의 스페인어 버전을 추가하기 위해 `Spanish` 바로옆에 체크박스를 클릭합니다. 
 
-![](/img/posts/Localization-2.png)
+![](/assets/post_img/posts/Localization-2.png)
 
 프로젝트 네비게이터를 보세요. `Localizable.strings` 옆에 펼침 삼각형(disclosure triangle)이 있습니다. 목록을 확장하면 English, Spanish 버전 두개의 버전이 Xcode에 목록으로 표시된것을 볼수 있습니다.
 
@@ -210,7 +210,7 @@ Xcode는 파일의 언어를 확인하기 위한 얼럿을 보여줍니다. 기�
 ```
 Xcode는 시뮬레이터에서 언어(languages) 또는 지역(locale)이 계속 변하는걸 신경쓰는것 없이 현지화 테스트를 쉽게 할수 있습니다. 툴바에서 active scheme를 클릭하고 메뉴에서 `Edit scheme`를 선택합니다.(또한 `Run` 버튼에서 `Option-click` 할수 있습니다.)
 
-![](/img/posts/Localization-4.png)
+![](/assets/post_img/posts/Localization-4.png)
 
 `Run` 스키마는 기본(Default)으로 선택되어져 있을것이고, 원하는걸 선택할수 있습니다. `Options` 탭을 클릭하고 그후 `Application Language`를 `Spanish`로 변경합하고 Close를 선택합니다.
 
@@ -236,7 +236,7 @@ Xcode는 시뮬레이터에서 언어(languages) 또는 지역(locale)이 계속
 
 프로젝트 탐색기에서 `Main.stroyboard`옆의 펼침 삼각형을 열면 `Main.storyboard(Base)` 및 `Main.string(Spanish)`가 표시됩니다.
 
-![](/img/posts/Localization-6.png)
+![](/assets/post_img/posts/Localization-6.png)
 
 
 편집기에서 `Main.strings(Spanish)`를 클릭합니다. Hello 레이블 항목은 이미 다음과 같이 표시되어집니다.
@@ -264,13 +264,13 @@ Xcode는 시뮬레이터에서 언어(languages) 또는 지역(locale)이 계속
 
 Xcode의 스토리보드에서 현지화를 미리 볼수 있습니다. 프로젝트 탐색기에서 `Main.stroyboard`를 선택하고 `View\Assistant Editor\Show Assistant Editor`을 사용하여 assistant editor를 엽니다. 스토리보드의 미리보기가 보여지는지 확인하세요.
 
-![](/img/posts/Localization-7.png)
+![](/assets/post_img/posts/Localization-7.png)
 
-![](/img/posts/Localization-8.png)
+![](/assets/post_img/posts/Localization-8.png)
 
 오른쪽 하단 메뉴바에서 언어 메뉴를 클릭하고 `Spanish`를 선택합니다.
 
-![](/img/posts/Localization-9.png)
+![](/assets/post_img/posts/Localization-9.png)
 
 이미지를 제외한 미리보기에서 스페인어는 다음과 같습니다.
 
@@ -369,7 +369,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 
 `File\New\File` 메뉴에서 `iOS\Resource\Stringsdict` 파일을 선택하고 다음을 클릭합니다. 파일 이름을 `Localizable`으로 설정하고 생성을 클릭합니다. 펼침 삼각형을 누르면 다음과같이 볼수 있습니다.
 
-![](/img/posts/Localization-10.png)
+![](/assets/post_img/posts/Localization-10.png)
 
 딕셔너리의 각 섹션이 무엇을 하는지에 대한 설명입니다.
 
@@ -384,7 +384,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 
 이 그림과 매칭시키기 위해 사전을 편집합니다. 구체적인 변경 내용은 다음과 같습니다. 
 
-![](/img/posts/Localization-11.png)
+![](/assets/post_img/posts/Localization-11.png)
 
 다음은 이 사진의 구체적인 변경이 만드는 것에대한 설명입니다. 
 
@@ -411,7 +411,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 2. **one**: `%d mes`
 3. **other**: `%d meses`
 
-![](/img/posts/Localization-12.png)
+![](/assets/post_img/posts/Localization-12.png)
 
 빌드하고 실행합니다. `You like?`를 탭하여 3개의 모든 값의 문법이 정확한지 확인할때까지 시행합니다. 그리고 코드를 조금도 변경하지 않았습니다! 복수 처리를 얻기위해 앱을 국제화하는것의 가치는 공짜입니다.
 
@@ -437,7 +437,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 	- Sales 레이블 텍스트: `Sprzedałeś 1000 aplikacji w 20 miesięcy`
 	- Like 버튼 타이틀: `Lubisz to?`
 
-![](/img/posts/Localization-14.png)
+![](/assets/post_img/posts/Localization-14.png)
 
 * **3**, `Localizable.strings`아래에 `Localizable.strings(Polish)`를 열고 다음과같이 교체합니다. 
 

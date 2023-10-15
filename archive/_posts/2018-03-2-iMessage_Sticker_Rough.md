@@ -18,8 +18,8 @@ Rough Stickers/$0.99: [App Store](https://itunes.apple.com/us/app/rough-stickers
 
 | * | * | 
 | :--: | :--: |
-| ![screen](/img/posts/RoughSticker.png) | ![screen](/img/posts/rought_Stickers.jpeg) | 
-| ![screen](/img/posts/RoughSticker-1.png) | ![screen](/img/posts/RoughSticker-2.png) | 
+| ![screen](/assets/post_img/posts/RoughSticker.png) | ![screen](/assets/post_img/posts/rought_Stickers.jpeg) | 
+| ![screen](/assets/post_img/posts/RoughSticker-1.png) | ![screen](/assets/post_img/posts/RoughSticker-2.png) | 
 
 ---
 

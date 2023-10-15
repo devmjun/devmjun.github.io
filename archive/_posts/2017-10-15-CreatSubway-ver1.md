@@ -27,7 +27,7 @@ permalink: /archive/:title
 ## 이미지와, 스크롤뷰 생성 
 
 
-| ![screensh](/img/posts/CreatSubway.jpg) | ![screensh](/img/posts/CreatSubway1.jpg) |
+| ![screensh](/assets/post_img/posts/CreatSubway.jpg) | ![screensh](/assets/post_img/posts/CreatSubway1.jpg) |
 
 
 
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 ## Double tab gesture
 
-![screensh](/img/posts/CreatSubway2.jpg) 
+![screensh](/assets/post_img/posts/CreatSubway2.jpg) 
 
 
 ```swift
@@ -288,7 +288,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 | | | |
 |:--: |:--: |:--: |
-| ![screensh](/img/posts/CreatSubWay6.jpg) | ![screen](/img/posts/CreatSubWay7.jpg) | ![screen](/img/posts/CreatSubWay8.jpg) |
+| ![screensh](/assets/post_img/posts/CreatSubWay6.jpg) | ![screen](/assets/post_img/posts/CreatSubWay7.jpg) | ![screen](/assets/post_img/posts/CreatSubWay8.jpg) |
 
 
 

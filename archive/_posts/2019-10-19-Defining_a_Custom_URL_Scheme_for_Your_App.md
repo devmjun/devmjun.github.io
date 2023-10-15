@@ -78,7 +78,7 @@ URL scheme registration은 앱으로 redirect할 URL을 지정합니다. project
 
 > Figure 1 URL Type section
 
-![이미지](/img/posts/Custom_scheme-0.png)
+![이미지](/assets/post_img/posts/Custom_scheme-0.png)
 
 scheme과 함께 제공된 identifier는 같은 스킴을 지원하는 다른앱과 구분 합니다. 유니크함을 보장하기 위해 회사의 도메인과 앱 이름을 통합한 역 DNS 문자열을 지정합니다. 역 DNS 스트링을 사용하는것이 최선의 선택이지만, 다른앱이 동일한 scheme를 등록하고 associated likns 처리하는것을 막지는 못합니다. 웹 사이트와 함께 고유한 연결을 정의하기 위해 custom URL scheme를 사용하는 것 대신 universal links를 사용해보세요. 
 

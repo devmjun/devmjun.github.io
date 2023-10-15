@@ -19,11 +19,11 @@ permalink: /archive/:title
 
 예를 들어, 로컬 저장소와 원격 저장소에 B에서 진행된 커밋이 있는 상태에서 fetch 를 수행하면 아래 그림과 같이 이력이 남겨집니다.
 
-![screen](/img/posts/gitlog.jpg)
+![screen](/assets/post_img/posts/gitlog.jpg)
 
 이 상태에서 원격 저장소의 내용을 로컬 저장소의 'master'에 통합하고 싶은 경우에는, 'FETCH_HEAD' 브랜치를 merge 하거나 다시 pull 을 실행하면 됩니다.
 
-![screen](/img/posts/gitlog-1.jpg)
+![screen](/assets/post_img/posts/gitlog-1.jpg)
 
 ---
 
@@ -31,7 +31,7 @@ permalink: /archive/:title
 
 `Pull` 은 원격저장소에 저장되어있는 소스들을 가져와, 자동으로 merge 하게 됩니다. 이때 현재 Local 의 date와 충돌이 없으면 자동으로 merge가 되지만, 그렇지 않은 경우 충돌이 발생하고, 그 충돌을 해결 해주는 merge 과정이 필요합니다.
 
-![screen](/img/posts/gitlog-2.jpg)
+![screen](/assets/post_img/posts/gitlog-2.jpg)
 
 ---
 

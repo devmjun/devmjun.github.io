@@ -33,7 +33,7 @@ iOS는 시력 손실, 난청 및 기타 장애가있는 사용자를 위해 광�
 
 | Reduce Transparency | VoiceOver | Button Shapes |
 | :--: | :--: | :--: |
-|![screen](/img/posts/accessibility.gif) |![screen](/img/posts/accessibility-1.png) | ![screen](/img/posts/accessibility-2.gif)| <br>
+|![screen](/assets/post_img/posts/accessibility.gif) |![screen](/assets/post_img/posts/accessibility-1.png) | ![screen](/assets/post_img/posts/accessibility-2.gif)| <br>
 
 #### - 이미지, 아이콘 및 인터페이스 요소에 대한 대체 텍스트 레이블을 제공하십시오
 
@@ -86,7 +86,7 @@ Modality은 사람들이 작업을 완료하거나 메시지또는 뷰를 닫을
 
 | Alert | Modal View | 
 | :--: | :--: |
-|![screen](/img/posts/Modality.png) |![screen](/img/posts/Modality-1.png) | <br>
+|![screen](/assets/post_img/posts/Modality.png) |![screen](/assets/post_img/posts/Modality-1.png) | <br>
 
 #### - 모달 사용을 최소화 합니다. 
 
@@ -141,9 +141,9 @@ Modality은 사람들이 작업을 완료하거나 메시지또는 뷰를 닫을
 
 | Full Screen | Page sheet| 
 | :--: | :--: |
-|![screen](/img/posts/Modality-2.png) |![screen](/img/posts/Modality-3.png) | 
+|![screen](/assets/post_img/posts/Modality-2.png) |![screen](/assets/post_img/posts/Modality-3.png) | 
 | form sheet | current context |
-|![screen](/img/posts/Modality-4.png) |![screen](/img/posts/Modality-5.png) | 
+|![screen](/assets/post_img/posts/Modality-4.png) |![screen](/assets/post_img/posts/Modality-5.png) | 
 
 - Full screen: 컨텍스트 내에서 완료될수있는 잠재적으로 복잡한 작업에 사용합니다.
 

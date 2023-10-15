@@ -25,7 +25,7 @@ UIKit 상태 보존 처리를 어떻게 사용자화 하는지에 대해서 배�
 
 그림 1은 인터페이스 보존 처리 동안 발생하는 호출 순서를 보여줍니다. 앱의 상태가 보존되어지길 원하고 앱 델리게이트에게 요청한 이후, UIKit은 앱의 뷰 컨트롤러 계층에서 현재의 객체를 부호화(encode)합니다. 오직 유효한 [resorationIdentifier](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621499-restorationidentifier)가 있는 뷰 컨트롤러만 보존됩니다.
 
-![](/img/posts/Restorazation-document-1.png)
+![](/assets/post_img/posts/Restorazation-document-1.png)
 
 보존처리는 뷰 컨트롤러 계층을 탐색하고 찾은 객체를 재귀적으로 암호화 합니다. 이 처리는 앱의 윈도우의 루트 뷰 컨트롤러에서 시작하여 제공된 아카이브로 이 데이터들을 작성합니다. 루트 뷰 컨트롤러의 데이터가 다른 뷰 컨트롤러로 참조를 포함한다면, UIKit은 각 새로운 뷰 컨트롤러에게 아카이브의 별도의 부분으로 데이터를 부호화(encode) 하도록 요청합니다. 그런 다음 이 자식 뷰 컨트롤러들은 그들의 자식 뷰 컨트롤러들을 부호화(encode) 할것입니다. 
 

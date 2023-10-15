@@ -452,7 +452,7 @@ state값이 변경 될때, `didSet` 옵저버 속성이 실행 됩니다. `setFo
 
 예를들어 일반적인 새의 종을 위해서 `Chirper`를 검색하면, 앵무새처럼 많은 결과를 기대할수 있습니다. 
 
-![](/img/posts/driven-enum-10.gif)
+![](/assets/post_img/posts/driven-enum-10.gif)
  
 이것은 올바르지 않습니다, 검색결과가 50개의 앵무새 녹음파일밖에 없나요?
 
@@ -601,7 +601,7 @@ if case .paging(_, let nextPage) = state,
 
 앱을 빌드하고 실행합니다.
 
-![](/img/posts/driven-enum-13.gif)
+![](/assets/post_img/posts/driven-enum-13.gif)
 
 loading indicator가 뷰에 나타나면, 앱은 다음 페이지의 데이터를 가져옵니다. 하지만 현재 recordings에 데이터를 추가하지는 않습니다. 단지 현재 recordings를 새로운것으로 교체합니다. 
 
@@ -630,7 +630,7 @@ if response.hasMorePages {
 
 state enum의 도움으로 얼마나 쉬었나요? 차이를 확인하려면 앱을 빌드하고 실행하세요.
 
-![](/img/posts/driven-enum-14.gif)
+![](/assets/post_img/posts/driven-enum-14.gif)
 
 ---
 

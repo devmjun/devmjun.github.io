@@ -63,7 +63,7 @@ Core Graphics의 세번째 마지막 튜토리얼에서, Flo앱을 마지막 형
 
 `Main.stroyboard`로 돌아가고 ViewController의 view를 선택하고 `Identify Inspector` 에서 class를 `BackgroundView`로 변경합니다
 
-![](/img/posts/CoreGraphics-23.png)
+![](/assets/post_img/posts/CoreGraphics-23.png)
 
 `BackgroundView.swift`,`Main.stroyboard`들을 설정하고 이들을 `Assistant Editor`을 사용하여 나란히 놓습니다.
 

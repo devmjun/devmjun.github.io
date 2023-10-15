@@ -134,7 +134,7 @@ class RoundShadowView: UIView {
 }
 ```
 
-![](/img/posts/roundshadow.png)
+![](/assets/post_img/posts/roundshadow.png)
 
 ---
 

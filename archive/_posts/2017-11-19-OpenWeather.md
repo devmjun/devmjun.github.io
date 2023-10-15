@@ -25,7 +25,7 @@ API 주소는 [여기](https://openweathermap.org) 입니다
 
 ## 현재 위치의 날씨 가져오기. 
 
-![screen](/img/posts/openWeather.jpg) <br>
+![screen](/assets/post_img/posts/openWeather.jpg) <br>
 
 API 사용법은 [https://openweathermap.org](https://openweathermap.org) 에서 확인 가능합니다.
 
@@ -140,7 +140,7 @@ extension MainViewController: CLLocationManagerDelegate {
 
 |  |  | 
 | :--: | :--: |
-|![screen](/img/posts/openWeather-1.jpg) |![screen](/img/posts/openWeather-2.jpg) | <br>
+|![screen](/assets/post_img/posts/openWeather-1.jpg) |![screen](/assets/post_img/posts/openWeather-2.jpg) | <br>
 
 JSON 형태의 약 20만개의 City데이터를 Documents에서 다운받을수 있습니다. 해당 JSON 파일을 번들에서 찾아온후 검색에 적용해 보니 UI가 뚝뚝 끊겼습니다. 해당 현상을 해결하기 위해 globalQueue를 사용하였고. 검색 알고리즘을 사용하면 성능이 향상될것 같습니다.(현재 저의 한계는 Quick sort, Binary search 입니다.)
 

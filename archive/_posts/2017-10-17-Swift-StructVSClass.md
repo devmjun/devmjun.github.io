@@ -71,7 +71,7 @@ var value = Resolution()
 
 - Memory 구조 
 
-![screen](/img/posts/ClassVSStruct-5.jpg) <br>
+![screen](/assets/post_img/posts/ClassVSStruct-5.jpg) <br>
 
 > 메모리는 그냥 사용하면 비효율적이기때문에, 어느정도 논리적으로 구분을 시켜서 사용하는것이 효율적이기 때문에 메모리의 구역을 논리적으로 나누어서 사용합니다.(stack, heap, data, code)
 
@@ -93,13 +93,13 @@ let lb:UIView = UIVIew()
 
 | Struct Instance  | Class Instance | 
 | :------------ | -----------: | 
-| ![screen](/img/posts/ClassVSStruct-6.jpg) | ![screen](/img/posts/ClassVSStruct-7.jpg) | 
+| ![screen](/assets/post_img/posts/ClassVSStruct-6.jpg) | ![screen](/assets/post_img/posts/ClassVSStruct-7.jpg) | 
 
 - 결과 
 
 | 비교 결과  |
 | :------------ |
-|![screen](/img/posts/ClassVSStruct-8.jpg) |
+|![screen](/assets/post_img/posts/ClassVSStruct-8.jpg) |
 
 
 
@@ -170,7 +170,7 @@ print(rootStructInstance.x) // 0
 
 | *  | * |
 | :------------ | -----------: | 
-| ![screen](/img/posts/ClassVSStruct-10.jpg) | ![screen](/img/posts/ClassVSStruct-11.jpg) | 
+| ![screen](/assets/post_img/posts/ClassVSStruct-10.jpg) | ![screen](/assets/post_img/posts/ClassVSStruct-11.jpg) | 
 
 
 > 1. 체크 포인트를 설정후 실행 합니다
@@ -179,7 +179,7 @@ print(rootStructInstance.x) // 0
 
 2. <br>
 
-![screen](/img/posts/ClassVSStruct-12.jpg)
+![screen](/assets/post_img/posts/ClassVSStruct-12.jpg)
 
 > 헥스 코드로 된 값을 볼수 있는데 화면 중앙에 잘 보시면 `Address` 값을 확인할수 있습니다. 
 

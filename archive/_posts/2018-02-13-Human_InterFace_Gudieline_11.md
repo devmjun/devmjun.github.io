@@ -267,7 +267,7 @@ SHIPPING 레이블을 PICKUP으로 변경하고 상점 이름, 주소 및 전화
 
 | Fixed subscription | Variable Subscription | 
 | :--: | :--: |
-|![screen](/img/posts/applePay-14.png) | ![screen](/img/posts/applePay-15.png)| <br>
+|![screen](/assets/post_img/posts/applePay-14.png) | ![screen](/assets/post_img/posts/applePay-15.png)| <br>
 
 
 #### - 지불 시트를 보여주기 전에 구독 세부 사항을 명확히하십시오
@@ -307,7 +307,7 @@ SHIPPING 레이블을 PICKUP으로 변경하고 상점 이름, 주소 및 전화
 
 | Payment sheet error messaging | Custom detail view error messaging | 
 | :--: | :--: |
-|![screen](/img/posts/applePay-16.png) | ![screen](/img/posts/applePay-17.png)| <br>
+|![screen](/assets/post_img/posts/applePay-16.png) | ![screen](/assets/post_img/posts/applePay-17.png)| <br>
 
 데이터가 유효하지 않은 경우 빨간색 시스템 제공 오류 메시지는 지불 시트의 관련 필드에 주의를 환기시킵니다. 사용자는 필드를 눌러 추가 세부 정보를보고 문제를 해결할 수 있습니다. 사용자가 문제가있는 필드를 누를때 나타나는 상세보기에 대한 사용자 정의 오류 메시지를 제공합니다.
 
@@ -370,7 +370,7 @@ Apple의 AR(Augmented Reality) 기술인 ARKit은 가상 물체를 실제 세계
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty.png) | ![screen](/img/posts/Augmented_Reailty-1.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-1.png)| <br>
 
 #### - 가능한 경우 힌트를 제공하십시오
 
@@ -401,7 +401,7 @@ Apple의 AR(Augmented Reality) 기술인 ARKit은 가상 물체를 실제 세계
 
 | Surface Detection indicator | Object Placment indicator | App-specific indicator | 
 | :--: | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-3.png) | ![screen](/img/posts/Augmented_Reailty-4.png)| ![screen](/img/posts/Augmented_Reailty-5.png) | <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-3.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-4.png)| ![screen](/assets/post_img/posts/Augmented_Reailty-5.png) | <br>
 
 #### - 표면을 배치하고 물체를 배치할 시기를 사람들이 이해하도록 돕습니다
 
@@ -419,7 +419,7 @@ AR에서 표면 경계는 사용자 주변을 더 자세히 분석 할 때 바�
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-6.png) | ![screen](/img/posts/Augmented_Reailty-7.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-6.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-7.png)| <br>
 
 #### - 별도의 화면 제어를 통한 직접 조작을 선호하십시오
 
@@ -435,7 +435,7 @@ AR에서 표면 경계는 사용자 주변을 더 자세히 분석 할 때 바�
 
 | 물체가 놓여 있는 2차원 표면으로 움직임을 제한 하십시오 | 객체 회전을 단일 축으로 제한 하십시오. | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-8.png) | ![screen](/img/posts/Augmented_Reailty-9.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-8.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-9.png)| <br>
 
 #### - 상호작용 하는 가상 객체의 합리적인 근접성 안에서 제스처에 응답하십시오
 
@@ -465,7 +465,7 @@ AR에서 표면 경계는 사용자 주변을 더 자세히 분석 할 때 바�
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-10.png) | ![screen](/img/posts/Augmented_Reailty-11.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-10.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-11.png)| <br>
 
 
 문제가 발생하면 가능한 수정 프로그램을 제안하십시오. 사용자 환경 및 표면 감지에 대한 분석은 불 충분한 빛, 지나치게 반사되는 표면, 세부 묘사가없는 표면 또는 너무 많은 카메라 동작 등 다양한 이유로 실패하거나 너무 오래 걸릴 수 있습니다. 앱에 이러한 문제가 통보되면 해결 방법을 제안하십시오.
@@ -485,7 +485,7 @@ AR에서 표면 경계는 사용자 주변을 더 자세히 분석 할 때 바�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-12.png) | ![screen](/img/posts/Augmented_Reailty-13.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-12.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-13.png)| <br>
 
 #### - 의도 한대로 AR 이미지를 사용하십시오
 
@@ -509,7 +509,7 @@ AR 이미지 주위에 필요한 최소 공간은 글립의 높이의 10%입니�
 
 | AR 뱃지 | 글리프 전용 AR 뱃지| 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-16.png) | ![screen](/img/posts/Augmented_Reailty-17.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-16.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-17.png)| <br>
 
 `글리프 전용 배지보다 AR 배지가 더 좋습니다.` 일반적으로 공간이 제한되어 있고 AR 배지를 수용하지 않을 경우 글리프 전용 배지를 사용하십시오. 두 배지는 기본 크기로 잘 작동합니다.
 
@@ -527,7 +527,7 @@ AR 배지 주변에 필요한 최소 공간은 뱃지 높이의 10%입니다. �
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/Augmented_Reailty-18.png) | ![screen](/img/posts/Augmented_Reailty-19.png)| <br>
+|![screen](/assets/post_img/posts/Augmented_Reailty-18.png) | ![screen](/assets/post_img/posts/Augmented_Reailty-19.png)| <br>
 
 #### - 더 알아보기
 
@@ -593,7 +593,7 @@ Apps는 Move, Exercise 및 Stand 목표에 대한 개인의 진행 상황을 보
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/healthKit-1.png) | ![screen](/img/posts/healthKit-2.png)| <br>
+|![screen](/assets/post_img/posts/healthKit-1.png) | ![screen](/assets/post_img/posts/healthKit-2.png)| <br>
 
 #### - Move, Exercise 및 Stand 정보에 대해서만 Activity Ring을 사용하십시오
 
@@ -647,7 +647,7 @@ HomeKit에서 집은 실제 집, 사무실 또는 사용자와 관련된 다른 
 
 | Home | Office | 
 | :--: | :--: |
-|![screen](/img/posts/homeKit-1.png) | ![screen](/img/posts/homeKit-2.png)| <br>
+|![screen](/assets/post_img/posts/homeKit-1.png) | ![screen](/assets/post_img/posts/homeKit-2.png)| <br>
 
 #### - Rooms 
 
@@ -655,7 +655,7 @@ HomeKit에서 집은 실제 집, 사무실 또는 사용자와 관련된 다른 
 
 | * | * | * | 
 | :--: | :--: | :--: |
-|![screen](/img/posts/homeKit-3.png) | ![screen](/img/posts/homeKit-4.png)| ![screen](/img/posts/homeKit-5.png) | <br>
+|![screen](/assets/post_img/posts/homeKit-3.png) | ![screen](/assets/post_img/posts/homeKit-4.png)| ![screen](/assets/post_img/posts/homeKit-5.png) | <br>
 
 #### - Zones 
 
@@ -663,7 +663,7 @@ HomeKit에서 집은 실제 집, 사무실 또는 사용자와 관련된 다른 
 
 | * | * | * | 
 | :--: | :--: | :--: |
-|![screen](/img/posts/homeKit-6.png) | ![screen](/img/posts/homeKit-7.png)| ![screen](/img/posts/homeKit-8.png) | <br>
+|![screen](/assets/post_img/posts/homeKit-6.png) | ![screen](/assets/post_img/posts/homeKit-7.png)| ![screen](/assets/post_img/posts/homeKit-8.png) | <br>
 
 #### - 악세사리, 서비스, 특성 및 작업 
 
@@ -677,9 +677,9 @@ HomeKit에서 집은 실제 집, 사무실 또는 사용자와 관련된 다른 
 
 | * | ** | 
 | :--: | :--: |
-|![screen](/img/posts/homeKit-9.gif) | ![screen](/img/posts/homeKit-10.gif)| <br>
+|![screen](/assets/post_img/posts/homeKit-9.gif) | ![screen](/assets/post_img/posts/homeKit-10.gif)| <br>
 | *** | off |
-|![screen](/img/posts/homeKit-11.gif) | ![screen](/img/posts/homeKit-12.png)|
+|![screen](/assets/post_img/posts/homeKit-11.gif) | ![screen](/assets/post_img/posts/homeKit-12.png)|
 
 #### - Scenes 
 
@@ -928,7 +928,7 @@ Live Photo을 식별하는 가장 좋은 방법은 움직임의 힌트를 찾는
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/LivePhoto-1.png) | ![screen](/img/posts/LivePhoto-2.png)| <br>
+|![screen](/assets/post_img/posts/LivePhoto-1.png) | ![screen](/assets/post_img/posts/LivePhoto-2.png)| <br>
 
 #### - 뱃지 게재 위치를 일관되게 유지합니다
 

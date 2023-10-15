@@ -36,7 +36,7 @@ permalink: /archive/:title
 
 | Slide Over | Split View | Picture in Picture|
 | :--: | :--: | :--: |
-|![screen](/img/posts/multitasking.png) | ![screen](/img/posts/multitasking-1.png) | ![screen](/img/posts/multitasking.png) |<br>
+|![screen](/assets/post_img/posts/multitasking.png) | ![screen](/assets/post_img/posts/multitasking-1.png) | ![screen](/assets/post_img/posts/multitasking.png) |<br>
 
 #### - 중단에 대비하고 재개 할 준비를하십시오
 
@@ -72,7 +72,7 @@ iPad 별 개발자 지침 은 [iPad에서 멀티 태스킹 기능 향상](https:
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/Notification.png) |![screen](/img/posts/Notification-1.png) | <br>
+|![screen](/assets/post_img/posts/Notification.png) |![screen](/assets/post_img/posts/Notification-1.png) | <br>
 
 > 팁
 > 
@@ -180,7 +180,7 @@ iPad 별 개발자 지침 은 [iPad에서 멀티 태스킹 기능 향상](https:
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/quick_look.png) |![screen](/img/posts/quick_look-1.png) | <br>
+|![screen](/assets/post_img/posts/quick_look.png) |![screen](/assets/post_img/posts/quick_look-1.png) | <br>
 
 #### - 현재 상황에 맞는 미리보기를 적절히 제시하십시오
 

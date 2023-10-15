@@ -26,7 +26,7 @@ permalink: /archive/:title
 ## 1. Centralized Workflow
 
 
-![screen](/img/posts/gitworkflow.jpg)
+![screen](/assets/post_img/posts/gitworkflow.jpg)
 
 Git으로 협업 환경을 전환하는 것은 굉장히 어려워 보이지만, 지금 소개하는 Centralized Workflow는 사실 기존의 Subversion(SVN)으로 협업할 때와 크게 다를 바 없다. <br>
 
@@ -42,7 +42,7 @@ SVN에 비하면 Git은 다음 장점이 있다. 첫째, 모든 팀 구성원이
 
 ## 2. Feature Branch Workflow
 
-![screen](/img/posts/gitworkflow-1.jpg)
+![screen](/assets/post_img/posts/gitworkflow-1.jpg)
 
 Feature Branch Workflow의 핵심 컨셉은 기능별 브랜치를 만들어서 작업한다는 사실이다. 기능 개발 브랜치는 격리된 작업 환경을 제공하기 때문에 다수의 팀 구성원이 메인 코드 베이스(master)를 중심으로 해서 안전하게 새로운 기능을 개발할 수 있다. 따라서 master 브랜치는 항상 버그 프리 상태로 유지할 수 있어, 지속적 통합(Continuout Integration)을 적용하기도 수월하다. 또, 풀 리퀘스트를 적용하기도 쉽다. <br>
 
@@ -57,7 +57,7 @@ Feature Branch Workflow의 핵심 컨셉은 기능별 브랜치를 만들어서 
 
 ## 3. Gitflow Workflow
 
-![screen](/img/posts/gitworkflow-2.jpg)
+![screen](/assets/post_img/posts/gitworkflow-2.jpg)
 
 > Gitflow Workflow는 코드 릴리스를 중심으로 좀 더 엄격한 브랜칭 모델을 제시한다. Feature Branch Workflow보다 복잡하긴하지만, 대형 프로젝트에도 적용할 수 있는 강건한 작업 절차다.
 > 

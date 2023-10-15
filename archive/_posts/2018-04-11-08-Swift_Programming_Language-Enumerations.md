@@ -163,11 +163,11 @@ Swift 열거형은 주어진 모든 타입과 연관된 값을 저장하도록 �
 
 예를 들어, 재고 관리 시스템이 제품 관리를 위해 두가지 다른 바코드 타입이 필요하다고 가정해 봅시다. 몇몇 제품은 0부터 9까지 숫자를 사용하는 UPC 포멧의 1D 바코드으로 라벨되어 있습니다. 각 바코드는 1개의 번호 시스템숫자, 5개의 관리자 코드숫자와 5개의 제품 코드숫자를 가집니다. 그 코드가 제대로 스캔 되었는지 검증하기 위해 1개의 확인 숫자가 붙습니다.
 
-![](/img/posts/SwiftProgrammingGuide-enum-0.png)
+![](/assets/post_img/posts/SwiftProgrammingGuide-enum-0.png)
 
 다른 제품은 ISO 8859-1 문자와 최대 2,953개의 문자로 인코딩할 수 있는 QR 코드 포멧인 2D 바코드로 라벨되어 있습니다.
 
-![](/img/posts/SwiftProgrammingGuide-enum-1.png)
+![](/assets/post_img/posts/SwiftProgrammingGuide-enum-1.png)
 
 4개의 정수형 튜플로된 UPC 바코드와 문자열 길이에 관계없는 QR 코드 바코드를 저장할수 있는 재고추적 시스템은 편리할 것입니다.
 

@@ -28,7 +28,7 @@ permalink: /archive/:title
 
 > 사진 1 앱 시작과 초기화 순서 
 
-![](/img/posts/Launch-0.png)
+![](/assets/post_img/posts/Launch-0.png)
 
 1. 앱이 사용자가 명시적으로 또는 시스템에서 암묵적으로 시작 합니다. 
 2. Xcode에 제공된 메인 함수는 UIKit의 [<U>UIApplicationMain(_:_:_:_:)</U>](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain)함수를 호출합니다.

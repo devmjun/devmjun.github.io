@@ -376,7 +376,7 @@ Steppers는 약간의 탭이 필요한 작은 변경 작업에 적합합니다. 
 
 | Default appearance | Custom appearance | 
 | :--: | :--: |
-|![screen](/img/posts/Switch.png) | ![screen](/img/posts/Switch-1.png)| <br>
+|![screen](/assets/post_img/posts/Switch.png) | ![screen](/assets/post_img/posts/Switch-1.png)| <br>
 
 
 #### - 앱의 스타일과 일치하도록 스위치의 모양을 조정하는 것이 좋습니다
@@ -431,7 +431,7 @@ Steppers는 약간의 탭이 필요한 작은 변경 작업에 적합합니다. 
 
 | Email Keyboard | Phone Keyboard | 
 | :--: | :--: |
-|![screen](/img/posts/Keyboard.png) | ![screen](/img/posts/Keyboard-1.png)| <br>
+|![screen](/assets/post_img/posts/Keyboard.png) | ![screen](/assets/post_img/posts/Keyboard-1.png)| <br>
 
 #### - 해당 키보드 유형을 표시하십시오
 

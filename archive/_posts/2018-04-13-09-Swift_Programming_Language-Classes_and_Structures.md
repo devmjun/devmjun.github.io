@@ -195,7 +195,7 @@ print("hd is still \(hd.width) pixels wide")
 `cinema`에 `hd`의 현재값이 주어질때, 그 `hd`에 저장된 값(values)은 새로운 `cinema` 인스턴스로 복사되어 저장됩니다. 결과적으로 동일한 숫자 값을 가지는 두개의 인스턴스로 완전히 구분됩니다. 하지만, 아래 그림에서 보는 것 처럼, 그것들은 별도의 인스턴스이기 때문에, cinema의 width가 `2018`로 설정되는 것이 hd에 저장된 width에 영향을 미치지 않습니다.
 
 
-![](/img/posts/swiftProgrammingGuid-class-struct-0.png)
+![](/assets/post_img/posts/swiftProgrammingGuid-class-struct-0.png)
 
 
 ```swift
@@ -240,7 +240,7 @@ alsoTenEighty.frameRate = 30.0
 
 클래스가 참조타입 이기 때문에, `tenEighty`와 `alsoTenEighty`둘다 같은 `VideoMode`인스턴스를 참조합니다. `사실상(effectively)`, 하나의 인스턴스에 대해 두개의 다른 이름을 가집니다.
 
-![](/img/posts/swiftProgrammingGuid-class-struct-1.png)
+![](/assets/post_img/posts/swiftProgrammingGuid-class-struct-1.png)
 
 `tenEighty`의 `frameRate`프로퍼티가 `VideoMode`인스턴스에서 새로운 프레임 비율 `30.0`을 정확하게 보고 있는지 확인하세요.
 

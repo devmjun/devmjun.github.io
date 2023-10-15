@@ -57,7 +57,7 @@ pod init
 
 | podfile | 사용할 podfile |
 | :----: | :----: |
-| ![screen](/img/posts/cocoapod.jpg) | ![screen](/img/posts/cocoapod-1.jpg) |
+| ![screen](/assets/post_img/posts/cocoapod.jpg) | ![screen](/assets/post_img/posts/cocoapod-1.jpg) |
 
 > 위의 명령어를 터미널에서 작성하면, `podfile`이 생성 됩니다.  `vi podfile` 을 통해서 pod file 을 들어가면, cocoapods의 라이브러리 들을 추가할수 있습니다. 
 

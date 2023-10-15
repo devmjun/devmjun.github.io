@@ -66,7 +66,7 @@ item1.atrribute = 비율 * item2.atrribute + 간격
 
 | update Frame | Reset to Seggest Constraints & Update Constraints Constants |
 | :---: | :---: |
-| ![screen](/img/posts/constraints.jpg) | ![screen](/img/posts/constraints-1.jpg) |
+| ![screen](/assets/post_img/posts/constraints.jpg) | ![screen](/assets/post_img/posts/constraints-1.jpg) |
 
 <div id='section-id-38'/>
 
@@ -110,7 +110,7 @@ AutoLayout을 적용 시키고 마우스로 크기나 위치를 변경하거나 
 
 | * | Red to grayView | Red to blue |
 | :---: | :---: | :---: |
-| ![screen](/img/posts/constraints-2.jpg) | ![screen](/img/posts/constraints-3.jpg) | ![screen](/img/posts/constraints-4.jpg) |
+| ![screen](/assets/post_img/posts/constraints-2.jpg) | ![screen](/assets/post_img/posts/constraints-3.jpg) | ![screen](/assets/post_img/posts/constraints-4.jpg) |
 
 RedView를 기준으로 grayView에 1:2 비율이 적용되고, BlueView에 1:3 비율이 적용되었습니다. 따라서 RedView는 상대적으로 grayView는 redView의 2배 width를 가지게 되고 BlueView는 redView의 3배의 width를 가지게 됩니다.
 
@@ -135,7 +135,7 @@ item1.atrribute = 비율 * item2.atrribute + 간격
 
 | * | 구름 View의 Constraints |
 | :---: | :---: |
-| ![screen](/img/posts/constraints-6.jpg) | ![screen](/img/posts/constraints-7.jpg) |
+| ![screen](/assets/post_img/posts/constraints-6.jpg) | ![screen](/assets/post_img/posts/constraints-7.jpg) |
 
 위와 같이 View의 상단에 반쯤 걸쳐 있는 View를 만들수 있는 상황이 있을수 있습니다. 이렇게 표현하기 위한 방법은 여러가지가 있습니다. 구름 이미지가 GrayView의 자식 View로 들어가서 `AutoLayout` 을 적용해주어서 표현해줄수 있지만 이런 경우는 좋은 경우가 아닙니다. 
 
@@ -155,7 +155,7 @@ item1.atrribute = 비율 * item2.atrribute + 간격
 
 |  |  |  |
 | :---: | :---: | :---: |
-| ![screen](/img/posts/constraints-8.jpg) | ![screen](/img/posts/constraints-9.jpg) | ![screen](/img/posts/constraints-10.jpg) |
+| ![screen](/assets/post_img/posts/constraints-8.jpg) | ![screen](/assets/post_img/posts/constraints-9.jpg) | ![screen](/assets/post_img/posts/constraints-10.jpg) |
 
 왼쪽의 Label의 `Horizontal`의 `Content Hugging Priority` 값 부분이 더 큰쪽 입니다. Label의 사이즈가 변할때 왼쪽에 있는 Label이 오른쪽 레이블 보다 높은 우선 순위로 자신의 사이즈를 가지게 됩니다. 
 
@@ -188,7 +188,7 @@ Image는 자신의 사이즈를 가지고 있습니다. ImageView에 imageView�
 
 | * | Size inspector | atrribute inspector |
 | :--: | :---: | :--: |
-| ![screen](/img/posts/constraints-11.jpg) | ![screen](/img/posts/constraints-12.jpg) | ![screen](/img/posts/constraints-13.jpg) |
+| ![screen](/assets/post_img/posts/constraints-11.jpg) | ![screen](/assets/post_img/posts/constraints-12.jpg) | ![screen](/assets/post_img/posts/constraints-13.jpg) |
 
 버튼의 타이틀에 정렬을 주어야 하는경우 image를 버튼왼쪽 또는 오른쪽에 놓고 title의 인셋을 조정할수 있습니다. `Size inspector` 부분에서 button의 `inset` 설정할수 있습니다. 
 
@@ -200,12 +200,12 @@ Image는 자신의 사이즈를 가지고 있습니다. ImageView에 imageView�
 
 | Portrait | LandScape |
 | :--: | :---: |
-| ![screen](/img/posts/constraints-14.jpg) | ![screen](/img/posts/constraints-15.jpg) |
+| ![screen](/assets/post_img/posts/constraints-14.jpg) | ![screen](/assets/post_img/posts/constraints-15.jpg) |
 
 | Vary for Traits | 
 | :--: | 
-| ![screen](/img/posts/constraints-16.jpg) | 
-| ![screen](/img/posts/constraints-17.jpg) |
+| ![screen](/assets/post_img/posts/constraints-16.jpg) | 
+| ![screen](/assets/post_img/posts/constraints-17.jpg) |
 
 화면의 상태(Portrait, LandScape(가로모드))에 따라서 적용되는 AutoLayout을 설정할수 있습니다.
 
@@ -225,7 +225,7 @@ Storyboard로 ScrollView를 정의하는 경우에 ScrollView에 하위뷰로 Vi
 
 | ScrollView | Constraints | bottom Constraints |
 | :--: | :---: | :--: |
-| ![screen](/img/posts/constraints-18.jpg) | ![screen](/img/posts/constraints-19.jpg) | ![screen](/img/posts/constraints-20.jpg) |
+| ![screen](/assets/post_img/posts/constraints-18.jpg) | ![screen](/assets/post_img/posts/constraints-19.jpg) | ![screen](/assets/post_img/posts/constraints-20.jpg) |
 
 스크롤뷰를 정의하고 하위뷰로 TextFiled를 추가 하고 ContentsView의 bottom 제약조건의 Priority 값을 700 으로 낮추어 설정합니다. 이렇게 하면 ContentsView의 bottom이 내부 Contents의 사이즈에 따라서 유동적으로 변하게 됩니다.
 
@@ -237,7 +237,7 @@ Storyboard로 ScrollView를 정의하는 경우에 ScrollView에 하위뷰로 Vi
 
 마진은 8씩 적용됩니다.
 
-![screen](/img/posts/constraints-21.jpg)
+![screen](/assets/post_img/posts/constraints-21.jpg)
 
 ---
 

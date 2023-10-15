@@ -118,7 +118,7 @@ ViewController.swift로 이동하여 `Container View` 및 `Graph Views`에 대�
 
 Container View 와 Graph View에 대한 outlet을 생성하고, 이제 스토리 보드에서 만든 뷰로 ContainerView 와 GrahpView를 연결합니다. 
 
-![](/img/posts/CoreGraphics-17.gif)
+![](/assets/post_img/posts/CoreGraphics-17.gif)
 
 ---
 
@@ -128,7 +128,7 @@ Container View 와 Graph View에 대한 outlet을 생성하고, 이제 스토리
 
 `Main.stroyboard`의 `Document Outline`에서 `Container View`로 `Tap Gesture Recognizer`를 드레그 합니다. 
 
-![](/img/posts/CoreGraphics-18.gif)
+![](/assets/post_img/posts/CoreGraphics-18.gif)
 
 ViewController.swift로 돌아가서 클레스의 상단에 이 속성을 추가합니다.
 
@@ -175,7 +175,7 @@ if isGraphViewShowing {
 
 마지막으로 이 전환을 작동시키려면 Main.stroybard로 돌아가 탭 제스쳐를 새로 추가된 `counterViewTap(gesture:)`메소드에 연결합니다.
 
-![](/img/posts/CoreGraphics-19.gif)
+![](/assets/post_img/posts/CoreGraphics-19.gif)
 
 애플리케이션을 빌드하고 실행하세요. 앱을 시작하면 graph view가 먼저 표시됩니다. 나중에 graph view를 숨김으로 설정하여 Counter view가 표시됩니다. 탭하면 전환되는걸 볼수 있습니다.
 
@@ -608,7 +608,7 @@ Shift를 누른상태에서 모든 레이블을 선택하고, fonts를 Custom Av
 
 `averageWaterDrunk`, `maxLabel`, `stackView`을 `Main.storyboard`의 해당 뷰에 연결합니다. 
 
-![](/img/posts/CoreGraphics-21.gif)
+![](/assets/post_img/posts/CoreGraphics-21.gif)
 
 이제 graph view의 설정이 끝났습니다. `Main.stroybard`에서 `Graph view`를 선택하고, `Hidden`을 선택하면 앱이 처음 실행될때 그래프가 나타나지 않습니다. 
 
@@ -666,7 +666,7 @@ setupGraphDisplay()
 
 애플리케아션을 실행하고 Counter를 클릭합니다. 만세! 
 
-![](/img/posts/CoreGraphics-22.gif)
+![](/assets/post_img/posts/CoreGraphics-22.gif)
 
 ---
 

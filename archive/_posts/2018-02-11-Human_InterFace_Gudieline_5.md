@@ -64,7 +64,7 @@ iOS 기기는 다양한 화면 크기로 제공되며 새로 또는 가로 방�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/adaptivity_and_layout-3.png) | ![screen](/img/posts/adaptivity_and_layout-4.png)| 
+|![screen](/assets/post_img/posts/adaptivity_and_layout-3.png) | ![screen](/assets/post_img/posts/adaptivity_and_layout-4.png)| 
 
 
 UIKit에서 정의한 안전 영역 및 레이아웃 여백을 준수하십시오. 이 레이아웃 가이드는 장치 및 컨텍스트를 기반으로 적절한 삽입을 보장합니다. 안전 영역은 내용이 상태 표시 줄, 탐색 모음, 도구 모음 및 탭 표시 줄에 밑줄을 긋 지 못하게합니다. 표준 시스템 제공보기는 자동으로 안전 영역 레이아웃 가이드를 채택합니다.
@@ -126,7 +126,7 @@ UIKit에서 정의한 안전 영역 및 레이아웃 여백을 준수하십시�
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/adaptivity_and_layout-7.png) | ![screen](/img/posts/adaptivity_and_layout-8.png)| <br>
+|![screen](/assets/post_img/posts/adaptivity_and_layout-7.png) | ![screen](/assets/post_img/posts/adaptivity_and_layout-8.png)| <br>
 
 #### - 불필요한 레이아웃 변경을 피하십시오. 
 
@@ -182,7 +182,7 @@ iOS에서 아름답고 섬세한 애니메이션을 통해 사람과 콘텐츠�
 
 | * | * | 
 | :--: | :--: |
-|![screen](/img/posts/branding.png) | ![screen](/img/posts/branding-1.png)| <br>
+|![screen](/assets/post_img/posts/branding.png) | ![screen](/assets/post_img/posts/branding-1.png)| <br>
 
 #### - 세련되고 눈에 잘 띄지 않는 브랜딩을 통합하십시오
 
@@ -246,7 +246,7 @@ Notes에서 상호 작용 요소는 노란색입니다. 캘린더에서 상호 �
 
 | 밝은 색 구성표 | 어두운 색 구성표 | 
 | :--: | :--: |
-|![screen](/img/posts/color-2.png) | ![screen](/img/posts/color-3.png)|  <br>
+|![screen](/assets/post_img/posts/color-2.png) | ![screen](/assets/post_img/posts/color-3.png)|  <br>
 
 #### - 다양한 조명 조건에서 앱의 색 구성표를 테스트하십시오
 
@@ -262,7 +262,7 @@ True Tone 디스플레이는 주변 광 센서를 사용하여 현재 환경의 
 
 | 일반인이 보았을때 | 빨강, 녹색 색맹인이 보았을때 | 
 | :--: | :--: |
-|![screen](/img/posts/color-4.png) | ![screen](/img/posts/color-5.png)|  <br>
+|![screen](/assets/post_img/posts/color-4.png) | ![screen](/assets/post_img/posts/color-5.png)|  <br>
 
 #### - 다른 나라와 문화에서 당신의 색 사용이 어떻게 감지되는지 생각해보십시오
 
@@ -382,13 +382,13 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 
 |Sizes|
 |:--:|
-|![screen](/img/posts/typography-1.png)|
-|![screen](/img/posts/typography-2.png)|
-|![screen](/img/posts/typography-3.png)|
-|![screen](/img/posts/typography-4.png)|
-|![screen](/img/posts/typography-5.png)|
-|![screen](/img/posts/typography-6.png)|
-|![screen](/img/posts/typography-7.png)|
+|![screen](/assets/post_img/posts/typography-1.png)|
+|![screen](/assets/post_img/posts/typography-2.png)|
+|![screen](/assets/post_img/posts/typography-3.png)|
+|![screen](/assets/post_img/posts/typography-4.png)|
+|![screen](/assets/post_img/posts/typography-5.png)|
+|![screen](/assets/post_img/posts/typography-6.png)|
+|![screen](/assets/post_img/posts/typography-7.png)|
 
 #### - 더큰 접근성 유형 사이즈들 
 
@@ -396,11 +396,11 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 
 |Sizes|
 |:--:|
-|![screen](/img/posts/typography-8.png)|
-|![screen](/img/posts/typography-9.png)|
-|![screen](/img/posts/typography-10.png)|
-|![screen](/img/posts/typography-11.png)|
-|![screen](/img/posts/typography-12.png)|
+|![screen](/assets/post_img/posts/typography-8.png)|
+|![screen](/assets/post_img/posts/typography-9.png)|
+|![screen](/assets/post_img/posts/typography-10.png)|
+|![screen](/assets/post_img/posts/typography-11.png)|
+|![screen](/assets/post_img/posts/typography-12.png)|
 
 ### 글꼴 사용 및 추적 
 
@@ -410,8 +410,8 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 
 |SF Pro Text|
 |:--:|
-|![screen](/img/posts/typography-13.png)|
+|![screen](/assets/post_img/posts/typography-13.png)|
 |SF Pro Display|
-|![screen](/img/posts/typography-14.png)|
+|![screen](/assets/post_img/posts/typography-14.png)|
 
 ---

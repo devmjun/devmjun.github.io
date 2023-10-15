@@ -138,7 +138,7 @@ Apple 제품은 저작권이 있으며 귀하의 아이콘이나 이미지로 �
 
 | Setting | PushNotification | 
 | :--: | :--: |
-|![screen](/img/posts/appiCon-4.png) | ![screen](/img/posts/appiCon-5.png)| <br>
+|![screen](/assets/post_img/posts/appiCon-4.png) | ![screen](/assets/post_img/posts/appiCon-5.png)| <br>
 
 <center><img src="/img/posts/appiCon-6.png"></center> <br>  
 <center><img src="/img/posts/appiCon-7.png"></center> <br>  
@@ -200,7 +200,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 | Good | Bad | 
 | :--: | :--: |
-|![screen](/img/posts/CustomiCon-2.png) | ![screen](/img/posts/CustomiCon-3.png)| <br>
+|![screen](/assets/post_img/posts/CustomiCon-2.png) | ![screen](/assets/post_img/posts/CustomiCon-3.png)| <br>
 
 #### - 사용자 정의 아이콘 크기
 
@@ -229,7 +229,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 | Lanuch screen | First screen | 
 | :--: | :--: |
-|![screen](/img/posts/launch_Screen.png) | ![screen](/img/posts/launch_Screen-1.png)| <br>
+|![screen](/assets/post_img/posts/launch_Screen.png) | ![screen](/assets/post_img/posts/launch_Screen-1.png)| <br>
 
 장치 화면 크기가 다양하기 때문에 시작 화면 크기도 다릅니다. 이를 위해 Xcode 스토리 보드 또는 응용 프로그램에서 지원하는 장치의 `정적` 이미지 집합으로 시작 화면을 제공 할 수 있습니다. Xcode 스토리 보드를 사용하는 것이 좋습니다. 스토리 보드는 유연하고 적응력이 좋습니다. 하나의 스토리 보드를 사용하여 모든 시작 화면을 관리 할 수 ​​있습니다. 적응형 인터페이스 구현에 대한 자세한 내용은 [자동 레이아웃 안내서](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)를 참조하십시오.
 
@@ -289,8 +289,8 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 | * |
 | :--: |
-|![screen](/img/posts/SystemiCon.png) | 
-|![screen](/img/posts/SystemiCon-1.png)| <br>
+|![screen](/assets/post_img/posts/SystemiCon.png) | 
+|![screen](/assets/post_img/posts/SystemiCon-1.png)| <br>
 
 
 
@@ -306,7 +306,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 | * |
 | :--: |
-|![screen](/img/posts/SystemiCon-3.png) | 
-|![screen](/img/posts/SystemiCon-4.png)| <br>
+|![screen](/assets/post_img/posts/SystemiCon-3.png) | 
+|![screen](/assets/post_img/posts/SystemiCon-4.png)| <br>
 
 ---

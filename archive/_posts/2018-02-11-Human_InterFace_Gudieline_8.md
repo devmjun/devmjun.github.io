@@ -197,7 +197,7 @@ permalink: /archive/:title
 
 | 사용자와 상호작용 | 핀 사용 | 
 | :--: | :--: |
-|![screen](/img/posts/MapView.png) | ![screen](/img/posts/MapView-1.png)| <br>
+|![screen](/assets/post_img/posts/MapView.png) | ![screen](/assets/post_img/posts/MapView-1.png)| <br>
 
 #### - 일반적으로지도를 대화 형으로 유지하십시오
 
@@ -217,7 +217,7 @@ permalink: /archive/:title
 
 | scrolling Transition | Page Curl transition | 
 | :--: | :--: |
-|![screen](/img/posts/MapView.png) | ![screen](/img/posts/MapView-1.png)| <br>
+|![screen](/assets/post_img/posts/MapView.png) | ![screen](/assets/post_img/posts/MapView-1.png)| <br>
 
 #### - 적절한 경우 비선형 적으로 탐색 할 수있는 방법을 구현하십시오
 
@@ -339,7 +339,7 @@ iOS는 평범하고 그룹화 된 두 가지 스타일의 표를 구현합니다
 
 | Plain | Grouped | 
 | :--: | :--: |
-|![screen](/img/posts/tables.png) | ![screen](/img/posts/tables-1.png)| <br>
+|![screen](/assets/post_img/posts/tables.png) | ![screen](/assets/post_img/posts/tables-1.png)| <br>
 
 #### - Plain 
 
@@ -378,7 +378,7 @@ iOS는 평범하고 그룹화 된 두 가지 스타일의 표를 구현합니다
 
 | basic(Default) | Subtitle | 
 | :--: | :--: |
-|![screen](/img/posts/tables-2.png) | ![screen](/img/posts/tables-3.png)| <br>
+|![screen](/assets/post_img/posts/tables-2.png) | ![screen](/assets/post_img/posts/tables-3.png)| <br>
 
 #### - basic(Default) 
 
@@ -390,7 +390,7 @@ iOS는 평범하고 그룹화 된 두 가지 스타일의 표를 구현합니다
 
 | Right Detail(Value 1) | Left Detail(Value 2) | 
 | :--: | :--: |
-|![screen](/img/posts/tables-4.png) | ![screen](/img/posts/tables-5.png)| <br>
+|![screen](/assets/post_img/posts/tables-4.png) | ![screen](/assets/post_img/posts/tables-5.png)| <br>
 
 
 #### - Right Detail(Value 1) 
