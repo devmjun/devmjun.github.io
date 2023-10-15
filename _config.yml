@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: Mjun
 
 # Your name to show in the footer
-author: Some Person
+author: MINJUN JU
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -41,7 +41,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+# title-img: /assets/img/avatar-icon_copy.png
 
 
 #####################################
@@ -52,13 +52,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "dev.mjun@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  github: devmjun
+  twitter: dev_mjun
+#  patreon: MINJUN JU
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -84,7 +84,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: 안녕하세요. 평범한 사람의 생각을 기록하고 공유하는 블로그 입니다. 
 
 ###########################
 # --- General options --- #
@@ -122,7 +122,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "iOS, ios, swift, tech, life, property, fund"
 
 ######################################
 # --- Colours / background image --- #
@@ -161,12 +161,15 @@ code-background-col: "#333131"
 page-link-background-col: "#18191A"
 footer-fa-inverse-col: "#272727"
 
+blockquote-background-col: "#EEEEEE"
+blockquote-text-col: "#737373"
+
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+# navbar-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/bgimage.png"
+# page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
@@ -184,7 +187,7 @@ footer-fa-inverse-col: "#272727"
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-#gtag: "G-XXXXXXXXXX"
+gtag: "G-BS1PB6HT3H"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
@@ -203,14 +206,14 @@ footer-fa-inverse-col: "#272727"
 # Google Universal Analytics ID -- deprecated
 # As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
 # you should switch to using the `gtag` field above instead.
-#google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "UA-108098306-1"
 
 ####################
 # --- Comments --- #
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "minjujublog"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -273,16 +276,13 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
 
 ##################################
-# --- Paginate ver1(Not use) --- #
+# --- Paginate ver1 (compatibility ver 1 or 2) --- #
 ##################################
-
-# permalink: /:year-:month-:day-:title/
-# paginate: 2
 
 kramdown:
   input: GFM
@@ -318,9 +318,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-
 
 ######################### 
 # --- Paginate ver2 --- #
@@ -340,7 +337,7 @@ pagination:
   # collection: 'posts'
 
   # How many objects per paginated page, used to be `paginate` (default: 0, means all)
-  per_page: 2
+  per_page: 10
 
   # The permalink structure for the paginated pages (this can be any level deep)
   permalink: '/page/:num/' # Pages are index.html inside this folder (default)
@@ -367,7 +364,7 @@ pagination:
 
   # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  # locale: '' 
+  locale: 'ko' 
 
  # Optional,omit or set both before and after to zero to disable. 
  # Controls how the pagination trail for the paginated pages look like. 
