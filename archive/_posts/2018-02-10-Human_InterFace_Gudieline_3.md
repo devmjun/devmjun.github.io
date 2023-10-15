@@ -42,7 +42,7 @@ permalink: /archive/:title
 
 peek을 사용하면 사람들이 3D Touch를 사용하여 현재 컨텍스트 위에 일시적으로 나타나는뷰에서 페이지, 링크 또는 파일과 같은 항목을 미리 볼 수 있습니다. 이 기능을 지원하는 항목을 들으려면 손가락으로 항목을 조금 누르십시오. 손가락을 들어 픽을 빠져나가기만하면 됩니다. 항목을 열고 세부 사항을 보려면 항목이 튀어 화면을 채울 때까지 조금 더 세게 누릅니다. 일부 뷰에서는 위로 스와이프하여 관련 작업 버튼을 표시 할 수 있습니다. 예를 들어 사파리의 링크를 들여다 보면서 위로 스와이프하여 백그라운드에서 링크를 여는데 필요한 버튼을 공개하고 읽기 목록에 링크를 추가하고 링크를 복사 할 수 있습니다. <br> 
 
-<center><img src="/img/posts/3DTouch.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/3DTouch.png" width="382"></center> <br> 
 
 #### - 미리보기를 사용하여 실시간으로 내용이 풍부한 미리보기를 제공하십시오
 
@@ -72,7 +72,7 @@ Peek 및 Pop을 일부 장소에서 지원하지만 다른 곳에서는 지원�
 
 모든 살짝보기에 액션 버튼이 필요한 것은 아니지만 일반적인 작업에 대한 단축키를 제공하는 좋은 방법입니다. 앱에서 이미 항목에 맞춤식 터치 및 홀드 작업을 제공하는 경우에는 살짝보기 중에 동일한 작업을 포함하는 것이 좋습니다.
 
-<center><img src="/img/posts/3DTouch-1.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/3DTouch-1.png" width="382"></center> <br> 
 
 #### - 살짝보기 항목을 여는 작업 버튼을 제공하지 마십시오
 
@@ -203,7 +203,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 한손가락으로 현재위치에서 다른 위치로 내용을 끌어서 선택한 사진, 텍스트 또는 다른 내용을 이동하거나 복제 한 다음 손가락을 올려서 놓을 수 있습니다. <br>
 
-<center><img src="/img/posts/DragAndDrop.gif" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/DragAndDrop.gif" width="700"></center> <br> 
 
 선택된 컨텐츠를 만지기 만하면 사용자의 손가락이 올라가고 고착된것처럼 보입니다. 내용을 드래그하면 애니메이션 및 시각적 신호가 가능한 대상을 식별합니다. 또한 시스템은 떨어 뜨릴수없는시기를 나타내는 뱃지를 표시하거나 이동하지 않고 내용을 복제하게됩니다. 개발자 안내 는 [UIKit](https://developer.apple.com/documentation/uikit)의 [Drag And Drop](https://developer.apple.com/documentation/uikit/drag_and_drop) 을 참조하십시오 . <br>
 
@@ -212,7 +212,7 @@ Face ID를 지원하는 장치에서 Touch ID를 참조하지 마십시오. 반�
 
 Drag And Drop은 선택한 내용을 소스위치에서 대상으로 이동하는 작업이 포함됩니다. 이러한 위치는 텍스트보기와 같은 컨테이너 또는 분할뷰의 반대쪽에있는 텍스트뷰와 같은 다른 컨테이너에있습니다. 예를 들어, 노트에서 사용자는 선택한 텍스트를 동일한 노트안의 새로운 위치로 드래그 할 수 있습니다. 미리 알림에서 사용자는 하나의 목록에서 개별 미리 알림을 끌어와 다른 목록으로 끌어 놓을 수 있습니다. <br>
 
-<center><img src="/img/posts/DragAndDrop-1.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/DragAndDrop-1.png" width="700"></center> <br> 
 
 iPad에서는 소스 및 대상 위치가 다른 앱에도 존재할 수 있으므로 Safari의 웹 페이지에서 메일의 새메시지로 사진을 드래그하는 것과 같은 앱 간의 상호 작용이 가능합니다. 콘텐츠를 드래그하는 동안 사용자는 멀티 태스킹, 홈 화면 종료 또는 화면 하단에서 위로 스와이프하여 Dock을 공개함으로써 다른 앱에 액세스 할 수 있습니다. <br>
 
@@ -235,13 +235,13 @@ iPad에서는 소스 및 대상 위치가 다른 앱에도 존재할 수 있으�
 
 이러한 시스템 제공 요소에는 끌어서 놓기 기능이 내장되어 있습니다. 관련 지침은 [Text Fields](https://developer.apple.com/ios/human-interface-guidelines/controls/text-fields/) 및 [Text Views](https://developer.apple.com/ios/human-interface-guidelines/views/text-views/)를 참조하십시오 . 개발자 안내는 [UITextField](https://developer.apple.com/documentation/uikit/uitextfield) 및 [UITextView](https://developer.apple.com/documentation/uikit/uitextview)를 참조하십시오. <br>
 
-<center><img src="/img/posts/DragAndDrop-2.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/DragAndDrop-2.png" width="700"></center> <br> 
 
 #### - 효율성을 높이려면 여러 항목 끌어다 놓기를 지원하는것이 좋습니다
 
 많은 앱에서 사용자는 한손가락으로 한항목을 드래그 할 수 있으며 드래그하는 동안 다른 손가락으로 탭하여 항목을 추가로 선택할 수 있습니다. 선택한 항목이 함께 움직이고 원래 항목을 드래그하는 손가락 아래에 쌓인 것처럼 보입니다. 그런 다음 사용자는 항목을 그룹으로 끌어서 원하는 대상 위에 놓습니다. 예를 들어 홈 화면을 사용하면 여러 개의 앱 아이콘을 선택하여 한 번에 폴더로 드래그 할 수 있습니다. 사진과 같은 일부 앱은 드래그하기 전에 여러 항목을 선택할 수있는 선택 모드를 제공합니다.
 
-<center><img src="/img/posts/DragAndDrop-3.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/DragAndDrop-3.png" width="700"></center> <br> 
 
 #### - 앱 내에서 콘텐츠를 드래그 앤 드롭하면 이동 또는 사본이 생길지 결정합니다
 
@@ -326,7 +326,7 @@ PlaceHolder는 콘텐츠 전송이 완료된 후 일시적으로 콘텐츠가 �
 
 피드백은 사람들이 앱이하는 일을 파악하고, 다음에 할 수있는 것을 발견하고, 행동 결과를 이해하는 데 도움이됩니다 <br>
 
-<center><img src="/img/posts/feedback0.png" width="508"></center> <br> 
+<center><img src="/assets/post_img/posts/feedback0.png" width="508"></center> <br> 
 
 #### - 인터페이스에 다른 유형의 피드백과 상태를 눈에 띄지 않게 통합하십시오
 
@@ -340,7 +340,7 @@ PlaceHolder는 콘텐츠 전송이 완료된 후 일시적으로 콘텐츠가 �
 
 지원되는 장치에서 햅틱은주의를 끌고 행동을 강화하는 촉감 피드백을 통해 사용자를 육체적으로 참여시키는 방법을 제공합니다. 선택기, 스위치 및 슬라이더와 같은 일부 시스템 제공 인터페이스 요소는 사용자가 상호 작용할 때 햅틱 피드백을 자동으로 제공합니다. 앱에서 다른 유형의 햅틱 피드백을 생성하도록 시스템에 요청할 수도 있습니다. iOS는이 피드백의 강점과 행동을 관리합니다. <br>
 
-<center><img src="/img/posts/feedback1.png" width="508"></center> <br> 
+<center><img src="/assets/post_img/posts/feedback1.png" width="508"></center> <br> 
 
 #### - 현명하게 햅틱을 사용하십시오
 
@@ -382,7 +382,7 @@ PlaceHolder는 콘텐츠 전송이 완료된 후 일시적으로 콘텐츠가 �
 
 사람들은 파일을 만들고,보고, 조작하는 동안 파일 시스템에 관해 생각할 필요가 없습니다. 앱이 파일과 작동하는 경우 가능한 한 파일 처리를 줄입니다. <br>
 
-<center><img src="/img/posts/Filehandler.png" width="508"></center> <br> 
+<center><img src="/assets/post_img/posts/Filehandler.png" width="508"></center> <br> 
 
 #### - 작업을 취소하거나 삭제하지 않는 한 항상 보존한다는 확신을 심어 둡니다
 
@@ -472,7 +472,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 근거리 통신 (Near Field Communication, NFC)은 몇 센티미터 이내의 매우 근접한 장치로 정보를 무선으로 교환 할 수있게합니다. 지원되는 기기에서 실행되는 iOS 앱은 NFC 검색을 사용하여 실제 개체에 첨부 된 전자 태그의 데이터를 읽을 수 있습니다. 예를 들어, 사용자가 장난감을 스캔하여 비디오 게임에 연결하거나, 구매자가 상점 로그인을 스캔하여 쿠폰에 액세스하거나, 소매 직원이 제품을 스캔하여 재고를 추적 할 수 있습니다. 응용 프로그램은 단일 또는 다중 객체 검색을 활성화 할 수 있으며 사용자가 무언가를 스캔해야 할 때마다 시스템이 스캔 시트를 가져옵니다. <br> 
 
-<center><img src="/img/posts/NearFieldCommunication.png" width="508"></center> <br> 
+<center><img src="/assets/post_img/posts/NearFieldCommunication.png" width="508"></center> <br> 
 
 ---
 
@@ -480,7 +480,7 @@ Quick Look을 사용하면 Keynote, Numbers 및 Pages 문서, PDF, 이미지 및
 
 많은 앱을 통해 사람들은 장치를 흔들어 타이핑이나 삭제와 같은 특정 작업을 실행 취소하고 다시 실행할 수 있습니다. 이 방법으로 시작되면 사용자에게 실행 취소 또는 다시 실행 작업을 확인 또는 취소하라는 경고가 표시됩니다. <br>
 
-<center><img src="/img/posts/UndoAndRedo.png" width="508"></center> <br> 
+<center><img src="/assets/post_img/posts/UndoAndRedo.png" width="508"></center> <br> 
 
 
 #### - 취소하거나 다시 수행 할 작업을 간단하고 정확하게 설명하십시오

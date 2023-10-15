@@ -72,7 +72,7 @@ iOS 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 
 [여기](https://koenig-media.raywenderlich.com/uploads/2018/06/Chirper-1.zip)에서 시작 프로젝트를 다운로드 하고 프로젝트를 엽니다. 
 
-<center><img src="/img/posts/driven-enum-0.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-0.png" width="450"></center> <br> 
 
 
 ---
@@ -109,7 +109,7 @@ iOS 개발에서 UITableView보다 기본적인 것이 있나요? 간단하고 �
 
 `MainViewController.swift`를 검색하면 `state`는 어디에서도 보이지 않습니다.
 
-<center><img src="/img/posts/driven-enum-1.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-1.png" width="450"></center> <br> 
 
 state가 있지만 명확하게 정의되지 않았습니다. 이렇게 잘못 정의된 상태는 코드가 수행하는 작업과 해당 속성의 변경 내용에 대한 응답 방법을 이해하기 어렵게 만듭니다. 
 
@@ -206,7 +206,7 @@ MainViewController의 `isLoading` 속성을 제거할수 있습니다. 더이상
 
 앱을 빌드하고 실행하세요. 다음 뷰가 있어야 합니다.
 
-<center><img src="/img/posts/driven-enum-2.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-2.png" width="450"></center> <br> 
 
 
 `state` 속성은 설정되어 있지만, 아무것도 하지 않습니다. `tableView.tableFooterView`는 현재의 상태를 반영하는게 필요합니다. `MainViewController`에 `setFooterView()`라는 새로운 메소드를 만듭니다.
@@ -230,7 +230,7 @@ setFooterView()
 
 앱을 빌드하고 실행합니다.
 
-<center><img src="/img/posts/driven-enum-3.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-3.png" width="450"></center> <br> 
 
 
 이제 state를 loading으로 변경하면 `setFooterView()`가 호출되고, indicator가 화면에 표시되게 처리합니다. 
@@ -275,7 +275,7 @@ error = response.error
 
 로딩 상태가 여전히 잘 작동하는것을 볼수 있습니다. 하지만 오류 상태를 어떻게 테스트하나요? 가장 쉬운 방법은 인터넷을 끊는 것입니다. 맥의 시뮬레이터에서 실행중이라면 인터넷을 mac에서 분리하세요. 앱에서 데이터를 로드할때 표시되는 내용입니다. 
 
-<center><img src="/img/posts/driven-enum-4.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-4.png" width="450"></center> <br> 
 
 
 ---
@@ -348,7 +348,7 @@ case .populated:
 
 앱을 빌드하고 실행하여 무엇이 발생하는지 확인합니다.
 
-<center><img src="/img/posts/driven-enum-5.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-5.png" width="450"></center> <br> 
 
 
 `상태에서 데이터를 가져옵니다(Getting Data from the State)`
@@ -397,7 +397,7 @@ cell.load(recording: state.currentRecordings[indexPath.row])
 더이상 필요하지 않은 옵션은 없습니다.
 
 
-<center><img src="/img/posts/driven-enum-6.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-6.png" width="450"></center> <br> 
 
 `MainViewController`의 `recordings`은 더이상 필요하지 않습니다. `loadRecordings()`의 마지막 참조와함께 지웁니다.
 
@@ -405,9 +405,9 @@ cell.load(recording: state.currentRecordings[indexPath.row])
 
 모든 상태들은 이제 잘 작동해야 합니다. `state` 속성을 명확하게 정의하여 `isLoading`, `error`, `recordings` 속성들을 지웠습니다. 
 
-<center><img src="/img/posts/driven-enum-7.png" width="650"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-7.png" width="650"></center> <br> 
 
-<center><img src="/img/posts/driven-enum-8.png" width="650"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-8.png" width="650"></center> <br> 
 
 
 ---
@@ -440,7 +440,7 @@ state값이 변경 될때, `didSet` 옵저버 속성이 실행 됩니다. `setFo
 
 앱을 빌드하고 실행하여 모든 기능이 작동하는지 확인합니다.
 
-<center><img src="/img/posts/driven-enum-9.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-9.png" width="450"></center> <br> 
 
 ---
 
@@ -544,7 +544,7 @@ if response.hasMorePages {
 
 앱을 빌드하고 시작합니다.
 
-<center><img src="/img/posts/driven-enum-11.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-11.png" width="450"></center> <br> 
 
 여러개의 페이지를 찾았다면, 앱은 하단에 loading indcator를 화면에 표시합니다. 하지만 검색 단어가 하나의 페이지만 찾았다면, loading indicator 없이 `.populated`가 표시됩니다.
 
@@ -584,7 +584,7 @@ networkingService.fetchRecordings(matching: query, page: page)
 
 앱을 빌드하고 실행합니다.
 
-<center><img src="/img/posts/driven-enum-12.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/driven-enum-12.png" width="450"></center> <br> 
 
 아무것도 변경된게 없다면, 잘 하고 있습니다. 
 

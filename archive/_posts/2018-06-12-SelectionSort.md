@@ -68,11 +68,11 @@ example(str: "Selection Sort", isAction: true) {
 
 ## Time Complexity
 
-<center><img src="/img/posts/TimeComplexity.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/TimeComplexity.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_1.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/TimeComplexity_1.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_2.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/TimeComplexity_2.png" width="700"></center> <br> 
 
 ---
 

@@ -37,7 +37,7 @@ permalink: /archive/:title
 
 액션 시트는 컨트롤이나 작업에 대한 응답으로 나타나는 특정 스타일의 경고이며 현재 컨텍스트와 관련된 두 가지 이상의 선택 사항 집합을 제공합니다. 액션 시트를 사용하여 잠재적인, 부주의한 작업을 수행하기 전에 사람들이 작업을 시작하거나 확인을 요청하십시오. 현재 화면에서는 액션 시트가 화면 하단에서 위로 슬라이드됩니다. 큰 화면에서는 한 번에 액션 시트가 팝업으로 표시됩니다.
 
-<center><img src="/img/posts/ActionSheet.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ActionSheet.png" width="382"></center> <br> 
 
 #### - 선명도가 추가되면 취소 버튼을 제공하십시오
 
@@ -59,7 +59,7 @@ permalink: /archive/:title
 
 활동은 복사, 즐겨 찾기 또는 찾기와 같은 작업으로 현재 상황에서 유용합니다. 일단 시작되면 활동은 즉시 작업을 수행하거나 진행하기 전에 더 많은 정보를 요구할 수 있습니다. 활동은 장치 및 방향에 따라 시트 또는 팝업으로 나타나는 활동뷰로 관리됩니다. 사용자가 앱에서 수행 할 수 있는 맞춤 서비스 또는 작업에 대한 액세스 권한을 부여하기 위해 활동을 사용합니다.
 
-<center><img src="/img/posts/activity_views.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/activity_views.png" width="382"></center> <br> 
 
 이 시스템은 인쇄, 메시지 및 AirPlay를 포함하여 여러 가지 기본 제공 활동을 제공합니다. 이러한 테스크는 활동보기에서 항상 맨 처음에 나타나며 다시 정렬 할 수 없습니다. 이러한 기본 제공 작업을 수행하는 사용자 지정 활동을 만들 필요가 없습니다. 활동보기는 다른 앱의 공유 및 작업 확장을 표시합니다. [공유 및 작업을](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions) 참조하십시오.
 
@@ -79,7 +79,7 @@ permalink: /archive/:title
 
 사람들은 Action 버튼을 누를 때 시스템 제공 활동에 액세스하는 데 익숙합니다. 똑같은 일을하는 다른 방법을 제공함으로써 혼란을 피하십시오.
 
-<center><img src="/img/posts/activity_views-1.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/activity_views-1.png" width="500"></center> <br> 
 
 개발자 지침은 [UIActivityViewContoller](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) 및 [UIActivity](https://developer.apple.com/documentation/uikit/uiactivity)를 참조하십시오.
 
@@ -89,7 +89,7 @@ permalink: /archive/:title
 
 알림은 앱 또는 기기의 상태와 관련된 중요한 정보를 전달하며 종종 피드백을 요청합니다. 경고는 제목, 선택적 메시지, 하나 이상의 단추 및 입력을 수집하기위한 선택적 텍스트 필드로 구성됩니다. 이러한 구성 가능한 요소 외에도 경고의 시각적 모양은 정적이며 사용자 정의 할 수 없습니다.
 
-<center><img src="/img/posts/Alert.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Alert.png" width="382"></center> <br> 
 
 #### - 경고를 최소화하십시오
 
@@ -151,7 +151,7 @@ permalink: /archive/:title
 
 컬렉션은 일련의 사진과 같이 순서가 지정된 일련의 컨텐츠를 관리하고 사용자 정의 가능하고 시각적인 레이아웃으로 제공합니다. 컬렉션은 엄격하게 선형 형식을 적용하지 않으므로 크기가 다른 항목을 표시하는 데 특히 적합합니다. 일반적으로 컬렉션은 이미지 기반 콘텐츠를 보여주는데 이상적입니다. 배경 및 기타 장식 뷰를 선택적으로 구현하여 항목의 하위 집합을 시각적으로 구별 할 수 있습니다.
 
-<center><img src="/img/posts/collection.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/collection.png" width="382"></center> <br> 
 
 #### - 컬렉션은 상호 작용과 애니메이션을 모두 지원합니다
 
@@ -177,7 +177,7 @@ permalink: /archive/:title
 
 이미지뷰는 투명하거나 불투명 한 배경 위에 단일 이미지 또는 연속된 애니메이션를 표시합니다. 이미지뷰안에서 이미지가 늘어나거나 크기가 조정되거나 특정 위치에 고정되거나 고정 될 수 있습니다. 이미지뷰는 기본적으로 인터렉션을 하지 않습니다.
 
-<center><img src="/img/posts/imageView.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/imageView.png" width="382"></center> <br> 
 
 #### - 가능한 경우 연속된 애니메이션의 모든 이미지의 크기가 일관되게 유지되는지 확인하십시오.
  
@@ -233,7 +233,7 @@ permalink: /archive/:title
 
 Popover는 큰 화면에서 가장 적합하며 탐색 모음, 도구 모음, 탭 모음, 표, 모음, 이미지, 지도 및 사용자 지정보기를 비롯한 다양한 요소를 포함 할 수 있습니다. `Popover가 활성화되면 Popover가 해제 될 때까지 다른뷰와의 상호 작용은 일반적으로 비활성화됩니다.` 팝업 오버플로를 사용하여 화면상의 내용과 관련된 옵션이나 정보를 표시하십시오. 예를 들어, 많은 iPad 앱은 작업 버튼을 누르면 공유 옵션이 표시됩니다.
 
-<center><img src="/img/posts/popovers.png" width="500" ></center> <br> 
+<center><img src="/assets/post_img/posts/popovers.png" width="500" ></center> <br> 
 
 #### - iPhone에서 팝업 표시를 피하십시오
 
@@ -283,7 +283,7 @@ Popover가 전체 화면을 차지해서는 안됩니다. 내용을 표시하고
 
 스크롤 뷰는 사용자가 문서 또는 이미지 모음의 텍스트와 같이 보이는 영역보다 큰 내용을 탐색 할 수있게합니다. 사람들이 스와이프, 톡톡 치기, 드래그, 탭 및 핀치를하면 스크롤 뷰가 제스처를 따라 자연스럽게 느껴지는 방식으로 내용을 표시하거나 확대 / 축소합니다. 스크롤 뷰 자체는 보이지 않지만 사람들이 상호 작용할 때 일시적인 스크롤 인디케이터를 표시합니다. 스크롤뷰는 페이징 모드에서 작동하도록 구성 할 수도 있습니다. 여기서 스크롤은 현재 페이지를 돌아 다니기보다는 완전히 새로운 페이지 내용을 나타냅니다.
 
-<center><img src="/img/posts/scrollView.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/scrollView.png" width="382"></center> <br> 
 
 #### - 줌 동작을 적절히 지원하십시오
 
@@ -309,7 +309,7 @@ Popover가 전체 화면을 차지해서는 안됩니다. 내용을 표시하고
 
 분할뷰는 기본 창에 영구 컨텐트가 있고 보조 창에 관련 정보가있는 두 개의 나란히 배치 된 컨텐트의 프레젠테이션을 관리합니다. 각 창에는 탐색 모음, 도구 모음, 탭 모음, 표, 모음, 이미지, 맵 및 커스텀뷰를 비롯한 다양한 요소가 포함될 수 있습니다. 분할뷰는 필터링 할 수있는 콘텐츠와 함께 사용되는 경우가 많습니다. 필터 범주 목록이 주 창에 나타나고 선택한 범주의 필터링 된 결과가 보조 창에 표시됩니다. 앱에서 필요로하는 경우 기본 창은 보조 창을 오버레이 할 수 있으며 사용하지 않을 때는 화면 밖에서 숨길 수 있습니다. 이 기능은 장치가 세로 방향 인 경우 특히 유용합니다. 보조 창에서 콘텐츠를 볼 수있는 여지가 많기 때문입니다.
 
-<center><img src="/img/posts/SplitView.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/SplitView.png" width="500"></center> <br> 
 
 #### - 콘텐츠와 잘 어울리는 분할보기 레이아웃을 선택하십시오
 
@@ -427,7 +427,7 @@ iOS는 평범하고 그룹화 된 두 가지 스타일의 표를 구현합니다
 
 텍스트뷰는 여러 줄의 스타일이 지정된 텍스트 내용을 표시합니다. 텍스트뷰는 높이가 될 수 있으며 컨텐츠뷰와 외부로 확장되면 스크롤 할 수 있습니다. 기본적으로 텍스트뷰의 내용은 왼쪽으로 정렬되고 시스템 글꼴은 검정색으로 사용됩니다. 텍스트뷰를 편집 할 수있는 경우 텍스트뷰의 내부를 탭하면를 키보드가 나타납니다.
 
-<center><img src="/img/posts/TextView.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/TextView.png" width="382"></center> <br> 
 
 #### - 텍스트를 읽기 쉬운 상태로 유지하십시오
 
@@ -445,7 +445,7 @@ iOS는 여러 유형의 키보드를 제공하며 각 유형은 서로 다른 �
 
 웹뷰는 삽입 된 HTML 및 웹 사이트와 같은 풍부한 웹 콘텐츠를 앱 내에 직접로드하고 표시합니다. Mail은 웹뷰를 사용하여 메시지에 HTML 컨텐트를 표시합니다.
 
-<center><img src="/img/posts/WebView.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/WebView.png" width="382"></center> <br> 
 
 #### - 적절한 경우 앞으로 및 뒤로 탐색을 사용합니다
 

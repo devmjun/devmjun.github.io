@@ -56,7 +56,7 @@ Core Graphics의 두번째 튜토리얼에서는 Swift앱의 그라데이션(gra
 
 애플의 이 이미지는 프레임워크의 개념상 관계를 설명합니다. 
 
-<center><img src="/img/posts/CoreGraphics-14.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-14.png" width="450"></center> <br> 
 
 
 UIKit은 최상위 계층이고, 가장 친숙합니다(approachable). 이전 튜토리얼에서 Core Graphics의 `CGPath`를 레핑한 UIKit의 `UIBezierPath`를 사용했습니다. 
@@ -83,7 +83,7 @@ Core Graphics 프레임 워크는 `Quartz advanced drawing engine`을 기반으�
 
 먼저, [시작 프로젝트](https://koenig-media.raywenderlich.com/uploads/2017/07/Flo-part2-Starter.zip)를 다운로드 합니다. 이전 부분에서 중단한 부분이 꽤 있습니다. 유일한 차이점은 `Main.storyboard`에서 `CounterView`는 다른 뷰(노란 배경) 안에 있다는 것입니다. 빌드하고 실행하면 다음과 같이 보여집니다.
 
-<center><img src="/img/posts/CoreGraphics-15.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-15.png" width="450"></center> <br> 
 
 
 `GraphView`이름으로 `UIView`를 서브클레싱하는 `.swift`파일을 하나 생성합니다. 
@@ -99,7 +99,7 @@ Core Graphics 프레임 워크는 `Quartz advanced drawing engine`을 기반으�
 
 `Size Inspector`의 제약조건은 다음과 같습니다. 
 
-<center><img src="/img/posts/CoreGraphics-16.png" width="250"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-16.png" width="250"></center> <br> 
 
 
 `Document Outline`는 다음과 같습니다.
@@ -263,7 +263,7 @@ import UIKit
 
 `Assistant Editor`을 사용하여 코드와 스토리 보드를 나란히 볼수 있도록 Xcode를 설정합니다.
 
-<center><img src="/img/posts/CoreGraphics-20.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-20.png" width="450"></center> <br> 
 
 
 스토리보드에서 `Graph View`를 선택하세요. 그런다음 `Attribute Inspector`에서 `Start Color`를 `RGB(250, 233, 222)`, `End Color`을 `RGB(252, 79,8)`로 변경합니다. 

@@ -31,7 +31,7 @@ permalink: /archive/:title
 
 키보드를 커스텀 정의하여 확장할수 있습니다. 맞춤 키보드는 설정 앱의 일반 > 키보드에서 사용하도록 설정되어 있습니다. 사용자 키보드를 사용하면, 보안 텍스트 필드 및 전화 번호 필드를 수정할 때를 제외하고 모든 앱에서 텍스트 입력 중에 사용자 키보드를 사용할 수 있습니다. 사람들은 여러 개의 사용자 정의 키보드를 활성화하고 언제든지 이들 사이를 전환 할 수 있습니다. 
 
-<center><img src="/img/posts/CustomKeyboard.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/CustomKeyboard.png" width="500"></center> <br> 
 
 #### - 사용자 정의 키보드가 정말로 필요한지 확인하십시오
 
@@ -55,7 +55,7 @@ iPhone X에서는 Emoji/Globe 키와 Dictation 키가 사용자 키보드를 사
 
 Custom Input Views는 표준 키보드를 Custom keyboard로 바꾸지만 `시스템 전체가 아니라 앱에서만 사용됩니다.` Custom Input Views를 사용하여 독특하고 효율적인 데이터 입력 방법을 제공하십시오. 예를 들어, 숫자는 스프레드 시트를 편집하는 동안 숫자 값을 입력하기위한 사용자 정의 입력보기를 구현합니다.
 
-<center><img src="/img/posts/CustomKeyboard-1.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/CustomKeyboard-1.png" width="500"></center> <br> 
 
 #### - 기능을 분명히 하십시오
 
@@ -69,7 +69,7 @@ Custom Input Views의 컨트롤은 앱 컨텍스트에서 의미가 있어야합
 
 일부 앱은 키보드 위에 나타나는 추가 맞춤 input accessory view를 구현합니다. Numbers에서 입력 accessory view는 사람들이 표준 또는 사용자 정의 계산을 입력하는 데 도움이됩니다.
 
-<center><img src="/img/posts/CustomKeyboard-2.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/CustomKeyboard-2.png" width="500"></center> <br> 
 
 개발자 가이드는 [Text Programming Guide for iOS](https://developer.apple.com/library/content/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Introduction/Introduction.html)의  [Custom Data Input views](https://developer.apple.com/library/content/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/InputViews/InputViews.html)를 참조하십시오.
 
@@ -79,7 +79,7 @@ Custom Input Views의 컨트롤은 앱 컨텍스트에서 의미가 있어야합
 
 문서 공급자 확장 프로그램은 시스템의 다른 응용 프로그램에서 응용 프로그램의 문서를 가져 오거나, 내보내거나, 열거 나 이동하기위한 사용자 지정 인터페이스를 구현합니다. 문서 공급자 확장 프로그램이 로드되면 해당 인터페이스가 Navigation bar 을 포함하는 modal view로 표시됩니다.
 
-<center><img src="/img/posts/Documents_Provider.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Documents_Provider.png" width="382"></center> <br> 
 
 #### - 사용자가 파일을 열거나 가져올 때 상황별 문서 및 정보만 표시합니다
 
@@ -101,7 +101,7 @@ Custom Input Views의 컨트롤은 앱 컨텍스트에서 의미가 있어야합
 
 홈 화면 미리보기 동작은 3D 터치를 사용하여 홈 화면에서 유용한 응용 프로그램 별 작업을 편리하게 수행 할 수 있는 편리한 방법입니다. 손가락으로 응용 프로그램 아이콘을 살짝, 길게 누르십시오. 하나를 탭하여 활성화하십시오. 예를 들어 Mail에는받은 편지함이나 VIP 편지함으로 이동하고 검색을 시작하며 새 메시지를 만들 수있는 빠른 작업이 포함됩니다. 각 홈 화면의 미리보기 동작에는 제목, 왼쪽 또는 오른쪽 아이콘 (홈 화면의 앱 위치에 따라 다름)및 선택 가능한 부제목이 포함됩니다. 제목과 부제는 항상 왼쪽에서 오른쪽 방향으로 왼쪽 정렬됩니다. 앱에서 새로운 정보를 사용할 수 있을 때 미리보기 동작을 동적으로 업데이트 할 수 있습니다. 예를 들어 메시지는 최근 대화를 여는 데 필요한 빠른 작업을 제공합니다.
 
-<center><img src="/img/posts/Home_Quick_Action.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Home_Quick_Action.png" width="382"></center> <br> 
 
 > TIP
 > 일부 앱은 미리보기 액션 위에 위젯을 표시합니다. 예를 들어, 주식의 주가의 미리보기 행동은 현재 주식 가격을 보여주는 위젯 아래에 나타납니다. 훨씬 더 매력적인 경험을 제공하기 위해 위젯을 구현하는 것을 고려하십시오. 위젯 디자인 지침은 [Home Screen Quick Action](https://developer.apple.com/ios/human-interface-guidelines/extensions/widgets/#home-screen-quick-action-widgets) 위젯을 참조하십시오 . 
@@ -229,7 +229,7 @@ Messaging은 보편적인 의사 소통 형식입니다. 광범위하고 국제�
 
 메시지는 다음 파일 형식의 스티커를 지원합니다.
 
-<center><img src="/img/posts/iMessage-7.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/iMessage-7.png" width="700"></center> <br> 
 
 #### - iMessage 앱 및 스티커 팩 아이콘
 
@@ -247,7 +247,7 @@ iOS 응용 프로그램과 마찬가지로 iMessage 응용 프로그램과 스�
 
 아이콘이 App Store, 메시지, 알림 및 설정에 나타납니다. 모든 컨텍스트 및 장치에서 아이콘이 잘 보이게하려면 다음 크기의 아이콘 변형을 제공 할 수 있습니다.
 
-<center><img src="/img/posts/iMessage-8.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/iMessage-8.png" width="700"></center> <br> 
 
 iMessage 앱 및 스티커 팩 아이콘에 적용 할 수있는 훌륭한 앱 아이콘 디자인에 대한 추가 지침은 [App Icon](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/app-icon/)을 참조하십시오 .
 
@@ -261,7 +261,7 @@ iMessage 앱과 스티커 팩 아이콘 Photoshop 템플릿을 다운로드하�
 
 사진 수정 프로그램 확장 기능을 사용하면 필터를 적용하거나 다른 변경 사항을 적용하여 사진 앱에서 사진 및 동영상을 수정할 수 있습니다. 편집은 항상 Photos 앱에 새 파일로 저장되어 안전하게 원본 버전을 유지합니다.
 
-<center><img src="/img/posts/PhotoEdit.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/PhotoEdit.png" width="382"></center> <br> 
 
 사진 편집 확장 프로그램에 액세스하려면 사진이 편집 모드에 있어야합니다. 편집 모드에서 toolbar의 확장 아이콘을 누르면 사용 가능한 편집 확장 기능의 작업 메뉴가 표시됩니다. 하나를 선택하면 navigation bar가 포함 된 Modal view에서 확장 인터페이스가 표시됩니다. 해당뷰를 닫으면 편집 내용을 확인하고 저장하거나 취소하고 사진 응용 프로그램으로 돌아갑니다.
 
@@ -289,7 +289,7 @@ iMessage 앱과 스티커 팩 아이콘 Photoshop 템플릿을 다운로드하�
 
 공유 확장 프로그램을 사용하면 현재 상황의 정보를 앱, 소셜 미디어 계정 및 기타 서비스와 편리하게 공유 할 수 있습니다. 액션 익스텐션을 사용하면 북마크 추가, 링크 복사 또는 이미지 저장과 같은 콘텐츠 관련 작업을 시작할 수 있습니다. 사용자는 앱의 작업 버튼을 탭하여 활동뷰를 표시하여 공유 확장 및 작업 확장에 액세스합니다. 활동뷰는 현재 컨텍스트와 관련된 확장만 표시합니다. 예를 들어 비디오 편집 중 텍스트 조작 작업을 볼 수 없습니다. 활동뷰 내에서 공유 확장은 위의 액션 확장 목록에 나열됩니다.
 
-<center><img src="/img/posts/sharing_and_actions.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/sharing_and_actions.png" width="382"></center> <br> 
 
 #### - 집중된 단일 작업을 활성화합니다
 

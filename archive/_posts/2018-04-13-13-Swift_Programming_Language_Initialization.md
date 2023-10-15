@@ -419,7 +419,7 @@ convenience init(parameters) {
 
 이러한 규칙을 아래 그림에서 볼수 있습니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-9.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-9.png" width="700"></center>
 
 여기에서, 슈퍼 클래스는 하나의 지정된 초기화와 2개의 편리한 초기화를 가지고 있습니다. 하나의 편리한 초기화는 차례대로 하나의 지정된 초기화를 호출하는 다른 편리한 초기화를 호출합니다. 위의 규칙 2와 3을 만족합니다. 슈퍼클래스는 스스로 추가 슈퍼클래스를 가지지 않고, 규칙 1은 적용되지 않습니다.
 
@@ -429,7 +429,7 @@ convenience init(parameters) {
 
 아래 그림은 더 복잡한 4개의 클래스에 대한 클래스 계층구조도 입니다. 이 그림은 계층구조도에서 지정된 초기화가 클래스 초기화를 위한 깔때기(funnel) 지점 역할을하는 방법을 보여주며, 클래스들 사이에 연관성을 단순화 합니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-10.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-10.png" width="700"></center>
 
 ---
 
@@ -479,7 +479,7 @@ Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되�
 
 여기 가상의 서브클래스와 슈퍼클래스에 대해 1단계 초기화를 호출하는 방법을 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-11.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-11.png" width="700"></center>
 
 예제에서, 초기화는 서브클래스에서 편리한(convenience) 초기화 호출로 시작합니다. 편리한 초기화는 아직 모든 프로퍼티를 수정 할 수 없습니다. 그것은 동일한 클래스의 지정된 초기화에 위임합니다.
 
@@ -491,7 +491,7 @@ Swift의 컴파일러는 에러없이 2단계(two-phase) 초기화가 완료되�
 
 다음은 2단계에서 같은 초기화 호출 방법을 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-12.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-12.png" width="700"></center>
 
 슈퍼클래스의 지정된 초기화는 이제 인스턴스를 추가로 사용자정의 할 수 있는 기회가 있습니다(비록 그렇게 할 필요는 없습니다).
 
@@ -602,7 +602,7 @@ class Food {
 아래 그림은 `Food` 클래스에 대한 초기화 체인(chain)을 보여줍니다
 
 
-<center><img src="/img/posts/Swift_Programming_Language-13.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-13.png" width="700"></center>
 
 클래스는 기본적으로 멤버(memberwise) 초기화를 하지 않고, `Food` 클래스는 하나의 인자값 `name`을 가진 지정된 초기화를 제공합니다. 이 초기화는 특정 이름으로 새로운 `Food`인스턴스를 생성하는데 사용 할 수 있습니다.
 
@@ -637,7 +637,7 @@ class RecipeIngredient: Food {
 
 아래 그림은 `RecipeIngredient`클래스에 대한 초기화 관계(chain)을 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-14.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-14.png" width="700"></center>
 
 `RecipeIngredient` 클래스는 새로운 RecipeIngredient 인스턴스의 모든 프로퍼티를 채우는데 사용 할 수 있는, 단일 지정된 초기화 `init(name: String, quantity: Int)`를 가집니다. 이 초기화는 전달된 quantity인자를 RecipeIngredient에 소개된 유일한 새로운 프로퍼티인 quantity프로퍼티에 할당하는 것으로 시작합니다. 이러한 과정은 위의 [2단계 초기화(Two-Phase Initialization)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//apple_ref/doc/uid/TP40014097-CH18-ID220)의 안전검사 1을 만족합니다.
 
@@ -678,7 +678,7 @@ class ShoppingListItem: RecipeIngredient {
 
 아래 그림은 클래스 3개 모두에 대해 전체 초기화 관계(chain)를 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-15.png" width="700"></center>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-15.png" width="700"></center>
 
 `ShoppingListItem`인스턴스를 새로 만들기 위해 상속된 초기화 3개 모두를 사용 할 수 있습니다.
 

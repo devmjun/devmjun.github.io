@@ -26,7 +26,7 @@ permalink: /archive/:title
 
 ## Result 
 
-<center><img src="/img/posts/classdiagram.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/classdiagram.png" width="500"></center> <br> 
 
 ---
 

@@ -13,7 +13,7 @@ permalink: /archive/:title
 
 ## Autolayout을 이용하여 막대 그래프 표현하기
  
-<center><img src="/img/posts/graph.MOV.gif" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/graph.MOV.gif" width="450"></center> <br> 
 
 
 ### View hierarchy

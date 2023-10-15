@@ -34,14 +34,14 @@ permalink: /archive/:title
 
 iOS 기기는 다양한 화면 크기로 제공되며 새로 또는 가로 방향으로 사용할 수 있습니다. 
 
-<center><img src="/img/posts/adaptivity_and_layout.png"></center> <br> 
-<center><img src="/img/posts/adaptivity_and_layout-1.png"></center> <br> 
+<center><img src="/assets/post_img/posts/adaptivity_and_layout.png"></center> <br> 
+<center><img src="/assets/post_img/posts/adaptivity_and_layout-1.png"></center> <br> 
 
 화면 해상도가 앱의 아트 워크에 미치는 영향을 배우려면 [이미지 크기 및 해상도를](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/image-size-and-resolution/) 참조하십시오.
 
 #### - 자동 레이아웃 
 
-<center><img src="/img/posts/adaptivity_and_layout-2.png"></center> <br>  
+<center><img src="/assets/post_img/posts/adaptivity_and_layout-2.png"></center> <br>  
 
 자동 레이아웃은 적응 형 인터페이스를 구성하기위한 개발 도구입니다. 자동 레이아웃을 사용하면 앱의 콘텐츠를 관리하는 규칙 (제약[traits] 조건)을 정의 할 수 있습니다. 예를 들어 사용 가능한 화면 공간에 관계없이 이미지를 수평 아래로 8 포인트 아래로 배치 할 수 있도록 버튼을 구속 할 수 있습니다. <br>
 
@@ -84,8 +84,8 @@ UIKit에서 정의한 안전 영역 및 레이아웃 여백을 준수하십시�
 
 다른 환경 변화와 마찬가지로 iOS는 콘텐츠 영역의 크기 클래스를 기반으로 레이아웃을 `동적`으로 조정합니다. 예를 들어 세로 크기 클래스가 소형 높이에서 보통 높이로 변경되면 사용자가 가로 방향에서 세로 방향으로 장치를 회전했기 때문에 탭 막대가 더 커질 수 있습니다. 
 
-<center><img src="/img/posts/adaptivity_and_layout-5.png"></center> <br> 
-<center><img src="/img/posts/adaptivity_and_layout-6.png"></center> <br> 
+<center><img src="/assets/post_img/posts/adaptivity_and_layout-5.png"></center> <br> 
+<center><img src="/assets/post_img/posts/adaptivity_and_layout-6.png"></center> <br> 
 
 ### 레이아웃 고려 사항 
 
@@ -215,7 +215,7 @@ Apple 상표는 앱 이름이나 이미지에 나타나서는 안됩니다. [App
 색상은 활력을주고, 시각적 연속성을 제공하고, 상태 정보를 전달하고, 사용자 조치에 대한 피드백을 제공하고, 사람들이 데이터를 시각화 할 수있게 해주는 좋은 방법입니다. 밝고 어두운 배경에서 개별적으로 또는 조합하여 잘 어울리는 응용 색조 색상을 선택할 때 시스템의 색 구성표를 참조하십시오.
 
 
-<center><img src="/img/posts/color.png"></center> <br> 
+<center><img src="/assets/post_img/posts/color.png"></center> <br> 
 
 #### - 의사 소통을 위해 색상을 적절하게 사용하십시오
 
@@ -238,7 +238,7 @@ Notes에서 상호 작용 요소는 노란색입니다. 캘린더에서 상호 �
 대화형 및 비대화형 요소의 색상이 같은 경우 사람들이 어디에서 탭해야하는지 알기가 어렵습니다.
 
 
-<center><img src="/img/posts/color-1.png"></center> <br> 
+<center><img src="/assets/post_img/posts/color-1.png"></center> <br> 
 
 #### - 삽화와 투명감이 인근 색상에 미치는 영향을 고려하십시오
 
@@ -274,7 +274,7 @@ True Tone 디스플레이는 주변 광 센서를 사용하여 현재 환경의 
 
 ### 색상 관리
 
-<center><img src="/img/posts/color-6.png"></center> <br> 
+<center><img src="/assets/post_img/posts/color-6.png"></center> <br> 
 
 #### - 이미지에 색상 프로파일을 적용하십시오
 
@@ -303,7 +303,7 @@ iOS의 기본 색상 공간은 표준 RGB (sRGB)입니다. 색상이 이 색상 
 
 앱의 모든 단어는 사용자와의 대화의 일부입니다. 이 대화를 사용하여 앱을 편안하게 사용할 수 있습니다.
 
-<center><img src="/img/posts/terminology.png"></center> <br> 
+<center><img src="/assets/post_img/posts/terminology.png"></center> <br> 
 
 #### - 익숙하고 이해할 수있는 단어와 문구를 사용하십시오
 
@@ -343,7 +343,7 @@ we, our, me, 그리고 my를 피하십시오 (예를 들어 "우리의 튜토리
 
 샌프란시스코 (SF)는 iOS의 시스템 서체입니다. 이 서체의 글꼴은 텍스트의 읽기 쉽고 선명하고 일관성있는 텍스트를 제공하도록 최적화되어 있습니다. 샌프란시스코 글꼴 모음을 [여기에서 다운로드](https://developer.apple.com/fonts/) 하십시오.
 
-<center><img src="/img/posts/typography.png"></center> <br> 
+<center><img src="/assets/post_img/posts/typography.png"></center> <br> 
 
 #### - 중요한 정보를 강조하십시오
 

@@ -14,7 +14,7 @@ permalink: /archive/:title
 
 ## 앱을 구성하는객체
 
-<center><img src="/img/posts/AppStructure.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/AppStructure.png" width="500"></center> <br>
 
 - 시스템 객체
   - 자동 생성
@@ -88,7 +88,7 @@ UIApplication.shared.delegate?.window
 
 ## 앱의 상태
 
-<center><img src="/img/posts/AppStructure-1.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/AppStructure-1.png" width="500"></center> <br>
 
 - 앱의 주요 상태 
   - 동작 안 함(Not running): 앱이 종료되거나 시작되지 않은 상태 

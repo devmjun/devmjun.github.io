@@ -29,7 +29,7 @@ permalink: /archive/:title
 
 iOS가 화면에 콘텐츠를 배치하는 데 사용하는 좌표 시스템은 점의 측정 값을 기반으로하며, 이 값은 화면의 픽셀에 매핑됩니다. 표준 해상도 화면에서 한 점은 한 픽셀과 같습니다. 고해상도 화면의 픽셀 `밀도`가 높습니다. 같은 양의 물리적 공간에 더 많은 픽셀이 있기 때문에 점 당 더 많은 픽셀이 있습니다. 결과적으로, 고해상도 디스플레이는 더 많은 픽셀을 갖는 이미지를 필요로합니다. <br>
 
-<center><img src="/img/posts/imageAndResolution.png"></center> <br>  
+<center><img src="/assets/post_img/posts/imageAndResolution.png"></center> <br>  
 
 
 #### - 앱에서 지원하는 모든 기기에 대해 앱의 모든 아트웍에 고해상도 이미지를 제공합니다
@@ -69,7 +69,7 @@ iOS가 화면에 콘텐츠를 배치하는 데 사용하는 좌표 시스템은 
 모든 앱에는 App Store에서 주목을 끄는 홈 화면에서 두드러지고 아름답고 기억에 남을만한 아이콘이 필요합니다. 아이콘은 앱의 목적을 한눈에 알 수있는 첫 번째 기회입니다. 또한 설정 및 검색 결과와 같이 시스템 전체에 나타납니다.
 
 
-<center><img src="/img/posts/appiCon.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon.png"></center> <br>  
 
 #### - 단순한을 가지십시오 
 
@@ -115,14 +115,14 @@ Apple 제품은 저작권이 있으며 귀하의 아이콘이나 이미지로 �
 
 모든 앱 아이콘은 다음 사양을 준수해야합니다.
 
-<center><img src="/img/posts/appiCon-1.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon-1.png"></center> <br>  
 
 #### - 앱 아이콘 크기 
 
 모든 앱은 앱이 설치되면 홈 화면 및 시스템 전반에 작은 아이콘을 제공해야하며 앱 스토어에 표시 할 더 큰 아이콘도 제공해야합니다.
 
-<center><img src="/img/posts/appiCon-2.png"></center> <br>  
-<center><img src="/img/posts/appiCon-3.png"></center> <br> 
+<center><img src="/assets/post_img/posts/appiCon-2.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon-3.png"></center> <br> 
 
 #### - 다른 장치에 대해 다른 크기의 아이콘을 제공하십시오
 
@@ -140,9 +140,9 @@ Apple 제품은 저작권이 있으며 귀하의 아이콘이나 이미지로 �
 | :--: | :--: |
 |![screen](/assets/post_img/posts/appiCon-4.png) | ![screen](/assets/post_img/posts/appiCon-5.png)| <br>
 
-<center><img src="/img/posts/appiCon-6.png"></center> <br>  
-<center><img src="/img/posts/appiCon-7.png"></center> <br>  
-<center><img src="/img/posts/appiCon-8.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon-6.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon-7.png"></center> <br>  
+<center><img src="/assets/post_img/posts/appiCon-8.png"></center> <br>  
 
 
 #### - 설정 아이콘에 오버레이 또는 경계선을 추가하지 마십시오
@@ -178,7 +178,7 @@ iOS는 모든 아이콘에 1픽셀 획을 자동으로 추가하여 설정의 �
 
 세부 정보가 너무 많으면 아이콘을 혼동 또는 읽을 수 없게 만들 수 있습니다. 대부분의 사람들이 신속하게 인식하고 불쾌감을 느끼지 않을 단순하고 보편적인 디자인을 위해 노력하십시오. 가장 좋은 아이콘은 자신이 시작한 활동 또는 공개 된 내용과 직접적으로 관련된 친숙한 시각적 은유를 사용합니다.
 
-<center><img src="/img/posts/CustomiCon.png"></center> <br>  
+<center><img src="/assets/post_img/posts/CustomiCon.png"></center> <br>  
 
 #### - 글리프로 아이콘을 디자인하십시오
 
@@ -192,7 +192,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 사용자 정의 아이콘 만 사용하든 사용자 정의 및 시스템 아이콘을 사용하거나, 앱의 모든 아이콘은 세부 사항, 광학 무게, 획 두께, 위치 및 원근감 측면에서 동일해야합니다.
 
-<center><img src="/img/posts/CustomiCon-1.png"></center> <br>
+<center><img src="/assets/post_img/posts/CustomiCon-1.png"></center> <br>
 
 #### - 아이콘을 쉽게 알 수 있는지 확인하십시오
 
@@ -206,20 +206,20 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 무엇보다 앱의 아이콘 군은 시각적으로 일관성이 있어야합니다. 개별 아이콘 디자인의 무게가 다른 경우이 효과를 얻으려면 일부 아이콘이 다른 아이콘보다 약간 클 필요가 있습니다.
 
-<center><img src="/img/posts/CustomiCon-4.png"></center> <br>
+<center><img src="/assets/post_img/posts/CustomiCon-4.png"></center> <br>
 
 #### - 탐색 모음 및 도구 모음 아이콘 크기
 
 사용자 지정 탐색 모음 및 도구 모음 아이콘을 준비 할 때 다음 크기를 지침으로 사용하지만 필요에 따라 균형을 조정하려면 조정하십시오.
 
-<center><img src="/img/posts/CustomiCon-5.png"></center> <br>
+<center><img src="/assets/post_img/posts/CustomiCon-5.png"></center> <br>
 
 #### - 탭 바 아이콘 크기
 
 세로 방향에서는 탭 제목 위에 탭 표시 줄 아이콘이 나타납니다. 가로 방향에서는 아이콘과 제목이 나란히 표시됩니다. 장치 및 방향에 따라 시스템에 일반 탭 또는 소형 탭 막대가 표시됩니다. 앱에는 두 크기의 맞춤 탭 막대 아이콘이 있어야합니다.
 
-<center><img src="/img/posts/CustomiCon-6.png"></center> <br>
-<center><img src="/img/posts/CustomiCon-7.png"></center> <br>
+<center><img src="/assets/post_img/posts/CustomiCon-6.png"></center> <br>
+<center><img src="/assets/post_img/posts/CustomiCon-7.png"></center> <br>
 
 ---
 
@@ -253,7 +253,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 시작 화면에 Xcode 스토리 보드를 사용하는 것이 가장 좋지만 필요에 따라 정적 이미지 세트를 제공 할 수 있습니다. 여러 장치에 대해 서로 다른 크기의 정적 이미지를 만들고 상태 표시 줄 영역을 포함시켜야합니다.
 
-<center><img src="/img/posts/launch_Screen-2.png"></center> <br>
+<center><img src="/assets/post_img/posts/launch_Screen-2.png"></center> <br>
 
 ---
 
@@ -298,7 +298,7 @@ PDF는 고해상도 스케일링을 허용하는 벡터 형식이므로 일반�
 
 [Tar Bars](https://developer.apple.com/ios/human-interface-guidelines/bars/tab-bars/) 에서 다음 아이콘을 사용하십시오 . 개발자 가이드는 [UITabBarSystemItem](https://developer.apple.com/documentation/uikit/uitabbarsystemitem)을 참조하십시오.
 
-<center><img src="/img/posts/SystemiCon-2.png"></center> <br>
+<center><img src="/assets/post_img/posts/SystemiCon-2.png"></center> <br>
 
 #### - 홈 화면 빠른 액션 아이콘
 

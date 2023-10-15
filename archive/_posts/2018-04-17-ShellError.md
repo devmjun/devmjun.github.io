@@ -13,6 +13,6 @@ permalink: /archive/:title
 
 쉘 스크립트를 실행하려고 하는데, 아래같은 오류가 발생했을때 해결방법
 
-<center><img src="/img/posts/Shell.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Shell.png" width="700"></center> <br> 
 
 [참조](http://overengineer.net/fixing-nativescript-s-xcode-is-not-installed-or-is-not-configured-properly-on-macos)

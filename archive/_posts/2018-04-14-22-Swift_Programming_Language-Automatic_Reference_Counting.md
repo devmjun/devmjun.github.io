@@ -158,7 +158,7 @@ unit4A = Apartment(unit: "4A")
 
 여기에서 어떻게 두 개의 인스턴스를 생성하고 할당한 후에 강한 참조가 되는 것을 지켜봅니다. `john`변수는 이제 새로운 `Person`인스턴스의 강한 참조를 가지고 있고, `unit4A`변수는 새로운 `Apartment`인스턴스의 강한 참조를 가지고 있습니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-19.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-19.png" width="700"></center> <br> 
 
 이제 두개의 인스턴스를 사람(`person`)은 아파트(`apartment`)를 가지고 있고, 아파트(`apartment`)는 주인(`tenant`)을 가지고 있도록 서로 연결 할 수 있습니다. 느낌표(`!`) 표시는 인스턴스 내부에 저장된 `john`과 `unit4A`옵셔널 변수를 언래핑(`unwrap`)하고 접근 할때 사용되며, 이러한 인스턴스의 프로퍼티를 설정 할 수 있습니다.
 
@@ -169,7 +169,7 @@ unit4A!.tenant = john
 
 여기에서, 두 개의 인스턴스가 함께 연결된 후에 강한 참조가 되는 것을 지켜봅니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-20.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-20.png" width="700"></center> <br> 
 
 공교롭게도, 이러한 두개의 인스턴스를 연결하면 강한 순환 참조가 만들어집니다. `Person`인스턴스는 이제 `Apartment`인스턴스에 강한 참조를 가지고 있고, `Apartment`인스턴스는 `Person`인스턴스에 강한 참조를 가지고 있습니다. 그러므로, john과 unit4A변수에 의해 강한 참조를 가지고 있을때, 참조 갯수는 0이 되지 않고, 인스턴스들은 ARC에 의해서 메모리가 해제되지 않습니다.
 
@@ -182,7 +182,7 @@ unit4A = nil
 
 여기에서, `john`과 `unit4A`변수에 `nil`을 설정한 후에 강한 참조가 되는 것을 지켜봅니다
 
-<center><img src="/img/posts/Swift_Programming_Language-21.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-21.png" width="700"></center> <br> 
 
 `Person`인스턴스와 `Apartment`인스턴스간의 강한 참조가 남아 있고 깨뜨릴 수 없습니다.
 
@@ -241,7 +241,7 @@ unit4A!.tenant = john
 
 여기에서, 이제 두 인스턴스를 함께 연결한 참조 방법을 지켜봅니다.<br>
 
-<center><img src="/img/posts/Swift_Programming_Language-22.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-22.png" width="700"></center> <br> 
 
 `Person`인스턴스는 여전히 `Apartment`인스턴스의 강한 참조를 가지고 있지만, `Apartment`인스턴스는 이제 `Person`인스턴스의 약한(`weak`) 참조를 가집니다. 이것은 `john`변수를 `nil`로 설정하여 강한 참조를 깨뜨리는 것을 의미하며, 더 이상 `Person`인스턴스의 강한 참조가 없습니다.
 
@@ -252,7 +252,7 @@ john = nil
 
 `Person`인스턴스의 강한 참조가 없기 때문에, 메모리에서 해제되고 `tenant`프로퍼티는 `nil`로 설정됩니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-23.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-23.png" width="700"></center> <br> 
 
 `Apartment`인스턴스의 강한 참조는 `unit4A`만 남아있습니다. 강한 참조가 깨지면, 더 이상 `Apartment`인스턴스의 강한 참조가 없습니다.
 
@@ -263,7 +263,7 @@ unit4A = nil
 
 Apartment인스턴스의 강한 참조가 더 이상 없기 때문에, 메모리에서 해제됩니다.<br>
 
-<center><img src="/img/posts/Swift_Programming_Language-24.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-24.png" width="700"></center> <br> 
 
 > Note: 가비지 컬렉션을 사용하는 시스템에서, `weak 포인터`는 간혹 간단한 캐쉬 메카니즘을 사용하기 때문에 메모리 부족으로 가비지 컬렉션이 발생될때 강한 참조가 없는 객체들은 메모리 에서 해제됩니다. 하지만, ARC에서 변수들은 마지막 강한 참조가 제거되면 곧 바로 메모리에서 해제되며, `weak`참조는 그 목적과 어울리지 않습니다.
 
@@ -324,13 +324,13 @@ john!.card = CreditCard(number: 1234_5678_9012_3456, customer: john!)
 
 다음은 연결된 두 인스턴스의 참조를 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-25.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-25.png" width="700"></center> <br> 
 
 `Customer`인스턴스는 이제 `CreditCard`인스턴스의 강한 참조를 가지고 있고, `CreditCard`인스턴스는 `Customer`인스턴스의 `unowned`참조를 가지고 있습니다.
 
 `john`변수에 의해 강한 참조가 깨질때, `unowned` customer참조이기 때문에, `Customer`인스턴스는 더 이상 강한 참조가 아닙니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-26.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-26.png" width="700"></center> <br> 
 
 `Customer`인스턴스는 더 이상 강한 참조가 아니기 때문에, 메모리에서 해제됩니다. 해제된 후에, `CreditCard`인스턴스가 더 이상 강한 참조가 아니며, 그것 역시 메모리에서 해제됩니다.
 
@@ -479,7 +479,7 @@ print(paragraph!.asHTML())
 
 공교롭게도, `HTMLElement`클래스는 위에 작성된것 처럼, `HTMLElement`인스턴스와 asHTML값에 대한 클로저 사이에 강한 순환 참조가 만들어집니다. 여기에서, 어떻게 순환참조가 되는지를 봅니다.<br>
 
-<center><img src="/img/posts/Swift_Programming_Language-27.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-27.png" width="700"></center> <br> 
 
 인스턴스의 `asHTML`프로퍼티는 클로저에 강한 참조를 가지고 있습니다. 하지만, 클로저는 본문에서 `self`를 참조하기 때문에(`self.name`과 `self.text`를 참조하는 것과 같은 방법), 클로저는 `HTMLElement`인스턴스에 강한 참조를 가지고 있다는 것을 의미하며, `self`를 `캡쳐(captures)`합니다. (클로저에서의 캡쳐 값에 대한 자세한 정보는 [값 캡쳐하기(Capturing Values)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID103)를 보세요.
 
@@ -579,7 +579,7 @@ print(paragraph!.asHTML())
 
 여기에서, 캡쳐목록을 참조하는 자리를 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-28.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-28.png" width="700"></center> <br> 
 
 이번에는, 클로저에 의한 `self`의 캡쳐는 `unowned`참조이고, 캡쳐된 `HTMLElement`인스턴스를 강하게(strong) 유지하고 있지 않습니다. `paragraph`변수의 강한 참조를 `nil`로 설정하면, `HTMLElement`인스턴스는 메모리에서 해제되며, 아래 예제에서 처럼 메모리에서 해제 되었다는 메시지를 볼 수 있습니다.
 

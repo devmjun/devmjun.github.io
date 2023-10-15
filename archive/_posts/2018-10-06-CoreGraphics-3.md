@@ -464,12 +464,12 @@ context.endTransparencyLayer()
 
 `Size Inspector`에서 Image View의 `X=76, Y=147, Width=80, Height=80` 으로 조정합니다.
 
-<center><img src="/img/posts/CoreGraphics-24.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-24.png" width="450"></center> <br> 
 
 
 `Attributes Inspector`에서 `Content Mode`를 `Aspect Fit`으로 변경합니다. 그러면 이미지를 뷰에 알맞게 자동으로 리사이징 됩니다.
 
-<center><img src="/img/posts/CoreGraphics-25.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-25.png" width="450"></center> <br> 
 
 
 다시 `MedalView.swift`로 이동하여 medal생성하기 위한 매소드를 추가합니다.

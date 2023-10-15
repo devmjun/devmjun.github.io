@@ -122,7 +122,7 @@ item1.atrribute = 비율 * item2.atrribute + 간격
 
 ### Align
 
-<center><img src="/img/posts/constraints-5.jpg" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/constraints-5.jpg" width="450"></center> <br> 
 
 - 가로, 세로 정렬을 설정할수 있습니다. 
 

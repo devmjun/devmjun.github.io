@@ -48,7 +48,7 @@ Binary Search Tree는 두가지 룰이 있습니다
 
 이진 검색 트리의 성능을 설명하기 위해 몇 가지 일반적인 작업을 살펴보고 배열의 성능을 이진 검색 트리와 비교합니다. 
 
-<center><img src="/img/posts/BinarySearchTreeRay-1.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-1.png" width="500"></center> <br>
 
 
 ### Lookup 
@@ -57,17 +57,17 @@ Binary Search Tree는 두가지 룰이 있습니다
 
 이진 검색 트리는 큰값과 작은 값을 비교하며 값을 찾아갑니다. 따라서 BST에서 각 요소의 조회가 O(log n)인 이유입니다. 
 
-<center><img src="/img/posts/BinarySearchTrees-1.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTrees-1.png" width="500"></center> <br>
 
 ### Insertion 
 
 삽입 작업의 성능도 비슷한 이야기를 따릅니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-2.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-2.png" width="500"></center> <br>
 
 위의 예에서는 0이 배열 앞에 삽입되어 다른 모든 요소가 한 위치만큼 뒤로 이동 합니다. 배열에 값을 삽입하는 것은 O(n)의 시간 복잡도를 가집니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-3.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-3.png" width="500"></center> <br>
 
 BST에 대한 규칙을 활용하면 삽입 위치를 찾기 위해 세 번의 탐색 만 수행하면되며 주변의 모든 요소를 뒤섞어 쓸 필요가 없습니다! BST에 요소를 삽입하는 작업은 O(log n) 입니다.
 
@@ -75,11 +75,11 @@ BST에 대한 규칙을 활용하면 삽입 위치를 찾기 위해 세 번의 �
 
 삽입과 마찬가지로, 배열에서 요소를 제거하면 요소가 각 요소들이 이동합니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-4.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-4.png" width="500"></center> <br>
 
 다음은 BST에서 삭제입니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-5.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-5.png" width="500"></center> <br>
 
 제거할 노드의 자식 유무에 따라서 구현의 복잡성이 다르겠지만 BST에서 요소를 제거 하는 것은 여전히 O(log n) 입니다. 이진 검색 트리를 사용하면 추가, 제거 및 검색 작업의 횟수가 크게 줄어 듭니다. 
  
@@ -207,12 +207,12 @@ print(bst)
 
 아래 이미지의 트리는 불균형해보이지만, BST의 규칙을 따릅니다. 그러나 이 트리 레이아웃은 바람직하지 않은 결과를 가지고 있습니다. 
 
-<center><img src="/img/posts/BinarySearchTreeRay-6.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-6.png" width="500"></center> <br>
 
 
 불균형 트리는 성능에 영향을 줍니다. 불균형 트리에 추가로 5를 삽입하면 연산은 O(n) 연산이 됩니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-7.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-7.png" width="500"></center> <br>
 
 똑똑한 기법을 사용하여 균형 잡힌 구조를 유지하는 자체균형 트리의 구조를 만들 수 있지만. 여기서는 다루지 않습니다. 
 
@@ -259,31 +259,31 @@ traversal 을 통해서 모든 요소와 하나씩 비교하지 않고, root을 
 
 Leaf node가 삭제해야할 대상일때는 해당 대상을 찾고, 분리 하는 것만으로도 충분합니다. 
 
-<center><img src="/img/posts/BinarySearchTreeRay-8.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-8.png" width="500"></center> <br> 
 
 #### case2: Nodes with one child
 
 하나의 자식 노드를 가진 노드를 지울때는 남겨진 하나의 자식 노드를 지우려고 하는 노드의 부모 노드와 재연결 하는 작업이 필요합니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-9.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-9.png" width="500"></center> <br>
 
 #### case 3: Nodes with two children 
 
 두개의 자식 노드를 가지고 있는 노드를 지울때는 조금 복잡합니다. 아래의 이미지에서 25의 값을 가지고 있는 노드를 지운다고 상상합니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-10.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-10.png" width="500"></center> <br>
 
 25값을 가진 노드를 지웠을때의 딜레마를 찾아볼수 있습니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-11.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-11.png" width="500"></center> <br>
 
 12, 37 값을 가진 자식 노드를 재 연결 해야합니다. 그러나 부모 노드는 최대 두개의 자식 노드를 가질수 있습니다. 이때 지우려고 하는 노드의 오른쪽 서브 트리의 가장 작은 값으로 대체할수 있습니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-12.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-12.png" width="500"></center> <br>
 
 새 노드가 오른쪽 하위 트리에서 왔기 떄문에 왼족 하위 트리의 모든 노드가 새 노드보다 작은 값을 가집니다. 스왑을 수행 한 후에는 단순히 복사한 단말 노드의 값을 제거하면 됩니다.
 
-<center><img src="/img/posts/BinarySearchTreeRay-13.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/BinarySearchTreeRay-13.png" width="500"></center> <br>
 
 ```swift
 // 1

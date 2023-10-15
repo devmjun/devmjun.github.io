@@ -37,7 +37,7 @@ permalink: /archive/:title
 
 Apple Pay는 iOS 및 watchOS 앱 내에서 실제 상품 및 서비스, 기부금을 안전하게 지불 할 수있는 간편한 방법입니다. 사용자는 장치에 안전하게 저장된 자격 증명을 사용하여 지불을 승인하고 연락처 정보를 제공합니다.
 
-<center><img src="/img/posts/applePay.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay.png" width="382"></center> <br> 
 
 Apple Pay를 수락하는 앱은 사용 가능한 지불 옵션이있는곳 어디에서나 Apple Pay  mark를 표시하고 사용자가 지불 시트를 가져 오기 위해 두드리는 Apple 지불 버튼을 표시합니다. 결제하는 동안 결제 시트에는 Apple Pay에 연결된 신용 카드 또는 직불 카드, 구매 금액 (세금 및 수수료 포함), 배송 옵션 및 연락처 정보가 표시됩니다. 사용자는 필요한 조정을한 다음 지불을 승인하고 구매를 완료합니다.
 
@@ -56,25 +56,25 @@ Apple Pay를 수락하는 앱은 사용 가능한 지불 옵션이있는곳 어�
 
 사용자가 결제를 시작할 때마다 제품 세부 정보 페이지 또는 장바구니 페이지와 같은 앱에서 다음 버튼 중 하나를 사용합니다. Apple Pay가 설정되어있는 경우이 버튼을 누르면 사용자가 결제 프로세스를 완료 할 수있는 지불 시트가 표시됩니다. Apple Pay가 설정되지 않았다면 이 버튼을 탭하여 카드 추가 프로세스를 시작해야합니다. 명확성을 위해이 시나리오에서 Apple Pay 설정 버튼을 표시하는 것이 가장 좋습니다.
 
-<center><img src="/img/posts/applePay-1.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-1.png" width="382"></center> <br> 
 
 #### - Apple Pay Button 설정 
 
 기기가 Apple Pay를 지원하지만 Apple Pay가 아직 설정되지 않은 경우 체크 아웃 페이지 버튼을 표시하는 것을 고려하십시오. 버튼을 누르면 카드를 추가하는 과정이 시작됩니다. 사용자가 카드를 추가하면 결제 프로세스로 돌아가 거래를 완료합니다. Apple Pay가 설정되지 않은 상태에서 다른 Apple Pay 버튼이 똑같은 동작을 보이더라도 Set Up Apple Pay 버튼이 가장 명확합니다. 이 버튼은 사용자 프로필 화면과 같이 체크아웃하지 않은 페이지에도 표시 될 수 있습니다.
 
-<center><img src="/img/posts/applePay-2.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-2.png" width="382"></center> <br> 
 
 #### - Apple Pay Button 으로 기부하세요
 
 [승인 된 비영리 단체](https://developer.apple.com/support/apple-pay-nonprofits/)는 이 버튼을 사용하여 기부를 용이하게 할 수 있습니다. Apple 지불 기부 버튼을 지원하지 않는 구형 시스템을 실행하는 디바이스에서는 대신 Apple 지불 버튼을 표시하십시오.
 
-<center><img src="/img/posts/applePay-3.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-3.png" width="382"></center> <br> 
 
 #### - Apple Pay Button으로 지불하세요
 
 은행 및 신용 카드 발급 기관은이 버튼을 사용하여 실제 매장에서 구매할 때 월렛 앱에서 카드를 신속하게 가져올 수 있습니다.
 
-<center><img src="/img/posts/applePay-4.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-4.png" width="382"></center> <br> 
 
 #### - 스타일
 
@@ -84,19 +84,19 @@ Apple Pay Button을 표시하기위한 몇 가지 옵션이 있습니다.
 
 충분한 대비를 제공하는 흰색 또는 밝은 색의 배경에 사용하십시오. 검정 또는 어두운 배경에는 사용하지 마십시오.
 
-<center><img src="/img/posts/applePay-5.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-5.png" width="382"></center> <br> 
 
 #### - 흰색의 윤곽선 규칙 
 
 충분한 대비를 제공하지 않는 흰색 또는 밝은 색의 배경에 사용하십시오. 어둡거나 포화 된 배경에 놓지 마십시오.
 
-<center><img src="/img/posts/applePay-6.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-6.png" width="382"></center> <br> 
 
 #### - White
 
 충분한 대비를 제공하는 어둡거나 밝은 배경에 사용하십시오.
 
-<center><img src="/img/posts/applePay-7.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-7.png" width="382"></center> <br> 
 
 ### 크기 및 위치
 
@@ -104,13 +104,13 @@ Apple Pay Button을 표시하기위한 몇 가지 옵션이 있습니다.
 
 모든 Apple Pay Button의 최소 너비는 32pt (32px @1x, 64px @2x)입니다.
 
-<center><img src="/img/posts/applePay-8.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-8.png" width="382"></center> <br> 
 
 #### - 최소한의 공간 확보
 
 Apple Pay Button 주위에 필요한 최소 공간은 버튼의 높이의 1/10입니다. 그래픽 및 텍스트와 같은 다른 콘텐츠는 이 공간을 침해해서는 안됩니다.
 
-<center><img src="/img/posts/applePay-9.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-9.png" width="382"></center> <br> 
 
 #### - Apple Pay Button을 눈에 잘 띄게 표시하십시오
 
@@ -124,7 +124,7 @@ Apple Pay 버튼을 장바구니에 추가 버튼의 오른쪽 또는 위에 놓
 
 Apple Paymark 그래픽을 사용하여 비슷한 방법으로 다른 지불 옵션을 표시 할 때 Apple Pay가 사용 가능한 지불 옵션임을 알리십시오. Apple Paymark 그래픽 및 사용 지침을 [여기](http://images.apple.com/apple-pay/downloads/Apple_Pay_Payment_Mark.zip)에서 다운로드 하십시오.
 
-<center><img src="/img/posts/applePay-10.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-10.png" width="700"></center> <br> 
 
 #### - 텍스트로 Apple Pay 참조하기
 
@@ -138,7 +138,7 @@ Apple Paymark 그래픽을 사용하여 비슷한 방법으로 다른 지불 옵
 
 미국에서는 Apple Pay가 본문에 처음 나타날 때 등록 된 상표 기호 (®)를 사용하십시오. Apple Pay가 체크 아웃 중에 선택 옵션으로 나타나면 등록 상표 기호를 포함하지 마십시오.
 
-<center><img src="/img/posts/applePay-11.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-11.png" width="700"></center> <br> 
 
 #### - font-face와 크기를 앱으로 조정하십시오
 
@@ -229,7 +229,7 @@ Apple Pay 정보가 완전하고 최신이라고 가정합니다. 앱에 기존 
 
 앱을 통해 [승인된 비영리 단체](https://developer.apple.com/support/apple-pay-nonprofits/) 기부금을 구매 항목에 추가 할 수있는 경우 기부금을 개별적으로 기재하면 최대의 명확성을 얻을 수 있습니다. 관련 지침은 아래의 `Accepting Donations` 참조하십시오 .
 
-<center><img src="/img/posts/applePay-12.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-12.png" width="382"></center> <br> 
 
 #### - 광고 항목을 짧게 유지하십시오
 
@@ -243,7 +243,7 @@ Apple Pay 정보가 완전하고 최신이라고 가정합니다. 앱에 기존 
 
 일부 앱에서는 결제시 총 비용을 알 수 없습니다. 예를 들어 거리 나 시간을 기준으로 자동차를 타는 가격은 결제 후 변경 될 수 있습니다. 또는 고객이 제품을 배송 한 후에 팁을 추가하려고 할 수 있습니다. 이와 같은 상황에서는 지불 시트에 명확한 설명과 "AMOUNT PENDING(지불 보류)"라고 표시된 부분을 입력하십시오. 특정 금액을 사전 승인하는 경우 지불 시트에이 정보가 정확하게 반영되어 있는지 확인하십시오.
 
-<center><img src="/img/posts/applePay-13.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/applePay-13.png" width="382"></center> <br> 
 
 #### - 데이터 입력 및 지불 오류를 정상적으로 처리하십시오
 
@@ -391,7 +391,7 @@ Apple의 AR(Augmented Reality) 기술인 ARKit은 가상 물체를 실제 세계
 
 ## 증강현실 속으로 들어가기
 
-<center><img src="/img/posts/Augmented_Reailty-2.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Augmented_Reailty-2.png" width="500"></center> <br> 
 
 #### - 초기화가 발생할때 표시하고 사용자를 참여시킵니다
 
@@ -495,13 +495,13 @@ AR에서 표면 경계는 사용자 주변을 더 자세히 분석 할 때 바�
 
 AR 이미지 주위에 필요한 최소 공간은 글립의 높이의 10%입니다. 다른 요소가 이 공간을 침범하거나 어떤 방식 으로든 AR 이미지를 가리지 않도록하십시오.
 
-<center><img src="/img/posts/Augmented_Reailty-14.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Augmented_Reailty-14.png" width="382"></center> <br> 
 
 #### - AR 벳지
 
 제품 또는 다른 객체의 컬렉션을 포함하는 앱은 뱃지를 사용하여 ARKit을 사용하여 AR에서 볼 수있는 특정 항목을 식별 할 수 있습니다. 예를 들어 백화점 앱은 배지를 사용하여 사람들이 구매하기 전에 집에서 미리 볼 수있는 가구를 표시 할 수 있습니다.
 
-<center><img src="/img/posts/Augmented_Reailty-15.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Augmented_Reailty-15.png" width="500"></center> <br> 
 
 #### - AR 배지는 의도 한대로 사용하고 변경하지 마십시오
 
@@ -559,7 +559,7 @@ GameKit은 멋진 소셜 게임을 만드는데 사용할수있는 기능을 제
 
 Health 앱은 iOS의 건강 및 피트니스 데이터를위한 중앙 저장소 역할을합니다. 사용자의 권한으로 HealthKit으로 구축된 앱은 Health 앱과 통신하여 정보에 액세스하고 정보를 공유 할 수 있습니다. 사용자는 영양앱을 허용하여 체중 및 활동 데이터를 검색 할 수 있으므로 앱에서 칼로리 소비 목표를 정의하고 섭취권장사항을 작성할 수 있습니다. 영양 앱은 Health 앱에 실제로 소비된 칼로리수를 전세계  메트릭에 포함시키고 다른 앱과 공유하도록 보낼 수도 있습니다.
 
-<center><img src="/img/posts/healthKit.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/healthKit.png" width="382"></center> <br> 
 
 #### - 유효한 이유로 건강 데이터에 대한 액세스를 요청하십시오
 
@@ -635,7 +635,7 @@ Activity Ring 요소는 링 사이의 거리보다 작은 최소 외부 여백�
 
 HomeKit을 사용하면 iPhone, iPad 및 Apple Watch에서 Siri 또는 Home 앱을 사용하여 사람들이 가정에서 연결된 액세서리를 안전하게 제어 할 수 있습니다. iOS에서 홈 앱을 사용하면 사용자가 액세서리를 관리하고 구성 할 수 있습니다. iOS, tvOS 또는 watchOS 앱은 HomeKit과 통합되어 맞춤 또는 브랜드 홈 오토메이션 환경을 제공 할 수도 있습니다.
 
-<center><img src="/img/posts/homeKit.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit.png" width="700"></center> <br> 
 
 #### - HomeKit 용어
 
@@ -685,15 +685,15 @@ HomeKit에서 집은 실제 집, 사무실 또는 사용자와 관련된 다른 
 
 `Scenes`은 하나 이상의 주변 장치와 한개 이상의 서비스를 제어하기위한 그룹입니다. 누군가는 예를 들어, 거실에서 빛을 어둡게하고 조명을 켜고 음영을 높이고 부엌에서 커피 메이커를 시작하는 아침 장면을 낮추는 영화 시간 Scenes을 만들 수 있습니다.
 
-<center><img src="/img/posts/homeKit-13.gif" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-13.gif" width="500"></center> <br> 
 
-<center><img src="/img/posts/homeKit-14.gif" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-14.gif" width="500"></center> <br> 
 
 #### - 자동화
 
 자동화 기능을 사용 하면 위치가 변경되거나 특정 시간이 발생하거나 다른 액세서리가 켜지거나 꺼지는 경우 또는 센서가 무언가를 감지할때 액세서리가 특정 상황에 반응합니다. 예를 들어 석양이나 차도를 세울때 집 등을 켜려면 자동화가 사용될 수 있습니다.
 
-<center><img src="/img/posts/homeKit-15.gif" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-15.gif" width="500"></center> <br> 
 
 #### - 훌륭한 경험을 제공하십시오.
 
@@ -750,13 +750,13 @@ HomeKit 액세서리는 시간, 위치 및 기타 액세서리의 동작과 같�
 
 혼란이나 불만을 야기 할 수있는 은어 및 전문 용어를 사용하지 마십시오. 일관성 있고 친숙한 경험을 제공하기 위해 표준 홈 킷 용어 (home, room, zone, accessory, automation)를 사용하십시오.
 
-<center><img src="/img/posts/homeKit-16.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-16.png" width="382"></center> <br> 
 
 #### - 서비스와 특성을 언급 할 때 일상 언어를 사용하십시오
 
 서비스의 경우 Kitchen Light 및 Kitchen Fan 과 같은 용어를 사용하십시오. 특성을 위해서는 `brightness` 와 `speed` 와 같은 용어를 사용하십시오.
 
-<center><img src="/img/posts/homeKit-17.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-17.png" width="382"></center> <br> 
 
 #### - 적절한 통제를 사용하여 사람들이 특성을 바꾸는것이 가능하게하십시오
 
@@ -778,7 +778,7 @@ Siri는 home, room, zone, service 및 scene 이름이 고유해야한다고 요�
 
 HomeKit 응용 프로그램을 디자인 할 때 특정 액세서리의 사용자 경험을 고려하십시오
 
-<center><img src="/img/posts/homeKit-18.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/homeKit-18.png" width="382"></center> <br> 
 
 ### - 홈 키트 카메라
 
@@ -802,7 +802,7 @@ HomeKit 응용 프로그램은 연결된 HomeKit IP 카메라에서 스틸 이�
 
 iCloud는 사람들이 명시적인 동기화를 수행하지 않고 모든 장치에서 사진, 비디오, 문서 등 관심있는 콘텐츠에 원활하게 액세스 할 수 있게 해주는 서비스입니다. iCloud의 기본 요소는 투명성입니다. 사람들은 콘텐츠가 어디에 있는지 알 필요가 없습니다. 그들은 항상 최신 버전에 액세스하고 있다고 가정 할 수 있습니다.
 
-<center><img src="/img/posts/iClould.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/iClould.png" width="500"></center> <br> 
 
 #### - iCloud로 앱을 쉽게 사용할 수 있습니다
 
@@ -848,7 +848,7 @@ iCloud 계정을 가진 사람들은 자신의 콘텐츠를 보편적으로 사�
 
 인앱 구매를 통해 사용자는 앱 내에서 프리미엄 콘텐츠, 디지털 상품 및 구독과 같은 가상 상품을 안전하게 구매할 수 있습니다. App Store를 통해 직접 인앱 구매를 홍보하고 제공 할 수도 있습니다. 식료품 및 체육관 멤버십과 같은 실제 상품 및 서비스를 판매 하려면 Apple Pay 또는 기타 지불 방법을 사용하십시오.
 
-<center><img src="/img/posts/In-app_purchase.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/In-app_purchase.png" width="382"></center> <br> 
 
 #### - 구매하기 전에 사람들이 앱을 경험하게하십시오
 
@@ -900,7 +900,7 @@ iCloud 계정을 가진 사람들은 자신의 콘텐츠를 보편적으로 사�
 
 라이브 사진은 사운드가 풍부하고 모션이 풍부한 인터랙티브 경험에서 좋아하는 추억을 캡처하여 기존 스틸 사진에 활력을 더합니다. 이 기능을 사용하면 카메라 앱이 사진을 찍기 전후에 오디오 및 추가 프레임을 포함한 추가 콘텐트를 캡처합니다. 삶의 모습을 보려면 라이브 사진을 누르기만 하면됩니다.
 
-<center><img src="/img/posts/LivePhoto.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/LivePhoto.png" width="382"></center> <br> 
 
 #### - 모든 프레임에 조정을 적용하십시오
 
@@ -950,13 +950,13 @@ Live Photo을 식별하는 가장 좋은 방법은 움직임의 힌트를 찾는
 
 #### - Onboarding 화면을 항상 올바른 순서로 표시하십시오. <br> 
 
-<center><img src="/img/posts/ResearchKit.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit.png" width="700"></center> <br> 
 
 ### - 1. Introduction
 
 정보를 제공하고 행동 강령을 제공하는 소개를 제공하십시오. 연구의 주제와 목적을 명확하게 설명하십시오. 또한 기존 참가자가 신속하게 로그인하여 진행중인 학습을 계속할 수 있습니다.
 
-<center><img src="/img/posts/ResearchKit-1.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-1.png" width="382"></center> <br> 
 
 ### - 2. Determine Eligibility
 
@@ -964,7 +964,7 @@ Live Photo을 식별하는 가장 좋은 방법은 움직임의 힌트를 찾는
 
 사람들은 연구 대상자가 아닌 경우 동의 섹션으로 이동할 필요가 없습니다. 귀하의 연구에 필요한 자격 요건만 제시하십시오. 요구 사항을 설명하는 간단하고 직선적 인 언어를 사용하고 정보를 쉽게 입력하십시오
 
-<center><img src="/img/posts/ResearchKit-2.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-2.png" width="382"></center> <br> 
 
 ### - 3. Get Informed Consent
 
@@ -976,19 +976,19 @@ ResearchKit을 사용하면 동의 절차를 간결하고 친숙하게 처리 �
 
 각 섹션은 데이터 수집, 데이터 사용, 잠재적 이익, 가능한 위험, 시간 투입, 철수 방법 등과 같이 연구의 한 측면을 다룰 수 있습니다. 각 섹션에 대해 간단하고 직관적 인 언어를 사용하여 높은 수준의 개요를 제공하십시오. 필요한 경우, 자세히 알아보기 단추를 눌러 참가자가 읽을수있는 섹션에 대한 자세한 설명을 제공하십시오. 참가자는 동의하기 전에 전체 동의서를 볼 수 있어야합니다.
 
-<center><img src="/img/posts/ResearchKit-3.gif" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-3.gif" width="382"></center> <br> 
 
 #### - 참가자의 이해를 테스트하는 퀴즈를 제공하십시오
 
 참가자가 직접 동의서를받을때 참가자에게 질문 할 질문을 할 수 있습니다
 
-<center><img src="/img/posts/ResearchKit-4.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-4.png" width="382"></center> <br> 
 
 #### - 참가자의 동의를 얻고, 적절한 경우 연락처 정보를 얻습니다
 
 연구에 참여하기로 동의 한 후 참가자는 확인 대화 상자를 받게되며, 확인 대화 상자에는 서명과 연락처 정보가 제공되는 화면이 있어야합니다. 대부분의 연구 응용 프로그램은 참가자들에게 자신의 기록에 대한 동의 양식의 PDF 버전을 전자 메일로 보냅니다.
 
-<center><img src="/img/posts/ResearchKit-5.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-5.png" width="382"></center> <br> 
 
 ### - 4. Request Permission to Access Data
 
@@ -996,7 +996,7 @@ ResearchKit을 사용하면 동의 절차를 간결하고 친숙하게 처리 �
 
 연구용 앱이 위치, 건강 또는 기타 데이터에 액세스해야하는 이유를 분명히 설명하고 연구에 중요하지 않은 데이터에 대한 액세스를 요청하지 마십시오. 앱에서 요구하는 경우 참가자의 기기에 알림을 전송할 수있는 권한을 요청하십시오.
 
-<center><img src="/img/posts/ResearchKit-6.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-6.png" width="382"></center> <br> 
 
 ### - Conducting Research
 
@@ -1013,7 +1013,7 @@ ResearchKit은 설문 조사에 사용할수있는 많은 사용자 지정 가�
 - 몇 가지 추가 설명이 필요한 질문의 경우 질문에 표준 글꼴을 사용하고 설명 텍스트에는 약간 더 작은 글꼴을 사용하십시오.
 - 설문 조사가 완료되면 참가자들에게 알려주십시오. <br>
 
-<center><img src="/img/posts/ResearchKit-7.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-7.png" width="382"></center> <br> 
 
 #### - 능동적인 일을 쉽게 이해가능하게 합니다
 
@@ -1023,7 +1023,7 @@ ResearchKit은 설문 조사에 사용할수있는 많은 사용자 지정 가�
 - 특정 시간 또는 특정 상황에서 작업을 수행해야하는 경우와 같은 요구 사항을 설명하십시오.
 - 참가자가 작업이 완료되면 알려줄수 있는지 확인하십시오. <br>
 
-<center><img src="/img/posts/ResearchKit-8.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-8.png" width="382"></center> <br> 
 
 ### 개인 정보 관리 및 격려
 
@@ -1033,13 +1033,13 @@ ResearchKit에는 참가자가 연구용 앱에있는 동안 개인 정보를 �
 
 프로필 화면을 사용하여 학습 과정에서 변경될수있는 데이터(예: 체중 또는 수면 습관)를 편집하고 향후 활동을 상기시킵니다. 프로필 화면을 사용하면 동의 문서 및 개인 정보 취급 방침과 같은 중요한 정보를 볼수있는 손쉬운 방법을 제공 할 수 있습니다. <br>
 
-<center><img src="/img/posts/ResearchKit-9.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-9.png" width="382"></center> <br> 
 
 #### - 대시 보드를 사용하여 진행 상황을 보여주고 참가자들에게 계속해서 동기를 부여하십시오
 
 연구에 적합한 경우 대시 보드를 사용하여 일일 진행, 주간 평가, 특정 활동의 결과 및 참여자의 결과와 다른 사람들이 집계한결과를 비교하는 등의 고무적인 피드백을 제공하십시오.
 
-<center><img src="/img/posts/ResearchKit-10.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/ResearchKit-10.png" width="382"></center> <br> 
 
 ---
 
@@ -1047,7 +1047,7 @@ ResearchKit에는 참가자가 연구용 앱에있는 동안 개인 정보를 �
 
 사람들은 현재 상황에 상관없이 자신이 좋아하는 소셜 미디어 계정에 빠르게 액세스 할 수 있기를 기대합니다. iOS를 사용하면 콘텐츠를 공유하고 활동 피드를 표시하는 등 소셜 미디어 상호 작용을 앱에 쉽게 통합할수 있습니다.<br>
 
-<center><img src="/img/posts/Social_Media.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Social_Media.png" width="382"></center> <br> 
 
 #### - 사람들이 로그인하도록 요청하지 마십시오
 
@@ -1065,7 +1065,7 @@ iOS는 소셜 미디어 계정에 액세스하기 SSO(Single sign-on model)을 �
 
 사람들은 Wallet 앱을 사용하여 작은 종이 또는 플라스틱 조각에 인쇄되고 실제 지갑에 보관된 정보의 패스 디지털 표현을보고 관리합니다. 출입증은 비행기 탑승, 경기장 입장, 할인을받는 것과 같이 현실 세계에서 행동을 취하는데 사용됩니다. 월렛에는 Apple Pay에서 사용한 신용 카드, 직불 카드 및 점포 카드도 저장됩니다.
 
-<center><img src="/img/posts/Wallet.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Wallet.png" width="382"></center> <br> 
 
 #### - Types of Passes 
 

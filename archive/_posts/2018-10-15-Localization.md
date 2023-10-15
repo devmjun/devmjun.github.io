@@ -199,7 +199,7 @@ Xcode는 파일의 언어를 확인하기 위한 얼럿을 보여줍니다. 기�
 
 프로젝트 네비게이터를 보세요. `Localizable.strings` 옆에 펼침 삼각형(disclosure triangle)이 있습니다. 목록을 확장하면 English, Spanish 버전 두개의 버전이 Xcode에 목록으로 표시된것을 볼수 있습니다.
 
-<center><img src="/img/posts/Localization-3.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/Localization-3.png" width="450"></center> <br> 
 
 
 프로젝트 네비게이터에서 `Localizable.strings(Spanish)`를 선택하고 컨텐츠들을 다음과 같이 변경합니다. 
@@ -218,7 +218,7 @@ Xcode는 시뮬레이터에서 언어(languages) 또는 지역(locale)이 계속
 
 앱을 빌드하고 실행합니다. `¿Es bueno?`버튼을 클릭했을때 다음과 같이 볼수 있습니다. 
 
-<center><img src="/img/posts/Localization-5.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/Localization-5.png" width="450"></center> <br> 
 
 
 앱에는 스페인어가 존재합니다!
@@ -415,7 +415,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 
 빌드하고 실행합니다. `You like?`를 탭하여 3개의 모든 값의 문법이 정확한지 확인할때까지 시행합니다. 그리고 코드를 조금도 변경하지 않았습니다! 복수 처리를 얻기위해 앱을 국제화하는것의 가치는 공짜입니다.
 
-<center><img src="/img/posts/Localization-13.png" width="450"></center>
+<center><img src="/assets/post_img/posts/Localization-13.png" width="450"></center>
 
 스키마의 `Application Languagu`를 `Spanish`로 변경하고 빌드하고 실행합니다. `¿Es bueno?`를 몇번 탭하여 현지화가 올바르게 작동하는지 확인합니다. 
 

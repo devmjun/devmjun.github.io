@@ -42,7 +42,7 @@ permalink: /archive/:title
 
 시스템 버튼은 종종 Navigation Bar 와 Toolbar에 나타나지만 어디에서나 사용할 수 있습니다.
 
-<center><img src="/img/posts/button.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/button.png" width="500"></center> <br> 
 
 #### - 제목에 동사를 사용하십시오
 
@@ -66,7 +66,7 @@ permalink: /archive/:title
 
 Detail Disclosure 버튼은 화면상의 특정 항목과 관련된 추가 정보 또는 기능을 포함하는보기(일반적으로 모달뷰)를 띄우게 됩니다. 어떤뷰 에서도 사용할 수 있지만 Detail Disclosure 버튼은 일반적으로 테이블에서 특정 행에 대한 정보에 액세스하는 데 사용됩니다.
 
-<center><img src="/img/posts/button-1.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/button-1.png" width="500"></center> <br> 
 
 #### - 테이블뷰 에서 Detail Disclosure 버튼을 적절하게 사용하십시오
 
@@ -78,7 +78,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 정보 버튼은 주변의뷰를 뒤집은 후 현재뷰의 뒷면에있는 앱에 대한 구성 세부 정보를 표시합니다. 정보 버튼은 밝은 부분과 어두운 부분의 두 가지 스타일로 제공됩니다. 앱의 디자인과 가장 잘 조화되고 화면 상에 손실되지 않는 스타일을 선택하십시오.
 
-<center><img src="/img/posts/button-2.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/button-2.png" width="500"></center> <br> 
 
 개발자 지침의 경우,[UIButtonTypeInfoLight](https://developer.apple.com/documentation/uikit/uibuttontype/uibuttontypeinfolight) 및 [UIButtonTypeInfoDark](https://developer.apple.com/documentation/uikit/uibuttontype/uibuttontypeinfodark) 의 버튼 타입 있는 [UIButton](https://developer.apple.com/documentation/uikit/uibutton)을 참조하세요.
 
@@ -86,7 +86,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 사용자는 연락처 추가 버튼을 탭하여 기존 연락처 목록을 탐색하고 텍스트 필드나 다른뷰에 삽입할 연락처를 선택할 수 있습니다. 예를 들어 메일의 경우 메시지의 받는사람 필드에있는 연락처 추가 단추를 눌러 연락처 목록에서 받는사람을 선택할 수 있습니다.
 
-<center><img src="/img/posts/button-3.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/button-3.png" width="500"></center> <br> 
 
 #### - 연락처 추가 버튼 외에도 키보드 입력을 허용합니다
 
@@ -100,7 +100,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 사람들은 텍스트 필드, 텍스트뷰, 웹뷰 또는 이미지뷰에서 요소를 누르고 잡고 두번 탭하여 내용을 선택하고 복사 및 붙여 넣기와 같은 편집 옵션을 표시 할 수 있습니다.
 
-<center><img src="/img/posts/Edit_Menus.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Edit_Menus.png" width="500"></center> <br> 
 
 #### - 현재 상황에 맞는 명령을 보여줍니다
 
@@ -150,7 +150,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 레이블은 화면상의 인터페이스 요소를 설명하거나 짧은 메시지를 제공합니다. `사람들은 라벨을 편집 할 수 없지만 때때로 라벨의 내용을 복사 할 수 있습니다`. 레이블은 정적 텍스트를 얼마든지 표시 할 수 있지만 짧게 유지하는 것이 가장 좋습니다.
 
-<center><img src="/img/posts/Labels.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Labels.png" width="500"></center> <br> 
 
 #### - 레이블을 읽기 쉽게하십시오
 
@@ -164,7 +164,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 페이지 컨트롤은 페이지의 플랫 목록에 현재 페이지의 위치를 ​​보여줍니다. 사용 가능한 페이지가 열린 순서대로 표시되는 일련의 작은 표시기 점으로 나타납니다. 단색 점은 현재 페이지를 시각적으로 나타냅니다. 이 점들은 항상 같은페이지에 있으며, 화면에 너무 많이 나타나면 잘립니다. 사용자는 페이지 컨트롤의 앞 또는 뒤 가장자리를 탭하여 다음 또는 이전 페이지를 방문 할 수 있지만 특정 점을 탭하여 특정 페이지로 이동할 수는 없습니다. 탐색은 항상 페이지를 한쪽으로 스와이프하여 순차적으로 발생합니다.
 
-<center><img src="/img/posts/Page_Controls.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Page_Controls.png" width="500"></center> <br> 
 
 
 #### - 계층 구조 페이지와 함께 페이지 컨트롤을 사용하지 마십시오
@@ -187,7 +187,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 picker뷰는 하나 이상의 선택 가능한 값을 가진 하나 이상의 스크롤 가능한 고유 값 목록을 포함하며 뷰의 가운데에있는 어두운 텍스트에 나타납니다. picker뷰는 종종 사용자가 필드를 편집하거나 메뉴를 두드릴 때 화면의 맨 아래 또는 팝 오버에 표시됩니다. 달력 이벤트에서 날짜를 편집하는 경우와 같이 선택 도구가 인라인으로 나타날 수도 있습니다. picker의 도구의 높이는 약 5행의 목록 값의 높이입니다. 선택 도구의 너비는 장치 및 컨텍스트에 따라 화면 너비 또는 컨텐츠뷰의 너비 중 하나입니다.
 
-<center><img src="/img/posts/Pickers.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Pickers.png" width="382"></center> <br> 
 
 #### - 예측 가능하고 논리적으로 정렬 된 값을 사용하십시오
 
@@ -207,7 +207,7 @@ picker뷰는, 편집중인 필드 아래 또는 근접하여 표시 될때 잘 �
 
 날짜 선택 도구는 특정 날짜, 시간 또는 둘을 선택하기위한 효율적인 인터페이스입니다. 카운트 다운 타이머를 표시하기위한 인터페이스도 제공합니다.
 
-<center><img src="/img/posts/Pickers-1.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Pickers-1.png" width="382"></center> <br> 
 
 날짜 선택 도구에는 네 가지 모드가 있으며 각 모드는 서로 다른 선택 가능한 값 집합을 제공합니다.
 
@@ -236,7 +236,7 @@ picker뷰는, 편집중인 필드 아래 또는 근접하여 표시 될때 잘 �
 
 activity indicator는 복잡한 데이터로드 또는 동기화와 같은 결정할 수없는 작업이 수행되는 동안 회전합니다. 작업이 완료되면 사라집니다. 활동 표시기는 비대화식입니다
 
-<center><img src="/img/posts/Progrss_Indicator.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Progrss_Indicator.png" width="500"></center> <br> 
 
 #### - activity indicator보다 Progress bars 을 사용하십시오
 
@@ -256,7 +256,7 @@ activity indicator는 복잡한 데이터로드 또는 동기화와 같은 결�
 
 Progress Bars에는 왼쪽에서 오른쪽으로 채워지는 트랙이 포함되어있어 알려진 지속 시간의 작업 진행을 보여줍니다. Progress Bars는 비 인터렉션형 이지만 대개 해당 작업을 취소하기위한 단추가 함께 제공됩니다.
 
-<center><img src="/img/posts/Progrss_Indicator-1.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Progrss_Indicator-1.png" width="500"></center> <br> 
 
 #### - 항상 진행 상황을 정확하게 보고하십시오
 
@@ -280,7 +280,7 @@ Progress Bars의 모양은 앱의 디자인과 일치하도록 조정할 수 있
 
 iPhone X를 제외한 모든 장치에서 네트워킹이 진행됨에 따라 화면 상단의 상태 표시 줄에 네트워크 작동 표시기가 나타납니다. 네트워킹이 완료되면 사라집니다. 이 표시기는 활동 표시기와 모양이 같으며 비 대화식입니다.
 
-<center><img src="/img/posts/Progrss_Indicator-2.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Progrss_Indicator-2.png" width="500"></center> <br> 
 
 #### - 몇 초 이상 지속되는 네트워크 작동에 대해서만이 표시기를 표시하십시오
 
@@ -294,7 +294,7 @@ iPhone X를 제외한 모든 장치에서 네트워킹이 진행됨에 따라 �
 
 새로 고침 컨트롤이 수동으로 시작되어 다음 자동 콘텐츠 업데이트가 발생할 때까지 기다리지 않고 일반적으로 테이블뷰에서 콘텐츠를 즉시 다시로드합니다. 새로 고침 컨트롤은 특수한 유형의 activity indicator로, 기본적으로 숨겨져 있으며 다시로드할 뷰에서 아래로 당길때 표시됩니다. 예를 들어 Mail에서받은 편지함 목록을 끌어서 새 메시지를 확인할 수 있습니다.
 
-<center><img src="/img/posts/Refresh_Control.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Refresh_Control.png" width="500"></center> <br> 
 
 #### - 자동 컨텐츠 업데이트를 수행하십시오
 
@@ -312,7 +312,7 @@ iPhone X를 제외한 모든 장치에서 네트워킹이 진행됨에 따라 �
 
 분리화된 컨트롤은 두개 이상의 세그먼트로 구성된 선형 세트입니다. 각 세그먼트는 상호 배타적인 버튼으로 작동합니다. 컨트롤 내에서 모든 세그먼트의 너비는 동일합니다. 버튼과 마찬가지로 세그먼트에는 텍스트나 이미지가 포함될 수 있습니다. 분할 된 컨트롤은 종종 다른보기를 표시하는 데 사용됩니다. 예를 들어 지도에서 세그먼트 컨트롤을 사용하면지도, 대중 교통 및 위성보기간에 전환 할 수 있습니다.
 
-<center><img src="/img/posts/Segemented_Control.png" width="385"></center> <br> 
+<center><img src="/assets/post_img/posts/Segemented_Control.png" width="385"></center> <br> 
 
 #### - 유용성을 높이기 위해 세그먼트 개수를 제한하십시오
 
@@ -338,7 +338,7 @@ Segmented Control 배경 모양을 변경하는 경우 내용이 여전히보기
 
 슬라이더는 엄지라고하는 컨트롤이있는 가로 트랙으로 손가락으로 슬라이드하여 미디어 재생 중에 화면 밝기 레벨이나 위치와 같이 최소값과 최대값 사이를 이동할 수 있습니다. 슬라이더의 값이 변경되면 최소 값과 썸 사이의 트랙 부분이 색상으로 채워집니다. 슬라이더는 선택적으로 최소 및 최대 값의 의미를 나타내는 왼쪽 및 오른쪽 아이콘을 표시 할 수 있습니다.
 
-<center><img src="/img/posts/Slider.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/Slider.png" width="500"></center> <br> 
 
 #### - 값을 추가하면 슬라이더의 모양을 사용자 정의하십시오
 
@@ -356,7 +356,7 @@ Segmented Control 배경 모양을 변경하는 경우 내용이 여전히보기
 
 스테퍼는 값을 늘리거나 줄이기 위해 사용되는 2세그먼트 컨트롤입니다. 기본적으로 스테퍼의 한 세그먼트는 더하기 기호를 표시하고 다른 세그먼트는 빼기 기호를 표시합니다. 원하는 경우 이러한 기호를 사용자 지정 이미지로 바꿀 수 있습니다.
 
-<center><img src="/img/posts/Steeper.png" width="382"></center> <br> 
+<center><img src="/assets/post_img/posts/Steeper.png" width="382"></center> <br> 
 
 #### - 스테퍼에 의해 영향을받은 값을 분명히하십시오
 
@@ -403,7 +403,7 @@ Steppers는 약간의 탭이 필요한 작은 변경 작업에 적합합니다. 
 
 텍스트 필드는 둥근 모서리가있는 고정 길이의 `한 줄짜리 필드로`, 사용자가 텍스트 필드를 누를때 자동으로 키보드를 가져옵니다. 텍스트 필드를 사용하여 이메일 주소와 같은 소량의 정보를 요청하십시오.
 
-<center><img src="/img/posts/TextField.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/TextField.png" width="500"></center> <br> 
 
 #### - 텍스트 필드에 힌트를 표시하여 의사 소통을 돕습니다
 

@@ -36,7 +36,7 @@ permalink: /archive/:title
 
 1. Target — Build Setting 에서 Optimization Level의 디버그 항목을 None 으로 최적화 레벨을 조정합니다.
 
-<center><img src="/img/posts/SwiftCompiler.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler.png" width="700"></center> <br> 
 
 ---
 
@@ -44,11 +44,11 @@ permalink: /archive/:title
 
 2. 빌드세팅의 `User-Defined` 항목으로 `SWIFT_WHOLE_MODULE_OPTIMIZATION = YES`을 추가합니다. 
 
-<center><img src="/img/posts/SwiftCompiler-1.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-1.png" width="700"></center> <br> 
 
 `+`버튼을 눌러서 추가합니다.
 
-<center><img src="/img/posts/SwiftCompiler-2.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-2.png" width="700"></center> <br> 
 
 추가완료!
 
@@ -60,7 +60,7 @@ permalink: /archive/:title
 
 dSYM (디버그 기호 파일)은 디버깅 정보를 가져 와서 dSYM 번들에 저장하는 파일이다. 이것은 프로젝트를 컴파일할때마다 생성되는데 디버깅시에는 DWARF 값이 변경되기때문에 사실상 필요가 없어 릴리즈 모드시에만 적용하도록 합니다.
 
-<center><img src="/img/posts/SwiftCompiler-3.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-3.png" width="700"></center> <br> 
 
 ---
 
@@ -70,7 +70,7 @@ dSYM (디버그 기호 파일)은 디버깅 정보를 가져 와서 dSYM 번들�
 
 File -> Project Settings 에서 DerivedData 를 선택하면 해당 폴더에 접근이 가능합니다. 이것을 삭제하도록 합니다. 지워도 되나 싶을수 있지만 염려할 필요는 없습니다. 프로젝를 실행하면 다시 생성되기 때문입니다. 잊지 말아야할 것은 데이터를 지우고 프로젝트를 클린해야한다는 것입니다. (CMD+Shift+K)
 
-<center><img src="/img/posts/SwiftCompiler-4.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-4.png" width="700"></center> <br> 
 
 ---
 
@@ -114,11 +114,11 @@ Xcode 9를 통해서 Apple은 [WWDC 2017](https://developer.apple.com/videos/pla
 
 Xcode 자체에서 새 빌드 시스템을 사용하도록 설정하여 앱을 개발하는 동안 모든 기능을 사용할 수 있게 하는것이 좋습니다. <br>
 
-<center><img src="/img/posts/NewBuildSystem.png" width="600"></center> <br> 
+<center><img src="/assets/post_img/posts/NewBuildSystem.png" width="600"></center> <br> 
 
 하나가 활성화되면 파란색 망치를 볼수 있습니다. 
 
-<center><img src="/img/posts/NewBuildSystem-1.png" width="600"></center> <br> 
+<center><img src="/assets/post_img/posts/NewBuildSystem-1.png" width="600"></center> <br> 
 
 ### - From Command Line 
 
@@ -186,11 +186,11 @@ $ defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
 
 빌드 시간 기능 적용후, 새로운 빌드 시스템 적용 전 
 
-<center><img src="/img/posts/NewBuildSystem-2.png" width="600"></center> <br> 
+<center><img src="/assets/post_img/posts/NewBuildSystem-2.png" width="600"></center> <br> 
 
 새로운 빌드 시스템 적용후 
 
-<center><img src="/img/posts/NewBuildSystem-3.png" width="600"></center> <br> 
+<center><img src="/assets/post_img/posts/NewBuildSystem-3.png" width="600"></center> <br> 
 
 ### Open Issues 
 
@@ -240,11 +240,11 @@ Xcode 상단에 총 빌드 시간이 표시됩니다.
 
 컴파일 최적화 전 
 
-<center><img src="/img/posts/SwiftCompiler-5.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-5.png" width="700"></center> <br> 
 
 컴파일 최적화 후 
 
-<center><img src="/img/posts/SwiftCompiler-6.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/SwiftCompiler-6.png" width="700"></center> <br> 
 
 
 ---

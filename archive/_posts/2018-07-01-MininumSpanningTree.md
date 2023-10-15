@@ -28,7 +28,7 @@ permalink: /archive/:title
 
 그래프 G의 스패닝 트리(Spnning Tree) T는 일종의 서브그래프로서, G의 모든 꼭지점을 포함하는 트리다. 이 조건을 충족하기 위해 G는 반드시 모든 노드가 서로 연결돼 있어야 합니다(즉, 모든 꼭지점은 다른 꼭지점과 적어도 한 번 이상 연결돼야 합니다)
 
-<center><img src="/img/posts/MST.png" width="650"></center> <br>
+<center><img src="/assets/post_img/posts/MST.png" width="650"></center> <br>
 
 
 위 그림에서 알 수 있듯, 하나의 그래프 G에서는 하나 이상의 다양한 스패닝 트리가 나탈 수 있습니다. 그래프 G가 트리라면 오직 하나의 스패닝 트리를 지닐 수 있으며, 자기 자신의 모습이 스패닝 트리가 됩니다. 

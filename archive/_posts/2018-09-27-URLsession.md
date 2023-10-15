@@ -478,7 +478,7 @@ downloadButton.isHidden = downloaded || showDownloadControls
 
 > Note: 재개(Resume)를 누른 후에 다운로드가 중단되면, 일시정지(Pause)를 누른다음에, 재개(Resume)를 다시 누릅니다. 이것은 다운로드 세션 구성을 `URLSessionConfiguration.background(withIdentifier: "bgSessionConfigureation")`으로 변경할때 사리지는 신비한 버그 입니다.
 
-<center><img src="/img/posts/URLSession-0.png" width="400"></center> <br>
+<center><img src="/assets/post_img/posts/URLSession-0.png" width="400"></center> <br>
 
 
 ---

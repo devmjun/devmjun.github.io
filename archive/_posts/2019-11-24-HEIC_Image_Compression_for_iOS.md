@@ -64,7 +64,7 @@ HEIF, 또는 높은 효율성을 가진 이미지 파일 포맷은 새로운 이
 
 시작 프로젝트를 열고 앱을 실행하세요 
 
-<center><img src="/img/posts/HEIC-compressor-tutorial-0.png" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/HEIC-compressor-tutorial-0.png" width="450"></center> <br>
 
 이미지 압축을 시작하기 전에 이미지를 선택해야 합니다. [Unsplash](https://unsplash.com/images/stock/high-resolution) 에 [Jeremy Thomas](https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 의 기본 이미지가 좋을것 같지만 이것은 당신의 콘텐츠에서 이것이 어떻게 일하는지 보는게 더 좋을것 입니다.
 
@@ -128,7 +128,7 @@ private func compressHEICImage(with quality: CGFloat) {
 
 이제 두 이미지뷰는 선택된 이미지뷰가 보일것입니다. 선택된 이미지는 임시 이미지 지만 imagepicker 가 동작한다는걸 보증합니다. 
 
-<center><img src="/img/posts/HEIC-compressor-tutorial-1.png" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/HEIC-compressor-tutorial-1.png" width="450"></center> <br>
 
 슬라이더를 움직일수 있지만 아직 아무것도 동작 하지 않습니다. 추후에 각 이미지의 압축 강도를 변경할수 있습니다. 
 
@@ -314,7 +314,7 @@ return data as Data
 
 빌드하고 실행합니다. 슬라이더 값으로 변경되는 이미지를 봐야 합니다. 하위 이미지는 디스크에 더 많은 공간을 절약하는 방법으로 HEIC 이미지 압축과 더 관련이 있기 때문에 표시하는데 오래 걸릴 것입니다.
 
-<center><img src="/img/posts/HEIC-compressor-tutorial-2.png" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/HEIC-compressor-tutorial-2.png" width="450"></center> <br>
 
 <div id='section-id-300'/>
 
@@ -340,7 +340,7 @@ self.heicSizeLabel.text = data.prettySize
 
 앱을 빌드하고 실행합니다. HEIC를 사용하여 얼마나 더 많은 공간을 절약할수 있는지 바로 봐야 하는데 이것이 훨씬더 유용합니다. 
 
-<center><img src="/img/posts/HEIC-compressor-tutorial-3.png" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/HEIC-compressor-tutorial-3.png" width="450"></center> <br>
 
 HEIC 와 JPEG 사이에서 선택하는걸 고려할 시간입니다. 압축하는데 걸리는 시간을 고려해야할 데이터의 핵심 조각 입니다. 당신의 앱이 공간이 속도보다 더 중요하다면 HEIC는 최선의 옵션이 아닐수 있습니다.
 
@@ -405,7 +405,7 @@ if let time = self.elapsedTime(from: startDate) {
 
 앱을 빌드하고 실행합니다. 
 
-<center><img src="/img/posts/HEIC-compressor-tutorial-4.png" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/HEIC-compressor-tutorial-4.png" width="450"></center> <br>
 
 이제 당신은 충분히 알고 있는 정보를 바탕으로 결정을 내릴수 있습니다. JPG 압축은 더 큰 이미지의 비용으로 매우 빠르고 반대로 HEIC 이미지는 작지만 압축 속도가 더 오래 걸립니다. 
 

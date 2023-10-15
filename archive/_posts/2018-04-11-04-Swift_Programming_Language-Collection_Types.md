@@ -26,7 +26,7 @@ permalink: /archive/:title
 
 Swift는 컬렉션 값을 저장하는 `array`, `sets`, `dictionaries` 3가지 컬렉션 타입(collection types)을 제공합니다. 배열(Array)는 정렬된 값을 저장하는 컬렉션입니다. 세트(Sets)는 고유한 값을 가지는 정렬되지 않은 컬렉션 입니다. 딕셔너리(Dictionaries)는 키-값(key-value) 이 연결된 정렬되지 않은컬렉션 입니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-1.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-1.png" width="700"></center> <br> 
 
 Swift에서 배열, 세트, 딕셔너리는 항상 저장할 수 있는 값과 키의 타입이 명확합니다. 이는 실수로 컬렉션에 잘못된 타입의 값을 삽입할수 없다는 것을 의미합니다. 또한, 컬렉션으로 부터 가져오는 값의 타입에 대해서 확신(confident)할 수 있다는 것을 의미합니다.
 
@@ -409,7 +409,7 @@ for genre in favoriteGenres.sorted() {
 
 아래 그림은 2개의 세트(a, b)로 다양한 세트의 결과를 그림자 영역으로 표현한 것입니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-2.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-2.png" width="700"></center> <br> 
 
 - 2개의 세트의 공통 값으로 새로운 세트를 만들기 위해`intersection(_:)` 메소드를 사용합니다.
 - 2개의 세트에서 둘다가 아니라, 한쪽에만 있는 세트의 값으로 새로운 세트를 만들기 위해 `symmetricDifference(_:)` 메소드를 사용합니다.
@@ -436,7 +436,7 @@ oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 
 아래 그림은 3개의 세트(`a, b, c`)로 세트 사이의 공유되는 요소를 중첩된 영역으로 표현한 것입니다. 세트는 `b`는 모든 요소가 `a`에 포함되기 때문에, `a`는 세트 `b`의 상위세트(superset)입니다. 세트 `b`와 세트 `c`는 공통으로 공유하는 요소가 없기 때문에, 따로 분리(`disjoint`)되어 있습니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-3.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-3.png" width="700"></center> <br> 
 
 - 2개의 세트가 모두 같은 값을 가지고 있는지 결정하기 위해 같음(is equal) 연산자(`==`)를 사용합니다.
 - 세트의 모든 값이 지정된 세트에 포함되는지 결정하기 위해, `isSubset(of:)` 메소드를 사용합니다.

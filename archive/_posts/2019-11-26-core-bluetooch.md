@@ -55,8 +55,8 @@ peripheral의 데이터는 `services` 와 `characteristicㄴ`로 정리 되어 �
 
 <table>
   <tr>
-    <td><img src="/img/posts/core_bluetooth_0.png" alt=""></td>
-    <td><img src="/img/posts/core_bluetooth_1.png" alt=""></td>
+    <td><img src="/assets/post_img/posts/core_bluetooth_0.png" alt=""></td>
+    <td><img src="/assets/post_img/posts/core_bluetooth_1.png" alt=""></td>
   </tr>
 </table>
 
@@ -85,7 +85,7 @@ extension HRMViewController: CBCentralManagerDelegate {
 
 이후 XCdoe의 도움을 받아 다음 처럼 추가합니다. 
 
-<img src="/img/posts/core_bluetooth_2.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_2.png" alt="">
 
 placeholder를 적당한 값으로 교체할수 있습니다.
 
@@ -136,7 +136,7 @@ central.state is .poweredOn
 
 `centralManager` 초기화 이후 라인에 `centralManager.scan`을 시작하고 당신이 사용하려는 매소드를 찾을수 있습니다.
 
-<img src="/img/posts/core_bluetooth_3.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_3.png" alt="">
 
 `scanForPeripherals(withServices: [CBUUID]?, options: [String: Any]?) ` 매소드 같아 보입니다. 이것은 선택하고 `withServices`매개변수에 nil을 설정하고 `options` 매개변수를 사용하지 않는다면 지웁니다. 결국 다음과 같은 형태가 될것입니다.
 
@@ -161,7 +161,7 @@ case .poweredOn:
 
 ` centralManagerDidUpdateState(_:)` 매소드의 끝에 `discover` 이라는 단어를 타이핑 시작하면 다음 메소드르 찾을수 있습니다.
 
-<img src="/img/posts/core_bluetooth_4.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_4.png" alt="">
 
 해당 메소드를 선택하고 다음과 같이 작성합니다.
 
@@ -231,7 +231,7 @@ centralManager.stopScan()
 
 peripheral 에서 데이터를 얻기 위해 이것을 연결 해야 합니다. `centralManager.stopScan()` 바로 직후에 `centralManager.connect` 타이핑을 시작하고 `connect(peripheral: CBPeripheral, options: [String: Any]?`을 볼수 있을것 입니다.
 
-<img src="/img/posts/core_bluetooth_5.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_5.png" alt="">
 
 이것은 선택하고 코드를 다음처럼 작성합니다.
 
@@ -243,7 +243,7 @@ centralManager.connect(heartRatePeripheral)
 
 `centralManager(_:didDiscover:advertisementData:rssi:)` 메소드 직후에 `centralManager(_:didConnect:):`를 타이핑 하세요
 
-<img src="/img/posts/core_bluetooth_6.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_6.png" alt="">
 
 플레이스홀더 코드를 다음과 같이 변경합니다.
 
@@ -307,7 +307,7 @@ extension HRMViewController: CBPeripheralDelegate {
 
 아래 메소드를 추가합니다.
 
-<img src="/img/posts/core_bluetooth_7.png" alt="">
+<img src="/assets/post_img/posts/core_bluetooth_7.png" alt="">
 
 이 메소드는 발견된 services 목록을 제공하지 않지만 peripheral에 의해서 한개 이상의 services가 발견되었음을 주의 합니다. 이것은 peripheral 객체는 services의 목록을 주는 한개의 속성을 가진 객체라는 사실 입니다. 다음 코드를 새롭게 추가한 메소드에 추가합니다
 

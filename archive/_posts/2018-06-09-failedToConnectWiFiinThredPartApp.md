@@ -69,7 +69,7 @@ func someButton(ssid: String, password: String) {
 	- NEHotspotConfiguration
 	- NEHotspotConfigurationManager
 	
-<center><img src="/img/posts/title.PNG" width="450"></center> <br>
+<center><img src="/assets/post_img/posts/title.PNG" width="450"></center> <br>
 
 더 자세한 코드는..! [SimplyConnectWiFi](https://github.com/devmjun/SimplyConnectWiFi)를 참조해주세요.
 	

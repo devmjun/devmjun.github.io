@@ -29,7 +29,7 @@ permalink: /archive/:title
 
 탐색 바는 상태 표시 줄 아래의 앱 화면 상단에 나타나며 일련의 계층 적 화면을 탐색 할 수 있습니다. 새 화면이 표시되면 이전 화면의 제목으로 레이블 된 뒤로 단추가 막대 왼쪽에 나타납니다. 때로 탐색 모음의 오른쪽에는 활성보기 내에서 내용을 관리하기위한 편집 또는 완료 버튼과 같은 컨트롤이 있습니다. 분할보기에서 분할보기의 단일 창에 탐색 막대가 나타날 수 있습니다. 탐색 막대는 반투명하고 배경 색조를 가질 수 있으며 키보드가 화면 상에 나타나거나 제스처가 발생하거나보기 크기가 조정될 때 숨기도록 구성 할 수 있습니다. <br>
 
-<center><img src="/img/posts/NavigationBars.png"></center> <br>  
+<center><img src="/assets/post_img/posts/NavigationBars.png"></center> <br>  
 
 #### - 전체 화면 콘텐츠를 표시 할 때 탐색 모음을 일시적으로 숨겨보십시오
 
@@ -79,7 +79,7 @@ permalink: /archive/:title
 네비게이션 막대에서 세분화 된 컨트롤을 사용하는 경우 계층 구조의 최상위 수준에서만 세그먼트 컨트롤을 사용하고 하위 수준에서는 정확한 뒤로 단추 제목을 선택해야합니다. 추가 지침은 [Segmented Controls](https://developer.apple.com/ios/human-interface-guidelines/controls/segmented-controls/)을 참조하십시오.
 
 
-<center><img src="/img/posts/NavigationBars-3.png"></center> <br> 
+<center><img src="/assets/post_img/posts/NavigationBars-3.png"></center> <br> 
 
 ---
 
@@ -87,7 +87,7 @@ permalink: /archive/:title
 
 검색 창을 사용하면 필드에 텍스트를 입력하여 값 모음을 검색 할 수 있습니다. 검색 창은 단독으로 또는 네비게이션 바 또는 컨텐츠 뷰에서 표시 할 수 있습니다. 네비게이션 바에 표시되면 검색창을 항상 액세스 할 수 있도록 탐색 막대에 고정 할 수 있습니다. 또는 사용자가 아래로 쓸어 넘겨 표시 할 때까지 축소 할 수 있습니다. <br>
 
-<center><img src="/img/posts/SearchBar.png"></center> <br> 
+<center><img src="/assets/post_img/posts/SearchBar.png"></center> <br> 
 
 #### - 텍스트 필드 대신 검색 창을 사용하여 검색을 구현하십시오
 
@@ -155,7 +155,7 @@ extension UISearchBar{
 
 사람들이 검색 범위를 좁힐 수 있도록 검색 막대에 범위 막대를 추가 할 수 있습니다.
 
-<center><img src="/img/posts/SearchBar-5.png"></center> <br> 
+<center><img src="/assets/post_img/posts/SearchBar-5.png"></center> <br> 
 
 #### - 스코프 바를 포함하여 검색 결과를 개선하는 것이 좋습니다
 
@@ -215,7 +215,7 @@ extension UISearchBar{
 
 앱 표시 줄 하단에 탭 표시 줄이 표시되어 앱의 여러 섹션을 신속하게 전환 할 수 있습니다. 탭 바는 반투명하고 배경 색조를 가질 수 있으며 모든 화면 방향에서 동일한 높이를 유지하고 키보드가 표시되면 숨겨집니다. 탭 표시 줄에는 여러 개의 탭이 포함될 수 있지만 표시되는 탭의개수는 장치 크기 및 방향에 따라 다릅니다. 제한된 가로 공간으로 인해 일부 탭을 표시 할 수 없는 경우 마지막으로 표시되는 탭이 다른 탭의 목록에있는 추가 탭을 표시하는 추가탭이 됩니다.
 
-<center><img src="/img/posts/Tab_Bars.png"></center> <br> 
+<center><img src="/assets/post_img/posts/Tab_Bars.png"></center> <br> 
 
 #### - 일반적으로 앱 수준에서 정보를 구성하려면 탭 표시 줄을 사용하십시오
 
@@ -257,7 +257,7 @@ extension UISearchBar{
 
 툴바는 앱 화면 하단에 표시되며 `현재뷰` 또는 `해당 내용과 관련된 작업`을 수행하기위한 버튼을 포함합니다. 툴바는 반투명하고 배경 색조가 있으며 사람들이 필요하지 않을 때 숨기기도합니다. 예를 들어, Safari에서 독서 가능성이 높기 때문에 페이지를 스크롤 할 때 툴바가 숨겨집니다. 화면 하단을 살짝 눌러 다시 표시 할 수 있습니다. `툴바는 키보드가 화면 상에있을 때 숨겨집니다.`
 
-<center><img src="/img/posts/toolbars.png"></center> <br> 
+<center><img src="/assets/post_img/posts/toolbars.png"></center> <br> 
 
 #### - 관련 툴바 버튼을 제공하십시오
 

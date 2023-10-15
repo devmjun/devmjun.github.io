@@ -48,7 +48,7 @@ print("We're number \(one)!")
 
 종이에 쓰여진 예산을 어떻게 업데이트하는지 생각하면 비슷한 문제를 볼수 있습니다. 예산을 업데이트하는 과정은 두 단계로 진행됩니다. 먼저 항목의 이름과 가격을 추갛나다음 총 금액을 변경하여 현재 목록에 있는 항목에 반영합니다. 업데이트 전과 후에 아래 그림과 같이 예산에서 정보를 익고 정답을 얻을수 있습니다. 
 
-<center><img src="/img/posts/Swift_Programming_Language-29.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-29.png" width="700"></center> <br> 
 
 예산에 항목을 추가하는 동안 총액이 새로 추가된 항목을 반영하도록 업데이트 되지 않았으므로 일시적으로 유효하지 않은 상태가됩니다. 항목을 추가하는 과정에서 총 금액을 읽으면 잘못된 정보가 표시됩니다. 
 
@@ -112,7 +112,7 @@ incrementInPlace(&stepSize)
 
 위 코드에서, `stepSize`는 전역변수이고, 일반적으로 `increment(_:)`에서 접근할 수 있습니다. 하지만, `stepSize`에 대한 읽기 접근은 `number`쓰기 접근과 중복되게(overlaps) 됩니다. 아래 그림에서 보는 것처럼, `number`와 `stepSize` 모두 메모리에서 같은 위치를 참조합니다. 읽기와 쓰기 접근은 같은 메모리를 참조하고, 중복되며(overlap), 충돌이 일어납니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-30.png" width="700"></center> <br>
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-30.png" width="700"></center> <br>
 
 이 충돌을 해결하는 한가지 방법은 `stepSize`의 명시적인 복사본을 만드는 것입니다.
 
@@ -189,7 +189,7 @@ oscar.shareHealth(with: &maria)  // OK
 위 예제에서, `오스카(Oscar)` 플레이어에 대한 `shareHealth(with:)` 메소드 호출은 마리아(Maria) 플레이어와 건강을 공유하더라도 충돌이 발생하지 않습니다. 이는 `oscar`는 변경가능한 메소드에서의 `self`의 값이기 때문에, 메소드 호출하는 동안에 `oscar`에 대한 쓰기 접근을하고, 같은 기간동안 maria는 in-out 매개변수로 전달되었기 때문에, maria 쓰기 접근을 합니다. 아래 그림에서 보는 것처럼, 메모리의 다른 곳에 접근합니다. 시간적으로 두개의 쓰기 접근이 중복되지만, 충돌이 되지는 않습니다.
 
 
-<center><img src="/img/posts/Swift_Programming_Language-32.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-32.png" width="700"></center> <br> 
 
 하지만, `osscar`를 `shareHealth(with:)`메소드에 인자로 넘기면, 충돌이 발생합니다.
 
@@ -200,7 +200,7 @@ oscar.shareHealth(with: &oscar)
 
 변경가능한 메소드(mutating method)는 메소드 지속시간동안 `self`에 대한 쓰기 접근이 필요하고, `in-out` 매개변수는 같은 시간동안 teammate에 쓰기 접근이 필요합니다. 이 메소드에서, `self`와 `teammate`모두 메모리에서 같은 위치를 참조합니다 - 아래 그램에서 보여집니다. 2개의 쓰기 접근은 동일한 메모리를 참조하고 중첩되며, 충돌이 발생합니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-33.png" width="700"></center> <br> 
+<center><img src="/assets/post_img/posts/Swift_Programming_Language-33.png" width="700"></center> <br> 
 
 
 ---

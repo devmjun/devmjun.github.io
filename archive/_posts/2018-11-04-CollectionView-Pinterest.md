@@ -84,15 +84,15 @@ Laouyts 폴더에서 `UICollectionViewLayout`의 하위 클레스이고 `Pintere
 `Main.stroyboard`를 열고 `Photo Stream View Controller Scene`에 있는 `CollectionView`를 선택합니다.
 
 
-<center><img src="/img/posts/PinterestLayout-0.png" width="650"></center> <br> 
+<center><img src="/assets/post_img/posts/PinterestLayout-0.png" width="650"></center> <br> 
 
 다음으로 `Attributes Inspect` Layout 리스트에서 `Custom`을 선택하고 class를 `PinterestLayout`으로 설정합니다.
 
-<center><img src="/img/posts/PinterestLayout-1.png" width="650"></center> <br> 
+<center><img src="/assets/post_img/posts/PinterestLayout-1.png" width="650"></center> <br> 
 
 그후 어떻게 동작하는지 봅니다. 앱을 빌드하고 실행합니다.
 
-<center><img src="/img/posts/PinterestLayout-2.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/PinterestLayout-2.png" width="450"></center> <br> 
 
 <center><img src="https://www.gameartguppy.com/wp-content/uploads/2017/06/basic-confused-2.png" width="450"></center> <br> 
 

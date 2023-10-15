@@ -9,6 +9,8 @@
 # --- Required options --- #
 ############################
 
+# url: http://localhost:4009 # bundle jekyll docker in local
+
 # Name of website
 title: Mjun
 

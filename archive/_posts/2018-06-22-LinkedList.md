@@ -37,14 +37,14 @@ Linked List는 선형 단방향 시퀀스로 정렬된 값의 모음 입니다. 
 - 리스트의 맨 앞에 추가와 삭제시 일정한 시간 소요 
 - 신뢰할 수 있는 성능 특정
 
-<center><img src="/img/posts/LinkedList.png" width="382"></center> <br>
+<center><img src="/assets/post_img/posts/LinkedList.png" width="382"></center> <br>
 
 위의 이미지에서 다이어그램의 각 노드들로 구성 되어 있습니다. 각 노드들은 각자의 역활이 있습니다. 
 
 1. 값을 가지고 
 2. 다음 노드에 대한 촘조를 가집니다. `nil`값은 리스트의 끝을 나타냅니다
 
-<center><img src="/img/posts/LinkedList.png" width="382"></center> <br>
+<center><img src="/assets/post_img/posts/LinkedList.png" width="382"></center> <br>
 
 ---
 
@@ -261,7 +261,7 @@ After inserting: 1 -> 2 -> -1 -> -1 -> -1 -> -1 -> 3
 
 ### Performance analysis
 
-<center><img src="/img/posts/LinkedList-3.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/LinkedList-3.png" width="500"></center> <br>
 
 ---
 
@@ -361,7 +361,7 @@ Removed value: Optional(3)
 
 특정 노드 이후의 노드를 삭제합니다. 
 
-<center><img src="/img/posts/LinkedList-4.png" width="382"></center> <br>
+<center><img src="/assets/post_img/posts/LinkedList-4.png" width="382"></center> <br>
 
 ```swift
 // 1
@@ -396,7 +396,7 @@ Removed value: Optional(2)
 
 ### Performance analysis
 
-<center><img src="/img/posts/LinkedList-5.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/LinkedList-5.png" width="500"></center> <br>
 
 
 ---

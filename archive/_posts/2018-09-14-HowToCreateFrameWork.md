@@ -458,7 +458,7 @@ s.swift_version = "4.2"
 2. pod trunk push [podSpec file name]
 	- `pod trunk push mypodspec.podspec`
 
-<center><img src="/img/posts/HowToCreate.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/HowToCreate.png" width="500"></center> <br>
 
 
 위의 이미지와 같이 성공입니다. 이제 pod를 사용하여 다른 라이브러리 처럼 사용할수 있습니다. 

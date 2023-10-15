@@ -62,7 +62,7 @@ swift package init --type executable
 
 현재 `flag`디렉토리는 `swift package init`을 실행할때 중요합니다. 왜냐하면 생성된 패키지의 이름이 되기 때문입니다. 생성된 결과물에서 몇개의 폴더들과 파일들을 볼수 있습니다. 프로젝트 구조에 익숙해지려면 잠시 시간을 가져봅니다
 
-<center><img src="/img/posts/SwiftPacageManager_0.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_0.png" width="500"></center> <br>
 
 
 1. `Package.swift`는 패키지 설명이 있으며, 패키지의 의존성도 가지고 있습니다. 
@@ -101,7 +101,7 @@ swift package init --type library
 
 Swift Package Manager는 다시 몇개의 파일과 폴더들을 생성합니다. 
 
-<center><img src="/img/posts/SwiftPacageManager_1.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_1.png" width="500"></center> <br>
 
 
 이번에는 `main.swift`대신 `Atlas.swift`가 생깁니다. 이 파일과 `Sources/`에 있는 다른 파일은 라이브러리와 함께 가져옵니다. 실제로 라이브러리(library)와 실행 파일(executable)의 차이는 `main.swift`의 존재 입니다.
@@ -175,7 +175,7 @@ swift test
 
 이모티콘 깃발이 작동하는 방식은 매우 간단합니다. AT와 같은 국가 코드가 주어지면, 각 문자를 소위 지역 표시 기호(regional indicator symbol)로 변환해야합니다. 그것은 예를들어 🇦, 🇹 입니다. 이것들을 함께 놓을때 이모지 깃발을 얻습니다.
 
-<center><img src="/img/posts/SwiftPacageManager_2.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_2.png" width="500"></center> <br>
 
 `Atlas.swift`로 이동하고 `Country`구조체에 다음 매소드를 추가합니다
 
@@ -280,7 +280,7 @@ swift build
 
 Swift Package Manger는 라이브러리를 가져와서 빌드하고 실행 파일에 연결합니다. 구조는 다음과같이 보입니다.
 
-<center><img src="/img/posts/SwiftPacageManager_3.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_3.png" width="500"></center> <br>
 
 Swift Package Manager는 의존성 요구 사항에 따라 버전 `1.0.0`을 선택하고 설치 한 것을 볼 수 있습니다. `main.swift` 파일을 열고 내용을 다음 코드로 바꿉니다.
 
@@ -338,7 +338,7 @@ swift package generate-xcodeproj
 
 이 명령은 `Atlas.xcodeproj`를 생성합니다. 이제 Xcode에서 프로젝트를 열수 있고 패키지를 만들거나 다른 Xcode 프로젝트 처럼 테스트 스위프트를 실행할수 있습니다.
 
-<center><img src="/img/posts/SwiftPacageManager_4.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_4.png" width="500"></center> <br>
 
 `Flag` package에서도 이것을 할수 있습니다. `Flag`폴더에서 `swift package generate-xcodeproj`를 실행하여`Flag.xcodeproj`를 생성하세요. 
 
@@ -351,7 +351,7 @@ Xcode 프로젝트를 열고 난 이후에, `Flag` executable target이 선택�
 
 실행 가능한 커맨드라인 인수를 제공하려면, `Product/Scheme/Edit Scheme`로 이동한다음 `Run/Arguments`를 선택하고 Arguments Passed on Launch 색션에서 `US`와 같은 인수를 추가하세요.
 
-<center><img src="/img/posts/SwiftPacageManager_5.png" width="500"></center> <br>
+<center><img src="/assets/post_img/posts/SwiftPacageManager_5.png" width="500"></center> <br>
 
 Xcode는 의존성을 추가하거나 빌드할수 없습니다. 그래서 커맨드라인을 완전히 피할수는 없습니다.
 

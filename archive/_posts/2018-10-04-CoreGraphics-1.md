@@ -111,7 +111,7 @@ Core Graphics 는 애플의 벡터 드로잉 프레임 워크입니다. 강력�
 
 `Identify Inspector`에서, pushButton으로 클레스를 변경합니다. 
 
-<center><img src="/img/posts/CoreGraphics-1.png" width="300"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-1.png" width="300"></center> <br> 
 
 
 ---
@@ -131,16 +131,16 @@ Core Graphics 는 애플의 벡터 드로잉 프레임 워크입니다. 강력�
 
 이렇게 하면 4가지 필수 오토레이아웃 제약 조건이 생성됩니다.  `Size Inspector`에서 다음과같이 보여집니다.
 
-<center><img src="/img/posts/CoreGraphics-3.png" width="300"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-3.png" width="300"></center> <br> 
 
 
 `Align center Y`의 `Edit`을 클릭하여 제약조건 값을 `100`을 줍니다. `Width`, `Height`도 `100`의 값을 줍니다. 그러면 다음 처럼 보여야합니다.
 
-<center><img src="/img/posts/CoreGraphics-4.png" width="400"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-4.png" width="400"></center> <br> 
 
 `Attributes Inspector`에서 `Button`타이틀을 삭제합니다.
 
-<center><img src="/img/posts/CoreGraphics-5.png" width="400"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-5.png" width="400"></center> <br> 
 
 
 ---
@@ -533,7 +533,7 @@ class PushButton: UIButton {
 
 새로운 UIButton을 스토리보드에 추가하고 선택하세요. 이전과 마찬가지로 PushButton을 선택합니다.
 
-<center><img src="/img/posts/CoreGraphics-9.png" width="500"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-9.png" width="500"></center> <br> 
 
 
 녹색 플러스 버튼은 이전 플러스 버튼 아래에 그려집니다. 
@@ -553,7 +553,7 @@ Attributes Inspector 에서 `Fill Color`을 RGB(238, 77, 77)로 변경하고 `is
 
 제약조건이 추가된 이후에 다음과같이 보여야합니다. 
 
-<center><img src="/img/posts/CoreGraphics-10.png" width="300"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-10.png" width="300"></center> <br> 
 
 애플리케이션에서 빌드하고 실행하세요. 이제 모든 앱에서 추가, 제사용할수 있는 사용자화한 뷰가 생겼습니다. 모든 크기의 장치에 선명하고 분명합니다. 지금보는 시뮬레이터는 iPhone 4S 입니다.
 
@@ -614,7 +614,7 @@ import UIKit
 
 `Size Inspector`에서 제약조건의 Constraints는 다음과같이 보입니다. 
 
-<center><img src="/img/posts/CoreGraphics-11.png" width="300"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-11.png" width="300"></center> <br> 
 
 
 `Identity Inspector`에서, `UIView`클레스를 `CounterView`로 변경하고 `draw(_:)`의 그리기 코드가 뷰에 표시됩니다(아직 추가하지 않았습니다.)
@@ -645,7 +645,7 @@ import UIKit
 
 360° - 135° + 45° = 270°
 
-<center><img src="/img/posts/CoreGraphics-12.png" width="400"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-12.png" width="400"></center> <br> 
 
 ---
 
@@ -785,7 +785,7 @@ Counter 색상을 `RGB(87, 218, 213)`으로 변경하고 외부선의 색상을 
 
 레이블을 세로 및 가로의 가운데에 맞출수 있도록 제약 조건을 추가하세요. 결국 레이블에는 다음과같은 제약 조건을 가져야 합니다. 
 
-<center><img src="/img/posts/CoreGraphics-13.png" width="400"></center> <br> 
+<center><img src="/assets/post_img/posts/CoreGraphics-13.png" width="400"></center> <br> 
 
 `Attributes Inspector`에서, `정렬`를 `center`, 폰트 사이즈를 `36`으로 변경하고 레이블의 기본 타이틀은 `8`로 설정합니다. 
 
