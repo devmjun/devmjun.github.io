@@ -68,11 +68,11 @@ example(str: "Insertion Sort", isAction: true) {
 
 ## Time Complexity
 
-<center><img src="/img/posts/TimeComplexity.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_1.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity_1.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_2.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity_2.png" width="700"></center> <br> 
 
 [전체 코드 주소](https://github.com/devminjun/DataStructure)
 

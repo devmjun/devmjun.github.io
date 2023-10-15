@@ -60,7 +60,7 @@ Swift의 UI Control을 소개하는 훌륭한 튜토리얼이 있습니다. [이
 
 프로젝트를 빌드하고 실행합니다. 시작하기전에 모든것이 어떻게 보이는지 파악하세요. 다음 화면과 같은걸 볼수 있습니다..
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-start.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-start.png" width="450"></center> <br> 
 
 
 손잡이 컨트롤을 위한 클레스를 생성합니다. 이름을 `Knob`로 작성하고 `UIControl`을 하위 클레싱하여 `ReusableKnob` 그룹을 선택하고 `.swift`파일을 생성합니다. 
@@ -99,7 +99,7 @@ class Knob: UIControl {
 
 앱을 빌드하고 실행하면 다음처럼 보일것 입니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-background.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-background.png" width="450"></center> <br> 
 
 
 기본 빌딩 블록과 함깨, 컨트롤을 위한 API를 만들 작업을 할 시간입니다.
@@ -304,7 +304,7 @@ private func commonInit() {
 
 앱을 빌드하고 실행합니다. 컨트롤은 다음과같이 보여집니다
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/Simulator-Screen-Shot-iPhone-8-2018-04-21-at-16.54.00.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/Simulator-Screen-Shot-iPhone-8-2018-04-21-at-16.54.00.png" width="450"></center> <br> 
 
 ---
 
@@ -349,7 +349,7 @@ knob.pointerLength = 12
 
 앱을 빌드하고 실행합니다. 설정한 값을 기반으로 증가한 라인의 두께, 포인터의 길이를 봐야합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/Simulator-Screen-Shot-iPhone-8-2018-04-21-at-17.02.34.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/Simulator-Screen-Shot-iPhone-8-2018-04-21-at-17.02.34.png" width="450"></center> <br> 
 
 ---
 
@@ -502,7 +502,7 @@ updateLabel()
 
 앱을 빌드하고 실행합니다. 레이블이 올바른 값으로 보여지는지 몇가지 테스트를 이행합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-label.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/04/reusable-knob-label.png" width="450"></center> <br> 
 
 ---
 

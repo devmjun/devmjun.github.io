@@ -142,7 +142,7 @@ var matrix = Matrix(rows: 2, columns: 2)
 
 앞의 예제에서 새로운 두개의 열과 두개의 행으로 Matrix인스턴스를 생성합니다. Matrix인스턴스에 대한 grid배열은 왼쪽 위에서 오른쪽 아래로 읽는 것처럼, 행렬을 효과적으로 평면화시킨 버전입니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-7.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-7.png" width="500"></center> <br> 
 
 행렬에서의 값은 서브스크립트로 콤마(,)로 구분된 행과 열의 값을 전달하여 설정합니다.
 
@@ -153,7 +153,7 @@ matrix[1, 0] = 3.2
 
 이러한 두개의 문장은 행렬의 오른쪽 위의(`row`는 `0`이고, `column`은 `1`) 위치에 `1.5`값을 설정하고, 왼쪽 아래(`row`는 `1`이고 `cloumn`은 `0`) 위치에 `3.2`를 설정하기 위해 서브스크립트의 setter를 호출합니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-8.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-8.png" width="500"></center> <br> 
 
 ```swift
 func indexIsValidForRow(row: Int, column: Int) -> Bool {

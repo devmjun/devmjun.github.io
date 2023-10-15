@@ -187,7 +187,7 @@ Detail Disclosure 버튼이 테이블뷰 행에있는 경우 버튼을 누르면
 
 picker뷰는 하나 이상의 선택 가능한 값을 가진 하나 이상의 스크롤 가능한 고유 값 목록을 포함하며 뷰의 가운데에있는 어두운 텍스트에 나타납니다. picker뷰는 종종 사용자가 필드를 편집하거나 메뉴를 두드릴 때 화면의 맨 아래 또는 팝 오버에 표시됩니다. 달력 이벤트에서 날짜를 편집하는 경우와 같이 선택 도구가 인라인으로 나타날 수도 있습니다. picker의 도구의 높이는 약 5행의 목록 값의 높이입니다. 선택 도구의 너비는 장치 및 컨텍스트에 따라 화면 너비 또는 컨텐츠뷰의 너비 중 하나입니다.
 
-<center><img src="/img/posts/Pickers.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/Pickers.png" width="382"></center> <br> 
 
 #### - 예측 가능하고 논리적으로 정렬 된 값을 사용하십시오
 
@@ -207,7 +207,7 @@ picker뷰는, 편집중인 필드 아래 또는 근접하여 표시 될때 잘 �
 
 날짜 선택 도구는 특정 날짜, 시간 또는 둘을 선택하기위한 효율적인 인터페이스입니다. 카운트 다운 타이머를 표시하기위한 인터페이스도 제공합니다.
 
-<center><img src="/img/posts/Pickers-1.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/Pickers-1.png" width="382"></center> <br> 
 
 날짜 선택 도구에는 네 가지 모드가 있으며 각 모드는 서로 다른 선택 가능한 값 집합을 제공합니다.
 
@@ -312,7 +312,7 @@ iPhone X를 제외한 모든 장치에서 네트워킹이 진행됨에 따라 �
 
 분리화된 컨트롤은 두개 이상의 세그먼트로 구성된 선형 세트입니다. 각 세그먼트는 상호 배타적인 버튼으로 작동합니다. 컨트롤 내에서 모든 세그먼트의 너비는 동일합니다. 버튼과 마찬가지로 세그먼트에는 텍스트나 이미지가 포함될 수 있습니다. 분할 된 컨트롤은 종종 다른보기를 표시하는 데 사용됩니다. 예를 들어 지도에서 세그먼트 컨트롤을 사용하면지도, 대중 교통 및 위성보기간에 전환 할 수 있습니다.
 
-<center><img src="/img/posts/Segemented_Control.png" width="385" height="700"></center> <br> 
+<center><img src="/img/posts/Segemented_Control.png" width="385"></center> <br> 
 
 #### - 유용성을 높이기 위해 세그먼트 개수를 제한하십시오
 
@@ -356,7 +356,7 @@ Segmented Control 배경 모양을 변경하는 경우 내용이 여전히보기
 
 스테퍼는 값을 늘리거나 줄이기 위해 사용되는 2세그먼트 컨트롤입니다. 기본적으로 스테퍼의 한 세그먼트는 더하기 기호를 표시하고 다른 세그먼트는 빼기 기호를 표시합니다. 원하는 경우 이러한 기호를 사용자 지정 이미지로 바꿀 수 있습니다.
 
-<center><img src="/img/posts/Steeper.png" width="382" height="700"></center> <br> 
+<center><img src="/img/posts/Steeper.png" width="382"></center> <br> 
 
 #### - 스테퍼에 의해 영향을받은 값을 분명히하십시오
 

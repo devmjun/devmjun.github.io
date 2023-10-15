@@ -49,7 +49,7 @@ Moya는 일반적으로 열거형을 사용하여 타입이 안전한 방식으�
 
 이 튜토리얼에서, [Marvel API](https://developer.marvel.com/)를 사용하여 표지 이미지, 기타 흥미로운 정보와 함께 특정 주(week)에 출시된 만화 목록을 사용자에게 표시하는 `ComicCards`라는 이름의 작은 앱을 만들것입니다. 사용자가 만화를 선택하면 해당 만화 정보와 이미지가 포함된 공유 카드 이미지가 생성되어 사용자가 [Imgur](https://apidocs.imgur.com/) 서비스로 업로드하고 공유 할수 있게 됩니다.
 
-<center><img src="/img/posts/Moya-Tutorial-0.gif" width="300" height="500"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-0.gif" width="300"></center> <br>
 
 
 하.. 하나의 앱에 두개의 다른 서비스...? 걱정하지 마세요. 들리는것 처럼 어렵지 않습니다. 그럼 시작해봅시다!
@@ -75,7 +75,7 @@ Moya는 일반적으로 열거형을 사용하여 타입이 안전한 방식으�
 
 프로젝트를 빌드하고 실행하면 다음과같은 화면을 볼수 있습니다.
 
-<center><img src="/img/posts/Moya-Tutorial-2.png" width="400" height="500"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-2.png" width="400"></center> <br>
 
 서버에서 만화를 가져오고 앱의 화면에 표시하는 것과 관계된 로직을 아직 구현하지 않았기 때문에, 오류 화면이 보여지는것이 놀랍지 않습니다. 곧 필요한 모든 코드를 추가하게 될것입니다. 하지만 먼저 Moya에 대해 조금 배워야 합니다.
 
@@ -90,7 +90,7 @@ Moya는 일반적으로 열거형을 사용하여 타입이 안전한 방식으�
 
 ### What Is Moya?
 
-<center><img src="/img/posts/Moya-Tutorial-3.png" width="300" height="400"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-3.png" width="300"></center> <br>
 
 
 Moya는 일반적으로 열거형(예: `enum`)을 사용하여 네트워크 요청을 타입 안전(type-safe)한 방식으로 캡슐화하는데 초점을 맞춤 네트워킹 라이브러리로 네트워크 계층에서 작업할때 추가된 검색 가능성과 함께(with added discoverability)컴파일 시간 보장(compile-time guarantees)과 자신감을 제공 합니다.
@@ -107,7 +107,7 @@ Artsy's [Eidolon](https://github.com/artsy/eidolon) app을 위해 [Ash Furrow](h
 
 시작 프로젝트의 `Podfile.lock`을 보면 비밀을 알수 있습니다. Alamoifire는 Moya의 의존성 입니다. 
 
-<center><img src="/img/posts/Moya-Tutorial-4.png" width="600" height="400"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-4.png" width="600"></center> <br>
 
 <div id='section-id-82'/>
 
@@ -381,7 +381,7 @@ self.state = .ready(try response.map(MarvelResponse<Comic>.self).data.results)
 
 프로젝트를 빌드하고 실행 합니다. 첫 화면이 완벽하게 작동해야합니다.
 
-<center><img src="/img/posts/Moya-Tutorial-9.png" width="400" height="500"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-9.png" width="400"></center> <br>
 
 
 다음은  세부사항 뷰 입니다.
@@ -420,7 +420,7 @@ image.kf.setImage(with: comic.thumbnail.url)
 
 앱을 빌드하고 실행합니다. 그리고 목록중 하나를 탭합니다. 그러면 다음과같이 아름다운 카드 정보를 볼수 있습니다. 
 
-<center><img src="/img/posts/Moya-Tutorial-10.png" width="400" height="500"></center> <br>
+<center><img src="/img/posts/Moya-Tutorial-10.png" width="400"></center> <br>
 
 
 추가할수 있는 두가지 기능이 있습니다: Imgur에 카드를 업로드하고,  사용자가 카드를 삭제할수 있게 합니다.

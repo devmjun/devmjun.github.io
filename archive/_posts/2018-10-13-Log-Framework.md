@@ -89,23 +89,23 @@ permalink: /archive/:title
 
 Ten PM 앱을 iOS 시뮬레이터에서 빌드하고 실행합니다. `TrackingSetupViewController`가 컨트롤하는 뷰를 볼수 있습니다. 
 
-<center><img src="/img/posts/beaver-1.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/beaver-1.png" width="450"></center> <br> 
 
 
 추적을 설정하기 전에 시뮬레이터가 시작 위치를 제공하는지 확인해야합니다. 이것을 하려면 시뮬레이터를 선택하고 `Debug\Location\Apple`을 선택하세요.
 
-<center><img src="/img/posts/beaver-2.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/beaver-2.png" width="450"></center> <br> 
 
 
 `SETUP TRACKING` 버튼을 탭하면, 위치 데이터 수집을 시작하기 위한 허가를 요청합니다. 왜냐하면 이 화면은 부모를 위한 화면이고, 부모임을 확인하고 집에 있음을 확인하는 추가 얼럿이 있습니다. `예`를 선택하고 허용하세요. 앱이 위치를 결정하고 집 주소를 자녀의 안전 구역 서클의 중심점으로 사용하도록 저장합니다.
 
 집에서의 `안전 거리`를 위해 `1`을 입력 입력하세요. 실험을 위해 설정된 Apple 위치에서 1 킬로미터 이상 떨어지길 원하지 않는다는 의미입니다.
 
-<center><img src="/img/posts/beaver-3.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/beaver-3.png" width="450"></center> <br> 
 
 `NEXT`를 텝하면 TrackingViewController가 지원하는 뷰로 이동합니다. 
 
-<center><img src="/img/posts/beaver-4.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/beaver-4.png" width="450"></center> <br> 
 
 
 > 생각해보니, 이 앱은 값비싼 iPhone 프로토타입을 가지고 다니는 직원에게 유용할수 있습니다(ㅋㅋ)
@@ -115,7 +115,7 @@ Ten PM 앱을 iOS 시뮬레이터에서 빌드하고 실행합니다. `TrackingS
 시뮬레이터 메뉴에서 `Debug\Location`을 이동하여 `Custom Location`을 클릭하고 `latitude: 37.3397`, `longitutd: -122.0426`을 입력하고 확인을 누릅니다.
 
 
-<center><img src="/img/posts/beaver-5.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/beaver-5.png" width="450"></center> <br> 
 
 파란색 점이 새 위치로 이동해야 하며 아래쪽의 메시지가 집에서 멀리떨어져서 위험하다고 알려주도록 변경되어야 합니다. 
 

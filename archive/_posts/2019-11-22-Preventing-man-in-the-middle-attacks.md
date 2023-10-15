@@ -64,7 +64,7 @@ Main.storyboard 를 열면 TableView를 가진 **ViewController** 와 tableView�
 
 앱을 빌드하고 실행 하면 다음과같은 초기화면은 볼수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2019/03/ssl-pinning-first-screen.png" width="450" height="550"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2019/03/ssl-pinning-first-screen.png" width="450"></center> <br>
 
 <div id='section-id-44'/>
 
@@ -129,7 +129,7 @@ master secret key는 클라이언트와 서버가 정보를 교환하는 마지�
 
 공개키와 알고리즘 식별자로 구성된 이것들은 `subject public key info`를 나타냅니다. 
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2019/03/ssl-pinning-x.509.png" width="450" height="550"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2019/03/ssl-pinning-x.509.png" width="450"></center> <br>
 
 X.509는 인증서들은 다르게 암호화 되어질수 있고 외형에 영향을 미칩니다. 대부분 일반적으로는 다음과 같습니다
 

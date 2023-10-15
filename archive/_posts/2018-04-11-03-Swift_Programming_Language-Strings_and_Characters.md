@@ -482,7 +482,7 @@ let beginning = greeting[..<index]
 let newString = String(beginning)
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language.png" width="600" height="600"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language.png" width="600"></center> <br> 
 
 > Note: String과 Substring모두 [<U>StringProtocol</U>](https://developer.apple.com/documentation/swift/stringprotocol)프로토콜을 준수하며, `StringProtocol`값이 적용된 문자열을 조작하는 함수가 편리하다는 것을 의미합니다. `String`이나 `Substring` 값을 가지는 함수를 호출할 수 있습니다
 

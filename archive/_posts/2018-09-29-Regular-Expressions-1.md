@@ -183,7 +183,7 @@ textView.attributedText = (attributedText.copy() as! NSAttributedString)
 
 다양한 단어와 단어 그룹을 검색해보세요!. 아래 그림과 같이 텍스트 전체에 검색어가 강조 표시됩니다. 
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/Highlighting-The.png" width="500" height="700"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/Highlighting-The.png" width="500"></center> <br>
 
 
 다양한 옵션을 사용하여 `the`라는 단어를 검색하고 효과를 보세요. 예를 들어, 전체 단어옵션을 사용하면 `then`에서 the는 강조표시 되지 않습니다.
@@ -321,14 +321,14 @@ if let regex = regexes[index!] {
 
 프로젝트를 실행하고 왼쪽 상단의 `계정 아이콘` 버튼을 클린하고 회원가입 양식에 다음 정보들을 기입하는하세요. 각 필드가 완료되었을때 각 필드를 완료하며 ㄴ아래 스크린샷과 같이 텍스트가 유효한지 여부에 따라 텍스트가 녹색 또는 빨간색으로 변합니다. 
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/ValidatingAccountInformation.png" width="500" height="700"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/ValidatingAccountInformation.png" width="500"></center> <br>
 
 
 계정을 작성하고 저장해보세요. 모든 텍스트 필드의 유효성을 올바르게 검증해야 작업을 수행할수 있습니다. 앱을 재실행 합니다. 
 
 > Note: 이것은 정규 표현식에 대한 튜토리얼이지 인증에 대한 튜토리얼이 아닙니다. 이 자습서의 코드를 인증 모범 사례의 예로 사용하지 마세요. 여기에서 암호는 장치에 일반 텍스트로 저장됩니다. `LoginViewController`에 `loginAction`은 서버에 안전하게 저장되는 것이 아니라 장치에 저장된 암호만 확인합니다. 이것은 어떤 방식으로든 안전하지 않습니다. 
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/LoginViewController.png" width="500" height="700"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/LoginViewController.png" width="500"></center> <br>
 
 
 ---
@@ -471,7 +471,7 @@ func decorateAllSplittersWith(_ decoration: Decoration) {
 
 앱을 빌드하고 실행합니다. 이제 읽기 모드 아이콘을 탭하세요. 날짜, 시간, 구분자에 대한 링크 스타일 강조 표시를 볼수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/ReadingMode.png" width="500" height="700"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2018/06/ReadingMode.png" width="500"></center> <br>
 
 읽기모드 버튼을 다시 누르면 읽기모드가 비활성화되고 텍스트트 일반 텍스트로 돌아갑니다. 
 

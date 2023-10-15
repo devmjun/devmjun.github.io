@@ -61,12 +61,12 @@ func addAndGet(add: Int) -> Int {
 }
 ```
 
-<center><img src="/img/posts/Functional_Programming.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming.png" width="500"></center> <br> 
 
 
 이러한 문제들을 해결하기 위해서 기존에는 세마포어, 뮤텍스를 사용해서 싱크(동기화)를 맞추어서 사용했습니다. <br>
 
-<center><img src="/img/posts/Functional_Programming-1.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-1.png" width="500"></center> <br> 
 
 그런데, 이제는 아주 간단한 방법으로 이것을 해결합니다. 읽는것은 가능하지만, 쓰는것을 못하게 해서 해결합니다. `Immutable` 이라는 단어가 이렇게 나오게됩니다.
 
@@ -74,7 +74,7 @@ func addAndGet(add: Int) -> Int {
 
 ## Side-Effect
 
-<center><img src="/img/posts/Functional_Programming-2.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-2.png" width="500"></center> <br> 
 
 외부에 영향을 줄수있지 않은 방법으로 프로그래밍 하자! 라는 공감대가 형성됩니다. 
 
@@ -82,13 +82,13 @@ func addAndGet(add: Int) -> Int {
 
 ## Functional 
 
-<center><img src="/img/posts/Functional_Programming-3.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-3.png" width="500"></center> <br> 
 
 ---
 
 ## Functional 
 
-<center><img src="/img/posts/Functional_Programming-4.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-4.png" width="500"></center> <br> 
 
 명령형 프로그래밍: 데이터를 정의하고 그것의 변화 과정을 프로그래밍 할것이냐? 
 함수형 프로그래밍: 행위를 정의하고 그것에 데이터를 집어 넣을것이냐? 
@@ -111,9 +111,9 @@ func addAndGet(add: Int) -> Int {
 
 `asynchrous`한 상황에서 데이터를 어떻게(`Stream`) 처리할것인가에 대한 아이디어
 
-<center><img src="/img/posts/Functional_Programming-5.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-5.png" width="500"></center> <br> 
 
-<center><img src="/img/posts/Functional_Programming-6.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/Functional_Programming-6.png" width="500"></center> <br> 
 
 - Async 한 처리를 Functional 하게 처리하자
 - 리턴값은 Stream인 Observable을 반환하자

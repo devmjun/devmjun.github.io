@@ -60,11 +60,11 @@ marathon install johnsundell/testdrive
 
 ## Usage 
 
-<center><img src="/img/posts/TestDrive.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/TestDrive.png" width="700"></center> <br> 
 
 > Note: `-v` 옵션은 버전을 `-p` 옵션은 플랫폼을 나타냅니다. 사실 입력하지 않고 `testDrive RxSwift`하면 최신버전을 알아서 받아줍니다. 
 
-<center><img src="/img/posts/TestDrive1.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/TestDrive1.png" width="700"></center> <br> 
 
 설치가 완료되면 플레이 그라운드가 자동으로 실행 됩니다. 사용하려고 하는 플랫폼에서 컴파일후(사용하려고 라이브러리를 컴파일 해야합니다), `import` 명령어 작성하여 확인하면 잘 작동하는 모습을 확인할수 있습니다.
 

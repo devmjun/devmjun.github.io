@@ -50,7 +50,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS 10에서 새로운 기능�
 
 위의 토픽이 친숙하지 않다면 [여기](https://developer.apple.com/documentation/uikit/uicollectionviewlayout)를 참조할수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/06/basic-annoyed-1-1.png" width="350" height="550"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/06/basic-annoyed-1-1.png" width="350"></center> <br> 
 
 
 또한 다음의 좋은 튜토리얼들을 확인할수도 있습니다.
@@ -62,7 +62,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS 10에서 새로운 기능�
 
 `UICollectionViewLayout`튜토리얼의 마지막에 도달하면 다음과같은 `UIcollectionView`를 구현할수 있습니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-0.gif" width="350" height="550"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-0.gif" width="350"></center> <br> 
 
 ---
 
@@ -74,7 +74,7 @@ UICollectionView는 iOS 6에서 소개 되었고 iOS 10에서 새로운 기능�
 
 다음에 색션 header, footer들이 있는 표준 `UICollectionView`에 귀여운 올빼미가 배치되어 있는것을 볼수 있을것 입니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-1.png" width="350" height="550"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-1.png" width="350"></center> <br> 
 
 이 앱은 Jungle Soccer Cup 2017에 참가하는 올빼미 팀읜 플레이어들을 보여주는 앱입니다. Section header는 팀에서 이들의 역할을 보여주고 footers은 집단의 전략(collective strength)을 보여줍니다.
 
@@ -534,11 +534,11 @@ extension CustomLayout {
 
 `Main.storyboard`를 열고 아래에 보여지는것과 같이 `Jungle Cup Collection View Controlelr Scene`에서 `Collection View Flow Layout`을 선택합니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-2.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-2.png" width="450"></center> <br> 
 
 다음으로 `Identity Inspector`을 열고 `Custom Class`를 아래에 보이는 것과 같이 `CustomLayout`으로 변경합니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-3.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-3.png" width="450"></center> <br> 
 
 다음으로 `JungleCupCollectionViewController.swift`를 열고 
 
@@ -621,7 +621,7 @@ case CustomLayout.Element.menu.kind:
 
 프로젝트를 빌드하고 실행합니다. 다음과 비슷한 화면을 봐야합니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-4.gif" width="350" height="550"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-4.gif" width="350"></center> <br> 
 
 시작 프로젝트에서 `UICollectionView`는 이제 어떤 추가적인 기능을 가집니다. 
 
@@ -804,7 +804,7 @@ private func updateCells(_ attributes: CustomLayoutAttributes,
 
 `PlayerCell`에서 parallax 효과를 달성하기 위해, image의 프레임은 top 과 bottom의 음수 insets값을 가져야 합니다. 시작 프로젝트에서 이러한 제약조건을 설정 해야 합니다. Constraint inspector에서 이들을 확인할수 있습니다.
 
-<center><img src="/img/posts/collectionviewlayout-parallax-5.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-5.png" width="450"></center> <br> 
 
 앱을 빌드하기 전에 마지막 디테일을 고쳐야 합니다. `JungleCupCollectionViewController.swift`를 열고 `setupCollectionViewLayout()`내에 다음 값을 변경합니다.
 
@@ -822,7 +822,7 @@ customLayout.settings.headerOverlayMaxAlphaValue = CGFloat(0.6)
 
 모든 비쥬얼 효과를 보기위해 프로젝트를 빌드하고 실행합니다. 스크롤 해봅니다! 스크롤!
 
-<center><img src="/img/posts/collectionviewlayout-parallax-6.gif" width="350" height="550"></center> <br> 
+<center><img src="/img/posts/collectionviewlayout-parallax-6.gif" width="350"></center> <br> 
 
 ---
 

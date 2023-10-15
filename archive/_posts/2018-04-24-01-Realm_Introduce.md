@@ -111,13 +111,13 @@ open class Person: RealmObject() {
 
 앱에 저장된 렘 객체를 찾아보고 수정할수 있으며 데이터를 스프레드 시트와 같은 방법으로 찾아보고 쿼리할수 있습니다. 
 
-<center><img src="/img/posts/RealmChapter8.png" width="700" height="400"></center> <br> 
+<center><img src="/img/posts/RealmChapter8.png" width="700"></center> <br> 
 
 렘 스튜디오를 사용하여 렘 클라우드에 연결합니다. 렘 클라우드 서버에 연결 되면 데이터를 찾아보고 수정할수 있습니다. 로컬 파일과 마찬가지로 수동으로 가능합니다.
 
-<center><img src="/img/posts/RealmChapter9.png" width="700" height="400"></center> <br> 
+<center><img src="/img/posts/RealmChapter9.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/RealmChapter10.png" width="700" height="400"></center> <br> 
+<center><img src="/img/posts/RealmChapter10.png" width="700"></center> <br> 
 
 ---
 

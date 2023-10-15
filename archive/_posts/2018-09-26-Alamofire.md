@@ -55,7 +55,7 @@ Alamofire가 세부 구현사항을 숨기기 때문에, 네트워크 요청 문
 
 Alamofire 연습을 위한 이 앱의 이름은 `PhotoTagger`입니다. 프로젝트가 완성되면, 사진첩(또는 실제 장치에서 실행중인 카메라)에서 이미지를 선택하고, Imagga라는 타사 서비스에 이미지를 업로드 할수 있습니다. 이 서비스는 이미지 인식작업을 수행하여 이미지의 태그 및 초기 색상 목록(primary colors)을 제공합니다.
 
-<center><img src="/img/posts/Alamofire-Tutorial-0.gif" width="400" height="250"></center> <br>
+<center><img src="/img/posts/Alamofire-Tutorial-0.gif" width="400"></center> <br>
 
 
 이 프로젝트는 CocoaPods를 사용하고 PhotoTagger.xcworkspace 파일을 사용하여 실행합니다.

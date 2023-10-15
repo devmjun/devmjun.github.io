@@ -58,7 +58,7 @@ permalink: /archive/:title
 
 작업 예제의 목적은 그림 6-1에서 볼수 있는 다이어그램과 같은 계층적 트리(hierarchichal tree)를 표시하기 위한 사용자화된 레이아웃을 구현하는 것입니다. 예제 코드는 설명과 코드 조각(code snippets of code), 사용자 정의 처리 방법의 요점을 제공합니다. collection view의 각 섹션은 트리에서 하나의 레벨로 간주 되어 집니다.(Each section of the collection view constitutes one level of depth into the tree): **Section 0**은 NSObject cell만 포함합니다. **Section 1**은 NSObject의 cell의 모든 자식들이 포함됩니다. **Section 2**는 그 자식들의 cell의 모든 자식들을 포함합니다. 각 셀은 관련 클레스 이름에 대한 레이블이 있는 사용자화된 셀이고 cell들은 supplementary view와 각 사이에 연결되어 있습니다. 왜냐하면 connector view class는 그리기 위해 얼마나 많이 연결해야 할지 결정하고, 우리의 데이터 소스에서 데이터로 접근해야 합니다. 따라서 이들을 연결하기 위해 supplementary view로 구현하는것이 decoration view로 구현하는 것보다 합리적 입니다.
 
-<center><img src="/img/posts/CustomCollectionViewLayout-4.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-4.png" width="450"></center> <br> 
 
 ---
 
@@ -152,7 +152,7 @@ prepareLayout 메소드의 구현 예제는 두 부분으로 나뉘어 집니다
 
 #### Figure 6-2  Connecting parent and child index paths
 
-<center><img src="/img/posts/CustomCollectionViewLayout-5.png" width="750" height="550"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-5.png" width="750"></center> <br> 
 
 
 6-4는 prepareLayout 메소드 구현의 전반부를 보여줍니다. 캐싱 메커니즘의 기초 형태로 시작하여 변경 가능한 두개의 사전이 초기화 되어 집니다. 먼저 `layoutInformation`은 local 과 동일 합니다. local 변경가능한 copy를 만들면서 인스턴스 변수가 변경할수 없기 때문에 custom layout의 구현에 적합합니다. 왜냐하면 layout attributes는 prepareLayout 메소드가 실행이 끝난 이후에 수정되면 안되기 때문입니다. code는 각 색션을 증가 순서로 반복하고 그후 모든 셀에 대한 attributes를 생성하기 위해 각 색션 이내의 각 아이템을 반복합니다. 사용자화된 메소드인 `attributesWithChildrenForIndexPath:`는 custom layout attributes의 인스턴스를 반환하고 현재 index path에 아이템을 위한 자식의 index path와 함께 자식 속성을 위치시킵니다. 그러므로 attributes 객체는 local cellInformation 사전에 key값으로 indexPath가 저장되어 집니다. 모든 아이템의 초기화를 피하는것은(This initial pass over all of the items) 아이템의 프레임 설정하기 전에 각 아이템에 대한 자식을 설정하기 위한 코드를 허용합니다.
@@ -189,7 +189,7 @@ override func prepare() {
 
 step 1 에서, 마지막열의 셀은 순차적으로 위치되어 집니다. step 2에서 layout은 두번째 열에 대한 프레임을 결정합니다. 이 열에서 cell은 하나 이상의 자식을 가지지 않기 때문에 순차적으로 배치될수 있습니다. 하지만 녹색 셀의 프레임은 부모의 셀과 일치 시키기 위해 조정될수 있기 때문에 조정된 공간으로 이동됩니다. 마지막 단계에서 첫번째 열에 대한 셀이 위치됩니다. 두번째 열의 처음 3개의 셀은 첫번째 열에  있는 첫번째 셀의 자식 이기 때문에 첫번째 열의 첫번째 셀을 따르는 셀이 이동합니다. 이 경우에 첫번째 셀을 따르는 두개의 셀의 자식들이 없기 때문에 실제로 그렇게할 필요는 없지만 레이아웃 객체는 이를 알만큼 똑똑하지 않습니다. 오히려 자식을 가지는 Cell의 경우를 대비하여 항상 공간을 조정합니다. 또한 녹색셀은 이제셀과 일치하도록 이동했습니다.
 
-<center><img src="/img/posts/CustomCollectionViewLayout-6.png" width="350" height="450"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-6.png" width="350"></center> <br> 
 
 6-5목록은 `prepareLayout` method의 후반부를 보여주고, 각 아이템에 대한 프레임을 설정합니다. 코드에 숫자가 적인 설명을 아래에서 설명합니다.
 
@@ -275,7 +275,7 @@ step 1 에서, 마지막열의 셀은 순차적으로 위치되어 집니다. st
 
 목록 6-8은 이 메소드에 대한 구현을 보여줍니다. 셀에 대한 저장된 사전을 이용하고 하위 사전 내에서, key로서 지정된 indexPath와 함께 저장된 atrributes 객체를 반환합니다.
 
-<center><img src="/img/posts/CustomCollectionViewLayout-7.png" width="650" height="850"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-7.png" width="650"></center> <br> 
 
 ---
 

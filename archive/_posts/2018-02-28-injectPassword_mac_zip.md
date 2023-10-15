@@ -13,7 +13,7 @@ permalink: /archive/:title
 
 아래와 같이 zip 파일에 암호를걸어서 간단하게 보호해야할 파일에 암호를 걸수 있습니다. 일반적인 경우가 아닌 좀더 복잡한 암호 과정이 필요한 경우 `openssl`과 같은 명령어를 사용해 암호화 하는것이 적절합니다. <br>
 
-<center><img src="/img/posts/password_Zip.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/password_Zip.png" width="500"></center> <br> 
 
 ---
 
@@ -64,7 +64,7 @@ Archive: targetfolder.zip
 
 OpenSSL is a software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end. It is widely used in internet web servers, serving a majority of all web sites. – 위키피디아 <br>
 
-<center><img src="/img/posts/password_Zip-1.png" width="500" height="300"></center> <br> 
+<center><img src="/img/posts/password_Zip-1.png" width="500"></center> <br> 
 
 위 그림은 openssl을 이용하여 암호화한 모습입니다. 터미널에서 암호 및 복호화하는 방법은 아래와 같습니다.
 

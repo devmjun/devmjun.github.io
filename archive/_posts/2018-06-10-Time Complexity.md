@@ -15,11 +15,11 @@ tags: [Algorithm]
 [Big O](https://github.com/devmjun/Python3-Basic/blob/master/image/binary_search.pdf)<br>
 [Logarithm](https://en.wikipedia.org/wiki/Logarithm)
 
-<center><img src="/img/posts/TimeComplexity.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_1.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity_1.png" width="700"></center> <br> 
 
-<center><img src="/img/posts/TimeComplexity_2.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/TimeComplexity_2.png" width="700"></center> <br> 
 
 [(번역) 알고리즘 쉽게 이해하기 : 시간 복잡도와 Big-O 표기](https://joshuajangblog.wordpress.com/2016/09/21/time_complexity_big_o_in_easy_explanation/)
 

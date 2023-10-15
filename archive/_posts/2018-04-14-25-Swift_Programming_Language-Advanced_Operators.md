@@ -353,7 +353,7 @@ let combinedVector = vector + anotherVector
 
 예제에서 아래 그림으로 보는 것처럼 (5.0, 5.0)벡터를 만들기 위해 두개의 (3.0, 1.0)과 (2.0, 4.0)벡터들을 더합니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-31.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-31.png" width="700"></center> <br> 
 
 ---
 

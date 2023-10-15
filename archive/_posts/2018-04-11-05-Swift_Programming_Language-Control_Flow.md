@@ -441,7 +441,7 @@ default:
 // Prints "(1, 1) is inside the box"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-4.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-4.png" width="500"></center> <br> 
 
 `switch`문은 좌표가 빨간색 x축에 있는지, 오렌지색 y축에 있는지, 원점 (0,0)에 있는지, 원점을 중심으로 4-4 상자 안이나 바깥쪽에 있는지를 결정합니다.
 
@@ -470,7 +470,7 @@ case let (x, y):
 // Prints "on the x-axis with an x value of 2"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-5.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-5.png" width="500"></center> <br> 
 
 `switch`문은 좌표가 붉은 x축에 있는지, 오렌지색 y축에 있는지, 다른 경우(어느 축에도 없는)를 결정합니다.
 
@@ -501,7 +501,7 @@ case let (x, y):
 // Prints "(1, -1) is on the line x == -y"
 ```
 
-<center><img src="/img/posts/Swift_Programming_Language-6.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-6.png" width="500"></center> <br> 
 
 `switch` 문은 `where x == y`줄에서 좌표가 녹색 대각선인지, where `x == -y` 줄에서보라색 대각선인지, 그외의 것들을 결정합니다.
 

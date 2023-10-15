@@ -17,7 +17,7 @@ API 주소는 [여기](https://openweathermap.org) 입니다
 
 ## Overview 
 
-<center><img src="/img/posts/OpenWeather.gif" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/OpenWeather.gif" width="450"></center> <br> 
 
 날씨에 대한 정보를 제공하는 API 를 가지고 간단하게, 현재 위치의 날씨를 UI에 적용 하고 위도와 경도를 가지고 해당 지역의 날씨를 검색 합니다.
 

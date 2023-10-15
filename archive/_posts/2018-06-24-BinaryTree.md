@@ -30,7 +30,7 @@ permalink: /archive/:title
 
 이진 트리(Binary Tree)는 각 노드가 두개의 자식 노드를 가질수 있습니다. 그리고 그것들을 `left`, `right` 자식 처럼 참조합니다.
 
-<center><img src="/img/posts/binaryTree.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/binaryTree.png" width="500"></center> <br>
 
 이진 트리는 많은 트리 구조와 알고리즘에 기초 역할을 합니다. 
 
@@ -44,9 +44,9 @@ permalink: /archive/:title
 - Balanced binary tree: 잎 노드까지 이어지기 위한 최소한의 높이만을 지닙니다. 
 
 
-<center><img src="/img/posts/TreeType.png" width="500" height="400"></center> <br>
+<center><img src="/img/posts/TreeType.png" width="500"></center> <br>
 
-<center><img src="/img/posts/TreeType-1.png" width="500" height="400"></center> <br>
+<center><img src="/img/posts/TreeType-1.png" width="500"></center> <br>
 
 
 --- 
@@ -91,7 +91,7 @@ var tree: BinaryNode<Int> {
 
 위의 연산 프로퍼티는 아래의 트리를 구조를 반환합니다.
 
-<center><img src="/img/posts/binaryTree-1.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/binaryTree-1.png" width="500"></center> <br>
 
 ### Building a diagram 
 
@@ -150,7 +150,7 @@ example(of: "tree diagram") {
 - 현재 노드가 오른쪽 자식을 가졌다면 재귀적으로 그 자식노드를 방문합니다. 
 - `좌측 값 -> 루트 노드 값 -> 우측 값`
 
-<center><img src="/img/posts/binaryTree-2.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/binaryTree-2.png" width="500"></center> <br>
 
 ```swift
 // 1
@@ -179,7 +179,7 @@ example(of: "in-order traversal") {
 
 전위 순회는 항상 현재의 노드를 먼저 방문하고 왼쪽과 오른쪽 자식을 재귀적으로 방문합니다.
 
-<center><img src="/img/posts/binaryTree-3.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/binaryTree-3.png" width="500"></center> <br>
 
 ```swift
 // 1
@@ -208,7 +208,7 @@ example(of: "pre-order traversal") {
 
 후위 순회는 왼쪽과 오른쪽 자식 노드가 모두 재귀적으로 방문된 이후에 현재 노드를 방문합니다. 
 
-<center><img src="/img/posts/binaryTree-4.png" width="500" height="350"></center> <br>
+<center><img src="/img/posts/binaryTree-4.png" width="500"></center> <br>
 
 ```swift
 // 1

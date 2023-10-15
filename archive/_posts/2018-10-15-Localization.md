@@ -78,7 +78,7 @@ permalink: /archive/:title
 
 [여기](https://koenig-media.raywenderlich.com/uploads/2017/12/iLikeIt-starter.zip)에서 시작 프로젝트를 다운받습니다. 앱을 빌드하고 실행하고 `You like?`를 탭합니다. 앱이 다음의 그림과같이 보여야합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image001.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image001.png" width="450"></center> <br> 
 
 방금 본 것과 같이, 4가지 항목을 현지화 해야 합니다.
 
@@ -199,7 +199,7 @@ Xcode는 파일의 언어를 확인하기 위한 얼럿을 보여줍니다. 기�
 
 프로젝트 네비게이터를 보세요. `Localizable.strings` 옆에 펼침 삼각형(disclosure triangle)이 있습니다. 목록을 확장하면 English, Spanish 버전 두개의 버전이 Xcode에 목록으로 표시된것을 볼수 있습니다.
 
-<center><img src="/img/posts/Localization-3.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/Localization-3.png" width="450"></center> <br> 
 
 
 프로젝트 네비게이터에서 `Localizable.strings(Spanish)`를 선택하고 컨텐츠들을 다음과 같이 변경합니다. 
@@ -218,7 +218,7 @@ Xcode는 시뮬레이터에서 언어(languages) 또는 지역(locale)이 계속
 
 앱을 빌드하고 실행합니다. `¿Es bueno?`버튼을 클릭했을때 다음과 같이 볼수 있습니다. 
 
-<center><img src="/img/posts/Localization-5.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/Localization-5.png" width="450"></center> <br> 
 
 
 앱에는 스페인어가 존재합니다!
@@ -274,7 +274,7 @@ Xcode의 스토리보드에서 현지화를 미리 볼수 있습니다. 프로�
 
 이미지를 제외한 미리보기에서 스페인어는 다음과 같습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image017.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image017.png" width="450"></center> <br> 
 
 ---
 
@@ -348,12 +348,12 @@ salesCountLabel.text = String.localizedStringWithFormat(formatString, quantity, 
 
 스키마의 언어 옵션이 스페인어로 설정되었는지 확인하고 빌드하고 실행하세요. 다음과 같은 내용을 확인해야합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image018.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image018.png" width="450"></center> <br> 
 
 
 run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변경합니다. 다시 빌드하고 실행합니다. 이번에는 다음과 같이 보여야.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image019.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image019.png" width="450"></center> <br> 
 
 > Note: 영어가 기본 언어가 아닌 국가에 살고 있다면 쉼표로 포맷된(1,000) 콤마가 표시되지 않을수 있습니다. 이 경우에 위와 같은 결과를 얻으려면 United State로 스킴의 언어 옵션을 변경하세요.	
 
@@ -415,7 +415,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 
 빌드하고 실행합니다. `You like?`를 탭하여 3개의 모든 값의 문법이 정확한지 확인할때까지 시행합니다. 그리고 코드를 조금도 변경하지 않았습니다! 복수 처리를 얻기위해 앱을 국제화하는것의 가치는 공짜입니다.
 
-<center><img src="/img/posts/Localization-13.png" width="450" height="650"></center>
+<center><img src="/img/posts/Localization-13.png" width="450"></center>
 
 스키마의 `Application Languagu`를 `Spanish`로 변경하고 빌드하고 실행합니다. `¿Es bueno?`를 몇번 탭하여 현지화가 올바르게 작동하는지 확인합니다. 
 
@@ -457,7 +457,7 @@ run scheme를 편집하고 어플리케이션 언어를 시스템 언어로 변�
 
 이게 다입니다. 스키마의 언어 옵션을 편집하고 빌드하고 실행하세요. `Lubisze to?`를 몇번 탭하여 판매 메시지와 다양한 단, 복수형을 확인합니다. 숫자 1000의 형식도 변경되었습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image026.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image026.png" width="450"></center> <br> 
 
 ---
 
@@ -481,7 +481,7 @@ CFBundleDisplayName = "iLikeIt";
 
 시뮬레이터에서 `General > Language & Region > iPhone Language` 를 선택하고 스페인어 또는 폴란드어를 선택하고 완료를 누릅니다. 그후 변경이 완료되면 앱에서 확인합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image027.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/12/image027.png" width="450"></center> <br> 
  
 ---
 

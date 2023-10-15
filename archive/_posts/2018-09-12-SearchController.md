@@ -45,7 +45,7 @@ permalink: /archive/:title
 
 [여기](https://koenig-media.raywenderlich.com/uploads/2017/10/CandySearch_4_Starter.zip)에서 시작 프로젝트를 다운로드 하고 실행합니다. 앱이 이미 네비게이션 컨트롤러로 설정 되어 있습니다. Xcode 프로젝트를 선택하고 서명 색션에서 자신의 팀으로 업데이트 합니다. 앱을 빌드하고 실행하면 빈 목록이 표시됩니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Starter.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Starter.png" width="300"></center> <br>
 
 
 Xcode로 돌아가면, `Candy.swift`에 화면에 표시해야하는 각 캔디 조각에 대한 정보를 저장하는 구조체를 포함하고 있습니다. 이 구조체는 두개의 속성을 가지고 있습니다: `category`, `candy`의 이름.
@@ -84,12 +84,12 @@ candies = [
 
 프로젝트를 빌드하고 실행합니다. 테이블뷰의 Delegate, Datasource는 이미 구현되어 있고, 다음과 같은 화면을 볼수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Data.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Data.png" width="300"></center> <br>
 
 
 테이블뷰의 row를 선택하면 캔디와 부합하는 세부 사항을 볼수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DarkChocolate-1.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DarkChocolate-1.png" width="300"></center> <br>
 
 candy가 너무 많습니다. 원하는걸 찾기위한 조금의 시간이 필요하기 떄문에. `UISearchBar`가 필요합니다.
 
@@ -202,7 +202,7 @@ filterContentForSearchText(searchController.searchBar.text!)
 
 이제, search bar에서 텍스트를 추가하거나 삭제할때마다, `UISearchController`는 `updateSearchResults(for:)`에 대한 호출을 통해 `MasterViewController` 클레스에게 변경 내용을 알리고, `filterContentForSearchText(_:scope:)`를 호출합니다. 이제 앱을 빌드하고 실행하고, 아래로 스크롤하면 테이블 뷰 위에 `search bar`가 있음을 알수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchBar.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchBar.png" width="300"></center> <br>
 
 
 그러나, 일부 검색 텍스트를 입력해도 필터링된 결과는 표시되지 않습니다. 이것은 이것의 이유는 단순합니다. 테이블 뷰가 필터링된 결과를 사용해야 하는 시점을 알 수 있도록 코드를 아직 작성하지 않았기 때문입니다.
@@ -258,7 +258,7 @@ search controller는 자동으로 result 테이블을 숨기고 표시 처리하
 
 앱을 빌드하고 실행합니다. 메인 테이블의 행을 필터링하는 작동 검색 막대가 있습니다. 
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Filtering-1.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Filtering-1.png" width="300"></center> <br>
 
 앱과 함께 다양한 사탕을 검색하는 방법을 확인하세요. 
 
@@ -293,7 +293,7 @@ if isFiltering() {
 
 이 시점에서 코드를 빌드하고 실행하고, 앱이 main table 또는 search table 각각에서 올바른 detail view로 탐색하는걸 확인할수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DetailView.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-DetailView.png" width="300"></center> <br>
 
 ---
 
@@ -368,7 +368,7 @@ search bar에 사탕객체에 지정한 범주와 일치하는 제목이 있는 
 
 앱을 빌드하고 실행합니다. 검색 텍스트를 입력하고 범위를 변경하세요.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Filter-with-Scope.png" width="300" height="200"></center> <br>
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-Filter-with-Scope.png" width="300"></center> <br>
 
 
 범위가 All로 설정된 `caramel`을 입력하세요. 이것은 목록에 나타나지만 scope를 `Chocolate`으로 변경하면 초콜렛이 아니기 때문에 `caramel`이 사라집니다.
@@ -408,7 +408,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 
 |  |  | 
 | :--: | :--: | 
-| <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchFooter1.png" width="300" height="200"></center>|<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-No-Results.png" width="300" height="200"></center>|
+| <center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-SearchFooter1.png" width="300"></center>|<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/10/UISearchController-No-Results.png" width="300"></center>|
 
 
 ---

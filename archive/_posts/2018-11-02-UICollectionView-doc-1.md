@@ -78,7 +78,7 @@ collection view는 전체 레이아웃 처리를 관리하기 위해 사용자�
 
 *Figure 5-1 illustrates how you can use the preceding methods to generate your layout information*
 
-<center><img src="/img/posts/CustomCollectionViewLayout-0.png" width="550" height="850"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-0.png" width="550"></center> <br> 
 
 
 `prepareLayout` 메소드는 레이아웃에서 뷰와 셀의 위치를 결정하기 위해 연산이 필요한지 아닌지 이행할 기회를 얻는 곳입니다. 최소한 이 메소드에서 충분한 정보를 계산하여 콘텐츠 영역의 전체 사이즈를 반환할수 있어야합니다. 반환되어진 이 영역은 step 2의 collection view로 갑니다.
@@ -123,7 +123,7 @@ layout attributes 에 대한 추가적인 정보는 [UICollectionViewAttributes 
 
 레이아웃 처리의 마지막 단계동안에는, collection view는 레이아웃 객체의 `layoutAttributesForElementsInRect:` 메소드를 호출합니다. 이 메소드의 목적은 모든 cell과 모든 supplemenetary, 지정된 사각형에 교차되는 decoration뷰를 위한 layout attributes를 제공합니다. 큰 스크롤가능한 콘텐츠 영역의 경우 collection view는 현재 보여져야 하는 콘텐츠 영역의 일부분에 있는 아이템의 속성에 대해서 요청해야 합니다. figure 5-2에서 레이아웃 객체가 두번째 헤더뷰와 함께 cells의 6에서 20까지 보여주기 위해 필요한 콘텐츠 입니다. 반드시 collection view 콘텐츠 영역의 어떤 부분에 대한 레이아웃 속성을 제공할 준비가 되어 있어야 합니다. 이러한 attributes는 아이템 추가, 삭제에 대한 애니메이션을 용이하게 하는데 사용될수 있습니다.
 
-<center><img src="/img/posts/CustomCollectionViewLayout-1.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-1.png" width="450"></center> <br> 
 
 왜냐하면 `layoutAttributesForElementsInRect:`메소드는 레이아웃 객체의 `prepareLayout`메소드 이후에 호출되어 지고, 필요한 속성을 반환하거나 생성하기 위해 필요한 대부분의 정보를 이미 가지고 있어야합니다. `layoutAttributesForElementsInRect:` 메소드의 구현은 다음 단계를 따릅니다.
 
@@ -201,7 +201,7 @@ supplementary view를 layout에 추가하기 위해서 다음 단계를 따릅�
 
 초기의 attributes가 어떻게 동작하는지 이해하기 위해 예를 보면 도움이 됩니다. Figure 5-3은 레이아웃을 시작하여 처음에는 셀이 3개뿐인 collection view를 보여줍니다. 세 셀을 삽입하면 레이아웃 객체에 삽입되는 셀에 대한 초기 속성을 제공하도록 collection view가 요청 합니다.
 
-<center><img src="/img/posts/CustomCollectionViewLayout-2.png" width="550" height="850"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-2.png" width="550"></center> <br> 
 
 5-2는 그림 5-3에서 cell을 추가하는것에 대한 초기 attirbutes를 지정하기 위해 사용할수 있는 코드가 표시됩니다. 이 메소드는 cell의 위치를 중심으로 설정하여 투명하게 만듭니다. 레이아웃 객체는 마지막 위치를 제공하고 알파값을 제공합니다.
 
@@ -233,7 +233,7 @@ func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UIC
 
 그림 5-4는 collection view의 스크롤 행동을 변경하기 위해 layout object를 어떻게 사용할수 있는지 실 사례를 보여줍니다. collection view 오프셋이 (0, 0)에서 시작하고 사용자가 왼쪽으로 스와이프 한다고 가정합니다. collection view는 스크롤이 자연스럽게 중단되는 위치를 계산하고 해당 값을 `제안된(proposed)` cotent offset 값으로 값을 제공합니다. 레이아웃 객체는 collection view의 보여지는 bounds에 정확히 중앙에 아이템을 위치 시키기 위해  제안된 값을 변경할수 있습니다. 이 새로운 값은 target content offset이 되고, `targetContentOffsetForProposedContentOffset:withScrollingVelocity:` 메소드에서 반환할수 있습니다. 
 
-<center><img src="/img/posts/CustomCollectionViewLayout-3.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/CustomCollectionViewLayout-3.png" width="450"></center> <br> 
 
 ---
 

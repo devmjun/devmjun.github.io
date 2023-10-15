@@ -57,13 +57,13 @@ SpriteKit, Swift를 사용하는 게임프로그래밍을 위한 삼각법을 �
 
 아마 이걸 깨닫지 못했을 것입니다. 하지만 게임들은 삼각형으로 꽉차 있습니다. 예로, 우주선 게임을 상상하고 이 두개의 우주선사이의 거리를 계산하길 원한다고 상상해보세요. 
 
-<center><img src="/img/posts/Trigonometry-0.png" width="450" height="450"></center> <br> 
+<center><img src="/img/posts/Trigonometry-0.png" width="450"></center> <br> 
 
 각 우주선의 X,Y 위치를 알지만 흰색의 대각선(diagonal)의 길이를 어떻게. 찾을수 있나요? 
 
 음, 다음과같이 삼각형을 각 우주선의 중심점 사이에 간단하게 그릴수 있습니다. 
 
-<center><img src="/img/posts/Trigonometry-10.png" width="350" height="350"></center> <br> 
+<center><img src="/img/posts/Trigonometry-10.png" width="350"></center> <br> 
 
 
 이 삼각형의 모서리중 하나는 90도 입니다. 이 것은 이 튜토리얼에서 다루는 삼각형 타입(triangle)과 `직각 삼각형(right triangle)`으로 알려져 있습니다. 
@@ -118,7 +118,7 @@ SpriteKit, Swift를 사용하는 게임프로그래밍을 위한 삼각법을 �
 
 예를 들어 보겠습니다. 우주선들 사이의 알파각은 45도 이고, 빗변(hypotenuse)은 10 포인트라고 가정합니다. 
 
-<center><img src="/img/posts/Trigonometry-4.png" width="450" height="450"></center> <br> 
+<center><img src="/img/posts/Trigonometry-4.png" width="450"></center> <br> 
 
 이 값을 다음 공식에 연결할수 있습니다.
 
@@ -264,7 +264,7 @@ playerSprite.zRotation = angle - 90
 
 1라디안은 호를 따라 이동한 반지름의 길이만큼 이동할때 얻는 각도 입니다. 원의 시작 부분에서 끝까지 2π 주기(대략 6.28번) 입니다.
 
-<center><img src="/img/posts/Trigonometry-7.png" width="450" height="450"></center> <br> 
+<center><img src="/img/posts/Trigonometry-7.png" width="450"></center> <br> 
 
 반지름(노란색 선)은 호(빨간색 곡선)같은 길이를 가집니다. 두 길이가 같은 각도는 1라디안 입니다. 
 
@@ -463,7 +463,7 @@ playerAngle은 새로운 각도와 이전 각도에 블렌드 펙터(blend facto
 
 하나의 회전 각도에서 다른 회전각도로 극적인 변화가 더 이상 없음을 확인하기 위해 빌드하고 실행합니다.
 
-<center><img src="/img/posts/Trigonometry-8.png" width="450" height="450"></center> <br> 
+<center><img src="/img/posts/Trigonometry-8.png" width="450"></center> <br> 
 
 이제 시계방향과 시계 반대 방향 둘다 원을 그리며 비행 해보세요. 어느 지점에서 우주선은 갑자기 반대방향으로 360도 회전합니다. 이것은 원의 동일한 지점에서 항상 발생합니다. 무슨일인가요?
 

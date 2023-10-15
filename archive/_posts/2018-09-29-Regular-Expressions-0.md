@@ -59,7 +59,7 @@ permalink: /archive/:title
 
 플레이 그라운드의 결과 창(side bar)에 각 예제와 함께 일치 목록이 표시됩니다. `highlighted` 예제의 경우 결과 위에 마우스를 올려 놓고 눈이나 빈원 아이콘을 클릭하여 강조 표시된 일치 항목을 텍스트에 표시할수 있습니다.
 
-<center><img src="/img/posts/Regular-Expressions-0.png" width="700" height="1000"></center> <br>
+<center><img src="/img/posts/Regular-Expressions-0.png" width="700"></center> <br>
 
 `NSRegularExpression`을 어떻게 생성하는지 나중에 배우지만, 지금은 플레이 그라운드를 사용하여 다양한 정규 표현식이 작동하는 방식에 대한 느낌을 갖고 자신만의 패턴을 시도해볼수 있습니다.
 

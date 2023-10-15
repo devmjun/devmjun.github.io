@@ -152,7 +152,7 @@ swapTwoValues(&someString, &anotherString)
 
 아래 그림은 스택의 push / pop의 동작을 보여줍니다. <br>
 
-<center><img src="/img/posts/Swift_Programming_Language-16.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-16.png" width="700"></center> <br> 
 
 1. 스택에 3개의 값이 있습니다.
 2. 4번째 값을 스택의 맨위에 Push 됩니다.
@@ -215,7 +215,7 @@ stackOfStrings.push("cuatro")
 
 다음은 `stackOfStrings` 스택에 4개의 값을 집어 넣는 방법을 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-17.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-17.png" width="700"></center> <br> 
 
 스택으로에서 값 하나를 꺼내면 맨 위의 값 "cuatro"이 제거되고 반환합니다.
 
@@ -226,7 +226,7 @@ let fromTheTop = stackOfStrings.pop()
 
 다음은 맨위의 값을 꺼낸 뒤의 스택을 보여줍니다.
 
-<center><img src="/img/posts/Swift_Programming_Language-18.png" width="500" height="500"></center> <br> 
+<center><img src="/img/posts/Swift_Programming_Language-18.png" width="500"></center> <br> 
 
 ---
 

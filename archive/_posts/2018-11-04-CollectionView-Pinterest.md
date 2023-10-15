@@ -59,7 +59,7 @@ UIKit에서 제공된 기존 flow layout 을 사용했을 가능성이 크지만
 
 [여기](https://koenig-media.raywenderlich.com/uploads/2017/09/Starter_Project.zip)에서 시작 프로젝트르 다운받고 실행합니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/08/pinterest-layout-updated-initial.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/08/pinterest-layout-updated-initial.png" width="450"></center> <br> 
 
 이 앱은 [RWDevCon](https://www.rwdevcon.com/) 이미지들을 표시합니다. 사진들을 검색하고 컨퍼런스에 참석한 참가자들이 얼마나 즐거운지 볼수 있습니다.
 
@@ -84,17 +84,17 @@ Laouyts 폴더에서 `UICollectionViewLayout`의 하위 클레스이고 `Pintere
 `Main.stroyboard`를 열고 `Photo Stream View Controller Scene`에 있는 `CollectionView`를 선택합니다.
 
 
-<center><img src="/img/posts/PinterestLayout-0.png" width="650" height="450"></center> <br> 
+<center><img src="/img/posts/PinterestLayout-0.png" width="650"></center> <br> 
 
 다음으로 `Attributes Inspect` Layout 리스트에서 `Custom`을 선택하고 class를 `PinterestLayout`으로 설정합니다.
 
-<center><img src="/img/posts/PinterestLayout-1.png" width="650" height="450"></center> <br> 
+<center><img src="/img/posts/PinterestLayout-1.png" width="650"></center> <br> 
 
 그후 어떻게 동작하는지 봅니다. 앱을 빌드하고 실행합니다.
 
-<center><img src="/img/posts/PinterestLayout-2.png" width="450" height="650"></center> <br> 
+<center><img src="/img/posts/PinterestLayout-2.png" width="450"></center> <br> 
 
-<center><img src="https://www.gameartguppy.com/wp-content/uploads/2017/06/basic-confused-2.png" width="450" height="650"></center> <br> 
+<center><img src="https://www.gameartguppy.com/wp-content/uploads/2017/06/basic-confused-2.png" width="450"></center> <br> 
 
 믿거나 말거나 좋은 징조입니다. collection view는 사용자화한 layout class를 사용한다는 의미입니다. PinterestLayout은 레이아웃 처리와 관련된 매소드를 아직 구현하지 않았기 때문에 cell들이 화면에 표시되지 않습니다.
 
@@ -294,7 +294,7 @@ if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
 
 앱을 실행 해봅니다. 사진의 높이에 따라 셀이 적절하게 배치되고 크기가 조정된 것을 볼수 있습니다.
 
-<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/08/pinterest-layout-updated-final.png" width="450" height="650"></center> <br> 
+<center><img src="https://koenig-media.raywenderlich.com/uploads/2017/08/pinterest-layout-updated-final.png" width="450"></center> <br> 
 
 이제 완전히 사용자화한 collection view layout을 만들었습니다.
 

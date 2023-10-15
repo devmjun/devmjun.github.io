@@ -64,7 +64,7 @@ permalink: /archive/:title
 
 iPhone X는 과거 어느 때보다 풍부하고 풍부한 컨텐츠를 제공하는 대형, 고해상도, 둥근 모서리의 슈퍼레티나 디스플레이를 포함합니다
 
-<center><img src="/img/posts/iPhone_X.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/iPhone_X.png" width="700"></center> <br> 
 
 #### - 화면크기
 
@@ -114,7 +114,7 @@ Navigation Bar, Tables 및 collections 같이 시스템에서 제공하는 표�
 
 장치가 가로 방향인 경우 일부 게임(예 : 게임)의 경우 화면 하단 (안전 영역 아래까지 확장 가능)에 내용을 저장할 수있는 적절한 컨트롤을 배치하는 것이 적절할수있습니다. 화면 상단과 하단에 컨트롤을 배치할때 일치하는 인셋을 사용하고 홈 표시기 주위에 충분한 공간을 남겨 두어 사람들이 실수로 컨트롤과 상호 작용하려고 시도하지 않도록합니다. <br>
 
-<center><img src="/img/posts/iPhone_X-9.png" width="600" height="700"></center> <br> 
+<center><img src="/img/posts/iPhone_X-9.png" width="600"></center> <br> 
 
 #### - Status Bar 높이에 주의하십시오
 
@@ -158,7 +158,7 @@ iPhone X는 4.7 "iPhone과는 다른 종횡비를 가지므로 아이폰 X에서
 
 #### - Color 
 
-<center><img src="/img/posts/iPhone_X-18.png" width="382" height="600"></center> <br> 
+<center><img src="/img/posts/iPhone_X-18.png" width="382"></center> <br> 
 
 iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 더 풍부하고 꽉찬 된 색상을 생성 할 수 있습니다.
 
@@ -189,7 +189,7 @@ iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 �
 |![screen](/img/posts/iPhone_X-25.png) |![screen](/img/posts/iPhone_X-26.png) |  <br>
 
 
-<center><img src="/img/posts/iPhone_X-27.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/iPhone_X-27.png" width="700"></center> <br> 
 
 #### - 맞춤 비디오 플레이어가 예상대로 작동하는지 확인하십시오
 
@@ -205,7 +205,7 @@ iPhone X의 디스플레이는 P3 색상 공간을 지원하므로 sRGB보다 �
 | 21:9 vidieo in fit-to-screen viewing mode| 21:9 video with embedded padding, in fit-to-screen viewing mode | 
 |![screen](/img/posts/iPhone_X-30.png) |![screen](/img/posts/iPhone_X-31.png) |  <br>
 
-<center><img src="/img/posts/iPhone_X-32.png" width="700" height="500"></center> <br> 
+<center><img src="/img/posts/iPhone_X-32.png" width="700"></center> <br> 
 
 ### Gestures 
 
@@ -249,7 +249,7 @@ iPhone X에서는 Emoji/Globe 키와 Dictation 키가 사용자 정의 키보드
 
 iOS 11을 사용하면 이전보다 더 강력하고 사용자 친화적인 앱을 제공 할 수 있습니다. <br>
 
-<center><img src="/img/posts/What_is_New_iOS11.png" width="700" height="700"></center> <br> 
+<center><img src="/img/posts/What_is_New_iOS11.png" width="700"></center> <br> 
 
 #### - Augmented reality
 

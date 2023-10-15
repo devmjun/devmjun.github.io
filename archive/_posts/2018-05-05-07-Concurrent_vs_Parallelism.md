@@ -14,7 +14,7 @@ permalink: /archive/:title
 ## Concurrent vs Parallelism 
 
 
-<center><img src="/img/posts/conVsPara.png" width="700" height="700"></center> <br>  
+<center><img src="/img/posts/conVsPara.png" width="700"></center> <br>  
 
 
 - `Concurrency`: Composition of independently extued task

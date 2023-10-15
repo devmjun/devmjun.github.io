@@ -70,7 +70,7 @@ iOS는 시력 손실, 난청 및 기타 장애가있는 사용자를 위해 광�
 
 게임 플레이, 재미있는 연속적인 비디오 또는 재미있는 대체 그래픽에 대한 힌트를 표시하는 것이 좋습니다.
 
-<center><img src="/img/posts/Loading-1.png" width="700" height="700"></center> <br>  
+<center><img src="/img/posts/Loading-1.png" width="700"></center> <br>  
 
 #### - 로딩 화면 사용자 정의
 
@@ -211,7 +211,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 시작 시간은 새로운 사용자와 연결되는 첫번째 기회입니다. 
 
 
-<center><img src="/img/posts/onBoarding.png" width="382" height="700"></center> <br>  
+<center><img src="/img/posts/onBoarding.png" width="382"></center> <br>  
 
 #### - 시작 화면을 제공하십시오 
 
@@ -292,7 +292,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 일부 앱은 설정 또는 구성 선택을 할 수있는 방법을 제공해야하지만 대부분의 앱은이를 피하거나 지연시킬 수 있습니다. 성공적인 앱은 대부분의 사람들에게 즉시 잘 작동하는 동시에 경험을 조정할 수있는 편리한 방법을 제공합니다. 대부분의 사람들이 기대하는대로 기능하도록 앱을 디자인하면 설정의 필요성이 줄어 듭니다 <br>
 
-<center><img src="/img/posts/Setting.png" width="382" height="700"></center> <br>  
+<center><img src="/img/posts/Setting.png" width="382"></center> <br>  
 
 #### - 당신이 할 수있는 것을 시스템에서 추론하십시오
 
@@ -306,7 +306,7 @@ iOS에는 세 가지 주요탐색 스타일이 있습니다.
 
 설정 앱은 시스템 전체에서 구성을 변경하기위한 중심 위치이지만 사용자가 앱을 떠나야 만 액세스 할 수 있습니다. 앱에서 직접 설정을 조정하는 것이 훨씬 편리합니다. 거의 변경하지 않아도되는 설정을 제공해야하는 경우 개발자 [가이드의 기본 설정 및 설정 프로그래밍 가이드](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/Introduction/Introduction.html) 에서 [iOS 설정 번들 구현을](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/UserDefaults/AboutPreferenceDomains/AboutPreferenceDomains.html#//apple_ref/doc/uid/10000059i-CH2-SW2) 참조하십시오. <br> 
 
-<center><img src="/img/posts/Setting-1.png" width="382" height="700"></center> <br>  
+<center><img src="/img/posts/Setting-1.png" width="382"></center> <br>  
 
 #### - 필요한 경우 설정에 대한 바로 가기를 제공하십시오
 
