@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 10: Swift Language Guide-Properties"
 subtitle:   "Swift Language Guide-Properties *"
 date:       2018-04-13 09:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg.jpg
+thumbnail-img: /assets/post_img/background/search-bg.jpg
+share-img: /assets/post_img/background/search-bg.jpg
 ---
 
 ## Reference 

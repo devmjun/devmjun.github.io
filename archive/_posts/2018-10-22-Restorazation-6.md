@@ -4,11 +4,13 @@ title:      "Swift. UI 보존 처리에 대해서"
 subtitle:   "About the UI Preservation Process. Restoration Part: 7"
 date:       2018-10-22 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Restoration]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/secret-3120483.jpg
+thumbnail-img: /assets/post_img/background/secret-3120483.jpg
+share-img: /assets/post_img/background/secret-3120483.jpg
 ---
 
 [About the UI Preservation Process](https://developer.apple.com/documentation/uikit/view_controllers/preserving_your_app_s_ui_across_launches/about_the_ui_preservation_process)에서 필요한 부분만 의역했습니다.

@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 1: Swift Language Guide-Basics"
 subtitle:   "Swift Language Guide-Basics *"
 date:       2018-04-11 16:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/cornflowers-5352633.jpg
+thumbnail-img: /assets/post_img/background/cornflowers-5352633.jpg
+share-img: /assets/post_img/background/cornflowers-5352633.jpg
 ---
 
 최종 수정일: 2018.10.01

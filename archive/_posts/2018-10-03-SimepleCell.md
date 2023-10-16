@@ -4,11 +4,13 @@ title:      "Swift. 자주사용하는 Cell에 관련된 코드를 줄여주는 
 subtitle:   "Simple Library 사용법"
 date:       2018-10-04 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Framework]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
+share-img: /assets/post_img/background/search-bg_sub.jpg
 ---
 
 SimpleCell의 Github 주소는 [여기](https://github.com/devmjun/SimpleCell) 입니다.

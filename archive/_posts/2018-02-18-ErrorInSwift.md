@@ -4,11 +4,13 @@ title:      "Swift. Error 처리 정리"
 subtitle:   "throws, defer, NSError"
 date:       2018-02-18 05:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/HIG-bg.jpg
+thumbnail-img: /assets/post_img/background/HIG-bg.jpg
+share-img: /assets/post_img/background/HIG-bg.jpg
 ---
 
 ## Error 

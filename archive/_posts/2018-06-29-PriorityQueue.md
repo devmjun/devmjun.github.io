@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Priority Queue"
 subtitle:   "우선 순위 큐를 알아보자!"
 date:       2018-06-29 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/RxSwift-bg.jpg
+thumbnail-img: /assets/post_img/background/RxSwift-bg.jpg
+share-img: /assets/post_img/background/RxSwift-bg.jpg
 ---
 
 ## Contetns 

@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Linked List"
 subtitle:   "노드와 참조를 이용해서 Linked List를 만들자!"
 date:       2018-06-22 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/about-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/about-bg_sub.jpg
+share-img: /assets/post_img/background/about-bg_sub.jpg
 ---
 
 ## Contents 

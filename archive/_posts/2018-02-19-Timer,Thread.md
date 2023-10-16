@@ -4,11 +4,13 @@ title:      "Swift. Timer, Thread 기본"
 subtitle:   "Timer, Thread 기초 내용 정리해보자"
 date:       2018-02-19 01:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072823.jpg
+thumbnail-img: /assets/post_img/background/road-1072823.jpg
+share-img: /assets/post_img/background/road-1072823.jpg
 ---
 
 ## Timer 

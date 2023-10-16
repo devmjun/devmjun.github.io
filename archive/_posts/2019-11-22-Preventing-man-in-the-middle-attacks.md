@@ -4,11 +4,13 @@ title: "iOS, Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning"
 subtitle: "Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning"
 date: 2019-11-22 18:45:00
 author: "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Charles]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Github-bg.jpg
+thumbnail-img: /assets/post_img/background/Github-bg.jpg
+share-img: /assets/post_img/background/Github-bg.jpg
 --- 
 
 ## Table of contents 

@@ -4,11 +4,13 @@ title:      "Swift. Enum-Driven TableView Development"
 subtitle:   "Enum을 사용하여 TableView 개발을 주도하는 방법을 알아봅니다.."
 date:       2018-10-14 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/home-bg.jpg
+thumbnail-img: /assets/post_img/background/home-bg.jpg
+share-img: /assets/post_img/background/home-bg.jpg
 ---
 
 [Enum-Driven TableView Development](https://www.raywenderlich.com/5542-enum-driven-tableview-development)에서 필요한 부분을 의역했습니다.

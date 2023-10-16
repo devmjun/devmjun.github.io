@@ -4,11 +4,13 @@ title:      "Git, GitHub Blog Deploy 설정 방법"
 subtitle:   "링크 참조"
 date:       2018-09-22 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Link, Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 ## Refernece 

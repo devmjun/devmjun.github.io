@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 17: Swift Language Guide-Type Casting Handling"
 subtitle:   "Swift Language Guide-Type Casting Handling *"
 date:       2018-04-13 15:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/deer-643340.jpg
+thumbnail-img: /assets/post_img/background/deer-643340.jpg
+share-img: /assets/post_img/background/deer-643340.jpg
 ---
 
 최종 수정일: 2018.10.1

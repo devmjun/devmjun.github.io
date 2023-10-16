@@ -4,11 +4,13 @@ title:      "Swift. Restoration 관련 링크"
 subtitle:   "링크 참조. Restoration Part: 2"
 date:       2018-10-17 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Link, Restoration]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testport.png
+thumbnail-img: /assets/post_img/background/testport.png
+share-img: /assets/post_img/background/testport.png
 ---
 
 ## Documents 

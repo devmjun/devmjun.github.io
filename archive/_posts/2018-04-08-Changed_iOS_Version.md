@@ -4,11 +4,13 @@ title:      "개발자 입장에서본 iOS 7~11 변화 내용"
 subtitle:   "유용한 링크"
 date:       2018-04-08 23:58:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Idea-bg.jpg
+thumbnail-img: /assets/post_img/background/Idea-bg.jpg
+share-img: /assets/post_img/background/Idea-bg.jpg
 ---
 
 ## Reference 

@@ -4,11 +4,13 @@ title:      "iOS, Universal link 2"
 subtitle:   "Enabling Universal Links"
 date:       2019-10-17 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UniversalLink]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Idea-bg.jpg
+thumbnail-img: /assets/post_img/background/Idea-bg.jpg
+share-img: /assets/post_img/background/Idea-bg.jpg
 --- 
 
 ## Table of contents 

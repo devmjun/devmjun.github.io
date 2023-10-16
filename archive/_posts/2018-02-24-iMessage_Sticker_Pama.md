@@ -4,11 +4,13 @@ title:      "iMessage sticker. Pama Sticker를 출시 했습니다!"
 subtitle:   "!!"
 date:       2018-02-24 23:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [imessageSticker]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testport.png
+thumbnail-img: /assets/post_img/background/testport.png
+share-img: /assets/post_img/background/testport.png
 ---
 
 동생이랑 iMessage Sticker를 만들었습니다. 저희의 일상이 간접적으로 Sticker에 투영되었습니다...  <br>

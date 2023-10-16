@@ -4,11 +4,13 @@ title:      "Swift, 정규 표현식이 무엇인지, 어떻게 사용하는지 
 subtitle:   "An Introduction to Regular Expressions"
 date:       2018-09-29 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, regularExpression]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
+share-img: /assets/post_img/background/search-bg_sub.jpg
 ---
 
 [An Introduction to Regular Expressions](https://www.raywenderlich.com/5767-an-introduction-to-regular-expressions)의 내용을 의역했습니다.

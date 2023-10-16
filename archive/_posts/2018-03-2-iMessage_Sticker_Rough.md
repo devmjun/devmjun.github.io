@@ -4,11 +4,13 @@ title:      "iMessage sticker. Rough Sticker를 출시 했습니다!"
 subtitle:   "!!"
 date:       2018-03-02 13:12:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [imessageSticker]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/secret-3120483.jpg
+thumbnail-img: /assets/post_img/background/secret-3120483.jpg
+share-img: /assets/post_img/background/secret-3120483.jpg
 ---
 
 동생이랑 iMessage Sticker 2탄을 만들었습니다. <br>

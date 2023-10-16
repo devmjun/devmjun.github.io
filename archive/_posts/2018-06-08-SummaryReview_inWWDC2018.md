@@ -4,11 +4,13 @@ title:      "Swift, WWDC 2018 요약"
 subtitle:   "링크참조.."
 date:       2018-06-08 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testimage1.png
+thumbnail-img: /assets/post_img/background/testimage1.png
+share-img: /assets/post_img/background/testimage1.png
 ---
 
 [(3차 수정) WWDC 2018 정리본](https://www.clien.net/service/board/park/12189185)<br>

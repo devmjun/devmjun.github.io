@@ -4,11 +4,13 @@ title:      "Swift, URLSession가 무엇인지, 어떻게 사용하는지 알아
 subtitle:   "URLSession Tutorial: Getting Started"
 date:       2018-09-27 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/category-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/category-bg_sub.jpg
+share-img: /assets/post_img/background/category-bg_sub.jpg
 ---
 
 ## Refernece 

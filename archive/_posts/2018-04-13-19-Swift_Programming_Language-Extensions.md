@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 19: Swift Language Guide-Extensions"
 subtitle:   "Swift Language Guide-Extensions *"
 date:       2018-04-13 17:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/port1.png
+thumbnail-img: /assets/post_img/background/port1.png
+share-img: /assets/post_img/background/port1.png
 ---
 
 최종 수정일: 2018.10. 1

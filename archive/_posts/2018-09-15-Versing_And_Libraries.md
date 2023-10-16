@@ -4,11 +4,13 @@ title:      "iOS, 1.0.0의 버전 의미론과, 라이브러리란?"
 subtitle:   "Semantic Versioning, A Word About Libraries"
 date:       2018-09-14 17:45:00
 author:     "MinJun"
-header-img: "img/tags/iOS-bg.jpg"
 comments: true 
 tags: [iOS, Swift, CocoaPod, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/mainImage.png
+thumbnail-img: /assets/post_img/background/mainImage.png
+share-img: /assets/post_img/background/mainImage.png
 ---
 
 [CocoaPods Tutorial for Swift: Getting Started](https://www.raywenderlich.com/626-cocoapods-tutorial-for-swift-getting-started)의 일부 내용을 참조 했습니다. 

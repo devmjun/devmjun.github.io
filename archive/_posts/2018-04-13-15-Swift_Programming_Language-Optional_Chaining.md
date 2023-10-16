@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 15: Swift Language Guide-Optional Chaining"
 subtitle:   "Swift Language Guide-Optional Chaining"
 date:       2018-04-13 13:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/deer-643340.jpg
+thumbnail-img: /assets/post_img/background/deer-643340.jpg
+share-img: /assets/post_img/background/deer-643340.jpg
 ---
 
 최종 수정일: 2018.10.1

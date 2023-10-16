@@ -4,11 +4,13 @@ title:      "Swift, Identity Operators ==, ===, is"
 subtitle:   "Identical to, equal to, is"
 date:       2018-04-11 10:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testimage1.png
+thumbnail-img: /assets/post_img/background/testimage1.png
+share-img: /assets/post_img/background/testimage1.png
 ---
 
 ## Identity Operators

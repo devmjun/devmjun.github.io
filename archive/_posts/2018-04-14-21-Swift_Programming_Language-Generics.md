@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 21: Swift Language Guide-Generics"
 subtitle:   "Swift Language Guide-Generics *"
 date:       2018-04-14 09:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Github-bg.jpg
+thumbnail-img: /assets/post_img/background/Github-bg.jpg
+share-img: /assets/post_img/background/Github-bg.jpg
 ---
 
 최종 수정일: 2018.10.1

@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 30"
 subtitle:   "Swift Language Reference-Attributes"
 date:       2018-04-15 13:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/trees-3464777.jpg
+thumbnail-img: /assets/post_img/background/trees-3464777.jpg
+share-img: /assets/post_img/background/trees-3464777.jpg
 ---
 
 ## Reference 

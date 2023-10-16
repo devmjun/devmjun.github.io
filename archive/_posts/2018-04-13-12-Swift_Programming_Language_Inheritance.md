@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 13: Swift Language Guide-Inheritance"
 subtitle:   "Swift Language Guide-Inheritance *"
 date:       2018-04-13 10:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 최종 수정일: 2018.10.1

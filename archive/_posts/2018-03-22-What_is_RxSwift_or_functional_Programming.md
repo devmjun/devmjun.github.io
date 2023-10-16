@@ -4,11 +4,13 @@ title:      "Functional, Reactive, Programming, Paradigm"
 subtitle:   "각 용어들을 명확하게 이해하고 정리해보자"
 date:       2018-03-22 19:04:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, RxSwift, RxCocoa]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg.jpg
+thumbnail-img: /assets/post_img/background/blog-bg.jpg
+share-img: /assets/post_img/background/blog-bg.jpg
 ---
 
 곰튀김님 영상보고 중요한 부분만 정리했습니다. 링크는 아래에 있습니다. 

@@ -4,11 +4,13 @@ title:      "Swift. API Design Guidelines"
 subtitle:   "API Design Guidelines 번역"
 date:       2018-03-23 19:50:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/avenue-2215317.jpg
+thumbnail-img: /assets/post_img/background/avenue-2215317.jpg
+share-img: /assets/post_img/background/avenue-2215317.jpg
 ---
 
 godrm님의 번역본을 그대로 가져왔습니다. 자료의 원 주소는 

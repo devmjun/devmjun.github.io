@@ -4,11 +4,13 @@ title:      "Swift. 앱 실행시 구성 설정이 올바른지 확인하기"
 subtitle:   "Performing One-Time Setup for Your App. Restoration Part: 5"
 date:       2018-10-20 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Restoration]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/hills-615429.jpg
+thumbnail-img: /assets/post_img/background/hills-615429.jpg
+share-img: /assets/post_img/background/hills-615429.jpg
 ---
 
 [Performing One-Time Setup for Your App](https://developer.apple.com/documentation/uikit/core_app/managing_your_app_s_life_cycle/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app)에서 필요한 부분만 의역했습니다.

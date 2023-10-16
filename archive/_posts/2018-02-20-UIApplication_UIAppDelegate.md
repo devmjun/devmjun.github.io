@@ -4,12 +4,14 @@ title:      "Swift. 앱을 구성하는 객체"
 subtitle:   "UIApplication, UIAppDelegate"
 date:       2018-02-20 16:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
 
+cover-img: /assets/post_img/background/trees-3464777.jpg
+thumbnail-img: /assets/post_img/background/trees-3464777.jpg
+share-img: /assets/post_img/background/trees-3464777.jpg
 ---
 
 ## 앱을 구성하는객체

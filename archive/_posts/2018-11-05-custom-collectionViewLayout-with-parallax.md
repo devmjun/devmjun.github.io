@@ -4,11 +4,13 @@ title:      "Swift. UICollectionView Layout with Parallax"
 subtitle:   "Custom UICollectionViewLayout Tutorial With Parallax"
 date:       2018-11-5 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UICollectionViewLayout, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/category-bg.png
+thumbnail-img: /assets/post_img/background/category-bg.png
+share-img: /assets/post_img/background/category-bg.png
 ---
 
 ## Table of contents 

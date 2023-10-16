@@ -4,11 +4,13 @@ title:      "iOS, iOS에서 프레임워크와 라이브러리의 차이점을 �
 subtitle:   "Framework vs Library(Static & Shared) in Cocoa/OSX, Cocoa Touch/iOS"
 date:       2018-09-13 17:45:00
 author:     "MinJun"
-header-img: "img/tags/iOS-bg.jpg"
 comments: true 
 tags: [Swift, iOS]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/home-bg.jpg
+thumbnail-img: /assets/post_img/background/home-bg.jpg
+share-img: /assets/post_img/background/home-bg.jpg
 ---
 
 [Framework vs Library (Static & Shared) in (Cocoa/OSX, Cocoa Touch/iOS)](http://www.knowstack.com/framework-vs-library-cocoa-ios/)의 포스팅을 의역했습니다. 오역이 있을수 있으니, 참조 해주세요

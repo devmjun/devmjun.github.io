@@ -4,11 +4,13 @@ title:      "Swift. Internationalizing Your iOS App: Getting Started"
 subtitle:   "Localization에 대해서 알아봅니다."
 date:       2018-10-15 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Localization]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 [Internationalizing Your iOS App: Getting Started](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)을 의역 했습니다.

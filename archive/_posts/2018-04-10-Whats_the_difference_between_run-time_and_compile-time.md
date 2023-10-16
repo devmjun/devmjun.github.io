@@ -6,9 +6,11 @@ categories: archive
 permalink: /archive/:title
 date:       2018-04-10 18:00:00
 author:     "MinJun"
-header-img: "img/tags/ComputerScience-bg.jpg"
 comments: true 
 tags: [ComputerScience]
+cover-img: /assets/post_img/background/port.png
+thumbnail-img: /assets/post_img/background/port.png
+share-img: /assets/post_img/background/port.png
 ---
 
 [https://stackoverflow.com/questions/846103/runtime-vs-compile-time](https://stackoverflow.com/questions/846103/runtime-vs-compile-time) <br>

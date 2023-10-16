@@ -4,11 +4,13 @@ title:      "iOS, Universal link 1"
 subtitle:   "Allowing Apps and Websites to Link to Your Content"
 date:       2019-10-16 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UniversalLink]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072821.jpg
+thumbnail-img: /assets/post_img/background/road-1072821.jpg
+share-img: /assets/post_img/background/road-1072821.jpg
 --- 
 
 ## Table of contents 

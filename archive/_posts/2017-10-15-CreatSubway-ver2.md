@@ -4,11 +4,13 @@ title:      "Swift. 지하철 노선도 만들기(초보편) part 2"
 subtitle:   "Alert, ScrollView 이용해서 만들기"
 date:       2017-10-15 16:26:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg_sub_1.jpg
+thumbnail-img: /assets/post_img/background/blog-bg_sub_1.jpg
+share-img: /assets/post_img/background/blog-bg_sub_1.jpg
 ---
 
 [Part 2 프로젝트 파일의 위치는 이곳 입니다.](https://github.com/devmjun/iOS_Develop5/tree/master/Projects/CreatSubWay-ver2)

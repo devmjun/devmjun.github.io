@@ -4,11 +4,13 @@ title:      "Swift. How To Make a Custom Control Tutorial: A Reusable Slider"
 subtitle:   "Control을 사용자화하는 방법을 알아봅니다."
 date:       2018-10-07 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 ---
 
 [How To Make a Custom Control Tutorial: A Reusable Slider](https://www.raywenderlich.com/2297-how-to-make-a-custom-control-tutorial-a-reusable-slider)을 의역 했습니다.

@@ -4,11 +4,13 @@ title:      "Swift. Shadow View tip"
 subtitle:   "Round Shadow View 만들때 팁.."
 date:       2018-10-01 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/itunesConnect-bg.jpg
+thumbnail-img: /assets/post_img/background/itunesConnect-bg.jpg
+share-img: /assets/post_img/background/itunesConnect-bg.jpg
 ---
 
 ## Table of contents 

@@ -4,11 +4,13 @@ title:      "Swift, UISearchController 사용법을 알아봅니다"
 subtitle:   "UISearchController Tutorial"
 date:       2018-09-12 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/field-4452538.jpg
+thumbnail-img: /assets/post_img/background/field-4452538.jpg
+share-img: /assets/post_img/background/field-4452538.jpg
 ---
 
 ## Refernece 

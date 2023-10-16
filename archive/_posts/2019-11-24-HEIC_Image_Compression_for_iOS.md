@@ -5,12 +5,14 @@ title:      "iOS, HEIC Image Compression for iOS"
 subtitle:   "HEIC Image Compression for iOS"
 date:       2019-11-24 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Mirror, CustomDebugStringConvertible]
 
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 --- 
 
 ## Table of contents

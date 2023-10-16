@@ -6,9 +6,11 @@ categories: archive
 permalink: /archive/:title
 date:       2018-02-24 18:49:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+cover-img: /assets/post_img/background/road-1072821.jpg
+thumbnail-img: /assets/post_img/background/road-1072821.jpg
+share-img: /assets/post_img/background/road-1072821.jpg
 ---
 
 ```swift

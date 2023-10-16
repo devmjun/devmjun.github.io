@@ -4,11 +4,13 @@ title:      "Swift. App의 보존과 복원 가이드"
 subtitle:   "Preserving and Restoring State. Restoration Part: 3"
 date:       2018-10-18 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Restoration]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/codemonkey-bg.jpg
+thumbnail-img: /assets/post_img/background/codemonkey-bg.jpg
+share-img: /assets/post_img/background/codemonkey-bg.jpg
 ---
 
 [Preserving and Restoring State](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/PreservingandRestoringState.html#//apple_ref/doc/uid/TP40007457-CH28-SW1)에서 필요한 부분을 의역 했습니다.

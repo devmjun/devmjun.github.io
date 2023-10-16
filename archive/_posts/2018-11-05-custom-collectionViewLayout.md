@@ -4,11 +4,13 @@ title:      "Swift. UICollectionView Layout with Parallax"
 subtitle:   "Custom UICollectionViewLayout Tutorial With Parallax"
 date:       2018-11-4 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/hills-615429.jpg
+thumbnail-img: /assets/post_img/background/hills-615429.jpg
+share-img: /assets/post_img/background/hills-615429.jpg
 ---
 
 [Custom UICollectionViewLayout Tutorial With Parallax](https://www.raywenderlich.com/527-custom-uicollectionviewlayout-tutorial-with-parallax)의 일부분을 의역 했습니다. 

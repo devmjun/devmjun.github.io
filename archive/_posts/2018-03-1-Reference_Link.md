@@ -6,9 +6,11 @@ categories: archive
 permalink: /archive/:title
 date:       2018-03-01 15:11:00
 author:     "MinJun"
-header-img: "img/tags/Link-bg.jpg"
 comments: true 
 tags: [Swift, Link]
+cover-img: /assets/post_img/background/Github-bg.jpg
+thumbnail-img: /assets/post_img/background/Github-bg.jpg
+share-img: /assets/post_img/background/Github-bg.jpg
 ---
 
 ## Basic

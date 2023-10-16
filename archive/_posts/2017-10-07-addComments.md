@@ -4,11 +4,13 @@ title:      "Github Blog에 댓글(disqus) 기능 추가하기"
 subtitle:   "disqus 사용 용해서 댓글 기능 사용하기"
 date:       2017-10-07 14:37:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Github]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Python-bg.jpg
+thumbnail-img: /assets/post_img/background/Python-bg.jpg
+share-img: /assets/post_img/background/Python-bg.jpg
 ---
 
 github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다. 댓글을 달때 facebook, google, disqus 계정 등을 이용해서 댓글을 달수 있습니다.

@@ -4,11 +4,13 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (6)"
 subtitle:   "Image Size and Resolution, App Icon, Custom Icons, Launch Screen, System Icons"
 date:       2018-02-11 18:06:00
 author:     "MinJun"
-header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/ComputerScience1-bg.jpg
+thumbnail-img: /assets/post_img/background/ComputerScience1-bg.jpg
+share-img: /assets/post_img/background/ComputerScience1-bg.jpg
 ---
 
 개인적인 공부의 목적으로 작성 되었습니다. 오역이나 잘못된 부분이 있을수 있으니, 댓글 남겨 주시면 감사하겠습니다!

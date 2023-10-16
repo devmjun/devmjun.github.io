@@ -4,11 +4,13 @@ title:      "Github Blog 빠르게 만들기"
 subtitle:   "Github Page 이용해서, 나만의 blog 만들기"
 date:       2017-10-07 12:04:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Github]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/avenue-815297.jpg
+thumbnail-img: /assets/post_img/background/avenue-815297.jpg
+share-img: /assets/post_img/background/avenue-815297.jpg
 ---
 
 

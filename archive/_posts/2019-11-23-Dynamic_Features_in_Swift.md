@@ -19,11 +19,13 @@ title:      "iOS, Dynamic Features in Swift"
 subtitle:   "Dynamic Features in Swift"
 date:       2019-11-23 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Mirror, CustomDebugStringConvertible]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg.jpg
+thumbnail-img: /assets/post_img/background/blog-bg.jpg
+share-img: /assets/post_img/background/blog-bg.jpg
 --- 
 
 [Dynamic Features in Swift](https://www.raywenderlich.com/5743-dynamic-features-in-swift) 에서 필요한 부분만 번역 해서 중간 중간 컨텍스트가 끊겨 있습니다

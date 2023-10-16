@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 11: Swift Language Guide-Methods"
 subtitle:   "Swift Language Guide-Methods"
 date:       2018-04-13 09:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/category-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/category-bg_sub.jpg
+share-img: /assets/post_img/background/category-bg_sub.jpg
 ---
 
 최종 수정일: 2018.10.1

@@ -4,11 +4,13 @@ title:      "iOS, Universal link 3"
 subtitle:   "Handling Universal Links"
 date:       2019-10-18 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UniversalLink]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/category-bg.png
+thumbnail-img: /assets/post_img/background/category-bg.png
+share-img: /assets/post_img/background/category-bg.png
 --- 
 
 ## Table of contents 

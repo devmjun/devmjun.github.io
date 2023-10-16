@@ -6,9 +6,11 @@ categories: archive
 permalink:  /archive/:title
 date:       2018-02-21 08:00:00
 author:     "MinJun"
-header-img: "img/tags/Link-bg.jpg"
 comments: true 
 tags: [Link]
+cover-img: /assets/post_img/background/architecture-3119812.jpg
+thumbnail-img: /assets/post_img/background/architecture-3119812.jpg
+share-img: /assets/post_img/background/architecture-3119812.jpg
 ---
 
 | 회사명        | 블로그 주소                                                         |

@@ -4,11 +4,13 @@ title:      "Swift, Algorithm, Selection Sort"
 subtitle:   "제일 작은거를 골라!!"
 date:       2018-06-12 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Swift, Algorithm]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 ## Code 

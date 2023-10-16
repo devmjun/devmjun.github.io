@@ -4,11 +4,13 @@ title:      "Swift. UICollectionView Pinterest 레이아웃"
 subtitle:   "UICollectionView Custom Layout Tutorial: Pinterest"
 date:       2018-11-4 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, UICollectionViewLayout]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Python-bg.jpg
+thumbnail-img: /assets/post_img/background/Python-bg.jpg
+share-img: /assets/post_img/background/Python-bg.jpg
 ---
 
 ## Table of contents 

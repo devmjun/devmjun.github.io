@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Prim Algorithm "
 subtitle:   "양방향 연결 그래프를 이용하여 MST를 개선해보자!"
 date:       2018-07-01 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/forest-3622519.jpg
+thumbnail-img: /assets/post_img/background/forest-3622519.jpg
+share-img: /assets/post_img/background/forest-3622519.jpg
 ---
 
 ## Contetns 

@@ -4,11 +4,13 @@ title:      "Swift. Protocol Composition Type"
 subtitle:   "Protocol 1 & Protocol 2.. typealias"
 date:       2018-04-10 19:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/iitk-bg.jpg
+thumbnail-img: /assets/post_img/background/iitk-bg.jpg
+share-img: /assets/post_img/background/iitk-bg.jpg
 ---
 
 

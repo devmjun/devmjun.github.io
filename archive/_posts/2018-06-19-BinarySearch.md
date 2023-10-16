@@ -4,11 +4,13 @@ title:      "Swift, Algorithm, linear Search & Binary Search"
 subtitle:   "선형 탐색과, 이진 탐색"
 date:       2018-06-19 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/avenue-815297.jpg
+thumbnail-img: /assets/post_img/background/avenue-815297.jpg
+share-img: /assets/post_img/background/avenue-815297.jpg
 ---
 
 ## Code 

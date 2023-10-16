@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Binary Search Trees"
 subtitle:   "이진 검색 트리를 만들어보자!"
 date:       2018-06-25 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 ## Contents 

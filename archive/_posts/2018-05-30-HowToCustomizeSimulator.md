@@ -4,11 +4,13 @@ title:      "Xcode, 시뮬레이터 커스텀하는 방법"
 subtitle:   "한 화면에 시뮬레이터와 Xcode 같이 놓는방법, 링크참조"
 date:       2018-05-30 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Xcode-bg___.jpg
+thumbnail-img: /assets/post_img/background/Xcode-bg___.jpg
+share-img: /assets/post_img/background/Xcode-bg___.jpg
 ---
 
 [Xcode) Simulator Custom](http://zeddios.tistory.com/504)<br>

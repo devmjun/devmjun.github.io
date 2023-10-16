@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Circular buffer"
 subtitle:   "순환하는 자료구조를 만들자~"
 date:       2018-06-21 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/ComputerScience1-bg.jpg
+thumbnail-img: /assets/post_img/background/ComputerScience1-bg.jpg
+share-img: /assets/post_img/background/ComputerScience1-bg.jpg
 ---
 
 ## Code 

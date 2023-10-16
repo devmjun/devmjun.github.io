@@ -4,11 +4,13 @@ title:      "Swift, App에서 WiFi 변경하기"
 subtitle:   "Third Part App 에서 Global Setting 접근하여 실행하기"
 date:       2018-06-09 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
+share-img: /assets/post_img/background/search-bg_sub.jpg
 ---
 
 ## Code 

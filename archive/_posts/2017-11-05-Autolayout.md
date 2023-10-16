@@ -4,11 +4,13 @@ title:      "Swift. AutoLayout 사용하기 "
 subtitle:   "AutoLayout 으로 기본적인 IOS UI를 다각도로 구성하고 분석해보자! "
 date:       2017-11-05 22:21:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/cornflowers-5352633.jpg
+thumbnail-img: /assets/post_img/background/cornflowers-5352633.jpg
+share-img: /assets/post_img/background/cornflowers-5352633.jpg
 ---
 
 ## Table of contents 

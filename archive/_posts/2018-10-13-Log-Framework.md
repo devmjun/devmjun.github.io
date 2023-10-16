@@ -4,11 +4,13 @@ title:      "Swift. Logging FrameWork Beaver."
 subtitle:   "SwiftyBeaver 사용법을 알아봅니다."
 date:       2018-10-13 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Log]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/mainImage.png
+thumbnail-img: /assets/post_img/background/mainImage.png
+share-img: /assets/post_img/background/mainImage.png
 ---
 
 [SwiftyBeaver Tutorial for iOS: A Logging Platform for Swift](https://www.raywenderlich.com/669-swiftybeaver-tutorial-for-ios-a-logging-platform-for-swift)에서 필요한 부분을 의역 했습니다. 

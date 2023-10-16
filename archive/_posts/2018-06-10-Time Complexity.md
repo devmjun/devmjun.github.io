@@ -6,9 +6,11 @@ categories: archive
 permalink: /archive/:title
 date:       2018-06-10 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Algorithm]
+cover-img: /assets/post_img/background/CaseContainer.jpg
+thumbnail-img: /assets/post_img/background/CaseContainer.jpg
+share-img: /assets/post_img/background/CaseContainer.jpg
 ---
 
 [시간 복잡도](https://namu.wiki/w/%EC%8B%9C%EA%B0%84%20%EB%B3%B5%EC%9E%A1%EB%8F%84)<br>

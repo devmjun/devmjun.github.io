@@ -4,11 +4,13 @@ title:      "Swift. Trigonometry 링크 참조"
 subtitle:   "삼각함수에 대한 링크참조.."
 date:       2018-10-11 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072821.jpg
+thumbnail-img: /assets/post_img/background/road-1072821.jpg
+share-img: /assets/post_img/background/road-1072821.jpg
 ---
 
 [삼각 함수(三角函數, Trigonometric Function)](https://ghebook.blogspot.com/2010/12/trigonometric-function.html)<br>

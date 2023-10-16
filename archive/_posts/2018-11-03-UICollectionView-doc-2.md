@@ -4,11 +4,13 @@ title:      "Swift. UICollectionView Custom Layout - 2"
 subtitle:   "Creating Custom Layouts"
 date:       2018-11-3 18:46:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UICollectionViewLayout]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/about-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/about-bg_sub.jpg
+share-img: /assets/post_img/background/about-bg_sub.jpg
 ---
 
 ## Table of contents 

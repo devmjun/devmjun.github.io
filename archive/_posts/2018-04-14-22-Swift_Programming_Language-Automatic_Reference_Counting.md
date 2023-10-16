@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 22: Swift Language Guide-Automatic Reference Co
 subtitle:   "Swift Language Guide-Automatic Reference Counting * "
 date:       2018-04-14 11:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/river-219972_1920.jpg
+thumbnail-img: /assets/post_img/background/river-219972_1920.jpg
+share-img: /assets/post_img/background/river-219972_1920.jpg
 ---
 
 최종 수정일: 2018.10.1

@@ -4,11 +4,13 @@ title:      "Swift. Protocol, Extension 정리"
 subtitle:   "Protocol, Extension, POP(Protocol Oriented Programming)"
 date:       2018-02-18 02:23:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/wood-3095720.jpg
+thumbnail-img: /assets/post_img/background/wood-3095720.jpg
+share-img: /assets/post_img/background/wood-3095720.jpg
 ---
 
 ## 프로토콜(Protocol) 

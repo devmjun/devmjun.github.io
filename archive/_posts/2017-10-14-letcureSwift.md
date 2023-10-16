@@ -4,11 +4,13 @@ title:      "Swift 기본 문법 개괄 part 1"
 subtitle:   "필요한 문법만 뽑아서 쓰자! "
 date:       2017-10-14 17:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/avenue-815297.jpg
+thumbnail-img: /assets/post_img/background/avenue-815297.jpg
+share-img: /assets/post_img/background/avenue-815297.jpg
 ---
 
 [야곰의 스위프트 기본 문법 강좌](https://www.inflearn.com/course/스위프트-기본-문법/)<br>

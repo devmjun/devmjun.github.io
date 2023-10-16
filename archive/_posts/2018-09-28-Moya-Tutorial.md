@@ -4,11 +4,13 @@ title:      "Swift, Moya가 무엇인지, 어떻게 사용하는지 알아봅니
 subtitle:   "Moya Tutorial for iOS getting Started"
 date:       2018-09-28 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Moya]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
+share-img: /assets/post_img/background/search-bg_sub.jpg
 ---
 
 [Moya Tutorial for iOS: Getting Started](https://www.raywenderlich.com/5121-moya-tutorial-for-ios-getting-started)의 내용을 의역했습니다.

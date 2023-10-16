@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 25: Language Guide-Advanced Operators"
 subtitle:   "Swift Language Guide-Advanced Operators"
 date:       2018-04-14 15:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/street-3453557.jpg
+thumbnail-img: /assets/post_img/background/street-3453557.jpg
+share-img: /assets/post_img/background/street-3453557.jpg
 ---
 
 최종 수정일: 2018.10.1

@@ -4,11 +4,13 @@ title:      "Swift. DispatchGroup 2 "
 subtitle:   "DispatchGroup를 알아봅시다! "
 date:       2018-05-04 11:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/HIG-bg.jpg
+thumbnail-img: /assets/post_img/background/HIG-bg.jpg
+share-img: /assets/post_img/background/HIG-bg.jpg
 ---
 
 ## DispatchGroup 

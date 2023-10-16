@@ -4,11 +4,13 @@ title:      "Xcode. Swift 컴파일러 빠르게 하는 방법 & 컴파일러 �
 subtitle:   "Build Time Analyzer for Xcode 멋진 툴을 사용합니다."
 date:       2018-04-08 21:58:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Link-bg.jpg
+thumbnail-img: /assets/post_img/background/Link-bg.jpg
+share-img: /assets/post_img/background/Link-bg.jpg
 --- 
 
 ## BuildTimeAnalyzer-for-Xcode

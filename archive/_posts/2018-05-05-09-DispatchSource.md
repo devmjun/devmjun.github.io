@@ -4,11 +4,13 @@ title:      "Swift. DispatchSource 9"
 subtitle:   "DispatchSource를 알아봅니다!"
 date:       2018-05-06 15:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Link]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/trees-3464777.jpg
+thumbnail-img: /assets/post_img/background/trees-3464777.jpg
+share-img: /assets/post_img/background/trees-3464777.jpg
 ---
 
 ## DispatchSource 

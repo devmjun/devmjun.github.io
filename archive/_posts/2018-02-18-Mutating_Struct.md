@@ -4,11 +4,13 @@ title:      "Swift. 구조체 Mutating 정리"
 subtitle:   "Mutating, 중첩 타입"
 date:       2018-02-18 05:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/about-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/about-bg_sub.jpg
+share-img: /assets/post_img/background/about-bg_sub.jpg
 ---
 
 ## 구조체 Mutating 

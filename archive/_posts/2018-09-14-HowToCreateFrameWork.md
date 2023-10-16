@@ -4,11 +4,13 @@ title:      "CocoaPod, 프레임 워크에서 Cocod Pod 발행까지"
 subtitle:   "Creating a Framework for iOS"
 date:       2018-09-14 17:45:00
 author:     "MinJun"
-header-img: "img/tags/CocoaPod-bg.png"
 comments: true 
 tags: [iOS, Swift, CocoaPod, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/water-3161063.jpg
+thumbnail-img: /assets/post_img/background/water-3161063.jpg
+share-img: /assets/post_img/background/water-3161063.jpg
 ---
 
 [Creating a Framework for iOS](https://www.raywenderlich.com/5109-creating-a-framework-for-ios)을 의역했습니다. 오역이 있을수 있으니 참조해주세요.

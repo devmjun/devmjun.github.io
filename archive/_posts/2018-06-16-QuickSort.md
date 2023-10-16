@@ -4,11 +4,13 @@ title:      "Swift, Algorithm, Quick Sort"
 subtitle:   "분할정복 하자!"
 date:       2018-06-16 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/itunesConnect-bg.jpg
+thumbnail-img: /assets/post_img/background/itunesConnect-bg.jpg
+share-img: /assets/post_img/background/itunesConnect-bg.jpg
 ---
 
 ## Code 

@@ -4,11 +4,13 @@ title:      "Git Fetch, Pull의 차이점을 알아보자"
 subtitle:   "Git의 유용한 명령어들을 정리해보자!"
 date:       2017-11-10 00:30:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Xcode-bg___.jpg
+thumbnail-img: /assets/post_img/background/Xcode-bg___.jpg
+share-img: /assets/post_img/background/Xcode-bg___.jpg
 ---
 
 ## fetch 

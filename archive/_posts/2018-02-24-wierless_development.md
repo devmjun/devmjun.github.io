@@ -4,11 +4,13 @@ title:      "Xcode. Wireless development 환경 구성하기"
 subtitle:   "What`s is New in Xcode9"
 date:       2018-02-24 21:49:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/forest-3394066.jpg
+thumbnail-img: /assets/post_img/background/forest-3394066.jpg
+share-img: /assets/post_img/background/forest-3394066.jpg
 ---
 
 Xcode 9에 업데이트된 편한 기능인 `Wierless developemnt`을 사용하는 방법을 알아보겠습니다! 

@@ -4,11 +4,13 @@ title:      "Swift. 터치와 제스쳐를 알아보자"
 subtitle:   "UItouch, Event, Gesture "
 date:       2018-02-20 14:02:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 ---
 
 ## Responder

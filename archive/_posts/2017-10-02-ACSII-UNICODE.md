@@ -4,11 +4,13 @@ title:      "ASCII CODE 와 UNICODE"
 subtitle:   "컴퓨터는 어떻게 문자와 숫자를 저장할까?"
 date:       2017-10-02 16:04:00
 author:     "MinJun"
-header-img: "img/tags/ComputerScience-bg.jpg"
 comments: true
 tags: [ComputerScience]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Swift-bg.jpg
+thumbnail-img: /assets/post_img/background/Swift-bg.jpg
+share-img: /assets/post_img/background/Swift-bg.jpg
 ---
 
 

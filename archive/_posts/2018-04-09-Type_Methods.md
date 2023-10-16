@@ -4,11 +4,13 @@ title:      "Swift. Type Methods"
 subtitle:   "Static func, class func.."
 date:       2018-04-09 22:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 ---
 
 [type method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)

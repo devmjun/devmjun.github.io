@@ -4,11 +4,13 @@ title:      "Git, 하나의 컴퓨터에서 여러개의 Git 계정을 사용할
 subtitle:   "링크 참조"
 date:       2018-09-21 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Link, Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/category-bg.png
+thumbnail-img: /assets/post_img/background/category-bg.png
+share-img: /assets/post_img/background/category-bg.png
 ---
 
 ## Refernece 

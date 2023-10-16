@@ -4,11 +4,13 @@ title:      "Swift. Core Graphics Tutorial Part 2: Gradients and Contexts"
 subtitle:   "Core Graphics가 무엇인지 알아봅니다 "
 date:       2018-10-05 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg.jpg
+thumbnail-img: /assets/post_img/background/blog-bg.jpg
+share-img: /assets/post_img/background/blog-bg.jpg
 ---
 
 [Core Graphics Tutorial Part 2: Gradients and Contexts](https://www.raywenderlich.com/410-core-graphics-tutorial-part-2-gradients-and-contexts)을 의역 했습니다.

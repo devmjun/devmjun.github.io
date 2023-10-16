@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 7: Swift Language Guide-Closures"
 subtitle:   "Swift Language Guide-Closures *"
 date:       2018-04-11 20:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/landscape-219843_1920.jpg
+thumbnail-img: /assets/post_img/background/landscape-219843_1920.jpg
+share-img: /assets/post_img/background/landscape-219843_1920.jpg
 ---
 ## Reference 
 

@@ -4,11 +4,13 @@ title:      "Swift. DispatchPredicate 5"
 subtitle:   "DispatchPredicate 를 알아봅시다!"
 date:       2018-05-04 14:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/home-bg.jpg
+thumbnail-img: /assets/post_img/background/home-bg.jpg
+share-img: /assets/post_img/background/home-bg.jpg
 ---
 
 ## DispatchPredicate

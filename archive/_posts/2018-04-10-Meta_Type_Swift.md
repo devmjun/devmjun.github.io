@@ -4,11 +4,13 @@ title:      "Swift. MetaType에 대해서 알아봅니다"
 subtitle:   ".Type, .Protocol"
 date:       2018-04-10 16:38:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Idea]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072821.jpg
+thumbnail-img: /assets/post_img/background/road-1072821.jpg
+share-img: /assets/post_img/background/road-1072821.jpg
 ---
 
 ## Metatype Type 

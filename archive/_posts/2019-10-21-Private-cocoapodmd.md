@@ -4,11 +4,13 @@ title:      "iOS, Private Cocoapods 생성 방법"
 subtitle:   "링크 참조"
 date:       2019-10-21 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Scheme]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/itunesConnect-bg.jpg
+thumbnail-img: /assets/post_img/background/itunesConnect-bg.jpg
+share-img: /assets/post_img/background/itunesConnect-bg.jpg
 --- 
 
 ## References

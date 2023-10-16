@@ -4,11 +4,13 @@ title:      "Swift, Container ViewController"
 subtitle:   "Container ViewController 공부하며 CaseContainer 라이브러리를 만들어 보았습니다."
 date:       2018-09-20 15:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 ---
 
 Container ViewController를 쉽게 사용할수 있는 라이브러리를 만들었습니다. 코드의 위치는 [여기](https://github.com/devmjun/CaseContainer) 입니다. 

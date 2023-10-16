@@ -4,11 +4,13 @@ title:      "Git 을 이용한 WorkFlow"
 subtitle:   "Git을 이용해서 협업을 해보자!"
 date:       2017-10-29 19:09:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testimage.png
+thumbnail-img: /assets/post_img/background/testimage.png
+share-img: /assets/post_img/background/testimage.png
 ---
 
 ## Git을 이용한 협업 Workflow 

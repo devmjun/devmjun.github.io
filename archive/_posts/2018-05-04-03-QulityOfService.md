@@ -4,11 +4,13 @@ title:      "Swift. Quality of Service(QoS) 3"
 subtitle:   "Quality of Service(QoS)를 알아봅시다!"
 date:       2018-05-04 12:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Mac-bg.jpg
+thumbnail-img: /assets/post_img/background/Mac-bg.jpg
+share-img: /assets/post_img/background/Mac-bg.jpg
 ---
 
 ## About Quality of Service(QoS)  

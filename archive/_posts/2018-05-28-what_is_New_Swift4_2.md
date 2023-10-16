@@ -6,9 +6,11 @@ categories: archive
 permalink: /archive/:title
 date:       2018-05-28 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
+cover-img: /assets/post_img/background/natural.jpg
+thumbnail-img: /assets/post_img/background/natural.jpg
+share-img: /assets/post_img/background/natural.jpg
 ---
 
 [What’s New in Swift 4.2?](http://kka7.tistory.com/)<br>

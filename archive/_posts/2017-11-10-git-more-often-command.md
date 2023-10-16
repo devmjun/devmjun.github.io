@@ -4,11 +4,13 @@ title:      "Git, 자주사용하는 명령어를 정리해보자!"
 subtitle:   "Git의 유용한 명령어들을 모아놓았습니다."
 date:       2017-11-12 14:44:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true
 tags: [Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/street-3453557.jpg
+thumbnail-img: /assets/post_img/background/street-3453557.jpg
+share-img: /assets/post_img/background/street-3453557.jpg
 ---
 
 

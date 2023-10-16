@@ -4,11 +4,13 @@ title:      "Swift. LLVM 아티클"
 subtitle:   "링크.."
 date:       2018-04-11 00:26:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/ComputerScience-bg.jpg
+thumbnail-img: /assets/post_img/background/ComputerScience-bg.jpg
+share-img: /assets/post_img/background/ComputerScience-bg.jpg
 ---
 
 [WMO 알아보기(컴파일 최적화)](https://brunch.co.kr/@joonwonlee/14)<br>

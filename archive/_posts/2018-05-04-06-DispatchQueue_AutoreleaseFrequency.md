@@ -4,11 +4,13 @@ title:      "Swift. DispatchQueue.AutoreleaseFrequency 6"
 subtitle:   "DispatchQueue.AutoreleaseFrequency를 알아봅시다!"
 date:       2018-05-05 12:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/mountains-1645078.jpg
+thumbnail-img: /assets/post_img/background/mountains-1645078.jpg
+share-img: /assets/post_img/background/mountains-1645078.jpg
 ---
 
 ## DispatchQueue.AutoreleaseFrequency

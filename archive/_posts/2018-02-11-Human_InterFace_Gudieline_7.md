@@ -4,11 +4,13 @@ title:      "iOS 휴먼 인터페이스 가이드라인 요약 (7)"
 subtitle:   "Navigation Bars, Search Bars, Status Bars, Tab Bars, toolbars"
 date:       2018-02-11 20:00:00
 author:     "MinJun"
-header-img: "img/tags/HIG-bg.jpg"
 comments: true
 tags: [HIG]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/testimage.png
+thumbnail-img: /assets/post_img/background/testimage.png
+share-img: /assets/post_img/background/testimage.png
 ---
 
 개인적인 공부의 목적으로 작성 되었습니다. 오역이나 잘못된 부분이 있을수 있으니, 댓글 남겨 주시면 감사하겠습니다!

@@ -4,11 +4,13 @@ title:      "Swift. Core Graphics Tutorial Part 3: Patterns and Playgrounds"
 subtitle:   "Core Graphics가 무엇인지 알아봅니다 "
 date:       2018-10-06 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/about-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/about-bg_sub.jpg
+share-img: /assets/post_img/background/about-bg_sub.jpg
 ---
 
 [Core Graphics Tutorial Part 3: Patterns and Playgrounds](https://www.raywenderlich.com/409-core-graphics-tutorial-part-3-patterns-and-playgrounds)을 의역 했습니다.

@@ -4,11 +4,13 @@ title:      "Swift, Algorithm, Merge Sort"
 subtitle:   "분할정복 하자!"
 date:       2018-06-13 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072823.jpg
+thumbnail-img: /assets/post_img/background/road-1072823.jpg
+share-img: /assets/post_img/background/road-1072823.jpg
 ---
 
 ## Code 

@@ -4,11 +4,13 @@ title:      "Realm. 이 무엇인지 알아봅니다."
 subtitle:   "간단하게 개괄.."
 date:       2018-04-24 12:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Realm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/road-1072821.jpg
+thumbnail-img: /assets/post_img/background/road-1072821.jpg
+share-img: /assets/post_img/background/road-1072821.jpg
 ---
 
 ## Introdution 

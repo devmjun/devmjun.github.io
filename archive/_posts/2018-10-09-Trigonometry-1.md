@@ -4,11 +4,13 @@ title:      "Swift. Trigonometry for Game Programming – SpriteKit and Swift Tu
 subtitle:   "Control을 사용자화하는 방법을 알아봅니다."
 date:       2018-10-09 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/iOS-bg.jpg
+thumbnail-img: /assets/post_img/background/iOS-bg.jpg
+share-img: /assets/post_img/background/iOS-bg.jpg
 ---
 
 [Trigonometry for Game Programming – SpriteKit and Swift Tutorial: Part 1/2](https://www.raywenderlich.com/5504-trigonometry-for-game-programming-spritekit-and-swift-tutorial-part-1-2)의 일부분을 의역 했습니다.

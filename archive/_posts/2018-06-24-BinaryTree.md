@@ -4,11 +4,13 @@ title:      "Swift, Data Structure, Binary Trees"
 subtitle:   "이진트리를 구현해보자"
 date:       2018-06-24 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [DataStructure, Algorithm, Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Sketch-bg.jpg
+thumbnail-img: /assets/post_img/background/Sketch-bg.jpg
+share-img: /assets/post_img/background/Sketch-bg.jpg
 ---
 
 ## Contents 

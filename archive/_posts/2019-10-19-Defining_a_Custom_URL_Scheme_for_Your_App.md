@@ -4,11 +4,13 @@ title:      "iOS, Custom URL Scheme"
 subtitle:   "Defining a Custom URL Scheme for Your App"
 date:       2019-10-19 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Scheme]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/about-bg.png
+thumbnail-img: /assets/post_img/background/about-bg.png
+share-img: /assets/post_img/background/about-bg.png
 --- 
 
 ## Table of contents 

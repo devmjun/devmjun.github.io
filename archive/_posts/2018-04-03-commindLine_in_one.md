@@ -4,11 +4,13 @@ title:      "Git, 커맨드라인에서 Add-Commit-push 한번에 하는방법"
 subtitle:   "꿀팁.."
 date:       2018-04-03 17:22:00
 author:     "MinJun"
-header-img: "img/tags/Github-bg.jpg"
 comments: true 
 tags: [Git]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/search-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
+share-img: /assets/post_img/background/search-bg_sub.jpg
 ---
 
 커맨드라인에서 git add .... git commit -m .... git push orign ....을 사용했던 방법을 한번의 명령어를 통해서 수행할수 있게 만들어봅니다. 

@@ -4,11 +4,13 @@ title:      "Core Graphics Tutorial Part 1: Getting Started"
 subtitle:   "Core Graphics가 무엇인지 알아봅니다 "
 date:       2018-10-04 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich, CoreGraphics, Trigonometry]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/sunset-404072.jpg
+thumbnail-img: /assets/post_img/background/sunset-404072.jpg
+share-img: /assets/post_img/background/sunset-404072.jpg
 ---
 
 [Core Graphics Tutorial Part 1: Getting Started](https://www.raywenderlich.com/411-core-graphics-tutorial-part-1-getting-started)을 의역 했습니다.

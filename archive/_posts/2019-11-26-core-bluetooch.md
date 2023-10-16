@@ -5,12 +5,14 @@ title:      "iOS, Core Bluetooth Tutorial for iOS: Heart Rate Monitor"
 subtitle:   "Core Bluetooth Tutorial for iOS: Heart Rate Monitor"
 date:       2019-11-25 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift,CoreBluetooth]
 
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/codemonkey-bg.jpg
+thumbnail-img: /assets/post_img/background/codemonkey-bg.jpg
+share-img: /assets/post_img/background/codemonkey-bg.jpg
 --- 
 
 [Core Bluetooth Tutorial for iOS: Heart Rate Monitor](https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor) 에서 필요한 부분을 의역 했습니다.

@@ -4,11 +4,13 @@ title:      "iOS 와 Android UI 메타포 비교"
 subtitle:   "링크 참조"
 date:       2018-11-9 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/Sketch-bg.jpg
+thumbnail-img: /assets/post_img/background/Sketch-bg.jpg
+share-img: /assets/post_img/background/Sketch-bg.jpg
 --- 
 
 [https://blog.naver.com/rkwlsnl/220361673947](https://blog.naver.com/rkwlsnl/220361673947)<br>

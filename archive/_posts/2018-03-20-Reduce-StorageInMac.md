@@ -4,11 +4,13 @@ title:      "Xcode. Xcode 깨끗이 삭제하는 방법"
 subtitle:   "Xcode 깨끗하게 삭제하는 방법, Mac 용량 줄이는 방법"
 date:       2018-03-20 22:04:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Xcode, Mac]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/ComputerScience1-bg.jpg
+thumbnail-img: /assets/post_img/background/ComputerScience1-bg.jpg
+share-img: /assets/post_img/background/ComputerScience1-bg.jpg
 ---
 
 ## Xcode 완전 삭제 하는 방법

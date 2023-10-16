@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 8: Swift Language Guide-Enumerations"
 subtitle:   "Swift Language Guide-Enumerations"
 date:       2018-04-13 07:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/avenue-2215317.jpg
+thumbnail-img: /assets/post_img/background/avenue-2215317.jpg
+share-img: /assets/post_img/background/avenue-2215317.jpg
 ---
 
 ## Reference 

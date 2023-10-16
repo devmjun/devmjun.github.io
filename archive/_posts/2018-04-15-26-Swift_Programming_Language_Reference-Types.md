@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 26"
 subtitle:   "Swift Language Reference-Types"
 date:       2018-04-15 09:00:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/deer-643340.jpg
+thumbnail-img: /assets/post_img/background/deer-643340.jpg
+share-img: /assets/post_img/background/deer-643340.jpg
 ---
 
 ## Reference 

@@ -4,11 +4,13 @@ title:      "Swift. 값 타입 VS 참조타입 비교하기"
 subtitle:   "Class, Struct 뜯어보기"
 date:       2017-10-17 00:39:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/imessageSticker-bg.jpg
+thumbnail-img: /assets/post_img/background/imessageSticker-bg.jpg
+share-img: /assets/post_img/background/imessageSticker-bg.jpg
 ---
 
 ## Swift. 값 타입 VS 참조 타입 

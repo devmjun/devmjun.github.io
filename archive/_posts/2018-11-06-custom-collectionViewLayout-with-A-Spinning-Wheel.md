@@ -4,11 +4,13 @@ title:      "Swift. UICollectionView Layout 회전 레이아웃"
 subtitle:   "UICollectionView Custom Layout Tutorial: A Spinning Wheel"
 date:       2018-11-6 18:45:00
 author:     "MinJun Ju"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, UICollectionViewLayout, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg.jpg
+thumbnail-img: /assets/post_img/background/blog-bg.jpg
+share-img: /assets/post_img/background/blog-bg.jpg
 ---
 
 [UICollectionView Custom Layout Tutorial: A Spinning Wheel](https://www.raywenderlich.com/1702-uicollectionview-custom-layout-tutorial-a-spinning-wheel)에서 필요한 부분을 의역 했습니다. 

@@ -4,11 +4,13 @@ title:      "Swift, Algorithm, Insertion Sort"
 subtitle:   "2개의 공간에서 비교하며 정렬하자."
 date:       2018-06-13 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Xcode-bg.jpg"
 comments: true 
 tags: [Swift, Algorithm]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/blog-bg_sub.jpg
+thumbnail-img: /assets/post_img/background/blog-bg_sub.jpg
+share-img: /assets/post_img/background/blog-bg_sub.jpg
 ---
 
 ## Code 

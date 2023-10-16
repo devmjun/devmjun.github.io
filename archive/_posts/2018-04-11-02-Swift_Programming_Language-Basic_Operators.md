@@ -4,11 +4,13 @@ title:      "Swift. 정리하기 2: Swift Language Guide-Basic Operators"
 subtitle:   "Swift Language Guide-Basic Operators"
 date:       2018-04-11 17:35:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/CaseContainer.jpg
+thumbnail-img: /assets/post_img/background/CaseContainer.jpg
+share-img: /assets/post_img/background/CaseContainer.jpg
 ---
 
 최종 수정일: 2018.10.01

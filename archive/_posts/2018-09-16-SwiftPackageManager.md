@@ -4,11 +4,13 @@ title:      "Swift, Swift Package Manager가 무엇인지 알아봅니다"
 subtitle:   "Swift Package Manager"
 date:       2018-09-16 17:45:00
 author:     "MinJun"
-header-img: "img/tags/Swift-bg.jpg"
 comments: true 
 tags: [Swift, Raywenderlich]
 categories: archive
 permalink: /archive/:title
+cover-img: /assets/post_img/background/natural.jpg
+thumbnail-img: /assets/post_img/background/natural.jpg
+share-img: /assets/post_img/background/natural.jpg
 ---
 
 [An Introduction to the Swift Package Manager](https://www.raywenderlich.com/750-an-introduction-to-the-swift-package-manager)의 내용을 의역 했습니다. 
