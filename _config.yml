@@ -15,7 +15,7 @@
 title: Mjun
 
 # Your name to show in the footer
-author: MINJUN JU
+author: Minjun Ju
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -28,7 +28,6 @@ navbar-links:
     - Archive: "archive"
     - iOS: "category/ios"
     - Python: "category/python"
-    - test post: "category/test"
 
 ################
 # --- Logo --- #
@@ -56,9 +55,10 @@ round-avatar: true
 social-network-links:
   email: "dev.mjun@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
   github: devmjun
   twitter: dev_mjun
+  telegram: forested0
+  # facebook: deanattali
 #  patreon: MINJUN JU
 #  youtube: c/daattali
 #  medium: yourname
@@ -73,7 +73,6 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
@@ -124,7 +123,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "iOS, ios, swift, tech, life, property, fund"
+keywords: "Technology, iOS, ios, swift, tech, life, property, fund"
 
 ######################################
 # --- Colours / background image --- #
@@ -315,6 +314,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - cateogry/test
 
 plugins:
   - jekyll-paginate-v2

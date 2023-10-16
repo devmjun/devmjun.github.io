@@ -19,8 +19,7 @@ share-img: /assets/post_img/background/blog-bg.jpg
 
 인터넷에서 정말로 창의적인 웹사이트가 몇개를 보았는데 여러 종류의 인터렉션 경험을 모아놓은 `Form Follows Functions`이라는 웹사이트를 우연히 발견했습니다. 여기서 주의를 끌게 한것은 사이트의 회전하는 탐색 바퀴 였고 각 종류의 경험을 나타내는 포스터들을 포함하고 있었습니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-0.png" width="550"></center> <br> 
-
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-0.png" width="550"></center> <br>
 
 이 튜토리얼은 UICollectionView Custom Layout을 사용하여 spinning navigation wheel을 재현하는 방법을 보여줄것입니다. 시간을 최대한으로 활용하기 위해 2D transform, collection views, custom layout에 대한 기본지식을 가지고 있어야 합니다. 이 주제들이 친숙하지 않다면 다음 아티클을 확인할것을 권장합니다
 
@@ -40,8 +39,7 @@ share-img: /assets/post_img/background/blog-bg.jpg
 
 먼저 [여기](https://koenig-media.raywenderlich.com/uploads/2015/06/CircularCollectionView-Starter.zip)에서 시작 프로젝트를 다운 받고 빌드하고 실행합니다. 그러면 각 cell이 `raywenderlich.com`의 스토어에 있는 책을 나타내고 있는 격자 모양의 레이아웃을 볼수 있습니다. 
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-1.png" width="550"></center> <br> 
-
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-1.png" width="550"></center> <br>
 
 이 프로젝트의 설정은 직관적 입니다. CollectionViewController가 있고, 내부에 imageView를 가지고 있는 사용자화된 collection view cell이 있습니다. 이 책의 표시는 `Images`라고 불리우는 디렉토리에 있으며 CollectionViewControlelr는 Images를 데이터 소스로 사용합니다.
 
@@ -53,7 +51,7 @@ share-img: /assets/post_img/background/blog-bg.jpg
 
 cell들과 함께 wheel 구조의 다이어그램이 있습니다. yellow 영역은 iPhone의 screen 이고 blue 라운딩된 사각형은 cells입니다. 점으로 된 라인은 이들을 위치시킬 원입니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-2.png" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-2.png" width="550"></center> <br>
 
 이 배열을 설명하기위해 3개의 중요한 매개변수가 필요합니다.
 
@@ -71,7 +69,7 @@ angle_for_i = x + (i * anglePerItem)
 
 아래에, 좌표계의 각도 묘사를 볼수 있습니다. 양의 각도일때 0도는 center 오른쪽방향을 향하여 지칭하고 음수 각도 일때 왼쪽을 지칭합니다. 그러기 때문에 cell은 0의 각도를 가진 cell은 center에 있고 이것은 완벽한 수직 입니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-3.png" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-3.png" width="550"></center> <br>
 
 이제 이론을 명확하게 이해했고, 코딩을 시작할 준비가 되었습니다.
 
@@ -81,7 +79,7 @@ angle_for_i = x + (i * anglePerItem)
 
 `iOS\Source\Cocoa Touch Class`에서 `CircularCollectionViewLayout`라고 명명된 새로운 `UICollectionViewLayout`을 상속받는 `.swift`파일을 생성합니다. 
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-4.png" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-4.png" width="550"></center> <br>
 
 이 collection view layout의 하위 클레스는 모든 positioning 코드가 포함됩니다. 
 
@@ -123,13 +121,13 @@ override func collectionViewContentSize() -> CGSize {
 
 `Main.storyboard`를 열고 `Collection View`을 선택합니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-5.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-5.png" width="450"></center> <br>
 
 `Attributes Inspector`을 열고 `Custom`으로 Layout을 변경하고 Class는 `CircularCollectionViewLayout`으로 선택합니다.
- 
+
 앱을 빌드하고 실행합니다. 스크롤 가능한 구역을 제외하면 아무것도 볼수 없을것입니다. 하지만 의도한것입니다. 이것은 collection view가 Layout을 CirecularCollectionViewLayout으로 정확하게 사용한다는 이야기입니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-6.png" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-6.png" width="550"></center> <br>
 
 ---
 
@@ -212,7 +210,7 @@ override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath)
 
 빌드하고 실행합니다. 화면에 cell들을 볼수 있습니다 하지만 외부 지점을 정하여 회전하지 않고 스스로 회전합니다. 원하는 효과는 아니지만 꾀 멋있지 않나요(?)
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-7.png" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-7.png" width="550"></center> <br>
 
 왜 이것이 발생하는지 추측할수 있나요?
 
@@ -222,11 +220,11 @@ override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath)
 
 아직 설정하지 않았지만 cell의 anchor point에 대해서 논의했던걸 기억 하나요? 
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-8.png" width="450"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-8.png" width="450"></center> <br>
 
 anchor points는 모든 scaling transforms, 회전이 일어나는 위치에 대한 `CALayer` 프로퍼티의 속성값입니다. 이 속성의 기본값은 center 이고 지금은 마지막 빌드에서 보았던 중앙입니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-9.png" width="250"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-9.png" width="250"></center> <br>
 
 `prepareLayout()`으로 돌아와서 `centerX`의 정의 바로 아래에 `anchorPointY`를 정의합니다.
 
@@ -246,7 +244,7 @@ attributes.anchorPoint = CGPoint(x: 0.5, y: anchorPointY)
 
 빌드하고 실행합니다. 원형태로 누워있는 cell을 볼수 있고 이들을 스크롤링하면 회전하지 않고 화면에서 사라집니다. 
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-10.gif" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-10.gif" width="550"></center> <br>
 
 ---
 
@@ -254,7 +252,7 @@ attributes.anchorPoint = CGPoint(x: 0.5, y: anchorPointY)
 
 아이템을 배치하는 가장 어려운 부분을 완료했습니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-11.png" width="350"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-11.png" width="350"></center> <br>
 
 이제 스크롤링을 구현하기 위해 각도 값을 가지고 놀면 됩니다. 
 
@@ -272,7 +270,7 @@ override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
 
 `contentOffset.x`는 0에서 `collectionViewContentSize().width - collectionView!.bounds.width`로 이동합니다. 최대 contentOffset값은  `maxContentOffset` 라고 부릅니다. 0에서 0번째 아이템을 가운데에 둡니다 이것은 마지막 아이템의 각 위치가 0일것 이라는걸 의미합니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-12.png" width="750"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-12.png" width="750"></center> <br>
 
 *왼쪽에서 시작해서 오른쪽으로 끝나는 navigation wheel 의 상태 입니다.*
 
@@ -326,7 +324,7 @@ attributes.angle = self.angle + (self.anglePerItem * CGFloat(i))
 
 빌드하고 실행합니다. 화면을 스크롤하고 다음 스크롤과같은 회전을 볼수 있습니다.
 
-<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-13.gif" width="550"></center> <br> 
+<center><img src="/assets/post_img/posts/collectionViewLayout-wheel-13.gif" width="550"></center> <br>
 
 `contentOffset.x`의 값을 사용하여 각도 위치 값을 유도했기 때문에 추가 코드를 작성하지 않아서 유연합니다. 최대값 검사 및 감속 기능을 무료로 제공되어집니다. 
 
@@ -335,6 +333,5 @@ attributes.angle = self.angle + (self.anglePerItem * CGFloat(i))
 ## Bonus Material: Optimizations
 
 추후 번역 예정..
-
 
 

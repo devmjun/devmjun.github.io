@@ -1,19 +1,5 @@
-## Table of contents 
-
-  - [<U>Getting Started</U>](#section-id-32)
-  - [<U>Reflecting on Mirror and Debug Output</U>](#section-id-40)
-  - [<U>CustomDebugStringConvertible</U>](#section-id-46)
-  - [<U>Dump</U>](#section-id-87)
-  - [<U>Swift Mirror</U>](#section-id-116)
-  - [<U>Creating a Mirror-Powered Dog Log</U>](#section-id-120)
-  - [<U>Creating a Mirror</U>](#section-id-124)
-  - [<U>Key Paths</U>](#section-id-168)
-  - [<U>Understanding Dynamic Member Lookup</U>](#section-id-199)
-  - [<U>Introducing @dynamicMemberLookup</U>](#section-id-207)
-  
-
-
 ---
+
 layout:     post
 title:      "iOS, Dynamic Features in Swift"
 subtitle:   "Dynamic Features in Swift"
@@ -26,7 +12,27 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/blog-bg.jpg
 thumbnail-img: /assets/post_img/background/blog-bg.jpg
 share-img: /assets/post_img/background/blog-bg.jpg
+
 --- 
+
+## 
+
+## Table of contents
+
+- [<u>Getting Started</u>](#section-id-32)
+- [<u>Reflecting on Mirror and Debug Output</u>](#section-id-40)
+- [<u>CustomDebugStringConvertible</u>](#section-id-46)
+- [<u>Dump</u>](#section-id-87)
+- [<u>Swift Mirror</u>](#section-id-116)
+- [<u>Creating a Mirror-Powered Dog Log</u>](#section-id-120)
+- [<u>Creating a Mirror</u>](#section-id-124)
+- [<u>Key Paths</u>](#section-id-168)
+- [<u>Understanding Dynamic Member Lookup</u>](#section-id-199)
+- [<u>Introducing @dynamicMemberLookup</u>](#section-id-207)
+
+
+
+
 
 [Dynamic Features in Swift](https://www.raywenderlich.com/5743-dynamic-features-in-swift) 에서 필요한 부분만 번역 해서 중간 중간 컨텍스트가 끊겨 있습니다
 
@@ -68,7 +74,7 @@ Swift의 Dynamic feature를 배우는데 집중할수 있도록 필요한 모든
 
 <div id='section-id-46'/>
 
-## CustomDebugStringConvertible 
+## CustomDebugStringConvertible
 
 DynamicFeaturesInSwift.playground 를 열고 `DogMirror`페이지를 엽니다. 
 
@@ -142,19 +148,19 @@ print()
 
 <div id='section-id-116'/>
 
-## Swift Mirror 
+## Swift Mirror
 
 `Mirror`는 플레이 그라운드 또는 런타임에 디버거를 통해서 어떤 타입의 인스턴트의 값을 보여주게 합니다. 간단하게 말하면, mirror의 힘은 introspection 이고 introspection은 reflection의 하위 집합입니다. 
 
 <div id='section-id-120'/>
 
-## Creating a Mirror-Powered Dog Log 
+## Creating a Mirror-Powered Dog Log
 
 이제 Mirror-powered dog log를 생성할 시간입니다. debugging을 돕기 위해서, 이모지와 함께 출력물을 출력하는게 이상적입니다. log 함수는 어떤 아이템들도 통과시켜 처리할수 있어야 합니다.
 
 <div id='section-id-124'/>
 
-## Creating a Mirror 
+## Creating a Mirror
 
 mirror를 사용하는 log 함수를 생성할 시간입니다. 시작 하기 위해 `Create log function here`에 다음 코드를 추가합니다.
 
@@ -259,10 +265,7 @@ subscript(dynamicMember member: String) -> Direction {
   return .motionless
 }
 ```
+
 ...
 
 ---
-
-
-
-
