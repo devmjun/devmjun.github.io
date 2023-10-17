@@ -877,7 +877,8 @@ code {
 pre code {
   padding: 0;
   background-color: transparent;
-  border-radius: 0;
+  padding: 0.125rem 0.25rem;
+  color: {{ site.text-col | default: "#404040" }};
 }
 
 pre {

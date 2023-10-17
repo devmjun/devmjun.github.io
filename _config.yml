@@ -17,6 +17,8 @@ title: Mjun
 # Your name to show in the footer
 author: Minjun Ju
 
+navbar-brand-url: '/'
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
