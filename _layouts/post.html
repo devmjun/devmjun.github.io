@@ -41,6 +41,14 @@ layout: base
 
       <article role="main" class="blog-post">
         {{ content }}
+
+        <!-- # 2 Add AdSense in Article -->
+        <!-- <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script> -->
+        <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script>
+        <!-- document.addEventListener("DOMContentLoaded", function() {
+          <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script>
+        }); -->
+        {% include adsense_display.html %}
       </article>
 
       {% if page.tags.size > 0 %}
