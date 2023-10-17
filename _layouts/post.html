@@ -1,86 +1,90 @@
 ---
-layout: default
-not_active_adsense: true
+layout: base
 ---
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('/{{ page.header-img }}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta" style='margin-top:0.5em;'>Posted by {{ page.author }} on {{ page.date | date: "%A, %B %-d, %Y" }}
-                    </span>
-                    <span class="meta" style='margin-top:0.5em;'> Tags: {% for tag in page.tags %}<a href="/archive/tags/{{ tag }}"><i class="fa fa-tag"></i> {{ tag }}</a> {% endfor %} </span>
-                    <span class="meta" style='margin-top:0.5em;'>
-                        {% assign minutes = content | number_of_words | divided_by: site.wpm %}
-                        <i class="fa fa-clock-o"></i>&nbsp;{% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
-                        {{ minutes }} minute read
-                    </span>
-                </div>
-            </div>
+{% include header.html type="post" %}
+
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+
+      {% if page.gh-repo %}
+        {% assign gh_split =  page.gh-repo | split:'/'  %}
+        {% assign gh_user =  gh_split[0]  %}
+        {% assign gh_repo =  gh_split[1]  %}
+
+        <div id="header-gh-btns">
+          {% if page.gh-badge.size > 0 %}
+            {% for badge in page.gh-badge %}
+              {% case badge %}
+                {% when 'star'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'watch'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'fork'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'follow'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              {% endcase %}
+            {% endfor %}
+          {% endif %}
         </div>
-    </div>
-</header>
+      {% endif %}
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ content }}
-                <br> 
-                <!-- #1 In Article AdSense in post--> 
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        // 무작위로 삽입할 텍스트
-                        var randomText = "여기에 무작위 텍스트를 입력합니다.";
-                        var adCode = 
-                        '<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1101850893094860" data-ad-slot="5591535814"><\/ins>' + 
-                        '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
-                        // 중첩된 요소 중에서 무작위로 위치를 선택합니다.
-                        var elements = document.querySelectorAll('div[id^="section-id-"]');
-                        var randomIndex = Math.floor(Math.random() * elements.length);
-                        var randomElement = elements[randomIndex];
-
-                        var adElement = document.createElement("div");
-                        adElement.innerHTML = adCode;
-                        randomElement.insertBefore(adElement, randomElement.firstChild);
-                    });
-                </script>
-          
-                <!-- #2 POST Display AdSense in post -->
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"></script>
-                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-client="ca-pub-1101850893094860" data-ad-slot="4824700312" data-ad-format="auto" data-full-width-responsive="true"></ins> 
-                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-
-                <!-- disqus_comments -->
-                <br> 
-                    {% if page.comments %}
-                    {% include disqus_comments.html %}
-                    {% endif %}
-                <br>
-              
-                <!-- Pager -->
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <br>
-                <br>
-            </div>
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
+      {% endif %}
+
+      <article role="main" class="blog-post">
+        {{ content }}
+
+        <!-- # 2 Add AdSense in Article -->
+        <!-- <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script> -->
+        <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script>
+        <!-- document.addEventListener("DOMContentLoaded", function() {
+          <script src="{{ "/assets/js/adsense_in_article.js" | relative_url }}"></script>
+        }); -->
+        {% include adsense_display.html %}
+      </article>
+
+      {% if page.tags.size > 0 %}
+        <div class="blog-tags">
+          <span>Tags:</span>
+          {% for tag in page.tags %}
+            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.social-share %}
+        {% include social-share.html %}
+      {% endif %}
+
+      <ul class="pagination blog-pager">
+        {% if page.previous.url %}
+        <li class="page-item previous">
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
+        </li>
+        {% endif %}
+        {% if page.next.url %}
+        <li class="page-item next">
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
+        </li>
+        {% endif %}
+      </ul>
+      {% include comments.html %}
     </div>
-</article>
+  </div>
+</div>

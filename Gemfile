@@ -1,13 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-feed"
-  gem "html-proofer"
-  gem "rake"
-  gem "jekyll-gist"
-  gem "github-pages"
+source "https://rubygems.org"
 
-end
+gemspec
 
-gem "webrick", "~> 1.8"

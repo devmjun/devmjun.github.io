@@ -1,42 +1,33 @@
 ---
-layout: default
+layout: base
+pagination: 
+  enabled: true
 ---
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('/{{ page.header-img }}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>{{ page.title }}</h1>
-                    <hr class="small">
-                    <span class="subheading">
-                        {% if page.description == "!!SHOWTAGSINSTEADOFDESCRIPTION!!" %}
-                            {% for tag in page.tags %}
-                                <a href="/archive/tags/{{ tag }}" style="text-decoration: normal; font-weight: normal; color: #ffffff;"><i class="fa fa-tag"></i>{{ tag }}</a>  
-                            {% endfor %}
-                        {% else %}
-                            {{ page.description }}
-                        {% endif %}
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+{% include header.html type="page" %}
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            {{ content }}
-            <br>
-            {% if page.comments %}
-                {% include disqus_comments.html %}
-            {% endif %}
-            <br>
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
+      {% endif %}
+
+      {{ content }}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
     </div>
+  </div>
 </div>
-
-<hr>
