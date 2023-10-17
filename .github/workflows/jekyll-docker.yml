@@ -45,7 +45,8 @@ jobs:
 
       - name: Install Packages
         run: |
-          gem install jekyll bundler 
+          gem install bundler 
+          bundle add webrick
           bundle install 
           bundle update 
         env:
