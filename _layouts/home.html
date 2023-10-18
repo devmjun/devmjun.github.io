@@ -97,7 +97,7 @@ layout: page
   {% endfor %}
 </ul>
 
-<script src="{{ "/assets/js/adsense_in_feed.js" | relative_url }}"></script>
+{% include adsense_in_feed.html %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
