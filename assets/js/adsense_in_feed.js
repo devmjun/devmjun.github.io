@@ -1,10 +1,10 @@
 // Minjun 2023
 
-// blog-post 내에 AdSense in feed 코드 삽입.
+// posts-list 마지막에 AdSense 삽입
 function insertAdInRandomLocation() {
-    var elements = document.querySelectorAll('.post-preview');
-    var randomIndex = Math.floor(Math.random() * elements.length);
-    var randomElement = elements[randomIndex];
+    var element = document.querySelector('.posts-list');
+    // var randomIndex = Math.floor(Math.random() * elements.length);
+    // var randomElement = elements[randomIndex];
 
     let adCode = 
     `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" 
@@ -19,8 +19,9 @@ function insertAdInRandomLocation() {
     <script> 
           (adsbygoogle = window.adsbygoogle || []).push({}) 
     </script>`
+    
 
-    randomElement.insertAdjacentHTML('afterend', adCode);
+    element.insertAdjacentHTML('beforeend', adCode);
 }
 
 document.addEventListener("DOMContentLoaded", insertAdInRandomLocation);

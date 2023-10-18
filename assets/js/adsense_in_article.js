@@ -3,8 +3,7 @@
 // blog-post 내에 AdSense in article 코드 삽입.
 function insertAdInRandomLocation() {
     var adCode = 
-    `
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" 
+    `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" 
       crossorigin="anonymous"></script>
     <ins class="adsbygoogle" 
       style="display:block; text-align:center;" 
