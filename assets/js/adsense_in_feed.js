@@ -1,10 +1,10 @@
 // Minjun 2023
 
-// blog-post 내에 AdSense in article 코드 삽입.
+// blog-post 내에 AdSense in feed 코드 삽입.
 function insertAdInRandomLocation() {
     let adCode = 
     '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1101850893094860" crossorigin="anonymous"><\/script>'+
-    '<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-d2-a+73-vo+fv" data-ad-client="ca-pub-1101850893094860" data-ad-slot="2708788380"><\/ins>' +
+    '<ins class="adsbygoogle" style="display:block;" data-ad-format="fluid" data-ad-layout-key="-d2-a+73-vo+fv" data-ad-client="ca-pub-1101850893094860" data-ad-slot="2708788380"><\/ins>' +
     '<script> (adsbygoogle = window.adsbygoogle || []).push({}); <\/script>';
 
     // var adElement = document.createElement("div");
