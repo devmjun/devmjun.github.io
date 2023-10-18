@@ -95,9 +95,8 @@ layout: page
     </article>
   </li>
   {% endfor %}
+  {% include adsense_in_feed.html %}
 </ul>
-
-{% include adsense_in_feed.html %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
