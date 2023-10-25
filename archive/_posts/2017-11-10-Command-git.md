@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Xcode-bg___.jpg
 thumbnail-img: /assets/post_img/background/Xcode-bg___.jpg
 share-img: /assets/post_img/background/Xcode-bg___.jpg
+toc: true
 ---
 
 ## fetch 

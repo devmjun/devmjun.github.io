@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/road-1072821.jpg
 thumbnail-img: /assets/post_img/background/road-1072821.jpg
 share-img: /assets/post_img/background/road-1072821.jpg
+toc: true
 ---
 
 [삼각 함수(三角函數, Trigonometric Function)](https://ghebook.blogspot.com/2010/12/trigonometric-function.html)<br>

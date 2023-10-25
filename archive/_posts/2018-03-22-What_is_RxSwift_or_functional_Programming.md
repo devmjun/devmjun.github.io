@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/blog-bg.jpg
 thumbnail-img: /assets/post_img/background/blog-bg.jpg
 share-img: /assets/post_img/background/blog-bg.jpg
+toc: true
 ---
 
 곰튀김님 영상보고 중요한 부분만 정리했습니다. 링크는 아래에 있습니다. 

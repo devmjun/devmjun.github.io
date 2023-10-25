@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Xcode-bg___.jpg
 thumbnail-img: /assets/post_img/background/Xcode-bg___.jpg
 share-img: /assets/post_img/background/Xcode-bg___.jpg
+toc: true
 ---
 
 [About the App Launch Sequence](https://developer.apple.com/documentation/uikit/core_app/managing_your_app_s_life_cycle/responding_to_the_launch_of_your_app/about_the_app_launch_sequence)에서 필요한 부분을 의역 했습니다.

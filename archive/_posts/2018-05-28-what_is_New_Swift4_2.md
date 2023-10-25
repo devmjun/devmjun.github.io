@@ -11,6 +11,7 @@ tags: [Swift]
 cover-img: /assets/post_img/background/natural.jpg
 thumbnail-img: /assets/post_img/background/natural.jpg
 share-img: /assets/post_img/background/natural.jpg
+toc: true
 ---
 
 [What’s New in Swift 4.2?](http://kka7.tistory.com/)<br>

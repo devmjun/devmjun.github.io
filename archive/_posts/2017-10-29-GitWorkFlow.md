@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/testimage.png
 thumbnail-img: /assets/post_img/background/testimage.png
 share-img: /assets/post_img/background/testimage.png
+toc: true
 ---
 
 ## Git을 이용한 협업 Workflow 

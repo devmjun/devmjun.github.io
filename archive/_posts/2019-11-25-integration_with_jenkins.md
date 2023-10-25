@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/blog-bg.jpg
 thumbnail-img: /assets/post_img/background/blog-bg.jpg
 share-img: /assets/post_img/background/blog-bg.jpg
+toc: true
 --- 
 
 [Continuous Integration With GitHub, Fastlane & Jenkins](https://www.raywenderlich.com/1774995-continuous-integration-with-github-fastlane-jenkins) 에서 필요한 부분을 의역 했습니다.

@@ -980,6 +980,16 @@ pre {
   border-left-color: #3CB371;
 }
 
+/* --- TOC style --- */
+
+.toc {
+/*  background-color: #fff;*/
+  margin: 5px 0;
+  padding: 10px 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
 /* --- Misc blog post styles --- */
 
 .blog-post :first-child {
@@ -1002,7 +1012,7 @@ pre {
   border-bottom-left-radius: 0.3125rem;
 }
 
-.blog-post hr {
+.blog-post hr, .toc-section hr {
   max-width: 60%;
   border-width: 0.25rem;
   border-radius: 0.1875rem;

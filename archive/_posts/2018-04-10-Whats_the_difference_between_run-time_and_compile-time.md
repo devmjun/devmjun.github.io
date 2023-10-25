@@ -11,6 +11,7 @@ tags: [ComputerScience]
 cover-img: /assets/post_img/background/port.png
 thumbnail-img: /assets/post_img/background/port.png
 share-img: /assets/post_img/background/port.png
+toc: true
 ---
 
 [https://stackoverflow.com/questions/846103/runtime-vs-compile-time](https://stackoverflow.com/questions/846103/runtime-vs-compile-time) <br>

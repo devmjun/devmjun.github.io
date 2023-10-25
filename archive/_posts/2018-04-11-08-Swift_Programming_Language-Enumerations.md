@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/avenue-2215317.jpg
 thumbnail-img: /assets/post_img/background/avenue-2215317.jpg
 share-img: /assets/post_img/background/avenue-2215317.jpg
+toc: true
 ---
 
 ## Reference 

@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/imessageSticker-bg.jpg
 thumbnail-img: /assets/post_img/background/imessageSticker-bg.jpg
 share-img: /assets/post_img/background/imessageSticker-bg.jpg
+toc: true
 ---
 
 ## Swift. 값 타입 VS 참조 타입 

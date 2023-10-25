@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/search-bg.jpg
 thumbnail-img: /assets/post_img/background/search-bg.jpg
 share-img: /assets/post_img/background/search-bg.jpg
+toc: true
 ---
 
 

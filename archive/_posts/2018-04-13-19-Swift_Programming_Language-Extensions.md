@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/port1.png
 thumbnail-img: /assets/post_img/background/port1.png
 share-img: /assets/post_img/background/port1.png
+toc: true
 ---
 
 최종 수정일: 2018.10. 1

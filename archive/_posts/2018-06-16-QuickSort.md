@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/itunesConnect-bg.jpg
 thumbnail-img: /assets/post_img/background/itunesConnect-bg.jpg
 share-img: /assets/post_img/background/itunesConnect-bg.jpg
+toc: true
 ---
 
 ## Code 

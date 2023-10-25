@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/about-bg_sub.jpg
 thumbnail-img: /assets/post_img/background/about-bg_sub.jpg
 share-img: /assets/post_img/background/about-bg_sub.jpg
+toc: true
 ---
 
 ## 구조체 Mutating 

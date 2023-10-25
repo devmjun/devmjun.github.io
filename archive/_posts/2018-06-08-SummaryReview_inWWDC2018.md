@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/testimage1.png
 thumbnail-img: /assets/post_img/background/testimage1.png
 share-img: /assets/post_img/background/testimage1.png
+toc: true
 ---
 
 [(3차 수정) WWDC 2018 정리본](https://www.clien.net/service/board/park/12189185)<br>

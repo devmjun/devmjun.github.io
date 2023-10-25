@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/hills-615429.jpg
 thumbnail-img: /assets/post_img/background/hills-615429.jpg
 share-img: /assets/post_img/background/hills-615429.jpg
+toc: true
 ---
 
 [Performing One-Time Setup for Your App](https://developer.apple.com/documentation/uikit/core_app/managing_your_app_s_life_cycle/responding_to_the_launch_of_your_app/performing_one-time_setup_for_your_app)에서 필요한 부분만 의역했습니다.

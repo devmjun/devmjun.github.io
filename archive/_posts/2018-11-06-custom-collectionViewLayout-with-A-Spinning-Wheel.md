@@ -333,5 +333,3 @@ attributes.angle = self.angle + (self.anglePerItem * CGFloat(i))
 ## Bonus Material: Optimizations
 
 추후 번역 예정..
-
-

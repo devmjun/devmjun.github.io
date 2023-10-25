@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/road-1072823.jpg
 thumbnail-img: /assets/post_img/background/road-1072823.jpg
 share-img: /assets/post_img/background/road-1072823.jpg
+toc: true
 ---
 
 ## Timer 

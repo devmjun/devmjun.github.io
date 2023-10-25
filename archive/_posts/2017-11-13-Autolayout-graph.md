@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/mountains-1244132.jpg
 thumbnail-img: /assets/post_img/background/mountains-1244132.jpg
 share-img: /assets/post_img/background/mountains-1244132.jpg
+toc: true
 ---
 
 ## Autolayout을 이용하여 막대 그래프 표현하기

@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/ComputerScience-bg.jpg
 thumbnail-img: /assets/post_img/background/ComputerScience-bg.jpg
 share-img: /assets/post_img/background/ComputerScience-bg.jpg
+toc: true
 ---
 
 ## Vingle TechTalk Texture in Startup

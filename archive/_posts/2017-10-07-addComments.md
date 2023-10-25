@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Python-bg.jpg
 thumbnail-img: /assets/post_img/background/Python-bg.jpg
 share-img: /assets/post_img/background/Python-bg.jpg
+toc: true
 ---
 
 github blog 에 댓글 기능을 넣기 위해서는 `disqus`를 사용합니다. 댓글을 달때 facebook, google, disqus 계정 등을 이용해서 댓글을 달수 있습니다.

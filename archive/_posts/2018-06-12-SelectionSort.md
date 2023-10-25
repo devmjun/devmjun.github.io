@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/water-3161063.jpg
 thumbnail-img: /assets/post_img/background/water-3161063.jpg
 share-img: /assets/post_img/background/water-3161063.jpg
+toc: true
 ---
 
 ## Code 

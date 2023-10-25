@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/cornflowers-5352633.jpg
 thumbnail-img: /assets/post_img/background/cornflowers-5352633.jpg
 share-img: /assets/post_img/background/cornflowers-5352633.jpg
+toc: true
 ---
 
 최종 수정일: 2018.10.01

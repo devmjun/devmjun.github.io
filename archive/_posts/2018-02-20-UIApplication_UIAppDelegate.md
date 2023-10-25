@@ -12,6 +12,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/trees-3464777.jpg
 thumbnail-img: /assets/post_img/background/trees-3464777.jpg
 share-img: /assets/post_img/background/trees-3464777.jpg
+toc: true
 ---
 
 ## 앱을 구성하는객체

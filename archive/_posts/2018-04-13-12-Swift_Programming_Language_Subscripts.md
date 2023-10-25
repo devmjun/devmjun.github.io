@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/imessageSticker-bg.jpg
 thumbnail-img: /assets/post_img/background/imessageSticker-bg.jpg
 share-img: /assets/post_img/background/imessageSticker-bg.jpg
+toc: true
 ---
 
 최종 수정일: 2018.10.1

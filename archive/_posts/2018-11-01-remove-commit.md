@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/field-5932123.jpg
 thumbnail-img: /assets/post_img/background/field-5932123.jpg
 share-img: /assets/post_img/background/field-5932123.jpg
+toc: true
 ---
 
 

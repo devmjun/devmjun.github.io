@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Xcode-bg___.jpg
 thumbnail-img: /assets/post_img/background/Xcode-bg___.jpg
 share-img: /assets/post_img/background/Xcode-bg___.jpg
+toc: true
 ---
 
 예전 패스트 캠퍼스에서 팀 프로젝트로 만들었던것을 다시 만들었습니다. 

@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/ComputerScience-bg.jpg
 thumbnail-img: /assets/post_img/background/ComputerScience-bg.jpg
 share-img: /assets/post_img/background/ComputerScience-bg.jpg
+toc: true
 ---
 
 [WMO 알아보기(컴파일 최적화)](https://brunch.co.kr/@joonwonlee/14)<br>
