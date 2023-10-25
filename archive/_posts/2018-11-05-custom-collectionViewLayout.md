@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/hills-615429.jpg
 thumbnail-img: /assets/post_img/background/hills-615429.jpg
 share-img: /assets/post_img/background/hills-615429.jpg
+toc: true
 ---
 
 [Custom UICollectionViewLayout Tutorial With Parallax](https://www.raywenderlich.com/527-custom-uicollectionviewlayout-tutorial-with-parallax)의 일부분을 의역 했습니다. 

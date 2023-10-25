@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/CaseContainer.jpg
 thumbnail-img: /assets/post_img/background/CaseContainer.jpg
 share-img: /assets/post_img/background/CaseContainer.jpg
+toc: true
 ---
 
 최종 수정일: 2018.10.01

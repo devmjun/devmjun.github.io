@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/deer-643340.jpg
 thumbnail-img: /assets/post_img/background/deer-643340.jpg
 share-img: /assets/post_img/background/deer-643340.jpg
+toc: true
 ---
 
 최종 수정일: 2018.10.1

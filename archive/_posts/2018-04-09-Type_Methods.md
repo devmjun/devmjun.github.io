@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Mac-bg.jpg
 thumbnail-img: /assets/post_img/background/Mac-bg.jpg
 share-img: /assets/post_img/background/Mac-bg.jpg
+toc: true
 ---
 
 [type method](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//apple_ref/doc/uid/TP40014097-CH15-ID234)

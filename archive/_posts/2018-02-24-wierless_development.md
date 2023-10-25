@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/forest-3394066.jpg
 thumbnail-img: /assets/post_img/background/forest-3394066.jpg
 share-img: /assets/post_img/background/forest-3394066.jpg
+toc: true
 ---
 
 Xcode 9에 업데이트된 편한 기능인 `Wierless developemnt`을 사용하는 방법을 알아보겠습니다! 

@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/CaseContainer.jpg
 thumbnail-img: /assets/post_img/background/CaseContainer.jpg
 share-img: /assets/post_img/background/CaseContainer.jpg
+toc: true
 ---
 
 1. CocoaPods 란?

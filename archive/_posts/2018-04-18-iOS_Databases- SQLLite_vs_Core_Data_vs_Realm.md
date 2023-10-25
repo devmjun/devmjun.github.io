@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/codemonkey-bg.jpg
 thumbnail-img: /assets/post_img/background/codemonkey-bg.jpg
 share-img: /assets/post_img/background/codemonkey-bg.jpg
+toc: true
 ---
 
 ## iOS Databases: SQLLite vs. Core Data vs. Realm

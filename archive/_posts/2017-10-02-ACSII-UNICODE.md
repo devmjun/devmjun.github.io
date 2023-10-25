@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Swift-bg.jpg
 thumbnail-img: /assets/post_img/background/Swift-bg.jpg
 share-img: /assets/post_img/background/Swift-bg.jpg
+toc: true
 ---
 
 

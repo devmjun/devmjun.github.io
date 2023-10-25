@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/ComputerScience1-bg.jpg
 thumbnail-img: /assets/post_img/background/ComputerScience1-bg.jpg
 share-img: /assets/post_img/background/ComputerScience1-bg.jpg
+toc: true
 ---
 
 ## Xcode 완전 삭제 하는 방법

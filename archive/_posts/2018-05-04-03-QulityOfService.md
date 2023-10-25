@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/Mac-bg.jpg
 thumbnail-img: /assets/post_img/background/Mac-bg.jpg
 share-img: /assets/post_img/background/Mac-bg.jpg
+toc: true
 ---
 
 ## About Quality of Service(QoS)  

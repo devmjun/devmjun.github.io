@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/natural.jpg
 thumbnail-img: /assets/post_img/background/natural.jpg
 share-img: /assets/post_img/background/natural.jpg
+toc: true
 ---
 
 `Trigonometry` 시리즈 포스팅들을 바탕으로 원과 호를 사용하여 원 그래프를 만드는 간단한 [예제](https://github.com/devmjun/RingChartView)를 만들어 보았습니다. 

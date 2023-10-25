@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/search-bg_sub.jpg
 thumbnail-img: /assets/post_img/background/search-bg_sub.jpg
 share-img: /assets/post_img/background/search-bg_sub.jpg
+toc: true
 ---
 
 SimpleCell의 Github 주소는 [여기](https://github.com/devmjun/SimpleCell) 입니다.

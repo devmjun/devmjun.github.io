@@ -40,8 +40,8 @@ layout: base
       {% endif %}
 
       <!-- TOC Section -->
-      <section class="toc-section" itemprop="text">
-        {% if page.toc %}
+      {% if page.toc %}
+        <section class="toc-section" itemprop="text">
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
               <header>
@@ -53,14 +53,14 @@ layout: base
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
             </nav>
           </aside>
-        {% endif %}
         {% if page.link %}
           <div>
             <a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }} </a>
           </div>
         {% endif %}
         <hr>
-      </section> 
+        </section> 
+      {% endif %}
 
       <article role="main" class="blog-post">
         {{ content }}

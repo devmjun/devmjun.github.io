@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/category-bg_sub.jpg
 thumbnail-img: /assets/post_img/background/category-bg_sub.jpg
 share-img: /assets/post_img/background/category-bg_sub.jpg
+toc: true
 ---
 
 [iOS 개발에서 스토리보드란 무엇인가?](http://hamait.tistory.com/708) <br>

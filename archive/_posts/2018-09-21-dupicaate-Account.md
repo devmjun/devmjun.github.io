@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/category-bg.png
 thumbnail-img: /assets/post_img/background/category-bg.png
 share-img: /assets/post_img/background/category-bg.png
+toc: true
 ---
 
 ## Refernece 

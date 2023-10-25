@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/avenue-815297.jpg
 thumbnail-img: /assets/post_img/background/avenue-815297.jpg
 share-img: /assets/post_img/background/avenue-815297.jpg
+toc: true
 ---
 
 

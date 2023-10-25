@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/wood-3095720.jpg
 thumbnail-img: /assets/post_img/background/wood-3095720.jpg
 share-img: /assets/post_img/background/wood-3095720.jpg
+toc: true
 ---
 
 [해당 링크 참조](https://blog.roto.codes/fix_capslock_delay/)

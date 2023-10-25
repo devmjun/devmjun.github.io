@@ -11,6 +11,7 @@ tags: [Algorithm]
 cover-img: /assets/post_img/background/CaseContainer.jpg
 thumbnail-img: /assets/post_img/background/CaseContainer.jpg
 share-img: /assets/post_img/background/CaseContainer.jpg
+toc: true
 ---
 
 [시간 복잡도](https://namu.wiki/w/%EC%8B%9C%EA%B0%84%20%EB%B3%B5%EC%9E%A1%EB%8F%84)<br>

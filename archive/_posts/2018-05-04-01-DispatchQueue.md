@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/hills-615429.jpg
 thumbnail-img: /assets/post_img/background/hills-615429.jpg
 share-img: /assets/post_img/background/hills-615429.jpg
+toc: true
 ---
 
 ## About Dispatch Queue 

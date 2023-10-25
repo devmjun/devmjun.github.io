@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/secret-3120483.jpg
 thumbnail-img: /assets/post_img/background/secret-3120483.jpg
 share-img: /assets/post_img/background/secret-3120483.jpg
+toc: true
 ---
 
 동생이랑 iMessage Sticker 2탄을 만들었습니다. <br>

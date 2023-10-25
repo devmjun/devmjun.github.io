@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/testport.png
 thumbnail-img: /assets/post_img/background/testport.png
 share-img: /assets/post_img/background/testport.png
+toc: true
 ---
 
 ## Code 

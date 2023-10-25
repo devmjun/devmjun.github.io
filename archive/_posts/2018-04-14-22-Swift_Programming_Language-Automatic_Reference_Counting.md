@@ -11,6 +11,7 @@ permalink: /archive/:title
 cover-img: /assets/post_img/background/river-219972_1920.jpg
 thumbnail-img: /assets/post_img/background/river-219972_1920.jpg
 share-img: /assets/post_img/background/river-219972_1920.jpg
+toc: true
 ---
 
 최종 수정일: 2018.10.1
