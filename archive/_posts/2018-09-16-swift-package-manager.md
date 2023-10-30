@@ -1,9 +1,9 @@
 ---
-layout:     post
-title:      "Swift, Swift Package Manager가 무엇인지 알아봅니다"
-subtitle:   "Swift Package Manager"
-date:       2018-09-16 17:45:00
-author:     "MinJun"
+layout: post
+title: "Swift, Swift Package Manager가 무엇인지 알아봅니다"
+subtitle: "Swift Package Manager"
+date: 2018-09-16 17:45:00
+author: "MinJun"
 comments: true 
 tags: [Swift, Raywenderlich]
 categories: archive

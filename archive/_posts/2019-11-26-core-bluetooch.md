@@ -1,7 +1,6 @@
 ---
-
-layout:     post
-title:      "iOS, Core Bluetooth Tutorial for iOS: Heart Rate Monitor"
+layout: post
+title:  "iOS, Core Bluetooth Tutorial for iOS: Heart Rate Monitor"
 subtitle:   "Core Bluetooth Tutorial for iOS: Heart Rate Monitor"
 date:       2019-11-25 18:45:00
 author:     "MinJun Ju"
