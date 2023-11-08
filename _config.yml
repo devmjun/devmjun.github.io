@@ -28,6 +28,7 @@ navbar-links:
   tag index: "tags"
   Cateogry:
     - Archive: "archive"
+    - ml: "category/ml"
     - iOS: "category/ios"
     - Python: "category/python"
 
@@ -46,6 +47,8 @@ round-avatar: true
 # then specify the following parameter
 # title-img: /assets/img/avatar-icon_copy.png
 
+# future post visibility
+future: true
 
 #####################################
 # --- Footer social media links --- #
