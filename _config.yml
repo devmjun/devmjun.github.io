@@ -295,6 +295,7 @@ toc:
 timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
+lsi: false
 
 ##################################
 # --- Paginate ver1 (compatibility ver 1 or 2) --- #
