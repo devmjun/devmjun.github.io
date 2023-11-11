@@ -45,6 +45,7 @@ h4 {
 }
 h1, h2, h3, h4 {
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 a {
   color: {{ site.link-col | default: "#008AFF" }};
@@ -877,7 +878,6 @@ code {
 pre code {
   padding: 0;
   background-color: transparent;
-  padding: 0.125rem 0.25rem;
   color: {{ site.text-col | default: "#404040" }};
 }
 
@@ -890,7 +890,8 @@ pre {
 .highlight pre {
   border: none;
   background: none;
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: {{ site.text-col | default: "#404040" }};
 }
 .highlight > pre {
